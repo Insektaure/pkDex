@@ -1,5 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pokedex region="paldea">
+
+    <pokemon id="906" name="Sprigatito" regionalDexNumber="001" type="Grass">
+        <evolution>Sprigatito -Lvl 16- Floragato -Lvl 36- Meowscarada</evolution>
+        <locations>Starter Pokémon in Cabo Poco</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="907" name="Floragato" regionalDexNumber="002" type="Grass">
+        <evolution>Sprigatito -Lvl 16- Floragato -Lvl 36- Meowscarada</evolution>
+        <locations>Starter Pokémon in Cabo Poco</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="908" name="Meowscarada" regionalDexNumber="003" type="Grass">
+        <evolution>Sprigatito -Lvl 16- Floragato -Lvl 36- Meowscarada</evolution>
+        <locations>Starter Pokémon in Cabo Poco</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="909" name="Fuecoco" regionalDexNumber="004" type="Fire">
+        <evolution>Fuecoco -Lvl 16- Crocalor -Lvl 36- Skeledirge</evolution>
+        <locations>Starter Pokémon in Cabo Poco</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="910" name="Crocalor" regionalDexNumber="005" type="Fire">
+        <evolution>Fuecoco -Lvl 16- Crocalor -Lvl 36- Skeledirge</evolution>
+        <locations>Starter Pokémon in Cabo Poco</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="911" name="Skeledirge" regionalDexNumber="006" type="Fire / Ghost">
+        <evolution>Fuecoco -Lvl 16- Crocalor -Lvl 36- Skeledirge</evolution>
+        <locations>Starter Pokémon in Cabo Poco</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="912" name="Quaxly" regionalDexNumber="007" type="Water">
+        <evolution>Quaxly -Lvl 16- Quaxwell -Lvl 36- Quaquaval</evolution>
+        <locations>Starter Pokémon in Cabo Poco</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="913" name="Quaxwell" regionalDexNumber="008" type="Water">
+        <evolution>Quaxly -Lvl 16- Quaxwell -Lvl 36- Quaquaval</evolution>
+        <locations>Starter Pokémon in Cabo Poco</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="914" name="Quaquaval" regionalDexNumber="009" type="Water / Fighting">
+        <evolution>Quaxly -Lvl 16- Quaxwell -Lvl 36- Quaquaval</evolution>
+        <locations>Starter Pokémon in Cabo Poco</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="915" name="Lechonk" regionalDexNumber="010" type="Normal">
+        <evolution>Lechonk -Lvl 18- Oinkologne</evolution>
+        <locations>East Province Area One, East Province Area Two, Pokemon League, South Province Area One, South Province Area Two, South Province Area Three, South Province Area Four, South Province Area Five , Tera Raid Battles: 1 Star Raid Battles</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="916" name="Oinkologne" regionalDexNumber="011" type="Normal">
+        <evolution>Lechonk -Lvl 18- Oinkologne</evolution>
+        <locations>East Province Area One, East Province Area Two, South Province Area Three, South Province Area Five, Tagtree Thicket, West Province Area Two, West Province Area Three, Tera Raid Battles: 3 Star Raid Battles</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="917" name="Tarountula" regionalDexNumber="012" type="Bug">
+        <evolution>Tarountula -Lvl 15- Spidops</evolution>
+        <locations>Pokemon League, South Province Area One, South Province Area Two, South Province Area Three, South Province Area Four, South Province Area Five</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="918" name="Spidops" regionalDexNumber="013" type="Bug">
+        <evolution>Tarountula -Lvl 15- Spidops</evolution>
+        <locations>East Province Area One, East Province Area Two, North Province Area Two, Socarrat Trail, Tagtree Thicket, West Province Area Three</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="919" name="Nymble" regionalDexNumber="014" type="Bug">
+        <evolution>Nymble -Lvl 24- Lokix</evolution>
+        <locations>South Province Area Two, South Province Area Three, South Province Area Six, West Province Area One, Tera Raid Battles: 1 Star Raid Battles</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="920" name="Lokix" regionalDexNumber="015" type="Bug / Dark">
+        <evolution>Nymble -Lvl 24- Lokix</evolution>
+        <locations>Alfornada Cavern, Asado Desert, Casseroya Lake, Dalizapa Passage, East Province Area Three, Glaseado Mountain, North Province Area One, North Province Area Two, North Province Area Three, South Province Area Six, West Province Area Two
+            Fixed: North Province Area Two, West Province Area One
+            Tera Raid Battles: 3 Star Raid Battles</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="187" name="Hoppip" regionalDexNumber="016" type="Grass / Flying">
+        <evolution>Hoppip -Lvl 18- Skiploom -Lvl 27- Jumpluff</evolution>
+        <locations>
+            South Province Area One, South Province Area Two
+            Tera Raid Battles: 1 Star Raid Battles
+        </locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="188" name="Skiploom" regionalDexNumber="017" type="Grass / Flying">
+        <evolution>Hoppip -Lvl 18- Skiploom -Lvl 27- Jumpluff</evolution>
+        <locations>
+            East Province Area One, East Province Area Two, South Province Area Three, South Province Area Five
+            Fixed: West Province Area Two
+            Tera Raid Battles: 3 Star Raid Battles
+        </locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="189" name="Jumpluff" regionalDexNumber="018" type="Grass / Flying">
+        <evolution>Hoppip -Lvl 18- Skiploom -Lvl 27- Jumpluff</evolution>
+        <locations>
+            North Province Area One, North Province Area Two, North Province Area Three, West Province Area Three
+        </locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="661" name="Fletchling" regionalDexNumber="019" type="Normal / Flying">
+        <evolution>Fletchling -Lvl 17- Fletchinder -Lvl 35- Talonflame</evolution>
+        <locations>
+            South Province Area One, South Province Area Two, South Province Area Five
+            Fixed: South Province Area One, South Province Area Two
+            Tera Raid Battles: 2 Star Raid Battles
+            Canyon Biome, Coastal Biome
+        </locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="662" name="Fletchinder" regionalDexNumber="020" type="Fire / Flying">
+        <evolution>Fletchling -Lvl 17- Fletchinder -Lvl 35- Talonflame</evolution>
+        <locations>
+            South Province Area One, South Province Area Three, South Province Area Four, South Province Area Five, West Province Area Three
+            Fixed: East Province Area One, West Province Area Two
+            Tera Raid Battles: 3 Star Raid Battles
+            Canyon Biome, Coastal Biome
+            Fixed: Coastal Biome
+        </locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="663" name="Talonflame" regionalDexNumber="021" type="Fire / Flying">
+        <evolution>Fletchling -Lvl 17- Fletchinder -Lvl 35- Talonflame</evolution>
+        <locations>
+            Area Zero
+            Fixed: South Province Area Three
+            Tera Raid Battles: 5 Star Raid Battles, 6 Star Raid Battles
+            Coastal Biome, Torchlit Labyrinth
+            Fixed: Coastal Biome
+        </locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
     <pokemon id="995" name="Iron Thorns" regionalDexNumber="387" type="Rock/Electric">
         <evolution>-</evolution>
         <locations>Area Zero (in rocky area to left of Research Station 2)</locations>
