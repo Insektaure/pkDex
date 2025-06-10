@@ -6,15 +6,7 @@
         icon="@res/img/borealis_96.png">
 
         <brls:Tab label="Kanto">
-            <RecyclingListTab region="kanto" />
-        </brls:Tab>
-
-        <brls:Tab label="Johto">
-            <RecyclingListTab region="johto" />
-        </brls:Tab>
-
-        <brls:Tab label="Hoenn">
-            <RecyclingListTab region="hoenn" />
+            <RecyclingListTab/>
         </brls:Tab>
 
         <brls:Separator />
