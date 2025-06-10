@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pokedex region="paldea">
+    <pokemon id="995" name="Iron Thorns" regionalDexNumber="387" type="Rock/Electric">
+        <evolution>-</evolution>
+        <locations>Area Zero (in rocky area to left of Research Station 2)</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
+    </pokemon>
+</pokedex>

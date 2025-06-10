@@ -60,7 +60,7 @@ brls::RecyclerCell* DataSource::cellForRow(brls::RecyclerFrame* recycler, brls::
 {
     RecyclerCell* item = (RecyclerCell*)recycler->dequeueReusableCell("Cell");
     item->label->setText(pokemons[indexPath.row].regionalDexNumber + " - " + pokemons[indexPath.row].name);
-    item->image->setImageFromRes("img/pokemon/thumbnails/" + pokemons[indexPath.row].id + ".png");
+    item->image->setImageFromRes("img/pokemon/icons/" + pokemons[indexPath.row].id + ".png");
     return item;
 }
 
@@ -79,7 +79,7 @@ RecyclingListTab::RecyclingListTab()
 
     pokemons.clear();
     // Load Pokemon data from the Kanto region
-    pokemons = PokemonDataLoader::loadPokemonFromRegion("kanto");
+    pokemons = PokemonDataLoader::loadPokemonFromRegion("paldea");
 
     recycler->estimatedRowHeight = 70;
     recycler->registerCell("Header", []() { return RecyclerHeader::create(); });

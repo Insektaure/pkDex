@@ -51,18 +51,19 @@ PokemonView::PokemonView(Pokemon pokemon)
     registerAction("Close", brls::ControllerButton::BUTTON_RB, dismissAction, true);
 
     getAppletFrameItem()->title = pokemon.name;
-    getAppletFrameItem()->setIconFromRes("img/pokemon/thumbnails/" + pokemon.id + ".png");
+    getAppletFrameItem()->setIconFromRes("img/pokemon/icons/" + pokemon.id + ".png");
 //    getAppletFrameItem()->hintView = holder;
 
     // Set images
-    standard_image->setImageFromRes("img/pokemon/thumbnails/" + pokemon.id + ".png");
-    shiny_image->setImageFromRes("img/pokemon/thumbnails/" + pokemon.id + ".png"); // Use same image for now, would need shiny images
+    standard_image->setImageFromRes("img/pokemon/full/" + pokemon.id + ".png");
+    shiny_image->setImageFromRes("img/pokemon/shiny/" + pokemon.id + ".png");
 
     // Set text fields
     national_dex->setText(pokemon.id);
     regional_dex->setText(pokemon.regionalDexNumber);
     type->setText(pokemon.type);
     evolution->setText(pokemon.evolution);
+    exclusive_version->setText(pokemon.exclusiveVersion);
     locations->setText(pokemon.locations);
 
 }

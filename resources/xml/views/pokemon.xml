@@ -25,7 +25,7 @@
                 id="standard_label"
                 width="auto"
                 height="auto"
-                text="Standard"
+                text=""
                 fontSize="20"
                 marginBottom="5px"/>
             <brls:Image
@@ -44,7 +44,7 @@
                 id="shiny_label"
                 width="auto"
                 height="auto"
-                text="Shiny"
+                text=""
                 fontSize="20"
                 marginBottom="5px"/>
             <brls:Image
@@ -69,7 +69,7 @@
             <brls:Label
                 width="40%"
                 height="auto"
-                text="National Dex:"
+                text="National N° :"
                 fontSize="18"/>
             <brls:Label
                 id="national_dex"
@@ -86,7 +86,7 @@
             <brls:Label
                 width="40%"
                 height="auto"
-                text="Regional Dex:"
+                text="Regional N° :"
                 fontSize="18"/>
             <brls:Label
                 id="regional_dex"
@@ -103,7 +103,7 @@
             <brls:Label
                 width="40%"
                 height="auto"
-                text="Type:"
+                text="Type :"
                 fontSize="18"/>
             <brls:Label
                 id="type"
@@ -120,13 +120,30 @@
             <brls:Label
                 width="40%"
                 height="auto"
-                text="Evolution:"
+                text="Evolution :"
                 fontSize="18"/>
             <brls:Label
                 id="evolution"
                 width="60%"
                 height="auto"
                 fontSize="18"/>
+        </brls:Box>
+
+        <brls:Box
+                width="auto"
+                height="auto"
+                axis="row"
+                marginBottom="10px">
+            <brls:Label
+                    width="40%"
+                    height="auto"
+                    text="Exclusive Version :"
+                    fontSize="18"/>
+            <brls:Label
+                    id="exclusive_version"
+                    width="60%"
+                    height="auto"
+                    fontSize="18"/>
         </brls:Box>
 
         <brls:Box
@@ -137,7 +154,7 @@
             <brls:Label
                 width="40%"
                 height="auto"
-                text="Locations:"
+                text="Locations :"
                 fontSize="18"/>
             <brls:Label
                 id="locations"
@@ -148,10 +165,10 @@
     </brls:Box>
 
     <brls:Button
-        id="close_button"
-        width="auto"
-        height="auto"
-        text="@i18n/hints/back"
-        marginTop="24px"/>
+            id="close_button"
+            width="auto"
+            height="auto"
+            text="@i18n/hints/back"
+            marginTop="24px"/>
 
 </brls:Box>

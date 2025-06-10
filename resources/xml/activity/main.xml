@@ -5,7 +5,7 @@
         title="@i18n/demo/title"
         icon="@res/img/borealis_96.png">
 
-        <brls:Tab label="Kanto">
+        <brls:Tab label="Paldea">
             <RecyclingListTab/>
         </brls:Tab>
 

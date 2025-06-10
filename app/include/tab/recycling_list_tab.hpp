@@ -59,15 +59,6 @@ class RecyclingListTab : public brls::Box
     // Load Pokemon data from a file
     void loadPokemonData(const std::string& region);
 
-    // Switch to a different regional Pokedex
-    //void switchRegion(const std::string& region);
-
   private:
     BRLS_BIND(brls::RecyclerFrame, recycler, "recycler");
-    // Container for region buttons
-    BRLS_BIND(brls::Box, regionButtonsContainer, "region_buttons_container");
-
-    // Map to store region buttons
-    std::map<std::string, brls::Button*> regionButtons;
-    std::string currentRegion;
 };

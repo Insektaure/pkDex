@@ -26,14 +26,16 @@ class Pokemon
     std::string regionalDexNumber;
     std::string type;
     std::string evolution;
+    std::string exclusiveVersion;
     std::string locations;
 
-    Pokemon(std::string id, std::string name, std::string regionalDexNumber = "", std::string type = "", std::string evolution = "", std::string locations = "")
+    Pokemon(std::string id, std::string name, std::string regionalDexNumber = "", std::string type = "", std::string evolution = "", std::string exclusiveVersion="", std::string locations = "")
         : id(id)
         , name(name)
         , regionalDexNumber(regionalDexNumber)
         , type(type)
         , evolution(evolution)
+        , exclusiveVersion(exclusiveVersion)
         , locations(locations)
     {
     }
@@ -44,7 +46,7 @@ class PokemonView : public brls::Box
   public:
     PokemonView(Pokemon pokemon);
     PokemonView()
-        : PokemonView(Pokemon("001", "ТУПА ПАКИМОН!!!"))
+        : PokemonView(Pokemon("001", "Bulbasaur"))
     {
     }
 
@@ -58,5 +60,6 @@ class PokemonView : public brls::Box
     BRLS_BIND(brls::Label, regional_dex, "regional_dex");
     BRLS_BIND(brls::Label, type, "type");
     BRLS_BIND(brls::Label, evolution, "evolution");
+    BRLS_BIND(brls::Label, exclusive_version, "exclusive_version");
     BRLS_BIND(brls::Label, locations, "locations");
 };

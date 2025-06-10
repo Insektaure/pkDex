@@ -110,6 +110,13 @@ Pokemon PokemonDataLoader::parsePokemonNode(tinyxml2::XMLElement* pokemonElement
     {
         evolution = evolutionElement->GetText();
     }
+
+    std::string exclusiveVersion;
+    tinyxml2::XMLElement* exclusiveVersionElement = pokemonElement->FirstChildElement("exclusiveVersion");
+    if (exclusiveVersionElement && exclusiveVersionElement->GetText())
+    {
+        exclusiveVersion = exclusiveVersionElement->GetText();
+    }
     
     std::string locations;
     tinyxml2::XMLElement* locationsElement = pokemonElement->FirstChildElement("locations");
@@ -124,6 +131,7 @@ Pokemon PokemonDataLoader::parsePokemonNode(tinyxml2::XMLElement* pokemonElement
         regionalDexNumber ? regionalDexNumber : "",
         type ? type : "",
         evolution,
+        exclusiveVersion,
         locations
     );
 }
