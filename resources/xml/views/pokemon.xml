@@ -1,0 +1,157 @@
+<brls:Box
+    width="auto"
+    height="auto"
+    axis="column"
+    alignItems="center"
+    paddingTop="50px"
+    paddingBottom="50px"
+    paddingLeft="75px"
+    paddingRight="75px" >
+
+    <brls:Box
+        width="auto"
+        height="auto"
+        axis="row"
+        alignItems="center"
+        marginBottom="20px">
+
+        <brls:Box
+            width="auto"
+            height="auto"
+            axis="column"
+            alignItems="center"
+            marginRight="20px">
+            <brls:Label
+                id="standard_label"
+                width="auto"
+                height="auto"
+                text="Standard"
+                fontSize="20"
+                marginBottom="5px"/>
+            <brls:Image
+                id="standard_image"
+                width="auto"
+                height="150px"
+                image="@res/img/borealis_256.png"/>
+        </brls:Box>
+
+        <brls:Box
+            width="auto"
+            height="auto"
+            axis="column"
+            alignItems="center">
+            <brls:Label
+                id="shiny_label"
+                width="auto"
+                height="auto"
+                text="Shiny"
+                fontSize="20"
+                marginBottom="5px"/>
+            <brls:Image
+                id="shiny_image"
+                width="auto"
+                height="150px"
+                image="@res/img/borealis_256.png"/>
+        </brls:Box>
+    </brls:Box>
+
+    <brls:Box
+        width="80%"
+        height="auto"
+        axis="column"
+        marginBottom="20px">
+
+        <brls:Box
+            width="auto"
+            height="auto"
+            axis="row"
+            marginBottom="10px">
+            <brls:Label
+                width="40%"
+                height="auto"
+                text="National Dex:"
+                fontSize="18"/>
+            <brls:Label
+                id="national_dex"
+                width="60%"
+                height="auto"
+                fontSize="18"/>
+        </brls:Box>
+
+        <brls:Box
+            width="auto"
+            height="auto"
+            axis="row"
+            marginBottom="10px">
+            <brls:Label
+                width="40%"
+                height="auto"
+                text="Regional Dex:"
+                fontSize="18"/>
+            <brls:Label
+                id="regional_dex"
+                width="60%"
+                height="auto"
+                fontSize="18"/>
+        </brls:Box>
+
+        <brls:Box
+            width="auto"
+            height="auto"
+            axis="row"
+            marginBottom="10px">
+            <brls:Label
+                width="40%"
+                height="auto"
+                text="Type:"
+                fontSize="18"/>
+            <brls:Label
+                id="type"
+                width="60%"
+                height="auto"
+                fontSize="18"/>
+        </brls:Box>
+
+        <brls:Box
+            width="auto"
+            height="auto"
+            axis="row"
+            marginBottom="10px">
+            <brls:Label
+                width="40%"
+                height="auto"
+                text="Evolution:"
+                fontSize="18"/>
+            <brls:Label
+                id="evolution"
+                width="60%"
+                height="auto"
+                fontSize="18"/>
+        </brls:Box>
+
+        <brls:Box
+            width="auto"
+            height="auto"
+            axis="row"
+            marginBottom="10px">
+            <brls:Label
+                width="40%"
+                height="auto"
+                text="Locations:"
+                fontSize="18"/>
+            <brls:Label
+                id="locations"
+                width="60%"
+                height="auto"
+                fontSize="18"/>
+        </brls:Box>
+    </brls:Box>
+
+    <brls:Button
+        id="close_button"
+        width="auto"
+        height="auto"
+        text="@i18n/hints/back"
+        marginTop="24px"/>
+
+</brls:Box>

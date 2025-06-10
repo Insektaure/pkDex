@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pokedex region="hoenn">
+    <pokemon id="252" name="Treecko" regionalDexNumber="001" type="Grass">
+        <evolution>Treecko → Grovyle → Sceptile</evolution>
+        <locations>Littleroot Town, Route 101</locations>
+    </pokemon>
+    <pokemon id="255" name="Torchic" regionalDexNumber="004" type="Fire">
+        <evolution>Torchic → Combusken → Blaziken</evolution>
+        <locations>Littleroot Town, Route 102</locations>
+    </pokemon>
+    <pokemon id="258" name="Mudkip" regionalDexNumber="007" type="Water">
+        <evolution>Mudkip → Marshtomp → Swampert</evolution>
+        <locations>Littleroot Town, Route 103</locations>
+    </pokemon>
+    <pokemon id="261" name="Poochyena" regionalDexNumber="010" type="Dark">
+        <evolution>Poochyena → Mightyena</evolution>
+        <locations>Route 101, Route 102, Route 103</locations>
+    </pokemon>
+    <pokemon id="263" name="Zigzagoon" regionalDexNumber="012" type="Normal">
+        <evolution>Zigzagoon → Linoone</evolution>
+        <locations>Route 101, Route 102, Route 103</locations>
+    </pokemon>
+    <pokemon id="265" name="Wurmple" regionalDexNumber="014" type="Bug">
+        <evolution>Wurmple → Silcoon → Beautifly / Wurmple → Cascoon → Dustox</evolution>
+        <locations>Route 101, Route 102, Route 104</locations>
+    </pokemon>
+    <pokemon id="270" name="Lotad" regionalDexNumber="019" type="Water/Grass">
+        <evolution>Lotad → Lombre → Ludicolo</evolution>
+        <locations>Route 102, Route 114, Route 120</locations>
+    </pokemon>
+    <pokemon id="273" name="Seedot" regionalDexNumber="022" type="Grass">
+        <evolution>Seedot → Nuzleaf → Shiftry</evolution>
+        <locations>Route 102, Route 114, Route 120</locations>
+    </pokemon>
+    <pokemon id="276" name="Taillow" regionalDexNumber="025" type="Normal/Flying">
+        <evolution>Taillow → Swellow</evolution>
+        <locations>Route 104, Route 115, Route 116</locations>
+    </pokemon>
+</pokedex>

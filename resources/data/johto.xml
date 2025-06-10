@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pokedex region="johto">
+    <pokemon id="152" name="Chikorita" regionalDexNumber="001" type="Grass">
+        <evolution>Chikorita → Bayleef → Meganium</evolution>
+        <locations>New Bark Town, Route 29</locations>
+    </pokemon>
+    <pokemon id="155" name="Cyndaquil" regionalDexNumber="004" type="Fire">
+        <evolution>Cyndaquil → Quilava → Typhlosion</evolution>
+        <locations>New Bark Town, Route 30</locations>
+    </pokemon>
+    <pokemon id="158" name="Totodile" regionalDexNumber="007" type="Water">
+        <evolution>Totodile → Croconaw → Feraligatr</evolution>
+        <locations>New Bark Town, Route 31</locations>
+    </pokemon>
+    <pokemon id="161" name="Sentret" regionalDexNumber="010" type="Normal">
+        <evolution>Sentret → Furret</evolution>
+        <locations>Route 29, Route 30, Route 31</locations>
+    </pokemon>
+    <pokemon id="163" name="Hoothoot" regionalDexNumber="012" type="Normal/Flying">
+        <evolution>Hoothoot → Noctowl</evolution>
+        <locations>Route 29, Route 30, Route 31</locations>
+    </pokemon>
+    <pokemon id="165" name="Ledyba" regionalDexNumber="014" type="Bug/Flying">
+        <evolution>Ledyba → Ledian</evolution>
+        <locations>Route 29, Route 30, Route 31</locations>
+    </pokemon>
+    <pokemon id="167" name="Spinarak" regionalDexNumber="016" type="Bug/Poison">
+        <evolution>Spinarak → Ariados</evolution>
+        <locations>Route 29, Route 30, Route 31</locations>
+    </pokemon>
+    <pokemon id="170" name="Chinchou" regionalDexNumber="019" type="Water/Electric">
+        <evolution>Chinchou → Lanturn</evolution>
+        <locations>Route 41, Olivine City</locations>
+    </pokemon>
+    <pokemon id="172" name="Pichu" regionalDexNumber="021" type="Electric">
+        <evolution>Pichu → Pikachu → Raichu</evolution>
+        <locations>Odd Egg</locations>
+    </pokemon>
+</pokedex>
