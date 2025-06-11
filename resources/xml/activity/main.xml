@@ -33,6 +33,14 @@
             <PaldeaTab/>
         </brls:Tab>
 
+        <brls:Tab label="Kitakami (The Teal Mask - Scarlet &amp; Violet DLC 1)">
+            <KitakamiTab/>
+        </brls:Tab>
+
+        <brls:Tab label="Blueberry Academy (The Indigo Disk - Scarlet &amp; Violet DLC 2)">
+            <BlueberryTab/>
+        </brls:Tab>
+
         <brls:Separator />
 
         <!-- Static tab with inline XML -->

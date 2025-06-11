@@ -205,6 +205,16 @@ brls::View* RecyclingListTab::createPaldea()
     return new RecyclingListTab("paldea");
 }
 
+brls::View* RecyclingListTab::createKitakami()
+{
+    return new RecyclingListTab("kitakami");
+}
+
+brls::View* RecyclingListTab::createBlueberry()
+{
+    return new RecyclingListTab("blueberry_academy");
+}
+
 void RecyclingListTab::ensureCellVisible(const brls::IndexPath& indexPath)
 {
     // Use selectRowAt to select the cell but don't center it in the view
