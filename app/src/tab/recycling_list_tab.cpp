@@ -31,6 +31,10 @@ RecyclerCell* RecyclerCell::create()
 }
 
 // DATA SOURCE
+DataSource::DataSource()
+    : currentSelection(0, 0) // Initialize with first section, first row
+{
+}
 
 int DataSource::numberOfSections(brls::RecyclerFrame* recycler)
 {
@@ -64,6 +68,9 @@ brls::RecyclerCell* DataSource::cellForRow(brls::RecyclerFrame* recycler, brls::
 
 void DataSource::didSelectRowAt(brls::RecyclerFrame* recycler, brls::IndexPath indexPath)
 {
+    // Update the current selection
+    currentSelection = indexPath;
+
     // Calculate the actual index based on section and row, same as in cellForRow
     int actualIndex = indexPath.section * 30 + indexPath.row;
     recycler->present(new PokemonView(pokemons[actualIndex]));
@@ -87,7 +94,16 @@ RecyclingListTab::RecyclingListTab(const std::string& region)
     recycler->estimatedRowHeight = 70;
     recycler->registerCell("Header", []() { return RecyclerHeader::create(); });
     recycler->registerCell("Cell", []() { return RecyclerCell::create(); });
-    recycler->setDataSource(new DataSource());
+
+    // Create and set the data source
+    this->dataSource = new DataSource();
+    recycler->setDataSource(this->dataSource);
+
+    // Register L and R button actions for jumping between pages
+    this->registerAction("Jump to Previous Page", brls::BUTTON_LB, 
+        std::bind(&RecyclingListTab::jumpToPreviousPage, this, std::placeholders::_1), false, true);
+    this->registerAction("Jump to Next Page", brls::BUTTON_RB, 
+        std::bind(&RecyclingListTab::jumpToNextPage, this, std::placeholders::_1), false, true);
 }
 
 void RecyclingListTab::loadPokemonData(const std::string& region)
@@ -95,6 +111,85 @@ void RecyclingListTab::loadPokemonData(const std::string& region)
     pokemons.clear();
     // Load Pokemon data from the specified region
     pokemons = PokemonDataLoader::loadPokemonFromRegion(region);
+}
+
+bool RecyclingListTab::jumpToPreviousPage(brls::View* view)
+{
+    // Get the current selection
+    brls::IndexPath currentSelection = this->dataSource->getCurrentSelection();
+
+    // Calculate the total number of rows
+    int totalRows = pokemons.size();
+
+    // If we're already at the first section, stay there
+    if (currentSelection.section == 0)
+    {
+        // If we're not at the first row, go to the first row of the current section
+        if (currentSelection.row > 0)
+        {
+            brls::IndexPath newIndexPath(0, 0);
+            recycler->selectRowAt(newIndexPath, true);
+            // Update the current selection in the data source
+            this->dataSource->setCurrentSelection(newIndexPath);
+        }
+        return true;
+    }
+
+    // Jump to the first row of the previous section
+    int newSection = currentSelection.section - 1;
+    int newRow = 0;
+
+    // Create the new index path
+    brls::IndexPath newIndexPath(newSection, newRow);
+
+    // Select the new row
+    recycler->selectRowAt(newIndexPath, true);
+
+    // Update the current selection in the data source
+    this->dataSource->setCurrentSelection(newIndexPath);
+
+    return true;
+}
+
+bool RecyclingListTab::jumpToNextPage(brls::View* view)
+{
+    // Get the current selection
+    brls::IndexPath currentSelection = this->dataSource->getCurrentSelection();
+
+    // Calculate the total number of sections
+    int totalSections = (pokemons.size() + 29) / 30; // Same calculation as in DataSource::numberOfSections
+
+    // If we're already at the last section
+    if (currentSelection.section == totalSections - 1)
+    {
+        // Calculate the number of rows in the last section
+        int rowsInLastSection = pokemons.size() - (totalSections - 1) * 30;
+
+        // If we're not at the last row, go to the last row of the current section
+        if (currentSelection.row < rowsInLastSection - 1)
+        {
+            brls::IndexPath newIndexPath(currentSelection.section, rowsInLastSection - 1);
+            recycler->selectRowAt(newIndexPath, true);
+            // Update the current selection in the data source
+            this->dataSource->setCurrentSelection(newIndexPath);
+        }
+        return true;
+    }
+
+    // Jump to the first row of the next section
+    int newSection = currentSelection.section + 1;
+    int newRow = 0;
+
+    // Create the new index path
+    brls::IndexPath newIndexPath(newSection, newRow);
+
+    // Select the new row
+    recycler->selectRowAt(newIndexPath, true);
+
+    // Update the current selection in the data source
+    this->dataSource->setCurrentSelection(newIndexPath);
+
+    return true;
 }
 
 brls::View* RecyclingListTab::create()

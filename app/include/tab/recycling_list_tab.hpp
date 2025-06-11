@@ -1,19 +1,3 @@
-/*
-    Copyright 2020-2021 natinusala
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-*/
-
 #pragma once
 
 #include <borealis.hpp>
@@ -42,11 +26,21 @@ class DataSource
     : public brls::RecyclerDataSource
 {
   public:
+    DataSource();
     int numberOfSections(brls::RecyclerFrame* recycler) override;
     int numberOfRows(brls::RecyclerFrame* recycler, int section) override;
     brls::RecyclerCell* cellForRow(brls::RecyclerFrame* recycler, brls::IndexPath index) override;
     void didSelectRowAt(brls::RecyclerFrame* recycler, brls::IndexPath indexPath) override;
     std::string titleForHeader(brls::RecyclerFrame* recycler, int section) override;
+
+    // Get the currently selected index path
+    brls::IndexPath getCurrentSelection() const { return currentSelection; }
+
+    // Set the currently selected index path
+    void setCurrentSelection(const brls::IndexPath& indexPath) { currentSelection = indexPath; }
+
+  private:
+    brls::IndexPath currentSelection;
 };
 
 class RecyclingListTab : public brls::Box
@@ -74,5 +68,10 @@ class RecyclingListTab : public brls::Box
     void loadPokemonData(const std::string& region);
 
   private:
+    // Jump to previous/next page (30 rows) using L/R buttons
+    bool jumpToPreviousPage(brls::View* view);
+    bool jumpToNextPage(brls::View* view);
+
     BRLS_BIND(brls::RecyclerFrame, recycler, "recycler");
+    DataSource* dataSource;
 };
