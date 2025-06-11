@@ -24,6 +24,7 @@ Built using the Borealis UI framework, pkDex provides a clean, intuitive interfa
   - Game version exclusivity
   - In-game locations
   - Images of both standard and shiny forms
+  - Packaged low resolution images, with dynamic loading high resolution if available on the SD card
 
 - **User-Friendly Interface**:
   - Organized by regions with section headers
