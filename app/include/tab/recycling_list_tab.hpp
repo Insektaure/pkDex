@@ -72,6 +72,9 @@ class RecyclingListTab : public brls::Box
     bool jumpToPreviousPage(brls::View* view);
     bool jumpToNextPage(brls::View* view);
 
+    // Ensure the cell at the given index path is fully visible
+    void ensureCellVisible(const brls::IndexPath& indexPath);
+
     BRLS_BIND(brls::RecyclerFrame, recycler, "recycler");
     DataSource* dataSource;
 };

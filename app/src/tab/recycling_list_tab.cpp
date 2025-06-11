@@ -128,10 +128,10 @@ bool RecyclingListTab::jumpToPreviousPage(brls::View* view)
         if (currentSelection.row > 0)
         {
             brls::IndexPath newIndexPath(0, 0);
-            // Smooth scroll to the first row
-            recycler->selectRowAt(newIndexPath, true);
             // Update the current selection in the data source
             this->dataSource->setCurrentSelection(newIndexPath);
+            // Ensure the cell is fully visible
+            ensureCellVisible(newIndexPath);
         }
         return true;
     }
@@ -143,12 +143,11 @@ bool RecyclingListTab::jumpToPreviousPage(brls::View* view)
     // Create the new index path
     brls::IndexPath newIndexPath(newSection, newRow);
 
-    // First update the data source's current selection
+    // Update the data source's current selection
     this->dataSource->setCurrentSelection(newIndexPath);
 
-    // Then smooth scroll to the new row
-    // This will scroll to the row without changing focus immediately
-    recycler->selectRowAt(newIndexPath, true);
+    // Ensure the cell is fully visible
+    ensureCellVisible(newIndexPath);
 
     return true;
 }
@@ -171,12 +170,11 @@ bool RecyclingListTab::jumpToNextPage(brls::View* view)
         if (currentSelection.row < rowsInLastSection - 1)
         {
             brls::IndexPath newIndexPath(currentSelection.section, rowsInLastSection - 1);
-            // First update the data source's current selection
+            // Update the data source's current selection
             this->dataSource->setCurrentSelection(newIndexPath);
 
-            // Then smooth scroll to the last row
-            // This will scroll to the row without changing focus immediately
-            recycler->selectRowAt(newIndexPath, true);
+            // Ensure the cell is fully visible
+            ensureCellVisible(newIndexPath);
         }
         return true;
     }
@@ -188,12 +186,11 @@ bool RecyclingListTab::jumpToNextPage(brls::View* view)
     // Create the new index path
     brls::IndexPath newIndexPath(newSection, newRow);
 
-    // First update the data source's current selection
+    // Update the data source's current selection
     this->dataSource->setCurrentSelection(newIndexPath);
 
-    // Then smooth scroll to the new row
-    // This will scroll to the row without changing focus immediately
-    recycler->selectRowAt(newIndexPath, true);
+    // Ensure the cell is fully visible
+    ensureCellVisible(newIndexPath);
 
     return true;
 }
@@ -244,4 +241,37 @@ brls::View* RecyclingListTab::createGalar()
 brls::View* RecyclingListTab::createPaldea()
 {
     return new RecyclingListTab("paldea");
+}
+
+void RecyclingListTab::ensureCellVisible(const brls::IndexPath& indexPath)
+{
+    // First, use selectRowAt to scroll to the cell (which tries to center it in the view)
+    recycler->selectRowAt(indexPath, true);
+
+    // Get the estimated row height (this is a rough approximation)
+    float estimatedRowHeight = recycler->estimatedRowHeight;
+
+    // Get the current content offset
+    float currentOffset = recycler->getContentOffsetY();
+
+    // Get the height of the recycler frame
+    float frameHeight = recycler->getHeight();
+
+    // Calculate the estimated position of the cell
+    float estimatedCellTop = currentOffset + (frameHeight / 2) - (estimatedRowHeight / 2);
+    float estimatedCellBottom = estimatedCellTop + estimatedRowHeight;
+
+    // Check if the estimated cell position is within the visible frame
+    if (estimatedCellTop < currentOffset)
+    {
+        // Cell might be partially above the visible area
+        // Add a small offset to ensure it's fully visible
+        recycler->setContentOffsetY(currentOffset - (estimatedRowHeight / 4), true);
+    }
+    else if (estimatedCellBottom > currentOffset + frameHeight)
+    {
+        // Cell might be partially below the visible area
+        // Add a small offset to ensure it's fully visible
+        recycler->setContentOffsetY(currentOffset + (estimatedRowHeight / 4), true);
+    }
 }
