@@ -56,11 +56,13 @@ int main(int argc, char* argv[])
 
     // Register region-specific factory methods
     brls::Application::registerXMLView("KantoTab", RecyclingListTab::createKanto);
-    brls::Application::registerXMLView("JohtoTab", RecyclingListTab::createJohto);
-    brls::Application::registerXMLView("HoennTab", RecyclingListTab::createHoenn);
+    //brls::Application::registerXMLView("JohtoTab", RecyclingListTab::createJohto);
+    //brls::Application::registerXMLView("HoennTab", RecyclingListTab::createHoenn);
     brls::Application::registerXMLView("SinnohTab", RecyclingListTab::createSinnoh);
     brls::Application::registerXMLView("SinnohArceusTab", RecyclingListTab::createSinnohArceus);
     brls::Application::registerXMLView("GalarTab", RecyclingListTab::createGalar);
+    brls::Application::registerXMLView("IsleArmorTab", RecyclingListTab::createIsleArmor);
+    brls::Application::registerXMLView("CrownTundraTab", RecyclingListTab::createCrownTundra);
     brls::Application::registerXMLView("PaldeaTab", RecyclingListTab::createPaldea);
     brls::Application::registerXMLView("KitakamiTab", RecyclingListTab::createKitakami);
     brls::Application::registerXMLView("BlueberryTab", RecyclingListTab::createBlueberry);

@@ -29,6 +29,14 @@
             <GalarTab/>
         </brls:Tab>
 
+        <brls:Tab label="Isle of Armor (Sword &amp; Shield DLC 1)">
+            <IsleArmorTab/>
+        </brls:Tab>
+
+        <brls:Tab label="Crown Tundra (Sword &amp; Shield DLC 2)">
+            <CrownTundraTab/>
+        </brls:Tab>
+
         <brls:Tab label="Paldea (Scarlet &amp; Violet)">
             <PaldeaTab/>
         </brls:Tab>

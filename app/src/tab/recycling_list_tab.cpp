@@ -175,15 +175,15 @@ brls::View* RecyclingListTab::createKanto()
     return new RecyclingListTab("kanto");
 }
 
-brls::View* RecyclingListTab::createJohto()
-{
-    return new RecyclingListTab("johto");
-}
-
-brls::View* RecyclingListTab::createHoenn()
-{
-    return new RecyclingListTab("hoenn");
-}
+//brls::View* RecyclingListTab::createJohto()
+//{
+//    return new RecyclingListTab("johto");
+//}
+//
+//brls::View* RecyclingListTab::createHoenn()
+//{
+//    return new RecyclingListTab("hoenn");
+//}
 
 brls::View* RecyclingListTab::createSinnoh()
 {
@@ -198,6 +198,16 @@ brls::View* RecyclingListTab::createSinnohArceus()
 brls::View* RecyclingListTab::createGalar()
 {
     return new RecyclingListTab("galar");
+}
+
+brls::View* RecyclingListTab::createIsleArmor()
+{
+    return new RecyclingListTab("isle_armor");
+}
+
+brls::View* RecyclingListTab::createCrownTundra()
+{
+    return new RecyclingListTab("crown_tundra");
 }
 
 brls::View* RecyclingListTab::createPaldea()
