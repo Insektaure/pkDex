@@ -1,39 +1,922 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pokedex region="kanto">
-    <pokemon id="001" name="Bulbasaur" regionalDexNumber="001" type="Grass/Poison">
-        <evolution>Bulbasaur → Ivysaur → Venusaur</evolution>
-        <locations>Viridian Forest, Route 2</locations>
+
+    <pokemon id="001" name="Bulbasaur" regionalDexNumber="001" type="Grass / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
+
+    <pokemon id="002" name="Ivysaur" regionalDexNumber="002" type="Grass / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="003" name="Venusaur" regionalDexNumber="003" type="Grass / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
     <pokemon id="004" name="Charmander" regionalDexNumber="004" type="Fire">
-        <evolution>Charmander → Charmeleon → Charizard</evolution>
-        <locations>Route 24, Route 25</locations>
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
+
+    <pokemon id="005" name="Charmeleon" regionalDexNumber="005" type="Fire">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="006" name="Charizard" regionalDexNumber="006" type="Fire / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
     <pokemon id="007" name="Squirtle" regionalDexNumber="007" type="Water">
-        <evolution>Squirtle → Wartortle → Blastoise</evolution>
-        <locations>Route 6, Route 11</locations>
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
+
+    <pokemon id="008" name="Wartortle" regionalDexNumber="008" type="Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="009" name="Blastoise" regionalDexNumber="009" type="Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="010" name="Caterpie" regionalDexNumber="010" type="Bug">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
     <pokemon id="011" name="Metapod" regionalDexNumber="011" type="Bug">
-        <evolution>Caterpie → Metapod → Butterfree</evolution>
-        <locations>Viridian Forest</locations>
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="014" name="Kakuna" regionalDexNumber="014" type="Bug/Poison">
-        <evolution>Weedle → Kakuna → Beedrill</evolution>
-        <locations>Viridian Forest</locations>
+
+    <pokemon id="012" name="Butterfree" regionalDexNumber="012" type="Bug / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="017" name="Pidgeotto" regionalDexNumber="017" type="Normal/Flying">
-        <evolution>Pidgey → Pidgeotto → Pidgeot</evolution>
-        <locations>Route 14, Route 15</locations>
+
+    <pokemon id="013" name="Weedle" regionalDexNumber="013" type="Bug / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="021" name="Spearow" regionalDexNumber="021" type="Normal/Flying">
-        <evolution>Spearow → Fearow</evolution>
-        <locations>Route 3, Route 4</locations>
+
+    <pokemon id="014" name="Kakuna" regionalDexNumber="014" type="Bug / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
+
+    <pokemon id="015" name="Beedrill" regionalDexNumber="015" type="Bug / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="016" name="Pidgey" regionalDexNumber="016" type="Normal / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="017" name="Pidgeotto" regionalDexNumber="017" type="Normal / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="018" name="Pidgeot" regionalDexNumber="018" type="Normal / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="019" name="Rattata" regionalDexNumber="019" type="Normal">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="020" name="Raticate" regionalDexNumber="020" type="Normal">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="021" name="Spearow" regionalDexNumber="021" type="Normal / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="022" name="Fearow" regionalDexNumber="022" type="Normal / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="023" name="Ekans" regionalDexNumber="023" type="Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
     <pokemon id="024" name="Arbok" regionalDexNumber="024" type="Poison">
-        <evolution>Ekans → Arbok</evolution>
-        <locations>Route 23</locations>
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
+
+    <pokemon id="025" name="Pikachu" regionalDexNumber="025" type="Electric">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="026" name="Raichu" regionalDexNumber="026" type="Electric">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
     <pokemon id="027" name="Sandshrew" regionalDexNumber="027" type="Ground">
-        <evolution>Sandshrew → Sandslash</evolution>
-        <locations>Route 4, Route 8, Route 9</locations>
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
+
+    <pokemon id="028" name="Sandslash" regionalDexNumber="028" type="Ground">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="029" name="Nidoran♀" regionalDexNumber="029" type="Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="030" name="Nidorina" regionalDexNumber="030" type="Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="031" name="Nidoqueen" regionalDexNumber="031" type="Poison / Ground">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="032" name="Nidoran♂" regionalDexNumber="032" type="Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="033" name="Nidorino" regionalDexNumber="033" type="Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="034" name="Nidoking" regionalDexNumber="034" type="Poison / Ground">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="035" name="Clefairy" regionalDexNumber="035" type="Fairy">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="036" name="Clefable" regionalDexNumber="036" type="Fairy">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="037" name="Vulpix" regionalDexNumber="037" type="Fire">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="038" name="Ninetales" regionalDexNumber="038" type="Fire">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="039" name="Jigglypuff" regionalDexNumber="039" type="Normal / Fairy">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="040" name="Wigglytuff" regionalDexNumber="040" type="Normal / Fairy">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="041" name="Zubat" regionalDexNumber="041" type="Poison / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="042" name="Golbat" regionalDexNumber="042" type="Poison / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="043" name="Oddish" regionalDexNumber="043" type="Grass / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="044" name="Gloom" regionalDexNumber="044" type="Grass / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="045" name="Vileplume" regionalDexNumber="045" type="Grass / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="046" name="Paras" regionalDexNumber="046" type="Bug / Grass">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="047" name="Parasect" regionalDexNumber="047" type="Bug / Grass">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="048" name="Venonat" regionalDexNumber="048" type="Bug / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="049" name="Venomoth" regionalDexNumber="049" type="Bug / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="050" name="Diglett" regionalDexNumber="050" type="Ground">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="051" name="Dugtrio" regionalDexNumber="051" type="Ground">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="052" name="Meowth" regionalDexNumber="052" type="Normal">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="053" name="Persian" regionalDexNumber="053" type="Normal">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="054" name="Psyduck" regionalDexNumber="054" type="Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="055" name="Golduck" regionalDexNumber="055" type="Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="056" name="Mankey" regionalDexNumber="056" type="Fighting">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="057" name="Primeape" regionalDexNumber="057" type="Fighting">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="058" name="Growlithe" regionalDexNumber="058" type="Fire">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="059" name="Arcanine" regionalDexNumber="059" type="Fire">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="060" name="Poliwag" regionalDexNumber="060" type="Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="061" name="Poliwhirl" regionalDexNumber="061" type="Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="062" name="Poliwrath" regionalDexNumber="062" type="Water / Fighting">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="063" name="Abra" regionalDexNumber="063" type="Psychic">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="064" name="Kadabra" regionalDexNumber="064" type="Psychic">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="065" name="Alakazam" regionalDexNumber="065" type="Psychic">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="066" name="Machop" regionalDexNumber="066" type="Fighting">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="067" name="Machoke" regionalDexNumber="067" type="Fighting">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="068" name="Machamp" regionalDexNumber="068" type="Fighting">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="069" name="Bellsprout" regionalDexNumber="069" type="Grass / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="070" name="Weepinbell" regionalDexNumber="070" type="Grass / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="071" name="Victreebel" regionalDexNumber="071" type="Grass / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="072" name="Tentacool" regionalDexNumber="072" type="Water / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="073" name="Tentacruel" regionalDexNumber="073" type="Water / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="074" name="Geodude" regionalDexNumber="074" type="Rock / Ground">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="075" name="Graveler" regionalDexNumber="075" type="Rock / Ground">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="076" name="Golem" regionalDexNumber="076" type="Rock / Ground">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="077" name="Ponyta" regionalDexNumber="077" type="Fire">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="078" name="Rapidash" regionalDexNumber="078" type="Fire">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="079" name="Slowpoke" regionalDexNumber="079" type="Water / Psychic">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="080" name="Slowbro" regionalDexNumber="080" type="Water / Psychic">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="081" name="Magnemite" regionalDexNumber="081" type="Electric / Steel">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="082" name="Magneton" regionalDexNumber="082" type="Electric / Steel">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="083" name="Farfetch'd" regionalDexNumber="083" type="Normal / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="084" name="Doduo" regionalDexNumber="084" type="Normal / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="085" name="Dodrio" regionalDexNumber="085" type="Normal / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="086" name="Seel" regionalDexNumber="086" type="Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="087" name="Dewgong" regionalDexNumber="087" type="Water / Ice">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="088" name="Grimer" regionalDexNumber="088" type="Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="089" name="Muk" regionalDexNumber="089" type="Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="090" name="Shellder" regionalDexNumber="090" type="Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="091" name="Cloyster" regionalDexNumber="091" type="Water / Ice">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="092" name="Gastly" regionalDexNumber="092" type="Ghost / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="093" name="Haunter" regionalDexNumber="093" type="Ghost / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="094" name="Gengar" regionalDexNumber="094" type="Ghost / Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="095" name="Onix" regionalDexNumber="095" type="Rock / Ground">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="096" name="Drowzee" regionalDexNumber="096" type="Psychic">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="097" name="Hypno" regionalDexNumber="097" type="Psychic">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="098" name="Krabby" regionalDexNumber="098" type="Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="099" name="Kingler" regionalDexNumber="099" type="Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="100" name="Voltorb" regionalDexNumber="100" type="Electric">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="101" name="Electrode" regionalDexNumber="101" type="Electric">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="102" name="Exeggcute" regionalDexNumber="102" type="Grass / Psychic">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="103" name="Exeggutor" regionalDexNumber="103" type="Grass / Psychic">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="104" name="Cubone" regionalDexNumber="104" type="Ground">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="105" name="Marowak" regionalDexNumber="105" type="Ground">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="106" name="Hitmonlee" regionalDexNumber="106" type="Fighting">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="107" name="Hitmonchan" regionalDexNumber="107" type="Fighting">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="108" name="Lickitung" regionalDexNumber="108" type="Normal">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="109" name="Koffing" regionalDexNumber="109" type="Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="110" name="Weezing" regionalDexNumber="110" type="Poison">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="111" name="Rhyhorn" regionalDexNumber="111" type="Ground / Rock">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="112" name="Rhydon" regionalDexNumber="112" type="Ground / Rock">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="113" name="Chansey" regionalDexNumber="113" type="Normal">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="114" name="Tangela" regionalDexNumber="114" type="Grass">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="115" name="Kangaskhan" regionalDexNumber="115" type="Normal">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="116" name="Horsea" regionalDexNumber="116" type="Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="117" name="Seadra" regionalDexNumber="117" type="Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="118" name="Goldeen" regionalDexNumber="118" type="Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="119" name="Seaking" regionalDexNumber="119" type="Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="120" name="Staryu" regionalDexNumber="120" type="Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="121" name="Starmie" regionalDexNumber="121" type="Water / Psychic">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="122" name="Mr. Mime" regionalDexNumber="122" type="Psychic / Fairy">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="123" name="Scyther" regionalDexNumber="123" type="Bug / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="124" name="Jynx" regionalDexNumber="124" type="Ice / Psychic">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="125" name="Electabuzz" regionalDexNumber="125" type="Electric">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="126" name="Magmar" regionalDexNumber="126" type="Fire">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="127" name="Pinsir" regionalDexNumber="127" type="Bug">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="128" name="Tauros" regionalDexNumber="128" type="Normal">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="129" name="Magikarp" regionalDexNumber="129" type="Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="130" name="Gyarados" regionalDexNumber="130" type="Water / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="131" name="Lapras" regionalDexNumber="131" type="Water / Ice">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="132" name="Ditto" regionalDexNumber="132" type="Normal">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="133" name="Eevee" regionalDexNumber="133" type="Normal">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="134" name="Vaporeon" regionalDexNumber="134" type="Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="135" name="Jolteon" regionalDexNumber="135" type="Electric">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="136" name="Flareon" regionalDexNumber="136" type="Fire">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="137" name="Porygon" regionalDexNumber="137" type="Normal">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="138" name="Omanyte" regionalDexNumber="138" type="Rock / Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="139" name="Omastar" regionalDexNumber="139" type="Rock / Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="140" name="Kabuto" regionalDexNumber="140" type="Rock / Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="141" name="Kabutops" regionalDexNumber="141" type="Rock / Water">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="142" name="Aerodactyl" regionalDexNumber="142" type="Rock / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="143" name="Snorlax" regionalDexNumber="143" type="Normal">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="144" name="Articuno" regionalDexNumber="144" type="Ice / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="145" name="Zapdos" regionalDexNumber="145" type="Electric / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="146" name="Moltres" regionalDexNumber="146" type="Fire / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="147" name="Dratini" regionalDexNumber="147" type="Dragon">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="148" name="Dragonair" regionalDexNumber="148" type="Dragon">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="149" name="Dragonite" regionalDexNumber="149" type="Dragon / Flying">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="150" name="Mewtwo" regionalDexNumber="150" type="Psychic">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="151" name="Mew" regionalDexNumber="151" type="Psychic">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="808" name="Meltan" regionalDexNumber="152" type="Steel">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+    <pokemon id="809" name="Melmetal" regionalDexNumber="153" type="Steel">
+        <evolution></evolution>
+        <locations></locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
 </pokedex>
