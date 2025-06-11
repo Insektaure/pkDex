@@ -17,6 +17,8 @@
 #include "view/pokemon_view.hpp"
 
 #include <borealis/core/i18n.hpp>
+#include <borealis/core/logger.hpp>
+#include <unistd.h>
 
 using namespace brls::literals;
 
@@ -55,8 +57,8 @@ PokemonView::PokemonView(Pokemon pokemon)
 //    getAppletFrameItem()->hintView = holder;
 
     // Set images
-    standard_image->setImageFromRes("img/pokemon/full/" + pokemon.id + ".png");
-    shiny_image->setImageFromRes("img/pokemon/shiny/" + pokemon.id + ".png");
+    loadHighResImage(standard_image, "img/pokemon/full", pokemon.id);
+    loadHighResImage(shiny_image, "img/pokemon/shiny", pokemon.id);
 
     // Set text fields
     national_dex->setText(pokemon.id);
@@ -66,6 +68,20 @@ PokemonView::PokemonView(Pokemon pokemon)
     exclusive_version->setText(pokemon.exclusiveVersion);
     locations->setText(pokemon.locations);
 
+}
+
+void PokemonView::loadHighResImage(brls::Image* image, const std::string& path, const std::string& id)
+{
+    std::string sdPath = "/switch/pkDex/resources/" + path + "/" + id + ".png";
+    if (access(sdPath.c_str(), F_OK) != -1) {
+        // File exists on SD card
+        //brls::Logger::info("Loading high-res image from SD card: {}", sdPath);
+        image->setImageFromFile(sdPath);
+    } else {
+        // Fall back to embedded resource
+        //brls::Logger::info("High-res image not found on SD card, using embedded resource: {}", path + "/" + id + ".png");
+        image->setImageFromRes(path + "/" + id + ".png");
+    }
 }
 
 brls::View* PokemonView::create()

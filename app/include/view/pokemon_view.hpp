@@ -54,6 +54,7 @@ class PokemonView : public brls::Box
 
   private:
     Pokemon pokemon;
+    void loadHighResImage(brls::Image* image, const std::string& path, const std::string& id);
     BRLS_BIND(brls::Image, standard_image, "standard_image");
     BRLS_BIND(brls::Image, shiny_image, "shiny_image");
     BRLS_BIND(brls::Label, national_dex, "national_dex");
