@@ -1,19 +1,3 @@
-/*
-    Copyright 2020-2021 natinusala
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-*/
-
 #include "tab/recycling_list_tab.hpp"
 #include "view/pokemon_view.hpp"
 #include "data/pokemon_data_loader.hpp"
@@ -124,8 +108,8 @@ bool RecyclingListTab::jumpToPreviousPage(brls::View* view)
     // Calculate the current absolute index
     int currentIndex = currentSelection.section * 30 + currentSelection.row;
 
-    // Calculate the new absolute index (jump back by 15 rows)
-    int newIndex = std::max(0, currentIndex - 15);
+    // Calculate the new absolute index (jump back by 30 rows)
+    int newIndex = std::max(0, currentIndex - 30);
 
     // Calculate the new section and row
     int newSection = newIndex / 30;
@@ -154,8 +138,8 @@ bool RecyclingListTab::jumpToNextPage(brls::View* view)
     // Calculate the current absolute index
     int currentIndex = currentSelection.section * 30 + currentSelection.row;
 
-    // Calculate the new absolute index (jump forward by 15 rows)
-    int newIndex = std::min(totalRows - 1, currentIndex + 15);
+    // Calculate the new absolute index (jump forward by 30 rows)
+    int newIndex = std::min(totalRows - 1, currentIndex + 30);
 
     // Calculate the new section and row
     int newSection = newIndex / 30;
