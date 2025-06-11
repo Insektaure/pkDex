@@ -5,8 +5,28 @@
         title="@i18n/demo/title"
         icon="@res/img/borealis_96.png">
 
+        <brls:Tab label="Kanto">
+            <KantoTab/>
+        </brls:Tab>
+
+        <brls:Tab label="Johto">
+            <JohtoTab/>
+        </brls:Tab>
+
+        <brls:Tab label="Hoenn">
+            <HoennTab/>
+        </brls:Tab>
+
+        <brls:Tab label="Sinnoh">
+            <SinnohTab/>
+        </brls:Tab>
+
+        <brls:Tab label="Galar">
+            <GalarTab/>
+        </brls:Tab>
+
         <brls:Tab label="Paldea">
-            <RecyclingListTab/>
+            <PaldeaTab/>
         </brls:Tab>
 
         <brls:Separator />

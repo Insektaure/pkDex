@@ -53,8 +53,21 @@ class RecyclingListTab : public brls::Box
 {
   public:
     RecyclingListTab();
+    RecyclingListTab(const std::string& region);
 
+    // Factory method for XML engine (default region)
     static brls::View* create();
+
+    // Factory method with specific region
+    static brls::View* create(const std::string& region);
+
+    // Factory methods for specific regions
+    static brls::View* createKanto();
+    static brls::View* createJohto();
+    static brls::View* createHoenn();
+    static brls::View* createSinnoh();
+    static brls::View* createGalar();
+    static brls::View* createPaldea();
 
     // Load Pokemon data from a file
     void loadPokemonData(const std::string& region);

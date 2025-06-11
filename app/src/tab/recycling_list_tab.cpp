@@ -72,13 +72,17 @@ void DataSource::didSelectRowAt(brls::RecyclerFrame* recycler, brls::IndexPath i
 // RECYCLER VIEW
 
 RecyclingListTab::RecyclingListTab()
+    : RecyclingListTab("paldea") // Default to Paldea region
+{
+}
+
+RecyclingListTab::RecyclingListTab(const std::string& region)
 {
     // Inflate the tab from the XML file
     this->inflateFromXMLRes("xml/tabs/recycling_list.xml");
 
-    pokemons.clear();
-    // Load Pokemon data from the Kanto region
-    pokemons = PokemonDataLoader::loadPokemonFromRegion("paldea");
+    // Load Pokemon data from the specified region
+    loadPokemonData(region);
 
     recycler->estimatedRowHeight = 70;
     recycler->registerCell("Header", []() { return RecyclerHeader::create(); });
@@ -86,8 +90,52 @@ RecyclingListTab::RecyclingListTab()
     recycler->setDataSource(new DataSource());
 }
 
+void RecyclingListTab::loadPokemonData(const std::string& region)
+{
+    pokemons.clear();
+    // Load Pokemon data from the specified region
+    pokemons = PokemonDataLoader::loadPokemonFromRegion(region);
+}
+
 brls::View* RecyclingListTab::create()
 {
-    // Called by the XML engine to create a new RecyclingListTab
-    return new RecyclingListTab();
+    // Called by the XML engine to create a new RecyclingListTab with default region
+    return new RecyclingListTab("paldea");
+}
+
+brls::View* RecyclingListTab::create(const std::string& region)
+{
+    // Create a new RecyclingListTab with the specified region
+    return new RecyclingListTab(region);
+}
+
+// Factory methods for specific regions
+brls::View* RecyclingListTab::createKanto()
+{
+    return new RecyclingListTab("kanto");
+}
+
+brls::View* RecyclingListTab::createJohto()
+{
+    return new RecyclingListTab("johto");
+}
+
+brls::View* RecyclingListTab::createHoenn()
+{
+    return new RecyclingListTab("hoenn");
+}
+
+brls::View* RecyclingListTab::createSinnoh()
+{
+    return new RecyclingListTab("sinnoh");
+}
+
+brls::View* RecyclingListTab::createGalar()
+{
+    return new RecyclingListTab("galar");
+}
+
+brls::View* RecyclingListTab::createPaldea()
+{
+    return new RecyclingListTab("paldea");
 }

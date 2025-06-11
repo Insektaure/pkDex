@@ -69,7 +69,16 @@ int main(int argc, char* argv[])
 
     // Register custom views (including tabs, which are views)
     brls::Application::registerXMLView("CaptionedImage", CaptionedImage::create);
-    brls::Application::registerXMLView("RecyclingListTab", RecyclingListTab::create);
+    brls::Application::registerXMLView("RecyclingListTab", static_cast<brls::View*(*)(void)>(RecyclingListTab::create));
+
+    // Register region-specific factory methods
+    brls::Application::registerXMLView("KantoTab", RecyclingListTab::createKanto);
+    brls::Application::registerXMLView("JohtoTab", RecyclingListTab::createJohto);
+    brls::Application::registerXMLView("HoennTab", RecyclingListTab::createHoenn);
+    brls::Application::registerXMLView("SinnohTab", RecyclingListTab::createSinnoh);
+    brls::Application::registerXMLView("GalarTab", RecyclingListTab::createGalar);
+    brls::Application::registerXMLView("PaldeaTab", RecyclingListTab::createPaldea);
+
     brls::Application::registerXMLView("ComponentsTab", ComponentsTab::create);
     brls::Application::registerXMLView("TransformTab", TransformTab::create);
     brls::Application::registerXMLView("TransformBox", TransformBox::create);
