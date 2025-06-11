@@ -68,7 +68,7 @@ class RecyclingListTab : public brls::Box
     void loadPokemonData(const std::string& region);
 
   private:
-    // Jump to previous/next page (30 rows) using L/R buttons
+    // Jump to previous/next page (15 rows) using L/R buttons
     bool jumpToPreviousPage(brls::View* view);
     bool jumpToNextPage(brls::View* view);
 

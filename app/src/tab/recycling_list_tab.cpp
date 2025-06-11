@@ -223,8 +223,8 @@ brls::View* RecyclingListTab::createPaldea()
 
 void RecyclingListTab::ensureCellVisible(const brls::IndexPath& indexPath)
 {
-    // First, use selectRowAt to scroll to the cell (which tries to center it in the view)
-    recycler->selectRowAt(indexPath, true);
+    // Use selectRowAt to select the cell but don't center it in the view
+    recycler->selectRowAt(indexPath, false);
 
     // Get the estimated row height (this is a rough approximation)
     float estimatedRowHeight = recycler->estimatedRowHeight;
@@ -236,21 +236,18 @@ void RecyclingListTab::ensureCellVisible(const brls::IndexPath& indexPath)
     float frameHeight = recycler->getHeight();
 
     // Calculate the estimated position of the cell
-    float estimatedCellTop = currentOffset + (frameHeight / 2) - (estimatedRowHeight / 2);
-    float estimatedCellBottom = estimatedCellTop + estimatedRowHeight;
+    float estimatedCellPosition = indexPath.section * 30 * estimatedRowHeight + indexPath.row * estimatedRowHeight;
 
-    // Check if the estimated cell position is within the visible frame
-    if (estimatedCellTop < currentOffset)
+    // Check if the cell is outside the visible area
+    if (estimatedCellPosition < currentOffset)
     {
-        // Cell might be partially above the visible area
-        // Add a larger offset to ensure it's fully visible
-        recycler->setContentOffsetY(currentOffset - (estimatedRowHeight / 2), true);
+        // Cell is above the visible area, scroll to make it visible at the top
+        recycler->setContentOffsetY(estimatedCellPosition, true);
     }
-    else if (estimatedCellBottom > currentOffset + frameHeight)
+    else if (estimatedCellPosition + estimatedRowHeight > currentOffset + frameHeight)
     {
-        // Cell might be partially below the visible area
-        // Add a larger offset to ensure it's fully visible
-        recycler->setContentOffsetY(currentOffset + (estimatedRowHeight / 2), true);
+        // Cell is below the visible area, scroll to make it visible at the bottom
+        recycler->setContentOffsetY(estimatedCellPosition + estimatedRowHeight - frameHeight, true);
     }
 
     // Force a refresh of the recycler to ensure all cells are properly positioned
