@@ -34,13 +34,11 @@ RecyclerCell* RecyclerCell::create()
 
 int DataSource::numberOfSections(brls::RecyclerFrame* recycler)
 {
-    //return 2;
     return (pokemons.size() + 29) / 30; // Round up to account for remaining rows
 }
 
 int DataSource::numberOfRows(brls::RecyclerFrame* recycler, int section)
 {
-    //return pokemons.size();
     int startIndex = section * 30;
     int remainingRows = pokemons.size() - startIndex;
     return std::min(remainingRows, 30); // Return up to 30 rows per section
@@ -48,9 +46,6 @@ int DataSource::numberOfRows(brls::RecyclerFrame* recycler, int section)
 
 std::string DataSource::titleForHeader(brls::RecyclerFrame* recycler, int section) 
 {
-//    if (section == 0)
-//        return "";
-//    return "Section #" + std::to_string(section+1);
     int startIndex = section * 30 + 1; // Start index for the section (1-based)
     int endIndex = std::min((section + 1) * 30, (int)pokemons.size()); // End index for the section
     return std::to_string(startIndex) + " - " + std::to_string(endIndex);
@@ -58,16 +53,20 @@ std::string DataSource::titleForHeader(brls::RecyclerFrame* recycler, int sectio
 
 brls::RecyclerCell* DataSource::cellForRow(brls::RecyclerFrame* recycler, brls::IndexPath indexPath)
 {
+    // Calculate the actual index based on section and row
+    int actualIndex = indexPath.section * 30 + indexPath.row;
+
     RecyclerCell* item = (RecyclerCell*)recycler->dequeueReusableCell("Cell");
-    item->label->setText(pokemons[indexPath.row].regionalDexNumber + " - " + pokemons[indexPath.row].name);
-    item->image->setImageFromRes("img/pokemon/icons/" + pokemons[indexPath.row].id + ".png");
+    item->label->setText(pokemons[actualIndex].regionalDexNumber + " - " + pokemons[actualIndex].name);
+    item->image->setImageFromRes("img/pokemon/icons/" + pokemons[actualIndex].id + ".png");
     return item;
 }
 
 void DataSource::didSelectRowAt(brls::RecyclerFrame* recycler, brls::IndexPath indexPath)
 {
-//    brls::Logger::info("Item Index(" + std::to_string(index.section) + ":" + std::to_string(index.row) + ") selected.");
-    recycler->present(new PokemonView(pokemons[indexPath.row]));
+    // Calculate the actual index based on section and row, same as in cellForRow
+    int actualIndex = indexPath.section * 30 + indexPath.row;
+    recycler->present(new PokemonView(pokemons[actualIndex]));
 }
 
 // RECYCLER VIEW
