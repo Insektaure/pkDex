@@ -2,7 +2,7 @@
     iconInterpolation="linear"
     footerHidden="false">
     <brls:TabFrame
-        title="@i18n/demo/title"
+        title="@i18n/pkdex/title"
         icon="@res/img/pkdex_96.png">
 
         <brls:Tab label="Kanto (Let's Go! Pikachu &amp; Eevee)">
@@ -36,7 +36,7 @@
         <brls:Separator />
 
         <!-- Static tab with inline XML -->
-        <brls:Tab label="@i18n/demo/tabs/about" >
+        <brls:Tab label="@i18n/pkdex/tabs/about" >
 
             <brls:Box
                 width="auto"
@@ -62,7 +62,7 @@
                     <brls:Label
                         width="40%"
                         height="auto"
-                        text="@i18n/demo/about/title"
+                        text="@i18n/pkdex/about/title"
                         fontSize="36"
                         horizontalAlign="right"
                         verticalAlign="top" />
@@ -70,7 +70,7 @@
                     <brls:Label
                         width="auto"
                         height="auto"
-                        text="@i18n/demo/about/description"
+                        text="@i18n/pkdex/about/description"
                         marginLeft="@style/about/description_margin" />
 
                 </brls:Box>
@@ -86,17 +86,17 @@
                     <brls:Label
                         width="auto"
                         height="auto"
-                        text="@i18n/demo/about/github" />
+                        text="@i18n/pkdex/about/github" />
 
                     <brls:Label
                         width="auto"
                         height="auto"
-                        text="@i18n/demo/about/licence" />
+                        text="@i18n/pkdex/about/licence" />
 
                     <brls:Label
                         width="auto"
                         height="auto"
-                        text="@i18n/demo/about/logo_credit" />
+                        text="@i18n/pkdex/about/logo_credit" />
 
                 </brls:Box>
 

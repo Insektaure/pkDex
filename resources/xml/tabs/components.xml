@@ -19,7 +19,7 @@
                 <brls:Label
                     width="auto"
                     height="auto"
-                    text="@i18n/demo/welcome"
+                    text="@i18n/pkdex/welcome"
                     marginBottom="10px" />
 
                 <!-- HScroll -->
@@ -44,7 +44,7 @@
                             imageWidth="auto"
                             imageHeight="auto"
                             image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
+                            caption="@i18n/pkdex/components/images_original"
                             paddingRight="6" />
                         <CaptionedImage
                             width="auto"
@@ -52,7 +52,7 @@
                             imageWidth="auto"
                             imageHeight="auto"
                             image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
+                            caption="@i18n/pkdex/components/images_original"
                             paddingRight="6" />
                         <CaptionedImage
                             width="auto"
@@ -60,7 +60,7 @@
                             imageWidth="auto"
                             imageHeight="auto"
                             image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
+                            caption="@i18n/pkdex/components/images_original"
                             paddingRight="6" />
                         <CaptionedImage
                             width="auto"
@@ -68,7 +68,7 @@
                             imageWidth="auto"
                             imageHeight="auto"
                             image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
+                            caption="@i18n/pkdex/components/images_original"
                             paddingRight="6" />
                         <CaptionedImage
                             width="auto"
@@ -76,7 +76,7 @@
                             imageWidth="auto"
                             imageHeight="auto"
                             image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
+                            caption="@i18n/pkdex/components/images_original"
                             paddingRight="6" />
                         <CaptionedImage
                             width="auto"
@@ -84,7 +84,7 @@
                             imageWidth="auto"
                             imageHeight="auto"
                             image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
+                            caption="@i18n/pkdex/components/images_original"
                             paddingRight="6" />
                         <CaptionedImage
                             width="auto"
@@ -92,7 +92,7 @@
                             imageWidth="auto"
                             imageHeight="auto"
                             image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
+                            caption="@i18n/pkdex/components/images_original"
                             paddingRight="6" />
                         <CaptionedImage
                             width="auto"
@@ -100,7 +100,7 @@
                             imageWidth="auto"
                             imageHeight="auto"
                             image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
+                            caption="@i18n/pkdex/components/images_original"
                             paddingRight="6" />
                         <CaptionedImage
                             width="auto"
@@ -108,7 +108,7 @@
                             imageWidth="auto"
                             imageHeight="auto"
                             image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
+                            caption="@i18n/pkdex/components/images_original"
                             paddingRight="6" />
 
                     </brls:Box>
@@ -119,7 +119,7 @@
                 <brls:Header
                     width="auto"
                     height="auto"
-                    title="@i18n/demo/components/buttons_header"
+                    title="@i18n/pkdex/components/buttons_header"
                     marginBottom="30px" />
 
                 <brls:Box
