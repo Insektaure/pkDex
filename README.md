@@ -78,7 +78,7 @@ Built using the Borealis UI framework, pkDex provides a clean, intuitive interfa
 
 3. The output will be a `.nro` file in the `build_switch`folder that can be run on a Nintendo Switch with custom firmware.
 
-If youy want to speed up the build process, you can use edit the `Makefile` and replace
+If you want to speed up the build process, you can use edit the `Makefile` and replace
 
 ```makefile
 make -C build_switch pkDex.nro -j2
