@@ -121,24 +121,15 @@ bool RecyclingListTab::jumpToPreviousPage(brls::View* view)
     // Calculate the total number of rows
     int totalRows = pokemons.size();
 
-    // If we're already at the first section, stay there
-    if (currentSelection.section == 0)
-    {
-        // If we're not at the first row, go to the first row of the current section
-        if (currentSelection.row > 0)
-        {
-            brls::IndexPath newIndexPath(0, 0);
-            // Update the current selection in the data source
-            this->dataSource->setCurrentSelection(newIndexPath);
-            // Ensure the cell is fully visible
-            ensureCellVisible(newIndexPath);
-        }
-        return true;
-    }
+    // Calculate the current absolute index
+    int currentIndex = currentSelection.section * 30 + currentSelection.row;
 
-    // Scroll to the first row of the previous section
-    int newSection = currentSelection.section - 1;
-    int newRow = 0;
+    // Calculate the new absolute index (jump back by 15 rows)
+    int newIndex = std::max(0, currentIndex - 15);
+
+    // Calculate the new section and row
+    int newSection = newIndex / 30;
+    int newRow = newIndex % 30;
 
     // Create the new index path
     brls::IndexPath newIndexPath(newSection, newRow);
@@ -157,31 +148,18 @@ bool RecyclingListTab::jumpToNextPage(brls::View* view)
     // Get the current selection
     brls::IndexPath currentSelection = this->dataSource->getCurrentSelection();
 
-    // Calculate the total number of sections
-    int totalSections = (pokemons.size() + 29) / 30; // Same calculation as in DataSource::numberOfSections
+    // Calculate the total number of rows
+    int totalRows = pokemons.size();
 
-    // If we're already at the last section
-    if (currentSelection.section == totalSections - 1)
-    {
-        // Calculate the number of rows in the last section
-        int rowsInLastSection = pokemons.size() - (totalSections - 1) * 30;
+    // Calculate the current absolute index
+    int currentIndex = currentSelection.section * 30 + currentSelection.row;
 
-        // If we're not at the last row, go to the last row of the current section
-        if (currentSelection.row < rowsInLastSection - 1)
-        {
-            brls::IndexPath newIndexPath(currentSelection.section, rowsInLastSection - 1);
-            // Update the data source's current selection
-            this->dataSource->setCurrentSelection(newIndexPath);
+    // Calculate the new absolute index (jump forward by 15 rows)
+    int newIndex = std::min(totalRows - 1, currentIndex + 15);
 
-            // Ensure the cell is fully visible
-            ensureCellVisible(newIndexPath);
-        }
-        return true;
-    }
-
-    // Scroll to the first row of the next section
-    int newSection = currentSelection.section + 1;
-    int newRow = 0;
+    // Calculate the new section and row
+    int newSection = newIndex / 30;
+    int newRow = newIndex % 30;
 
     // Create the new index path
     brls::IndexPath newIndexPath(newSection, newRow);
@@ -265,13 +243,20 @@ void RecyclingListTab::ensureCellVisible(const brls::IndexPath& indexPath)
     if (estimatedCellTop < currentOffset)
     {
         // Cell might be partially above the visible area
-        // Add a small offset to ensure it's fully visible
-        recycler->setContentOffsetY(currentOffset - (estimatedRowHeight / 4), true);
+        // Add a larger offset to ensure it's fully visible
+        recycler->setContentOffsetY(currentOffset - (estimatedRowHeight / 2), true);
     }
     else if (estimatedCellBottom > currentOffset + frameHeight)
     {
         // Cell might be partially below the visible area
-        // Add a small offset to ensure it's fully visible
-        recycler->setContentOffsetY(currentOffset + (estimatedRowHeight / 4), true);
+        // Add a larger offset to ensure it's fully visible
+        recycler->setContentOffsetY(currentOffset + (estimatedRowHeight / 2), true);
     }
+
+    // Force a refresh of the recycler to ensure all cells are properly positioned
+    recycler->invalidate();
+
+    // Give focus to the recycler itself to ensure joystick scrolling works properly
+    // This will trigger the recycler's focus handling mechanism
+    brls::Application::giveFocus(recycler);
 }
