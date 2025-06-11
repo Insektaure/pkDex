@@ -32,7 +32,7 @@
                 id="standard_image"
                 width="auto"
                 height="150px"
-                image="@res/img/borealis_256.png"/>
+                image="@res/img/placeholder_256.png"/>
         </brls:Box>
 
         <brls:Box
@@ -51,7 +51,7 @@
                 id="shiny_image"
                 width="auto"
                 height="150px"
-                image="@res/img/borealis_256.png"/>
+                image="@res/img/placeholder_256.png"/>
         </brls:Box>
     </brls:Box>
 

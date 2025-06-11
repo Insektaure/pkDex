@@ -32,7 +32,7 @@ set(PACKAGE_NAME "com.switch.pkdex")
 set(PSN_TITLE_ID  "BRLS00000")
 set(PSN_VERSION  "0.1.0")
 set(PROJECT_AUTHOR "Insektaure")
-set(PROJECT_ICON ${CMAKE_CURRENT_SOURCE_DIR}/resources/img/demo_icon.jpg)
+set(PROJECT_ICON ${CMAKE_CURRENT_SOURCE_DIR}/resources/img/icon.png)
 set(PROJECT_RESOURCES ${CMAKE_CURRENT_SOURCE_DIR}/resources)
 
 if (USE_LIBROMFS)

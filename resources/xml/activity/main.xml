@@ -3,7 +3,7 @@
     footerHidden="false">
     <brls:TabFrame
         title="@i18n/demo/title"
-        icon="@res/img/borealis_96.png">
+        icon="@res/img/pkdex_96.png">
 
         <brls:Tab label="Kanto (Let's Go! Pikachu &amp; Eevee)">
             <KantoTab/>
@@ -50,7 +50,7 @@
                 <brls:Image
                     width="auto"
                     height="33%"
-                    image="@res/img/borealis_256.png"
+                    image="@res/img/pkdex_256.png"
                     marginBottom="@style/about/description_margin"/>
 
                 <brls:Box
