@@ -66,6 +66,7 @@ class RecyclingListTab : public brls::Box
     static brls::View* createJohto();
     static brls::View* createHoenn();
     static brls::View* createSinnoh();
+    static brls::View* createSinnohArceus();
     static brls::View* createGalar();
     static brls::View* createPaldea();
 

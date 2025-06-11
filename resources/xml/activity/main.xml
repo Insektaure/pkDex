@@ -5,27 +5,31 @@
         title="@i18n/demo/title"
         icon="@res/img/borealis_96.png">
 
-        <brls:Tab label="Kanto">
+        <brls:Tab label="Kanto (Let's Go! Pikachu &amp; Eevee)">
             <KantoTab/>
         </brls:Tab>
 
-        <brls:Tab label="Johto">
-            <JohtoTab/>
-        </brls:Tab>
+<!--        <brls:Tab label="Johto">-->
+<!--            <JohtoTab/>-->
+<!--        </brls:Tab>-->
 
-        <brls:Tab label="Hoenn">
-            <HoennTab/>
-        </brls:Tab>
+<!--        <brls:Tab label="Hoenn">-->
+<!--            <HoennTab/>-->
+<!--        </brls:Tab>-->
 
-        <brls:Tab label="Sinnoh">
+        <brls:Tab label="Sinnoh (Brilliant Diamond &amp; Shining Pearl)">
             <SinnohTab/>
         </brls:Tab>
 
-        <brls:Tab label="Galar">
+        <brls:Tab label="Sinnoh (Legends: Arceus)">
+            <SinnohArceusTab/>
+        </brls:Tab>
+
+        <brls:Tab label="Galar (Sword &amp; Shield)">
             <GalarTab/>
         </brls:Tab>
 
-        <brls:Tab label="Paldea">
+        <brls:Tab label="Paldea (Scarlet &amp; Violet)">
             <PaldeaTab/>
         </brls:Tab>
 

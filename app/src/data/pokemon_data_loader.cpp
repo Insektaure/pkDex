@@ -56,7 +56,7 @@ std::vector<Pokemon> PokemonDataLoader::loadPokemonFromRegion(const std::string&
 Pokemon PokemonDataLoader::loadPokemonById(const std::string& id)
 {
     // Try to find the Pokemon in each region
-    std::vector<std::string> regions = {"kanto", "johto", "hoenn", "sinnoh", "galar", "paldea"};
+    std::vector<std::string> regions = {"kanto", "johto", "hoenn", "sinnoh", "sinnoh_arceus", "galar", "paldea"};
 
     for (const std::string& region : regions)
     {

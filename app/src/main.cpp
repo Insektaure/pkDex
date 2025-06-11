@@ -76,6 +76,7 @@ int main(int argc, char* argv[])
     brls::Application::registerXMLView("JohtoTab", RecyclingListTab::createJohto);
     brls::Application::registerXMLView("HoennTab", RecyclingListTab::createHoenn);
     brls::Application::registerXMLView("SinnohTab", RecyclingListTab::createSinnoh);
+    brls::Application::registerXMLView("SinnohArceusTab", RecyclingListTab::createSinnohArceus);
     brls::Application::registerXMLView("GalarTab", RecyclingListTab::createGalar);
     brls::Application::registerXMLView("PaldeaTab", RecyclingListTab::createPaldea);
 

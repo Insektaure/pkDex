@@ -130,6 +130,11 @@ brls::View* RecyclingListTab::createSinnoh()
     return new RecyclingListTab("sinnoh");
 }
 
+brls::View* RecyclingListTab::createSinnohArceus()
+{
+    return new RecyclingListTab("sinnoh_arceus");
+}
+
 brls::View* RecyclingListTab::createGalar()
 {
     return new RecyclingListTab("galar");
