@@ -73,19 +73,19 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="10" name="Caterpie" regionalDexNumber="013" type="Bug">
+    <pokemon id="010" name="Caterpie" regionalDexNumber="013" type="Bug">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="11" name="Metapod" regionalDexNumber="014" type="Bug">
+    <pokemon id="011" name="Metapod" regionalDexNumber="014" type="Bug">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="12" name="Butterfree" regionalDexNumber="015" type="Bug / Flying">
+    <pokemon id="012" name="Butterfree" regionalDexNumber="015" type="Bug / Flying">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -325,19 +325,19 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="43" name="Oddish" regionalDexNumber="055" type="Grass / Poison">
+    <pokemon id="043" name="Oddish" regionalDexNumber="055" type="Grass / Poison">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="44" name="Gloom" regionalDexNumber="056" type="Grass / Poison">
+    <pokemon id="044" name="Gloom" regionalDexNumber="056" type="Grass / Poison">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="45" name="Vileplume" regionalDexNumber="057" type="Grass / Poison">
+    <pokemon id="045" name="Vileplume" regionalDexNumber="057" type="Grass / Poison">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -403,25 +403,25 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="37" name="Vulpix" regionalDexNumber="068" type="Fire">
+    <pokemon id="037" name="Vulpix" regionalDexNumber="068" type="Fire">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="38" name="Ninetales" regionalDexNumber="069" type="Fire">
+    <pokemon id="038" name="Ninetales" regionalDexNumber="069" type="Fire">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="58" name="Growlithe" regionalDexNumber="070" type="Fire">
+    <pokemon id="058" name="Growlithe" regionalDexNumber="070" type="Fire">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="59" name="Arcanine" regionalDexNumber="071" type="Fire">
+    <pokemon id="059" name="Arcanine" regionalDexNumber="071" type="Fire">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -583,13 +583,13 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="98" name="Krabby" regionalDexNumber="098" type="Water">
+    <pokemon id="098" name="Krabby" regionalDexNumber="098" type="Water">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="99" name="Kingler" regionalDexNumber="099" type="Water">
+    <pokemon id="099" name="Kingler" regionalDexNumber="099" type="Water">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -823,37 +823,37 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="66" name="Machop" regionalDexNumber="138" type="Fighting">
+    <pokemon id="066" name="Machop" regionalDexNumber="138" type="Fighting">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="67" name="Machoke" regionalDexNumber="139" type="Fighting">
+    <pokemon id="067" name="Machoke" regionalDexNumber="139" type="Fighting">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="68" name="Machamp" regionalDexNumber="140" type="Fighting">
+    <pokemon id="068" name="Machamp" regionalDexNumber="140" type="Fighting">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="92" name="Gastly" regionalDexNumber="141" type="Ghost / Poison">
+    <pokemon id="092" name="Gastly" regionalDexNumber="141" type="Ghost / Poison">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="93" name="Haunter" regionalDexNumber="142" type="Ghost / Poison">
+    <pokemon id="093" name="Haunter" regionalDexNumber="142" type="Ghost / Poison">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="94" name="Gengar" regionalDexNumber="143" type="Ghost / Poison">
+    <pokemon id="094" name="Gengar" regionalDexNumber="143" type="Ghost / Poison">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -895,13 +895,13 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="90" name="Shellder" regionalDexNumber="150" type="Water">
+    <pokemon id="090" name="Shellder" regionalDexNumber="150" type="Water">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="91" name="Cloyster" regionalDexNumber="151" type="Water / Ice">
+    <pokemon id="091" name="Cloyster" regionalDexNumber="151" type="Water / Ice">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -979,13 +979,13 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="50" name="Diglett" regionalDexNumber="164" type="Ground">
+    <pokemon id="050" name="Diglett" regionalDexNumber="164" type="Ground">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="51" name="Dugtrio" regionalDexNumber="165" type="Ground">
+    <pokemon id="051" name="Dugtrio" regionalDexNumber="165" type="Ground">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -1063,7 +1063,7 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="95" name="Onix" regionalDexNumber="178" type="Rock / Ground">
+    <pokemon id="095" name="Onix" regionalDexNumber="178" type="Rock / Ground">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -1087,7 +1087,7 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="52" name="Meowth" regionalDexNumber="182" type="Steel">
+    <pokemon id="052" name="Meowth" regionalDexNumber="182" type="Steel">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -1099,7 +1099,7 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="53" name="Persian" regionalDexNumber="184" type="Normal">
+    <pokemon id="053" name="Persian" regionalDexNumber="184" type="Normal">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -1159,13 +1159,13 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="25" name="Pikachu" regionalDexNumber="194" type="Electric">
+    <pokemon id="025" name="Pikachu" regionalDexNumber="194" type="Electric">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="26" name="Raichu" regionalDexNumber="195" type="Electric">
+    <pokemon id="026" name="Raichu" regionalDexNumber="195" type="Electric">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -1303,7 +1303,7 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="83" name="Farfetch'd" regionalDexNumber="218" type="Fighting">
+    <pokemon id="083" name="Farfetch'd" regionalDexNumber="218" type="Fighting">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -1525,13 +1525,13 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="35" name="Clefairy" regionalDexNumber="255" type="Fairy">
+    <pokemon id="035" name="Clefairy" regionalDexNumber="255" type="Fairy">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="36" name="Clefable" regionalDexNumber="256" type="Fairy">
+    <pokemon id="036" name="Clefable" regionalDexNumber="256" type="Fairy">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -1993,13 +1993,13 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="77" name="Ponyta" regionalDexNumber="333" type="Psychic">
+    <pokemon id="077" name="Ponyta" regionalDexNumber="333" type="Psychic">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="78" name="Rapidash" regionalDexNumber="334" type="Psychic / Fairy">
+    <pokemon id="078" name="Rapidash" regionalDexNumber="334" type="Psychic / Fairy">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -2263,19 +2263,19 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="4" name="Charmander" regionalDexNumber="378" type="Fire">
+    <pokemon id="004" name="Charmander" regionalDexNumber="378" type="Fire">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="5" name="Charmeleon" regionalDexNumber="379" type="Fire">
+    <pokemon id="005" name="Charmeleon" regionalDexNumber="379" type="Fire">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="6" name="Charizard" regionalDexNumber="380" type="Fire / Flying">
+    <pokemon id="006" name="Charizard" regionalDexNumber="380" type="Fire / Flying">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>

@@ -115,19 +115,19 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="63" name="Abra" regionalDexNumber="020" type="Psychic">
+    <pokemon id="063" name="Abra" regionalDexNumber="020" type="Psychic">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="64" name="Kadabra" regionalDexNumber="021" type="Psychic">
+    <pokemon id="064" name="Kadabra" regionalDexNumber="021" type="Psychic">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="65" name="Alakazam" regionalDexNumber="022" type="Psychic">
+    <pokemon id="065" name="Alakazam" regionalDexNumber="022" type="Psychic">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -163,13 +163,13 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="41" name="Zubat" regionalDexNumber="028" type="Poison / Flying">
+    <pokemon id="041" name="Zubat" regionalDexNumber="028" type="Poison / Flying">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="42" name="Golbat" regionalDexNumber="029" type="Poison / Flying">
+    <pokemon id="042" name="Golbat" regionalDexNumber="029" type="Poison / Flying">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -181,25 +181,25 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="74" name="Geodude" regionalDexNumber="031" type="Rock / Ground">
+    <pokemon id="074" name="Geodude" regionalDexNumber="031" type="Rock / Ground">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="75" name="Graveler" regionalDexNumber="032" type="Rock / Ground">
+    <pokemon id="075" name="Graveler" regionalDexNumber="032" type="Rock / Ground">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="76" name="Golem" regionalDexNumber="033" type="Rock / Ground">
+    <pokemon id="076" name="Golem" regionalDexNumber="033" type="Rock / Ground">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="95" name="Onix" regionalDexNumber="034" type="Rock / Ground">
+    <pokemon id="095" name="Onix" regionalDexNumber="034" type="Rock / Ground">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -235,31 +235,31 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="66" name="Machop" regionalDexNumber="040" type="Fighting">
+    <pokemon id="066" name="Machop" regionalDexNumber="040" type="Fighting">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="67" name="Machoke" regionalDexNumber="041" type="Fighting">
+    <pokemon id="067" name="Machoke" regionalDexNumber="041" type="Fighting">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="68" name="Machamp" regionalDexNumber="042" type="Fighting">
+    <pokemon id="068" name="Machamp" regionalDexNumber="042" type="Fighting">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="54" name="Psyduck" regionalDexNumber="043" type="Water">
+    <pokemon id="054" name="Psyduck" regionalDexNumber="043" type="Water">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="55" name="Golduck" regionalDexNumber="044" type="Water">
+    <pokemon id="055" name="Golduck" regionalDexNumber="044" type="Water">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -409,19 +409,19 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="92" name="Gastly" regionalDexNumber="069" type="Ghost / Poison">
+    <pokemon id="092" name="Gastly" regionalDexNumber="069" type="Ghost / Poison">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="93" name="Haunter" regionalDexNumber="070" type="Ghost / Poison">
+    <pokemon id="093" name="Haunter" regionalDexNumber="070" type="Ghost / Poison">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="94" name="Gengar" regionalDexNumber="071" type="Ghost / Poison">
+    <pokemon id="094" name="Gengar" regionalDexNumber="071" type="Ghost / Poison">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -535,13 +535,13 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="77" name="Ponyta" regionalDexNumber="090" type="Fire">
+    <pokemon id="077" name="Ponyta" regionalDexNumber="090" type="Fire">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="78" name="Rapidash" regionalDexNumber="091" type="Fire">
+    <pokemon id="078" name="Rapidash" regionalDexNumber="091" type="Fire">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -595,13 +595,13 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="35" name="Clefairy" regionalDexNumber="100" type="Fairy">
+    <pokemon id="035" name="Clefairy" regionalDexNumber="100" type="Fairy">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="36" name="Clefable" regionalDexNumber="101" type="Fairy">
+    <pokemon id="036" name="Clefable" regionalDexNumber="101" type="Fairy">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -619,13 +619,13 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="25" name="Pikachu" regionalDexNumber="104" type="Electric">
+    <pokemon id="025" name="Pikachu" regionalDexNumber="104" type="Electric">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="26" name="Raichu" regionalDexNumber="105" type="Electric">
+    <pokemon id="026" name="Raichu" regionalDexNumber="105" type="Electric">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -811,13 +811,13 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="72" name="Tentacool" regionalDexNumber="136" type="Water / Poison">
+    <pokemon id="072" name="Tentacool" regionalDexNumber="136" type="Water / Poison">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="73" name="Tentacruel" regionalDexNumber="137" type="Water / Poison">
+    <pokemon id="073" name="Tentacruel" regionalDexNumber="137" type="Water / Poison">
         <evolution></evolution>
         <locations></locations>
         <exclusiveVersion>-</exclusiveVersion>
