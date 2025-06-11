@@ -128,6 +128,7 @@ bool RecyclingListTab::jumpToPreviousPage(brls::View* view)
         if (currentSelection.row > 0)
         {
             brls::IndexPath newIndexPath(0, 0);
+            // Smooth scroll to the first row
             recycler->selectRowAt(newIndexPath, true);
             // Update the current selection in the data source
             this->dataSource->setCurrentSelection(newIndexPath);
@@ -135,18 +136,19 @@ bool RecyclingListTab::jumpToPreviousPage(brls::View* view)
         return true;
     }
 
-    // Jump to the first row of the previous section
+    // Scroll to the first row of the previous section
     int newSection = currentSelection.section - 1;
     int newRow = 0;
 
     // Create the new index path
     brls::IndexPath newIndexPath(newSection, newRow);
 
-    // Select the new row
-    recycler->selectRowAt(newIndexPath, true);
-
-    // Update the current selection in the data source
+    // First update the data source's current selection
     this->dataSource->setCurrentSelection(newIndexPath);
+
+    // Then smooth scroll to the new row
+    // This will scroll to the row without changing focus immediately
+    recycler->selectRowAt(newIndexPath, true);
 
     return true;
 }
@@ -169,25 +171,29 @@ bool RecyclingListTab::jumpToNextPage(brls::View* view)
         if (currentSelection.row < rowsInLastSection - 1)
         {
             brls::IndexPath newIndexPath(currentSelection.section, rowsInLastSection - 1);
-            recycler->selectRowAt(newIndexPath, true);
-            // Update the current selection in the data source
+            // First update the data source's current selection
             this->dataSource->setCurrentSelection(newIndexPath);
+
+            // Then smooth scroll to the last row
+            // This will scroll to the row without changing focus immediately
+            recycler->selectRowAt(newIndexPath, true);
         }
         return true;
     }
 
-    // Jump to the first row of the next section
+    // Scroll to the first row of the next section
     int newSection = currentSelection.section + 1;
     int newRow = 0;
 
     // Create the new index path
     brls::IndexPath newIndexPath(newSection, newRow);
 
-    // Select the new row
-    recycler->selectRowAt(newIndexPath, true);
-
-    // Update the current selection in the data source
+    // First update the data source's current selection
     this->dataSource->setCurrentSelection(newIndexPath);
+
+    // Then smooth scroll to the new row
+    // This will scroll to the row without changing focus immediately
+    recycler->selectRowAt(newIndexPath, true);
 
     return true;
 }
