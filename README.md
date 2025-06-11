@@ -1,0 +1,124 @@
+<div align="center">
+  <img src="./resources/img/pkdex_256.png" alt="pkDex Application" />
+</div>
+
+# pkDex - A Cross-Platform Pokémon Encyclopedia
+
+pkDex is a comprehensive Pokémon encyclopedia (Pokédex) application that allows users to browse and view detailed information about Pokémon from various regions across different generations of the Pokémon games.
+
+Built using the Borealis UI framework, pkDex provides a clean, intuitive interface for exploring Pokémon data.
+
+## Features
+
+- **Multi-Region Support**: Browse Pokémon from different regions:
+  - Kanto (Gen 1 - Let's Go Pikachu & Eevee)
+  - Sinnoh (Gen 4 - Brilliant Diamond & Shining Pearl)
+  - Sinnoh Arceus (Legends: Arceus)
+  - Galar (Gen 8 - Sword & Shield)
+  - Paldea (Gen 9 - Scarlet & Violet)
+
+- **Detailed Pokémon Information**:
+  - National and Regional Pokédex numbers
+  - Pokémon types
+  - Evolution information
+  - Game version exclusivity
+  - In-game locations
+  - Images of both standard and shiny forms
+
+- **User-Friendly Interface**:
+  - Organized by regions with section headers
+  - Efficient list navigation with recycling views
+  - Detailed view for each Pokémon
+  - Dark theme support
+
+- **Cross-Platform Compatibility**:
+  - Nintendo Switch (primary target)
+
+## Requirements
+
+### For Building
+
+- CMake 3.10 or higher
+- A C++17 compatible compiler
+- Platform-specific development tools:
+  - For Switch: devkitPro with Switch development tools
+  - For PS4/PSV: Appropriate SDK (for PlayStation platforms)
+  - For Desktop: Standard development tools for your platform
+
+### Dependencies
+
+- Borealis UI framework (included as a submodule)
+- SDL2 (for some platforms - included as a submodule)
+- Platform-specific libraries (handled by the build system)
+
+## Building
+
+### Common Setup
+
+1. Clone the repository with submodules:
+   ```bash
+   git clone --recursive https://github.com/Insektaure/pkDex.git
+   cd pkDex
+   ```
+
+2. If you didn't clone with `--recursive`, initialize the submodules:
+   ```bash
+   git submodule update --init --recursive
+   ```
+
+### Building for Nintendo Switch
+
+1. Make sure you have devkitPro installed with Switch development tools.
+
+2. Build the application:
+   ```bash
+   make build-switch
+   ```
+
+3. The output will be a `.nro` file in the `build_switch`folder that can be run on a Nintendo Switch with custom firmware.
+
+## Usage
+
+1. Launch the application on your device.
+2. Navigate through the tabs to select a Pokémon region.
+3. Browse the list of Pokémon, organized by their regional Pokédex numbers.
+4. Select a Pokémon to view detailed information, including:
+   - Images (standard and shiny forms)
+   - Type information
+   - Evolution details
+   - Location information
+   - Version exclusivity
+
+## Project Structure
+
+- `app/`: Application source code
+  - `include/`: Header files
+  - `src/`: Implementation files
+    - `activity/`: Application activities
+    - `data/`: Data loading and management
+    - `tab/`: UI tabs for different sections
+    - `view/`: UI views for displaying content
+
+- `resources/`: Application resources
+  - `data/`: Pokémon data files
+  - `i18n/`: Internationalization files
+  - `img/`: Images including Pokémon sprites and icons
+  - `xml/`: UI layout definitions
+
+- `library/`: External libraries
+  - `borealis/`: Borealis UI framework
+
+## Credits
+
+- **Borealis UI Framework**: A hardware-accelerated UI library for Nintendo Switch homebrew, developed by natinusala and contributors. [GitHub Repository](https://github.com/natinusala/borealis)
+- **Pokémon Data**: All Pokémon names, images, and data are property of Nintendo, Game Freak, and The Pokémon Company.
+- **Development**: pkDex is developed by Insektaure.
+- **Datasets**: Pokémon data sourced from various community resources and official game data (serebii.net / pokemondb.net).
+
+## License
+
+This project is licensed under the GNU General Public License v2.0 - see the [LICENSE](LICENSE) file for details.
+
+## Disclaimer
+
+This application is not affiliated with, endorsed by, or related to Nintendo, Game Freak, or The Pokémon Company. Pokémon and Pokémon character names are trademarks of Nintendo. This application is intended for educational and informational purposes only.
