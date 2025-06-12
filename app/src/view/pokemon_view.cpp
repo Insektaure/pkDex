@@ -39,7 +39,7 @@ PokemonView::PokemonView(Pokemon pokemon, int pokemonIndex)
     holder->registerAction("Close", brls::ControllerButton::BUTTON_RB, dismissAction, true);
     registerAction("Close", brls::ControllerButton::BUTTON_RB, dismissAction, true);
 
-    // Register L and R button actions for navigating between Pokemon
+    // Register ZL and ZR button actions for navigating between Pokemon
     this->registerAction("Previous Pokemon", brls::BUTTON_LT, 
         std::bind(&PokemonView::navigateToPreviousPokemon, this, std::placeholders::_1), false, true);
     this->registerAction("Next Pokemon", brls::BUTTON_RT, 
@@ -61,7 +61,7 @@ void PokemonView::loadPokemon(const Pokemon& newPokemon)
     this->pokemon = newPokemon;
 
     // Update the applet frame
-    getAppletFrameItem()->title = pokemon.name;
+    getAppletFrameItem()->title = pokemon.name + " | N°" + pokemon.id;
     getAppletFrameItem()->setIconFromRes("img/pokemon/icons/" + pokemon.id + ".png");
     // Update the UI with the new title and icon
     updateAppletFrameItem();
