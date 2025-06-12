@@ -9,6 +9,8 @@
             <KantoTab/>
         </brls:Tab>
 
+        <brls:Separator />
+
 <!--        <brls:Tab label="Johto">-->
 <!--            <JohtoTab/>-->
 <!--        </brls:Tab>-->
@@ -17,35 +19,42 @@
 <!--            <HoennTab/>-->
 <!--        </brls:Tab>-->
 
+        <!-- Sinnoh Group -->
         <brls:Tab label="Sinnoh (Brilliant Diamond &amp; Shining Pearl)">
             <SinnohTab/>
         </brls:Tab>
 
-        <brls:Tab label="Sinnoh (Legends: Arceus)">
+        <brls:Tab label="└ Sinnoh (Legends: Arceus)">
             <SinnohArceusTab/>
         </brls:Tab>
 
+        <brls:Separator />
+
+        <!-- Sword & Shield Group -->
         <brls:Tab label="Galar (Sword &amp; Shield)">
             <GalarTab/>
         </brls:Tab>
 
-        <brls:Tab label="Isle of Armor (Sword &amp; Shield DLC 1)">
+        <brls:Tab label="└ Isle of Armor (DLC 1)">
             <IsleArmorTab/>
         </brls:Tab>
 
-        <brls:Tab label="Crown Tundra (Sword &amp; Shield DLC 2)">
+        <brls:Tab label="└ Crown Tundra (DLC 2)">
             <CrownTundraTab/>
         </brls:Tab>
 
+        <brls:Separator />
+
+        <!-- Scarlet & Violet Group -->
         <brls:Tab label="Paldea (Scarlet &amp; Violet)">
             <PaldeaTab/>
         </brls:Tab>
 
-        <brls:Tab label="Kitakami (The Teal Mask - Scarlet &amp; Violet DLC 1)">
+        <brls:Tab label="└ Kitakami (The Teal Mask - DLC 1)">
             <KitakamiTab/>
         </brls:Tab>
 
-        <brls:Tab label="Blueberry Academy (The Indigo Disk - Scarlet &amp; Violet DLC 2)">
+        <brls:Tab label="└ Blueberry Academy (The Indigo Disk - DLC 2)">
             <BlueberryTab/>
         </brls:Tab>
 
