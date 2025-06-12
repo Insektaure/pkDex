@@ -61,7 +61,7 @@ void PokemonView::loadPokemon(const Pokemon& newPokemon)
     this->pokemon = newPokemon;
 
     // Update the applet frame
-    getAppletFrameItem()->title = pokemon.name + " | N°" + pokemon.id;
+    getAppletFrameItem()->title = pokemon.name + " | N°" + pokemon.regionalDexNumber;
     getAppletFrameItem()->setIconFromRes("img/pokemon/icons/" + pokemon.id + ".png");
     // Update the UI with the new title and icon
     updateAppletFrameItem();
