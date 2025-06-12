@@ -12,12 +12,12 @@
         width="auto"
         height="auto"
         axis="row"
-        alignItems="center"
+        alignItems="flexStart"
         marginBottom="20px">
 
         <!-- Left side: Images stacked vertically -->
         <brls:Box
-            width="40%"
+            width="30%"
             height="auto"
             axis="column"
             alignItems="center"
@@ -68,9 +68,11 @@
 
         <!-- Right side: Pokemon information -->
         <brls:Box
-            width="60%"
+            id="info_box"
+            width="70%"
             height="auto"
-            axis="column">
+            axis="column"
+            marginLeft="-20px">
 
         <brls:Box
             width="auto"
