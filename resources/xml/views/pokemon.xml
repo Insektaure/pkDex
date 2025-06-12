@@ -38,8 +38,8 @@
                     marginBottom="5px"/>
                 <brls:Image
                     id="standard_image"
-                    width="auto"
-                    height="auto"
+                    width="180px"
+                    height="180px"
                     grow="1"
                     image="@res/img/placeholder_256.png"/>
             </brls:Box>
@@ -59,8 +59,8 @@
                     marginBottom="5px"/>
                 <brls:Image
                     id="shiny_image"
-                    width="auto"
-                    height="auto"
+                    width="180px"
+                    height="180px"
                     grow="1"
                     image="@res/img/placeholder_256.png"/>
             </brls:Box>
