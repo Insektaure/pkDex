@@ -44,9 +44,9 @@ class Pokemon
 class PokemonView : public brls::Box
 {
   public:
-    PokemonView(Pokemon pokemon);
+    PokemonView(Pokemon pokemon, int pokemonIndex = -1);
     PokemonView()
-        : PokemonView(Pokemon("001", "Bulbasaur"))
+        : PokemonView(Pokemon("001", "Bulbasaur"), -1)
     {
     }
 
@@ -54,6 +54,12 @@ class PokemonView : public brls::Box
 
   private:
     Pokemon pokemon;
+    int currentIndex; // Index of the current Pokemon in the global pokemons vector
+
+    // Methods for navigating between Pokemon
+    bool navigateToPreviousPokemon(brls::View* view);
+    bool navigateToNextPokemon(brls::View* view);
+    void loadPokemon(const Pokemon& pokemon);
     void loadHighResImage(brls::Image* image, const std::string& path, const std::string& id);
     BRLS_BIND(brls::Label, standard_label, "standard_label");
     BRLS_BIND(brls::Image, standard_image, "standard_image");

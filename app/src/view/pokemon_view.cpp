@@ -22,13 +22,16 @@
 
 using namespace brls::literals;
 
+// Reference to the global pokemons vector defined in recycling_list_tab.cpp
+extern std::vector<Pokemon> pokemons;
+
 bool dismissView(brls::View* view, PokemonView* pock)
 {
     return true;
 }
 
-PokemonView::PokemonView(Pokemon pokemon)
-    : pokemon(pokemon)
+PokemonView::PokemonView(Pokemon pokemon, int pokemonIndex)
+    : pokemon(pokemon), currentIndex(pokemonIndex)
 {
     // Inflate the tab from the XML file
     this->inflateFromXMLRes("xml/views/pokemon.xml");
@@ -52,9 +55,30 @@ PokemonView::PokemonView(Pokemon pokemon)
     holder->registerAction("Close", brls::ControllerButton::BUTTON_RB, dismissAction, true);
     registerAction("Close", brls::ControllerButton::BUTTON_RB, dismissAction, true);
 
+    // Register L and R button actions for navigating between Pokemon
+    this->registerAction("Previous Pokemon", brls::BUTTON_LT, 
+        std::bind(&PokemonView::navigateToPreviousPokemon, this, std::placeholders::_1), false, true);
+    this->registerAction("Next Pokemon", brls::BUTTON_RT, 
+        std::bind(&PokemonView::navigateToNextPokemon, this, std::placeholders::_1), false, true);
+
+    // Load the Pokemon data
+    loadPokemon(pokemon);
+
+    // Set up close button action
+    close_button->registerClickAction([this](brls::View* view) {
+        this->dismiss();
+        return true;
+    });
+}
+
+void PokemonView::loadPokemon(const Pokemon& newPokemon)
+{
+    // Update the current Pokemon
+    this->pokemon = newPokemon;
+
+    // Update the applet frame
     getAppletFrameItem()->title = pokemon.name;
     getAppletFrameItem()->setIconFromRes("img/pokemon/icons/" + pokemon.id + ".png");
-//    getAppletFrameItem()->hintView = holder;
 
     // Set images
     loadHighResImage(standard_image, "img/pokemon/full", pokemon.id);
@@ -79,12 +103,6 @@ PokemonView::PokemonView(Pokemon pokemon)
         pos += 1; // Move past the replacement
     }
     locations->setText(locationsText);
-
-    // Set up close button action
-    close_button->registerClickAction([this](brls::View* view) {
-        this->dismiss();
-        return true;
-    });
 }
 
 void PokemonView::loadHighResImage(brls::Image* image, const std::string& path, const std::string& id)
@@ -99,6 +117,42 @@ void PokemonView::loadHighResImage(brls::Image* image, const std::string& path, 
         //brls::Logger::info("High-res image not found on SD card, using embedded resource: {}", path + "/" + id + ".png");
         image->setImageFromRes(path + "/" + id + ".png");
     }
+}
+
+bool PokemonView::navigateToPreviousPokemon(brls::View* view)
+{
+    // If we don't have a valid index or there are no Pokemon, do nothing
+    if (currentIndex < 0 || pokemons.empty())
+        return false;
+
+    // Calculate the previous index, wrapping around if necessary
+    int previousIndex = (currentIndex > 0) ? currentIndex - 1 : pokemons.size() - 1;
+
+    // Update the current index
+    currentIndex = previousIndex;
+
+    // Load the previous Pokemon
+    loadPokemon(pokemons[currentIndex]);
+
+    return true;
+}
+
+bool PokemonView::navigateToNextPokemon(brls::View* view)
+{
+    // If we don't have a valid index or there are no Pokemon, do nothing
+    if (currentIndex < 0 || pokemons.empty())
+        return false;
+
+    // Calculate the next index, wrapping around if necessary
+    int nextIndex = (currentIndex < pokemons.size() - 1) ? currentIndex + 1 : 0;
+
+    // Update the current index
+    currentIndex = nextIndex;
+
+    // Load the next Pokemon
+    loadPokemon(pokemons[currentIndex]);
+
+    return true;
 }
 
 brls::View* PokemonView::create()

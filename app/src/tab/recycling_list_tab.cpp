@@ -57,7 +57,7 @@ void DataSource::didSelectRowAt(brls::RecyclerFrame* recycler, brls::IndexPath i
 
     // Calculate the actual index based on section and row, same as in cellForRow
     int actualIndex = indexPath.section * 30 + indexPath.row;
-    recycler->present(new PokemonView(pokemons[actualIndex]));
+    recycler->present(new PokemonView(pokemons[actualIndex], actualIndex));
 }
 
 // RECYCLER VIEW
