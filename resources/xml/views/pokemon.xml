@@ -5,7 +5,7 @@
     alignItems="center"
     paddingTop="50px"
     paddingBottom="50px"
-    paddingLeft="75px"
+    paddingLeft="50px"
     paddingRight="75px" >
 
     <brls:Box
