@@ -63,6 +63,8 @@ void PokemonView::loadPokemon(const Pokemon& newPokemon)
     // Update the applet frame
     getAppletFrameItem()->title = pokemon.name;
     getAppletFrameItem()->setIconFromRes("img/pokemon/icons/" + pokemon.id + ".png");
+    // Update the UI with the new title and icon
+    updateAppletFrameItem();
 
     // Set images
     loadHighResImage(standard_image, "img/pokemon/full", pokemon.id);
