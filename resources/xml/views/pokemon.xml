@@ -15,51 +15,62 @@
         alignItems="center"
         marginBottom="20px">
 
+        <!-- Left side: Images stacked vertically -->
         <brls:Box
-            width="auto"
+            width="40%"
             height="auto"
             axis="column"
             alignItems="center"
             marginRight="20px">
-            <brls:Label
-                id="standard_label"
+
+            <!-- Normal image (top) -->
+            <brls:Box
                 width="auto"
-                height="auto"
-                text=""
-                fontSize="20"
-                marginBottom="5px"/>
-            <brls:Image
-                id="standard_image"
+                height="50%"
+                axis="column"
+                alignItems="center">
+                <brls:Label
+                    id="standard_label"
+                    width="auto"
+                    height="auto"
+                    text="Standard"
+                    fontSize="20"
+                    marginBottom="5px"/>
+                <brls:Image
+                    id="standard_image"
+                    width="auto"
+                    height="auto"
+                    grow="1"
+                    image="@res/img/placeholder_256.png"/>
+            </brls:Box>
+
+            <!-- Shiny image (bottom) -->
+            <brls:Box
                 width="auto"
-                height="150px"
-                image="@res/img/placeholder_256.png"/>
+                height="50%"
+                axis="column"
+                alignItems="center">
+                <brls:Label
+                    id="shiny_label"
+                    width="auto"
+                    height="auto"
+                    text="Shiny"
+                    fontSize="20"
+                    marginBottom="5px"/>
+                <brls:Image
+                    id="shiny_image"
+                    width="auto"
+                    height="auto"
+                    grow="1"
+                    image="@res/img/placeholder_256.png"/>
+            </brls:Box>
         </brls:Box>
 
+        <!-- Right side: Pokemon information -->
         <brls:Box
-            width="auto"
+            width="60%"
             height="auto"
-            axis="column"
-            alignItems="center">
-            <brls:Label
-                id="shiny_label"
-                width="auto"
-                height="auto"
-                text=""
-                fontSize="20"
-                marginBottom="5px"/>
-            <brls:Image
-                id="shiny_image"
-                width="auto"
-                height="150px"
-                image="@res/img/placeholder_256.png"/>
-        </brls:Box>
-    </brls:Box>
-
-    <brls:Box
-        width="80%"
-        height="auto"
-        axis="column"
-        marginBottom="20px">
+            axis="column">
 
         <brls:Box
             width="auto"
@@ -162,6 +173,7 @@
                 height="auto"
                 fontSize="18"/>
         </brls:Box>
+    </brls:Box>
     </brls:Box>
 
     <brls:Button

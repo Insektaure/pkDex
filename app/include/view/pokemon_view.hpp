@@ -55,7 +55,9 @@ class PokemonView : public brls::Box
   private:
     Pokemon pokemon;
     void loadHighResImage(brls::Image* image, const std::string& path, const std::string& id);
+    BRLS_BIND(brls::Label, standard_label, "standard_label");
     BRLS_BIND(brls::Image, standard_image, "standard_image");
+    BRLS_BIND(brls::Label, shiny_label, "shiny_label");
     BRLS_BIND(brls::Image, shiny_image, "shiny_image");
     BRLS_BIND(brls::Label, national_dex, "national_dex");
     BRLS_BIND(brls::Label, regional_dex, "regional_dex");
@@ -63,4 +65,5 @@ class PokemonView : public brls::Box
     BRLS_BIND(brls::Label, evolution, "evolution");
     BRLS_BIND(brls::Label, exclusive_version, "exclusive_version");
     BRLS_BIND(brls::Label, locations, "locations");
+    BRLS_BIND(brls::Button, close_button, "close_button");
 };

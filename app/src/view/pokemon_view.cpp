@@ -60,14 +60,31 @@ PokemonView::PokemonView(Pokemon pokemon)
     loadHighResImage(standard_image, "img/pokemon/full", pokemon.id);
     loadHighResImage(shiny_image, "img/pokemon/shiny", pokemon.id);
 
+    // Set label texts
+    standard_label->setText("");
+    shiny_label->setText("");
+
     // Set text fields
     national_dex->setText(pokemon.id);
     regional_dex->setText(pokemon.regionalDexNumber);
     type->setText(pokemon.type);
     evolution->setText(pokemon.evolution);
     exclusive_version->setText(pokemon.exclusiveVersion);
-    locations->setText(pokemon.locations);
 
+    // Process locations text to handle <br> tags
+    std::string locationsText = pokemon.locations;
+    size_t pos = 0;
+    while ((pos = locationsText.find("<br>", pos)) != std::string::npos) {
+        locationsText.replace(pos, 4, "\n");
+        pos += 1; // Move past the replacement
+    }
+    locations->setText(locationsText);
+
+    // Set up close button action
+    close_button->registerClickAction([this](brls::View* view) {
+        this->dismiss();
+        return true;
+    });
 }
 
 void PokemonView::loadHighResImage(brls::Image* image, const std::string& path, const std::string& id)
