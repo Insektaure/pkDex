@@ -90,7 +90,7 @@ if (PLATFORM_DESKTOP)
             MACOSX_BUNDLE_LONG_VERSION_STRING "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_ALTER}"
             MACOSX_BUNDLE_SHORT_VERSION_STRING "${VERSION_MAJOR}.${VERSION_MINOR}"
             MACOSX_BUNDLE_ICON_FILE "borealis.icns"
-            MACOSX_BUNDLE_COPYRIGHT "Copyright 2023 ${PROJECT_AUTHOR}"
+            MACOSX_BUNDLE_COPYRIGHT "Copyright 2025 ${PROJECT_AUTHOR}"
             RESOURCE "${CMAKE_SOURCE_DIR}/app/borealis.icns"
         )
         add_custom_target(${PROJECT_NAME}.data
