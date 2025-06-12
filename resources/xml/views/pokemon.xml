@@ -2,7 +2,7 @@
     width="auto"
     height="auto"
     axis="column"
-    alignItems="center"
+    alignItems="stretch"
     paddingTop="50px"
     paddingBottom="50px"
     paddingLeft="50px"
@@ -178,11 +178,17 @@
     </brls:Box>
     </brls:Box>
 
-    <brls:Button
-            id="close_button"
-            width="auto"
+    <brls:Box
+            width="100%"
             height="auto"
-            text="@i18n/hints/back"
-            marginTop="24px"/>
+            axis="row"
+            justifyContent="flexEnd">
+        <brls:Button
+                id="close_button"
+                width="auto"
+                height="auto"
+                text="@i18n/hints/back"
+                marginTop="24px"/>
+    </brls:Box>
 
 </brls:Box>
