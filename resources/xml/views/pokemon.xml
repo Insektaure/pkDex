@@ -74,142 +74,174 @@
             axis="column"
             marginLeft="-20px">
 
-            <!-- Row 1: National Number and Regional number side by side -->
+            <!-- Row 1: National Number and Regional number as separate boxes -->
             <brls:Box
                 width="auto"
                 height="auto"
-                axis="column"
-                marginBottom="15px"
-                borderColor="#AAAAAA"
-                borderThickness="1px">
+                axis="row"
+                marginBottom="15px">
 
-                <!-- Title centered -->
+                <!-- National Number Box -->
                 <brls:Box
-                    width="auto"
+                    width="50%"
                     height="auto"
-                    justifyContent="center"
-                    backgroundColor="#333333"
-                    paddingTop="5px"
-                    paddingBottom="5px">
-                    <brls:Label
+                    axis="column"
+                    marginRight="5px"
+                    borderColor="#AAAAAA"
+                    borderThickness="1px">
+
+                    <!-- Title centered -->
+                    <brls:Box
                         width="auto"
                         height="auto"
-                        text="Pokedex Numbers"
-                        fontSize="20"
-                        horizontalAlign="center"/>
-                </brls:Box>
-
-                <!-- Content -->
-                <brls:Box
-                    width="auto"
-                    height="auto"
-                    axis="row"
-                    padding="10px">
-
-                    <!-- National Number -->
-                    <brls:Box
-                        width="50%"
-                        height="auto"
-                        axis="column"
-                        marginRight="5px">
+                        justifyContent="center"
+                        backgroundColor="#333333"
+                        paddingTop="5px"
+                        paddingBottom="5px">
                         <brls:Label
                             width="auto"
                             height="auto"
-                            text="National N° :"
-                            fontSize="18"/>
+                            text="National N°"
+                            fontSize="20"
+                            horizontalAlign="center"/>
+                    </brls:Box>
+
+                    <!-- Content -->
+                    <brls:Box
+                        width="auto"
+                        height="auto"
+                        padding="10px">
                         <brls:Label
                             id="national_dex"
                             width="auto"
                             height="auto"
-                            fontSize="18"/>
+                            fontSize="24"
+                            horizontalAlign="center"/>
                     </brls:Box>
+                </brls:Box>
 
-                    <!-- Regional Number -->
+                <!-- Regional Number Box -->
+                <brls:Box
+                    width="50%"
+                    height="auto"
+                    axis="column"
+                    marginLeft="5px"
+                    borderColor="#AAAAAA"
+                    borderThickness="1px">
+
+                    <!-- Title centered -->
                     <brls:Box
-                        width="50%"
+                        width="auto"
                         height="auto"
-                        axis="column"
-                        marginLeft="5px">
+                        justifyContent="center"
+                        backgroundColor="#333333"
+                        paddingTop="5px"
+                        paddingBottom="5px">
                         <brls:Label
                             width="auto"
                             height="auto"
-                            text="Regional N° :"
-                            fontSize="18"/>
+                            text="Regional N°"
+                            fontSize="20"
+                            horizontalAlign="center"/>
+                    </brls:Box>
+
+                    <!-- Content -->
+                    <brls:Box
+                        width="auto"
+                        height="auto"
+                        padding="10px">
                         <brls:Label
                             id="regional_dex"
                             width="auto"
                             height="auto"
-                            fontSize="18"/>
+                            fontSize="24"
+                            horizontalAlign="center"/>
                     </brls:Box>
                 </brls:Box>
             </brls:Box>
 
-            <!-- Row 2: Type and exclusive version side by side -->
+            <!-- Row 2: Type and exclusive version as separate boxes -->
             <brls:Box
                 width="auto"
                 height="auto"
-                axis="column"
-                marginBottom="15px"
-                borderColor="#AAAAAA"
-                borderThickness="1px">
+                axis="row"
+                marginBottom="15px">
 
-                <!-- Title centered -->
+                <!-- Type Box -->
                 <brls:Box
-                    width="auto"
+                    width="50%"
                     height="auto"
-                    justifyContent="center"
-                    backgroundColor="#333333"
-                    paddingTop="5px"
-                    paddingBottom="5px">
-                    <brls:Label
+                    axis="column"
+                    marginRight="5px"
+                    borderColor="#AAAAAA"
+                    borderThickness="1px">
+
+                    <!-- Title centered -->
+                    <brls:Box
                         width="auto"
                         height="auto"
-                        text="Classification"
-                        fontSize="20"
-                        horizontalAlign="center"/>
-                </brls:Box>
-
-                <!-- Content -->
-                <brls:Box
-                    width="auto"
-                    height="auto"
-                    axis="row"
-                    padding="10px">
-
-                    <!-- Type -->
-                    <brls:Box
-                        width="50%"
-                        height="auto"
-                        axis="column"
-                        marginRight="5px">
+                        justifyContent="center"
+                        backgroundColor="#333333"
+                        paddingTop="5px"
+                        paddingBottom="5px">
                         <brls:Label
                             width="auto"
                             height="auto"
-                            text="Type :"
-                            fontSize="18"/>
+                            text="Type"
+                            fontSize="20"
+                            horizontalAlign="center"/>
+                    </brls:Box>
+
+                    <!-- Content -->
+                    <brls:Box
+                        width="auto"
+                        height="auto"
+                        padding="10px">
                         <brls:Label
                             id="type"
                             width="auto"
                             height="auto"
-                            fontSize="18"/>
+                            fontSize="24"
+                            horizontalAlign="center"/>
                     </brls:Box>
+                </brls:Box>
 
-                    <!-- Exclusive Version -->
+                <!-- Exclusive Version Box -->
+                <brls:Box
+                    width="50%"
+                    height="auto"
+                    axis="column"
+                    marginLeft="5px"
+                    borderColor="#AAAAAA"
+                    borderThickness="1px">
+
+                    <!-- Title centered -->
                     <brls:Box
-                        width="50%"
+                        width="auto"
                         height="auto"
-                        axis="column"
-                        marginLeft="5px">
+                        justifyContent="center"
+                        backgroundColor="#333333"
+                        paddingTop="5px"
+                        paddingBottom="5px">
                         <brls:Label
                             width="auto"
                             height="auto"
-                            text="Exclusive Version :"
-                            fontSize="18"/>
+                            text="Version Exclusive"
+                            fontSize="20"
+                            horizontalAlign="center"/>
+                    </brls:Box>
+
+                    <!-- Content -->
+                    <brls:Box
+                        width="auto"
+                        height="auto"
+                        padding="10px">
                         <brls:Label
                             id="exclusive_version"
                             width="auto"
                             height="auto"
-                            fontSize="18"/>
+                            fontSize="24"
+                            horizontalAlign="center"/>
                     </brls:Box>
                 </brls:Box>
             </brls:Box>
@@ -248,7 +280,8 @@
                         id="evolution"
                         width="auto"
                         height="auto"
-                        fontSize="18"/>
+                        fontSize="18"
+                        horizontalAlign="center"/>
                 </brls:Box>
             </brls:Box>
 
