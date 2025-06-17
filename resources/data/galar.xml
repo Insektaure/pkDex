@@ -296,626 +296,626 @@
     </pokemon>
 
     <pokemon id="572" name="Minccino" regionalDexNumber="050" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Minccino – Shiny Stone → Cinccino</evolution>
+        <locations>Route 5, Rolling Fields, East Lake Axewell, Giant's Cap</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="573" name="Cinccino" regionalDexNumber="051" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Minccino – Shiny Stone → Cinccino</evolution>
+        <locations>Evolve Minccino</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="761" name="Bounsweet" regionalDexNumber="052" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Bounsweet – Lvl 18 → Steenee – after learning Stomp → Tsareena</evolution>
+        <locations>Rolling Fields, East Lake Axewell, Dappled Grove, West Lake Axewell, Stony Wilderness, Watchtower Ruins</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="762" name="Steenee" regionalDexNumber="053" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Bounsweet – Lvl 18 → Steenee – after learning Stomp → Tsareena</evolution>
+        <locations>Axew's Eye</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="763" name="Tsareena" regionalDexNumber="054" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Bounsweet – Lvl 18 → Steenee – after learning Stomp → Tsareena</evolution>
+        <locations>Evolve Bounsweet / Steenee</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="043" name="Oddish" regionalDexNumber="055" type="Grass / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Oddish – Lvl 21 → Gloom – Leaf Stone → Vileplume</evolution>
+        <locations>Rolling Fields, East Lake Axewell, Dappled Grove, Watchtower Ruins</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="044" name="Gloom" regionalDexNumber="056" type="Grass / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Oddish – Lvl 21 → Gloom – Leaf Stone → Vileplume</evolution>
+        <locations>Axew's Eye, Giant's Cap, Giant's Mirror, North Lake Miloch</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="045" name="Vileplume" regionalDexNumber="057" type="Grass / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Oddish – Lvl 21 → Gloom – Leaf Stone → Vileplume</evolution>
+        <locations>Evolve Oddish / Gloom</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="182" name="Bellossom" regionalDexNumber="058" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Oddish – Lvl 21 → Gloom – Sun Stone → Bellossom</evolution>
+        <locations>Evolve Oddish / Gloom</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="406" name="Budew" regionalDexNumber="059" type="Grass / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Budew – high Friendship, Daytime → Roselia – Shiny Stone → Roserade</evolution>
+        <locations>Route 4, Rolling Fields, East Lake Axewell, Dappled Grove, West Lake Axewell, Giant's Mirror</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="315" name="Roselia" regionalDexNumber="060" type="Grass / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Budew – high Friendship, Daytime → Roselia – Shiny Stone → Roserade</evolution>
+        <locations>South Lake Miloch, Axew's Eye, Dusty Bowl, Giant's Mirror</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="407" name="Roserade" regionalDexNumber="061" type="Grass / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Budew – high Friendship, Daytime → Roselia – Shiny Stone → Roserade</evolution>
+        <locations>Evolve Roselia / Budew</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="278" name="Wingull" regionalDexNumber="062" type="Water / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Wingull – Lvl 25 → Pelipper</evolution>
+        <locations>Rolling Fields, South Lake Miloch, East Lake Axewell, West Lake Axewell, North Lake Miloch, Watchtower Ruins, Challenge Beach, Fields of Honor, Honeycalm Island, Honeycalm Sea, Insular Sea, Loop Lagoon, Stepping-Stone Sea, Workout Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="279" name="Pelipper" regionalDexNumber="063" type="Water / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Wingull – Lvl 25 → Pelipper</evolution>
+        <locations>Route 9, Axew's Eye, Dusty Bowl, Hammerlocke Hills, Lake of Outrage, Challenge Beach, Fields of Honor, Honeycalm Island, Honeycalm Sea, Insular Sea, Loop Lagoon, Stepping-Stone Sea, Workout Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="595" name="Joltik" regionalDexNumber="064" type="Bug / Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Joltik – Lvl 36 → Galvantula</evolution>
+        <locations>Route 4, Rolling Fields, South Lake Miloch, East Lake Axewell, Dappled Grove, West Lake Axewell, Giant's Cap, Giant's Mirror, North Lake Miloch</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="596" name="Galvantula" regionalDexNumber="065" type="Bug / Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Joltik – Lvl 36 → Galvantula</evolution>
+        <locations>Route 7, Lake of Outrage, Giant's Bed, Old Cemetery, Giant's Foot, Three-Point Pass, Ballimere Lake</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="309" name="Electrike" regionalDexNumber="066" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Electrike – Lvl 26 → Manectric</evolution>
+        <locations>Route 4, Rolling Fields, South Lake Miloch, East Lake Axewell, Dappled Grove, Dusty Bowl, West Lake Axewell, Giant's Seat, Watchtower Ruins</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="310" name="Manectric" regionalDexNumber="067" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Electrike – Lvl 26 → Manectric</evolution>
+        <locations>Axew's Eye, Giant's Cap, Giant's Seat</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="037" name="Vulpix" regionalDexNumber="068" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Vulpix – Fire Stone → Ninetales</evolution>
+        <locations>Sword → Route 3, Rolling Fields, South Lake Miloch, East Lake Axewell, Axew's Eye, Dappled Grove, West Lake Axewell, Giant's Seat, North Lake Miloch, Watchtower Ruins | Shield → Dusty Bowl, Hammerlocke Hills</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="038" name="Ninetales" regionalDexNumber="069" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Vulpix – Fire Stone → Ninetales</evolution>
+        <locations>Sword → Lake of Outrage | Shield → Evolve Vulpix</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="058" name="Growlithe" regionalDexNumber="070" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Growlithe – Fire Stone → Arcanine</evolution>
+        <locations>Sword → Dusty Bowl, Hammerlocke Hills | Shield → Route 3, Rolling Fields, South Lake Miloch, East Lake Axewell, Axew's Eye, Dappled Grove, West Lake Axewell, Giant's Seat, North Lake Miloch, Watchtower Ruins</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="059" name="Arcanine" regionalDexNumber="071" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Growlithe – Fire Stone → Arcanine</evolution>
+        <locations>Sword → Evolve Growlithe | Shield → Lake of Outrage</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="582" name="Vanillite" regionalDexNumber="072" type="Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Vanillite – Lvl 35 → Vanillish – Lvl 47 → Vanilluxe</evolution>
+        <locations>Rolling Fields, South Lake Miloch, East Lake Axewell, Bridge Field, Dappled Grove, West Lake Axewell, Giant's Cap, Giant's Mirror, Hammerlocke Hills, Lake of Outrage, Motostoke Riverbank, North Lake Miloch, Frostpoint Field, Giant's Bed, Old Cemetery, Snowslide Slope, Giant's Foot, Frigid Sea, Three-Point Pass, Ballimere Lake</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="583" name="Vanillish" regionalDexNumber="073" type="Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Vanillite – Lvl 35 → Vanillish – Lvl 47 → Vanilluxe</evolution>
+        <locations>Route 8, 10, Axew's Eye, Dusty Bowl, Frostpoint Field, Giant's Bed, Old Cemetery, Snowslide Slope, Giant's Foot, Roaring-Sea Caves, Frigid Sea, Three-Point Pass, Ballimere Lake</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="584" name="Vanilluxe" regionalDexNumber="074" type="Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Vanillite – Lvl 35 → Vanillish – Lvl 47 → Vanilluxe</evolution>
+        <locations>Route 10, Lake of Outrage</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="220" name="Swinub" regionalDexNumber="075" type="Ice / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Swinub – Lvl 33 → Piloswine – after learning Ancient Power → Mamoswine</evolution>
+        <locations>Sword → Rolling Fields, Giant's Mirror, Giant's Seat, Hammerlocke Hills, Slippery Slope | Shield → Rolling Fields, Dusty Bowl, Giant's Mirror, Giant's Seat, Hammerlocke Hills, Slippery Slope</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="221" name="Piloswine" regionalDexNumber="076" type="Ice / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Swinub – Lvl 33 → Piloswine – after learning Ancient Power → Mamoswine</evolution>
+        <locations>Dusty Bowl, Lake of Outrage, Slippery Slope, Roaring-Sea Caves</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="473" name="Mamoswine" regionalDexNumber="077" type="Ice / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Swinub – Lvl 33 → Piloswine – after learning Ancient Power → Mamoswine</evolution>
+        <locations>Evolve Swinub / Piloswine</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="225" name="Delibird" regionalDexNumber="078" type="Ice / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Route 8, Rolling Fields, South Lake Miloch, Axew's Eye, Dappled Grove, Dusty Bowl, West Lake Axewell, Giant's Cap, Giant's Mirror, Giant's Seat, Hammerlocke Hills, North Lake Miloch, Watchtower Ruins, Snowslide Slope</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="361" name="Snorunt" regionalDexNumber="079" type="Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snorunt – Lvl 42 → Glalie</evolution>
+        <locations>Route 8, Rolling Fields, South Lake Miloch, East Lake Axewell, Dappled Grove, West Lake Axewell, Giant's Cap, Giant's Seat, Hammerlocke Hills, North Lake Miloch, Watchtower Ruins, Giant's Bed, Snowslide Slope, Tunnel to the Top, Giant's Foot</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="362" name="Glalie" regionalDexNumber="080" type="Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snorunt – Lvl 42 → Glalie</evolution>
+        <locations>Route 10, Lake of Outrage</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="478" name="Froslass" regionalDexNumber="081" type="Ice / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snorunt – Dawn Stone, Female → Froslass</evolution>
+        <locations>Evolve Snorunt</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="343" name="Baltoy" regionalDexNumber="082" type="Ground / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Baltoy – Lvl 36 → Claydol</evolution>
+        <locations>Rolling Fields, South Lake Miloch, East Lake Axewell, Axew's Eye, Bridge Field, Dappled Grove, West Lake Axewell, Giant's Cap, Hammerlocke Hills, North Lake Miloch, Stony Wilderness</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="344" name="Claydol" regionalDexNumber="083" type="Ground / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Baltoy – Lvl 36 → Claydol</evolution>
+        <locations>Axew's Eye, Lake of Outrage, Giant's Foot, Three-Point Pass</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="749" name="Mudbray" regionalDexNumber="084" type="Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Mudbray – Lvl 30 → Mudsdale</evolution>
+        <locations>Route 3, Rolling Fields, South Lake Miloch, East Lake Axewell, Dappled Grove, West Lake Axewell, Giant's Cap, Giant's Seat, North Lake Miloch</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="750" name="Mudsdale" regionalDexNumber="085" type="Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Mudbray – Lvl 30 → Mudsdale</evolution>
+        <locations>Axew's Eye, Dusty Bowl, Giant's Seat</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="557" name="Dwebble" regionalDexNumber="086" type="Bug / Rock">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Dwebble – Lvl 34 → Crustle</evolution>
+        <locations>Rolling Fields, South Lake Miloch, East Lake Axewell, West Lake Axewell, Giant's Seat, Hammerlocke Hills, North Lake Miloch, Stony Wilderness, Watchtower Ruins, Courageous Cavern, Loop Lagoon</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="558" name="Crustle" regionalDexNumber="087" type="Bug / Rock">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Dwebble – Lvl 34 → Crustle</evolution>
+        <locations>Axew's Eye</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="622" name="Golett" regionalDexNumber="088" type="Ground / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Golett – Lvl 43 → Golurk</evolution>
+        <locations>Route 8, Rolling Fields, Dappled Grove, Giant's Cap, Giant's Seat, North Lake Miloch, Stony Wilderness, Watchtower Ruins</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="623" name="Golurk" regionalDexNumber="089" type="Ground / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Golett – Lvl 43 → Golurk</evolution>
+        <locations>Lake of Outrage, Three-Point Pass</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="517" name="Munna" regionalDexNumber="090" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Munna – Moon Stone → Musharna</evolution>
+        <locations>Rolling Fields, East Lake Axewell, Slumbering Weald, Axew's Eye, Bridge Field, Giant's Cap, Giant's Seat, Stony Wilderness</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="518" name="Musharna" regionalDexNumber="091" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Munna – Moon Stone → Musharna</evolution>
+        <locations>Evolve Munna</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="177" name="Natu" regionalDexNumber="092" type="Psychic / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Natu – Lvl 43 → Xatu</evolution>
+        <locations>Rolling Fields, South Lake Miloch, West Lake Axewell, Giant's Mirror, Giant's Seat, North Lake Miloch</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="178" name="Xatu" regionalDexNumber="093" type="Psychic / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Natu – Lvl 43 → Xatu</evolution>
+        <locations>Giant's Seat</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="759" name="Stufful" regionalDexNumber="094" type="Normal / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Stufful – Lvl 27 → Bewear</evolution>
+        <locations>Route 5, East Lake Axewell, Bridge Field, Dappled Grove, Giant's Seat, Hammerlocke Hills, North Lake Miloch</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="760" name="Bewear" regionalDexNumber="095" type="Normal / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Stufful – Lvl 27 → Bewear</evolution>
+        <locations>Axew's Eye, Giant's Seat, Lake of Outrage</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="459" name="Snover" regionalDexNumber="096" type="Grass / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snover – Lvl 40 → Abomasnow</evolution>
+        <locations>Route 8, 10, South Lake Miloch, East Lake Axewell, Axew's Eye, Dappled Grove, Dusty Bowl, Giant's Cap, Giant's Mirror, Giant's Seat, North Lake Miloch, Watchtower Ruins, Frostpoint Field</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="460" name="Abomasnow" regionalDexNumber="097" type="Grass / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snover – Lvl 40 → Abomasnow</evolution>
+        <locations>Route 10, Dusty Bowl, Lake of Outrage, Frostpoint Field</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="098" name="Krabby" regionalDexNumber="098" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Krabby – Lvl 28 → Kingler</evolution>
+        <locations>South Lake Miloch, West Lake Axewell, Giant's Cap, Fields of Honor, Loop Lagoon</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="099" name="Kingler" regionalDexNumber="099" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Krabby – Lvl 28 → Kingler</evolution>
+        <locations>Route 9, Axew's Eye</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="194" name="Wooper" regionalDexNumber="100" type="Water / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Wooper – Lvl 20 → Quagsire</evolution>
+        <locations>South Lake Miloch, West Lake Axewell, Giant's Cap, Giant's Seat, Soothing Wetlands</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="195" name="Quagsire" regionalDexNumber="101" type="Water / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Wooper – Lvl 20 → Quagsire</evolution>
+        <locations>Giant's Cap, Giant's Seat, Lake of Outrage</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="341" name="Corphish" regionalDexNumber="102" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Corphish – Lvl 30 → Crawdaunt</evolution>
+        <locations>South Lake Miloch, Giant's Cap, Galar Mine No. 2, Challenge Beach, Forest of Focus, Soothing Wetlands, Training Lowlands</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="342" name="Crawdaunt" regionalDexNumber="103" type="Water / Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Corphish – Lvl 30 → Crawdaunt</evolution>
+        <locations>Axew's Eye, Giant's Seat</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="290" name="Nincada" regionalDexNumber="104" type="Bug / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Nincada – Lvl 20 → Ninjask</evolution>
+        <locations>Route 5, South Lake Miloch, West Lake Axewell</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="291" name="Ninjask" regionalDexNumber="105" type="Bug / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Nincada – Lvl 20 → Ninjask</evolution>
+        <locations>Stony Wilderness</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="292" name="Shedinja" regionalDexNumber="106" type="Bug / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Nincada – Lvl 20 + empty spot in party, Pokéball in bag → Ninjask + Shedinja</evolution>
+        <locations>Evolve Nincada</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="236" name="Tyrogue" regionalDexNumber="107" type="Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tyrogue – Lvl 20 → Hitmonlee | → Hitmonchan | → Hitmontop</evolution>
+        <locations>Route 3, Rolling Fields, South Lake Miloch, Dappled Grove, West Lake Axewell, Giant's Seat, Stony Wilderness</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="106" name="Hitmonlee" regionalDexNumber="108" type="Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tyrogue – Lvl 20 + Attack > Defense → Hitmonlee</evolution>
+        <locations>Sword → Dusty Bowl | Shield → Evolve Tyrogue</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="107" name="Hitmonchan" regionalDexNumber="109" type="Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tyrogue – Lvl 20 + Attack &lt; Defense → Hitmonchan</evolution>
+        <locations>Sword → Evolve Tyrogue | Shield → Dusty Bowl</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="237" name="Hitmontop" regionalDexNumber="110" type="Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tyrogue – Lvl 20 + Attack = Defense → Hitmonlee</evolution>
+        <locations>Lake of Outrage</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="674" name="Pancham" regionalDexNumber="111" type="Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pancham – Lvl 32 + Dark type Pokémon in party → Pangoro</evolution>
+        <locations>Route 3, Rolling Fields, East Lake Axewell, West Lake Axewell</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="675" name="Pangoro" regionalDexNumber="112" type="Fighting / Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pancham – Lvl 32 + Dark type Pokémon in party → Pangoro</evolution>
+        <locations>Lake of Outrage</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="599" name="Klink" regionalDexNumber="113" type="Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Klink – Lvl 38 → Klang – Lvl 49 → Klinklang</evolution>
+        <locations>Route 3, South Lake Miloch, Axew's Eye, Dappled Grove, West Lake Axewell, Hammerlocke Hills, North Lake Miloch</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="600" name="Klang" regionalDexNumber="114" type="Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Klink – Lvl 38 → Klang – Lvl 49 → Klinklang</evolution>
+        <locations>Route 10, Dusty Bowl</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="601" name="Klinklang" regionalDexNumber="115" type="Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Klink – Lvl 38 → Klang – Lvl 49 → Klinklang</evolution>
+        <locations>Lake of Outrage</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="415" name="Combee" regionalDexNumber="116" type="Bug / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Combee – Lvl 21, Female → Vespiquen</evolution>
+        <locations>Rolling Fields, Honeycalm Island</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="416" name="Vespiquen" regionalDexNumber="117" type="Bug / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Combee – Lvl 21, Female → Vespiquen</evolution>
+        <locations>Evolve Combee</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="436" name="Bronzor" regionalDexNumber="118" type="Steel / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Bronzor – Lvl 33 → Bronzong</evolution>
+        <locations>Sword → South Lake Miloch, Bridge Field, Giant's Seat, Giant's Foot, Three-Point Pass | Shield → South Lake Miloch, Bridge Field, Giant's Seat, Stony Wilderness, Giant's Foot, Three-Point Pass</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="437" name="Bronzong" regionalDexNumber="119" type="Steel / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Bronzor – Lvl 33 → Bronzong</evolution>
+        <locations>Route 8, Axew's Eye, Dusty Bowl, Lake of Outrage, Giant's Bed, Giant's Foot, Three-Point Pass</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="280" name="Ralts" regionalDexNumber="120" type="Psychic / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Ralts – Lvl 20 → Kirlia – Lvl 30 → Gardevoir | – Dawn Stone, Male → Gallade</evolution>
+        <locations>Rolling Fields, South Lake Miloch, Dappled Grove, West Lake Axewell, North Lake Miloch, Watchtower Ruins, Fields of Honor</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="281" name="Kirlia" regionalDexNumber="121" type="Psychic / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Ralts – Lvl 20 → Kirlia – Lvl 30 → Gardevoir | – Dawn Stone, Male → Gallade</evolution>
+        <locations>Evolve Ralts</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="282" name="Gardevoir" regionalDexNumber="122" type="Psychic / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Ralts – Lvl 20 → Kirlia – Lvl 30 → Gardevoir | – Dawn Stone, Male → Gallade</evolution>
+        <locations>Dusty Bowl, Lake of Outrage</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="475" name="Gallade" regionalDexNumber="123" type="Psychic / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Ralts – Lvl 20 → Kirlia – Lvl 30 → Gardevoir | – Dawn Stone, Male → Gallade</evolution>
+        <locations>Evolve Ralts / Kirlia</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="425" name="Drifloon" regionalDexNumber="124" type="Ghost / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Drifloon – Lvl 28 → Drifblim</evolution>
+        <locations>Route 5, South Lake Miloch, North Lake Miloch, Watchtower Ruins, Challenge Beach, Fields of Honor, Honeycalm Island, Honeycalm Sea, Insular Sea, Loop Lagoon, Stepping-Stone Sea, Workout Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="426" name="Drifblim" regionalDexNumber="125" type="Ghost / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Drifloon – Lvl 28 → Drifblim</evolution>
+        <locations>Axew's Eye</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="829" name="Gossifleur" regionalDexNumber="126" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gossifleur – Lvl 20 → Eldegoss</evolution>
+        <locations>Route 2, 3, Motostoke Riverbank, Ballimere Lake</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="830" name="Eldegoss" regionalDexNumber="127" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gossifleur – Lvl 20 → Eldegoss</evolution>
+        <locations>Dusty Bowl, Giant's Cap, Motostoke Riverbank, Stony Wilderness</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="420" name="Cherubi" regionalDexNumber="128" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Cherubi – Lvl 25 → Cherrim</evolution>
+        <locations>Route 3, Rolling Fields, Axew's Eye, Bridge Field, Dappled Grove, Giant's Cap, Giant's Mirror, Giant's Seat, Hammerlocke Hills, Lake of Outrage, Motostoke Riverbank, North Lake Miloch, Watchtower Ruins</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="421" name="Cherrim" regionalDexNumber="129" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Cherubi – Lvl 25 → Cherrim</evolution>
+        <locations>Evolve Cherubi</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="434" name="Stunky" regionalDexNumber="130" type="Poison / Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Stunky – Lvl 34 → Skuntank</evolution>
+        <locations>Route 3, South Lake Miloch, Dappled Grove, Giant's Cap, North Lake Miloch</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="435" name="Skuntank" regionalDexNumber="131" type="Poison / Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Stunky – Lvl 34 → Skuntank</evolution>
+        <locations>Dusty Bowl, Lake of Outrage</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="535" name="Tympole" regionalDexNumber="132" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tympole – Lvl 25 → Palpitoad – Lvl 36 → Seismitoad</evolution>
+        <locations>South Lake Miloch, Dappled Grove, West Lake Axewell, North Lake Miloch, Watchtower Ruins</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="536" name="Palpitoad" regionalDexNumber="133" type="Water / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tympole – Lvl 25 → Palpitoad – Lvl 36 → Seismitoad</evolution>
+        <locations>Bridge Field, Dusty Bowl, Giant's Cap, Giant's Mirror, Giant's Seat, Hammerlocke Hills, North Lake Miloch</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="537" name="Seismitoad" regionalDexNumber="134" type="Water / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tympole – Lvl 25 → Palpitoad – Lvl 36 → Seismitoad</evolution>
+        <locations>Route 7, Axew's Eye, Lake of Outrage</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="355" name="Duskull" regionalDexNumber="135" type="Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Duskull – Lvl 37 → Dusclops – Trade holding Reaper Cloth → Dusknoir</evolution>
+        <locations>Sword → Route 6, Dusty Bowl, Giant's Cap, Giant's Seat, Motostoke Riverbank, Watchtower Ruins | Shield → Route 6, Giant's Cap, Giant's Seat, Motostoke Riverbank, Watchtower Ruins</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="356" name="Dusclops" regionalDexNumber="136" type="Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Duskull – Lvl 37 → Dusclops – Trade holding Reaper Cloth → Dusknoir</evolution>
+        <locations>Route 8</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="477" name="Dusknoir" regionalDexNumber="137" type="Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Duskull – Lvl 37 → Dusclops – Trade holding Reaper Cloth → Dusknoir</evolution>
+        <locations>Evolve Duskull / Dusclops</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="066" name="Machop" regionalDexNumber="138" type="Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Machop – Lvl 28 → Machoke – Trade → Machamp</evolution>
+        <locations>Route 3, South Lake Miloch, Giant's Mirror, Giant's Seat, North Lake Miloch, Stony Wilderness, Watchtower Ruins</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="067" name="Machoke" regionalDexNumber="139" type="Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Machop – Lvl 28 → Machoke – Trade → Machamp</evolution>
+        <locations>Axew's Eye, Giant's Seat, Hammerlocke Hills, Stony Wilderness</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="068" name="Machamp" regionalDexNumber="140" type="Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Machop – Lvl 28 → Machoke – Trade → Machamp</evolution>
+        <locations>Evolve Machop / Machoke</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="092" name="Gastly" regionalDexNumber="141" type="Ghost / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gastly – Lvl 25 → Haunter – Trade → Gengar</evolution>
+        <locations>Giant's Seat, Hammerlocke Hills, North Lake Miloch, Watchtower Ruins</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="093" name="Haunter" regionalDexNumber="142" type="Ghost / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gastly – Lvl 25 → Haunter – Trade → Gengar</evolution>
+        <locations>Route 8, Giant's Seat</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="094" name="Gengar" regionalDexNumber="143" type="Ghost / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gastly – Lvl 25 → Haunter – Trade → Gengar</evolution>
+        <locations>Evolve Gastly / Haunter</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="129" name="Magikarp" regionalDexNumber="144" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Magikarp – Lvl 20 → Gyarados</evolution>
+        <locations>Route 2, 4, 5, 6, South Lake Miloch, East Lake Axewell, Slumbering Weald, Motostoke, Axew's Eye, Bridge Field, West Lake Axewell, North Lake Miloch, Challenge Beach, Courageous Cavern, Fields of Honor, Forest of Focus, Honeycalm Island, Honeycalm Sea, Insular Sea, Loop Lagoon, Soothing Wetlands, Stepping-Stone Sea, Training Lowlands, Workout Sea, Giant's Bed, Snowslide Slope, Giant's Foot, Roaring-Sea Caves, Frigid Sea, Ballimere Lake</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="130" name="Gyarados" regionalDexNumber="145" type="Water / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Magikarp – Lvl 20 → Gyarados</evolution>
+        <locations>Route 2, Axew's Eye, Bridge Field, Dusty Bowl, Giant's Cap, Giant's Mirror, Giant's Seat, Lake of Outrage, Honeycalm Island, Honeycalm Sea, Insular Sea, Stepping-Stone Sea, Workout Sea, Giant's Bed, Snowslide Slope, Giant's Foot, Frigid Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="118" name="Goldeen" regionalDexNumber="146" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Goldeen – Lvl 33 → Seaking</evolution>
+        <locations>Route 4, 5, 6, South Lake Miloch, East Lake Axewell, Bridge Field, West Lake Axewell, Giant's Cap, North Lake Miloch, Forest of Focus</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="119" name="Seaking" regionalDexNumber="147" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Goldeen – Lvl 33 → Seaking</evolution>
+        <locations>Evolve Goldeen</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="223" name="Remoraid" regionalDexNumber="148" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Remoraid – Lvl 25 → Octillery</evolution>
+        <locations>Route 9, South Lake Miloch, West Lake Axewell, Fields of Honor, Workout Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="224" name="Octillery" regionalDexNumber="149" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Remoraid – Lvl 25 → Octillery</evolution>
+        <locations>Route 9, Axew's Eye, Fields of Honor, Workout Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="090" name="Shellder" regionalDexNumber="150" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Shellder – Water Stone → Cloyster</evolution>
+        <locations>East Lake Axewell, West Lake Axewell, Giant's Seat, Courageous Cavern, Loop Lagoon</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="091" name="Cloyster" regionalDexNumber="151" type="Water / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Shellder – Water Stone → Cloyster</evolution>
+        <locations>Giant's Seat, Courageous Cavern, Loop Lagoon</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="349" name="Feebas" regionalDexNumber="152" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Feebas – Trade holding Prism Scale, or level up with max Beauty → Milotic</evolution>
+        <locations>Route 2, Roaring-Sea Caves</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="350" name="Milotic" regionalDexNumber="153" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Feebas – Trade holding Prism Scale, or level up with max Beauty → Milotic</evolution>
+        <locations>Evolve Feebas</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
