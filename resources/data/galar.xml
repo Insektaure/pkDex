@@ -176,6 +176,7 @@
     </pokemon>
 
     <pokemon id="828" name="Thievul" regionalDexNumber="030" type="Dark">
+        <evolution>Nickit – Lvl 18 → Thievul</evolution>
         <locations>Route 7, 9, Bridge Field, Hammerlocke Hills, Stony Wilderness</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
