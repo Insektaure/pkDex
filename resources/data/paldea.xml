@@ -1208,1197 +1208,1197 @@
     </pokemon>
 
     <pokemon id="944" name="Shroodle" regionalDexNumber="202" type="Poison / Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Shroodle – Lvl 28 → Grafaiai</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Four), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="945" name="Grafaiai" regionalDexNumber="203" type="Poison / Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Shroodle – Lvl 28 → Grafaiai</evolution>
+        <locations>Tagtree Thicket</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="234" name="Stantler" regionalDexNumber="204" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>South Province (Area Five)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="590" name="Foongus" regionalDexNumber="205" type="Grass / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Foongus – Lvl 39 → Amoonguss</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Four), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="591" name="Amoonguss" regionalDexNumber="206" type="Grass / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Foongus – Lvl 39 → Amoonguss</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Four), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="100" name="Voltorb" regionalDexNumber="207" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Voltorb – Lvl 30 → Electrode</evolution>
+        <locations>East Province (Area Three), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="101" name="Electrode" regionalDexNumber="208" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Voltorb – Lvl 30 → Electrode</evolution>
+        <locations>East Province (Area Three), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="081" name="Magnemite" regionalDexNumber="209" type="Electric / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Magnemite – Lvl 30 → Magneton – Thunder Stone → Magnezone</evolution>
+        <locations>East Province (Area Two), East Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="082" name="Magneton" regionalDexNumber="210" type="Electric / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Magnemite – Lvl 30 → Magneton – Thunder Stone → Magnezone</evolution>
+        <locations>Dalizapa Passage, Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="462" name="Magnezone" regionalDexNumber="211" type="Electric / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Magnemite – Lvl 30 → Magneton – Thunder Stone → Magnezone</evolution>
+        <locations>The Great Crater of Paldea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="132" name="Ditto" regionalDexNumber="212" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>West Province (Area Two), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="058" name="Growlithe" regionalDexNumber="213" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Growlithe – Fire Stone → Arcanine</evolution>
+        <locations>North Province (Area Two), East Province (Area Three), South Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="059" name="Arcanine" regionalDexNumber="214" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Growlithe – Fire Stone → Arcanine</evolution>
+        <locations>North Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="216" name="Teddiursa" regionalDexNumber="215" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Teddiursa – Lvl 30 → Ursaring</evolution>
+        <locations>North Province (Area One), North Province (Area Two), East Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="217" name="Ursaring" regionalDexNumber="216" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Teddiursa – Lvl 30 → Ursaring</evolution>
+        <locations>North Province (Area One), North Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="335" name="Zangoose" regionalDexNumber="217" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>South Province (Area Five)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="336" name="Seviper" regionalDexNumber="218" type="Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>South Province (Area Five)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="333" name="Swablu" regionalDexNumber="219" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Swablu – Lvl 35 → Altaria</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area One), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Three), The Great Crater of Paldea, Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="334" name="Altaria" regionalDexNumber="220" type="Dragon / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Swablu – Lvl 35 → Altaria</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area One), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Three), The Great Crater of Paldea, Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="672" name="Skiddo" regionalDexNumber="221" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Skiddo – Lvl 32 → Gogoat</evolution>
+        <locations>Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="673" name="Gogoat" regionalDexNumber="222" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Skiddo – Lvl 32 → Gogoat</evolution>
+        <locations>Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="128" name="Tauros" regionalDexNumber="223" type="Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>East Province (Area One), East Province (Area Two), West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="667" name="Litleo" regionalDexNumber="224" type="Fire / Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Litleo – Lvl 35 → Pyroar</evolution>
+        <locations>East Province (Area One), South Province (Area Five)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="668" name="Pyroar" regionalDexNumber="225" type="Fire / Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Litleo – Lvl 35 → Pyroar</evolution>
+        <locations>East Province (Area One), South Province (Area Five)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="434" name="Stunky" regionalDexNumber="226" type="Poison / Dark">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Stunky – Lvl 34 → Skuntank</evolution>
+        <locations>Casseroya Lake, South Province (Area Five), West Province (Area Two)</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="435" name="Skuntank" regionalDexNumber="227" type="Poison / Dark">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Stunky – Lvl 34 → Skuntank</evolution>
+        <locations>Casseroya Lake</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="570" name="Zorua" regionalDexNumber="228" type="Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Zorua – Lvl 30 → Zoroark</evolution>
+        <locations>Tagtree Thicket, West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="571" name="Zoroark" regionalDexNumber="229" type="Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Zorua – Lvl 30 → Zoroark</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="215" name="Sneasel" regionalDexNumber="230" type="Dark / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sneasel – Razor Claw, Nighttime → Weavile</evolution>
+        <locations>North Province (Area One), The Great Crater of Paldea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="461" name="Weavile" regionalDexNumber="231" type="Dark / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sneasel – Razor Claw, Nighttime → Weavile</evolution>
+        <locations>North Province (Area One), The Great Crater of Paldea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="198" name="Murkrow" regionalDexNumber="232" type="Dark / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Murkrow – Dusk Stone → Honchkrow</evolution>
+        <locations>Tagtree Thicket, Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="430" name="Honchkrow" regionalDexNumber="233" type="Dark / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Murkrow – Dusk Stone → Honchkrow</evolution>
+        <locations>Tagtree Thicket, Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="574" name="Gothita" regionalDexNumber="234" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gothita – Lvl 32 → Gothorita – Lvl 41 → Gothitelle</evolution>
+        <locations>East Province (Area Three), South Province (Area Six)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="575" name="Gothorita" regionalDexNumber="235" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gothita – Lvl 32 → Gothorita – Lvl 41 → Gothitelle</evolution>
+        <locations>South Province (Area Six)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="576" name="Gothitelle" regionalDexNumber="236" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gothita – Lvl 32 → Gothorita – Lvl 41 → Gothitelle</evolution>
+        <locations>South Province (Area Six)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="854" name="Sinistea" regionalDexNumber="237" type="Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sinistea – Cracked Pot) → Polteageist</evolution>
+        <locations>East Province (Area Three), South Province (Area Six)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="855" name="Polteageist" regionalDexNumber="238" type="Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sinistea – Cracked Pot → Polteageist</evolution>
+        <locations>Tera Raid Battles (4★, 5★)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="778" name="Mimikyu" regionalDexNumber="239" type="Ghost / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Tagtree Thicket, East Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="707" name="Klefki" regionalDexNumber="240" type="Steel / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Six), West Province (Area Two), West Province (Area Three), Glaseado Mountain, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="876" name="Indeedee" regionalDexNumber="241" type="Psychic / Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>North Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="946" name="Bramblin" regionalDexNumber="242" type="Grass / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Bramblin – walk 1,000 steps in Let's Go mode → Brambleghast</evolution>
+        <locations>Asado Desert, East Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="947" name="Brambleghast" regionalDexNumber="243" type="Grass / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Bramblin – walk 1,000 steps in Let's Go mode → Brambleghast</evolution>
+        <locations>Casseroya Lake, North Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="948" name="Toedscool" regionalDexNumber="244" type="Ground / Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Toedscool – Lvl 30 → Toedscruel</evolution>
+        <locations>Tagtree Thicket, Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), West Province (Area One), West Province (Area Two), West Province (Area Three), The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="949" name="Toedscruel" regionalDexNumber="245" type="Ground / Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Toedscool – Lvl 30 → Toedscruel</evolution>
+        <locations>Casseroya Lake</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="357" name="Tropius" regionalDexNumber="246" type="Grass / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Casseroya Lake, West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="753" name="Fomantis" regionalDexNumber="247" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Fomantis – Lvl 34, Daytime → Lurantis</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), South Province (Area Five)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="754" name="Lurantis" regionalDexNumber="248" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Fomantis – Lvl 34, Daytime → Lurantis</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), South Province (Area Five)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="950" name="Klawf" regionalDexNumber="249" type="Rock">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>South Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="951" name="Capsakid" regionalDexNumber="250" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Capsakid – Fire Stone → Scovillain</evolution>
+        <locations>Asado Desert, West Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="952" name="Scovillain" regionalDexNumber="251" type="Grass / Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Capsakid – Fire Stone → Scovillain</evolution>
+        <locations>Asado Desert, North Province (Area One), East Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="331" name="Cacnea" regionalDexNumber="252" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Cacnea – Lvl 32 → Cacturne</evolution>
+        <locations>Asado Desert</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="332" name="Cacturne" regionalDexNumber="253" type="Grass / Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Cacnea – Lvl 32 → Cacturne</evolution>
+        <locations>Asado Desert</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="953" name="Rellor" regionalDexNumber="254" type="Bug">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rellor – walk 1,000 steps in Let's Go mode → Rabsca</evolution>
+        <locations>Asado Desert, West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="954" name="Rabsca" regionalDexNumber="255" type="Bug / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rellor – walk 1,000 steps in Let's Go mode → Rabsca</evolution>
+        <locations>Asado Desert, West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="048" name="Venonat" regionalDexNumber="256" type="Bug / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Venonat – Lvl 31 → Venomoth</evolution>
+        <locations>Tagtree Thicket, North Province (Area One), North Province (Area Two), East Province (Area One), East Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="049" name="Venomoth" regionalDexNumber="257" type="Bug / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Venonat – Lvl 31 → Venomoth</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area One), East Province (Area Two), The Great Crater of Paldea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="204" name="Pineco" regionalDexNumber="258" type="Bug">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pineco – Lvl 31 → Forretress</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Four), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="205" name="Forretress" regionalDexNumber="259" type="Bug / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pineco – Lvl 31 → Forretress</evolution>
+        <locations>Casseroya Lake</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="123" name="Scyther" regionalDexNumber="260" type="Bug / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Scyther – Trade holding Metal Coat → Scizor</evolution>
+        <locations>Casseroya Lake, North Province (Area Two), South Province (Area Four), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="212" name="Scizor" regionalDexNumber="261" type="Bug / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Scyther – Trade holding Metal Coat → Scizor</evolution>
+        <locations>Tera Raid Battles (5★, 6★)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="214" name="Heracross" regionalDexNumber="262" type="Bug / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Casseroya Lake, North Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="955" name="Flittle" regionalDexNumber="263" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Flittle – Lvl 35 → Espathra</evolution>
+        <locations>Asado Desert, North Province (Area One), East Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="956" name="Espathra" regionalDexNumber="264" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Flittle – Lvl 35 → Espathra</evolution>
+        <locations>Asado Desert, North Province (Area One), East Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), The Great Crater of Paldea, Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="449" name="Hippopotas" regionalDexNumber="265" type="Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Hippopotas – Lvl 34 → Hippowdon</evolution>
+        <locations>Asado Desert</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="450" name="Hippowdon" regionalDexNumber="266" type="Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Hippopotas – Lvl 34 → Hippowdon</evolution>
+        <locations>Asado Desert</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="551" name="Sandile" regionalDexNumber="267" type="Ground / Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sandile – Lvl 29 → Krokorok – Lvl 40 → Krookodile</evolution>
+        <locations>Asado Desert</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="552" name="Krokorok" regionalDexNumber="268" type="Ground / Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sandile – Lvl 29 → Krokorok – Lvl 40 → Krookodile</evolution>
+        <locations>Asado Desert</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="553" name="Krookodile" regionalDexNumber="269" type="Ground / Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sandile – Lvl 29 → Krokorok – Lvl 40 → Krookodile</evolution>
+        <locations>Tera Raid Battles (5★)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="843" name="Silicobra" regionalDexNumber="270" type="Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Silicobra – Lvl 36 → Sandaconda</evolution>
+        <locations>Asado Desert, East Province (Area Three), West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="844" name="Sandaconda" regionalDexNumber="271" type="Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Silicobra – Lvl 36 → Sandaconda</evolution>
+        <locations>Asado Desert, East Province (Area Three), West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="749" name="Mudbray" regionalDexNumber="272" type="Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Mudbray – Lvl 30 → Mudsdale</evolution>
+        <locations>North Province (Area One), East Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="750" name="Mudsdale" regionalDexNumber="273" type="Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Mudbray – Lvl 30 → Mudsdale</evolution>
+        <locations>North Province (Area One), East Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="636" name="Larvesta" regionalDexNumber="274" type="Bug / Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Larvesta – Lvl 59 → Volcarona</evolution>
+        <locations>Asado Desert, West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="637" name="Volcarona" regionalDexNumber="275" type="Bug / Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Larvesta – Lvl 59 → Volcarona</evolution>
+        <locations>The Great Crater of Paldea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="371" name="Bagon" regionalDexNumber="276" type="Dragon">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Bagon – Lvl 30 → Shelgon – Lvl 50 → Salamence</evolution>
+        <locations>North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Three), South Province (Area One), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="372" name="Shelgon" regionalDexNumber="277" type="Dragon">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Bagon – Lvl 30 → Shelgon – Lvl 50 → Salamence</evolution>
+        <locations>South Province (Area Six)</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="373" name="Salamence" regionalDexNumber="278" type="Dragon / Flying">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Bagon – Lvl 30 → Shelgon – Lvl 50 → Salamence</evolution>
+        <locations>Evolve Bagon / Shelgon</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="957" name="Tinkatink" regionalDexNumber="279" type="Fairy / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tinkatink – Lvl 24 → Tinkatuff – Lvl 38 → Tinkaton</evolution>
+        <locations>Asado Desert, Casseroya Lake, North Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="958" name="Tinkatuff" regionalDexNumber="280" type="Fairy / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tinkatink – Lvl 24 → Tinkatuff – Lvl 38 → Tinkaton</evolution>
+        <locations>Asado Desert, Casseroya Lake, North Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="959" name="Tinkaton" regionalDexNumber="281" type="Fairy / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tinkatink – Lvl 24 → Tinkatuff – Lvl 38 → Tinkaton</evolution>
+        <locations>Tera Raid Battles (5★, 6★)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="856" name="Hatenna" regionalDexNumber="282" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Hatenna – Lvl 32 → Hattrem – Lvl 42 → Hatterene</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="857" name="Hattrem" regionalDexNumber="283" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Hatenna – Lvl 32 → Hattrem – Lvl 42 → Hatterene</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="858" name="Hatterene" regionalDexNumber="284" type="Psychic / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Hatenna – Lvl 32 → Hattrem – Lvl 42 → Hatterene</evolution>
+        <locations>Tera Raid Battles (5★)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="859" name="Impidimp" regionalDexNumber="285" type="Dark / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Impidimp – Lvl 32 → Morgrem – Lvl 42 → Grimmsnarl</evolution>
+        <locations>Tagtree Thicket</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="860" name="Morgrem" regionalDexNumber="286" type="Dark / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Impidimp – Lvl 32 → Morgrem – Lvl 42 → Grimmsnarl</evolution>
+        <locations>Tagtree Thicket</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="861" name="Grimmsnarl" regionalDexNumber="287" type="Dark / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Impidimp – Lvl 32 → Morgrem – Lvl 42 → Grimmsnarl</evolution>
+        <locations>Tera Raid Battles (5★)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="960" name="Wiglett" regionalDexNumber="288" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Wiglett – Lvl 26 → Wugtrio</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Five), West Province (Area One), West Province (Area Two), East Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="961" name="Wugtrio" regionalDexNumber="289" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Wiglett – Lvl 26 → Wugtrio</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Five), West Province (Area One), West Province (Area Two), East Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="962" name="Bombirdier" regionalDexNumber="290" type="Flying / Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>South Province (Area Six), West Province (Area One), West Province (Area Three), West Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="963" name="Finizen" regionalDexNumber="291" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Finizen – Lvl 38, while in multiplayer → Palafin</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), Glaseado Mountain, North Paldean Sea, East Paldean Sea, South Paldean Sea, West Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="964" name="Palafin" regionalDexNumber="292" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Finizen – Lvl 38, while in multiplayer → Palafin</evolution>
+        <locations>Evolve Finizen</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="965" name="Varoom" regionalDexNumber="293" type="Steel / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Varoom – Lvl 40 → Revavroom</evolution>
+        <locations>North Province (Area One), East Province (Area Three), West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="966" name="Revavroom" regionalDexNumber="294" type="Steel / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Varoom – Lvl 40 → Revavroom</evolution>
+        <locations>North Province (Area One), East Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="967" name="Cyclizar" regionalDexNumber="295" type="Dragon / Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>East Province (Area Two), West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="968" name="Orthworm" regionalDexNumber="296" type="Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Asado Desert, East Province (Area Three), West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="302" name="Sableye" regionalDexNumber="297" type="Dark / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Three), South Province (Area One), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), The Great Crater of Paldea, Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="353" name="Shuppet" regionalDexNumber="298" type="Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Shuppet – Lvl 37 → Banette</evolution>
+        <locations>East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="354" name="Banette" regionalDexNumber="299" type="Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Shuppet – Lvl 37 → Banette</evolution>
+        <locations>South Province (Area Six)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="870" name="Falinks" regionalDexNumber="300" type="Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Asado Desert, North Province (Area Two), West Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="701" name="Hawlucha" regionalDexNumber="301" type="Fighting / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="442" name="Spiritomb" regionalDexNumber="302" type="Ghost / Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Casseroya Lake, Glaseado Mountain, North Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="714" name="Noibat" regionalDexNumber="303" type="Flying / Dragon">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Noibat – Lvl 48 → Noivern</evolution>
+        <locations>North Province (Area One), North Province (Area Two), West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="715" name="Noivern" regionalDexNumber="304" type="Flying / Dragon">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Noibat – Lvl 48 → Noivern</evolution>
+        <locations>North Province (Area One), North Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="885" name="Dreepy" regionalDexNumber="305" type="Dragon / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Dreepy – Lvl 40 → Drakloak – Lvl 50 → Dragapult</evolution>
+        <locations>Tagtree Thicket, Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), The Great Crater of Paldea, Glaseado Mountain, South Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="886" name="Drakloak" regionalDexNumber="306" type="Dragon / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Dreepy – Lvl 40 → Drakloak – Lvl 50 → Dragapult</evolution>
+        <locations>Tagtree Thicket, Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), The Great Crater of Paldea, Glaseado Mountain, South Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="887" name="Dragapult" regionalDexNumber="307" type="Dragon / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Dreepy – Lvl 40 → Drakloak – Lvl 50 → Dragapult</evolution>
+        <locations>Evolve Dreepy / Drakloak</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="969" name="Glimmet" regionalDexNumber="308" type="Rock / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Glimmet – Lvl 35 → Glimmora</evolution>
+        <locations>North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Three), South Province (Area One), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), The Great Crater of Paldea, Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="970" name="Glimmora" regionalDexNumber="309" type="Rock / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Glimmet – Lvl 35 → Glimmora</evolution>
+        <locations>The Great Crater of Paldea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="479" name="Rotom" regionalDexNumber="310" type="Electric / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>East Province (Area Two), West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="971" name="Greavard" regionalDexNumber="311" type="Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Greavard – Lvl 30, Nighttime → Houndstone</evolution>
+        <locations>Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Three), The Great Crater of Paldea, Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="972" name="Houndstone" regionalDexNumber="312" type="Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Greavard – Lvl 30, Nighttime → Houndstone</evolution>
+        <locations>Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Three), The Great Crater of Paldea, Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="765" name="Oranguru" regionalDexNumber="313" type="Normal / Psychic">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area Two)</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="766" name="Passimian" regionalDexNumber="314" type="Fighting">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area Two)</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="775" name="Komala" regionalDexNumber="315" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Four), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="246" name="Larvitar" regionalDexNumber="316" type="Rock / Ground">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Larvitar – Lvl 30 → Pupitar – Lvl 55 → Tyranitar</evolution>
+        <locations>North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Three), South Province (Area One), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="247" name="Pupitar" regionalDexNumber="317" type="Rock / Ground">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Larvitar – Lvl 30 → Pupitar – Lvl 55 → Tyranitar</evolution>
+        <locations>South Province (Area Six)</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="248" name="Tyranitar" regionalDexNumber="318" type="Rock / Dark">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Larvitar – Lvl 30 → Pupitar – Lvl 55 → Tyranitar</evolution>
+        <locations>Evolve Larvitar / Pupitar</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="874" name="Stonjourner" regionalDexNumber="319" type="Rock">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>Asado Desert</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="875" name="Eiscue" regionalDexNumber="320" type="Ice">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>North Province (Area One), North Province (Area Three), North Paldean Sea</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="871" name="Pincurchin" regionalDexNumber="321" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Five), West Province (Area One), West Province (Area Two), East Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="769" name="Sandygast" regionalDexNumber="322" type="Ghost / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sandygast – Lvl 42 → Palossand</evolution>
+        <locations>Casseroya Lake, East Province (Area One), East Province (Area Two), South Province (Area Five), West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="770" name="Palossand" regionalDexNumber="323" type="Ghost / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sandygast – Lvl 42 → Palossand</evolution>
+        <locations>Casseroya Lake, East Province (Area One), East Province (Area Two), South Province (Area Five), West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="079" name="Slowpoke" regionalDexNumber="324" type="Water / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Slowpoke – Lvl 37 → Slowbro | – Trade holding Kings Rock → Slowking</evolution>
+        <locations>Casseroya Lake, East Province (Area One), East Province (Area Two), South Province (Area Five), West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="080" name="Slowbro" regionalDexNumber="325" type="Water / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Slowpoke – Lvl 37 → Slowbro</evolution>
+        <locations>Casseroya Lake</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="199" name="Slowking" regionalDexNumber="326" type="Water / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Slowpoke – Trade holding Kings Rock → Slowking</evolution>
+        <locations>Evolve Slowpoke</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="422" name="Shellos" regionalDexNumber="327" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Shellos – Lvl 30 → Gastrodon</evolution>
+        <locations>Casseroya Lake, North Province (Area One), East Province (Area One), South Province (Area Five), West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="423" name="Gastrodon" regionalDexNumber="328" type="Water / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Shellos – Lvl 30 → Gastrodon</evolution>
+        <locations>Casseroya Lake, North Province (Area One), East Province (Area One), South Province (Area Five), West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="090" name="Shellder" regionalDexNumber="329" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Shellder – Water Stone → Cloyster</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), Glaseado Mountain, North Paldean Sea, East Paldean Sea, South Paldean Sea, West Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="091" name="Cloyster" regionalDexNumber="330" type="Water / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Shellder – Water Stone → Cloyster</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), Glaseado Mountain, North Paldean Sea, East Paldean Sea, South Paldean Sea, West Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="211" name="Qwilfish" regionalDexNumber="331" type="Water / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), Glaseado Mountain, North Paldean Sea, East Paldean Sea, South Paldean Sea, West Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="370" name="Luvdisc" regionalDexNumber="332" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), Glaseado Mountain, North Paldean Sea, East Paldean Sea, South Paldean Sea, West Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="456" name="Finneon" regionalDexNumber="333" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Finneon – Lvl 33 → Lumineon</evolution>
+        <locations>North Paldean Sea, West Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="457" name="Lumineon" regionalDexNumber="334" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Finneon – Lvl 33 → Lumineon</evolution>
+        <locations>North Paldean Sea, West Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="779" name="Bruxish" regionalDexNumber="335" type="Water / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>East Paldean Sea, South Paldean Sea, West Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="594" name="Alomomola" regionalDexNumber="336" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>North Province (Area One), North Province (Area Three), North Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="690" name="Skrelp" regionalDexNumber="337" type="Poison / Water">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Skrelp – Lvl 48 → Dragalge</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), Glaseado Mountain, North Paldean Sea, East Paldean Sea, South Paldean Sea, West Paldean Sea</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="691" name="Dragalge" regionalDexNumber="338" type="Poison / Dragon">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Skrelp – Lvl 48 → Dragalge</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), Glaseado Mountain, North Paldean Sea, East Paldean Sea, South Paldean Sea, West Paldean Sea</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="692" name="Clauncher" regionalDexNumber="339" type="Water">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Clauncher – Lvl 37 → Clawitzer</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), Glaseado Mountain, North Paldean Sea, East Paldean Sea, South Paldean Sea, West Paldean Sea</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="693" name="Clawitzer" regionalDexNumber="340" type="Water">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Clauncher – Lvl 37 → Clawitzer</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), Glaseado Mountain, North Paldean Sea, East Paldean Sea, South Paldean Sea, West Paldean Sea</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="602" name="Tynamo" regionalDexNumber="341" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tynamo – Lvl 39 → Eelektrik – Thunder Stone → Eelektross</evolution>
+        <locations>South Province (Area Four), South Province (Area Six), West Province (Area One), North Paldean Sea, South Paldean Sea, West Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="603" name="Eelektrik" regionalDexNumber="342" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tynamo – Lvl 39 → Eelektrik – Thunder Stone → Eelektross</evolution>
+        <locations>South Province (Area Four), South Province (Area Six), West Province (Area One), North Paldean Sea, South Paldean Sea, West Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="604" name="Eelektross" regionalDexNumber="343" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tynamo – Lvl 39 → Eelektrik – Thunder Stone → Eelektross</evolution>
+        <locations>Evolve Tynamo / Eelektrik</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="747" name="Mareanie" regionalDexNumber="344" type="Poison / Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Mareanie – Lvl 38 → Toxapex</evolution>
+        <locations>East Province (Area One), East Province (Area Two), East Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="748" name="Toxapex" regionalDexNumber="345" type="Poison / Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Mareanie – Lvl 38 → Toxapex</evolution>
+        <locations>East Province (Area One), East Province (Area Two), East Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="973" name="Flamigo" regionalDexNumber="346" type="Flying / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Tagtree Thicket, Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), The Great Crater of Paldea, Glaseado Mountain, South Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="147" name="Dratini" regionalDexNumber="347" type="Dragon">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Dratini – Lvl 30 → Dragonair – Lvl 55 → Dragonite</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Two), South Province (Area Six)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="148" name="Dragonair" regionalDexNumber="348" type="Dragon">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Dratini – Lvl 30 → Dragonair – Lvl 55 → Dragonite</evolution>
+        <locations>Casseroya Lake</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="149" name="Dragonite" regionalDexNumber="349" type="Dragon / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Dratini – Lvl 30 → Dragonair – Lvl 55 → Dragonite</evolution>
+        <locations>Evolve Dratini / Dragonair</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="872" name="Snom" regionalDexNumber="350" type="Ice / Bug">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snom – High Friendship, Nighttime → Frosmoth</evolution>
+        <locations>Dalizapa Passage, Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="873" name="Frosmoth" regionalDexNumber="351" type="Ice / Bug">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snom – High Friendship, Nighttime → Frosmoth</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), The Great Crater of Paldea, Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="459" name="Snover" regionalDexNumber="352" type="Grass / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snover – Lvl 40 → Abomasnow</evolution>
+        <locations>Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="460" name="Abomasnow" regionalDexNumber="353" type="Grass / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snover – Lvl 40 → Abomasnow</evolution>
+        <locations>Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="225" name="Delibird" regionalDexNumber="354" type="Ice / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>North Province (Area One), North Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="613" name="Cubchoo" regionalDexNumber="355" type="Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Cubchoo – Lvl 37 → Beartic</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="614" name="Beartic" regionalDexNumber="356" type="Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Cubchoo – Lvl 37 → Beartic</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="361" name="Snorunt" regionalDexNumber="357" type="Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snorunt – Lvl 42 → Glalie</evolution>
+        <locations>North Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="362" name="Glalie" regionalDexNumber="358" type="Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snorunt – Lvl 42 → Glalie</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="478" name="Froslass" regionalDexNumber="359" type="Ice / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snorunt – Dawn Stone, Female → Froslass</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="615" name="Cryogonal" regionalDexNumber="360" type="Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="974" name="Cetoddle" regionalDexNumber="361" type="Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Cetoddle – Ice Stone → Cetitan</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="975" name="Cetitan" regionalDexNumber="362" type="Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Cetoddle – Ice Stone → Cetitan</evolution>
+        <locations>Casseroya Lake, North Province (Area One), North Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="712" name="Bergmite" regionalDexNumber="363" type="Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Bergmite – Lvl 37 → Avalugg</evolution>
+        <locations>Casseroya Lake, North Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="713" name="Avalugg" regionalDexNumber="364" type="Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Bergmite – Lvl 37 → Avalugg</evolution>
+        <locations>Casseroya Lake, North Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="627" name="Rufflet" regionalDexNumber="365" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rufflet – Lvl 54 → Braviary</evolution>
+        <locations>Asado Desert, North Province (Area One), East Province (Area One), East Province (Area Three), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="628" name="Braviary" regionalDexNumber="366" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rufflet – Lvl 54 → Braviary</evolution>
+        <locations>North Province (Area One), North Province (Area Two), The Great Crater of Paldea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="624" name="Pawniard" regionalDexNumber="367" type="Dark / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pawniard – Lvl 52 → Bisharp – defeat 3 Bisharp that are holding Leader's Crest → Bisharp</evolution>
+        <locations>Tagtree Thicket, North Province (Area Two), East Province (Area Three), South Province (Area Five), The Great Crater of Paldea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="625" name="Bisharp" regionalDexNumber="368" type="Dark / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pawniard – Lvl 52 → Bisharp – defeat 3 Bisharp that are holding Leader's Crest → Bisharp</evolution>
+        <locations>North Province (Area Two), The Great Crater of Paldea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="983" name="Kingambit" regionalDexNumber="369" type="Dark / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pawniard – Lvl 52 → Bisharp – defeat 3 Bisharp that are holding Leader's Crest → Bisharp</evolution>
+        <locations>Evolve Pawniard / Bisharp</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="633" name="Deino" regionalDexNumber="370" type="Dark / Dragon">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Deino – Lvl 50 → Zweilous – Lvl 64 → Hydreigon</evolution>
+        <locations>North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Three), South Province (Area One), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="634" name="Zweilous" regionalDexNumber="371" type="Dark / Dragon">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Deino – Lvl 50 → Zweilous – Lvl 64 → Hydreigon</evolution>
+        <locations>North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Three), South Province (Area One), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), The Great Crater of Paldea, Glaseado Mountain</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="635" name="Hydreigon" regionalDexNumber="372" type="Dark / Dragon">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Deino – Lvl 50 → Zweilous – Lvl 64 → Hydreigon</evolution>
+        <locations>Evolve Deino / Zweilous</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="976" name="Veluza" regionalDexNumber="373" type="Water / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Casseroya Lake, West Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="977" name="Dondozo" regionalDexNumber="374" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Casseroya Lake</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="978" name="Tatsugiri" regionalDexNumber="375" type="Dragon / Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Casseroya Lake</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="984" name="Great Tusk" regionalDexNumber="376" type="Ground / Fighting">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>The Great Crater of Paldea</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="985" name="Scream Tail" regionalDexNumber="377" type="Fairy / Psychic">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>The Great Crater of Paldea</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="986" name="Brute Bonnet" regionalDexNumber="378" type="Grass / Dark">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>The Great Crater of Paldea</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="987" name="Flutter Mane" regionalDexNumber="379" type="Ghost / Fairy">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>The Great Crater of Paldea</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="988" name="Slither Wing" regionalDexNumber="380" type="Bug / Fighting">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>The Great Crater of Paldea</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="989" name="Sandy Shocks" regionalDexNumber="381" type="Electric / Ground">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>The Great Crater of Paldea</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="990" name="Iron Treads" regionalDexNumber="382" type="Ground / Steel">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>The Great Crater of Paldea</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="991" name="Iron Bundle" regionalDexNumber="383" type="Ice / Water">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>The Great Crater of Paldea</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="992" name="Iron Hands" regionalDexNumber="384" type="Fighting / Electric">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>The Great Crater of Paldea</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="993" name="Iron Jugulis" regionalDexNumber="385" type="Dark / Flying">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>The Great Crater of Paldea</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="994" name="Iron Moth" regionalDexNumber="386" type="Fire / Poison">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>The Great Crater of Paldea</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="995" name="Iron Thorns" regionalDexNumber="387" type="Rock / Electric">
         <evolution>-</evolution>
-        <locations>Area Zero (in rocky area to left of Research Station 2)</locations>
+        <locations>The Great Crater of Paldea</locations>
         <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="996" name="Frigibax" regionalDexNumber="388" type="Dragon / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Frigibax – Lvl 35 → Arctibax – Lvl 54 → Baxcalibur</evolution>
+        <locations>Dalizapa Passage, Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="997" name="Arctibax" regionalDexNumber="389" type="Dragon / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Frigibax – Lvl 35 → Arctibax – Lvl 54 → Baxcalibur</evolution>
+        <locations>Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="998" name="Baxcalibur" regionalDexNumber="390" type="Dragon / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Frigibax – Lvl 35 → Arctibax – Lvl 54 → Baxcalibur</evolution>
+        <locations>Evolve Frigibax / Arctibax</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="999" name="Gimmighoul" regionalDexNumber="391" type="Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gimmighoul – collect 999 Coins from Roaming Form → Gholdengo </evolution>
+        <locations>Casseroya Lake, North Province (Area One), East Province (Area One), East Province (Area Three), South Province (Area Two), South Province (Area Three), South Province (Area Six), West Province (Area One), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1000" name="Gholdengo" regionalDexNumber="392" type="Steel / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gimmighoul – collect 999 Coins from Roaming Form → Gholdengo </evolution>
+        <locations>Evolve Gimmighoul</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1001" name="Wo-Chien" regionalDexNumber="393" type="Dark / Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>South Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1002" name="Chien-Pao" regionalDexNumber="394" type="Dark / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>West Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1003" name="Ting-Lu" regionalDexNumber="395" type="Dark / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Socarrat Trail</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1004" name="Chi-Yu" regionalDexNumber="396" type="Dark / Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>North Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1005" name="Roaring Moon" regionalDexNumber="397" type="Dragon / Dark">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>The Great Crater of Paldea</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1006" name="Iron Valiant" regionalDexNumber="398" type="Fairy / Fighting">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>The Great Crater of Paldea</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1007" name="Koraidon" regionalDexNumber="399" type="Fighting / Dragon">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>The Great Crater of Paldea</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1008" name="Miraidon" regionalDexNumber="400" type="Electric / Dragon">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>The Great Crater of Paldea</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
 </pokedex>
