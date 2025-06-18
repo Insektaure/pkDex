@@ -608,302 +608,302 @@
     </pokemon>
 
     <pokemon id="441" name="Chatot" regionalDexNumber="102" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Route 222, 224</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="172" name="Pichu" regionalDexNumber="103" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pichu – High Friendship → Pikachu – Thunder Stone → Raichu</evolution>
+        <locations>Trophy Garden</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="025" name="Pikachu" regionalDexNumber="104" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pichu – High Friendship → Pikachu – Thunder Stone → Raichu</evolution>
+        <locations>Trophy Garden</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="026" name="Raichu" regionalDexNumber="105" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pichu – High Friendship → Pikachu – Thunder Stone → Raichu</evolution>
+        <locations>Evolve Pikachu</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="163" name="Hoothoot" regionalDexNumber="106" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Hoothoot – Lvl 20 → Noctowl</evolution>
+        <locations>Route 210, 211, Great Marsh, Spacious Cave, Grassland Cave, Fountainspring Cave, Riverbank Cave, Still-Water Cavern, Sunlit Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="164" name="Noctowl" regionalDexNumber="107" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Hoothoot – Lvl 20 → Noctowl</evolution>
+        <locations>Route 210, 211, 216, 217, Acuity Lakefront, Great Marsh, Lake Acuity, Lake Valor, Mt. Coronet, Sendoff Spring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="442" name="Spiritomb" regionalDexNumber="108" type="Ghost / Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Hallowed Tower on Route 209</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="443" name="Gible" regionalDexNumber="109" type="Dragon / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gible – Lvl 24 → Gabite – Lvl 48 → Garchomp</evolution>
+        <locations>Wayward Cave, Fountainspring Cave, Riverbank Cave, Still-Water Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="444" name="Gabite" regionalDexNumber="110" type="Dragon / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gible – Lvl 24 → Gabite – Lvl 48 → Garchomp</evolution>
+        <locations>Fountainspring Cave, Riverbank Cave, Still-Water Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="445" name="Garchomp" regionalDexNumber="111" type="Dragon / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gible – Lvl 24 → Gabite – Lvl 48 → Garchomp</evolution>
+        <locations>Evolve Gible / Gabite</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="446" name="Munchlax" regionalDexNumber="112" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Munchlax – High Friendship → Snorlax</evolution>
+        <locations>Spacious Cave, Grassland Cave, Whiteout Cave, Riverbank Cave, Still-Water Cavern, Sunlit Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="143" name="Snorlax" regionalDexNumber="113" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Munchlax – High Friendship → Snorlax</evolution>
+        <locations>Evolve Munchlax</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="201" name="Unown" regionalDexNumber="114" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Solaceon Ruins</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="447" name="Riolu" regionalDexNumber="115" type="Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Riolu – High Friendship, Daytime → Lucario</evolution>
+        <locations>Hatch Egg received from Riley in Iron Island</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="448" name="Lucario" regionalDexNumber="116" type="Fighting / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Riolu – High Friendship, Daytime → Lucario</evolution>
+        <locations>Evolve Riolu</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="194" name="Wooper" regionalDexNumber="117" type="Water / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Wooper – Lvl 20 → Quagsire</evolution>
+        <locations>Route 212, Great Marsh, Fountainspring Cave, Swampy Cave, Bogsunk Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="195" name="Quagsire" regionalDexNumber="118" type="Water / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Wooper – Lvl 20 → Quagsire</evolution>
+        <locations>Route 212, Great Marsh, Fountainspring Cave, Swampy Cave, Bogsunk Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="278" name="Wingull" regionalDexNumber="119" type="Water / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Wingull – Lvl 25 → Pelipper</evolution>
+        <locations>Route 205, 213, 218, 219, 220, 221, 222, 229, Canalave City, Fuego Ironworks, Iron Island, Pastoria City, Valley Windworks, Spacious Cave, Fountainspring Cave, Riverbank Cave, Still-Water Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="279" name="Pelipper" regionalDexNumber="120" type="Water / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Wingull – Lvl 25 → Pelipper</evolution>
+        <locations>Route 205, 213, 218, 219, 220, 221, 222, 223, 224, 226, 229, 230, Canalave City, Fuego Ironworks, Iron Island, Pastoria City, Pokémon League, Sunyshore City, Valley Windworks, Spacious Cave, Fountainspring Cave, Riverbank Cave, Still-Water Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="203" name="Girafarig" regionalDexNumber="121" type="Normal / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Route 214, Valor Lakefront, Dazzling Cave, Stargleam Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="449" name="Hippopotas" regionalDexNumber="122" type="Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Hippopotas – Lvl 34 → Hippowdon</evolution>
+        <locations>Ruin Maniac Tunnel, Rocky Cave, Sandsear Cave, Big Bluff Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="450" name="Hippowdon" regionalDexNumber="123" type="Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Hippopotas – Lvl 34 → Hippowdon</evolution>
+        <locations>Route 228</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="298" name="Azurill" regionalDexNumber="124" type="Normal / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Azurill – High Friendship → Marill – Lvl 18 → Azumarill</evolution>
+        <locations>Great Marsh</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="183" name="Marill" regionalDexNumber="125" type="Water / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Azurill – High Friendship → Marill – Lvl 18 → Azumarill</evolution>
+        <locations>Great Marsh</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="184" name="Azumarill" regionalDexNumber="126" type="Water / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Azurill – High Friendship → Marill – Lvl 18 → Azumarill</evolution>
+        <locations>Evolve Marill / Azurill</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="451" name="Skorupi" regionalDexNumber="127" type="Poison / Bug">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Skorupi – Lvl 40 → Drapion</evolution>
+        <locations>Rocky Cave, Volcanic Cave, Swampy Cave, Sandsear Cave, Big Bluff Cavern, Bogsunk Cavern, Typhlo Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="452" name="Drapion" regionalDexNumber="128" type="Poison / Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Skorupi – Lvl 40 → Drapion</evolution>
+        <locations>Evolve Skorupi</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="453" name="Croagunk" regionalDexNumber="129" type="Poison / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Croagunk – Lvl 37 → Toxicroak</evolution>
+        <locations>Swampy Cave, Riverbank Cave, Still-Water Cavern, Bogsunk Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="454" name="Toxicroak" regionalDexNumber="130" type="Poison / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Croagunk – Lvl 37 → Toxicroak</evolution>
+        <locations>Evolve Croagunk</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="455" name="Carnivine" regionalDexNumber="131" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Great Marsh</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="223" name="Remoraid" regionalDexNumber="132" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Remoraid – Lvl 25 → Octillery</evolution>
+        <locations>Route 213, 222, 223, 224, 230, Pastoria City, Pokémon League, Sunyshore City</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="224" name="Octillery" regionalDexNumber="133" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Remoraid – Lvl 25 → Octillery</evolution>
+        <locations>Route 213, 222, 223, 224, 230, Pastoria City, Pokémon League, Sunyshore City, Fountainspring Cave, Riverbank Cave, Still-Water Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="456" name="Finneon" regionalDexNumber="134" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Finneon – Lvl 33 → Lumineon</evolution>
+        <locations>Route 205, 218, 219, 220, 221, Canalave City, Fuego Ironworks, Iron Island, Valley Windworks</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="457" name="Lumineon" regionalDexNumber="135" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Finneon – Lvl 33 → Lumineon</evolution>
+        <locations>Route 205, 218, 219, 220, 221, Canalave City, Fuego Ironworks, Iron Island, Valley Windworks</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="072" name="Tentacool" regionalDexNumber="136" type="Water / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tentacool – Lvl 30 → Tentacruel</evolution>
+        <locations>Route 205, 213, 218, 219, 220, 221, 222, Canalave City, Fuego Ironworks, Iron Island, Pastoria City, Valley Windworks, Fountainspring Cave, Swampy Cave, Riverbank Cave, Still-Water Cavern, Bogsunk Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="073" name="Tentacruel" regionalDexNumber="137" type="Water / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tentacool – Lvl 30 → Tentacruel</evolution>
+        <locations>Route 205, 213, 218, 219, 220, 221, 222, 223, 224, 226, 230, Canalave City, Fuego Ironworks, Iron Island, Pastoria City, Pokémon League, Sunyshore City, Valley Windworks, Fountainspring Cave, Swampy Cave, Riverbank Cave, Still-Water Cavern, Bogsunk Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="349" name="Feebas" regionalDexNumber="138" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Feebas – Trade holding Prism Scale, or level up with max Beauty → Milotic</evolution>
+        <locations>Mount Coronet (four fishing spots)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="350" name="Milotic" regionalDexNumber="139" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Feebas – Trade holding Prism Scale, or level up with max Beauty → Milotic</evolution>
+        <locations>Evolve Feebas</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="458" name="Mantyke" regionalDexNumber="140" type="Water / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Mantyke – with Remoraid in party → Mantine</evolution>
+        <locations>Route 223, Sunyshore City, Spacious Cave, Fountainspring Cave, Riverbank Cave, Still-Water Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="226" name="Mantine" regionalDexNumber="141" type="Water / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Mantyke – with Remoraid in party → Mantine</evolution>
+        <locations>Evolve Mantyke</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="459" name="Snover" regionalDexNumber="142" type="Grass / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snover – Lvl 40 → Abomasnow</evolution>
+        <locations>Route 216, 217, Acuity Lakefront, Mt. Coronet, Whiteout Cave, Icy Cave, Glacial Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="460" name="Abomasnow" regionalDexNumber="143" type="Grass / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snover – Lvl 40 → Abomasnow</evolution>
+        <locations>Mt. Coronet</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="215" name="Sneasel" regionalDexNumber="144" type="Dark / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sneasel – Razor Claw, Nighttime → Weavile</evolution>
+        <locations>Route 216, 217, Acuity Lakefront, Lake Acuity, Snowpoint Temple, Whiteout Cave, Icy Cave, Glacial Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="461" name="Weavile" regionalDexNumber="145" type="Dark / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sneasel – Razor Claw, Nighttime → Weavile</evolution>
+        <locations>Evolve Sneasel</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="480" name="Uxie" regionalDexNumber="146" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Acuity Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="481" name="Mesprit" regionalDexNumber="147" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Roaming Sinnoh</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="482" name="Azelf" regionalDexNumber="148" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Valor Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="483" name="Dialga" regionalDexNumber="149" type="Steel / Dragon">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>Spear Pillar</locations>
+        <exclusiveVersion>Brilliant Diamond</exclusiveVersion>
     </pokemon>
 
     <pokemon id="484" name="Palkia" regionalDexNumber="150" type="Water / Dragon">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>Spear Pillar</locations>
+        <exclusiveVersion>Shining Pearl</exclusiveVersion>
     </pokemon>
 
     <pokemon id="490" name="Manaphy" regionalDexNumber="151" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Trade / migrate from another game</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
