@@ -2,684 +2,662 @@
 <pokedex region="paldea">
 
     <pokemon id="906" name="Sprigatito" regionalDexNumber="001" type="Grass">
-        <evolution>Sprigatito -Lvl 16- Floragato -Lvl 36- Meowscarada</evolution>
+        <evolution>Sprigatito – Lvl 16 → Floragato – Lvl 36 → Meowscarada</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="907" name="Floragato" regionalDexNumber="002" type="Grass">
-        <evolution>Sprigatito -Lvl 16- Floragato -Lvl 36- Meowscarada</evolution>
+        <evolution>Sprigatito – Lvl 16 → Floragato – Lvl 36 → Meowscarada</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="908" name="Meowscarada" regionalDexNumber="003" type="Grass">
-        <evolution>Sprigatito -Lvl 16- Floragato -Lvl 36- Meowscarada</evolution>
+        <evolution>Sprigatito – Lvl 16 → Floragato – Lvl 36 → Meowscarada</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="909" name="Fuecoco" regionalDexNumber="004" type="Fire">
-        <evolution>Fuecoco -Lvl 16- Crocalor -Lvl 36- Skeledirge</evolution>
+        <evolution>Fuecoco – Lvl 16 → Crocalor – Lvl 36 → Skeledirge</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="910" name="Crocalor" regionalDexNumber="005" type="Fire">
-        <evolution>Fuecoco -Lvl 16- Crocalor -Lvl 36- Skeledirge</evolution>
+        <evolution>Fuecoco – Lvl 16 → Crocalor – Lvl 36 → Skeledirge</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="911" name="Skeledirge" regionalDexNumber="006" type="Fire / Ghost">
-        <evolution>Fuecoco -Lvl 16- Crocalor -Lvl 36- Skeledirge</evolution>
+        <evolution>Fuecoco – Lvl 16 → Crocalor – Lvl 36 → Skeledirge</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="912" name="Quaxly" regionalDexNumber="007" type="Water">
-        <evolution>Quaxly -Lvl 16- Quaxwell -Lvl 36- Quaquaval</evolution>
+        <evolution>Quaxly – Lvl 16 → Quaxwell – Lvl 36 → Quaquaval</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="913" name="Quaxwell" regionalDexNumber="008" type="Water">
-        <evolution>Quaxly -Lvl 16- Quaxwell -Lvl 36- Quaquaval</evolution>
+        <evolution>Quaxly – Lvl 16 → Quaxwell – Lvl 36 → Quaquaval</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="914" name="Quaquaval" regionalDexNumber="009" type="Water / Fighting">
-        <evolution>Quaxly -Lvl 16- Quaxwell -Lvl 36- Quaquaval</evolution>
+        <evolution>Quaxly – Lvl 16 → Quaxwell – Lvl 36 → Quaquaval</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="915" name="Lechonk" regionalDexNumber="010" type="Normal">
-        <evolution>Lechonk -Lvl 18- Oinkologne</evolution>
-        <locations>East Province Area One, East Province Area Two, Pokemon League, South Province Area One, South Province Area Two, South Province Area Three, South Province Area Four, South Province Area Five , Tera Raid Battles: 1 Star Raid Battles</locations>
+        <evolution>Lechonk – Lvl 18 → Oinkologne</evolution>
+        <locations>Tagtree Thicket, East Province (Area One), South Province (Area One), South Province (Area Four), South Province (Area Five), West Province (Area Two), West Province (Area Three), The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="916" name="Oinkologne" regionalDexNumber="011" type="Normal">
-        <evolution>Lechonk -Lvl 18- Oinkologne</evolution>
-        <locations>East Province Area One, East Province Area Two, South Province Area Three, South Province Area Five, Tagtree Thicket, West Province Area Two, West Province Area Three, Tera Raid Battles: 3 Star Raid Battles</locations>
+        <evolution>Lechonk – Lvl 18 → Oinkologne</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Five), West Province (Area Two), West Province (Area Three), The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="917" name="Tarountula" regionalDexNumber="012" type="Bug">
-        <evolution>Tarountula -Lvl 15- Spidops</evolution>
-        <locations>Pokemon League, South Province Area One, South Province Area Two, South Province Area Three, South Province Area Four, South Province Area Five</locations>
+        <evolution>Tarountula – Lvl 15 → Spidops</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area Two), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Four), South Province (Area Five), West Province (Area Two), West Province (Area Three), The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="918" name="Spidops" regionalDexNumber="013" type="Bug">
-        <evolution>Tarountula -Lvl 15- Spidops</evolution>
-        <locations>East Province Area One, East Province Area Two, North Province Area Two, Socarrat Trail, Tagtree Thicket, West Province Area Three</locations>
+        <evolution>Tarountula – Lvl 15 → Spidops</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area Two), East Province (Area One), East Province (Area Two), South Province (Area One), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="919" name="Nymble" regionalDexNumber="014" type="Bug">
-        <evolution>Nymble -Lvl 24- Lokix</evolution>
-        <locations>South Province Area Two, South Province Area Three, South Province Area Six, West Province Area One, Tera Raid Battles: 1 Star Raid Battles</locations>
+        <evolution>Nymble – Lvl 24 → Lokix</evolution>
+        <locations>South Province (Area Three), West Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="920" name="Lokix" regionalDexNumber="015" type="Bug / Dark">
-        <evolution>Nymble -Lvl 24- Lokix</evolution>
-        <locations>Alfornada Cavern, Asado Desert, Casseroya Lake, Dalizapa Passage, East Province Area Three, Glaseado Mountain, North Province Area One, North Province Area Two, North Province Area Three, South Province Area Six, West Province Area Two
-            Fixed: North Province Area Two, West Province Area One
-            Tera Raid Battles: 3 Star Raid Battles</locations>
+        <evolution>Nymble – Lvl 24 → Lokix</evolution>
+        <locations>Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="187" name="Hoppip" regionalDexNumber="016" type="Grass / Flying">
-        <evolution>Hoppip -Lvl 18- Skiploom -Lvl 27- Jumpluff</evolution>
-        <locations>
-            South Province Area One, South Province Area Two
-            Tera Raid Battles: 1 Star Raid Battles
-        </locations>
+        <evolution>Hoppip – Lvl 18 → Skiploom – Lvl 27 → Jumpluff</evolution>
+        <locations>Tagtree Thicket, Asado Desert, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, East Paldean Sea, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="188" name="Skiploom" regionalDexNumber="017" type="Grass / Flying">
-        <evolution>Hoppip -Lvl 18- Skiploom -Lvl 27- Jumpluff</evolution>
-        <locations>
-            East Province Area One, East Province Area Two, South Province Area Three, South Province Area Five
-            Fixed: West Province Area Two
-            Tera Raid Battles: 3 Star Raid Battles
-        </locations>
+        <evolution>Hoppip – Lvl 18 → Skiploom – Lvl 27 → Jumpluff</evolution>
+        <locations>East Province (Area One), East Province (Area Two), South Province (Area Five)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="189" name="Jumpluff" regionalDexNumber="018" type="Grass / Flying">
-        <evolution>Hoppip -Lvl 18- Skiploom -Lvl 27- Jumpluff</evolution>
-        <locations>North Province Area One, North Province Area Two, North Province Area Three, West Province Area Three</locations>
+        <evolution>Hoppip – Lvl 18 → Skiploom – Lvl 27 → Jumpluff</evolution>
+        <locations>Tagtree Thicket, Asado Desert, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), The Great Crater of Paldea, Glaseado Mountain, East Paldean Sea, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="661" name="Fletchling" regionalDexNumber="019" type="Normal / Flying">
-        <evolution>Fletchling -Lvl 17- Fletchinder -Lvl 35- Talonflame</evolution>
-        <locations>South Province Area One, South Province Area Two, South Province Area Five, Fixed: South Province Area One, South Province Area Two, Tera Raid Battles: 2 Star Raid Battles, Canyon Biome, Coastal Biome
-        </locations>
+        <evolution>Fletchling – Lvl 17 → Fletchinder – Lvl 35 → Talonflame</evolution>
+        <locations>South Province (Area One), South Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="662" name="Fletchinder" regionalDexNumber="020" type="Fire / Flying">
-        <evolution>Fletchling -Lvl 17- Fletchinder -Lvl 35- Talonflame</evolution>
-        <locations>
-            South Province Area One, South Province Area Three, South Province Area Four, South Province Area Five, West Province Area Three
-            Fixed: East Province Area One, West Province Area Two
-            Tera Raid Battles: 3 Star Raid Battles
-            Canyon Biome, Coastal Biome
-            Fixed: Coastal Biome
-        </locations>
+        <evolution>Fletchling – Lvl 17 → Fletchinder – Lvl 35 → Talonflame</evolution>
+        <locations>South Province (Area Four), South Province (Area Five), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="663" name="Talonflame" regionalDexNumber="021" type="Fire / Flying">
-        <evolution>Fletchling -Lvl 17- Fletchinder -Lvl 35- Talonflame</evolution>
-        <locations>
-            Area Zero
-            Fixed: South Province Area Three
-            Tera Raid Battles: 5 Star Raid Battles, 6 Star Raid Battles
-            Coastal Biome, Torchlit Labyrinth
-            Fixed: Coastal Biome
-        </locations>
+        <evolution>Fletchling – Lvl 17 → Fletchinder – Lvl 35 → Talonflame</evolution>
+        <locations>The Great Crater of Paldea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="921" name="Pawmi" regionalDexNumber="022" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pawmi – Lvl 18 → Pawmo – walk 1,000 steps in Let's Go mode → Pawmot</evolution>
+        <locations>Asado Desert, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="922" name="Pawmo" regionalDexNumber="023" type="Electric / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pawmi – Lvl 18 → Pawmo – walk 1,000 steps in Let's Go mode → Pawmot</evolution>
+        <locations>Asado Desert, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="923" name="Pawmot" regionalDexNumber="024" type="Electric / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pawmi – Lvl 18 → Pawmo – walk 1,000 steps in Let's Go mode → Pawmot</evolution>
+        <locations>Tera Raid Battles (5★, 6★)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="228" name="Houndour" regionalDexNumber="025" type="Dark / Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Houndour – Lvl 24 → Houndoom</evolution>
+        <locations>North Province (Area Two), South Province (Area One), South Province (Area Four)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="229" name="Houndoom" regionalDexNumber="026" type="Dark / Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Houndour – Lvl 24 → Houndoom</evolution>
+        <locations>North Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="734" name="Yungoos" regionalDexNumber="027" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Yungoos – Lvl 20, Daytime → Gumshoos</evolution>
+        <locations>Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="735" name="Gumshoos" regionalDexNumber="028" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Yungoos – Lvl 20, Daytime → Gumshoos</evolution>
+        <locations>Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="819" name="Skwovet" regionalDexNumber="029" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Skwovet – Lvl 24 → Greedent</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="820" name="Greedent" regionalDexNumber="030" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Skwovet – Lvl 24 → Greedent</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="191" name="Sunkern" regionalDexNumber="031" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sunkern – Sun Stone → Sunflora</evolution>
+        <locations>Tagtree Thicket, Asado Desert, North Province (Area One), North Province (Area Two), North Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), Glaseado Mountain, East Paldean Sea, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="192" name="Sunflora" regionalDexNumber="032" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sunkern – Sun Stone → Sunflora</evolution>
+        <locations>Tagtree Thicket, Asado Desert, North Province (Area One), North Province (Area Two), North Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), Glaseado Mountain, East Paldean Sea, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="401" name="Kricketot" regionalDexNumber="033" type="Bug">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Kricketot – Lvl 10 → Kricketune</evolution>
+        <locations>North Province (Area One), North Province (Area Two), South Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="402" name="Kricketune" regionalDexNumber="034" type="Bug">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Kricketot – Lvl 10 → Kricketune</evolution>
+        <locations>North Province (Area One), North Province (Area Two), South Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="664" name="Scatterbug" regionalDexNumber="035" type="Bug">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Scatterbug – Lvl 9 → Spewpa – Lvl 12 → Vivillon</evolution>
+        <locations>South Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="665" name="Spewpa" regionalDexNumber="036" type="Bug">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Scatterbug – Lvl 9 → Spewpa – Lvl 12 → Vivillon</evolution>
+        <locations>South Province (Area One), South Province (Area Four), South Province (Area Five)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="666" name="Vivillon" regionalDexNumber="037" type="Bug / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Scatterbug – Lvl 9 → Spewpa – Lvl 12 → Vivillon</evolution>
+        <locations>Tagtree Thicket, Asado Desert, North Province (Area One), North Province (Area Two), North Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), Glaseado Mountain, East Paldean Sea, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="415" name="Combee" regionalDexNumber="038" type="Bug / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Combee – Lvl 21, Female → Vespiquen</evolution>
+        <locations>Tagtree Thicket, Asado Desert, North Province (Area One), North Province (Area Two), North Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), Glaseado Mountain, East Paldean Sea, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="416" name="Vespiquen" regionalDexNumber="039" type="Bug / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Combee – Lvl 21, Female → Vespiquen</evolution>
+        <locations>Tagtree Thicket, Asado Desert, North Province (Area One), North Province (Area Two), North Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), Glaseado Mountain, East Paldean Sea, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="821" name="Rookidee" regionalDexNumber="040" type="Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rookidee – Lvl 18 → Corvisquire – Lvl 38 → Corviknight</evolution>
+        <locations>East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area Three), South Province (Area Five)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="822" name="Corvisquire" regionalDexNumber="041" type="Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rookidee – Lvl 18 → Corvisquire – Lvl 38 → Corviknight</evolution>
+        <locations>East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area Five)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="823" name="Corviknight" regionalDexNumber="042" type="Flying / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rookidee – Lvl 18 → Corvisquire – Lvl 38 → Corviknight</evolution>
+        <locations>The Great Crater of Paldea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="440" name="Happiny" regionalDexNumber="043" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Happiny – hold Oval Stone, Daytime → Chansey – High Friendship → Blissey</evolution>
+        <locations>Tagtree Thicket, Asado Desert, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, East Paldean Sea, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="113" name="Chansey" regionalDexNumber="044" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Happiny – hold Oval Stone, Daytime → Chansey – High Friendship → Blissey</evolution>
+        <locations>Tagtree Thicket, Asado Desert, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, East Paldean Sea, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="242" name="Blissey" regionalDexNumber="045" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Happiny – hold Oval Stone, Daytime → Chansey – High Friendship → Blissey</evolution>
+        <locations>Tagtree Thicket, Asado Desert, North Province (Area One), North Province (Area Two), North Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), Glaseado Mountain, East Paldean Sea, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="298" name="Azurill" regionalDexNumber="046" type="Normal / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Azurill – High Friendship → Marill – Lvl 18 → Azumarill</evolution>
+        <locations>Tagtree Thicket, Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, South Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="183" name="Marill" regionalDexNumber="047" type="Water / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Azurill – High Friendship → Marill – Lvl 18 → Azumarill</evolution>
+        <locations>Tagtree Thicket, Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, South Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="184" name="Azumarill" regionalDexNumber="048" type="Water / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Azurill – High Friendship → Marill – Lvl 18 → Azumarill</evolution>
+        <locations>Casseroya Lake, West Province (Area Two), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="283" name="Surskit" regionalDexNumber="049" type="Bug / Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Surskit – Lvl 22 → Masquerain</evolution>
+        <locations>South Province (Area One), South Province (Area Five)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="284" name="Masquerain" regionalDexNumber="050" type="Bug / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Surskit – Lvl 22 → Masquerain</evolution>
+        <locations>South Province (Area Four), South Province (Area Five), The Great Crater of Paldea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="418" name="Buizel" regionalDexNumber="051" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Buizel – Lvl 26 → Floatzel</evolution>
+        <locations>Tagtree Thicket, Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, North Paldean Sea, East Paldean Sea, South Paldean Sea, West Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="419" name="Floatzel" regionalDexNumber="052" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Buizel – Lvl 26 → Floatzel</evolution>
+        <locations>Tagtree Thicket, Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, North Paldean Sea, East Paldean Sea, South Paldean Sea, West Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="194" name="Wooper" regionalDexNumber="053" type="Poison / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Wooper – Lvl 20 → Clodsire</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="980" name="Clodsire" regionalDexNumber="054" type="Poison / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Wooper – Lvl 20 → Clodsire</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="054" name="Psyduck" regionalDexNumber="055" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Psyduck – Lvl 33 → Golduck</evolution>
+        <locations>Tagtree Thicket, Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, South Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="055" name="Golduck" regionalDexNumber="056" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Psyduck – Lvl 33 → Golduck</evolution>
+        <locations>Tagtree Thicket, Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, South Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="833" name="Chewtle" regionalDexNumber="057" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Chewtle – Lvl 22 → Drednaw</evolution>
+        <locations>Tagtree Thicket, Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, South Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="834" name="Drednaw" regionalDexNumber="058" type="Water / Rock">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Chewtle – Lvl 22 → Drednaw</evolution>
+        <locations>Tagtree Thicket, Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, South Paldean Sea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="174" name="Igglybuff" regionalDexNumber="059" type="Normal / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Igglybuff – High Friendship → Jigglypuff – Moon Stone → Wigglytuff</evolution>
+        <locations>East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Six), West Province (Area Two), West Province (Area Three), Glaseado Mountain, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="039" name="Jigglypuff" regionalDexNumber="060" type="Normal / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Igglybuff – High Friendship → Jigglypuff – Moon Stone → Wigglytuff</evolution>
+        <locations>North Province (Area One), South Province (Area Two), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="040" name="Wigglytuff" regionalDexNumber="061" type="Normal / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Igglybuff – High Friendship → Jigglypuff – Moon Stone → Wigglytuff</evolution>
+        <locations>North Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="280" name="Ralts" regionalDexNumber="062" type="Psychic / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Ralts – Lvl 20 → Kirlia – Lvl 30 → Gardevoir | – Dawn Stone, Male → Gallade</evolution>
+        <locations>South Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="281" name="Kirlia" regionalDexNumber="063" type="Psychic / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Ralts – Lvl 20 → Kirlia – Lvl 30 → Gardevoir | – Dawn Stone, Male → Gallade</evolution>
+        <locations>East Province (Area Two), West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="282" name="Gardevoir" regionalDexNumber="064" type="Psychic / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Ralts – Lvl 20 → Kirlia – Lvl 30 → Gardevoir | – Dawn Stone, Male → Gallade</evolution>
+        <locations>Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="475" name="Gallade" regionalDexNumber="065" type="Psychic / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Ralts – Lvl 20 → Kirlia – Lvl 30 → Gardevoir | – Dawn Stone, Male → Gallade</evolution>
+        <locations>North Province (Area One), East Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="096" name="Drowzee" regionalDexNumber="066" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Drowzee – Lvl 26 → Hypno</evolution>
+        <locations>Asado Desert, Casseroya Lake, North Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="097" name="Hypno" regionalDexNumber="067" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Drowzee – Lvl 26 → Hypno</evolution>
+        <locations>Asado Desert, Casseroya Lake, North Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="092" name="Gastly" regionalDexNumber="068" type="Ghost / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gastly – Lvl 25 → Haunter – Trade → Gengar</evolution>
+        <locations>Asado Desert, Casseroya Lake, North Province (Area One), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="093" name="Haunter" regionalDexNumber="069" type="Ghost / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gastly – Lvl 25 → Haunter – Trade → Gengar</evolution>
+        <locations>North Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="094" name="Gengar" regionalDexNumber="070" type="Ghost / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gastly – Lvl 25 → Haunter – Trade → Gengar</evolution>
+        <locations>Evolve Gastly / Haunter</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="924" name="Tandemaus" regionalDexNumber="071" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tandemaus – Lvl 25 → Maushold</evolution>
+        <locations>East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Six), West Province (Area Two), West Province (Area Three), Glaseado Mountain, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="925" name="Maushold" regionalDexNumber="072" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tandemaus – Lvl 25 → Maushold</evolution>
+        <locations>Evolve Tandemaus</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="172" name="Pichu" regionalDexNumber="073" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pichu – High Friendship → Pikachu – Thunder Stone → Raichu</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Four), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="025" name="Pikachu" regionalDexNumber="074" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pichu – High Friendship → Pikachu – Thunder Stone → Raichu</evolution>
+        <locations>East Province (Area One), South Province (Area Two), South Province (Area Four), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="026" name="Raichu" regionalDexNumber="075" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pichu – High Friendship → Pikachu – Thunder Stone → Raichu</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Four), West Province (Area Three), The Great Crater of Paldea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="926" name="Fidough" regionalDexNumber="076" type="Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Fidough – Lvl 26 → Dachsbun</evolution>
+        <locations>East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Six), West Province (Area Three), The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="927" name="Dachsbun" regionalDexNumber="077" type="Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Fidough – Lvl 26 → Dachsbun</evolution>
+        <locations>East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Six), West Province (Area Three), The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="287" name="Slakoth" regionalDexNumber="078" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Slakoth – Lvl 18 → Vigoroth – Lvl 36 → Slaking</evolution>
+        <locations>South Province (Area Three), South Province (Area Five)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="288" name="Vigoroth" regionalDexNumber="079" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Slakoth – Lvl 18 → Vigoroth – Lvl 36 → Slaking</evolution>
+        <locations>South Province (Area Five), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="289" name="Slaking" regionalDexNumber="080" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Slakoth – Lvl 18 → Vigoroth – Lvl 36 → Slaking</evolution>
+        <locations>Casseroya Lake</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="761" name="Bounsweet" regionalDexNumber="081" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Bounsweet – Lvl 18 → Steenee – after learning Stomp → Tsareena</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Four), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="762" name="Steenee" regionalDexNumber="082" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Bounsweet – Lvl 18 → Steenee – after learning Stomp → Tsareena</evolution>
+        <locations>East Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="763" name="Tsareena" regionalDexNumber="083" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Bounsweet – Lvl 18 → Steenee – after learning Stomp → Tsareena</evolution>
+        <locations>Socarrat Trail</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="928" name="Smoliv" regionalDexNumber="084" type="Grass / Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Smoliv – Lvl 25 → Dolliv – Lvl 35 → Arboliva</evolution>
+        <locations>Tagtree Thicket, Asado Desert, North Province (Area One), North Province (Area Two), North Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), Glaseado Mountain, East Paldean Sea, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="929" name="Dolliv" regionalDexNumber="085" type="Grass / Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Smoliv – Lvl 25 → Dolliv – Lvl 35 → Arboliva</evolution>
+        <locations>Tagtree Thicket, Asado Desert, North Province (Area One), North Province (Area Two), North Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), Glaseado Mountain, East Paldean Sea, The Pokémon League</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="930" name="Arboliva" regionalDexNumber="086" type="Grass / Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Smoliv – Lvl 25 → Dolliv – Lvl 35 → Arboliva</evolution>
+        <locations>Tera Raid Battles (5★)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="438" name="Bonsly" regionalDexNumber="087" type="Rock">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Bonsly – after learning Mimic → Sudowoodo</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Four), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="185" name="Sudowoodo" regionalDexNumber="088" type="Rock">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Bonsly – after learning Mimic → Sudowoodo</evolution>
+        <locations>Casseroya Lake, West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="744" name="Rockruff" regionalDexNumber="089" type="Rock">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rockruff – Lvl 25, Daytime / Nighttime / Dusk → Lycanroc</evolution>
+        <locations>North Province (Area One), East Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="745" name="Lycanroc" regionalDexNumber="090" type="Rock">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rockruff – Lvl 25, Daytime / Nighttime / Dusk → Lycanroc</evolution>
+        <locations>North Province (Area One), East Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), The Great Crater of Paldea, Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="837" name="Rolycoly" regionalDexNumber="091" type="Rock">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rolycoly – Lvl 18 → Carkol – Lvl 34 → Coalossal</evolution>
+        <locations>East Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="838" name="Carkol" regionalDexNumber="092" type="Rock / Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rolycoly – Lvl 18 → Carkol – Lvl 34 → Coalossal</evolution>
+        <locations>East Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="839" name="Coalossal" regionalDexNumber="093" type="Rock / Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rolycoly – Lvl 18 → Carkol – Lvl 34 → Coalossal</evolution>
+        <locations>Tera Raid Battles (5★)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="403" name="Shinx" regionalDexNumber="094" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Shinx – Lvl 15 → Luxio – Lvl 30 → Luxray</evolution>
+        <locations>North Province (Area Two), South Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="404" name="Luxio" regionalDexNumber="095" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Shinx – Lvl 15 → Luxio – Lvl 30 → Luxray</evolution>
+        <locations>South Province (Area Five)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="405" name="Luxray" regionalDexNumber="096" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Shinx – Lvl 15 → Luxio – Lvl 30 → Luxray</evolution>
+        <locations>North Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="396" name="Starly" regionalDexNumber="097" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Starly – Lvl 14 → Staravia – Lvl 34 → Staraptor</evolution>
+        <locations>South Province (Area Two), South Province (Area Four), West Province (Area Two), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="397" name="Staravia" regionalDexNumber="098" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Starly – Lvl 14 → Staravia – Lvl 34 → Staraptor</evolution>
+        <locations>South Province (Area Two), South Province (Area Four), West Province (Area Two), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="398" name="Staraptor" regionalDexNumber="099" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Starly – Lvl 14 → Staravia – Lvl 34 → Staraptor</evolution>
+        <locations>Casseroya Lake, South Province (Area Two), South Province (Area Four), West Province (Area Two), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="741" name="Oricorio" regionalDexNumber="100" type="Fire / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>East Province (Area One), South Province (Area One), South Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="179" name="Mareep" regionalDexNumber="101" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Mareep – Lvl 15 → Flaaffy – Lvl 30 → Ampharos</evolution>
+        <locations>North Province (Area One), East Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="180" name="Flaaffy" regionalDexNumber="102" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Mareep – Lvl 15 → Flaaffy – Lvl 30 → Ampharos</evolution>
+        <locations>South Province (Area Six), West Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="181" name="Ampharos" regionalDexNumber="103" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Mareep – Lvl 15 → Flaaffy – Lvl 30 → Ampharos</evolution>
+        <locations>North Province (Area One), East Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="548" name="Petilil" regionalDexNumber="104" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Petilil – Sun Stone → Lilligant</evolution>
+        <locations>North Province (Area Three), South Province (Area Two), South Province (Area Four), South Province (Area Six), West Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="549" name="Lilligant" regionalDexNumber="105" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Petilil – Sun Stone → Lilligant</evolution>
+        <locations>North Province (Area Three), South Province (Area Two), South Province (Area Four), South Province (Area Six), West Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="285" name="Shroomish" regionalDexNumber="106" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Shroomish – Lvl 23 → Breloom</evolution>
+        <locations>South Province (Area Five), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="286" name="Breloom" regionalDexNumber="107" type="Grass / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Shroomish – Lvl 23 → Breloom</evolution>
+        <locations>West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="840" name="Applin" regionalDexNumber="108" type="Grass / Dragon">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Applin – Tart Apple → Flapple | – Sweet Apple → Appletun</evolution>
+        <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Four), West Province (Area Three)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="841" name="Flapple" regionalDexNumber="109" type="Grass / Dragon">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Applin – Tart Apple → Flapple | – Sweet Apple → Appletun</evolution>
+        <locations>Tera Raid Battles (5★)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="842" name="Appletun" regionalDexNumber="110" type="Grass / Dragon">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Applin – Tart Apple → Flapple | – Sweet Apple → Appletun</evolution>
+        <locations>Tera Raid Battles (5★)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
