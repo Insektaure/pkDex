@@ -470,8 +470,8 @@
     </pokemon>
 
     <pokemon id="764" name="Comfey" regionalDexNumber="079" type="Fairy">
-        <evolution>Fields of Honor, Soothing Wetlands, Training Lowlands, Insular Sea, Honeycalm Island</evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Fields of Honor, Soothing Wetlands, Training Lowlands, Insular Sea, Honeycalm Island</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
