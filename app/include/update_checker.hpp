@@ -3,9 +3,11 @@
 #include <string>
 
 // Function to check if a new version is available
-// In a real implementation, this would make an HTTP request to a server
-// For this example, we'll simulate a new version being available
-bool checkForNewVersion(std::string& newVersion);
+// Returns:
+//   1 if a new version is available (newVersion will contain the new version)
+//   0 if the current version is the latest
+//   -1 if there was a network error or other failure
+int checkForNewVersion(std::string& newVersion);
 
 // Function to check for updates and notify the user if a new version is available
 // Used for automatic check at app launch

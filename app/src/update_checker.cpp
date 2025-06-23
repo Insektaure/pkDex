@@ -7,6 +7,25 @@
 #include <curl/curl.h>
 #include <unistd.h>
 
+// Helper function to check if there's an actual internet connection
+bool hasInternetConnection() {
+#ifdef __SWITCH__
+    NifmInternetConnectionType type;
+    u32 wifiSignal;
+    NifmInternetConnectionStatus status;
+    Result ret = nifmGetInternetConnectionStatus(&type, &wifiSignal, &status);
+
+    // Check if we have a valid connection status and the connection is active
+    return R_SUCCEEDED(ret) && 
+           (type == NifmInternetConnectionType_WiFi || type == NifmInternetConnectionType_Ethernet) &&
+           status == NifmInternetConnectionStatus_Connected;
+#else
+    // For other platforms, fall back to the platform's connectivity checks
+    return brls::Application::getPlatform()->hasWirelessConnection() || 
+           brls::Application::getPlatform()->hasEthernetConnection();
+#endif
+}
+
 // Callback function to write received data to a string
 static size_t WriteCallback(void *contents, size_t size, size_t nmemb, void *userp) {
     size_t realsize = size * nmemb;
@@ -15,12 +34,7 @@ static size_t WriteCallback(void *contents, size_t size, size_t nmemb, void *use
     return realsize;
 }
 
-bool checkForNewVersion(std::string& newVersion) {
-    // Check if network is available
-    if (!brls::Application::getPlatform()->hasWirelessConnection() && 
-        !brls::Application::getPlatform()->hasEthernetConnection()) {
-        return false;
-    }
+int checkForNewVersion(std::string& newVersion) {
 
     // Initialize socket system (should already be initialized by the app)
     bool needToInitSocket = false;
@@ -94,43 +108,53 @@ bool checkForNewVersion(std::string& newVersion) {
     }
 
     if (!success) {
-        return false;
+        return -1; // Failed to get or parse the response
     }
 
     // Compare with current version using the centralized version definition
     if (pkdex::isNewerVersion(pkdex::CURRENT_VERSION, newVersion)) {
-        return true; // New version available
+        return 1; // New version available
     }
 
-    return false; // No new version available
+    return 0; // Current version is the latest
 }
 
 void checkForUpdatesAndNotify() {
-    // Check if network is connected (either WiFi or Ethernet)
-    if (brls::Application::getPlatform()->hasWirelessConnection() || 
-        brls::Application::getPlatform()->hasEthernetConnection()) {
+    // Check if there's an actual internet connection
+    if (hasInternetConnection()) {
         // Check for new version
         std::string newVersion;
-        if (checkForNewVersion(newVersion)) {
+        int result = checkForNewVersion(newVersion);
+        if (result == 1) {
             brls::Application::notify("New version available: " + newVersion + " (Current: " + pkdex::CURRENT_VERSION + ")");
         }
+    } else {
+        // Notify the user when there's no network available
+        brls::Application::notify("No network connection available. Unable to check for updates. #1");
     }
 }
 
 bool manualCheckForUpdates() {
-    // Check if network is connected (either WiFi or Ethernet)
-    if (!brls::Application::getPlatform()->hasWirelessConnection() && 
-        !brls::Application::getPlatform()->hasEthernetConnection()) {
-        brls::Application::notify("No network connection available. Please connect to WiFi or Ethernet to check for updates.");
+    // Check if there's an actual internet connection
+    if (!hasInternetConnection()) {
+        brls::Application::notify("No network connection available. Unable to check for updates. #2");
         return false;
     }
 
     // Check for new version
     std::string newVersion;
-    if (checkForNewVersion(newVersion)) {
+    int result = checkForNewVersion(newVersion);
+
+    if (result == 1) {
+        // New version available
         brls::Application::notify("New version available: " + newVersion + " (Current: " + pkdex::CURRENT_VERSION + ")");
-    } else {
+    } else if (result == 0) {
+        // Current version is the latest
         brls::Application::notify("You are using the latest version: " + pkdex::CURRENT_VERSION);
+    } else {
+        // Network error or other failure
+        brls::Application::notify("Failed to check for updates. Please check your network connection and try again.");
+        return false;
     }
 
     return true;
