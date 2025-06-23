@@ -2198,19 +2198,19 @@
     </pokemon>
 
     <pokemon id="624" name="Pawniard" regionalDexNumber="367" type="Dark / Steel">
-        <evolution>Pawniard – Lvl 52 → Bisharp – defeat 3 Bisharp that are holding Leader's Crest → Bisharp</evolution>
+        <evolution>Pawniard – Lvl 52 → Bisharp – defeat 3 Bisharp that are holding Leader's Crest → Kingambit</evolution>
         <locations>Tagtree Thicket, North Province (Area Two), East Province (Area Three), South Province (Area Five), The Great Crater of Paldea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="625" name="Bisharp" regionalDexNumber="368" type="Dark / Steel">
-        <evolution>Pawniard – Lvl 52 → Bisharp – defeat 3 Bisharp that are holding Leader's Crest → Bisharp</evolution>
+        <evolution>Pawniard – Lvl 52 → Bisharp – defeat 3 Bisharp that are holding Leader's Crest → Kingambit</evolution>
         <locations>North Province (Area Two), The Great Crater of Paldea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="983" name="Kingambit" regionalDexNumber="369" type="Dark / Steel">
-        <evolution>Pawniard – Lvl 52 → Bisharp – defeat 3 Bisharp that are holding Leader's Crest → Bisharp</evolution>
+        <evolution>Pawniard – Lvl 52 → Bisharp – defeat 3 Bisharp that are holding Leader's Crest → Kingambit</evolution>
         <locations>Evolve Pawniard / Bisharp</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
