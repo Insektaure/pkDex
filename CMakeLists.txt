@@ -24,6 +24,8 @@ include(${BOREALIS_LIBRARY}/cmake/toolchain.cmake)
 
 # project info
 project(pkDex)
+# IMPORTANT: Keep these version values in sync with app/include/version.hpp
+# When updating the version, update both here and in version.hpp (CURRENT_VERSION)
 set(VERSION_MAJOR "1")
 set(VERSION_MINOR "0")
 set(VERSION_ALTER "0")

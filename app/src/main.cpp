@@ -6,6 +6,7 @@
 #include <cstdlib>
 #include <string>
 
+#include "update_checker.hpp"
 #include "view/captioned_image.hpp"
 #include "view/pokemon_view.hpp"
 #include "tab/components_tab.hpp"
@@ -85,6 +86,12 @@ int main(int argc, char* argv[])
 
     // Create and push the main activity to the stack
     brls::Application::pushActivity(new MainActivity());
+
+    // Check for updates once at app launch, but after a delay to ensure the app is fully loaded
+    brls::delay(8000, []() {
+        // Check for updates and notify if a new version is available
+        checkForUpdatesAndNotify();
+    });
 
     // Run the app
     while (brls::Application::mainLoop())

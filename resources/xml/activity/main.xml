@@ -60,6 +60,13 @@
 
         <brls:Separator />
 
+        <!-- Settings tab -->
+        <brls:Tab label="Settings">
+            <SettingsTab/>
+        </brls:Tab>
+
+        <brls:Separator />
+
         <!-- Static tab with inline XML -->
         <brls:Tab label="@i18n/pkdex/tabs/about" >
 
