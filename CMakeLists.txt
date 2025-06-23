@@ -67,6 +67,10 @@ elseif (PLATFORM_SWITCH)
         glfw3 EGL glapi drm_nouveau
         # base lib
         nx m
+        # for HTTP requests
+        curl
+        # for compression (required by curl)
+        z
     )
     list(APPEND MAIN_SRC ${BOREALIS_LIBRARY}/lib/platforms/switch/switch_wrapper.c)
 elseif (PLATFORM_PS4)

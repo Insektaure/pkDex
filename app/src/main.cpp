@@ -88,7 +88,7 @@ int main(int argc, char* argv[])
     brls::Application::pushActivity(new MainActivity());
 
     // Check for updates once at app launch, but after a delay to ensure the app is fully loaded
-    brls::delay(8000, []() {
+    brls::delay(5000, []() {
         // Check for updates and notify if a new version is available
         checkForUpdatesAndNotify();
     });
