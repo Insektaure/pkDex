@@ -866,7 +866,7 @@
     </pokemon>
 
     <pokemon id="186" name="Politoed" regionalDexNumber="145" type="Water">
-        <evolution>Poliwag – Lvl 25 → Poliwhirl – Trade holding Kings Rock → Poliwrath</evolution>
+        <evolution>Poliwag – Lvl 25 → Poliwhirl – Trade holding Kings Rock → Politoed</evolution>
         <locations>Evolve Poliwag / Poliwhirl</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
