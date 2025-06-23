@@ -121,12 +121,28 @@ make -C build_switch pkDex.nro -j$(nproc)
 - `library/`: External libraries
   - `borealis/`: Borealis UI framework
 
+## Screenshots
+
+<div align="center">
+    <img src="./screenshots/pkDex_1.jpg" alt="Screenshot 1" />
+    <br>
+    <img src="./screenshots/pkDex_2.jpg" alt="Screenshot 2" />
+    <br>
+    <img src="./screenshots/pkDex_3.jpg" alt="Screenshot 3" />
+    <br>
+    <img src="./screenshots/pkDex_4.jpg" alt="Screenshot 4" />
+    <br>
+    <img src="./screenshots/pkDex_5.jpg" alt="Screenshot 5" />
+</div>
+
 ## Credits
 
 - **Borealis UI Framework**: A hardware-accelerated UI library for Nintendo Switch homebrew, developed by natinusala and contributors. [GitHub Repository](https://github.com/natinusala/borealis)
 - **Pokémon Data**: All Pokémon names, images, and data are property of Nintendo, Game Freak, and The Pokémon Company.
 - **Development**: pkDex is developed by Insektaure.
 - **Datasets**: Pokémon data sourced from various community resources and official game data (serebii.net / pokemondb.net / bulbapedia.bulbagarden.net).
+- Switchbrew for their research and [libnx](https://github.com/switchbrew/libnx) which makes it possible to create homebrew
+- ReSwitched for their research, [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere), and [libstratosphere](https://github.com/Atmosphere-NX/libstratosphere) which is invaluable for Switch homebrew
 
 ## License
 
