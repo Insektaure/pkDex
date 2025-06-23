@@ -8,6 +8,7 @@ class SettingsTab : public brls::Box
     SettingsTab();
 
     BRLS_BIND(brls::DetailCell, checkUpdates, "checkUpdates");
+    BRLS_BIND(brls::BooleanCell, toggleCheckVersionOnLaunch, "toggleCheckVersionOnLaunch");
 
     static brls::View* create();
 };

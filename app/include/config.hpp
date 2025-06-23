@@ -1,0 +1,57 @@
+#pragma once
+
+#include <string>
+#include <map>
+#include <fstream>
+#include <filesystem>
+
+namespace pkdex {
+
+/**
+ * @brief Utility class for handling configuration settings
+ */
+class Config {
+public:
+    /**
+     * @brief Get a boolean value from the config file
+     * 
+     * @param key The key to look for
+     * @param defaultValue The default value to return if the key is not found
+     * @return bool The value associated with the key, or the default value if not found
+     */
+    static bool getBool(const std::string& key, bool defaultValue = false);
+
+    /**
+     * @brief Set a boolean value in the config file
+     * 
+     * @param key The key to set
+     * @param value The value to set
+     * @return bool True if the operation was successful, false otherwise
+     */
+    static bool setBool(const std::string& key, bool value);
+
+private:
+    /**
+     * @brief Get the path to the config file
+     * 
+     * @return std::string The path to the config file
+     */
+    static std::string getConfigFilePath();
+
+    /**
+     * @brief Read the config file into a map
+     * 
+     * @return std::map<std::string, std::string> A map of key-value pairs from the config file
+     */
+    static std::map<std::string, std::string> readConfigFile();
+
+    /**
+     * @brief Write a map of key-value pairs to the config file
+     * 
+     * @param config The map of key-value pairs to write
+     * @return bool True if the operation was successful, false otherwise
+     */
+    static bool writeConfigFile(const std::map<std::string, std::string>& config);
+};
+
+} // namespace pkdex

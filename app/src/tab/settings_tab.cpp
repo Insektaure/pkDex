@@ -1,5 +1,6 @@
 #include "tab/settings_tab.hpp"
 #include "update_checker.hpp"
+#include "config.hpp"
 #include <string>
 #include <switch.h>
 
@@ -14,6 +15,14 @@ SettingsTab::SettingsTab()
     checkUpdates->registerClickAction([](...){
         manualCheckForUpdates();
         return true;
+    });
+
+    // Initialize the toggle with the current setting from the config file
+    bool checkVersionOnLaunch = pkdex::Config::getBool("toggle_check_version_on_launch", true);
+    toggleCheckVersionOnLaunch->init("Check for updates on launch", checkVersionOnLaunch, [](bool value) {
+        // Save the setting to the config file
+        pkdex::Config::setBool("toggle_check_version_on_launch", value);
+        return value;
     });
 }
 

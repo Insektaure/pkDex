@@ -7,6 +7,7 @@
 #include <string>
 
 #include "update_checker.hpp"
+#include "config.hpp"
 #include "view/captioned_image.hpp"
 #include "view/pokemon_view.hpp"
 #include "tab/components_tab.hpp"
@@ -89,8 +90,11 @@ int main(int argc, char* argv[])
 
     // Check for updates once at app launch, but after a delay to ensure the app is fully loaded
     brls::delay(5000, []() {
-        // Check for updates and notify if a new version is available
-        checkForUpdatesAndNotify();
+        // Check if version checking on launch is enabled
+        if (pkdex::Config::getBool("toggle_check_version_on_launch", true)) {
+            // Check for updates and notify if a new version is available
+            checkForUpdatesAndNotify();
+        }
     });
 
     // Run the app

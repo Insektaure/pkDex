@@ -20,6 +20,10 @@
             paddingBottom="@style/brls/sidebar/padding_bottom"
             paddingLeft="@style/brls/sidebar/padding_left">
 
+            <brls:BooleanCell
+                    title="Check for updates on launch"
+                    id="toggleCheckVersionOnLaunch"/>
+
             <brls:DetailCell
                     title="Check for updates"
                     id="checkUpdates"/>
