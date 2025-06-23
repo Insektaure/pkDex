@@ -35,7 +35,8 @@
                     height="auto"
                     text="Standard"
                     fontSize="20"
-                    marginBottom="5px"/>
+                    marginBottom="5px"
+                />
                 <brls:Image
                     id="standard_image"
                     width="180px"
@@ -361,7 +362,9 @@
                         width="100%"
                         height="auto"
                         justifyContent="center"
-                        backgroundColor="#507C36">
+                        backgroundColor="#507C36"
+                        paddingTop="5px"
+                        paddingBottom="5px">
                     <brls:Label
                             width="auto"
                             height="auto"
