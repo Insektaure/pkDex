@@ -1443,13 +1443,13 @@
 
     <pokemon id="492" name="Shaymin" regionalDexNumber="241" type="Grass">
         <evolution>-</evolution>
-        <locations>Floaro Gardens</locations>
+        <locations>Floaro Gardens (require save data from Sword / Shield)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="491" name="Darkrai" regionalDexNumber="242" type="Dark">
         <evolution>-</evolution>
-        <locations>Clamberclaw Cliffs</locations>
+        <locations>Clamberclaw Cliffs (require save data from Brilliant Diamond / Shining Pearl)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
