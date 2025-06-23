@@ -2,1460 +2,1460 @@
 <pokedex region="blueberry_academy">
 
     <pokemon id="084" name="Doduo" regionalDexNumber="001" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Doduo – Lvl 31 → Dodrio</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="085" name="Dodrio" regionalDexNumber="002" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Doduo – Lvl 31 → Dodrio</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="102" name="Exeggcute" regionalDexNumber="003" type="Grass / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Exeggcute – Leaf Stone → Exeggutor</evolution>
+        <locations>Savanna Biome, Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="103" name="Exeggutor" regionalDexNumber="004" type="Grass / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+    <pokemon id="103" name="Exeggutor" regionalDexNumber="004" type="Grass / Psychic - Dragon">
+        <evolution>Exeggcute – Leaf Stone → Exeggutor</evolution>
+        <locations>Savanna Biome (Kantonian Form), Coastal Biome (Alolan Form)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="111" name="Rhyhorn" regionalDexNumber="005" type="Ground / Rock">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rhyhorn – Lvl 42 → Rhydon – Trade holding Protector → Rhyperior</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="112" name="Rhydon" regionalDexNumber="006" type="Ground / Rock">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rhyhorn – Lvl 42 → Rhydon – Trade holding Protector → Rhyperior</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="464" name="Rhyperior" regionalDexNumber="007" type="Ground / Rock">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rhyhorn – Lvl 42 → Rhydon – Trade holding Protector → Rhyperior</evolution>
+        <locations>Evolve Rhyhorn / Rhydon</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="048" name="Venonat" regionalDexNumber="008" type="Bug / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Venonat – Lvl 31 → Venomoth</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="049" name="Venomoth" regionalDexNumber="009" type="Bug / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Venonat – Lvl 31 → Venomoth</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="239" name="Elekid" regionalDexNumber="010" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Elekid – Lvl 30 → Electabuzz – Trade holding Electirizer → Electivire</evolution>
+        <locations>Savanna Biome, Canyon Biome, Polar Biome, Chargestone Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="125" name="Electabuzz" regionalDexNumber="011" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Elekid – Lvl 30 → Electabuzz – Trade holding Electirizer → Electivire</evolution>
+        <locations>Savanna Biome, Canyon Biome, Polar Biome, Chargestone Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="466" name="Electivire" regionalDexNumber="012" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Elekid – Lvl 30 → Electabuzz – Trade holding Electirizer → Electivire</evolution>
+        <locations>Evolve Electabuzz / Elekid</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="240" name="Magby" regionalDexNumber="013" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Magby – Lvl 30 → Magmar – Trade holding Magmarizer → Magmortar</evolution>
+        <locations>Savanna Biome, Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="126" name="Magmar" regionalDexNumber="014" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Magby – Lvl 30 → Magmar – Trade holding Magmarizer → Magmortar</evolution>
+        <locations>Savanna Biome, Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="467" name="Magmortar" regionalDexNumber="015" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Magby – Lvl 30 → Magmar – Trade holding Magmarizer → Magmortar</evolution>
+        <locations>Evolve Magmar / Magby</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="440" name="Happiny" regionalDexNumber="016" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Happiny – hold Oval Stone, Daytime → Chansey – High Friendship → Blissey</evolution>
+        <locations>Savanna Biome, Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="113" name="Chansey" regionalDexNumber="017" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Happiny – hold Oval Stone, Daytime → Chansey – High Friendship → Blissey</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="242" name="Blissey" regionalDexNumber="018" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Happiny – hold Oval Stone, Daytime → Chansey – High Friendship → Blissey</evolution>
+        <locations>Savanna Biome, Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="123" name="Scyther" regionalDexNumber="019" type="Bug / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Scyther – Trade holding Metal Coat → Scizor | – Black Augurite → Kleavor</evolution>
+        <locations>Savanna Biome, Canyon Biome, Chargestone Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="212" name="Scizor" regionalDexNumber="020" type="Bug / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Scyther – Trade holding Metal Coat → Scizor | – Black Augurite → Kleavor</evolution>
+        <locations>Savanna Biome, Canyon Biome, Chargestone Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="900" name="Kleavor" regionalDexNumber="021" type="Bug / Rock">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Scyther – Trade holding Metal Coat → Scizor | – Black Augurite → Kleavor</evolution>
+        <locations>Canyon Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="128" name="Tauros" regionalDexNumber="022" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Savanna Biome (Kantonian Form)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="522" name="Blitzle" regionalDexNumber="023" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Blitzle – Lvl 27 → Zebstrika</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="523" name="Zebstrika" regionalDexNumber="024" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Blitzle – Lvl 27 → Zebstrika</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="203" name="Girafarig" regionalDexNumber="025" type="Normal / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Girafarig – After learning Twin Beam → Farigiraf</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="981" name="Farigiraf" regionalDexNumber="026" type="Normal / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Girafarig – After learning Twin Beam → Farigiraf</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="551" name="Sandile" regionalDexNumber="027" type="Ground / Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sandile – Lvl 29 → Krokorok – Lvl 40 → Krookodile</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="552" name="Krokorok" regionalDexNumber="028" type="Ground / Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sandile – Lvl 29 → Krokorok – Lvl 40 → Krookodile</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="553" name="Krookodile" regionalDexNumber="029" type="Ground / Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sandile – Lvl 29 → Krokorok – Lvl 40 → Krookodile</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="953" name="Rellor" regionalDexNumber="030" type="Bug">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rellor – walk 1,000 steps in Let's Go mode → Rabsca</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="954" name="Rabsca" regionalDexNumber="031" type="Bug / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rellor – walk 1,000 steps in Let's Go mode → Rabsca</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="627" name="Rufflet" regionalDexNumber="032" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rufflet – Lvl 54 → Braviary</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="628" name="Braviary" regionalDexNumber="033" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rufflet – Lvl 54 → Braviary</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="629" name="Vullaby" regionalDexNumber="034" type="Dark / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Vullaby – Lvl 54 → Mandibuzz</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="630" name="Mandibuzz" regionalDexNumber="035" type="Dark / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Vullaby – Lvl 54 → Mandibuzz</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="667" name="Litleo" regionalDexNumber="036" type="Fire / Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Litleo – Lvl 35 → Pyroar</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="668" name="Pyroar" regionalDexNumber="037" type="Fire / Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Litleo – Lvl 35 → Pyroar</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="585" name="Deerling" regionalDexNumber="038" type="Normal / Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Deerling – Lvl 34 → Sawsbuck</evolution>
+        <locations>Savanna Biome (Spring Form), Coastal Biome, Torchlit Labyrinth (Summer Form), Canyon Biome, Chargestone Cavern (Autumn Form),Polar Biome (Winter Form)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="586" name="Sawsbuck" regionalDexNumber="039" type="Normal / Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Deerling – Lvl 34 → Sawsbuck</evolution>
+        <locations>Savanna Biome (Spring Form), Coastal Biome, Torchlit Labyrinth (Summer Form), Canyon Biome, Chargestone Cavern (Autumn Form), Polar Biome (Winter Form)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="235" name="Smeargle" regionalDexNumber="040" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Savanna Biome, Coastal Biome, Torchlit Labyrinth, Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="479" name="Rotom" regionalDexNumber="041" type="Electric / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Savanna Biome, Coastal Biome, Torchlit Labyrinth, Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="868" name="Milcery" regionalDexNumber="042" type="Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Milcery – Spin around holding Sweet → Alcremie</evolution>
+        <locations>Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="869" name="Alcremie" regionalDexNumber="043" type="Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Milcery – Spin around holding Sweet → Alcremie</evolution>
+        <locations>Evolve Milcery</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="328" name="Trapinch" regionalDexNumber="044" type="Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Trapinch – Lvl 35 → Vibrava – Lvl 45 → Flygon</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="329" name="Vibrava" regionalDexNumber="045" type="Ground / Dragon">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Trapinch – Lvl 35 → Vibrava – Lvl 45 → Flygon</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="330" name="Flygon" regionalDexNumber="046" type="Ground / Dragon">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Trapinch – Lvl 35 → Vibrava – Lvl 45 → Flygon</evolution>
+        <locations>Savanna Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="731" name="Pikipek" regionalDexNumber="047" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pikipek – Lvl 14 → Trumbeak – Lvl 28 → Toucannon</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="732" name="Trumbeak" regionalDexNumber="048" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pikipek – Lvl 14 → Trumbeak – Lvl 28 → Toucannon</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="733" name="Toucannon" regionalDexNumber="049" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Pikipek – Lvl 14 → Trumbeak – Lvl 28 → Toucannon</evolution>
+        <locations>Coastal Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="072" name="Tentacool" regionalDexNumber="050" type="Water / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tentacool – Lvl 30 → Tentacruel</evolution>
+        <locations>Coastal Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="073" name="Tentacruel" regionalDexNumber="051" type="Water / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tentacool – Lvl 30 → Tentacruel</evolution>
+        <locations>Coastal Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="116" name="Horsea" regionalDexNumber="052" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Horsea – Lvl 32 → Seadra – Trade holding Dragon Scale → Kingdra</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth, Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="117" name="Seadra" regionalDexNumber="053" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Horsea – Lvl 32 → Seadra – Trade holding Dragon Scale → Kingdra</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth, Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="230" name="Kingdra" regionalDexNumber="054" type="Water / Dragon">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Horsea – Lvl 32 → Seadra – Trade holding Dragon Scale → Kingdra</evolution>
+        <locations>Evolve Horsea / Seadra</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="779" name="Bruxish" regionalDexNumber="055" type="Water / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Coastal Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="546" name="Cottonee" regionalDexNumber="056" type="Grass / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Cottonee – Sun Stone → Whimsicott</evolution>
+        <locations>Coastal Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="547" name="Whimsicott" regionalDexNumber="057" type="Grass / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Cottonee – Sun Stone → Whimsicott</evolution>
+        <locations>Coastal Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="764" name="Comfey" regionalDexNumber="058" type="Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Coastal Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="287" name="Slakoth" regionalDexNumber="059" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Slakoth – Lvl 18 → Vigoroth – Lvl 36 → Slaking</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="288" name="Vigoroth" regionalDexNumber="060" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Slakoth – Lvl 18 → Vigoroth – Lvl 36 → Slaking</evolution>
+        <locations>Coastal Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="289" name="Slaking" regionalDexNumber="061" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Slakoth – Lvl 18 → Vigoroth – Lvl 36 → Slaking</evolution>
+        <locations>Coastal Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="043" name="Oddish" regionalDexNumber="062" type="Grass / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Oddish – Lvl 21 → Gloom – Leaf Stone → Vileplume</evolution>
+        <locations>Coastal Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="044" name="Gloom" regionalDexNumber="063" type="Grass / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Oddish – Lvl 21 → Gloom – Leaf Stone → Vileplume</evolution>
+        <locations>Coastal Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="045" name="Vileplume" regionalDexNumber="064" type="Grass / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Oddish – Lvl 21 → Gloom – Leaf Stone → Vileplume</evolution>
+        <locations>Coastal Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="182" name="Bellossom" regionalDexNumber="065" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Oddish – Lvl 21 → Gloom – Sun Stone → Bellossom</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="050" name="Diglett" regionalDexNumber="066" type="Ground">
-        <evolution></evolution>
-        <locations></locations>
+    <pokemon id="050" name="Diglett" regionalDexNumber="066" type="Ground / Steel">
+        <evolution>Diglett – Lvl 26 → Dugtrio</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth (Alolan Form)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="051" name="Dugtrio" regionalDexNumber="067" type="Ground">
-        <evolution></evolution>
-        <locations></locations>
+    <pokemon id="051" name="Dugtrio" regionalDexNumber="067" type="Ground / Steel">
+        <evolution>Diglett – Lvl 26 → Dugtrio</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth (Alolan Form)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="088" name="Grimer" regionalDexNumber="068" type="Poison">
-        <evolution></evolution>
-        <locations></locations>
+    <pokemon id="088" name="Grimer" regionalDexNumber="068" type="Poison / Dark">
+        <evolution>Grimer – Lvl 38 → Muk</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth (Alolan Form)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="089" name="Muk" regionalDexNumber="069" type="Poison">
-        <evolution></evolution>
-        <locations></locations>
+    <pokemon id="089" name="Muk" regionalDexNumber="069" type="Poison / Dark">
+        <evolution>Grimer – Lvl 38 → Muk</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth (Alolan Form)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="335" name="Zangoose" regionalDexNumber="070" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="336" name="Seviper" regionalDexNumber="071" type="Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="739" name="Crabrawler" regionalDexNumber="072" type="Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Crabrawler – Ice Stone → Crabominable</evolution>
+        <locations>Coastal Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="740" name="Crabominable" regionalDexNumber="073" type="Fighting / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Crabrawler – Ice Stone → Crabominable</evolution>
+        <locations>Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="741" name="Oricorio" regionalDexNumber="074" type="Fire / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Coastal Biome (Pa'u Style)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="079" name="Slowpoke" regionalDexNumber="075" type="Water / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+    <pokemon id="079" name="Slowpoke" regionalDexNumber="075" type="Psychic">
+        <evolution>Slowpoke – Galarica Cuff → Slowbro | – Galarica Wreath → Slowking</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth (Galarian Form)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="080" name="Slowbro" regionalDexNumber="076" type="Water / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+    <pokemon id="080" name="Slowbro" regionalDexNumber="076" type="Poison / Psychic">
+        <evolution>Slowpoke – Galarica Cuff → Slowbro | – Galarica Wreath → Slowking</evolution>
+        <locations>Evolve Slowpoke (Galarian Form)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="199" name="Slowking" regionalDexNumber="077" type="Water / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+    <pokemon id="199" name="Slowking" regionalDexNumber="077" type="Poison / Psychic">
+        <evolution>Slowpoke – Galarica Cuff → Slowbro | – Galarica Wreath → Slowking</evolution>
+        <locations>Evolve Slowpoke (Galarian Form)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="170" name="Chinchou" regionalDexNumber="078" type="Water / Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Chinchou – Lvl 27 → Lanturn</evolution>
+        <locations>Canyon Biome, Chargestone Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="171" name="Lanturn" regionalDexNumber="079" type="Water / Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Chinchou – Lvl 27 → Lanturn</evolution>
+        <locations>Canyon Biome, Chargestone Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="686" name="Inkay" regionalDexNumber="080" type="Dark / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Inkay – Lvl 30 + holding console upside down → Malamar</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="687" name="Malamar" regionalDexNumber="081" type="Dark / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Inkay – Lvl 30 + holding console upside down → Malamar</evolution>
+        <locations>Evolve Inkay</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="370" name="Luvdisc" regionalDexNumber="082" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Coastal Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="456" name="Finneon" regionalDexNumber="083" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Finneon – Lvl 33 → Lumineon</evolution>
+        <locations>Coastal Biome, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="457" name="Lumineon" regionalDexNumber="084" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Finneon – Lvl 33 → Lumineon</evolution>
+        <locations>Coastal Biome, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="594" name="Alomomola" regionalDexNumber="085" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth, Canyon Biome, Chargestone Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="324" name="Torkoal" regionalDexNumber="086" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="661" name="Fletchling" regionalDexNumber="087" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Fletchling – Lvl 17 → Fletchinder – Lvl 35 → Talonflame</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth, Canyon Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="662" name="Fletchinder" regionalDexNumber="088" type="Fire / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Fletchling – Lvl 17 → Fletchinder – Lvl 35 → Talonflame</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth, Canyon Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="663" name="Talonflame" regionalDexNumber="089" type="Fire / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Fletchling – Lvl 17 → Fletchinder – Lvl 35 → Talonflame</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="751" name="Dewpider" regionalDexNumber="090" type="Water / Bug">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Dewpider – Lvl 22 → Araquanid</evolution>
+        <locations>Savanna Biome, Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="752" name="Araquanid" regionalDexNumber="091" type="Water / Bug">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Dewpider – Lvl 22 → Araquanid</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="236" name="Tyrogue" regionalDexNumber="092" type="Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tyrogue – Lvl 20 → Hitmonlee | → Hitmonchan | → Hitmontop</evolution>
+        <locations>Canyon Biome, Chargestone Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="106" name="Hitmonlee" regionalDexNumber="093" type="Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tyrogue – Lvl 20 + Attack > Defense → Hitmonlee</evolution>
+        <locations>Canyon Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="107" name="Hitmonchan" regionalDexNumber="094" type="Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tyrogue – Lvl 20 + Attack &lt; Defense → Hitmonchan</evolution>
+        <locations>Canyon Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="237" name="Hitmontop" regionalDexNumber="095" type="Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tyrogue – Lvl 20 + Attack = Defense → Hitmonlee</evolution>
+        <locations>Canyon Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="074" name="Geodude" regionalDexNumber="096" type="Rock / Ground">
-        <evolution></evolution>
-        <locations></locations>
+    <pokemon id="074" name="Geodude" regionalDexNumber="096" type="Rock / Electric">
+        <evolution>Geodude – Lvl 25 → Graveler – Trade → Golem</evolution>
+        <locations>Canyon Biome, Chargestone Cavern (Alolan Form)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="075" name="Graveler" regionalDexNumber="097" type="Rock / Ground">
-        <evolution></evolution>
-        <locations></locations>
+    <pokemon id="075" name="Graveler" regionalDexNumber="097" type="Rock / Electric">
+        <evolution>Geodude – Lvl 25 → Graveler – Trade → Golem</evolution>
+        <locations>Canyon Biome, Chargestone Cavern (Alolan Form)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="076" name="Golem" regionalDexNumber="098" type="Rock / Ground">
-        <evolution></evolution>
-        <locations></locations>
+    <pokemon id="076" name="Golem" regionalDexNumber="098" type="Rock / Electric">
+        <evolution>Geodude – Lvl 25 → Graveler – Trade → Golem</evolution>
+        <locations>Evolve Geodude / Graveler</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="529" name="Drilbur" regionalDexNumber="099" type="Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Drilbur – Lvl 31 → Excadrill</evolution>
+        <locations>Chargestone Cavern, Canyon Biome, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="530" name="Excadrill" regionalDexNumber="100" type="Ground / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Drilbur – Lvl 31 → Excadrill</evolution>
+        <locations>Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="574" name="Gothita" regionalDexNumber="101" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gothita – Lvl 32 → Gothorita – Lvl 41 → Gothitelle</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="575" name="Gothorita" regionalDexNumber="102" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gothita – Lvl 32 → Gothorita – Lvl 41 → Gothitelle</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="576" name="Gothitelle" regionalDexNumber="103" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Gothita – Lvl 32 → Gothorita – Lvl 41 → Gothitelle</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="677" name="Espurr" regionalDexNumber="104" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Espurr – Lvl 25 → Meowstic</evolution>
+        <locations>Coastal Biome, Canyon Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="678" name="Meowstic" regionalDexNumber="105" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Espurr – Lvl 25 → Meowstic</evolution>
+        <locations>Coastal Biome, Canyon Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="774" name="Minior" regionalDexNumber="106" type="Rock / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth, Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="408" name="Cranidos" regionalDexNumber="107" type="Rock">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Cranidos – Lvl 30 → Rampardos</evolution>
+        <locations>Canyon Biome</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="409" name="Rampardos" regionalDexNumber="108" type="Rock">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Cranidos – Lvl 30 → Rampardos</evolution>
+        <locations>Evolve Cranidos</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="410" name="Shieldon" regionalDexNumber="109" type="Rock / Steel">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Shieldon – Lvl 30 → Bastiodon</evolution>
+        <locations>Canyon Biome</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="411" name="Bastiodon" regionalDexNumber="110" type="Rock / Steel">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>Shieldon – Lvl 30 → Bastiodon</evolution>
+        <locations>Evolve Shieldon</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="572" name="Minccino" regionalDexNumber="111" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Minccino – Shiny Stone → Cinccino</evolution>
+        <locations>Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="573" name="Cinccino" regionalDexNumber="112" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Minccino – Shiny Stone → Cinccino</evolution>
+        <locations>Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="227" name="Skarmory" regionalDexNumber="113" type="Steel / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Canyon Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="333" name="Swablu" regionalDexNumber="114" type="Normal / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Swablu – Lvl 35 → Altaria</evolution>
+        <locations>Canyon Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="334" name="Altaria" regionalDexNumber="115" type="Dragon / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Swablu – Lvl 35 → Altaria</evolution>
+        <locations>Canyon Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="081" name="Magnemite" regionalDexNumber="116" type="Electric / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Magnemite – Lvl 30 → Magneton – Thunder Stone → Magnezone</evolution>
+        <locations>Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="082" name="Magneton" regionalDexNumber="117" type="Electric / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Magnemite – Lvl 30 → Magneton – Thunder Stone → Magnezone</evolution>
+        <locations>Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="462" name="Magnezone" regionalDexNumber="118" type="Electric / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Magnemite – Lvl 30 → Magneton – Thunder Stone → Magnezone</evolution>
+        <locations>Evolve Magnemite / Magneton</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="311" name="Plusle" regionalDexNumber="119" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="312" name="Minun" regionalDexNumber="120" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="559" name="Scraggy" regionalDexNumber="121" type="Dark / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Scraggy – Lvl 39 → Scrafty</evolution>
+        <locations>Canyon Biome, Chargestone Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="560" name="Scrafty" regionalDexNumber="122" type="Dark / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Scraggy – Lvl 39 → Scrafty</evolution>
+        <locations>Canyon Biome, Chargestone Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="622" name="Golett" regionalDexNumber="123" type="Ground / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Golett – Lvl 43 → Golurk</evolution>
+        <locations>Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="623" name="Golurk" regionalDexNumber="124" type="Ground / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Golett – Lvl 43 → Golurk</evolution>
+        <locations>Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="322" name="Numel" regionalDexNumber="125" type="Fire / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Numel – Lvl 33 → Camerupt</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="323" name="Camerupt" regionalDexNumber="126" type="Fire / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Numel – Lvl 33 → Camerupt</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="854" name="Sinistea" regionalDexNumber="127" type="Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sinistea – Cracked Pot → Polteageist</evolution>
+        <locations>Canyon Biome, Chargestone Cavern</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="855" name="Polteageist" regionalDexNumber="128" type="Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sinistea – Cracked Pot → Polteageist</evolution>
+        <locations>Evolve Sinistea</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="137" name="Porygon" regionalDexNumber="129" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Porygon – Trade holding Upgrade) → Porygon2 – Trade holding Dubious Disc → Porygon-Z</evolution>
+        <locations>Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="233" name="Porygon2" regionalDexNumber="130" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Porygon – Trade holding Upgrade) → Porygon2 – Trade holding Dubious Disc → Porygon-Z</evolution>
+        <locations>Evolve Porygon</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="474" name="Porygon-Z" regionalDexNumber="131" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Porygon – Trade holding Upgrade) → Porygon2 – Trade holding Dubious Disc → Porygon-Z</evolution>
+        <locations>Evolve Porygon2</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="595" name="Joltik" regionalDexNumber="132" type="Bug / Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Joltik – Lvl 36 → Galvantula</evolution>
+        <locations>Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="596" name="Galvantula" regionalDexNumber="133" type="Bug / Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Joltik – Lvl 36 → Galvantula</evolution>
+        <locations>Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="602" name="Tynamo" regionalDexNumber="134" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tynamo – Lvl 39 → Eelektrik – Thunder Stone → Eelektross</evolution>
+        <locations>Savanna Biome, Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="603" name="Eelektrik" regionalDexNumber="135" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tynamo – Lvl 39 → Eelektrik – Thunder Stone → Eelektross</evolution>
+        <locations>Savanna Biome, Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="604" name="Eelektross" regionalDexNumber="136" type="Electric">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tynamo – Lvl 39 → Eelektrik – Thunder Stone → Eelektross</evolution>
+        <locations>Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="374" name="Beldum" regionalDexNumber="137" type="Steel / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Beldum – Lvl 20 → Metang – Lvl 45 → Metagross</evolution>
+        <locations>Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="375" name="Metang" regionalDexNumber="138" type="Steel / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Beldum – Lvl 20 → Metang – Lvl 45 → Metagross</evolution>
+        <locations>Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="376" name="Metagross" regionalDexNumber="139" type="Steel / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Beldum – Lvl 20 → Metang – Lvl 45 → Metagross</evolution>
+        <locations>Evolve Beldum / Metang</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="610" name="Axew" regionalDexNumber="140" type="Dragon">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Axew – Lvl 38 → Fraxure – Lvl 48 → Haxorus</evolution>
+        <locations>Canyon Biome, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="611" name="Fraxure" regionalDexNumber="141" type="Dragon">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Axew – Lvl 38 → Fraxure – Lvl 48 → Haxorus</evolution>
+        <locations>Canyon Biome, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="612" name="Haxorus" regionalDexNumber="142" type="Dragon">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Axew – Lvl 38 → Fraxure – Lvl 48 → Haxorus</evolution>
+        <locations>Evolve Axew / Fraxure</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="086" name="Seel" regionalDexNumber="143" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Seel – Lvl 34 → Dewgong</evolution>
+        <locations>Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="087" name="Dewgong" regionalDexNumber="144" type="Water / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Seel – Lvl 34 → Dewgong</evolution>
+        <locations>Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="131" name="Lapras" regionalDexNumber="145" type="Water / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="211" name="Qwilfish" regionalDexNumber="146" type="Water / Poison">
-        <evolution></evolution>
-        <locations></locations>
+    <pokemon id="211" name="Qwilfish" regionalDexNumber="146" type="Dark / Poison">
+        <evolution>Qwilfish – Lvl up while knowing Barb Barrage → Overqwil</evolution>
+        <locations>Polar Biome (Hisuian Form)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="904" name="Overqwil" regionalDexNumber="147" type="Dark / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Qwilfish – Lvl up while knowing Barb Barrage → Overqwil</evolution>
+        <locations>Evolve Qwilfish (Hisuian form)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="577" name="Solosis" regionalDexNumber="148" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Solosis – Lvl 32 → Duosion – Lvl 41 → Reuniclus</evolution>
+        <locations>Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="578" name="Duosion" regionalDexNumber="149" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Solosis – Lvl 32 → Duosion – Lvl 41 → Reuniclus</evolution>
+        <locations>Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="579" name="Reuniclus" regionalDexNumber="150" type="Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Solosis – Lvl 32 → Duosion – Lvl 41 → Reuniclus</evolution>
+        <locations>Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="209" name="Snubbull" regionalDexNumber="151" type="Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snubbull – Lvl 23 → Granbull </evolution>
+        <locations>Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="210" name="Granbull" regionalDexNumber="152" type="Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snubbull – Lvl 23 → Granbull </evolution>
+        <locations>Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="613" name="Cubchoo" regionalDexNumber="153" type="Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Cubchoo – Lvl 37 → Beartic</evolution>
+        <locations>Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="614" name="Beartic" regionalDexNumber="154" type="Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Cubchoo – Lvl 37 → Beartic</evolution>
+        <locations>Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="027" name="Sandshrew" regionalDexNumber="155" type="Ground">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+    <pokemon id="027" name="Sandshrew" regionalDexNumber="155" type="Ice / Steel">
+        <evolution>Sandshrew – Ice Stone → Sandslash</evolution>
+        <locations>Chargestone Cavern, Polar Biome (Alolan Form)</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="028" name="Sandslash" regionalDexNumber="156" type="Ground">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+    <pokemon id="028" name="Sandslash" regionalDexNumber="156" type="Ice / Steel">
+        <evolution>Sandshrew – Ice Stone → Sandslash</evolution>
+        <locations>Evolve Sandshrew (Alolan form)</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="037" name="Vulpix" regionalDexNumber="157" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+    <pokemon id="037" name="Vulpix" regionalDexNumber="157" type="Ice">
+        <evolution>Vulpix – Ice Stone → Ninetales</evolution>
+        <locations>Chargestone Cavern, Polar Biome (Alolan Form)</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="038" name="Ninetales" regionalDexNumber="158" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+    <pokemon id="038" name="Ninetales" regionalDexNumber="158" type="Ice / Fairy">
+        <evolution>Vulpix – Ice Stone → Ninetales</evolution>
+        <locations>Evolve Vulpix (Alolan form)</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="459" name="Snover" regionalDexNumber="159" type="Grass / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snover – Lvl 40 → Abomasnow</evolution>
+        <locations>Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="460" name="Abomasnow" regionalDexNumber="160" type="Grass / Ice">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snover – Lvl 40 → Abomasnow</evolution>
+        <locations>Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="884" name="Duraludon" regionalDexNumber="161" type="Steel / Dragon">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Duraludon – Metal Alloy → Archaludon</evolution>
+        <locations>Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1018" name="Archaludon" regionalDexNumber="162" type="Steel / Dragon">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Duraludon – Metal Alloy → Archaludon</evolution>
+        <locations>Evolve Duraludon</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1019" name="Hydrapple" regionalDexNumber="163" type="Grass / Dragon">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Applin – Syrupy Apple → Dipplin – After learning Dragon Cheer → Hydrapple</evolution>
+        <locations>Evolve Dipplin</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1" name="Bulbasaur" regionalDexNumber="164" type="Grass / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Bulbasaur – Lvl 16 → Ivysaur – Lvl 32 → Venusaur</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth (after boosting biodiversity in the Coastal Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="2" name="Ivysaur" regionalDexNumber="165" type="Grass / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Bulbasaur – Lvl 16 → Ivysaur – Lvl 32 → Venusaur</evolution>
+        <locations>Evolve Bulbasaur</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="3" name="Venusaur" regionalDexNumber="166" type="Grass / Poison">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Bulbasaur – Lvl 16 → Ivysaur – Lvl 32 → Venusaur</evolution>
+        <locations>Evolve Ivysaur</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="4" name="Charmander" regionalDexNumber="167" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Charmander – Lvl 16 → Charmeleon – Lvl 36 → Charizard</evolution>
+        <locations>Savanna Biome (after boosting biodiversity in the Savanna Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="5" name="Charmeleon" regionalDexNumber="168" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Charmander – Lvl 16 → Charmeleon – Lvl 36 → Charizard</evolution>
+        <locations>Evolve Charmander</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="6" name="Charizard" regionalDexNumber="169" type="Fire / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Charmander – Lvl 16 → Charmeleon – Lvl 36 → Charizard</evolution>
+        <locations>Evolve Charmeleon</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="7" name="Squirtle" regionalDexNumber="170" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Squirtle – Lvl 16 → Wartortle – Lvl 36 → Blastoise</evolution>
+        <locations>Canyon Biome (after boosting biodiversity in the Canyon Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="8" name="Wartortle" regionalDexNumber="171" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Squirtle – Lvl 16 → Wartortle – Lvl 36 → Blastoise</evolution>
+        <locations>Evolve Squirtle</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="9" name="Blastoise" regionalDexNumber="172" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Squirtle – Lvl 16 → Wartortle – Lvl 36 → Blastoise</evolution>
+        <locations>Evolve Wartortle</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="152" name="Chikorita" regionalDexNumber="173" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Chikorita – Lvl 16 → Bayleef – Lvl 32 → Meganium</evolution>
+        <locations>Coastal Biome, Torchlit Labyrinth (after boosting biodiversity in the Coastal Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="153" name="Bayleef" regionalDexNumber="174" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Chikorita – Lvl 16 → Bayleef – Lvl 32 → Meganium</evolution>
+        <locations>Evolve Chikorita</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="154" name="Meganium" regionalDexNumber="175" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Chikorita – Lvl 16 → Bayleef – Lvl 32 → Meganium</evolution>
+        <locations>Evolve Bayleef</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="155" name="Cyndaquil" regionalDexNumber="176" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Cyndaquil – Lvl 14 → Quilava – Lvl 36 → Typhlosion</evolution>
+        <locations>Polar Biome (after boosting biodiversity in the Polar Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="156" name="Quilava" regionalDexNumber="177" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Cyndaquil – Lvl 14 → Quilava – Lvl 36 → Typhlosion</evolution>
+        <locations>Evolve Cyndaquil</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="157" name="Typhlosion" regionalDexNumber="178" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Cyndaquil – Lvl 14 → Quilava – Lvl 36 → Typhlosion</evolution>
+        <locations>Evolve Quilava</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="158" name="Totodile" regionalDexNumber="179" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Totodile – Lvl 18 → Croconaw – Lvl 30 → Feraligatr</evolution>
+        <locations>Savanna Biome (after boosting biodiversity in the Savanna Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="159" name="Croconaw" regionalDexNumber="180" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Totodile – Lvl 18 → Croconaw – Lvl 30 → Feraligatr</evolution>
+        <locations>Evolve Totodile</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="160" name="Feraligatr" regionalDexNumber="181" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Totodile – Lvl 18 → Croconaw – Lvl 30 → Feraligatr</evolution>
+        <locations>Evolve Croconaw</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="252" name="Treecko" regionalDexNumber="182" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Treecko – Lvl 16 → Grovyle – Lvl 36 → Sceptile</evolution>
+        <locations>Canyon Biome (after boosting biodiversity in the Canyon Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="253" name="Grovyle" regionalDexNumber="183" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Treecko – Lvl 16 → Grovyle – Lvl 36 → Sceptile</evolution>
+        <locations>Evolve Treecko</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="254" name="Sceptile" regionalDexNumber="184" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Treecko – Lvl 16 → Grovyle – Lvl 36 → Sceptile</evolution>
+        <locations>Evolve Grovyle</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="255" name="Torchic" regionalDexNumber="185" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Torchic – Lvl 16 → Combusken – Lvl 36 → Blaziken</evolution>
+        <locations>Polar Biome (after boosting biodiversity in the Polar Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="256" name="Combusken" regionalDexNumber="186" type="Fire / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Torchic – Lvl 16 → Combusken – Lvl 36 → Blaziken</evolution>
+        <locations>Evolve Torchic</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="257" name="Blaziken" regionalDexNumber="187" type="Fire / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Torchic – Lvl 16 → Combusken – Lvl 36 → Blaziken</evolution>
+        <locations>Evolve Combusken</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="258" name="Mudkip" regionalDexNumber="188" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Mudkip – Lvl 16 → Marshtomp – Lvl 36 → Swampert</evolution>
+        <locations>Torchlit Labyrinth (after boosting biodiversity in the Coastal Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="259" name="Marshtomp" regionalDexNumber="189" type="Water / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Mudkip – Lvl 16 → Marshtomp – Lvl 36 → Swampert</evolution>
+        <locations>Evolve Mudkip</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="260" name="Swampert" regionalDexNumber="190" type="Water / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Mudkip – Lvl 16 → Marshtomp – Lvl 36 → Swampert</evolution>
+        <locations>Evolve Marshtomp</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="387" name="Turtwig" regionalDexNumber="191" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Turtwig – Lvl 18 → Grotle – Lvl 32 → Torterra</evolution>
+        <locations>Canyon Biome, Chargestone Cavern (after boosting biodiversity in the Canyon Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="388" name="Grotle" regionalDexNumber="192" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Turtwig – Lvl 18 → Grotle – Lvl 32 → Torterra</evolution>
+        <locations>Evolve Turtwig</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="389" name="Torterra" regionalDexNumber="193" type="Grass / Ground">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Turtwig – Lvl 18 → Grotle – Lvl 32 → Torterra</evolution>
+        <locations>Evolve Grotle</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="390" name="Chimchar" regionalDexNumber="194" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Chimchar – Lvl 14 → Monferno – Lvl 36 → Infernape</evolution>
+        <locations>Chargestone Cavern, Polar Biome (after boosting biodiversity in the Polar Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="391" name="Monferno" regionalDexNumber="195" type="Fire / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Chimchar – Lvl 14 → Monferno – Lvl 36 → Infernape</evolution>
+        <locations>Evolve Chimchar</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="392" name="Infernape" regionalDexNumber="196" type="Fire / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Chimchar – Lvl 14 → Monferno – Lvl 36 → Infernape</evolution>
+        <locations>Evolve Monferno</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="393" name="Piplup" regionalDexNumber="197" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Piplup – Lvl 16 → Prinplup – Lvl 36 → Empoleon</evolution>
+        <locations>Polar Biome (after boosting biodiversity in the Polar Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="394" name="Prinplup" regionalDexNumber="198" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Piplup – Lvl 16 → Prinplup – Lvl 36 → Empoleon</evolution>
+        <locations>Evolve Piplup</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="395" name="Empoleon" regionalDexNumber="199" type="Water / Steel">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Piplup – Lvl 16 → Prinplup – Lvl 36 → Empoleon</evolution>
+        <locations>Evolve Prinplup</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="495" name="Snivy" regionalDexNumber="200" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snivy – Lvl 17 → Servine – Lvl 36 → Serperior</evolution>
+        <locations>Savanna Biome (after boosting biodiversity in the Savanna Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="496" name="Servine" regionalDexNumber="201" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snivy – Lvl 17 → Servine – Lvl 36 → Serperior</evolution>
+        <locations>Evolve Snivy</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="497" name="Serperior" regionalDexNumber="202" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Snivy – Lvl 17 → Servine – Lvl 36 → Serperior</evolution>
+        <locations>Evolve Servine</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="498" name="Tepig" regionalDexNumber="203" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tepig – Lvl 17 → Pignite – Lvl 36 → Emboar</evolution>
+        <locations>Canyon Biome, Chargestone Cavern (after boosting biodiversity in the Canyon Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="499" name="Pignite" regionalDexNumber="204" type="Fire / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tepig – Lvl 17 → Pignite – Lvl 36 → Emboar</evolution>
+        <locations>Evolve Tepig</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="500" name="Emboar" regionalDexNumber="205" type="Fire / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Tepig – Lvl 17 → Pignite – Lvl 36 → Emboar</evolution>
+        <locations>Evolve Pignite</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="501" name="Oshawott" regionalDexNumber="206" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Oshawott – Lvl 17 → Dewott – Lvl 36 → Samurott</evolution>
+        <locations>Polar Biome (after boosting biodiversity in the Polar Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="502" name="Dewott" regionalDexNumber="207" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Oshawott – Lvl 17 → Dewott – Lvl 36 → Samurott</evolution>
+        <locations>Evolve Oshawott</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="503" name="Samurott" regionalDexNumber="208" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Oshawott – Lvl 17 → Dewott – Lvl 36 → Samurott</evolution>
+        <locations>Evolve Dewott</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="650" name="Chespin" regionalDexNumber="209" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Chespin – Lvl 16 → Quilladin – Lvl 36 → Chesnaught</evolution>
+        <locations>Chargestone Cavern (after boosting biodiversity in the Canyon Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="651" name="Quilladin" regionalDexNumber="210" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Chespin – Lvl 16 → Quilladin – Lvl 36 → Chesnaught</evolution>
+        <locations>Evolve Chespin</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="652" name="Chesnaught" regionalDexNumber="211" type="Grass / Fighting">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Chespin – Lvl 16 → Quilladin – Lvl 36 → Chesnaught</evolution>
+        <locations>Evolve Quilladin</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="653" name="Fennekin" regionalDexNumber="212" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Fennekin – Lvl 16 → Braixen – Lvl 36 → Delphox</evolution>
+        <locations>Savanna Biome (after boosting biodiversity in the Savanna Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="654" name="Braixen" regionalDexNumber="213" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Fennekin – Lvl 16 → Braixen – Lvl 36 → Delphox</evolution>
+        <locations>Evolve Fennekin</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="655" name="Delphox" regionalDexNumber="214" type="Fire / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Fennekin – Lvl 16 → Braixen – Lvl 36 → Delphox</evolution>
+        <locations>Evolve Braixen</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="656" name="Froakie" regionalDexNumber="215" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Froakie – Lvl 16 → Frogadier – Lvl 36 → Greninja</evolution>
+        <locations>Coastal Biome (after boosting biodiversity in the Coastal Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="657" name="Frogadier" regionalDexNumber="216" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Froakie – Lvl 16 → Frogadier – Lvl 36 → Greninja</evolution>
+        <locations>Evolve Froakie</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="658" name="Greninja" regionalDexNumber="217" type="Water / Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Froakie – Lvl 16 → Frogadier – Lvl 36 → Greninja</evolution>
+        <locations>Evolve Frogadier</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="722" name="Rowlet" regionalDexNumber="218" type="Grass / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rowlet – Lvl 17 → Dartrix – Lvl 34 → Decidueye</evolution>
+        <locations>Savanna Biome (after boosting biodiversity in the Savanna Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="723" name="Dartrix" regionalDexNumber="219" type="Grass / Flying">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rowlet – Lvl 17 → Dartrix – Lvl 34 → Decidueye</evolution>
+        <locations>Evolve Rowlet</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="724" name="Decidueye" regionalDexNumber="220" type="Grass / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Rowlet – Lvl 17 → Dartrix – Lvl 34 → Decidueye</evolution>
+        <locations>Evolve Dartrix</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="725" name="Litten" regionalDexNumber="221" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Litten – Lvl 17 → Torracat – Lvl 34 → Incineroar</evolution>
+        <locations>Canyon Biome, Chargestone Cavern (after boosting biodiversity in the Canyon Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="726" name="Torracat" regionalDexNumber="222" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Litten – Lvl 17 → Torracat – Lvl 34 → Incineroar</evolution>
+        <locations>Evolve Litten</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="727" name="Incineroar" regionalDexNumber="223" type="Fire / Dark">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Litten – Lvl 17 → Torracat – Lvl 34 → Incineroar</evolution>
+        <locations>Evolve Torracat</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="728" name="Popplio" regionalDexNumber="224" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Popplio – Lvl 17 → Brionne – Lvl 34 → Primarina</evolution>
+        <locations>Coastal Biome (after boosting biodiversity in the Coastal Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="729" name="Brionne" regionalDexNumber="225" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Popplio – Lvl 17 → Brionne – Lvl 34 → Primarina</evolution>
+        <locations>Evolve Popplio</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="730" name="Primarina" regionalDexNumber="226" type="Water / Fairy">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Popplio – Lvl 17 → Brionne – Lvl 34 → Primarina</evolution>
+        <locations>Evolve Brionne</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="810" name="Grookey" regionalDexNumber="227" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Grookey – Lvl 16 → Thwackey – Lvl 35 → Rillaboom</evolution>
+        <locations>Coastal Biome (after boosting biodiversity in the Coastal Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="811" name="Thwackey" regionalDexNumber="228" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Grookey – Lvl 16 → Thwackey – Lvl 35 → Rillaboom</evolution>
+        <locations>Evolve Grookey</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="812" name="Rillaboom" regionalDexNumber="229" type="Grass">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Grookey – Lvl 16 → Thwackey – Lvl 35 → Rillaboom</evolution>
+        <locations>Evolve Thwackey</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="813" name="Scorbunny" regionalDexNumber="230" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Scorbunny – Lvl 16 → Raboot – Lvl 35 → Cinderace</evolution>
+        <locations>Chargestone Cavern, Polar Biome (after boosting biodiversity in the Polar Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="814" name="Raboot" regionalDexNumber="231" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Scorbunny – Lvl 16 → Raboot – Lvl 35 → Cinderace</evolution>
+        <locations>Evolve Scorbunny</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="815" name="Cinderace" regionalDexNumber="232" type="Fire">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Scorbunny – Lvl 16 → Raboot – Lvl 35 → Cinderace</evolution>
+        <locations>Evolve Raboot</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="816" name="Sobble" regionalDexNumber="233" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sobble – Lvl 16 → Drizzile – Lvl 35 → Inteleon</evolution>
+        <locations>Savanna Biome (after boosting biodiversity in the Savanna Biome)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="817" name="Drizzile" regionalDexNumber="234" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sobble – Lvl 16 → Drizzile – Lvl 35 → Inteleon</evolution>
+        <locations>Evolve Sobble</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="818" name="Inteleon" regionalDexNumber="235" type="Water">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>Sobble – Lvl 16 → Drizzile – Lvl 35 → Inteleon</evolution>
+        <locations>Evolve Drizzile</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1020" name="Gouging Fire" regionalDexNumber="236" type="Fire / Dragon">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>Area Zero (after starting Perrin's questline in The Indigo Disk)</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1021" name="Raging Bolt" regionalDexNumber="237" type="Electric / Dragon">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>Area Zero (after starting Perrin's questline in The Indigo Disk)</locations>
+        <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1023" name="Iron Crown" regionalDexNumber="238" type="Steel / Psychic">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>Area Zero (after starting Perrin's questline in The Indigo Disk)</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1022" name="Iron Boulder" regionalDexNumber="239" type="Rock / Psychic">
-        <evolution></evolution>
-        <locations></locations>
-        <exclusiveVersion>-</exclusiveVersion>
+        <evolution>-</evolution>
+        <locations>Area Zero (after starting Perrin's questline in The Indigo Disk)</locations>
+        <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1024" name="Terapagos" regionalDexNumber="240" type="Normal">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Area Zero Underdepths</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1009" name="Walking Wake" regionalDexNumber="241" type="Water / Dragon">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Event</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1010" name="Iron Leaves" regionalDexNumber="242" type="Grass / Psychic">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Event</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="1025" name="Pecharunt" regionalDexNumber="243" type="Poison / Ghost">
-        <evolution></evolution>
-        <locations></locations>
+        <evolution>-</evolution>
+        <locations>Loyalty Plaza (requires Mythical Pecha Berry)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
