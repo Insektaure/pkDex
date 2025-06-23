@@ -126,7 +126,7 @@ make -C build_switch pkDex.nro -j$(nproc)
 - **Borealis UI Framework**: A hardware-accelerated UI library for Nintendo Switch homebrew, developed by natinusala and contributors. [GitHub Repository](https://github.com/natinusala/borealis)
 - **Pokémon Data**: All Pokémon names, images, and data are property of Nintendo, Game Freak, and The Pokémon Company.
 - **Development**: pkDex is developed by Insektaure.
-- **Datasets**: Pokémon data sourced from various community resources and official game data (serebii.net / pokemondb.net).
+- **Datasets**: Pokémon data sourced from various community resources and official game data (serebii.net / pokemondb.net / bulbapedia.bulbagarden.net).
 
 ## License
 
