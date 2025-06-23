@@ -97,6 +97,8 @@ make -C build_switch pkDex.nro -j$(nproc)
 3. Browse the list of Pokémon, organized by their regional Pokédex numbers.
 4. Select a Pokémon to view detailed information, including:
    - Images (standard and shiny forms)
+   - National Pokédex number
+   - Regional Pokédex number
    - Type information
    - Evolution details
    - Location information
