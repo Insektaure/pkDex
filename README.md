@@ -104,6 +104,7 @@ make -C build_switch pkDex.nro -j$(nproc)
    - Images (standard and shiny forms)
    - National Pokédex number
    - Regional Pokédex number
+   - Shiny Lock status
    - Type information
    - Evolution details
    - Location information
