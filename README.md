@@ -19,6 +19,7 @@ Built using the Borealis UI framework, pkDex provides a clean, intuitive interfa
 
 - **Detailed Pokémon Information**:
   - National and Regional Pokédex numbers
+  - Shiny Lock status
   - Pokémon types
   - Evolution information
   - Game version exclusivity
