@@ -14,8 +14,8 @@ Built using the Borealis UI framework, pkDex provides a clean, intuitive interfa
   - Kanto (Gen 1 - Let's Go Pikachu & Eevee)
   - Sinnoh (Gen 4 - Brilliant Diamond & Shining Pearl)
   - Sinnoh Arceus (Legends: Arceus)
-  - Galar (Gen 8 - Sword & Shield)
-  - Paldea (Gen 9 - Scarlet & Violet)
+  - Galar (Gen 8 - Sword & Shield + Isle of Armor & Crown Tundra DLC)
+  - Paldea (Gen 9 - Scarlet & Violet + The Teal Mask & The Indigo Disk DLC)
 
 - **Detailed Pokémon Information**:
   - National and Regional Pokédex numbers
