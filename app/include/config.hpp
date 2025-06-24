@@ -52,6 +52,15 @@ private:
      * @return bool True if the operation was successful, false otherwise
      */
     static bool writeConfigFile(const std::map<std::string, std::string>& config);
+
+    /**
+     * @brief Update a specific key in the config file without rewriting the entire file
+     * 
+     * @param key The key to update
+     * @param value The new value for the key
+     * @return bool True if the operation was successful, false otherwise
+     */
+    static bool updateConfigKey(const std::string& key, const std::string& value);
 };
 
 } // namespace pkdex
