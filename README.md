@@ -32,6 +32,10 @@ Built using the Borealis UI framework, pkDex provides a clean, intuitive interfa
   - Detailed view for each Pokémon
   - Dark theme support
 
+- **Settings / QoL**:
+  - Update check on startup (to ensure you have the latest version **-Enable by default-**)
+  - Disable automatic update check on startup (for those who prefer not to check for updates)
+
 - **Cross-Platform Compatibility**:
   - Nintendo Switch (primary target)
 
@@ -104,6 +108,17 @@ make -C build_switch pkDex.nro -j$(nproc)
    - Location information
    - Version exclusivity
 
+## App Settings
+
+The application includes a settings menu that allows users to:
+- Enable or disable automatic update checks on startup
+- Check for updates manually
+- View application version information
+
+Enabling automatic update checks will prompt the application to check for the latest version on startup, ensuring you always have the most up-to-date information.
+
+Changing the settings will generate a `config.ini` file in the `/config/pkDex` directory, which will be used to store user preferences.
+
 ## Project Structure
 
 - `app/`: Application source code
@@ -122,6 +137,8 @@ make -C build_switch pkDex.nro -j$(nproc)
 
 - `library/`: External libraries
   - `borealis/`: Borealis UI framework
+
+- `screenshots/`: Screenshots of the application for documentation purposes
 
 ## Screenshots
 
