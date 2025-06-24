@@ -1207,19 +1207,19 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="144" name="Articuno" regionalDexNumber="202" type="Psychic / Flying">
+    <pokemon id="144" name="Articuno" regionalDexNumber="202" type="Psychic / Flying" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Roaming Crown Tundra</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="145" name="Zapdos" regionalDexNumber="203" type="Fighting / Flying">
+    <pokemon id="145" name="Zapdos" regionalDexNumber="203" type="Fighting / Flying" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Roaming Wild Area</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="146" name="Moltres" regionalDexNumber="204" type="Dark / Flying">
+    <pokemon id="146" name="Moltres" regionalDexNumber="204" type="Dark / Flying" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Roaming Isle of Armor</locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -1243,19 +1243,19 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="896" name="Glastrier" regionalDexNumber="208" type="Ice">
+    <pokemon id="896" name="Glastrier" regionalDexNumber="208" type="Ice" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Crown Shrine (if the player obtained the Iceroot Carrot)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="897" name="Spectrier" regionalDexNumber="209" type="Ghost">
+    <pokemon id="897" name="Spectrier" regionalDexNumber="209" type="Ghost" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Crown Shrine (if the player obtained the Shaderoot Carrot)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="898" name="Calyrex" regionalDexNumber="210" type="Psychic / Grass">
+    <pokemon id="898" name="Calyrex" regionalDexNumber="210" type="Psychic / Grass" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Crown Shrine</locations>
         <exclusiveVersion>-</exclusiveVersion>

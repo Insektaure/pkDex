@@ -12,8 +12,9 @@ class Pokemon
     std::string evolution;
     std::string exclusiveVersion;
     std::string locations;
+    bool shinyLocked;
 
-    Pokemon(std::string id, std::string name, std::string regionalDexNumber = "", std::string type = "", std::string evolution = "", std::string exclusiveVersion="", std::string locations = "")
+    Pokemon(std::string id, std::string name, std::string regionalDexNumber = "", std::string type = "", std::string evolution = "", std::string exclusiveVersion="", std::string locations = "", bool shinyLocked = false)
         : id(id)
         , name(name)
         , regionalDexNumber(regionalDexNumber)
@@ -21,6 +22,7 @@ class Pokemon
         , evolution(evolution)
         , exclusiveVersion(exclusiveVersion)
         , locations(locations)
+        , shinyLocked(shinyLocked)
     {
     }
 };
@@ -55,6 +57,7 @@ class PokemonView : public brls::Box
     BRLS_BIND(brls::Label, evolution, "evolution");
     BRLS_BIND(brls::Label, exclusive_version, "exclusive_version");
     BRLS_BIND(brls::Label, locations, "locations");
+    BRLS_BIND(brls::Label, shiny_locked, "shiny_locked");
     BRLS_BIND(brls::Button, close_button, "close_button");
     BRLS_BIND(brls::Box, info_box, "info_box");
 };

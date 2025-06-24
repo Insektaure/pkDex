@@ -1345,109 +1345,109 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="480" name="Uxie" regionalDexNumber="225" type="Psychic">
+    <pokemon id="480" name="Uxie" regionalDexNumber="225" type="Psychic" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Lake Acuity</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="481" name="Mesprit" regionalDexNumber="226" type="Psychic">
+    <pokemon id="481" name="Mesprit" regionalDexNumber="226" type="Psychic" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Lake Verity</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="482" name="Azelf" regionalDexNumber="227" type="Psychic">
+    <pokemon id="482" name="Azelf" regionalDexNumber="227" type="Psychic" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Lake Valor</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="485" name="Heatran" regionalDexNumber="228" type="Fire / Steel">
+    <pokemon id="485" name="Heatran" regionalDexNumber="228" type="Fire / Steel" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Firespit Island</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="486" name="Regigigas" regionalDexNumber="229" type="Normal">
+    <pokemon id="486" name="Regigigas" regionalDexNumber="229" type="Normal" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Snowpoint Temple</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="488" name="Cresselia" regionalDexNumber="230" type="Psychic">
+    <pokemon id="488" name="Cresselia" regionalDexNumber="230" type="Psychic" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Moonview Arena</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="641" name="Tornadus" regionalDexNumber="231" type="Flying">
+    <pokemon id="641" name="Tornadus" regionalDexNumber="231" type="Flying" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Bonechill Wastes</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="642" name="Thundurus" regionalDexNumber="232" type="Electric / Flying">
+    <pokemon id="642" name="Thundurus" regionalDexNumber="232" type="Electric / Flying" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Coastlands Camp</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="645" name="Landorus" regionalDexNumber="233" type="Ground / Flying">
+    <pokemon id="645" name="Landorus" regionalDexNumber="233" type="Ground / Flying" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Ramanas Island</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="905" name="Enamorus" regionalDexNumber="234" type="Fairy / Flying">
+    <pokemon id="905" name="Enamorus" regionalDexNumber="234" type="Fairy / Flying" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Scarlet Bog</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="483" name="Dialga" regionalDexNumber="235" type="Steel / Dragon">
+    <pokemon id="483" name="Dialga" regionalDexNumber="235" type="Steel / Dragon" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Temple of Sinnoh</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="484" name="Palkia" regionalDexNumber="236" type="Water / Dragon">
+    <pokemon id="484" name="Palkia" regionalDexNumber="236" type="Water / Dragon" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Temple of Sinnoh</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="487" name="Giratina" regionalDexNumber="237" type="Ghost / Dragon">
+    <pokemon id="487" name="Giratina" regionalDexNumber="237" type="Ghost / Dragon" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Turnback Cave</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="493" name="Arceus" regionalDexNumber="238" type="Normal">
+    <pokemon id="493" name="Arceus" regionalDexNumber="238" type="Normal" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Temple of Sinnoh</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="489" name="Phione" regionalDexNumber="239" type="Water">
+    <pokemon id="489" name="Phione" regionalDexNumber="239" type="Water" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Seaside Hollow</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="490" name="Manaphy" regionalDexNumber="240" type="Water">
+    <pokemon id="490" name="Manaphy" regionalDexNumber="240" type="Water" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Seaside Hollow</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="492" name="Shaymin" regionalDexNumber="241" type="Grass">
+    <pokemon id="492" name="Shaymin" regionalDexNumber="241" type="Grass" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Floaro Gardens (require save data from Sword / Shield)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="491" name="Darkrai" regionalDexNumber="242" type="Dark">
+    <pokemon id="491" name="Darkrai" regionalDexNumber="242" type="Dark" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Clamberclaw Cliffs (require save data from Brilliant Diamond / Shining Pearl)</locations>
         <exclusiveVersion>-</exclusiveVersion>

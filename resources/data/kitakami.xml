@@ -1172,31 +1172,31 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="901" name="Ursaluna" regionalDexNumber="196" type="Ground / Normal">
+    <pokemon id="901" name="Ursaluna" regionalDexNumber="196" type="Ground / Normal" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Timeless Woods (Bloodmoon)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="1014" name="Okidogi" regionalDexNumber="197" type="Poison / Fighting">
+    <pokemon id="1014" name="Okidogi" regionalDexNumber="197" type="Poison / Fighting" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Paradise Barrens (after completing the main story of The Teal Mask)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="1015" name="Munkidori" regionalDexNumber="198" type="Poison / Psychic">
+    <pokemon id="1015" name="Munkidori" regionalDexNumber="198" type="Poison / Psychic" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Wistful Fields (after completing the main story of The Teal Mask)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="1016" name="Fezandipiti" regionalDexNumber="199" type="Poison / Fairy">
+    <pokemon id="1016" name="Fezandipiti" regionalDexNumber="199" type="Poison / Fairy" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Oni Mountain (after completing the main story of The Teal Mask)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="1017" name="Ogerpon" regionalDexNumber="200" type="Grass">
+    <pokemon id="1017" name="Ogerpon" regionalDexNumber="200" type="Grass" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Dreaded Den (Teal Mask)</locations>
         <exclusiveVersion>-</exclusiveVersion>

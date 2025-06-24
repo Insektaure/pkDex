@@ -80,15 +80,15 @@ void PokemonView::loadPokemon(const Pokemon& newPokemon)
     type->setText(pokemon.type);
     evolution->setText(pokemon.evolution);
     exclusive_version->setText(pokemon.exclusiveVersion);
+    locations->setText(pokemon.locations);
 
-    // Process locations text to handle <br> tags
-    std::string locationsText = pokemon.locations;
-    size_t pos = 0;
-    while ((pos = locationsText.find("<br>", pos)) != std::string::npos) {
-        locationsText.replace(pos, 4, "\n");
-        pos += 1; // Move past the replacement
+    if (pokemon.shinyLocked) {
+        shiny_locked->setText("Locked");
+        shiny_locked->setTextColor(nvgRGB(255, 85, 85)); // Red color for emphasis
+    } else {
+        shiny_locked->setText("Available");
+        shiny_locked->setTextColor(nvgRGB(85, 255, 85)); // Green color for available
     }
-    locations->setText(locationsText);
 }
 
 void PokemonView::loadHighResImage(brls::Image* image, const std::string& path, const std::string& id)

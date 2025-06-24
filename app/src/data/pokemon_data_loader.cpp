@@ -87,6 +87,8 @@ Pokemon PokemonDataLoader::parsePokemonNode(tinyxml2::XMLElement* pokemonElement
     const char* name = pokemonElement->Attribute("name");
     const char* regionalDexNumber = pokemonElement->Attribute("regionalDexNumber");
     const char* type = pokemonElement->Attribute("type");
+    const char* shinyLockedStr = pokemonElement->Attribute("shinyLocked");
+    bool shinyLocked = (shinyLockedStr && strcmp(shinyLockedStr, "true") == 0);
 
     std::string evolution;
     tinyxml2::XMLElement* evolutionElement = pokemonElement->FirstChildElement("evolution");
@@ -116,6 +118,7 @@ Pokemon PokemonDataLoader::parsePokemonNode(tinyxml2::XMLElement* pokemonElement
         type ? type : "",
         evolution,
         exclusiveVersion,
-        locations
+        locations,
+        shinyLocked
     );
 }

@@ -85,10 +85,9 @@
                 <!-- National Number Box Title -->
                 <brls:Box
                         alignItems="center"
-                        width="50%"
+                        width="33%"
                         height="auto"
-                        axis="column"
-                        marginRight="5px">
+                        axis="column">
 
                     <!-- Title centered -->
                     <brls:Box
@@ -99,8 +98,9 @@
                             paddingTop="5px"
                             paddingBottom="5px">
                         <brls:Label
-                                width="auto"
+                                width="100%"
                                 height="auto"
+                                horizontalAlign="center"
                                 text="National N°"
                                 fontSize="20"/>
                     </brls:Box>
@@ -109,7 +109,7 @@
                 <!-- Regional Number Box Title -->
                 <brls:Box
                         alignItems="center"
-                        width="50%"
+                        width="33%"
                         height="auto"
                         axis="column"
                         marginLeft="5px">
@@ -123,9 +123,35 @@
                             paddingTop="5px"
                             paddingBottom="5px">
                         <brls:Label
-                                width="auto"
+                                width="100%"
                                 height="auto"
+                                horizontalAlign="center"
                                 text="Regional N°"
+                                fontSize="20"/>
+                    </brls:Box>
+                </brls:Box>
+
+                <!-- Shiny Lock Box Title -->
+                <brls:Box
+                        alignItems="center"
+                        width="33%"
+                        height="auto"
+                        axis="column"
+                        marginLeft="5px">
+
+                    <!-- Title centered -->
+                    <brls:Box
+                            width="100%"
+                            height="auto"
+                            justifyContent="center"
+                            backgroundColor="#507C36"
+                            paddingTop="5px"
+                            paddingBottom="5px">
+                        <brls:Label
+                                width="100%"
+                                height="auto"
+                                horizontalAlign="center"
+                                text="Shiny"
                                 fontSize="20"/>
                     </brls:Box>
                 </brls:Box>
@@ -140,10 +166,9 @@
                 <!-- National Number Box Content -->
                 <brls:Box
                     alignItems="center"
-                    width="50%"
+                    width="33%"
                     height="auto"
                     axis="column"
-                    marginRight="5px"
                     backgroundColor="#404040"
                     borderColor="#AAAAAA"
                     borderThickness="0px">
@@ -165,7 +190,7 @@
                 <!-- Regional Number Box Content -->
                 <brls:Box
                     alignItems="center"
-                    width="50%"
+                    width="33%"
                     height="auto"
                     axis="column"
                     marginLeft="5px"
@@ -186,6 +211,31 @@
                             horizontalAlign="center"/>
                     </brls:Box>
                 </brls:Box>
+
+                <!-- Shiny Lock Box Content -->
+                <brls:Box
+                        alignItems="center"
+                        width="33%"
+                        height="auto"
+                        axis="column"
+                        marginLeft="5px"
+                        backgroundColor="#404040"
+                        borderColor="#AAAAAA"
+                        borderThickness="0px">
+
+                    <!-- Content -->
+                    <brls:Box
+                            width="auto"
+                            height="auto"
+                            padding="10px">
+                        <brls:Label
+                                id="shiny_locked"
+                                width="auto"
+                                height="auto"
+                                fontSize="24"
+                                horizontalAlign="center"/>
+                    </brls:Box>
+                </brls:Box>
             </brls:Box>
 
             <!-- Row 2: Type and exclusive version as separate boxes -->
@@ -200,8 +250,7 @@
                     alignItems="center"
                     width="50%"
                     height="auto"
-                    axis="column"
-                    marginRight="5px">
+                    axis="column">
 
                     <!-- Title centered -->
                     <brls:Box
@@ -212,8 +261,9 @@
                         paddingTop="5px"
                         paddingBottom="5px">
                         <brls:Label
-                            width="auto"
+                            width="100%"
                             height="auto"
+                            horizontalAlign="center"
                             text="Type"
                             fontSize="20"/>
                     </brls:Box>
@@ -223,10 +273,10 @@
                 <!-- Exclusive Version Box Title -->
                 <brls:Box
                     alignItems="center"
-                    width="50%"
+                    width="49%"
                     height="auto"
                     axis="column"
-                    marginLeft="5px">
+                    marginLeft="10px">
 
                     <!-- Title centered -->
                     <brls:Box
@@ -237,8 +287,9 @@
                         paddingTop="5px"
                         paddingBottom="5px">
                         <brls:Label
-                            width="auto"
+                            width="100%"
                             height="auto"
+                            horizontalAlign="center"
                             text="Version Exclusive"
                             fontSize="20"/>
                     </brls:Box>
@@ -257,7 +308,6 @@
                         width="50%"
                         height="auto"
                         axis="column"
-                        marginRight="5px"
                         backgroundColor="#404040"
                         borderColor="#AAAAAA"
                         borderThickness="0px">
@@ -279,10 +329,10 @@
                 <!-- Exclusive Version Box Content -->
                 <brls:Box
                         alignItems="center"
-                        width="50%"
+                        width="49%"
                         height="auto"
                         axis="column"
-                        marginLeft="5px"
+                        marginLeft="10px"
                         backgroundColor="#404040"
                         borderColor="#AAAAAA"
                         borderThickness="0px">

@@ -901,7 +901,7 @@
         <exclusiveVersion>Shining Pearl</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="490" name="Manaphy" regionalDexNumber="151" type="Water">
+    <pokemon id="490" name="Manaphy" regionalDexNumber="151" type="Water" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Trade / migrate from another game</locations>
         <exclusiveVersion>-</exclusiveVersion>

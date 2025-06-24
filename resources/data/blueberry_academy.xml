@@ -1411,31 +1411,31 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="1020" name="Gouging Fire" regionalDexNumber="236" type="Fire / Dragon">
+    <pokemon id="1020" name="Gouging Fire" regionalDexNumber="236" type="Fire / Dragon" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Area Zero (after starting Perrin's questline in The Indigo Disk)</locations>
         <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="1021" name="Raging Bolt" regionalDexNumber="237" type="Electric / Dragon">
+    <pokemon id="1021" name="Raging Bolt" regionalDexNumber="237" type="Electric / Dragon" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Area Zero (after starting Perrin's questline in The Indigo Disk)</locations>
         <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="1023" name="Iron Crown" regionalDexNumber="238" type="Steel / Psychic">
+    <pokemon id="1023" name="Iron Crown" regionalDexNumber="238" type="Steel / Psychic" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Area Zero (after starting Perrin's questline in The Indigo Disk)</locations>
         <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="1022" name="Iron Boulder" regionalDexNumber="239" type="Rock / Psychic">
+    <pokemon id="1022" name="Iron Boulder" regionalDexNumber="239" type="Rock / Psychic" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Area Zero (after starting Perrin's questline in The Indigo Disk)</locations>
         <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="1024" name="Terapagos" regionalDexNumber="240" type="Normal">
+    <pokemon id="1024" name="Terapagos" regionalDexNumber="240" type="Normal" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Area Zero Underdepths</locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -1453,7 +1453,7 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="1025" name="Pecharunt" regionalDexNumber="243" type="Poison / Ghost">
+    <pokemon id="1025" name="Pecharunt" regionalDexNumber="243" type="Poison / Ghost" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Loyalty Plaza (requires Mythical Pecha Berry)</locations>
         <exclusiveVersion>-</exclusiveVersion>

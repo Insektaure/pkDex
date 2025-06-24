@@ -901,7 +901,7 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="151" name="Mew" regionalDexNumber="151" type="Psychic">
+    <pokemon id="151" name="Mew" regionalDexNumber="151" type="Psychic" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Trade / migrate from another game</locations>
         <exclusiveVersion>-</exclusiveVersion>

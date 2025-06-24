@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pokedex region="paldea">
 
-    <pokemon id="906" name="Sprigatito" regionalDexNumber="001" type="Grass">
+    <pokemon id="906" name="Sprigatito" regionalDexNumber="001" type="Grass" shinyLocked="true">
         <evolution>Sprigatito – Lvl 16 → Floragato – Lvl 36 → Meowscarada</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="907" name="Floragato" regionalDexNumber="002" type="Grass">
+    <pokemon id="907" name="Floragato" regionalDexNumber="002" type="Grass" shinyLocked="true">
         <evolution>Sprigatito – Lvl 16 → Floragato – Lvl 36 → Meowscarada</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="908" name="Meowscarada" regionalDexNumber="003" type="Grass">
+    <pokemon id="908" name="Meowscarada" regionalDexNumber="003" type="Grass" shinyLocked="true">
         <evolution>Sprigatito – Lvl 16 → Floragato – Lvl 36 → Meowscarada</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="909" name="Fuecoco" regionalDexNumber="004" type="Fire">
+    <pokemon id="909" name="Fuecoco" regionalDexNumber="004" type="Fire" shinyLocked="true">
         <evolution>Fuecoco – Lvl 16 → Crocalor – Lvl 36 → Skeledirge</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="910" name="Crocalor" regionalDexNumber="005" type="Fire">
+    <pokemon id="910" name="Crocalor" regionalDexNumber="005" type="Fire" shinyLocked="true">
         <evolution>Fuecoco – Lvl 16 → Crocalor – Lvl 36 → Skeledirge</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="911" name="Skeledirge" regionalDexNumber="006" type="Fire / Ghost">
+    <pokemon id="911" name="Skeledirge" regionalDexNumber="006" type="Fire / Ghost" shinyLocked="true">
         <evolution>Fuecoco – Lvl 16 → Crocalor – Lvl 36 → Skeledirge</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="912" name="Quaxly" regionalDexNumber="007" type="Water">
+    <pokemon id="912" name="Quaxly" regionalDexNumber="007" type="Water" shinyLocked="true">
         <evolution>Quaxly – Lvl 16 → Quaxwell – Lvl 36 → Quaquaval</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="913" name="Quaxwell" regionalDexNumber="008" type="Water">
+    <pokemon id="913" name="Quaxwell" regionalDexNumber="008" type="Water" shinyLocked="true">
         <evolution>Quaxly – Lvl 16 → Quaxwell – Lvl 36 → Quaquaval</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="914" name="Quaquaval" regionalDexNumber="009" type="Water / Fighting">
+    <pokemon id="914" name="Quaquaval" regionalDexNumber="009" type="Water / Fighting" shinyLocked="true">
         <evolution>Quaxly – Lvl 16 → Quaxwell – Lvl 36 → Quaquaval</evolution>
         <locations>Starter Pokémon in Cabo Poco</locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -2341,37 +2341,37 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="999" name="Gimmighoul" regionalDexNumber="391" type="Ghost">
+    <pokemon id="999" name="Gimmighoul" regionalDexNumber="391" type="Ghost" shinyLocked="true">
         <evolution>Gimmighoul – collect 999 Coins from Roaming Form → Gholdengo </evolution>
         <locations>Casseroya Lake, North Province (Area One), East Province (Area One), East Province (Area Three), South Province (Area Two), South Province (Area Three), South Province (Area Six), West Province (Area One), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="1000" name="Gholdengo" regionalDexNumber="392" type="Steel / Ghost">
+    <pokemon id="1000" name="Gholdengo" regionalDexNumber="392" type="Steel / Ghost" shinyLocked="true">
         <evolution>Gimmighoul – collect 999 Coins from Roaming Form → Gholdengo </evolution>
         <locations>Evolve Gimmighoul</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="1001" name="Wo-Chien" regionalDexNumber="393" type="Dark / Grass">
+    <pokemon id="1001" name="Wo-Chien" regionalDexNumber="393" type="Dark / Grass" shinyLocked="true">
         <evolution>-</evolution>
         <locations>South Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="1002" name="Chien-Pao" regionalDexNumber="394" type="Dark / Ice">
+    <pokemon id="1002" name="Chien-Pao" regionalDexNumber="394" type="Dark / Ice" shinyLocked="true">
         <evolution>-</evolution>
         <locations>West Province (Area One)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="1003" name="Ting-Lu" regionalDexNumber="395" type="Dark / Ground">
+    <pokemon id="1003" name="Ting-Lu" regionalDexNumber="395" type="Dark / Ground" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Socarrat Trail</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="1004" name="Chi-Yu" regionalDexNumber="396" type="Dark / Fire">
+    <pokemon id="1004" name="Chi-Yu" regionalDexNumber="396" type="Dark / Fire" shinyLocked="true">
         <evolution>-</evolution>
         <locations>North Province (Area Two)</locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -2389,13 +2389,13 @@
         <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="1007" name="Koraidon" regionalDexNumber="399" type="Fighting / Dragon">
+    <pokemon id="1007" name="Koraidon" regionalDexNumber="399" type="Fighting / Dragon" shinyLocked="true">
         <evolution>-</evolution>
         <locations>The Great Crater of Paldea</locations>
         <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="1008" name="Miraidon" regionalDexNumber="400" type="Electric / Dragon">
+    <pokemon id="1008" name="Miraidon" regionalDexNumber="400" type="Electric / Dragon" shinyLocked="true">
         <evolution>-</evolution>
         <locations>The Great Crater of Paldea</locations>
         <exclusiveVersion>Violet</exclusiveVersion>

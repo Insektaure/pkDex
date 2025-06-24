@@ -2281,13 +2281,13 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="772" name="Type: Null" regionalDexNumber="381" type="Normal">
+    <pokemon id="772" name="Type: Null" regionalDexNumber="381" type="Normal" shinyLocked="true">
         <evolution>Type: Null – High Friendship → Silvally</evolution>
         <locations>Received from a Macro Cosmos employee at the Battle Tower after becoming Champion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="773" name="Silvally" regionalDexNumber="382" type="Normal">
+    <pokemon id="773" name="Silvally" regionalDexNumber="382" type="Normal" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Evolve Type: Null</locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -2383,19 +2383,19 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="888" name="Zacian" regionalDexNumber="398" type="Fairy">
+    <pokemon id="888" name="Zacian" regionalDexNumber="398" type="Fairy" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Tower Summit</locations>
         <exclusiveVersion>Sword</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="889" name="Zamazenta" regionalDexNumber="399" type="Fighting">
+    <pokemon id="889" name="Zamazenta" regionalDexNumber="399" type="Fighting" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Tower Summit</locations>
         <exclusiveVersion>Shield</exclusiveVersion>
     </pokemon>
 
-    <pokemon id="890" name="Eternatus" regionalDexNumber="400" type="Poison / Dragon">
+    <pokemon id="890" name="Eternatus" regionalDexNumber="400" type="Poison / Dragon" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Tower Summit</locations>
         <exclusiveVersion>-</exclusiveVersion>
