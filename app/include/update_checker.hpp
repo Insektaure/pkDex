@@ -17,3 +17,7 @@ void checkForUpdatesAndNotify();
 // Used when the user clicks the "Check for updates" button
 // Returns true if the check was successful, false if WiFi is not connected
 bool manualCheckForUpdates();
+
+// Function to download the latest version of the application
+// Returns true if the download was successful, false otherwise
+bool downloadLatestVersion(const std::string& version);

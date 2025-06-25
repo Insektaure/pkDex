@@ -134,6 +134,88 @@ void checkForUpdatesAndNotify() {
     }
 }
 
+bool downloadLatestVersion(const std::string& version) {
+    // Check if there's an actual internet connection
+    if (!hasInternetConnection()) {
+        brls::Application::notify("No network connection available. Unable to download update.");
+        return false;
+    }
+
+    // Construct the download URL
+    std::string downloadUrl = "https://github.com/insektaure/pkDex/releases/download/" + version + "/pkDex.nro";
+
+    // Notify user that download is starting
+    brls::Application::notify("Downloading version " + version + "...");
+
+    // Initialize variables
+    CURL *curl;
+    CURLcode res;
+    FILE *fp;
+    bool success = false;
+    bool needToInitSocket = false;
+
+    // Try to initialize socket if needed
+    Result rc = socketInitializeDefault();
+    if (R_SUCCEEDED(rc)) {
+        needToInitSocket = true;
+    }
+
+    // Open file for writing
+    std::string filename = "/switch/pkDex-" + version + ".nro";
+    fp = fopen(filename.c_str(), "wb");
+    if (!fp) {
+        brls::Application::notify("Failed to create download file.");
+        if (needToInitSocket) {
+            socketExit();
+        }
+        return false;
+    }
+
+    curl_global_init(CURL_GLOBAL_DEFAULT);
+    curl = curl_easy_init();
+
+    if (curl) {
+        // Set the URL
+        curl_easy_setopt(curl, CURLOPT_URL, downloadUrl.c_str());
+
+        // Set the User-Agent header
+        curl_easy_setopt(curl, CURLOPT_USERAGENT, "pkDex-Switch");
+
+        // Follow redirects
+        curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
+
+        // Write data to file
+        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, NULL);
+        curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
+
+        // Perform the request
+        res = curl_easy_perform(curl);
+
+        // Check for errors
+        if (res != CURLE_OK) {
+            brls::Application::notify("Download failed: " + std::string(curl_easy_strerror(res)));
+        } else {
+            success = true;
+            brls::Application::notify("Download complete! Restart the application to use the new version.");
+        }
+
+        // Clean up curl
+        curl_easy_cleanup(curl);
+    }
+
+    curl_global_cleanup();
+
+    // Close file
+    fclose(fp);
+
+    // Clean up socket if we initialized it
+    if (needToInitSocket) {
+        socketExit();
+    }
+
+    return success;
+}
+
 bool manualCheckForUpdates() {
     // Check if there's an actual internet connection
     if (!hasInternetConnection()) {
@@ -146,8 +228,21 @@ bool manualCheckForUpdates() {
     int result = checkForNewVersion(newVersion);
 
     if (result == 1) {
-        // New version available
-        brls::Application::notify("New version available: " + newVersion + " (Current: " + pkdex::CURRENT_VERSION + ")");
+        // New version available - show confirmation dialog
+        auto dialog = new brls::Dialog("New version available: " + newVersion + " (Current: " + pkdex::CURRENT_VERSION + ")");
+
+        // Add download button
+        dialog->addButton("Download", [newVersion]() {
+            downloadLatestVersion(newVersion);
+        });
+
+        // Add cancel button
+        dialog->addButton("Cancel", []() {
+            // Do nothing, dialog will close automatically
+        });
+
+        // Show the dialog
+        dialog->open();
     } else if (result == 0) {
         // Current version is the latest
         brls::Application::notify("You are using the latest version: " + pkdex::CURRENT_VERSION);
