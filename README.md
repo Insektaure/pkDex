@@ -8,6 +8,12 @@ pkDex is a comprehensive Pokémon encyclopedia (Pokédex) application that allow
 
 Built using the Borealis UI framework, pkDex provides a clean, intuitive interface for exploring Pokémon data.
 
+## Disclaimer
+
+This application is provided for educational and informational purposes only.\
+It is provided "as is" without any warranties or guarantees of any kind.\
+The developers are not responsible for any issues that may arise from using this application.
+
 ## Features
 
 - **Multi-Region Support**: Browse Pokémon from different regions:

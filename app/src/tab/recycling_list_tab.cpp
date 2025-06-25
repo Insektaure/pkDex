@@ -2,6 +2,7 @@
 #include "view/pokemon_view.hpp"
 #include "data/pokemon_data_loader.hpp"
 #include "data/pokemon_tracker.hpp"
+#include "borealis/extern/nanovg/nanovg.h"
 
 std::vector<Pokemon> pokemons;
 
@@ -60,10 +61,27 @@ brls::RecyclerCell* DataSource::cellForRow(brls::RecyclerFrame* recycler, brls::
 
     RecyclerCell* item = (RecyclerCell*)recycler->dequeueReusableCell("Cell");
 
-    // Add a checkmark prefix for captured Pokemon
-    std::string prefix = isCaptured ? "[✓] " : "";
-    item->label->setText(prefix + pokemons[actualIndex].regionalDexNumber + " - " + pokemons[actualIndex].name);
+    // Set the cell text without prefix
+    item->label->setText(pokemons[actualIndex].regionalDexNumber + " - " + pokemons[actualIndex].name);
     item->image->setImageFromRes("img/pokemon/icons/" + pokemons[actualIndex].id + ".png");
+
+    // Change the background color for captured Pokemon
+    if (isCaptured) {
+        // Use a green background for captured Pokemon
+        //item->setBackgroundColor(nvgRGB(100, 200, 100)); // Green
+        item->setBackgroundColor(nvgRGB(173, 160, 75)); // Light yellow
+        // Hide the highlight background to keep our custom background visible when focused
+        item->setHideHighlightBackground(true);
+        // Keep the highlight border visible for better UX
+        item->setHideHighlightBorder(false);
+    } else {
+        // Use transparent background for non-captured Pokemon
+        item->setBackgroundColor(brls::TRANSPARENT);
+        // Show the highlight background for non-captured Pokemon
+        item->setHideHighlightBackground(false);
+        // Show the highlight border for non-captured Pokemon
+        item->setHideHighlightBorder(false);
+    }
 
     return item;
 }
