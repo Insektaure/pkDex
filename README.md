@@ -95,6 +95,37 @@ with
 make -C build_switch pkDex.nro -j$(nproc)
 ```
 
+### Building for Nintendo Switch (Updater application)
+
+1. Make sure you have devkitPro installed with Switch development tools.
+
+2. Build the updater application:
+   ```bash
+   make build-updater
+   ```
+   
+3. The output will be a `.nro` file in the `build_switch/pkDexUpdater` folder that can be run on a Nintendo Switch with custom firmware.
+
+if you want to speed up the build process, you can use edit the `Makefile` and replace
+
+```makefile
+make -C build_switch pkDexUpdater.nro -j2
+```
+
+with
+
+```makefile
+make -C build_switch pkDexUpdater.nro -j$(nproc)
+```
+
+### Building for Nintendo Switch (Main Application and Updater)
+
+To build both the main application and the updater in one command, you can use:
+
+```bash
+make build-all
+```
+
 ## Usage
 
 1. Launch the application on your device.
@@ -130,6 +161,11 @@ Changing the settings will generate a `config.ini` file in the `/config/pkDex` d
     - `data/`: Data loading and management
     - `tab/`: UI tabs for different sections
     - `view/`: UI views for displaying content
+
+- `pkDexUpdater/`: Update checker application
+  - `src/`: Implementation files for the updater
+  - `ressources/`: Resources for the updater application
+    - `img/`: Images for the updater UI
 
 - `resources/`: Application resources
   - `data/`: Pokémon data files

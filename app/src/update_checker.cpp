@@ -185,8 +185,8 @@ bool downloadLatestVersion(const std::string& version) {
             needToInitSocket = true;
         }
 
-        // Open file for writing
-        std::string filename = "/switch/pkDex-" + version + ".nro";
+        // Open file for writing - save as .new to be renamed by the updater
+        std::string filename = "/switch/pkDex.nro.new";
         fp = fopen(filename.c_str(), "wb");
         if (!fp) {
             brls::sync([filename]() {
@@ -233,7 +233,7 @@ bool downloadLatestVersion(const std::string& version) {
             } else {
                 success = true;
                 brls::sync([]() {
-                    brls::Application::notify("Download complete! Restart the application to use the new version.");
+                    brls::Application::notify("Download complete! Please run the pkDexUpdater to apply the update.");
                 });
             }
 
