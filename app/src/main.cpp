@@ -8,13 +8,9 @@
 
 #include "update_checker.hpp"
 #include "config.hpp"
-#include "view/captioned_image.hpp"
 #include "view/pokemon_view.hpp"
-#include "tab/components_tab.hpp"
-#include "tab/transform_tab.hpp"
 #include "tab/recycling_list_tab.hpp"
 #include "tab/settings_tab.hpp"
-#include "tab/text_test_tab.hpp"
 #include "activity/main_activity.hpp"
 
 #if defined(__PSV__) && defined(BOREALIS_USE_OPENGL)
@@ -53,7 +49,6 @@ int main(int argc, char* argv[])
     brls::Application::setGlobalQuit(false);
 
     // Register custom views (including tabs, which are views)
-    brls::Application::registerXMLView("CaptionedImage", CaptionedImage::create);
     brls::Application::registerXMLView("RecyclingListTab", static_cast<brls::View*(*)(void)>(RecyclingListTab::create));
 
     // Register region-specific factory methods
@@ -69,16 +64,8 @@ int main(int argc, char* argv[])
     brls::Application::registerXMLView("KitakamiTab", RecyclingListTab::createKitakami);
     brls::Application::registerXMLView("BlueberryTab", RecyclingListTab::createBlueberry);
 
-    brls::Application::registerXMLView("ComponentsTab", ComponentsTab::create);
-    brls::Application::registerXMLView("TransformTab", TransformTab::create);
-    brls::Application::registerXMLView("TransformBox", TransformBox::create);
     brls::Application::registerXMLView("PokemonView", PokemonView::create);
     brls::Application::registerXMLView("SettingsTab", SettingsTab::create);
-    brls::Application::registerXMLView("TextTestTab", TextTestTab::create);
-
-    // Add custom values to the theme
-    brls::Theme::getLightTheme().addColor("captioned_image/caption", nvgRGB(2, 176, 183));
-    brls::Theme::getDarkTheme().addColor("captioned_image/caption", nvgRGB(51, 186, 227));
 
     // Add custom values to the style
     brls::getStyle().addMetric("about/padding_top_bottom", 50);

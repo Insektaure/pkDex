@@ -134,6 +134,250 @@ void checkForUpdatesAndNotify() {
     }
 }
 
+// Callback function for CURL to report download progress
+static int progressCallback(void *clientp, curl_off_t dltotal, curl_off_t dlnow, curl_off_t ultotal, curl_off_t ulnow) {
+    // Only update progress every 10% to avoid flooding the UI with notifications
+    static int lastPercent = 0;
+    int percent = (dltotal > 0) ? static_cast<int>((dlnow * 100) / dltotal) : 0;
+
+    // Update progress every 10%, but skip the 100% notification to avoid multiple triggers
+    if ((percent >= lastPercent + 10 && percent < 100) || (percent == 100 && lastPercent < 100)) {
+        lastPercent = percent;
+        std::string* versionPtr = static_cast<std::string*>(clientp);
+        std::string version = *versionPtr;
+
+        brls::sync([percent, version]() {
+            brls::Application::notify("Downloading version " + version + "... " + std::to_string(percent) + "%");
+        });
+    }
+
+    return 0; // Return 0 to continue the download
+}
+
+bool downloadLatestVersion(const std::string& version) {
+    // Check if there's an actual internet connection
+    if (!hasInternetConnection()) {
+        brls::Application::notify("No network connection available. Unable to download update.");
+        return false;
+    }
+
+    // Construct the download URL
+    std::string downloadUrl = "https://github.com/insektaure/pkDex/releases/download/" + version + "/pkDex.nro";
+
+    // Notify user that download is starting
+    brls::Application::notify("Downloading version " + version + "... (You can continue using the app)");
+
+    // Create a copy of the version string to pass to the progress callback
+    std::string* versionCopy = new std::string(version);
+
+    // Start the download in a background thread
+    brls::async([version, downloadUrl, versionCopy]() {
+        // Initialize variables
+        CURL *curl;
+        CURLcode res;
+        FILE *fp;
+        bool success = false;
+        bool needToInitSocket = false;
+
+        // Try to initialize socket if needed
+        Result rc = socketInitializeDefault();
+        if (R_SUCCEEDED(rc)) {
+            needToInitSocket = true;
+        }
+
+        // Open file for writing - save as .new to be renamed by the updater
+        std::string filename = "/switch/pkDex.nro.new";
+        fp = fopen(filename.c_str(), "wb");
+        if (!fp) {
+            brls::sync([filename]() {
+                brls::Application::notify("Failed to create download file: " + filename);
+            });
+            if (needToInitSocket) {
+                socketExit();
+            }
+            delete versionCopy; // Clean up
+            return;
+        }
+
+        curl_global_init(CURL_GLOBAL_DEFAULT);
+        curl = curl_easy_init();
+
+        if (curl) {
+            // Set the URL
+            curl_easy_setopt(curl, CURLOPT_URL, downloadUrl.c_str());
+
+            // Set the User-Agent header
+            curl_easy_setopt(curl, CURLOPT_USERAGENT, "pkDex-Switch");
+
+            // Follow redirects
+            curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
+
+            // Write data to file
+            curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, NULL);
+            curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
+
+            // Set up progress callback
+            curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 0L);
+            curl_easy_setopt(curl, CURLOPT_XFERINFOFUNCTION, progressCallback);
+            curl_easy_setopt(curl, CURLOPT_XFERINFODATA, versionCopy);
+
+            // Perform the request
+            res = curl_easy_perform(curl);
+
+            // Check for errors
+            if (res != CURLE_OK) {
+                std::string error = curl_easy_strerror(res);
+                brls::sync([error]() {
+                    brls::Application::notify("Download failed: " + error);
+                });
+            } else {
+                success = true;
+                brls::sync([]() {
+                    brls::Application::notify("Download complete! Please run the pkDexUpdater to apply the update.");
+                });
+            }
+
+            // Clean up curl
+            curl_easy_cleanup(curl);
+        }
+
+        curl_global_cleanup();
+
+        // Close file
+        fclose(fp);
+
+        // Clean up socket if we initialized it
+        if (needToInitSocket) {
+            socketExit();
+        }
+
+        // Clean up the version copy
+        delete versionCopy;
+    });
+
+    // Return true immediately since the download is happening in the background
+    return true;
+}
+
+bool downloadUpdater(const std::string& version) {
+    // Check if there's an actual internet connection
+    if (!hasInternetConnection()) {
+        brls::Application::notify("No network connection available. Unable to download updater.");
+        return false;
+    }
+
+    // Check for the latest version available
+    std::string latestVersion;
+    int result = checkForNewVersion(latestVersion);
+
+    // If failed to get latest version, use the provided version
+    if (result == -1) {
+        brls::Application::notify("Failed to check for latest version. Using current version instead.");
+        latestVersion = version;
+    } else if (result == 0) {
+        // Current version is the latest
+        latestVersion = version;
+    }
+    // else result == 1, latestVersion contains the new version
+
+    // Construct the download URL using the latest version
+    std::string downloadUrl = "https://github.com/insektaure/pkDex/releases/download/" + latestVersion + "/pkDexUpdater.nro";
+
+    // Notify user that download is starting
+    brls::Application::notify("Downloading updater from version " + latestVersion + "... (You can continue using the app)");
+
+    // Create a copy of the version string to pass to the progress callback
+    std::string* versionCopy = new std::string(latestVersion);
+
+    // Start the download in a background thread
+    brls::async([latestVersion, downloadUrl, versionCopy]() {
+        // Initialize variables
+        CURL *curl;
+        CURLcode res;
+        FILE *fp;
+        bool success = false;
+        bool needToInitSocket = false;
+
+        // Try to initialize socket if needed
+        Result rc = socketInitializeDefault();
+        if (R_SUCCEEDED(rc)) {
+            needToInitSocket = true;
+        }
+
+        // Open file for writing - save directly to the updater path
+        std::string filename = "/switch/pkDexUpdater.nro";
+        fp = fopen(filename.c_str(), "wb");
+        if (!fp) {
+            brls::sync([filename]() {
+                brls::Application::notify("Failed to create download file: " + filename);
+            });
+            if (needToInitSocket) {
+                socketExit();
+            }
+            delete versionCopy; // Clean up
+            return;
+        }
+
+        curl_global_init(CURL_GLOBAL_DEFAULT);
+        curl = curl_easy_init();
+
+        if (curl) {
+            // Set the URL
+            curl_easy_setopt(curl, CURLOPT_URL, downloadUrl.c_str());
+
+            // Set the User-Agent header
+            curl_easy_setopt(curl, CURLOPT_USERAGENT, "pkDex-Switch");
+
+            // Follow redirects
+            curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
+
+            // Write data to file
+            curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, NULL);
+            curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
+
+            // Set up progress callback
+            curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 0L);
+            curl_easy_setopt(curl, CURLOPT_XFERINFOFUNCTION, progressCallback);
+            curl_easy_setopt(curl, CURLOPT_XFERINFODATA, versionCopy);
+
+            // Perform the request
+            res = curl_easy_perform(curl);
+
+            // Check for errors
+            if (res != CURLE_OK) {
+                std::string error = curl_easy_strerror(res);
+                brls::sync([error]() {
+                    brls::Application::notify("Download failed: " + error);
+                });
+            } else {
+                success = true;
+                brls::sync([]() {
+                    brls::Application::notify("Updater download complete! You can now launch the updater.");
+                });
+            }
+
+            // Clean up curl
+            curl_easy_cleanup(curl);
+        }
+
+        curl_global_cleanup();
+
+        // Close file
+        fclose(fp);
+
+        // Clean up socket if we initialized it
+        if (needToInitSocket) {
+            socketExit();
+        }
+
+        // Clean up the version copy
+        delete versionCopy;
+    });
+
+    // Return true immediately since the download is happening in the background
+    return true;
+}
+
 bool manualCheckForUpdates() {
     // Check if there's an actual internet connection
     if (!hasInternetConnection()) {
@@ -146,8 +390,21 @@ bool manualCheckForUpdates() {
     int result = checkForNewVersion(newVersion);
 
     if (result == 1) {
-        // New version available
-        brls::Application::notify("New version available: " + newVersion + " (Current: " + pkdex::CURRENT_VERSION + ")");
+        // New version available - show confirmation dialog
+        auto dialog = new brls::Dialog("New version available: " + newVersion + " (Current: " + pkdex::CURRENT_VERSION + ")");
+
+        // Add download button
+        dialog->addButton("Download", [newVersion]() {
+            downloadLatestVersion(newVersion);
+        });
+
+        // Add cancel button
+        dialog->addButton("Cancel", []() {
+            // Do nothing, dialog will close automatically
+        });
+
+        // Show the dialog
+        dialog->open();
     } else if (result == 0) {
         // Current version is the latest
         brls::Application::notify("You are using the latest version: " + pkdex::CURRENT_VERSION);

@@ -7,7 +7,7 @@
 // When updating the version, update both this file and CMakeLists.txt (lines 27-30)
 namespace pkdex {
     // Current application version - must match VERSION_MAJOR, VERSION_MINOR, VERSION_ALTER in CMakeLists.txt
-    static const std::string CURRENT_VERSION = "v1.1.1";
+    static const std::string CURRENT_VERSION = "v1.2.0";
 
     // Function to get the current version without the 'v' prefix
     inline std::string getCurrentVersionWithoutPrefix() {
