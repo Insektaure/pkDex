@@ -21,3 +21,7 @@ bool manualCheckForUpdates();
 // Function to download the latest version of the application
 // Returns true if the download was successful, false otherwise
 bool downloadLatestVersion(const std::string& version);
+
+// Function to download the updater application
+// Returns true if the download was successful, false otherwise
+bool downloadUpdater(const std::string& version);

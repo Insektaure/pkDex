@@ -37,9 +37,52 @@ Built using the Borealis UI framework, pkDex provides a clean, intuitive interfa
   - Update check on startup (to ensure you have the latest version **-Enable by default-**)
   - Disable automatic update check on startup (for those who prefer not to check for updates)
   - Download updates directly from the application (**_must use the included Updater to apply updates_**)
+  - If the updater application is not present, it will prompt you to download it from the `settings` menu when trying to launch it.
 
 - **Cross-Platform Compatibility**:
   - Nintendo Switch (primary target)
+
+## How to Use
+
+1. Launch the application on your device.
+2. Navigate through the tabs to select a Pokémon region.
+3. Browse the list of Pokémon, organized by their regional Pokédex numbers.
+4. Select a Pokémon to view detailed information, including:
+    - Images (standard and shiny forms)
+    - National Pokédex number
+    - Regional Pokédex number
+    - Shiny Lock status
+    - Type information
+    - Evolution details
+    - Location information
+    - Version exclusivity
+5. Use the settings menu to enable or disable automatic new version checks & check for available updates manually.
+6. Use the settings menu to download updates directly from the application (requires the `pkDexUpdater` application to be present to use update file).
+7. Use the included updater application (`pkDexUpdater.nro`) to apply the downloaded update file.
+
+## How to Update
+
+To update the application, you can use the included updater application (`pkDexUpdater.nro`):
+1. Ensure your Nintendo Switch is connected to the internet.
+2. Go to the settings menu and check for updates.
+3. If an update is available, the application will prompt you to download it. 
+4. Click the `Launch Updater` button in the settings menu of the main application. 
+5. If you don't have the Updater, you will be prompted to download it **directly from the application settings**, or you can **download it manually** from the [releases page](https://github.com/Insektaure/pkDex/releases). 
+6. The updater will apply the downloaded update file to the main application, ensuring you have the latest features and bug fixes.
+
+## App Settings
+
+The application includes a settings menu that allows users to:
+- Enable or disable automatic update checks on startup
+- Check for updates manually
+- Download updates directly from the application
+- Download the updater application if it is not present
+
+Enabling automatic update checks will prompt the application to check for the latest version on startup, ensuring you always have the most up-to-date information.\
+You can download updates at any time from the `settings` menu (_**Check for updates**_ button).
+
+Changing the settings will generate a `config.ini` file in the `/config/pkDex` directory, which will be used to store user preferences.
+
 
 ## Requirements
 
@@ -127,34 +170,6 @@ To build both the main application and the updater in one command, you can use:
 make build-all
 ```
 
-## Usage
-
-1. Launch the application on your device.
-2. Navigate through the tabs to select a Pokémon region.
-3. Browse the list of Pokémon, organized by their regional Pokédex numbers.
-4. Select a Pokémon to view detailed information, including:
-   - Images (standard and shiny forms)
-   - National Pokédex number
-   - Regional Pokédex number
-   - Shiny Lock status
-   - Type information
-   - Evolution details
-   - Location information
-   - Version exclusivity
-5. Use the settings menu to enable or disable automatic update checks & check for updates manually.
-6. Use the settings menu to download updates directly from the application (requires the Updater application to be present to use update file). 
-7. Use the included updater application (`pkDexUpdater.nro`) to apply the downloaded update file.
-
-## App Settings
-
-The application includes a settings menu that allows users to:
-- Enable or disable automatic update checks on startup
-- Check for updates manually
-- View application version information
-
-Enabling automatic update checks will prompt the application to check for the latest version on startup, ensuring you always have the most up-to-date information.
-
-Changing the settings will generate a `config.ini` file in the `/config/pkDex` directory, which will be used to store user preferences.
 
 ## Project Structure
 
@@ -194,6 +209,10 @@ Changing the settings will generate a `config.ini` file in the `/config/pkDex` d
     <img src="./screenshots/pkDex_4.jpg" alt="Screenshot 4" />
     <br>
     <img src="./screenshots/pkDex_5.jpg" alt="Screenshot 5" />
+    <br>
+    <img src="./screenshots/pkDex_6.jpg" alt="Screenshot 6" />
+    <br>
+    <img src="./screenshots/pkDex_7.jpg" alt="Screenshot 7" />
 </div>
 
 ## Credits

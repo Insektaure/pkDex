@@ -259,6 +259,125 @@ bool downloadLatestVersion(const std::string& version) {
     return true;
 }
 
+bool downloadUpdater(const std::string& version) {
+    // Check if there's an actual internet connection
+    if (!hasInternetConnection()) {
+        brls::Application::notify("No network connection available. Unable to download updater.");
+        return false;
+    }
+
+    // Check for the latest version available
+    std::string latestVersion;
+    int result = checkForNewVersion(latestVersion);
+
+    // If failed to get latest version, use the provided version
+    if (result == -1) {
+        brls::Application::notify("Failed to check for latest version. Using current version instead.");
+        latestVersion = version;
+    } else if (result == 0) {
+        // Current version is the latest
+        latestVersion = version;
+    }
+    // else result == 1, latestVersion contains the new version
+
+    // Construct the download URL using the latest version
+    std::string downloadUrl = "https://github.com/insektaure/pkDex/releases/download/" + latestVersion + "/pkDexUpdater.nro";
+
+    // Notify user that download is starting
+    brls::Application::notify("Downloading updater from version " + latestVersion + "... (You can continue using the app)");
+
+    // Create a copy of the version string to pass to the progress callback
+    std::string* versionCopy = new std::string(latestVersion);
+
+    // Start the download in a background thread
+    brls::async([latestVersion, downloadUrl, versionCopy]() {
+        // Initialize variables
+        CURL *curl;
+        CURLcode res;
+        FILE *fp;
+        bool success = false;
+        bool needToInitSocket = false;
+
+        // Try to initialize socket if needed
+        Result rc = socketInitializeDefault();
+        if (R_SUCCEEDED(rc)) {
+            needToInitSocket = true;
+        }
+
+        // Open file for writing - save directly to the updater path
+        std::string filename = "/switch/pkDexUpdater.nro";
+        fp = fopen(filename.c_str(), "wb");
+        if (!fp) {
+            brls::sync([filename]() {
+                brls::Application::notify("Failed to create download file: " + filename);
+            });
+            if (needToInitSocket) {
+                socketExit();
+            }
+            delete versionCopy; // Clean up
+            return;
+        }
+
+        curl_global_init(CURL_GLOBAL_DEFAULT);
+        curl = curl_easy_init();
+
+        if (curl) {
+            // Set the URL
+            curl_easy_setopt(curl, CURLOPT_URL, downloadUrl.c_str());
+
+            // Set the User-Agent header
+            curl_easy_setopt(curl, CURLOPT_USERAGENT, "pkDex-Switch");
+
+            // Follow redirects
+            curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
+
+            // Write data to file
+            curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, NULL);
+            curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
+
+            // Set up progress callback
+            curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 0L);
+            curl_easy_setopt(curl, CURLOPT_XFERINFOFUNCTION, progressCallback);
+            curl_easy_setopt(curl, CURLOPT_XFERINFODATA, versionCopy);
+
+            // Perform the request
+            res = curl_easy_perform(curl);
+
+            // Check for errors
+            if (res != CURLE_OK) {
+                std::string error = curl_easy_strerror(res);
+                brls::sync([error]() {
+                    brls::Application::notify("Download failed: " + error);
+                });
+            } else {
+                success = true;
+                brls::sync([]() {
+                    brls::Application::notify("Updater download complete! You can now launch the updater.");
+                });
+            }
+
+            // Clean up curl
+            curl_easy_cleanup(curl);
+        }
+
+        curl_global_cleanup();
+
+        // Close file
+        fclose(fp);
+
+        // Clean up socket if we initialized it
+        if (needToInitSocket) {
+            socketExit();
+        }
+
+        // Clean up the version copy
+        delete versionCopy;
+    });
+
+    // Return true immediately since the download is happening in the background
+    return true;
+}
+
 bool manualCheckForUpdates() {
     // Check if there's an actual internet connection
     if (!hasInternetConnection()) {
