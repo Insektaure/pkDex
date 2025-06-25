@@ -36,6 +36,7 @@ Built using the Borealis UI framework, pkDex provides a clean, intuitive interfa
 - **Settings / QoL**:
   - Update check on startup (to ensure you have the latest version **-Enable by default-**)
   - Disable automatic update check on startup (for those who prefer not to check for updates)
+  - Download updates directly from the application (**_must use the included Updater to apply updates_**)
 
 - **Cross-Platform Compatibility**:
   - Nintendo Switch (primary target)
@@ -140,6 +141,9 @@ make build-all
    - Evolution details
    - Location information
    - Version exclusivity
+5. Use the settings menu to enable or disable automatic update checks & check for updates manually.
+6. Use the settings menu to download updates directly from the application (requires the Updater application to be present to use update file). 
+7. Use the included updater application (`pkDexUpdater.nro`) to apply the downloaded update file.
 
 ## App Settings
 

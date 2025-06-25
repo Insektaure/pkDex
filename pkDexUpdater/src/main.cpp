@@ -47,12 +47,16 @@ bool applyUpdate() {
     printf("Applying update...\n");
     consoleUpdate(NULL);
 
+    sleep(3);
+
     // Check if the new file exists
     if (!fileExists(SOURCE_PATH)) {
         errorMessage = "Update file not found: " + SOURCE_PATH;
     } else {
         printf("Found update file: %s\n", SOURCE_PATH.c_str());
         consoleUpdate(NULL);
+
+        sleep(3);
 
         // Create a backup of the current file if it exists
         if (fileExists(TARGET_PATH)) {
@@ -63,6 +67,8 @@ bool applyUpdate() {
             } else {
                 printf("Backup created: %s\n", BACKUP_PATH.c_str());
                 consoleUpdate(NULL);
+
+                sleep(3);
             }
         }
 
@@ -76,15 +82,19 @@ bool applyUpdate() {
                 printf("Update successfully applied!\n");
                 consoleUpdate(NULL);
 
+                sleep(3);
+
                 // Delete the backup file if it exists
                 if (fileExists(BACKUP_PATH)) {
                     if (deleteFile(BACKUP_PATH)) {
                         printf("Backup file deleted.\n");
                         consoleUpdate(NULL);
                     } else {
-                        printf("Warning: Failed to delete backup file.\n");
+                        printf("\033[0;31mWarning: Failed to delete backup file.\033[0m\n");
                         consoleUpdate(NULL);
                     }
+
+                    sleep(3);
                 }
             } else {
                 errorMessage = "Failed to apply update";
@@ -99,9 +109,11 @@ bool applyUpdate() {
                         consoleUpdate(NULL);
                     } else {
                         errorMessage += " (failed to restore from backup)";
-                        printf("Failed to restore from backup.\n");
+                        printf("\033[0;31mFailed to restore from backup.\033[0m\n");
                         consoleUpdate(NULL);
                     }
+
+                    sleep(3);
                 }
             }
         }
@@ -109,8 +121,10 @@ bool applyUpdate() {
 
     // Print final status
     if (!success) {
-        printf("Error: %s\n", errorMessage.c_str());
+        printf("\033[0;31mError: %s\033[0m\n", errorMessage.c_str());
         consoleUpdate(NULL);
+
+        sleep(3);
     }
 
     return success;
@@ -125,9 +139,9 @@ int main(int argc, char* argv[]) {
     bool success = applyUpdate();
 
     // Wait a few seconds before exiting
-    printf("\nExiting in 3 seconds...\n");
+    printf("\nExiting in 5 seconds...\n");
     consoleUpdate(NULL);
-    sleep(3);
+    sleep(5);
 
     // Clean up
     consoleExit(NULL);
