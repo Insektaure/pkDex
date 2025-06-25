@@ -84,9 +84,9 @@ RecyclingListTab::RecyclingListTab(const std::string& region)
     recycler->setDataSource(this->dataSource);
 
     // Register L and R button actions for jumping between pages
-    this->registerAction("Jump to Previous Page", brls::BUTTON_LB, 
+    this->registerAction("Previous Page", brls::BUTTON_LB,
         std::bind(&RecyclingListTab::jumpToPreviousPage, this, std::placeholders::_1), false, true);
-    this->registerAction("Jump to Next Page", brls::BUTTON_RB, 
+    this->registerAction("Next Page", brls::BUTTON_RB,
         std::bind(&RecyclingListTab::jumpToNextPage, this, std::placeholders::_1), false, true);
 }
 
