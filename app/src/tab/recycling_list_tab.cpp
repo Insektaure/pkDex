@@ -91,9 +91,15 @@ void DataSource::didSelectRowAt(brls::RecyclerFrame* recycler, brls::IndexPath i
     // Update the current selection
     currentSelection = indexPath;
 
+    // Get the current region from the parent tab
+    std::string region = "paldea"; // Default to paldea if we can't get the region
+    RecyclingListTab* parentTab = dynamic_cast<RecyclingListTab*>(recycler->getParent());
+    if (parentTab) {
+        region = parentTab->getCurrentRegion();    }
+
     // Calculate the actual index based on section and row, same as in cellForRow
     int actualIndex = indexPath.section * 30 + indexPath.row;
-    recycler->present(new PokemonView(pokemons[actualIndex], actualIndex));
+    recycler->present(new PokemonView(pokemons[actualIndex], actualIndex, region));
 }
 
 // RECYCLER VIEW

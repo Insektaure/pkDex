@@ -1,4 +1,6 @@
 #include "view/pokemon_view.hpp"
+#include "data/pokemon_tracker.hpp"
+#include "tab/recycling_list_tab.hpp"
 
 #include <borealis/core/i18n.hpp>
 #include <borealis/core/logger.hpp>
@@ -14,8 +16,8 @@ bool dismissView(brls::View* view, PokemonView* pock)
     return true;
 }
 
-PokemonView::PokemonView(Pokemon pokemon, int pokemonIndex)
-    : pokemon(pokemon), currentIndex(pokemonIndex)
+PokemonView::PokemonView(Pokemon pokemon, int pokemonIndex, const std::string& region)
+    : pokemon(pokemon), currentIndex(pokemonIndex), region(region)
 {
     // Inflate the tab from the XML file
     this->inflateFromXMLRes("xml/views/pokemon.xml");
@@ -60,8 +62,19 @@ void PokemonView::loadPokemon(const Pokemon& newPokemon)
     // Update the current Pokemon
     this->pokemon = newPokemon;
 
-    // Update the applet frame
-    getAppletFrameItem()->title = pokemon.name + " | N°" + pokemon.regionalDexNumber;
+    // Use the stored region instead of trying to get it from the parent
+    // The region is set in the constructor
+
+    // Check if the Pokemon is captured
+    bool isCaptured = pkdex::PokemonTracker::isCaptured(region, pokemon.regionalDexNumber);
+
+    // Update the applet frame with a checkmark if the Pokemon is captured
+    std::string title = pokemon.name + " | N°" + pokemon.regionalDexNumber;
+    if (isCaptured) {
+        title = title + "[*]️"; // Add checkmark symbol to the beginning of the title
+    }
+
+    getAppletFrameItem()->title = title;
     getAppletFrameItem()->setIconFromRes("img/pokemon/icons/" + pokemon.id + ".png");
     // Update the UI with the new title and icon
     updateAppletFrameItem();

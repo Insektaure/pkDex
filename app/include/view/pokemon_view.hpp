@@ -30,9 +30,9 @@ class Pokemon
 class PokemonView : public brls::Box
 {
   public:
-    PokemonView(Pokemon pokemon, int pokemonIndex = -1);
+    PokemonView(Pokemon pokemon, int pokemonIndex = -1, const std::string& region = "paldea");
     PokemonView()
-        : PokemonView(Pokemon("001", "Bulbasaur"), -1)
+        : PokemonView(Pokemon("001", "Bulbasaur"), -1, "paldea")
     {
     }
 
@@ -41,6 +41,7 @@ class PokemonView : public brls::Box
   private:
     Pokemon pokemon;
     int currentIndex; // Index of the current Pokemon in the global pokemons vector
+    std::string region; // The region of the Pokemon
 
     // Methods for navigating between Pokemon
     bool navigateToPreviousPokemon(brls::View* view);
