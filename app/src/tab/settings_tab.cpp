@@ -12,19 +12,6 @@ bool fileExists(const std::string& path) {
     return (stat(path.c_str(), &buffer) == 0);
 }
 
-// Function to check if the current version is at least 1.2.0
-bool isVersionAtLeast120() {
-    // Get the current version without the 'v' prefix
-    std::string currentVersion = pkdex::getCurrentVersionWithoutPrefix();
-
-    // Compare with 1.2.0
-    int currentMajor = 0, currentMinor = 0, currentPatch = 0;
-    sscanf(currentVersion.c_str(), "%d.%d.%d", &currentMajor, &currentMinor, &currentPatch);
-
-    // Check if version is at least 1.2.0
-    return (currentMajor > 1) || 
-           (currentMajor == 1 && currentMinor >= 2);
-}
 
 // Function to launch the updater application
 void launchUpdaterApp() {
@@ -33,37 +20,23 @@ void launchUpdaterApp() {
 
     // Check if the updater file exists
     if (!fileExists(updaterPath)) {
-        // Check if the current version is at least 1.2.0
-        if (isVersionAtLeast120()) {
-            // Show a dialog with option to download the updater
-            auto errorDialog = new brls::Dialog("The updater application is missing. Would you like to download it now?");
+        // Show a dialog with option to download the updater
+        auto errorDialog = new brls::Dialog("The updater application is missing. Would you like to download it now?");
 
-            // Add Download button
-            errorDialog->addButton("Download", []() {
-                // Get the current version to use for downloading
-                std::string version = pkdex::CURRENT_VERSION;
-                downloadUpdater(version);
-            });
+        // Add Download button
+        errorDialog->addButton("Download", []() {
+            // Get the current version to use for downloading
+            std::string version = pkdex::CURRENT_VERSION;
+            downloadUpdater(version);
+        });
 
-            // Add Cancel button
-            errorDialog->addButton("Cancel", []() {
-                // Do nothing, dialog will close automatically
-            });
+        // Add Cancel button
+        errorDialog->addButton("Cancel", []() {
+            // Do nothing, dialog will close automatically
+        });
 
-            // Show the dialog
-            errorDialog->open();
-        } else {
-            // For older versions, just show the error message
-            auto errorDialog = new brls::Dialog("The updater application is missing. Please download the updater first.");
-
-            // Add OK button
-            errorDialog->addButton("OK", []() {
-                // Do nothing, dialog will close automatically
-            });
-
-            // Show the dialog
-            errorDialog->open();
-        }
+        // Show the dialog
+        errorDialog->open();
         return;
     }
 
