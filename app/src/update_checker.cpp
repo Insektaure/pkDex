@@ -134,6 +134,26 @@ void checkForUpdatesAndNotify() {
     }
 }
 
+// Callback function for CURL to report download progress
+static int progressCallback(void *clientp, curl_off_t dltotal, curl_off_t dlnow, curl_off_t ultotal, curl_off_t ulnow) {
+    // Only update progress every 10% to avoid flooding the UI with notifications
+    static int lastPercent = 0;
+    int percent = (dltotal > 0) ? static_cast<int>((dlnow * 100) / dltotal) : 0;
+
+    // Update progress every 10%
+    if (percent >= lastPercent + 10 || percent == 100) {
+        lastPercent = percent;
+        std::string* versionPtr = static_cast<std::string*>(clientp);
+        std::string version = *versionPtr;
+
+        brls::sync([percent, version]() {
+            brls::Application::notify("Downloading version " + version + "... " + std::to_string(percent) + "%");
+        });
+    }
+
+    return 0; // Return 0 to continue the download
+}
+
 bool downloadLatestVersion(const std::string& version) {
     // Check if there's an actual internet connection
     if (!hasInternetConnection()) {
@@ -145,75 +165,98 @@ bool downloadLatestVersion(const std::string& version) {
     std::string downloadUrl = "https://github.com/insektaure/pkDex/releases/download/" + version + "/pkDex.nro";
 
     // Notify user that download is starting
-    brls::Application::notify("Downloading version " + version + "...");
+    brls::Application::notify("Downloading version " + version + "... (You can continue using the app)");
 
-    // Initialize variables
-    CURL *curl;
-    CURLcode res;
-    FILE *fp;
-    bool success = false;
-    bool needToInitSocket = false;
+    // Create a copy of the version string to pass to the progress callback
+    std::string* versionCopy = new std::string(version);
 
-    // Try to initialize socket if needed
-    Result rc = socketInitializeDefault();
-    if (R_SUCCEEDED(rc)) {
-        needToInitSocket = true;
-    }
+    // Start the download in a background thread
+    brls::async([version, downloadUrl, versionCopy]() {
+        // Initialize variables
+        CURL *curl;
+        CURLcode res;
+        FILE *fp;
+        bool success = false;
+        bool needToInitSocket = false;
 
-    // Open file for writing
-    std::string filename = "/switch/pkDex-" + version + ".nro";
-    fp = fopen(filename.c_str(), "wb");
-    if (!fp) {
-        brls::Application::notify("Failed to create download file.");
+        // Try to initialize socket if needed
+        Result rc = socketInitializeDefault();
+        if (R_SUCCEEDED(rc)) {
+            needToInitSocket = true;
+        }
+
+        // Open file for writing
+        std::string filename = "/switch/pkDex-" + version + ".nro";
+        fp = fopen(filename.c_str(), "wb");
+        if (!fp) {
+            brls::sync([filename]() {
+                brls::Application::notify("Failed to create download file: " + filename);
+            });
+            if (needToInitSocket) {
+                socketExit();
+            }
+            delete versionCopy; // Clean up
+            return;
+        }
+
+        curl_global_init(CURL_GLOBAL_DEFAULT);
+        curl = curl_easy_init();
+
+        if (curl) {
+            // Set the URL
+            curl_easy_setopt(curl, CURLOPT_URL, downloadUrl.c_str());
+
+            // Set the User-Agent header
+            curl_easy_setopt(curl, CURLOPT_USERAGENT, "pkDex-Switch");
+
+            // Follow redirects
+            curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
+
+            // Write data to file
+            curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, NULL);
+            curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
+
+            // Set up progress callback
+            curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 0L);
+            curl_easy_setopt(curl, CURLOPT_XFERINFOFUNCTION, progressCallback);
+            curl_easy_setopt(curl, CURLOPT_XFERINFODATA, versionCopy);
+
+            // Perform the request
+            res = curl_easy_perform(curl);
+
+            // Check for errors
+            if (res != CURLE_OK) {
+                std::string error = curl_easy_strerror(res);
+                brls::sync([error]() {
+                    brls::Application::notify("Download failed: " + error);
+                });
+            } else {
+                success = true;
+                brls::sync([]() {
+                    brls::Application::notify("Download complete! Restart the application to use the new version.");
+                });
+            }
+
+            // Clean up curl
+            curl_easy_cleanup(curl);
+        }
+
+        curl_global_cleanup();
+
+        // Close file
+        fclose(fp);
+
+        // Clean up socket if we initialized it
         if (needToInitSocket) {
             socketExit();
         }
-        return false;
-    }
 
-    curl_global_init(CURL_GLOBAL_DEFAULT);
-    curl = curl_easy_init();
+        // Clean up the version copy
+        delete versionCopy;
+    });
 
-    if (curl) {
-        // Set the URL
-        curl_easy_setopt(curl, CURLOPT_URL, downloadUrl.c_str());
-
-        // Set the User-Agent header
-        curl_easy_setopt(curl, CURLOPT_USERAGENT, "pkDex-Switch");
-
-        // Follow redirects
-        curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
-
-        // Write data to file
-        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, NULL);
-        curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
-
-        // Perform the request
-        res = curl_easy_perform(curl);
-
-        // Check for errors
-        if (res != CURLE_OK) {
-            brls::Application::notify("Download failed: " + std::string(curl_easy_strerror(res)));
-        } else {
-            success = true;
-            brls::Application::notify("Download complete! Restart the application to use the new version.");
-        }
-
-        // Clean up curl
-        curl_easy_cleanup(curl);
-    }
-
-    curl_global_cleanup();
-
-    // Close file
-    fclose(fp);
-
-    // Clean up socket if we initialized it
-    if (needToInitSocket) {
-        socketExit();
-    }
-
-    return success;
+    // Return true immediately since the download is happening in the background
+    return true;
 }
 
 bool manualCheckForUpdates() {
