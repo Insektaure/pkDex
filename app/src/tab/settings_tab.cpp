@@ -2,6 +2,7 @@
 #include "update_checker.hpp"
 #include "config.hpp"
 #include "version.hpp"
+#include "data/pokemon_tracker.hpp"
 #include <string>
 #include <switch.h>
 #include <sys/stat.h>
@@ -77,6 +78,34 @@ SettingsTab::SettingsTab()
     // Register click action for the "Launch updater" button
     launchUpdater->registerClickAction([](...){
         launchUpdaterApp();
+        return true;
+    });
+
+    // Register click action for the "Reset Pokémon Capture Status" button
+    resetCaptureStatus->registerClickAction([](...){
+        // Show a confirmation dialog
+        auto dialog = new brls::Dialog("Are you sure you want to reset all Pokemon capture statuses? This action cannot be undone.");
+
+        // Add confirm button
+        dialog->addButton("Reset", []() {
+            // Reset all capture statuses
+            bool success = pkdex::PokemonTracker::resetAllCaptureStatus();
+
+            // Show a success or error message
+            if (success) {
+                brls::Application::notify("All Pokemon capture statuses have been reset.");
+            } else {
+                brls::Application::notify("Failed to reset Pokemon capture statuses.");
+            }
+        });
+
+        // Add cancel button
+        dialog->addButton("Cancel", []() {
+            // Do nothing, dialog will close automatically
+        });
+
+        // Show the dialog
+        dialog->open();
         return true;
     });
 

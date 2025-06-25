@@ -32,6 +32,10 @@
                     title="Launch Updater"
                     id="launchUpdater"/>
 
+            <brls:DetailCell
+                    title="Reset Pokemon Capture Status"
+                    id="resetCaptureStatus"/>
+
         </brls:Box>
 
     </brls:ScrollingFrame>

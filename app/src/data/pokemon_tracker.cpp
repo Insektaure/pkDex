@@ -174,11 +174,23 @@ bool PokemonTracker::toggleCaptureStatus(const std::string& region, const std::s
     std::string key = generateKey(region, regionalDexNumber);
     bool currentStatus = isCaptured(region, regionalDexNumber);
     bool newStatus = !currentStatus;
-    
+
     // Update the tracker file
     updateTrackerKey(key, newStatus ? "1" : "0");
-    
+
     return newStatus;
+}
+
+bool PokemonTracker::resetAllCaptureStatus() {
+    std::string trackerPath = getTrackerFilePath();
+
+    if (trackerPath.empty()) {
+        return false;
+    }
+
+    // Create an empty map and write it to the tracker file
+    std::map<std::string, std::string> emptyTracker;
+    return writeTrackerFile(emptyTracker);
 }
 
 } // namespace pkdex

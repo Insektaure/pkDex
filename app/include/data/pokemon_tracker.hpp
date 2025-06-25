@@ -30,6 +30,13 @@ public:
      */
     static bool toggleCaptureStatus(const std::string& region, const std::string& regionalDexNumber);
 
+    /**
+     * @brief Reset all Pokémon capture statuses
+     * 
+     * @return bool True if the operation was successful, false otherwise
+     */
+    static bool resetAllCaptureStatus();
+
 private:
     /**
      * @brief Get the path to the tracker file
