@@ -1,6 +1,7 @@
 #include "tab/recycling_list_tab.hpp"
 #include "view/pokemon_view.hpp"
 #include "data/pokemon_data_loader.hpp"
+#include "data/pokemon_tracker.hpp"
 
 std::vector<Pokemon> pokemons;
 
@@ -44,9 +45,26 @@ brls::RecyclerCell* DataSource::cellForRow(brls::RecyclerFrame* recycler, brls::
     // Calculate the actual index based on section and row
     int actualIndex = indexPath.section * 30 + indexPath.row;
 
+    // Get the current region from the parent tab
+    std::string region = "";
+    RecyclingListTab* parentTab = dynamic_cast<RecyclingListTab*>(recycler->getParent());
+    if (parentTab) {
+        region = parentTab->getCurrentRegion();
+    } else {
+        // Default to paldea if we can't get the region
+        region = "paldea";
+    }
+
+    // Check if the Pokemon is captured
+    bool isCaptured = pkdex::PokemonTracker::isCaptured(region, pokemons[actualIndex].regionalDexNumber);
+
     RecyclerCell* item = (RecyclerCell*)recycler->dequeueReusableCell("Cell");
-    item->label->setText(pokemons[actualIndex].regionalDexNumber + " - " + pokemons[actualIndex].name);
+
+    // Add a checkmark prefix for captured Pokemon
+    std::string prefix = isCaptured ? "[✓] " : "";
+    item->label->setText(prefix + pokemons[actualIndex].regionalDexNumber + " - " + pokemons[actualIndex].name);
     item->image->setImageFromRes("img/pokemon/icons/" + pokemons[actualIndex].id + ".png");
+
     return item;
 }
 
@@ -68,6 +86,7 @@ RecyclingListTab::RecyclingListTab()
 }
 
 RecyclingListTab::RecyclingListTab(const std::string& region)
+    : currentRegion(region)
 {
     // Inflate the tab from the XML file
     this->inflateFromXMLRes("xml/tabs/recycling_list.xml");
@@ -88,10 +107,17 @@ RecyclingListTab::RecyclingListTab(const std::string& region)
         std::bind(&RecyclingListTab::jumpToPreviousPage, this, std::placeholders::_1), false, true);
     this->registerAction("Next Page", brls::BUTTON_RB,
         std::bind(&RecyclingListTab::jumpToNextPage, this, std::placeholders::_1), false, true);
+
+    // Register Y button action for toggling capture status
+    this->registerAction("Toggle Capture Status", brls::BUTTON_Y,
+        std::bind(&RecyclingListTab::toggleCaptureStatus, this, std::placeholders::_1), false, true);
 }
 
 void RecyclingListTab::loadPokemonData(const std::string& region)
 {
+    // Update the current region
+    this->currentRegion = region;
+
     pokemons.clear();
     // Load Pokemon data from the specified region
     pokemons = PokemonDataLoader::loadPokemonFromRegion(region);
@@ -223,6 +249,67 @@ brls::View* RecyclingListTab::createKitakami()
 brls::View* RecyclingListTab::createBlueberry()
 {
     return new RecyclingListTab("blueberry_academy");
+}
+
+bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
+{
+    // Get the currently focused view
+    brls::View* focusedView = brls::Application::getCurrentFocus();
+
+    // Try to cast it to a RecyclerCell
+    brls::RecyclerCell* focusedCell = dynamic_cast<brls::RecyclerCell*>(focusedView);
+
+    // If the focused view is a RecyclerCell, use its index path
+    brls::IndexPath currentSelection;
+    if (focusedCell)
+    {
+        currentSelection = focusedCell->getIndexPath();
+    }
+    else
+    {
+        // Fallback to the data source's current selection
+        currentSelection = this->dataSource->getCurrentSelection();
+    }
+
+    // Calculate the actual index based on section and row
+    int actualIndex = currentSelection.section * 30 + currentSelection.row;
+
+    // Get the Pokemon at the current index
+    Pokemon& pokemon = pokemons[actualIndex];
+
+    // Toggle the capture status
+    bool newStatus = pkdex::PokemonTracker::toggleCaptureStatus(currentRegion, pokemon.regionalDexNumber);
+
+    // Show a notification
+    std::string message = pokemon.name + " " + (newStatus ? "captured!" : "released!");
+    brls::Application::notify(message);
+
+    // Store the current content offset before reloading
+    float contentOffset = recycler->getContentOffsetY();
+
+    // Set the default cell focus to the current selection before reloading
+    // This ensures the correct row is selected after reloading
+    recycler->setDefaultCellFocus(currentSelection);
+
+    // Refresh the UI to update the cell
+    recycler->reloadData();
+
+    // Restore the selection after reloading the data
+    this->dataSource->setCurrentSelection(currentSelection);
+
+    // Restore the content offset
+    recycler->setContentOffsetY(contentOffset, false);
+
+    // Ensure the cell is visible and selected
+    recycler->selectRowAt(currentSelection, false);
+
+    // Force a refresh of the recycler to ensure all cells are properly positioned
+    recycler->invalidate();
+
+    // Give focus to the recycler itself to ensure joystick scrolling works properly
+    brls::Application::giveFocus(recycler);
+
+    return true;
 }
 
 void RecyclingListTab::ensureCellVisible(const brls::IndexPath& indexPath)

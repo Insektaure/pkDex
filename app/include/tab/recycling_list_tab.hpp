@@ -71,7 +71,16 @@ class RecyclingListTab : public brls::Box
     // Load Pokemon data from a file
     void loadPokemonData(const std::string& region);
 
+    // Get the current region
+    std::string getCurrentRegion() const { return currentRegion; }
+
   private:
+    // Current region
+    std::string currentRegion;
+
+    // Toggle capture status of the currently selected Pokemon
+    bool toggleCaptureStatus(brls::View* view);
+
     // Jump to previous/next page (30 rows) using L/R buttons
     bool jumpToPreviousPage(brls::View* view);
     bool jumpToNextPage(brls::View* view);
