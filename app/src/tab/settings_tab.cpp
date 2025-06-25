@@ -4,6 +4,32 @@
 #include <string>
 #include <switch.h>
 
+// Function to launch the updater application
+void launchUpdaterApp() {
+    // Path to the updater application
+    const char* updaterPath = "/switch/pkDexUpdater.nro";
+
+    // Show a confirmation dialog
+    auto dialog = new brls::Dialog("This will close pkDex and launch the updater. Make sure you have downloaded an update first.");
+
+    // Add confirm button
+    dialog->addButton("Launch", [updaterPath]() {
+        // Set the next application to load when this one exits
+        envSetNextLoad(updaterPath, "");
+
+        // Exit the application
+        brls::Application::quit();
+    });
+
+    // Add cancel button
+    dialog->addButton("Cancel", []() {
+        // Do nothing, dialog will close automatically
+    });
+
+    // Show the dialog
+    dialog->open();
+}
+
 using namespace brls::literals;  // for _i18n
 
 SettingsTab::SettingsTab()
@@ -14,6 +40,12 @@ SettingsTab::SettingsTab()
     // Register click action for the "Check for updates" button
     checkUpdates->registerClickAction([](...){
         manualCheckForUpdates();
+        return true;
+    });
+
+    // Register click action for the "Launch updater" button
+    launchUpdater->registerClickAction([](...){
+        launchUpdaterApp();
         return true;
     });
 

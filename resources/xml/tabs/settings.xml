@@ -28,6 +28,10 @@
                     title="Check for updates"
                     id="checkUpdates"/>
 
+            <brls:DetailCell
+                    title="Launch Updater"
+                    id="launchUpdater"/>
+
         </brls:Box>
 
     </brls:ScrollingFrame>
