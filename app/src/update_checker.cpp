@@ -140,8 +140,8 @@ static int progressCallback(void *clientp, curl_off_t dltotal, curl_off_t dlnow,
     static int lastPercent = 0;
     int percent = (dltotal > 0) ? static_cast<int>((dlnow * 100) / dltotal) : 0;
 
-    // Update progress every 10%
-    if (percent >= lastPercent + 10 || percent == 100) {
+    // Update progress every 10%, but skip the 100% notification to avoid multiple triggers
+    if ((percent >= lastPercent + 10 && percent < 100) || (percent == 100 && lastPercent < 100)) {
         lastPercent = percent;
         std::string* versionPtr = static_cast<std::string*>(clientp);
         std::string version = *versionPtr;
