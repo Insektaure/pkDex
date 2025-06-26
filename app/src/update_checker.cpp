@@ -6,6 +6,7 @@
 #include <cstring>
 #include <curl/curl.h>
 #include <unistd.h>
+#include <sys/stat.h>
 
 // Helper function to check if there's an actual internet connection
 bool hasInternetConnection() {
@@ -164,6 +165,46 @@ bool downloadLatestVersion(const std::string& version) {
     // Construct the download URL
     std::string downloadUrl = "https://github.com/insektaure/pkDex/releases/download/" + version + "/pkDex.nro";
 
+    // Define the filename where the update will be saved
+    std::string filename = "/switch/pkDex.nro.new";
+
+    // Check if the update file already exists
+    struct stat buffer;
+    bool fileExists = (stat(filename.c_str(), &buffer) == 0);
+
+    if (fileExists) {
+        // File exists, ask user if they want to redownload
+        auto dialog = new brls::Dialog("An update file already exists. Do you want to redownload it ?");
+
+        // Add redownload button
+        dialog->addButton("Redownload", [version, downloadUrl, filename]() {
+            // Delete the existing file
+            if (remove(filename.c_str()) != 0) {
+                brls::Application::notify("Failed to delete existing update file. Please delete it manually.");
+                return;
+            }
+
+            // Notify user that download is starting
+            brls::Application::notify("Downloading version " + version + "... (You can continue using the app)");
+
+            // Create a copy of the version string to pass to the progress callback
+            std::string* versionCopy = new std::string(version);
+
+            // Start the download in a background thread
+            startDownload(version, downloadUrl, versionCopy);
+        });
+
+        // Add cancel button
+        dialog->addButton("Cancel", []() {
+            // Do nothing, dialog will close automatically
+            brls::Application::notify("Download canceled. Existing update file kept.");
+        });
+
+        // Show the dialog
+        dialog->open();
+        return true;
+    }
+
     // Notify user that download is starting
     brls::Application::notify("Downloading version " + version + "... (You can continue using the app)");
 
@@ -171,6 +212,12 @@ bool downloadLatestVersion(const std::string& version) {
     std::string* versionCopy = new std::string(version);
 
     // Start the download in a background thread
+    startDownload(version, downloadUrl, versionCopy);
+    return true;
+}
+
+// Helper function to start the download in a background thread
+void startDownload(const std::string& version, const std::string& downloadUrl, std::string* versionCopy) {
     brls::async([version, downloadUrl, versionCopy]() {
         // Initialize variables
         CURL *curl;
@@ -255,8 +302,7 @@ bool downloadLatestVersion(const std::string& version) {
         delete versionCopy;
     });
 
-    // Return true immediately since the download is happening in the background
-    return true;
+    // The download is happening in the background
 }
 
 bool downloadUpdater(const std::string& version) {

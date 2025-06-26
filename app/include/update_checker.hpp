@@ -22,6 +22,9 @@ bool manualCheckForUpdates();
 // Returns true if the download was successful, false otherwise
 bool downloadLatestVersion(const std::string& version);
 
+// Helper function to start the download in a background thread
+void startDownload(const std::string& version, const std::string& downloadUrl, std::string* versionCopy);
+
 // Function to download the updater application
 // Returns true if the download was successful, false otherwise
 bool downloadUpdater(const std::string& version);
