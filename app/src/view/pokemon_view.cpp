@@ -71,7 +71,7 @@ void PokemonView::loadPokemon(const Pokemon& newPokemon)
     // Update the applet frame with a checkmark if the Pokemon is captured
     std::string title = pokemon.name + " | N°" + pokemon.regionalDexNumber;
     if (isCaptured) {
-        title = title + "[*]"; // Add checkmark symbol to the beginning of the title
+        title = title + " [Captured]"; // Use brackets instead of emoji for better compatibility
     }
 
     getAppletFrameItem()->title = title;
