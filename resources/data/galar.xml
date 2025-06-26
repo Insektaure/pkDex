@@ -3,55 +3,55 @@
 
     <pokemon id="810" name="Grookey" regionalDexNumber="001" type="Grass">
         <evolution>Grookey – Lvl 16 → Thwackey – Lvl 35 → Rillaboom</evolution>
-        <locations>Trade / migrate from another game</locations>
+        <locations>First partner Pokémon from Leon in Postwick | Shiny Locked starter</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="811" name="Thwackey" regionalDexNumber="002" type="Grass">
         <evolution>Grookey – Lvl 16 → Thwackey – Lvl 35 → Rillaboom</evolution>
-        <locations>Trade / migrate from another game</locations>
+        <locations>Evolve Grookey</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="812" name="Rillaboom" regionalDexNumber="003" type="Grass">
         <evolution>Grookey – Lvl 16 → Thwackey – Lvl 35 → Rillaboom</evolution>
-        <locations>Trade / migrate from another game</locations>
+        <locations>Evolve Thwackey</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="813" name="Scorbunny" regionalDexNumber="004" type="Fire">
         <evolution>Scorbunny – Lvl 16 → Raboot – Lvl 35 → Cinderace</evolution>
-        <locations>Trade / migrate from another game</locations>
+        <locations>First partner Pokémon from Leon in Postwick | Shiny Locked starter</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="814" name="Raboot" regionalDexNumber="005" type="Fire">
         <evolution>Scorbunny – Lvl 16 → Raboot – Lvl 35 → Cinderace</evolution>
-        <locations>Trade / migrate from another game</locations>
+        <locations>Evolve Scorbunny</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="815" name="Cinderace" regionalDexNumber="006" type="Fire">
         <evolution>Scorbunny – Lvl 16 → Raboot – Lvl 35 → Cinderace</evolution>
-        <locations>Trade / migrate from another game</locations>
+        <locations>Evolve Raboot</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="816" name="Sobble" regionalDexNumber="007" type="Water">
         <evolution>Sobble – Lvl 16 → Drizzile – Lvl 35 → Inteleon</evolution>
-        <locations>Trade / migrate from another game</locations>
+        <locations>First partner Pokémon from Leon in Postwick | Shiny Locked starter</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="817" name="Drizzile" regionalDexNumber="008" type="Water">
         <evolution>Sobble – Lvl 16 → Drizzile – Lvl 35 → Inteleon</evolution>
-        <locations>Trade / migrate from another game</locations>
+        <locations>Evolve Sobble</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
     <pokemon id="818" name="Inteleon" regionalDexNumber="009" type="Water">
         <evolution>Sobble – Lvl 16 → Drizzile – Lvl 35 → Inteleon</evolution>
-        <locations>Trade / migrate from another game</locations>
+        <locations>Evolve Drizzile</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
 
