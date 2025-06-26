@@ -33,6 +33,11 @@ The developers are not responsible for any issues that may arise from using this
   - Images of both standard and shiny forms
   - Packaged low resolution images, with dynamic loading high resolution if available on the SD card
 
+- **Pokémon Tracker**:
+  - Track caught Pokémon by marking them as caught on the list
+  - Caught Pokémon are highlighted in the list
+  - Ability to reset caught status for all Pokémon from the `settings` menu
+
 - **User-Friendly Interface**:
   - Organized by regions with section headers
   - Efficient list navigation with recycling views
