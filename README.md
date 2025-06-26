@@ -88,6 +88,7 @@ The application includes a settings menu that allows users to:
 - Check for updates manually
 - Download updates directly from the application
 - Download the updater application if it is not present
+- Reset caught Pokémon status
 
 Enabling automatic update checks will prompt the application to check for the latest version on startup, ensuring you always have the most up-to-date information.\
 You can download updates at any time from the `settings` menu (_**Check for updates**_ button).
