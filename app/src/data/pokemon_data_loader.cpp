@@ -1,6 +1,7 @@
 #include "data/pokemon_data_loader.hpp"
 #include <borealis/core/logger.hpp>
 #include <tinyxml2.h>
+#include "data/pokemon_tracker.hpp"
 
 std::vector<Pokemon> PokemonDataLoader::loadPokemonFromRegion(const std::string& region)
 {
@@ -40,7 +41,7 @@ std::vector<Pokemon> PokemonDataLoader::loadPokemonFromRegion(const std::string&
 Pokemon PokemonDataLoader::loadPokemonById(const std::string& id)
 {
     // Try to find the Pokemon in each region
-    std::vector<std::string> regions = {"kanto", "johto", "hoenn", "sinnoh", "sinnoh_arceus", "galar", "paldea"};
+    std::vector<std::string> regions = pkdex::PokemonTracker::getAllRegions();
 
     for (const std::string& region : regions)
     {
