@@ -231,6 +231,10 @@ make build-all
     <br>
     <img src="./screenshots/pkDex_4.jpg" alt="Screenshot 4" />
     <br>
+    <img src="./screenshots/pkDex_4_1.jpg" alt="Screenshot 4.1" />
+    <br>
+    <img src="./screenshots/pkDex_4_2.jpg" alt="Screenshot 4.1" />
+    <br>
     <img src="./screenshots/pkDex_5.jpg" alt="Screenshot 5" />
     <br>
     <img src="./screenshots/pkDex_6.jpg" alt="Screenshot 6" />
