@@ -67,19 +67,28 @@ The developers are not responsible for any issues that may arise from using this
     - Evolution details
     - Location information
     - Version exclusivity
-5. Use the settings menu to enable or disable automatic new version checks & check for available updates manually.
-6. Use the settings menu to download updates directly from the application (requires the `pkDexUpdater` application to be present to use update file).
-7. Use the included updater application (`pkDexUpdater.nro`) to apply the downloaded update file.
+5. Press the `Y` button to mark a Pokémon as caught or uncaught. Caught Pokémon will be highlighted in the list.
+6. Marking a Pokémon as caught will create a `pkDex.tracker.ini` file in the `/switch/pkDex` directory.\
+   Unmarking a Pokémon will set the corresponding line in `pkDex.tracker.ini` file accordingly. 
+7. Use the settings menu to enable or disable automatic new version checks & check for available updates manually. 
+8. Use the settings menu to download updates directly from the application (requires the `pkDexUpdater` application to be present to use update file). 
+9. Use the included updater application (`pkDexUpdater.nro`) to apply the downloaded update file.
 
 ## How to Update
 
 To update the application, you can use the included updater application (`pkDexUpdater.nro`):
 1. Ensure your Nintendo Switch is connected to the internet.
 2. Go to the settings menu and check for updates.
-3. If an update is available, the application will prompt you to download it. 
-4. Click the `Launch Updater` button in the settings menu of the main application. 
-5. If you don't have the Updater, you will be prompted to download it **directly from the application settings**, or you can **download it manually** from the [releases page](https://github.com/Insektaure/pkDex/releases). 
-6. The updater will apply the downloaded update file to the main application, ensuring you have the latest features and bug fixes.
+
+If an update is available, the application will prompt you to download it. 
+
+If you want to update automatically :
+- Click the `Launch Updater` button in the settings menu of the main application. 
+- If you don't have the Updater, you will be prompted to download it **directly from the application settings**.
+- The updater will apply the downloaded update file to the main application, ensuring you have the latest features and bug fixes.
+
+If you prefer to update manually:
+- Download the latest version from the [releases page](https://github.com/Insektaure/pkDex/releases).
 
 ## App Settings
 
