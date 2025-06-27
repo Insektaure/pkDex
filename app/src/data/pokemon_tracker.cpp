@@ -237,4 +237,11 @@ bool PokemonTracker::resetAllCaptureStatus() {
     return success;
 }
 
+bool PokemonTracker::resetRegionCaptureStatus(const std::string& region) {
+    std::map<std::string, std::string> emptyTracker;
+
+    // Reset the tracker file for the specified region
+    return writeTrackerFile(region, emptyTracker);
+}
+
 } // namespace pkdex

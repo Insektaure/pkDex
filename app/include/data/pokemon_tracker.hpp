@@ -39,6 +39,14 @@ public:
     static bool resetAllCaptureStatus();
 
     /**
+     * @brief Reset all Pokémon capture statuses for a specific region
+     * 
+     * @param region The region to reset capture statuses for
+     * @return bool True if the operation was successful, false otherwise
+     */
+    static bool resetRegionCaptureStatus(const std::string& region);
+
+    /**
      * @brief Get all available regions
      * 
      * @return std::vector<std::string> A vector of all available regions

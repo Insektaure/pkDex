@@ -169,4 +169,25 @@ bool Config::setBool(const std::string& key, bool value) {
     return updateConfigKey(key, value ? "1" : "0");
 }
 
+int Config::getInt(const std::string& key, int defaultValue) {
+    auto config = readConfigFile();
+    auto it = config.find(key);
+
+    if (it == config.end()) {
+        return defaultValue;
+    }
+
+    // Convert string to int
+    try {
+        return std::stoi(it->second);
+    } catch (const std::exception& e) {
+        brls::Logger::error("Failed to convert config value to int: {}", e.what());
+        return defaultValue;
+    }
+}
+
+bool Config::setInt(const std::string& key, int value) {
+    return updateConfigKey(key, std::to_string(value));
+}
+
 } // namespace pkdex

@@ -30,6 +30,24 @@ public:
      */
     static bool setBool(const std::string& key, bool value);
 
+    /**
+     * @brief Get an integer value from the config file
+     * 
+     * @param key The key to look for
+     * @param defaultValue The default value to return if the key is not found
+     * @return int The value associated with the key, or the default value if not found
+     */
+    static int getInt(const std::string& key, int defaultValue = 0);
+
+    /**
+     * @brief Set an integer value in the config file
+     * 
+     * @param key The key to set
+     * @param value The value to set
+     * @return bool True if the operation was successful, false otherwise
+     */
+    static bool setInt(const std::string& key, int value);
+
 private:
     /**
      * @brief Get the path to the config file

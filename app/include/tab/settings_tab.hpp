@@ -9,6 +9,7 @@ class SettingsTab : public brls::Box
 
     BRLS_BIND(brls::DetailCell, checkUpdates, "checkUpdates");
     BRLS_BIND(brls::DetailCell, launchUpdater, "launchUpdater");
+    BRLS_BIND(brls::SelectorCell, regionSelector, "regionSelector");
     BRLS_BIND(brls::DetailCell, resetCaptureStatus, "resetCaptureStatus");
     BRLS_BIND(brls::BooleanCell, toggleCheckVersionOnLaunch, "toggleCheckVersionOnLaunch");
 

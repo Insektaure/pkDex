@@ -32,6 +32,10 @@
                     title="Launch Updater"
                     id="launchUpdater"/>
 
+            <brls:SelectorCell
+                    title="@i18n/pkdex/settings/select_region_to_reset"
+                    id="regionSelector"/>
+
             <brls:DetailCell
                     title="Reset Pokemon Capture Status"
                     id="resetCaptureStatus"/>

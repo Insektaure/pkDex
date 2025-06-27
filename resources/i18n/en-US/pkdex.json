@@ -7,11 +7,34 @@
 
     "welcome": "Welcome to the pkDex App !",
 
+    "settings": {
+        "select_region_to_reset": "Select Region to Reset",
+        "regions": {
+            "all_regions": "All Regions",
+            "kanto": "Kanto (LGPE)",
+            "sinnoh": "Sinnoh (BDSP)",
+            "sinnoh_arceus": "Sinnoh (Legends Arceus)",
+            "galar": "Galar (SwSh)",
+            "isle_armor": "Isle of Armor (SwSh DLC 1)",
+            "crown_tundra": "Crown Tundra (SwSh DLC 2)",
+            "paldea": "Paldea (ScVi)",
+            "kitakami": "Kitakami (ScVi DLC 1)",
+            "blueberry_academy": "Blueberry Academy (ScVi DLC 2)"
+        },
+        "reset_confirm_all": "Are you sure you want to reset all Pokemon capture statuses for all regions? This action cannot be undone.",
+        "reset_confirm_region": "Are you sure you want to reset all Pokemon capture statuses for the {region} region? This action cannot be undone.",
+        "reset_success_all": "All Pokemon capture statuses have been reset.",
+        "reset_success_region": "Pokemon capture statuses for {region} have been reset.",
+        "reset_failure": "Failed to reset Pokemon capture statuses.",
+        "reset_button": "Reset",
+        "cancel_button": "Cancel"
+    },
+
     "about": {
         "title": "pkDex\nv1.3.0",
         "description": "pkDex is a simple app to view Pokemon data offline, for the Nintendo Switch games.",
         "github": "Find it on github.com/Insektaure/pkDex",
         "licence": "Licensed under Apache 2.0",
-        "logo_credit": "Logo generated with InvokeAI",
+        "logo_credit": "Logo generated with InvokeAI"
     }
 }

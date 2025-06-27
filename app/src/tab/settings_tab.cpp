@@ -6,6 +6,7 @@
 #include <string>
 #include <switch.h>
 #include <sys/stat.h>
+#include <borealis/core/i18n.hpp>
 
 // Function to check if a file exists
 bool fileExists(const std::string& path) {
@@ -82,25 +83,79 @@ SettingsTab::SettingsTab()
     });
 
     // Register click action for the "Reset Pokémon Capture Status" button
-    resetCaptureStatus->registerClickAction([](...){
+    resetCaptureStatus->registerClickAction([this](...){
+        // Get the selected region index
+        int selectedRegionIndex = regionSelector->getSelection();
+
+        // Initialize the region selector (same as in constructor)
+        std::vector<std::string> regionIds = pkdex::PokemonTracker::getAllRegions();
+        regionIds.insert(regionIds.begin(), "all_regions");
+
+        // Get display names for regions
+        std::vector<std::string> regionDisplayNames;
+        regionDisplayNames.push_back("pkdex/settings/regions/all_regions"_i18n);
+        for (size_t i = 1; i < regionIds.size(); i++) {
+            std::string regionId = regionIds[i];
+            std::string i18nKey = "pkdex/settings/regions/" + regionId;
+            regionDisplayNames.push_back(brls::getStr(i18nKey));
+        }
+
+        // Determine if we're resetting all regions or a specific one
+        bool resetAll = (selectedRegionIndex == 0); // "All Regions" is at index 0
+
+        // Create the confirmation message
+        std::string message;
+        if (resetAll) {
+            message = "pkdex/settings/reset_confirm_all"_i18n;
+        } else {
+            // Get the selected region display name
+            std::string regionDisplayName = regionDisplayNames[selectedRegionIndex];
+            std::string messageTemplate = "pkdex/settings/reset_confirm_region"_i18n;
+            // Replace {region} placeholder with the actual region name
+            size_t pos = messageTemplate.find("{region}");
+            if (pos != std::string::npos) {
+                messageTemplate.replace(pos, 8, regionDisplayName);
+            }
+            message = messageTemplate;
+        }
+
         // Show a confirmation dialog
-        auto dialog = new brls::Dialog("Are you sure you want to reset all Pokemon capture statuses? This action cannot be undone.");
+        auto dialog = new brls::Dialog(message);
 
         // Add confirm button
-        dialog->addButton("Reset", []() {
-            // Reset all capture statuses
-            bool success = pkdex::PokemonTracker::resetAllCaptureStatus();
+        dialog->addButton("pkdex/settings/reset_button"_i18n, [resetAll, selectedRegionIndex, regionIds, regionDisplayNames]() {
+            bool success;
+
+            if (resetAll) {
+                // Reset all capture statuses for all regions
+                success = pkdex::PokemonTracker::resetAllCaptureStatus();
+            } else {
+                // Reset capture statuses for the selected region
+                std::string regionId = regionIds[selectedRegionIndex];
+                success = pkdex::PokemonTracker::resetRegionCaptureStatus(regionId);
+            }
 
             // Show a success or error message
             if (success) {
-                brls::Application::notify("All Pokemon capture statuses have been reset.");
+                if (resetAll) {
+                    brls::Application::notify("pkdex/settings/reset_success_all"_i18n);
+                } else {
+                    std::string regionDisplayName = regionDisplayNames[selectedRegionIndex];
+                    std::string messageTemplate = "pkdex/settings/reset_success_region"_i18n;
+                    // Replace {region} placeholder with the actual region name
+                    size_t pos = messageTemplate.find("{region}");
+                    if (pos != std::string::npos) {
+                        messageTemplate.replace(pos, 8, regionDisplayName);
+                    }
+                    brls::Application::notify(messageTemplate);
+                }
             } else {
-                brls::Application::notify("Failed to reset Pokemon capture statuses.");
+                brls::Application::notify("pkdex/settings/reset_failure"_i18n);
             }
         });
 
         // Add cancel button
-        dialog->addButton("Cancel", []() {
+        dialog->addButton("pkdex/settings/cancel_button"_i18n, []() {
             // Do nothing, dialog will close automatically
         });
 
@@ -115,6 +170,32 @@ SettingsTab::SettingsTab()
         // Save the setting to the config file
         pkdex::Config::setBool("toggle_check_version_on_launch", value);
         return value;
+    });
+
+    // Initialize the region selector
+    std::vector<std::string> regionIds = pkdex::PokemonTracker::getAllRegions();
+    std::vector<std::string> regionNames;
+
+    // Add "All Regions" as the first option with internationalized name
+    regionIds.insert(regionIds.begin(), "all_regions");
+    regionNames.push_back("pkdex/settings/regions/all_regions"_i18n);
+
+    // Add internationalized names for each region
+    for (size_t i = 1; i < regionIds.size(); i++) {
+        std::string regionId = regionIds[i];
+        std::string i18nKey = "pkdex/settings/regions/" + regionId;
+        regionNames.push_back(brls::getStr(i18nKey));
+    }
+
+    // Get the currently selected region from config, default to "All Regions" (index 0)
+    int selectedRegionIndex = pkdex::Config::getInt("selected_region_index", 0);
+    if (selectedRegionIndex >= regionNames.size()) {
+        selectedRegionIndex = 0; // Reset to "All Regions" if the saved index is invalid
+    }
+
+    regionSelector->init("pkdex/settings/select_region_to_reset"_i18n, regionNames, selectedRegionIndex, [](int selected) {
+        // Save the selected region index to config
+        pkdex::Config::setInt("selected_region_index", selected);
     });
 }
 
