@@ -37,6 +37,8 @@ The developers are not responsible for any issues that may arise from using this
   - Track caught Pokémon by marking them as caught on the list
   - Caught Pokémon are highlighted in the list
   - Ability to reset caught status for all Pokémon from the `settings` menu
+  - Ability to reset caught status for specific Region from the `settings` menu
+  - Caught status is saved in a `pkDex.tracker.{REGION}.ini` file in the `/switch/pkDex` directory (1 file per region)
 
 - **User-Friendly Interface**:
   - Organized by regions with section headers
@@ -68,8 +70,8 @@ The developers are not responsible for any issues that may arise from using this
     - Location information
     - Version exclusivity
 5. Press the `Y` button to mark a Pokémon as caught or uncaught. Caught Pokémon will be highlighted in the list.
-6. Marking a Pokémon as caught will create a `pkDex.tracker.ini` file in the `/switch/pkDex` directory.\
-   Unmarking a Pokémon will set the corresponding line in `pkDex.tracker.ini` file accordingly. 
+6. Marking a Pokémon as caught will create a `pkDex.tracker.{REGION}.ini` file in the `/switch/pkDex` directory.\
+   Unmarking a Pokémon will set the corresponding line in `pkDex.tracker.{REGION}.ini` file accordingly. 
 7. Use the settings menu to enable or disable automatic new version checks & check for available updates manually. 
 8. Use the settings menu to download updates directly from the application (requires the `pkDexUpdater` application to be present to use update file). 
 9. Use the included updater application (`pkDexUpdater.nro`) to apply the downloaded update file.
