@@ -51,6 +51,7 @@ The developers are not responsible for any issues that may arise from using this
   - Disable automatic update check on startup (for those who prefer not to check for updates)
   - Download updates directly from the application (**_must use the included Updater to apply updates_**)
   - If the updater application is not present, it will prompt you to download it from the `settings` menu when trying to launch it.
+  - Can hide the bottom status bar
 
 - **Cross-Platform Compatibility**:
   - Nintendo Switch (primary target)
