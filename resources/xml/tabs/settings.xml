@@ -20,6 +20,12 @@
             paddingBottom="@style/brls/sidebar/padding_bottom"
             paddingLeft="@style/brls/sidebar/padding_left">
 
+            <brls:Header
+                    width="auto"
+                    height="auto"
+                    title="Updates"
+                    marginBottom="10px" />
+
             <brls:BooleanCell
                     title="Check for updates on launch"
                     id="toggleCheckVersionOnLaunch"/>
@@ -32,6 +38,13 @@
                     title="Launch Updater"
                     id="launchUpdater"/>
 
+            <brls:Header
+                    width="auto"
+                    height="auto"
+                    title="Pokemon Data"
+                    marginTop="10px"
+                    marginBottom="10px"/>
+
             <brls:SelectorCell
                     title="@i18n/pkdex/settings/select_region_to_reset"
                     id="regionSelector"/>
@@ -39,6 +52,13 @@
             <brls:DetailCell
                     title="Reset Pokemon Capture Status"
                     id="resetCaptureStatus"/>
+
+            <brls:Header
+                    width="auto"
+                    height="auto"
+                    title="User Interface"
+                    marginTop="10px"
+                    marginBottom="10px"/>
 
             <brls:BooleanCell
                     title="Hide Bottom Bar"
