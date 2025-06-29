@@ -72,6 +72,10 @@ int main(int argc, char* argv[])
     brls::getStyle().addMetric("about/padding_sides", 75);
     brls::getStyle().addMetric("about/description_margin", 50);
 
+    // Apply the bottom bar visibility setting from config
+    bool hideBottomBar = pkdex::Config::getBool("toggle_hide_bottom_bar", false);
+    brls::AppletFrame::HIDE_BOTTOM_BAR = hideBottomBar;
+
     // Create and push the main activity to the stack
     brls::Application::pushActivity(new MainActivity());
 

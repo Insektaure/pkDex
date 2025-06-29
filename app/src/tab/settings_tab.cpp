@@ -197,6 +197,28 @@ SettingsTab::SettingsTab()
         // Save the selected region index to config
         pkdex::Config::setInt("selected_region_index", selected);
     });
+
+    // Initialize the toggle for hiding the bottom bar
+    bool hideBottomBar = pkdex::Config::getBool("toggle_hide_bottom_bar", false);
+    toggleHideBottomBar->init("Hide Bottom Bar", hideBottomBar, [](bool value) {
+        // Save the setting to the config file
+        pkdex::Config::setBool("toggle_hide_bottom_bar", value);
+
+        // Update the bottom bar visibility
+        brls::AppletFrame::HIDE_BOTTOM_BAR = value;
+
+        // Apply the change to all active frames
+        auto stack = brls::Application::getActivitiesStack();
+        for (auto& activity : stack) {
+            auto* frame = dynamic_cast<brls::AppletFrame*>(
+                activity->getContentView());
+            if (!frame) continue;
+            frame->setFooterVisibility(value ? brls::Visibility::GONE
+                                             : brls::Visibility::VISIBLE);
+        }
+
+        return value;
+    });
 }
 
 brls::View* SettingsTab::create()

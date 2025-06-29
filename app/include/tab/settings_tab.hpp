@@ -12,6 +12,7 @@ class SettingsTab : public brls::Box
     BRLS_BIND(brls::SelectorCell, regionSelector, "regionSelector");
     BRLS_BIND(brls::DetailCell, resetCaptureStatus, "resetCaptureStatus");
     BRLS_BIND(brls::BooleanCell, toggleCheckVersionOnLaunch, "toggleCheckVersionOnLaunch");
+    BRLS_BIND(brls::BooleanCell, toggleHideBottomBar, "toggleHideBottomBar");
 
     static brls::View* create();
 };

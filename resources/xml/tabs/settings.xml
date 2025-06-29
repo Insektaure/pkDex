@@ -40,6 +40,10 @@
                     title="Reset Pokemon Capture Status"
                     id="resetCaptureStatus"/>
 
+            <brls:BooleanCell
+                    title="Hide Bottom Bar"
+                    id="toggleHideBottomBar"/>
+
         </brls:Box>
 
     </brls:ScrollingFrame>
