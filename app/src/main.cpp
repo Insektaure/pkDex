@@ -11,6 +11,7 @@
 #include "view/pokemon_view.hpp"
 #include "tab/recycling_list_tab.hpp"
 #include "tab/settings_tab.hpp"
+#include "tab/changelog_tab.hpp"
 #include "activity/main_activity.hpp"
 
 #if defined(__PSV__) && defined(BOREALIS_USE_OPENGL)
@@ -66,6 +67,7 @@ int main(int argc, char* argv[])
 
     brls::Application::registerXMLView("PokemonView", PokemonView::create);
     brls::Application::registerXMLView("SettingsTab", SettingsTab::create);
+    brls::Application::registerXMLView("ChangelogTab", ChangelogTab::create);
 
     // Add custom values to the style
     brls::getStyle().addMetric("about/padding_top_bottom", 50);

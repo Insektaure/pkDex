@@ -1,0 +1,44 @@
+## Version 1.3.2 (2025-06-29)
+
+## Version 1.3.1 (2025-06-27)
+- Minor Feature release - Main App :
+    - Tracker now use one file per region to save "Captured" statuses instead of a big one (faster Read / Write)
+
+- Settings menu :
+    - Can now select & reset per region "Captured" statuses instead of all regions without distinction (this cannot be undone -for now-)
+
+## Version 1.3.0 (2025-06-26)
+- New Feature release - Main App :
+    - Update file can be redownloaded (prompt to force download is update file already exist)
+    - Add Pokemon Tracker system
+
+    Can now toggle "Captured" status on the list to mark Pokemon as Captured.
+    You can now keep track of what's missing in your collection (useful for Shiny Hunt)
+
+- Settings menu :
+    - Add an option to reset all "captured" status (this cannot be undone -for now-)
+
+## Version 1.2.0 (2025-06-25)
+- New Feature release - Main App :
+    - Can download the Updater app directly from the main application if missing (since v1.2.0 and up).
+- Updater App :
+    - Add new Updater app to update to latest version available directly from the Nintendo Switch.
+
+## Version 1.1.1 (2025-06-24)
+- Update release - Main App :
+    - Added Shiny Locked flag on pokemon view
+
+## Version 1.1.0 (2025-06-24)
+- New Feature release - Main App :
+    - Update check on startup (to ensure you have the latest version -Enable by default-) (network connection needed)
+
+    Update checks is only available since this release, previous ones don't have this feature !
+
+- New Settings menu :
+    - Disable automatic update check on startup (for those who prefer not to check for updates on launch)
+    - Manually check if an update is available (network connection needed)
+
+    Changing the settings will generate a config.ini file in the /config/pkDex directory on the Switch SD Card, which will be used to store user preferences.
+
+## Version 1.0.0 (2025-06-23)
+- Initial Release
