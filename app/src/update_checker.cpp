@@ -814,7 +814,7 @@ bool downloadHighResImagePack() {
 
                         brls::sync([]() {
                             // Create a dialog to inform the user that the download is complete
-                            auto dialog = new brls::Dialog("Download complete! High-resolution images are now available for extraction. Use the 'Extract High-Res Image Pack' button in Settings.");
+                            auto dialog = new brls::Dialog("Download complete !\n\nHigh-resolution images are now available for extraction.\n\nUse the 'Extract High-Res Image Pack' button in Settings.");
 
                             // Add OK button
                             dialog->addButton("OK", []() {
@@ -886,7 +886,7 @@ bool downloadHighResImagePack() {
         fp = fopen(filename.c_str(), "wb");
         if (!fp) {
             brls::sync([filename]() {
-                brls::Application::notify("Failed to create download file: " + filename);
+                brls::Application::notify("Failed to create download file : " + filename);
             });
             if (needToInitSocket) {
                 socketExit();
@@ -939,7 +939,7 @@ bool downloadHighResImagePack() {
 
                 brls::sync([]() {
                     // Create a dialog to inform the user that the download is complete
-                    auto dialog = new brls::Dialog("Download complete! High-resolution images are now available for extraction. Use the 'Extract High-Res Image Pack' button in Settings.");
+                    auto dialog = new brls::Dialog("Download complete !\n\nHigh-resolution images are now available for extraction.\n\nUse the 'Extract High-Res Image Pack' button in Settings.");
 
                     // Add OK button
                     dialog->addButton("OK", []() {
@@ -990,7 +990,7 @@ bool extractHighResImagePack() {
     }
 
     // Show a dialog to confirm extraction
-    auto dialog = new brls::Dialog("Extract high-resolution image pack? This may take a while.");
+    auto dialog = new brls::Dialog("Extract high-resolution image pack ?\n\nThis may take a while.");
 
     // Add extract button
     dialog->addButton("Extract", [zipFilePath, extractPath]() {
@@ -1049,7 +1049,7 @@ bool extractHighResImagePack() {
                 brls::Logger::error("Failed to create base directory: /switch/pkDex");
                 brls::sync([progressDialog]() {
                     progressDialog->close();
-                    brls::Application::notify("Extraction failed: Could not create base directory.");
+                    brls::Application::notify("Extraction failed : Could not create base directory.");
                 });
                 return;
             }
@@ -1076,7 +1076,7 @@ bool extractHighResImagePack() {
                     resultDialog->open();
                 } else {
                     // Ask user if they want to keep the downloaded zip file
-                    auto resultDialog = new brls::Dialog("Extraction complete!\nHigh-resolution images are now available.\n\nDo you want to keep the downloaded zip file?");
+                    auto resultDialog = new brls::Dialog("Extraction complete !\nHigh-resolution images are now available.\n\nDo you want to keep the downloaded zip file ?");
 
                     // Add "Keep" button
                     resultDialog->addButton("Keep", []() {
