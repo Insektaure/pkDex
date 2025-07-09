@@ -75,6 +75,10 @@
                     title="Download High-Res Image Pack (~ 75Mo)"
                     id="downloadHighResImages"/>
 
+            <brls:DetailCell
+                    title="Extract High-Res Image Pack"
+                    id="extractHighResImages"/>
+
         </brls:Box>
 
     </brls:ScrollingFrame>

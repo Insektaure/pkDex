@@ -70,8 +70,8 @@ elseif (PLATFORM_SWITCH)
         nx m
         # for HTTP requests
         curl
-        # for compression (required by curl)
-        z
+        # for compression and zip handling
+        z minizip
     )
     list(APPEND MAIN_SRC ${BOREALIS_LIBRARY}/lib/platforms/switch/switch_wrapper.c)
 elseif (PLATFORM_PS4)

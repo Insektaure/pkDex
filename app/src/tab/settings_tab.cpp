@@ -225,6 +225,12 @@ SettingsTab::SettingsTab()
         downloadHighResImagePack();
         return true;
     });
+
+    // Register click action for the "Extract High-Res Image Pack" button
+    extractHighResImages->registerClickAction([](...){
+        extractHighResImagePack();
+        return true;
+    });
 }
 
 brls::View* SettingsTab::create()

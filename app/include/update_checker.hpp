@@ -32,3 +32,7 @@ bool downloadUpdater(const std::string& version);
 // Function to download the high-resolution image pack to the root of the SD card
 // Returns true if the download was successful, false otherwise
 bool downloadHighResImagePack();
+
+// Function to extract the high-resolution image pack from the zip file
+// Returns true if the extraction was successful, false otherwise
+bool extractHighResImagePack();

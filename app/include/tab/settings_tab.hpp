@@ -14,6 +14,7 @@ class SettingsTab : public brls::Box
     BRLS_BIND(brls::BooleanCell, toggleCheckVersionOnLaunch, "toggleCheckVersionOnLaunch");
     BRLS_BIND(brls::BooleanCell, toggleHideBottomBar, "toggleHideBottomBar");
     BRLS_BIND(brls::DetailCell, downloadHighResImages, "downloadHighResImages");
+    BRLS_BIND(brls::DetailCell, extractHighResImages, "extractHighResImages");
 
     static brls::View* create();
 };

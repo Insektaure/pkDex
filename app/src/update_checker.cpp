@@ -7,6 +7,235 @@
 #include <curl/curl.h>
 #include <unistd.h>
 #include <sys/stat.h>
+#include <minizip/unzip.h>
+#include <dirent.h>
+#include <errno.h>
+#include <fcntl.h>
+
+// Function to create directory recursively
+bool createDirRecursively(const std::string& path) {
+    brls::Logger::debug("Creating directory: {}", path);
+
+    // Skip if the directory already exists
+    struct stat st;
+    if (stat(path.c_str(), &st) == 0) {
+        if (S_ISDIR(st.st_mode)) {
+            brls::Logger::debug("Directory already exists: {}", path);
+            return true;
+        } else {
+            brls::Logger::error("Path exists but is not a directory: {}", path);
+            return false;
+        }
+    }
+
+    // Create parent directories
+    size_t pos = path.find_last_of('/');
+    if (pos != std::string::npos) {
+        std::string parentPath = path.substr(0, pos);
+        if (!parentPath.empty()) {
+            brls::Logger::debug("Creating parent directory: {}", parentPath);
+            if (!createDirRecursively(parentPath)) {
+                brls::Logger::error("Failed to create parent directory: {}", parentPath);
+                return false;
+            }
+        }
+    }
+
+    // Create the directory
+    brls::Logger::debug("Creating directory with mkdir: {}", path);
+    if (mkdir(path.c_str(), 0777) != 0 && errno != EEXIST) {
+        brls::Logger::error("Failed to create directory: {}, error: {}", path, strerror(errno));
+        return false;
+    }
+
+    brls::Logger::debug("Successfully created directory: {}", path);
+    return true;
+}
+
+// Function to extract a zip file
+bool extractZipFile(const std::string& zipFilePath, const std::string& extractPath) {
+    brls::Logger::debug("Attempting to extract zip file: {} to {}", zipFilePath, extractPath);
+
+    // Check if the zip file exists
+    struct stat zipStat;
+    if (stat(zipFilePath.c_str(), &zipStat) != 0) {
+        brls::Logger::error("Zip file does not exist: {}, error: {}", zipFilePath, strerror(errno));
+        return false;
+    }
+
+    brls::Logger::debug("Zip file exists, size: {} bytes", zipStat.st_size);
+
+    unzFile zipFile = unzOpen(zipFilePath.c_str());
+    if (!zipFile) {
+        brls::Logger::error("Failed to open zip file: {}, error: {}", zipFilePath, strerror(errno));
+        return false;
+    }
+
+    brls::Logger::debug("Successfully opened zip file: {}", zipFilePath);
+
+    // Create the extraction directory
+    brls::Logger::debug("Creating extraction directory: {}", extractPath);
+    if (!createDirRecursively(extractPath)) {
+        brls::Logger::error("Failed to create extraction directory: {}", extractPath);
+        unzClose(zipFile);
+        return false;
+    }
+    brls::Logger::debug("Extraction directory created successfully");
+
+    // Get info about the zip file
+    unz_global_info globalInfo;
+    if (unzGetGlobalInfo(zipFile, &globalInfo) != UNZ_OK) {
+        brls::Logger::error("Failed to get global info from zip file");
+        unzClose(zipFile);
+        return false;
+    }
+    brls::Logger::debug("Zip file contains {} entries", globalInfo.number_entry);
+
+    // Buffer for reading from zip file
+    const int BUFFER_SIZE = 8192;
+    char buffer[BUFFER_SIZE];
+
+    // Extract each file
+    for (uLong i = 0; i < globalInfo.number_entry; i++) {
+        brls::Logger::debug("Processing entry {} of {}", i+1, globalInfo.number_entry);
+
+        // Get info about current file
+        unz_file_info fileInfo;
+        char fileName[256];
+        if (unzGetCurrentFileInfo(zipFile, &fileInfo, fileName, sizeof(fileName), NULL, 0, NULL, 0) != UNZ_OK) {
+            brls::Logger::error("Failed to get file info for entry {}", i+1);
+            unzClose(zipFile);
+            return false;
+        }
+
+        brls::Logger::debug("Found file in zip: {}, size: {} bytes", fileName, fileInfo.uncompressed_size);
+
+        // Clean up the filename (remove any leading slashes)
+        std::string cleanFileName = fileName;
+        while (!cleanFileName.empty() && cleanFileName[0] == '/') {
+            cleanFileName = cleanFileName.substr(1);
+        }
+
+        // Construct the full path for extraction
+        std::string fullPath;
+
+        // Skip if the filename is empty
+        if (cleanFileName.empty()) {
+            brls::Logger::debug("Skipping empty filename");
+            goto next_file;
+        }
+
+        // Set the full path now that we know the filename is not empty
+        fullPath = extractPath + "/" + cleanFileName;
+        brls::Logger::debug("Will extract to: {}", fullPath);
+
+        // Check if this is a directory
+        if (cleanFileName[cleanFileName.length() - 1] == '/') {
+            brls::Logger::debug("Entry is a directory, creating: {}", fullPath);
+            // Create directory
+            if (!createDirRecursively(fullPath)) {
+                brls::Logger::error("Failed to create directory: {}", fullPath);
+                unzClose(zipFile);
+                return false;
+            }
+            brls::Logger::debug("Directory created successfully: {}", fullPath);
+        } else {
+            // Create parent directories
+            size_t pos = fullPath.find_last_of('/');
+            if (pos != std::string::npos) {
+                std::string dirPath = fullPath.substr(0, pos);
+                brls::Logger::debug("Creating parent directory for file: {}", dirPath);
+                if (!createDirRecursively(dirPath)) {
+                    brls::Logger::error("Failed to create parent directory: {}", dirPath);
+                    unzClose(zipFile);
+                    return false;
+                }
+                brls::Logger::debug("Parent directory created successfully: {}", dirPath);
+            }
+
+            // Open the file in the zip
+            brls::Logger::debug("Opening file in zip: {}", fileName);
+            if (unzOpenCurrentFile(zipFile) != UNZ_OK) {
+                brls::Logger::error("Failed to open file in zip: {}", fileName);
+                unzClose(zipFile);
+                return false;
+            }
+            brls::Logger::debug("Successfully opened file in zip: {}", fileName);
+
+            // Open the output file
+            brls::Logger::debug("Creating output file: {}", fullPath);
+            FILE* outFile = fopen(fullPath.c_str(), "wb");
+            if (!outFile) {
+                brls::Logger::error("Failed to create output file: {}, error: {}", fullPath, strerror(errno));
+                unzCloseCurrentFile(zipFile);
+                unzClose(zipFile);
+                return false;
+            }
+            brls::Logger::debug("Successfully created output file: {}", fullPath);
+
+            // Read and write data
+            brls::Logger::debug("Reading and writing file data for: {}", fileName);
+            int bytesRead = 0;
+            size_t totalBytesWritten = 0;
+
+            do {
+                bytesRead = unzReadCurrentFile(zipFile, buffer, BUFFER_SIZE);
+                if (bytesRead < 0) {
+                    brls::Logger::error("Error reading from zip file: {}, error code: {}", fileName, bytesRead);
+                    fclose(outFile);
+                    unzCloseCurrentFile(zipFile);
+                    unzClose(zipFile);
+                    return false;
+                }
+
+                if (bytesRead > 0) {
+                    size_t result = fwrite(buffer, 1, bytesRead, outFile);
+                    if (result != bytesRead) {
+                        brls::Logger::error("Error writing to output file: {}, wrote {} of {} bytes, error: {}", 
+                                           fullPath, result, bytesRead, strerror(errno));
+                        fclose(outFile);
+                        unzCloseCurrentFile(zipFile);
+                        unzClose(zipFile);
+                        return false;
+                    }
+                    totalBytesWritten += result;
+                }
+            } while (bytesRead > 0);
+
+            brls::Logger::debug("Successfully wrote {} bytes to file: {}", totalBytesWritten, fullPath);
+
+            // Close the output file
+            brls::Logger::debug("Closing output file: {}", fullPath);
+            fclose(outFile);
+
+            // Close the current file in the zip
+            brls::Logger::debug("Closing current file in zip: {}", fileName);
+            int closeResult = unzCloseCurrentFile(zipFile);
+            if (closeResult != UNZ_OK) {
+                brls::Logger::error("Error closing file in zip: {}, error code: {}", fileName, closeResult);
+                unzClose(zipFile);
+                return false;
+            }
+        }
+
+next_file:
+        // Go to the next file if not at the end
+        if ((i + 1) < globalInfo.number_entry) {
+            brls::Logger::debug("Moving to next file in zip ({} of {})", i+2, globalInfo.number_entry);
+            if (unzGoToNextFile(zipFile) != UNZ_OK) {
+                brls::Logger::error("Failed to go to next file in zip");
+                unzClose(zipFile);
+                return false;
+            }
+        }
+    }
+
+    // Close the zip file
+    brls::Logger::debug("Closing zip file: {}", zipFilePath);
+    unzClose(zipFile);
+    brls::Logger::debug("Extraction completed successfully");
+    return true;
+}
 
 // Helper function to check if there's an actual internet connection
 bool hasInternetConnection() {
@@ -565,9 +794,10 @@ bool downloadHighResImagePack() {
                         });
                     } else {
                         success = true;
+
                         brls::sync([]() {
                             // Create a dialog to inform the user that the download is complete
-                            auto dialog = new brls::Dialog("Download complete! High-resolution images are now available for extraction.");
+                            auto dialog = new brls::Dialog("Download complete! High-resolution images are now available for extraction. Use the 'Extract High-Res Image Pack' button in Settings.");
 
                             // Add OK button
                             dialog->addButton("OK", []() {
@@ -689,9 +919,10 @@ bool downloadHighResImagePack() {
                 });
             } else {
                 success = true;
+
                 brls::sync([]() {
                     // Create a dialog to inform the user that the download is complete
-                    auto dialog = new brls::Dialog("Download complete! High-resolution images are now available for extraction.");
+                    auto dialog = new brls::Dialog("Download complete! High-resolution images are now available for extraction. Use the 'Extract High-Res Image Pack' button in Settings.");
 
                     // Add OK button
                     dialog->addButton("OK", []() {
@@ -726,6 +957,68 @@ bool downloadHighResImagePack() {
     });
 
     // Return true immediately since the download is happening in the background
+    return true;
+}
+
+bool extractHighResImagePack() {
+    // Define the filename where the high-res image pack is saved
+    std::string zipFilePath = "/pkDex_High_Res_imgs.zip";
+    std::string extractPath = "/switch/pkDex/resources";
+
+    // Check if the zip file exists
+    struct stat buffer;
+    if (stat(zipFilePath.c_str(), &buffer) != 0) {
+        brls::Application::notify("High-resolution image pack not found. Please download it first.");
+        return false;
+    }
+
+    // Show a dialog to confirm extraction
+    auto dialog = new brls::Dialog("Extract high-resolution image pack? This may take a while.");
+
+    // Add extract button
+    dialog->addButton("Extract", [zipFilePath, extractPath]() {
+        // Start extraction in a background thread
+        brls::async([zipFilePath, extractPath]() {
+            brls::Application::notify("Extracting high-resolution image pack... Please wait.");
+
+            // Ensure the base directory exists
+            brls::Logger::debug("Ensuring base directory exists: /switch/pkDex");
+            if (!createDirRecursively("/switch/pkDex")) {
+                brls::Logger::error("Failed to create base directory: /switch/pkDex");
+                brls::sync([]() {
+                    brls::Application::notify("Extraction failed: Could not create base directory.");
+                });
+                return;
+            }
+
+            // Extract the zip file
+            bool extractSuccess = extractZipFile(zipFilePath, extractPath);
+
+            // Notify the user of the result
+            brls::sync([extractSuccess]() {
+                std::string message;
+                if (extractSuccess) {
+                    message = "Extraction complete! High-resolution images are now available.";
+                } else {
+                    message = "Extraction failed. Please try again or extract the zip file manually.";
+                }
+
+                auto resultDialog = new brls::Dialog(message);
+                resultDialog->addButton("OK", []() {
+                    // Dialog will close automatically
+                });
+                resultDialog->open();
+            });
+        });
+    });
+
+    // Add cancel button
+    dialog->addButton("Cancel", []() {
+        // Do nothing, dialog will close automatically
+    });
+
+    // Show the dialog
+    dialog->open();
     return true;
 }
 

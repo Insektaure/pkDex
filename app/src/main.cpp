@@ -23,13 +23,23 @@ using namespace brls::literals; // for _i18n
 
 int main(int argc, char* argv[])
 {
-    // We recommend to use INFO for real apps
+    // Set up logging to file
+    const char* logPath = "/switch/pkDex.log";
+    FILE* logFile = std::fopen(logPath, "w+");
+    if (logFile) {
+        brls::Logger::setLogOutput(logFile);
+        brls::Logger::info("Log file opened: {}", logPath);
+    } else {
+        brls::Logger::error("Failed to open log file: {}", logPath);
+    }
+
+    // Set log level based on command line arguments
     for (int i = 1; i < argc; i++) {
         if (std::strcmp(argv[i], "-d") == 0) { // Set log level
             brls::Logger::setLogLevel(brls::LogLevel::LOG_DEBUG);
         } else if (std::strcmp(argv[i], "-o") == 0) {
-            const char* path = (i + 1 < argc) ? argv[++i] : "borealis.log";
-            brls::Logger::setLogOutput(std::fopen(path, "w+"));
+            // Skip the -o option since we're already logging to a file
+            if (i + 1 < argc) i++; // Skip the next argument which would be the path
         } else if (std::strcmp(argv[i], "-v") == 0) {
             brls::Application::enableDebuggingView(true);
         }
