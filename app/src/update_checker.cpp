@@ -963,7 +963,7 @@ bool downloadHighResImagePack() {
 bool extractHighResImagePack() {
     // Define the filename where the high-res image pack is saved
     std::string zipFilePath = "/pkDex_High_Res_imgs.zip";
-    std::string extractPath = "/switch/pkDex/resources";
+    std::string extractPath = "/";
 
     // Check if the zip file exists
     struct stat buffer;
