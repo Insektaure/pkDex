@@ -52,6 +52,7 @@ The developers are not responsible for any issues that may arise from using this
   - Download updates directly from the application (**_must use the included Updater to apply updates_**)
   - If the updater application is not present, it will prompt you to download it from the `settings` menu when trying to launch it.
   - Can hide the bottom status bar
+  - Download & Extract the High Resolution images pack directly from the application from the `settings` menu (requires an internet connection)
 
 - **Cross-Platform Compatibility**:
   - Nintendo Switch (primary target)
@@ -76,6 +77,7 @@ The developers are not responsible for any issues that may arise from using this
 7. Use the settings menu to enable or disable automatic new version checks & check for available updates manually. 
 8. Use the settings menu to download updates directly from the application (requires the `pkDexUpdater` application to be present to use update file). 
 9. Use the included updater application (`pkDexUpdater.nro`) to apply the downloaded update file.
+10. Use the settings menu to Download & Extract the High Resolution images pack directly from the application (requires an internet connection).
 
 ## How to Update
 
