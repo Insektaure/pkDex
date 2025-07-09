@@ -219,6 +219,12 @@ SettingsTab::SettingsTab()
 
         return value;
     });
+
+    // Register click action for the "Download High-Res Image Pack" button
+    downloadHighResImages->registerClickAction([](...){
+        downloadHighResImagePack();
+        return true;
+    });
 }
 
 brls::View* SettingsTab::create()

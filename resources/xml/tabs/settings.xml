@@ -64,6 +64,17 @@
                     title="Hide Bottom Bar"
                     id="toggleHideBottomBar"/>
 
+            <brls:Header
+                    width="auto"
+                    height="auto"
+                    title="Resources"
+                    marginTop="10px"
+                    marginBottom="10px"/>
+
+            <brls:DetailCell
+                    title="Download High-Res Image Pack (~ 75Mo)"
+                    id="downloadHighResImages"/>
+
         </brls:Box>
 
     </brls:ScrollingFrame>

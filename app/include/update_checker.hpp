@@ -28,3 +28,7 @@ void startDownload(const std::string& version, const std::string& downloadUrl, s
 // Function to download the updater application
 // Returns true if the download was successful, false otherwise
 bool downloadUpdater(const std::string& version);
+
+// Function to download the high-resolution image pack to the root of the SD card
+// Returns true if the download was successful, false otherwise
+bool downloadHighResImagePack();
