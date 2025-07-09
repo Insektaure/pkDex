@@ -52,8 +52,9 @@ bool createDirRecursively(const std::string& path) {
     return true;
 }
 
-// Function to extract a zip file
-bool extractZipFile(const std::string& zipFilePath, const std::string& extractPath) {
+// Function to extract a zip file with progress reporting
+bool extractZipFile(const std::string& zipFilePath, const std::string& extractPath, 
+                   std::function<void(float)> progressCallback) {
     brls::Logger::debug("Attempting to extract zip file: {} to {}", zipFilePath, extractPath);
 
     // Check if the zip file exists
@@ -95,8 +96,19 @@ bool extractZipFile(const std::string& zipFilePath, const std::string& extractPa
     const int BUFFER_SIZE = 8192;
     char buffer[BUFFER_SIZE];
 
+    // Initialize progress
+    if (progressCallback) {
+        progressCallback(0.0f);
+    }
+
     // Extract each file
     for (uLong i = 0; i < globalInfo.number_entry; i++) {
+        // Update progress
+        if (progressCallback) {
+            float progress = static_cast<float>(i) / static_cast<float>(globalInfo.number_entry);
+            progressCallback(progress);
+        }
+
         brls::Logger::debug("Processing entry {} of {}", i+1, globalInfo.number_entry);
 
         // Get info about current file
@@ -228,6 +240,11 @@ next_file:
                 return false;
             }
         }
+    }
+
+    // Final progress update
+    if (progressCallback) {
+        progressCallback(1.0f);
     }
 
     // Close the zip file
@@ -977,25 +994,69 @@ bool extractHighResImagePack() {
 
     // Add extract button
     dialog->addButton("Extract", [zipFilePath, extractPath]() {
-        // Start extraction in a background thread
-        brls::async([zipFilePath, extractPath]() {
-            brls::Application::notify("Extracting high-resolution image pack... Please wait.");
+        // Create a box to hold the progress components
+        brls::Box* progressBox = new brls::Box();
+        progressBox->setAxis(brls::Axis::COLUMN);
+        progressBox->setHeight(200);
+        progressBox->setWidth(600);
+        progressBox->setMargins(16, 16, 16, 16);
+        // Set padding between elements
+        progressBox->setPadding(8);  // Use padding instead of spacing
 
+        // Add a title label
+        brls::Label* titleLabel = new brls::Label();
+        titleLabel->setText("Extracting high-resolution image pack...");
+        titleLabel->setHorizontalAlign(brls::HorizontalAlign::CENTER);
+        titleLabel->setFontSize(24);
+
+        // Create a label to show progress percentage
+        brls::Label* progressLabel = new brls::Label();
+        progressLabel->setText("0%");
+        progressLabel->setHorizontalAlign(brls::HorizontalAlign::CENTER);
+        progressLabel->setFontSize(24);
+
+        // Create a slider to show progress
+        brls::Slider* progressBar = new brls::Slider();
+        progressBar->setProgress(0.0f);
+
+        // Add components to the box
+        progressBox->addView(titleLabel);
+        progressBox->addView(progressBar);
+        progressBox->addView(progressLabel);
+
+        // Create a progress dialog with the box as content
+        auto progressDialog = new brls::Dialog(progressBox);
+
+        // Open the progress dialog
+        progressDialog->open();
+
+        // Start extraction in a background thread
+        brls::async([zipFilePath, extractPath, progressBar, progressLabel, progressDialog]() {
             // Ensure the base directory exists
             brls::Logger::debug("Ensuring base directory exists: /switch/pkDex");
             if (!createDirRecursively("/switch/pkDex")) {
                 brls::Logger::error("Failed to create base directory: /switch/pkDex");
-                brls::sync([]() {
+                brls::sync([progressDialog]() {
+                    progressDialog->close();
                     brls::Application::notify("Extraction failed: Could not create base directory.");
                 });
                 return;
             }
 
-            // Extract the zip file
-            bool extractSuccess = extractZipFile(zipFilePath, extractPath);
+            // Extract the zip file with progress updates
+            bool extractSuccess = extractZipFile(zipFilePath, extractPath, [progressBar, progressLabel](float progress) {
+                // Update the progress bar and label on the main thread
+                brls::sync([progressBar, progressLabel, progress]() {
+                    progressBar->setProgress(progress);
+                    int percentage = static_cast<int>(progress * 100);
+                    progressLabel->setText(std::to_string(percentage) + "%");
+                });
+            });
 
-            // Notify the user of the result
-            brls::sync([extractSuccess]() {
+            // Close the progress dialog and show the result
+            brls::sync([progressDialog, extractSuccess]() {
+                progressDialog->close();
+
                 std::string message;
                 if (extractSuccess) {
                     message = "Extraction complete! High-resolution images are now available.";
@@ -1010,11 +1071,6 @@ bool extractHighResImagePack() {
                 resultDialog->open();
             });
         });
-    });
-
-    // Add cancel button
-    dialog->addButton("Cancel", []() {
-        // Do nothing, dialog will close automatically
     });
 
     // Show the dialog

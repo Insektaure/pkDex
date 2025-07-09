@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <functional>
 
 // Function to check if a new version is available
 // Returns:
@@ -36,3 +37,9 @@ bool downloadHighResImagePack();
 // Function to extract the high-resolution image pack from the zip file
 // Returns true if the extraction was successful, false otherwise
 bool extractHighResImagePack();
+
+// Function to extract a zip file with progress reporting
+// progressCallback is called with a value between 0.0 and 1.0 to indicate progress
+// Returns true if the extraction was successful, false otherwise
+bool extractZipFile(const std::string& zipFilePath, const std::string& extractPath, 
+                   std::function<void(float)> progressCallback = nullptr);
