@@ -21,16 +21,21 @@ extern "C" unsigned int sceLibcHeapSize = 2 * 1024 * 1024;
 
 using namespace brls::literals; // for _i18n
 
+// Set this to true to enable logging to file, false to disable
+const bool ENABLE_FILE_LOGGING = false;
+
 int main(int argc, char* argv[])
 {
-    // Set up logging to file
-    const char* logPath = "/switch/pkDex.log";
-    FILE* logFile = std::fopen(logPath, "w+");
-    if (logFile) {
-        brls::Logger::setLogOutput(logFile);
-        brls::Logger::info("Log file opened: {}", logPath);
-    } else {
-        brls::Logger::error("Failed to open log file: {}", logPath);
+    // Set up logging to file if enabled
+    if (ENABLE_FILE_LOGGING) {
+        const char* logPath = "/switch/pkDex.log";
+        FILE* logFile = std::fopen(logPath, "w+");
+        if (logFile) {
+            brls::Logger::setLogOutput(logFile);
+            brls::Logger::info("Log file opened: {}", logPath);
+        } else {
+            brls::Logger::error("Failed to open log file: {}", logPath);
+        }
     }
 
     // Set log level based on command line arguments
@@ -38,7 +43,7 @@ int main(int argc, char* argv[])
         if (std::strcmp(argv[i], "-d") == 0) { // Set log level
             brls::Logger::setLogLevel(brls::LogLevel::LOG_DEBUG);
         } else if (std::strcmp(argv[i], "-o") == 0) {
-            // Skip the -o option since we're already logging to a file
+            // Skip the -o option since file logging is handled by ENABLE_FILE_LOGGING
             if (i + 1 < argc) i++; // Skip the next argument which would be the path
         } else if (std::strcmp(argv[i], "-v") == 0) {
             brls::Application::enableDebuggingView(true);
