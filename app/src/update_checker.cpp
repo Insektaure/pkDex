@@ -999,13 +999,16 @@ bool extractHighResImagePack() {
         progressBox->setAxis(brls::Axis::COLUMN);
         progressBox->setHeight(200);
         progressBox->setWidth(600);
-        progressBox->setMargins(16, 16, 16, 16);
+        progressBox->setMargins(0, 0, 0, 55);  // Remove margins to allow proper centering
         // Set padding between elements
-        progressBox->setPadding(16);  // Use padding instead of spacing
+        progressBox->setPadding(24);  // Use padding instead of spacing
+        // Center content vertically and stretch horizontally
+        progressBox->setJustifyContent(brls::JustifyContent::CENTER);
+        progressBox->setAlignItems(brls::AlignItems::STRETCH);
 
         // Add a title label
         brls::Label* titleLabel = new brls::Label();
-        titleLabel->setText("Extracting high-resolution image pack...");
+        titleLabel->setText("Extracting...");
         titleLabel->setHorizontalAlign(brls::HorizontalAlign::CENTER);
         titleLabel->setFontSize(24);
 
@@ -1017,7 +1020,12 @@ bool extractHighResImagePack() {
 
         // Create a slider to show progress
         brls::Slider* progressBar = new brls::Slider();
+        progressBar->setWidthPercentage(100.0f);  // Make the slider take up the full width
         progressBar->setProgress(0.0f);
+        // Set the slider to be non-interactive
+        progressBar->setFocusable(false);
+        // Set the slider pointer size to 0 to hide it
+        progressBar->setPointerSize(0);
 
         // Add components to the box
         progressBox->addView(titleLabel);
