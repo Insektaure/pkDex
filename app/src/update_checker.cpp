@@ -725,7 +725,7 @@ bool downloadHighResImagePack() {
 
     if (fileExists) {
         // File exists, ask user if they want to redownload
-        auto dialog = new brls::Dialog("High-resolution image pack already exists. Do you want to redownload it?");
+        auto dialog = new brls::Dialog("High-resolution image pack already exists.\n\nDo you want to redownload it ?");
 
         // Add redownload button
         dialog->addButton("Redownload", [filename]() {
