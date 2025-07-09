@@ -1065,21 +1065,37 @@ bool extractHighResImagePack() {
             });
 
             // Close the progress dialog and show the result
-            brls::sync([progressDialog, extractSuccess]() {
+            brls::sync([progressDialog, extractSuccess, zipFilePath]() {
                 progressDialog->close();
 
-                std::string message;
-                if (extractSuccess) {
-                    message = "Extraction complete! High-resolution images are now available.";
+                if (!extractSuccess) {
+                    auto resultDialog = new brls::Dialog("Extraction failed. Please try again or extract the zip file manually.");
+                    resultDialog->addButton("OK", []() {
+                        // Dialog will close automatically
+                    });
+                    resultDialog->open();
                 } else {
-                    message = "Extraction failed. Please try again or extract the zip file manually.";
-                }
+                    // Ask user if they want to keep the downloaded zip file
+                    auto resultDialog = new brls::Dialog("Extraction complete!\nHigh-resolution images are now available.\n\nDo you want to keep the downloaded zip file?");
 
-                auto resultDialog = new brls::Dialog(message);
-                resultDialog->addButton("OK", []() {
-                    // Dialog will close automatically
-                });
-                resultDialog->open();
+                    // Add "Keep" button
+                    resultDialog->addButton("Keep", []() {
+                        // Do nothing, just keep the file
+                        brls::Application::notify("Zip file has been kept.");
+                    });
+
+                    // Add "Delete" button
+                    resultDialog->addButton("Delete", [zipFilePath]() {
+                        // Delete the zip file
+                        if (std::remove(zipFilePath.c_str()) == 0) {
+                            brls::Application::notify("Zip file has been deleted.");
+                        } else {
+                            brls::Application::notify("Failed to delete the zip file.");
+                        }
+                    });
+
+                    resultDialog->open();
+                }
             });
         });
     });
