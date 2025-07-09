@@ -1001,7 +1001,7 @@ bool extractHighResImagePack() {
         progressBox->setWidth(600);
         progressBox->setMargins(16, 16, 16, 16);
         // Set padding between elements
-        progressBox->setPadding(8);  // Use padding instead of spacing
+        progressBox->setPadding(16);  // Use padding instead of spacing
 
         // Add a title label
         brls::Label* titleLabel = new brls::Label();
@@ -1026,6 +1026,9 @@ bool extractHighResImagePack() {
 
         // Create a progress dialog with the box as content
         auto progressDialog = new brls::Dialog(progressBox);
+
+        // Make the dialog non-cancelable so it can't be closed before extraction is complete
+        progressDialog->setCancelable(false);
 
         // Open the progress dialog
         progressDialog->open();
@@ -1071,6 +1074,11 @@ bool extractHighResImagePack() {
                 resultDialog->open();
             });
         });
+    });
+
+    // Add cancel button
+    dialog->addButton("Cancel", []() {
+        // Do nothing, dialog will close automatically
     });
 
     // Show the dialog
