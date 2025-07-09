@@ -1,3 +1,10 @@
+## Version 1.4.0 (2025-07-10)
+- New Feature release - Main App :
+    - Add option to Download & Extract the High-Resolution Images Pack directly from the main application (since v1.4.0 and up).
+- Settings menu :
+    - Add an option to Download the High-Resolution Images Pack directly from the application.
+    - Add an option to Extract the downloaded High-Resolution Images Pack directly from the application.
+
 ## Version 1.3.2 (2025-06-29)
 - Minor Feature release - Main App :
     - Add Changelog menu

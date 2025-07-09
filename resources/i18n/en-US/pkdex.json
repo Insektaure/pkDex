@@ -31,7 +31,7 @@
     },
 
     "about": {
-        "title": "pkDex\nv1.3.2",
+        "title": "pkDex\nv1.4.0",
         "description": "pkDex is a simple app to view Pokemon data offline, for the Nintendo Switch games.",
         "github": "Find it on github.com/Insektaure/pkDex",
         "licence": "Licensed under Apache 2.0",
