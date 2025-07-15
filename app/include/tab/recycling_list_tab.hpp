@@ -56,6 +56,7 @@ class RecyclingListTab : public brls::Box
     static brls::View* create(const std::string& region);
 
     // Factory methods for specific regions
+    static brls::View* createRegionTab(const std::string& region);
     static brls::View* createKanto();
     //static brls::View* createJohto();
     //static brls::View* createHoenn();

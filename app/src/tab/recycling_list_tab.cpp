@@ -215,64 +215,60 @@ brls::View* RecyclingListTab::create()
 
 brls::View* RecyclingListTab::create(const std::string& region)
 {
-    // Create a new RecyclingListTab with the specified region
+    // Use the common factory method
+    return createRegionTab(region);
+}
+
+// Common factory method for creating region-specific tabs
+brls::View* RecyclingListTab::createRegionTab(const std::string& region)
+{
     return new RecyclingListTab(region);
 }
 
 // Factory methods for specific regions
 brls::View* RecyclingListTab::createKanto()
 {
-    return new RecyclingListTab("kanto");
+    return createRegionTab("kanto");
 }
-
-//brls::View* RecyclingListTab::createJohto()
-//{
-//    return new RecyclingListTab("johto");
-//}
-//
-//brls::View* RecyclingListTab::createHoenn()
-//{
-//    return new RecyclingListTab("hoenn");
-//}
 
 brls::View* RecyclingListTab::createSinnoh()
 {
-    return new RecyclingListTab("sinnoh");
+    return createRegionTab("sinnoh");
 }
 
 brls::View* RecyclingListTab::createSinnohArceus()
 {
-    return new RecyclingListTab("sinnoh_arceus");
+    return createRegionTab("sinnoh_arceus");
 }
 
 brls::View* RecyclingListTab::createGalar()
 {
-    return new RecyclingListTab("galar");
+    return createRegionTab("galar");
 }
 
 brls::View* RecyclingListTab::createIsleArmor()
 {
-    return new RecyclingListTab("isle_armor");
+    return createRegionTab("isle_armor");
 }
 
 brls::View* RecyclingListTab::createCrownTundra()
 {
-    return new RecyclingListTab("crown_tundra");
+    return createRegionTab("crown_tundra");
 }
 
 brls::View* RecyclingListTab::createPaldea()
 {
-    return new RecyclingListTab("paldea");
+    return createRegionTab("paldea");
 }
 
 brls::View* RecyclingListTab::createKitakami()
 {
-    return new RecyclingListTab("kitakami");
+    return createRegionTab("kitakami");
 }
 
 brls::View* RecyclingListTab::createBlueberry()
 {
-    return new RecyclingListTab("blueberry_academy");
+    return createRegionTab("blueberry_academy");
 }
 
 bool RecyclingListTab::toggleCaptureStatus(brls::View* view)

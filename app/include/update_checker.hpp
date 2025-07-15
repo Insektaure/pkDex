@@ -26,6 +26,16 @@ bool downloadLatestVersion(const std::string& version);
 // Helper function to start the download in a background thread
 void startDownload(const std::string& version, const std::string& downloadUrl, std::string* versionCopy);
 
+// Generic download function that can be used by all download functions
+// Parameters:
+//   downloadUrl: URL to download from
+//   outputPath: Path where the downloaded file will be saved
+//   progressLabel: Label to display in progress notifications (e.g., version number or "High-Res Pack")
+//   onComplete: Callback function to execute when download completes successfully
+// Returns true if the download was started successfully, false otherwise
+bool downloadFile(const std::string& downloadUrl, const std::string& outputPath, 
+                 const std::string& progressLabel, std::function<void()> onComplete = nullptr);
+
 // Function to download the updater application
 // Returns true if the download was successful, false otherwise
 bool downloadUpdater(const std::string& version);

@@ -16,5 +16,19 @@ class SettingsTab : public brls::Box
     BRLS_BIND(brls::DetailCell, downloadHighResImages, "downloadHighResImages");
     BRLS_BIND(brls::DetailCell, extractHighResImages, "extractHighResImages");
 
+    // Helper function to create a confirmation dialog with confirm/cancel buttons
+    static brls::Dialog* createConfirmDialog(
+        const std::string& message,
+        const std::string& confirmText,
+        const std::string& cancelText,
+        std::function<void()> confirmAction,
+        std::function<void()> cancelAction = nullptr);
+
+    // Helper function to replace placeholders in a string
+    static std::string replacePlaceholder(
+        const std::string& text,
+        const std::string& placeholder,
+        const std::string& replacement);
+
     static brls::View* create();
 };

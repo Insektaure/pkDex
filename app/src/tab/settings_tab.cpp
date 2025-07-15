@@ -23,19 +23,16 @@ void launchUpdaterApp() {
     // Check if the updater file exists
     if (!fileExists(updaterPath)) {
         // Show a dialog with option to download the updater
-        auto errorDialog = new brls::Dialog("The updater application is missing. Would you like to download it now?");
-
-        // Add Download button
-        errorDialog->addButton("Download", []() {
-            // Get the current version to use for downloading
-            std::string version = pkdex::CURRENT_VERSION;
-            downloadUpdater(version);
-        });
-
-        // Add Cancel button
-        errorDialog->addButton("Cancel", []() {
-            // Do nothing, dialog will close automatically
-        });
+        auto errorDialog = SettingsTab::createConfirmDialog(
+            "The updater application is missing. Would you like to download it now?",
+            "Download",
+            "Cancel",
+            []() {
+                // Get the current version to use for downloading
+                std::string version = pkdex::CURRENT_VERSION;
+                downloadUpdater(version);
+            }
+        );
 
         // Show the dialog
         errorDialog->open();
@@ -43,27 +40,66 @@ void launchUpdaterApp() {
     }
 
     // Show a confirmation dialog
-    auto dialog = new brls::Dialog("This will close pkDex and launch the updater. Make sure you have downloaded an update first.");
+    auto dialog = SettingsTab::createConfirmDialog(
+        "This will close pkDex and launch the updater. Make sure you have downloaded an update first.",
+        "Launch",
+        "Cancel",
+        [updaterPath]() {
+            // Set the next application to load when this one exits
+            envSetNextLoad(updaterPath, "");
 
-    // Add confirm button
-    dialog->addButton("Launch", [updaterPath]() {
-        // Set the next application to load when this one exits
-        envSetNextLoad(updaterPath, "");
-
-        // Exit the application
-        brls::Application::quit();
-    });
-
-    // Add cancel button
-    dialog->addButton("Cancel", []() {
-        // Do nothing, dialog will close automatically
-    });
+            // Exit the application
+            brls::Application::quit();
+        }
+    );
 
     // Show the dialog
     dialog->open();
 }
 
 using namespace brls::literals;  // for _i18n
+
+// Helper function to create a confirmation dialog with confirm/cancel buttons
+brls::Dialog* SettingsTab::createConfirmDialog(
+    const std::string& message,
+    const std::string& confirmText,
+    const std::string& cancelText,
+    std::function<void()> confirmAction,
+    std::function<void()> cancelAction)
+{
+    auto dialog = new brls::Dialog(message);
+
+    // Add confirm button
+    dialog->addButton(confirmText, [confirmAction]() {
+        if (confirmAction) {
+            confirmAction();
+        }
+    });
+
+    // Add cancel button
+    dialog->addButton(cancelText, [cancelAction]() {
+        if (cancelAction) {
+            cancelAction();
+        }
+        // Dialog will close automatically
+    });
+
+    return dialog;
+}
+
+// Helper function to replace placeholders in a string
+std::string SettingsTab::replacePlaceholder(
+    const std::string& text,
+    const std::string& placeholder,
+    const std::string& replacement)
+{
+    std::string result = text;
+    size_t pos = result.find(placeholder);
+    if (pos != std::string::npos) {
+        result.replace(pos, placeholder.length(), replacement);
+    }
+    return result;
+}
 
 SettingsTab::SettingsTab()
 {
@@ -112,54 +148,44 @@ SettingsTab::SettingsTab()
             std::string regionDisplayName = regionDisplayNames[selectedRegionIndex];
             std::string messageTemplate = "pkdex/settings/reset_confirm_region"_i18n;
             // Replace {region} placeholder with the actual region name
-            size_t pos = messageTemplate.find("{region}");
-            if (pos != std::string::npos) {
-                messageTemplate.replace(pos, 8, regionDisplayName);
-            }
-            message = messageTemplate;
+            message = replacePlaceholder(messageTemplate, "{region}", regionDisplayName);
         }
 
-        // Show a confirmation dialog
-        auto dialog = new brls::Dialog(message);
+        // Create and show a confirmation dialog
+        auto dialog = createConfirmDialog(
+            message,
+            "pkdex/settings/reset_button"_i18n,
+            "pkdex/settings/cancel_button"_i18n,
+            [resetAll, selectedRegionIndex, regionIds, regionDisplayNames]() {
+                bool success;
 
-        // Add confirm button
-        dialog->addButton("pkdex/settings/reset_button"_i18n, [resetAll, selectedRegionIndex, regionIds, regionDisplayNames]() {
-            bool success;
-
-            if (resetAll) {
-                // Reset all capture statuses for all regions
-                success = pkdex::PokemonTracker::resetAllCaptureStatus();
-            } else {
-                // Reset capture statuses for the selected region
-                std::string regionId = regionIds[selectedRegionIndex];
-                success = pkdex::PokemonTracker::resetRegionCaptureStatus(regionId);
-            }
-
-            // Show a success or error message
-            if (success) {
                 if (resetAll) {
-                    brls::Application::notify("pkdex/settings/reset_success_all"_i18n);
+                    // Reset all capture statuses for all regions
+                    success = pkdex::PokemonTracker::resetAllCaptureStatus();
                 } else {
-                    std::string regionDisplayName = regionDisplayNames[selectedRegionIndex];
-                    std::string messageTemplate = "pkdex/settings/reset_success_region"_i18n;
-                    // Replace {region} placeholder with the actual region name
-                    size_t pos = messageTemplate.find("{region}");
-                    if (pos != std::string::npos) {
-                        messageTemplate.replace(pos, 8, regionDisplayName);
-                    }
-                    brls::Application::notify(messageTemplate);
+                    // Reset capture statuses for the selected region
+                    std::string regionId = regionIds[selectedRegionIndex];
+                    success = pkdex::PokemonTracker::resetRegionCaptureStatus(regionId);
                 }
-            } else {
-                brls::Application::notify("pkdex/settings/reset_failure"_i18n);
+
+                // Show a success or error message
+                if (success) {
+                    if (resetAll) {
+                        brls::Application::notify("pkdex/settings/reset_success_all"_i18n);
+                    } else {
+                        std::string regionDisplayName = regionDisplayNames[selectedRegionIndex];
+                        std::string messageTemplate = "pkdex/settings/reset_success_region"_i18n;
+                        // Replace {region} placeholder with the actual region name
+                        std::string successMessage = SettingsTab::replacePlaceholder(
+                            messageTemplate, "{region}", regionDisplayName);
+                        brls::Application::notify(successMessage);
+                    }
+                } else {
+                    brls::Application::notify("pkdex/settings/reset_failure"_i18n);
+                }
             }
-        });
+        );
 
-        // Add cancel button
-        dialog->addButton("pkdex/settings/cancel_button"_i18n, []() {
-            // Do nothing, dialog will close automatically
-        });
-
-        // Show the dialog
         dialog->open();
         return true;
     });
