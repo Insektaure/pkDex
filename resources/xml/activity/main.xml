@@ -60,6 +60,12 @@
 
         <brls:Separator />
 
+        <brls:Tab label="Kalos (Legends: Z-A)">
+            <KalosLzaTab/>
+        </brls:Tab>
+
+        <brls:Separator />
+
         <!-- Settings tab -->
         <brls:Tab label="Settings">
             <SettingsTab/>
