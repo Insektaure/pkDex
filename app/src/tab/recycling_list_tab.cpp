@@ -275,6 +275,11 @@ brls::View* RecyclingListTab::createBlueberry()
     return new RecyclingListTab("blueberry_academy");
 }
 
+brls::View* RecyclingListTab::createKalosLza()
+{
+    return new RecyclingListTab("kalos_lza");
+}
+
 bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
 {
     // Get the currently focused view
