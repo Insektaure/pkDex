@@ -19,7 +19,8 @@
             "crown_tundra": "Crown Tundra (SwSh DLC 2)",
             "paldea": "Paldea (ScVi)",
             "kitakami": "Kitakami (ScVi DLC 1)",
-            "blueberry_academy": "Blueberry Academy (ScVi DLC 2)"
+            "blueberry_academy": "Blueberry Academy (ScVi DLC 2)",
+            "kalos_lza": "Kalos (Legends Z-A)"
         },
         "reset_confirm_all": "Are you sure you want to reset all Pokemon capture statuses for all regions? This action cannot be undone.",
         "reset_confirm_region": "Are you sure you want to reset all Pokemon capture statuses for the {region} region? This action cannot be undone.",

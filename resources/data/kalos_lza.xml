@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pokedex region="kalos_lza">
+
+    <pokemon id="001" name="Placeholder" regionalDexNumber="001" type="">
+        <evolution>-</evolution>
+        <locations>-</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+
+</pokedex>
+
