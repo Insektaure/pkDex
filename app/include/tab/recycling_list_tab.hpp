@@ -67,6 +67,7 @@ class RecyclingListTab : public brls::Box
     static brls::View* createPaldea();
     static brls::View* createKitakami();
     static brls::View* createBlueberry();
+    static brls::View* createKalosLza();
 
     // Load Pokemon data from a file
     void loadPokemonData(const std::string& region);
