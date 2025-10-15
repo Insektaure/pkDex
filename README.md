@@ -22,6 +22,7 @@ The developers are not responsible for any issues that may arise from using this
   - Sinnoh Arceus (Legends: Arceus)
   - Galar (Gen 8 - Sword & Shield + Isle of Armor & Crown Tundra DLC)
   - Paldea (Gen 9 - Scarlet & Violet + The Teal Mask & The Indigo Disk DLC)
+  - Kalos (Legends: Z-A)
 
 - **Detailed Pokémon Information**:
   - National and Regional Pokédex numbers
