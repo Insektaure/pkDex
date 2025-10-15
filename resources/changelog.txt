@@ -1,3 +1,7 @@
+## Version 1.5.0 (2025-10-16)
+- New Feature release - Main App :
+    - Add Pokemon Legends Z-A Pokédex support
+
 ## Version 1.4.0 (2025-07-09)
 - New Feature release - Main App :
     - Add option to Download & Extract the High-Resolution Images Pack directly from the main application (since v1.4.0 and up).
