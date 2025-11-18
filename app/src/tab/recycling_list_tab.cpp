@@ -4,6 +4,8 @@
 #include "data/pokemon_tracker.hpp"
 #include "borealis/extern/nanovg/nanovg.h"
 
+using namespace brls::literals; // for _i18n
+
 std::vector<Pokemon> pokemons;
 
 RecyclerCell::RecyclerCell()
@@ -127,13 +129,13 @@ RecyclingListTab::RecyclingListTab(const std::string& region)
     recycler->setDataSource(this->dataSource);
 
     // Register L and R button actions for jumping between pages
-    this->registerAction("Previous Page", brls::BUTTON_LB,
+    this->registerAction("pkdex/listing/previous_page"_i18n, brls::BUTTON_LB,
         std::bind(&RecyclingListTab::jumpToPreviousPage, this, std::placeholders::_1), false, true);
-    this->registerAction("Next Page", brls::BUTTON_RB,
+    this->registerAction("pkdex/listing/next_page"_i18n, brls::BUTTON_RB,
         std::bind(&RecyclingListTab::jumpToNextPage, this, std::placeholders::_1), false, true);
 
     // Register Y button action for toggling capture status
-    this->registerAction("Toggle Capture Status", brls::BUTTON_Y,
+    this->registerAction("pkdex/listing/toggle_capture_status"_i18n, brls::BUTTON_Y,
         std::bind(&RecyclingListTab::toggleCaptureStatus, this, std::placeholders::_1), false, true);
 }
 

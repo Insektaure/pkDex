@@ -166,7 +166,7 @@ SettingsTab::SettingsTab()
 
     // Initialize the toggle with the current setting from the config file
     bool checkVersionOnLaunch = pkdex::Config::getBool("toggle_check_version_on_launch", true);
-    toggleCheckVersionOnLaunch->init("Check for updates on launch", checkVersionOnLaunch, [](bool value) {
+    toggleCheckVersionOnLaunch->init("pkdex/settings/check_updates_on_launch"_i18n, checkVersionOnLaunch, [](bool value) {
         // Save the setting to the config file
         pkdex::Config::setBool("toggle_check_version_on_launch", value);
         return value;
@@ -200,7 +200,7 @@ SettingsTab::SettingsTab()
 
     // Initialize the toggle for hiding the bottom bar
     bool hideBottomBar = pkdex::Config::getBool("toggle_hide_bottom_bar", false);
-    toggleHideBottomBar->init("Hide Bottom Bar", hideBottomBar, [](bool value) {
+    toggleHideBottomBar->init("pkdex/settings/hide_bottom_bar"_i18n, hideBottomBar, [](bool value) {
         // Save the setting to the config file
         pkdex::Config::setBool("toggle_hide_bottom_bar", value);
 

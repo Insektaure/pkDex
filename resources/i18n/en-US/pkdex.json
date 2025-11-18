@@ -28,7 +28,21 @@
         "reset_success_region": "Pokemon capture statuses for {region} have been reset.",
         "reset_failure": "Failed to reset Pokemon capture statuses.",
         "reset_button": "Reset",
-        "cancel_button": "Cancel"
+        "cancel_button": "Cancel",
+        "settings": "Settings",
+        "error_tab_frame": "Could not find tabFrame in main.xml",
+        "check_updates": "Check Updates",
+        "launch_updater": "Launch Updater",
+        "reset_capture_status": "Reset Capture Status",
+        "hide_bottom_bar": "Hide Bottom Bar",
+        "download_high_res_images": "Download High-Res Image Pack (~ 75Mo)",
+        "extract_high_res_images": "Extract High-Res Image Pack",
+        "changelog_content": "Changelog Content",
+        "updates": "Updates",
+        "check_updates_on_launch": "Check for updates on launch",
+        "pokemon_data": "Pokemon Data",
+        "user_interface": "User Interface",
+        "resources": "Resources"
     },
 
     "about": {
@@ -37,5 +51,26 @@
         "github": "Find it on github.com/Insektaure/pkDex",
         "licence": "Licensed under Apache 2.0",
         "logo_credit": "Logo generated with InvokeAI"
+    },
+
+    "common": {
+        "ok": "OK",
+        "cancel": "Cancel",
+        "back": "Back",
+        "exit": "Exit",
+        "exit_hint": "Quit pkDex ?",
+        "open": "Open",
+        "on": "On",
+        "off": "Off",
+        "delete": "Delete",
+        "save": "Save",
+        "input": "Please input...",
+        "submit": "Submit"
+    },
+
+    "listing": {
+        "previous_page": "Previous Page",
+        "next_page": "Next Page",
+        "toggle_capture_status": "Toggle Capture Status"
     }
 }

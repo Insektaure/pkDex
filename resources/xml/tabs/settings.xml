@@ -23,25 +23,25 @@
             <brls:Header
                     width="auto"
                     height="auto"
-                    title="Updates"
+                    title="@i18n/pkdex/settings/updates"
                     marginBottom="10px" />
 
             <brls:BooleanCell
-                    title="Check for updates on launch"
+                    title="@i18n/pkdex/settings/check_updates_on_launch"
                     id="toggleCheckVersionOnLaunch"/>
 
             <brls:DetailCell
-                    title="Check for updates"
+                    title="@i18n/pkdex/settings/check_updates"
                     id="checkUpdates"/>
 
             <brls:DetailCell
-                    title="Launch Updater"
+                    title="@i18n/pkdex/settings/launch_updater"
                     id="launchUpdater"/>
 
             <brls:Header
                     width="auto"
                     height="auto"
-                    title="Pokemon Data"
+                    title="@i18n/pkdex/settings/pokemon_data"
                     marginTop="10px"
                     marginBottom="10px"/>
 
@@ -50,33 +50,33 @@
                     id="regionSelector"/>
 
             <brls:DetailCell
-                    title="Reset Pokemon Capture Status"
+                    title="@i18n/pkdex/settings/reset_capture_status"
                     id="resetCaptureStatus"/>
 
             <brls:Header
                     width="auto"
                     height="auto"
-                    title="User Interface"
+                    title="@i18n/pkdex/settings/user_interface"
                     marginTop="10px"
                     marginBottom="10px"/>
 
             <brls:BooleanCell
-                    title="Hide Bottom Bar"
+                    title="@i18n/pkdex/settings/hide_bottom_bar"
                     id="toggleHideBottomBar"/>
 
             <brls:Header
                     width="auto"
                     height="auto"
-                    title="Resources"
+                    title="@i18n/pkdex/settings/resources"
                     marginTop="10px"
                     marginBottom="10px"/>
 
             <brls:DetailCell
-                    title="Download High-Res Image Pack (~ 75Mo)"
+                    title="@i18n/pkdex/settings/download_high_res_images"
                     id="downloadHighResImages"/>
 
             <brls:DetailCell
-                    title="Extract High-Res Image Pack"
+                    title="@i18n/pkdex/settings/extract_high_res_images"
                     id="extractHighResImages"/>
 
         </brls:Box>
