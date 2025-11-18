@@ -18,4 +18,8 @@ class SettingsTab : public brls::Box
     BRLS_BIND(brls::DetailCell, extractHighResImages, "extractHighResImages");
 
     static brls::View* create();
+
+  private:
+    // When true, we will show the restart dialog after the locale dropdown closes
+    bool pendingLocaleRestartPrompt = false;
 };

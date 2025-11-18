@@ -220,19 +220,33 @@ SettingsTab::SettingsTab()
         }
     }
 
-    localeSelector->init("pkdex/settings/select_locale"_i18n, localeLabels, savedIndex, [localeValues](int selected) {
-        // Persist selected locale code
-        if (selected >= 0 && selected < (int)localeValues.size())
-            pkdex::Config::setString("i18n_locale", localeValues[selected]);
+    localeSelector->init(
+        "pkdex/settings/select_locale"_i18n,
+        localeLabels,
+        savedIndex,
+        // on selection
+        [this, localeValues](int selected) {
+            // Persist selected locale code
+            if (selected >= 0 && selected < (int)localeValues.size())
+                pkdex::Config::setString("i18n_locale", localeValues[selected]);
 
-        // Prompt restart to apply
-        auto dialog = new brls::Dialog(pkdex::I18n::getStr("pkdex/settings/locale_restart_message"));
-        dialog->addButton(pkdex::I18n::getStr("pkdex/settings/restart_now"), []() {
-            brls::Application::quit();
-        });
-        dialog->addButton(pkdex::I18n::getStr("pkdex/settings/restart_later"), []() {});
-        dialog->open();
-    });
+            // Mark to show restart prompt after the dropdown dismisses
+            this->pendingLocaleRestartPrompt = true;
+        },
+        // on dismiss (called after the dropdown is closed)
+        [this](int /*selected*/) {
+            if (!this->pendingLocaleRestartPrompt)
+                return;
+            this->pendingLocaleRestartPrompt = false;
+
+            auto dialog = new brls::Dialog(pkdex::I18n::getStr("pkdex/settings/locale_restart_message"));
+            dialog->addButton(pkdex::I18n::getStr("pkdex/settings/restart_now"), []() {
+                brls::Application::quit();
+            });
+            dialog->addButton(pkdex::I18n::getStr("pkdex/settings/restart_later"), []() {});
+            dialog->open();
+        }
+    );
 
     // Initialize the toggle for hiding the bottom bar
     bool hideBottomBar = pkdex::Config::getBool("toggle_hide_bottom_bar", false);
