@@ -19,7 +19,7 @@
             <brls:Header
                 width="auto"
                 height="auto"
-                title="Changelog"
+                title="@i18n/pkdex/changelog/title"
                 marginBottom="10px" />
             
             <brls:Label

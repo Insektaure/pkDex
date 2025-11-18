@@ -2,12 +2,29 @@
     "title": "pkDex - A Pokemon Encyclopedia for Nintendo Switch Games",
 
     "tabs": {
-        "about": "About pkDex"
+        "about": "About pkDex",
+        "kanto": "Kanto (Let's Go! Pikachu & Eevee)",
+        "sinnoh_bdsp": "Sinnoh (Brilliant Diamond & Shining Pearl)",
+        "sinnoh_arceus": "└ Sinnoh (Legends: Arceus)",
+        "galar": "Galar (Sword & Shield)",
+        "isle_armor": "└ Isle of Armor (DLC 1)",
+        "crown_tundra": "└ Crown Tundra (DLC 2)",
+        "paldea": "Paldea (Scarlet & Violet)",
+        "kitakami": "└ Kitakami (The Teal Mask - DLC 1)",
+        "blueberry_academy": "└ Blueberry Academy (The Indigo Disk - DLC 2)",
+        "kalos_lza": "Kalos (Legends: Z-A)",
+        "settings": "Settings",
+        "changelog": "Changelog"
     },
 
     "welcome": "Welcome to the pkDex App !",
 
     "settings": {
+        "updates_title": "Updates",
+        "check_updates_on_launch": "Check for updates on launch",
+        "check_updates": "Check for updates",
+        "launch_updater": "Launch Updater",
+        "pokemon_data_title": "Pokemon Data",
         "select_region_to_reset": "Select Region to Reset",
         "regions": {
             "all_regions": "All Regions",
@@ -22,13 +39,19 @@
             "blueberry_academy": "Blueberry Academy (ScVi DLC 2)",
             "kalos_lza": "Kalos (Legends Z-A)"
         },
+        "reset_capture_status": "Reset Pokemon Capture Status",
         "reset_confirm_all": "Are you sure you want to reset all Pokemon capture statuses for all regions? This action cannot be undone.",
         "reset_confirm_region": "Are you sure you want to reset all Pokemon capture statuses for the {region} region? This action cannot be undone.",
         "reset_success_all": "All Pokemon capture statuses have been reset.",
         "reset_success_region": "Pokemon capture statuses for {region} have been reset.",
         "reset_failure": "Failed to reset Pokemon capture statuses.",
         "reset_button": "Reset",
-        "cancel_button": "Cancel"
+        "cancel_button": "Cancel",
+        "ui_title": "User Interface",
+        "hide_bottom_bar": "Hide Bottom Bar",
+        "resources_title": "Resources",
+        "download_highres": "Download High-Res Image Pack (~ 75MB)",
+        "extract_highres": "Extract High-Res Image Pack"
     },
 
     "about": {
@@ -37,5 +60,9 @@
         "github": "Find it on github.com/Insektaure/pkDex",
         "licence": "Licensed under Apache 2.0",
         "logo_credit": "Logo generated with InvokeAI"
+    },
+
+    "changelog": {
+        "title": "Changelog"
     }
 }

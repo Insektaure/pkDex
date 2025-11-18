@@ -1,0 +1,94 @@
+{
+  "title": "pkDex - Une encyclopédie Pokémon pour les jeux Nintendo Switch",
+
+  "tabs": {
+    "about": "À propos de pkDex",
+    "kanto": "Kanto (Let's Go! Pikachu & Évoli)",
+    "sinnoh_bdsp": "Sinnoh (Diamant Étincelant & Perle Scintillante)",
+    "sinnoh_arceus": "└ Sinnoh (Légendes: Arceus)",
+    "galar": "Galar (Épée & Bouclier)",
+    "isle_armor": "└ Île Solitaire de l'Armure (DLC 1)",
+    "crown_tundra": "└ Terres Enneigées de la Couronne (DLC 2)",
+    "paldea": "Paldea (Écarlate & Violet)",
+    "kitakami": "└ Septentria (Le Masque Turquoise - DLC 1)",
+    "blueberry_academy": "└ Académie Myrtille (Le Disque Indigo - DLC 2)",
+    "kalos_lza": "Kalos (Légendes: Z-A)",
+    "settings": "Paramètres",
+    "changelog": "Journal des modifications"
+  },
+
+  "welcome": "Bienvenue sur l'application pkDex !",
+
+  "settings": {
+    "updates_title": "Mises à jour",
+    "check_updates_on_launch": "Vérifier les mises à jour au démarrage",
+    "check_updates": "Rechercher des mises à jour",
+    "launch_updater": "Lancer le programme de mise à jour",
+    "pokemon_data_title": "Données Pokémon",
+    "select_region_to_reset": "Sélectionner la région à réinitialiser",
+    "regions": {
+      "all_regions": "Toutes les régions",
+      "kanto": "Kanto (LGPE)",
+      "sinnoh": "Sinnoh (DEPS)",
+      "sinnoh_arceus": "Sinnoh (Légendes Arceus)",
+      "galar": "Galar (Épée/Bouclier)",
+      "isle_armor": "Île de l'Armure (DLC 1)",
+      "crown_tundra": "Terres Enneigées de la Couronne (DLC 2)",
+      "paldea": "Paldea (Éc/Vio)",
+      "kitakami": "Septentria (DLC 1)",
+      "blueberry_academy": "Académie Myrtille (DLC 2)",
+      "kalos_lza": "Kalos (Légendes Z-A)"
+    },
+    "reset_capture_status": "Réinitialiser l'état de capture des Pokémon",
+    "reset_confirm_all": "Voulez-vous vraiment réinitialiser l'état de capture de tous les Pokémon pour toutes les régions ? Cette action est irréversible.",
+    "reset_confirm_region": "Voulez-vous vraiment réinitialiser l'état de capture des Pokémon pour la région {region} ? Cette action est irréversible.",
+    "reset_success_all": "Tous les états de capture ont été réinitialisés.",
+    "reset_success_region": "Les états de capture pour {region} ont été réinitialisés.",
+    "reset_failure": "Échec de la réinitialisation des états de capture des Pokémon.",
+    "reset_button": "Réinitialiser",
+    "cancel_button": "Annuler",
+    "ui_title": "Interface utilisateur",
+    "hide_bottom_bar": "Masquer la barre inférieure",
+    "resources_title": "Ressources",
+    "download_highres": "Télécharger le pack d'images haute résolution (~ 75 Mo)",
+    "extract_highres": "Extraire le pack d'images haute résolution"
+  },
+
+  "about": {
+    "title": "pkDex\nv1.5.2",
+    "description": "pkDex est une application simple pour consulter des données Pokémon hors ligne, pour les jeux Nintendo Switch.",
+    "github": "Disponible sur github.com/Insektaure/pkDex",
+    "licence": "Sous licence Apache 2.0",
+    "logo_credit": "Logo généré avec InvokeAI"
+  },
+
+  "changelog": {
+    "title": "Journal des modifications"
+  },
+
+  "data": {
+    "kanto": {
+      "001": {
+        "name": "Bulbizarre",
+        "type": "Plante / Poison",
+        "evolution": "Bulbizarre – Niv. 16 → Herbizarre – Niv. 32 → Florizarre",
+        "locations": "Azuria, Forêt de Jade",
+        "exclusiveVersion": "-"
+      },
+      "002": {
+        "name": "Herbizarre",
+        "type": "Plante / Poison",
+        "evolution": "Bulbizarre – Niv. 16 → Herbizarre – Niv. 32 → Florizarre",
+        "locations": "Faire évoluer Bulbizarre",
+        "exclusiveVersion": "-"
+      },
+      "003": {
+        "name": "Florizarre",
+        "type": "Plante / Poison",
+        "evolution": "Bulbizarre – Niv. 16 → Herbizarre – Niv. 32 → Florizarre",
+        "locations": "Faire évoluer Bulbizarre / Herbizarre",
+        "exclusiveVersion": "-"
+      }
+    }
+  }
+}
