@@ -25,6 +25,8 @@
     "check_updates": "Rechercher des mises à jour",
     "launch_updater": "Lancer le programme de mise à jour",
     "pokemon_data_title": "Données Pokémon",
+    "i18n_title": "Langue",
+    "select_locale": "Choisir la langue",
     "select_region_to_reset": "Sélectionner la région à réinitialiser",
     "regions": {
       "all_regions": "Toutes les régions",
@@ -51,7 +53,16 @@
     "hide_bottom_bar": "Masquer la barre inférieure",
     "resources_title": "Ressources",
     "download_highres": "Télécharger le pack d'images haute résolution (~ 75 Mo)",
-    "extract_highres": "Extraire le pack d'images haute résolution"
+    "extract_highres": "Extraire le pack d'images haute résolution",
+    "locales": {
+      "auto": "Auto (Système)",
+      "en-US": "Anglais (US)",
+      "fr": "Français",
+      "fr-FR": "Français (France)"
+    },
+    "locale_restart_message": "Le changement de langue sera appliqué après le redémarrage de l'application.",
+    "restart_now": "Redémarrer maintenant",
+    "restart_later": "Plus tard"
   },
 
   "about": {

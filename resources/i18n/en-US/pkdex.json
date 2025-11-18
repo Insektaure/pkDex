@@ -25,6 +25,8 @@
         "check_updates": "Check for updates",
         "launch_updater": "Launch Updater",
         "pokemon_data_title": "Pokemon Data",
+        "i18n_title": "Language",
+        "select_locale": "Select Language",
         "select_region_to_reset": "Select Region to Reset",
         "regions": {
             "all_regions": "All Regions",
@@ -51,7 +53,16 @@
         "hide_bottom_bar": "Hide Bottom Bar",
         "resources_title": "Resources",
         "download_highres": "Download High-Res Image Pack (~ 75MB)",
-        "extract_highres": "Extract High-Res Image Pack"
+        "extract_highres": "Extract High-Res Image Pack",
+        "locales": {
+            "auto": "Auto (System)",
+            "en-US": "English (US)",
+            "fr": "French",
+            "fr-FR": "French (France)"
+        },
+        "locale_restart_message": "The language change will apply after restarting the app.",
+        "restart_now": "Restart Now",
+        "restart_later": "Later"
     },
 
     "about": {

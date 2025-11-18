@@ -48,6 +48,24 @@ public:
      */
     static bool setInt(const std::string& key, int value);
 
+    /**
+     * @brief Get a string value from the config file
+     *
+     * @param key The key to look for
+     * @param defaultValue The default value to return if the key is not found
+     * @return std::string The value associated with the key, or the default value if not found
+     */
+    static std::string getString(const std::string& key, const std::string& defaultValue = "");
+
+    /**
+     * @brief Set a string value in the config file
+     *
+     * @param key The key to set
+     * @param value The value to set
+     * @return bool True if the operation was successful, false otherwise
+     */
+    static bool setString(const std::string& key, const std::string& value);
+
 private:
     /**
      * @brief Get the path to the config file

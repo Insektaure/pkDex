@@ -1,6 +1,6 @@
 #include "data/pokemon_data_loader.hpp"
 #include <borealis/core/logger.hpp>
-#include <borealis/core/i18n.hpp>
+#include "i18n.hpp"
 #include <tinyxml2.h>
 #include "data/pokemon_tracker.hpp"
 
@@ -129,15 +129,15 @@ Pokemon PokemonDataLoader::parsePokemonNode(tinyxml2::XMLElement* pokemonElement
     if (!sid.empty())
     {
         std::string o;
-        o = brls::getStr(makeKey("name"));
+        o = pkdex::I18n::getStr(makeKey("name"));
         if (o != makeKey("name")) nameStr = o;
-        o = brls::getStr(makeKey("type"));
+        o = pkdex::I18n::getStr(makeKey("type"));
         if (o != makeKey("type")) typeStr = o;
-        o = brls::getStr(makeKey("evolution"));
+        o = pkdex::I18n::getStr(makeKey("evolution"));
         if (o != makeKey("evolution")) evolutionStr = o;
-        o = brls::getStr(makeKey("exclusiveVersion"));
+        o = pkdex::I18n::getStr(makeKey("exclusiveVersion"));
         if (o != makeKey("exclusiveVersion")) exclusiveVersionStr = o;
-        o = brls::getStr(makeKey("locations"));
+        o = pkdex::I18n::getStr(makeKey("locations"));
         if (o != makeKey("locations")) locationsStr = o;
     }
 

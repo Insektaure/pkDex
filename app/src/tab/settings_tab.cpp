@@ -7,6 +7,7 @@
 #include <switch.h>
 #include <sys/stat.h>
 #include <borealis/core/i18n.hpp>
+#include "i18n.hpp"
 
 // Function to check if a file exists
 bool fileExists(const std::string& path) {
@@ -93,11 +94,11 @@ SettingsTab::SettingsTab()
 
         // Get display names for regions
         std::vector<std::string> regionDisplayNames;
-        regionDisplayNames.push_back("pkdex/settings/regions/all_regions"_i18n);
+        regionDisplayNames.push_back(pkdex::I18n::getStr("pkdex/settings/regions/all_regions"));
         for (size_t i = 1; i < regionIds.size(); i++) {
             std::string regionId = regionIds[i];
             std::string i18nKey = "pkdex/settings/regions/" + regionId;
-            regionDisplayNames.push_back(brls::getStr(i18nKey));
+            regionDisplayNames.push_back(pkdex::I18n::getStr(i18nKey));
         }
 
         // Determine if we're resetting all regions or a specific one
@@ -106,11 +107,11 @@ SettingsTab::SettingsTab()
         // Create the confirmation message
         std::string message;
         if (resetAll) {
-            message = "pkdex/settings/reset_confirm_all"_i18n;
+            message = pkdex::I18n::getStr("pkdex/settings/reset_confirm_all");
         } else {
             // Get the selected region display name
             std::string regionDisplayName = regionDisplayNames[selectedRegionIndex];
-            std::string messageTemplate = "pkdex/settings/reset_confirm_region"_i18n;
+            std::string messageTemplate = pkdex::I18n::getStr("pkdex/settings/reset_confirm_region");
             // Replace {region} placeholder with the actual region name
             size_t pos = messageTemplate.find("{region}");
             if (pos != std::string::npos) {
@@ -123,7 +124,7 @@ SettingsTab::SettingsTab()
         auto dialog = new brls::Dialog(message);
 
         // Add confirm button
-        dialog->addButton("pkdex/settings/reset_button"_i18n, [resetAll, selectedRegionIndex, regionIds, regionDisplayNames]() {
+        dialog->addButton(pkdex::I18n::getStr("pkdex/settings/reset_button"), [resetAll, selectedRegionIndex, regionIds, regionDisplayNames]() {
             bool success;
 
             if (resetAll) {
@@ -138,10 +139,10 @@ SettingsTab::SettingsTab()
             // Show a success or error message
             if (success) {
                 if (resetAll) {
-                    brls::Application::notify("pkdex/settings/reset_success_all"_i18n);
+                    brls::Application::notify(pkdex::I18n::getStr("pkdex/settings/reset_success_all"));
                 } else {
                     std::string regionDisplayName = regionDisplayNames[selectedRegionIndex];
-                    std::string messageTemplate = "pkdex/settings/reset_success_region"_i18n;
+                    std::string messageTemplate = pkdex::I18n::getStr("pkdex/settings/reset_success_region");
                     // Replace {region} placeholder with the actual region name
                     size_t pos = messageTemplate.find("{region}");
                     if (pos != std::string::npos) {
@@ -150,12 +151,12 @@ SettingsTab::SettingsTab()
                     brls::Application::notify(messageTemplate);
                 }
             } else {
-                brls::Application::notify("pkdex/settings/reset_failure"_i18n);
+                brls::Application::notify(pkdex::I18n::getStr("pkdex/settings/reset_failure"));
             }
         });
 
         // Add cancel button
-        dialog->addButton("pkdex/settings/cancel_button"_i18n, []() {
+        dialog->addButton(pkdex::I18n::getStr("pkdex/settings/cancel_button"), []() {
             // Do nothing, dialog will close automatically
         });
 
@@ -178,13 +179,13 @@ SettingsTab::SettingsTab()
 
     // Add "All Regions" as the first option with internationalized name
     regionIds.insert(regionIds.begin(), "all_regions");
-    regionNames.push_back("pkdex/settings/regions/all_regions"_i18n);
+    regionNames.push_back(pkdex::I18n::getStr("pkdex/settings/regions/all_regions"));
 
     // Add internationalized names for each region
     for (size_t i = 1; i < regionIds.size(); i++) {
         std::string regionId = regionIds[i];
         std::string i18nKey = "pkdex/settings/regions/" + regionId;
-        regionNames.push_back(brls::getStr(i18nKey));
+        regionNames.push_back(pkdex::I18n::getStr(i18nKey));
     }
 
     // Get the currently selected region from config, default to "All Regions" (index 0)
@@ -196,6 +197,41 @@ SettingsTab::SettingsTab()
     regionSelector->init("pkdex/settings/select_region_to_reset"_i18n, regionNames, selectedRegionIndex, [](int selected) {
         // Save the selected region index to config
         pkdex::Config::setInt("selected_region_index", selected);
+    });
+
+    // Initialize the locale selector
+    // Supported locales list (value) and their display names (label)
+    std::vector<std::string> localeValues = {"auto", "en-US", "fr-FR"};
+    std::vector<std::string> localeLabels = {
+        pkdex::I18n::getStr("pkdex/settings/locales/auto"),
+        pkdex::I18n::getStr("pkdex/settings/locales/en-US"),
+        pkdex::I18n::getStr("pkdex/settings/locales/fr-FR"),
+    };
+
+    // Load current preference (default: auto)
+    std::string savedLocale = pkdex::Config::getString("i18n_locale", "auto");
+    int savedIndex = 0;
+    for (size_t i = 0; i < localeValues.size(); i++)
+    {
+        if (localeValues[i] == savedLocale)
+        {
+            savedIndex = (int)i;
+            break;
+        }
+    }
+
+    localeSelector->init("pkdex/settings/select_locale"_i18n, localeLabels, savedIndex, [localeValues](int selected) {
+        // Persist selected locale code
+        if (selected >= 0 && selected < (int)localeValues.size())
+            pkdex::Config::setString("i18n_locale", localeValues[selected]);
+
+        // Prompt restart to apply
+        auto dialog = new brls::Dialog(pkdex::I18n::getStr("pkdex/settings/locale_restart_message"));
+        dialog->addButton(pkdex::I18n::getStr("pkdex/settings/restart_now"), []() {
+            brls::Application::quit();
+        });
+        dialog->addButton(pkdex::I18n::getStr("pkdex/settings/restart_later"), []() {});
+        dialog->open();
     });
 
     // Initialize the toggle for hiding the bottom bar

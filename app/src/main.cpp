@@ -13,6 +13,7 @@
 #include "tab/settings_tab.hpp"
 #include "tab/changelog_tab.hpp"
 #include "activity/main_activity.hpp"
+#include "i18n.hpp"
 
 #if defined(__PSV__) && defined(BOREALIS_USE_OPENGL)
 // Needed for the OpenGL driver to work
@@ -50,11 +51,26 @@ int main(int argc, char* argv[])
         }
     }
 
+    // Load app-level i18n (for data and runtime strings) before initializing UI
+    // Note: Borealis UI will still use system locale; our own i18n respects the selected locale.
+    {
+        std::string prefLocale = pkdex::Config::getString("i18n_locale", "auto");
+        // Defer to system if auto
+        // pkdex::I18n will handle fallback to system and en-US
+    }
+
     // Init the app and i18n
     if (!brls::Application::init())
     {
         brls::Logger::error("Unable to init Borealis application");
         return EXIT_FAILURE;
+    }
+
+    // After Application is initialized (so assets/romfs are ready), load pkdex i18n
+    {
+        std::string prefLocale = pkdex::Config::getString("i18n_locale", "auto");
+        // Load app-level i18n with user preference (or system if auto)
+        pkdex::I18n::load(prefLocale);
     }
 
     brls::Application::createWindow("pkdex/title"_i18n);

@@ -113,7 +113,7 @@ You can download updates at any time from the `settings` menu (_**Check for upda
 
 pkDex supports multiple languages using JSON translation files loaded at runtime.
 
-- UI strings in XML use i18n references like `@i18n/pkdex/...`.
+- UI strings in XML use Borealis i18n references like `@i18n/pkdex/...` and follow the system locale.
 - Translation files are located in `resources/i18n/<locale>/*.json`.
 - The default English strings are in `resources/i18n/en-US/pkdex.json`.
 - To add a new language, create `resources/i18n/<your-locale>/pkdex.json` with the same keys.
@@ -128,6 +128,11 @@ Overriding data from XML files:
 - If an override key is missing, the app will fall back to the original text in the XML.
 
 Locales follow Borealis conventions and the app automatically loads the system locale with a fallback to en-US.
+
+Choose language in Settings (no Borealis changes required):
+- Go to the Settings tab > Language.
+- Pick a locale (Auto/System, en-US, fr, fr-FR). The choice is saved to /config/pkDex/config.ini under the key `i18n_locale`.
+- The selected locale is applied to game data and runtime messages via the app-level i18n loader. UI XML strings still follow the system locale (Borealis behavior) — this avoids modifying the Borealis library.
 
 Changing the settings will generate a `config.ini` file in the `/config/pkDex` directory, which will be used to store user preferences.
 
