@@ -101,7 +101,7 @@
                                 width="100%"
                                 height="auto"
                                 horizontalAlign="center"
-                                text="National N°"
+                                text="@i18n/pkdex/view/infos/title/national_number"
                                 fontSize="20"/>
                     </brls:Box>
                 </brls:Box>
@@ -126,7 +126,7 @@
                                 width="100%"
                                 height="auto"
                                 horizontalAlign="center"
-                                text="Regional N°"
+                                text="@i18n/pkdex/view/infos/title/regional_number"
                                 fontSize="20"/>
                     </brls:Box>
                 </brls:Box>
@@ -151,7 +151,7 @@
                                 width="100%"
                                 height="auto"
                                 horizontalAlign="center"
-                                text="Shiny"
+                                text="@i18n/pkdex/view/infos/title/shiny"
                                 fontSize="20"/>
                     </brls:Box>
                 </brls:Box>
@@ -264,7 +264,7 @@
                             width="100%"
                             height="auto"
                             horizontalAlign="center"
-                            text="Type"
+                            text="@i18n/pkdex/view/infos/title/type"
                             fontSize="20"/>
                     </brls:Box>
 
@@ -290,7 +290,7 @@
                             width="100%"
                             height="auto"
                             horizontalAlign="center"
-                            text="Version Exclusive"
+                            text="@i18n/pkdex/view/infos/title/version"
                             fontSize="20"/>
                     </brls:Box>
                 </brls:Box>
@@ -371,7 +371,7 @@
                     <brls:Label
                             width="auto"
                             height="auto"
-                            text="Evolution"
+                            text="@i18n/pkdex/view/infos/title/evolution"
                             fontSize="20"/>
                 </brls:Box>
 
@@ -418,7 +418,7 @@
                     <brls:Label
                             width="auto"
                             height="auto"
-                            text="Locations"
+                            text="@i18n/pkdex/view/infos/title/locations"
                             fontSize="20"/>
                 </brls:Box>
             </brls:Box>

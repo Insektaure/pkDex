@@ -77,12 +77,36 @@
         "delete": "Delete",
         "save": "Save",
         "input": "Please input...",
-        "submit": "Submit"
+        "submit": "Submit",
+        "close": "Close"
     },
 
     "listing": {
         "previous_page": "Previous Page",
         "next_page": "Next Page",
         "toggle_capture_status": "Toggle Capture Status"
+    },
+
+    "view": {
+      "infos": {
+        "captured": "Captured",
+        "title": {
+          "national_number": "National N°",
+          "regional_number": "Regional N°",
+          "shiny": "Shiny",
+          "type": "Type",
+          "version": "Version Exclusive",
+          "evolution": "Evolution",
+          "locations": "Locations"
+        },
+        "content": {
+          "available": "Available",
+          "locked": "Locked"
+        }
+      },
+      "navigation": {
+        "previous_pokemon": "Previous Pokemon",
+        "next_pokemon": "Next Pokemon"
+      }
     }
 }

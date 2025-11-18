@@ -28,7 +28,7 @@ PokemonView::PokemonView(Pokemon pokemon, int pokemonIndex, const std::string& r
     };
 
     brls::Label* label = new brls::Label();
-    label->setText(brls::Hint::getKeyIcon(brls::ControllerButton::BUTTON_RB) + " Close");
+    label->setText(brls::Hint::getKeyIcon(brls::ControllerButton::BUTTON_RB) + " " + "pkdex/common/close"_i18n);
     label->setFontSize(24);
     label->setMargins(0, 12, 0, 12);
 
@@ -38,13 +38,13 @@ PokemonView::PokemonView(Pokemon pokemon, int pokemonIndex, const std::string& r
     holder->addGestureRecognizer(new brls::TapGestureRecognizer(holder));
 
     holder->registerClickAction(dismissAction);
-    holder->registerAction("Close", brls::ControllerButton::BUTTON_RB, dismissAction, true);
-    registerAction("Close", brls::ControllerButton::BUTTON_RB, dismissAction, true);
+    holder->registerAction("pkdex/common/close"_i18n, brls::ControllerButton::BUTTON_RB, dismissAction, true);
+    registerAction("pkdex/common/close"_i18n, brls::ControllerButton::BUTTON_RB, dismissAction, true);
 
     // Register ZL and ZR button actions for navigating between Pokemon
-    this->registerAction("Previous Pokemon", brls::BUTTON_LT, 
+    this->registerAction("pkdex/view/navigation/previous_pokemon"_i18n, brls::BUTTON_LT,
         std::bind(&PokemonView::navigateToPreviousPokemon, this, std::placeholders::_1), false, true);
-    this->registerAction("Next Pokemon", brls::BUTTON_RT, 
+    this->registerAction("pkdex/view/navigation/next_pokemon"_i18n, brls::BUTTON_RT,
         std::bind(&PokemonView::navigateToNextPokemon, this, std::placeholders::_1), false, true);
 
     // Load the Pokemon data
@@ -71,7 +71,7 @@ void PokemonView::loadPokemon(const Pokemon& newPokemon)
     // Update the applet frame with a checkmark if the Pokemon is captured
     std::string title = pokemon.name + " | N°" + pokemon.regionalDexNumber;
     if (isCaptured) {
-        title = title + " [Captured]"; // Use brackets instead of emoji for better compatibility
+        title = title + " " + "pkdex/view/infos/captured"_i18n;
     }
 
     getAppletFrameItem()->title = title;
@@ -96,10 +96,10 @@ void PokemonView::loadPokemon(const Pokemon& newPokemon)
     locations->setText(pokemon.locations);
 
     if (pokemon.shinyLocked) {
-        shiny_locked->setText("Locked");
+        shiny_locked->setText("pkdex/view/infos/content/locked"_i18n);
         shiny_locked->setTextColor(nvgRGB(255, 85, 85)); // Red color for emphasis
     } else {
-        shiny_locked->setText("Available");
+        shiny_locked->setText("pkdex/view/infos/content/available"_i18n);
         shiny_locked->setTextColor(nvgRGB(85, 255, 85)); // Green color for available
     }
 }
