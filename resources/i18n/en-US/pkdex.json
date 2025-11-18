@@ -2,7 +2,19 @@
     "title": "pkDex - A Pokemon Encyclopedia for Nintendo Switch Games",
 
     "tabs": {
-        "about": "About pkDex"
+        "kanto": "Kanto (Let's Go! Pikachu & Eevee)",
+        "sinnoh": "Sinnoh (Brilliant Diamond & Shining Pearl)",
+        "sinnoh_arceus": "└ Sinnoh (Legends: Arceus)",
+        "galar": "Galar (Sword & Shield)",
+        "isle_armor": "└ Isle of Armor (DLC 1)",
+        "crown_tundra": "└ Crown Tundra (DLC 2)",
+        "paldea": "Paldea (Scarlet & Violet)",
+        "kitakami": "└ Kitakami (The Teal Mask - DLC 1)",
+        "blueberry_academy": "└ Blueberry Academy (The Indigo Disk - DLC 2)",
+        "kalos_lza": "Kalos (Legends: Z-A)",
+        "settings": "Settings",
+        "about": "About pkDex",
+        "changelog": "Changelog"
     },
 
     "welcome": "Welcome to the pkDex App !",

@@ -5,69 +5,61 @@
         title="@i18n/pkdex/title"
         icon="@res/img/pkdex_96.png">
 
-        <brls:Tab label="Kanto (Let's Go! Pikachu &amp; Eevee)">
+        <brls:Tab label="@i18n/pkdex/tabs/kanto">
             <KantoTab/>
         </brls:Tab>
 
         <brls:Separator />
 
-<!--        <brls:Tab label="Johto">-->
-<!--            <JohtoTab/>-->
-<!--        </brls:Tab>-->
-
-<!--        <brls:Tab label="Hoenn">-->
-<!--            <HoennTab/>-->
-<!--        </brls:Tab>-->
-
         <!-- Sinnoh Group -->
-        <brls:Tab label="Sinnoh (Brilliant Diamond &amp; Shining Pearl)">
+        <brls:Tab label="@i18n/pkdex/tabs/sinnoh">
             <SinnohTab/>
         </brls:Tab>
 
-        <brls:Tab label="└ Sinnoh (Legends: Arceus)">
+        <brls:Tab label="@i18n/pkdex/tabs/sinnoh_arceus">
             <SinnohArceusTab/>
         </brls:Tab>
 
         <brls:Separator />
 
         <!-- Sword & Shield Group -->
-        <brls:Tab label="Galar (Sword &amp; Shield)">
+        <brls:Tab label="@i18n/pkdex/tabs/galar">
             <GalarTab/>
         </brls:Tab>
 
-        <brls:Tab label="└ Isle of Armor (DLC 1)">
+        <brls:Tab label="@i18n/pkdex/tabs/isle_armor">
             <IsleArmorTab/>
         </brls:Tab>
 
-        <brls:Tab label="└ Crown Tundra (DLC 2)">
+        <brls:Tab label="@i18n/pkdex/tabs/crown_tundra">
             <CrownTundraTab/>
         </brls:Tab>
 
         <brls:Separator />
 
         <!-- Scarlet & Violet Group -->
-        <brls:Tab label="Paldea (Scarlet &amp; Violet)">
+        <brls:Tab label="@i18n/pkdex/tabs/paldea">
             <PaldeaTab/>
         </brls:Tab>
 
-        <brls:Tab label="└ Kitakami (The Teal Mask - DLC 1)">
+        <brls:Tab label="@i18n/pkdex/tabs/kitakami">
             <KitakamiTab/>
         </brls:Tab>
 
-        <brls:Tab label="└ Blueberry Academy (The Indigo Disk - DLC 2)">
+        <brls:Tab label="@i18n/pkdex/tabs/blueberry_academy">
             <BlueberryTab/>
         </brls:Tab>
 
         <brls:Separator />
 
-        <brls:Tab label="Kalos (Legends: Z-A)">
+        <brls:Tab label="@i18n/pkdex/tabs/kalos_lza">
             <KalosLzaTab/>
         </brls:Tab>
 
         <brls:Separator />
 
         <!-- Settings tab -->
-        <brls:Tab label="Settings">
+        <brls:Tab label="@i18n/pkdex/tabs/settings">
             <SettingsTab/>
         </brls:Tab>
 
@@ -145,7 +137,7 @@
         <brls:Separator />
 
         <!-- Changelog tab -->
-        <brls:Tab label="Changelog">
+        <brls:Tab label="@i18n/pkdex/tabs/changelog">
             <ChangelogTab/>
         </brls:Tab>
 
