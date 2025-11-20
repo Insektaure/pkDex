@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pkDex XML to JSON Converter</title>
+</head>
+<body>
+<input type="file" id="xmlFile" accept=".xml">
+<button id="convertBtn">Convert to JSON</button>
+<pre id="output"></pre>
+<script>
+    document.getElementById('convertBtn').onclick = function () {
+        const fileInput = document.getElementById('xmlFile');
+        if (!fileInput.files.length) {
+            alert('Please select a kanto.xml file.');
+            return;
+        }
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const xmlText = e.target.result;
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlText, "application/xml");
+            // Get region from pokedex tag
+            const pokedexTag = xmlDoc.getElementsByTagName('pokedex')[0];
+            const region = pokedexTag.getAttribute('region') || "unknown";
+            // Get all pokemon elements
+            const pokemons = xmlDoc.getElementsByTagName('pokemon');
+            const Obj = {};
+            Array.from(pokemons).forEach(p => {
+                const num = p.getAttribute('regionalDexNumber');
+                const name = p.getAttribute('name');
+                const type = p.getAttribute('type');
+                // If you have child elements, use these lines:
+                const evolution = p.getElementsByTagName('evolution')[0]?.textContent.trim() || "";
+                const locations = p.getElementsByTagName('locations')[0]?.textContent.trim() || "";
+                const exclusiveVersion = p.getElementsByTagName('exclusiveVersion')[0]?.textContent.trim() || "-";
+                Obj[num] = {
+                    name,
+                    type,
+                    evolution,
+                    locations,
+                    exclusiveVersion
+                };
+            });
+            // Build an array of objects in order by regionalDexNumber
+            const ordered = Object.keys(Obj)
+                .sort((a, b) => parseInt(a) - parseInt(b))
+                .map(num => ({ [num]: Obj[num] }));
+            const output = { [region]: ordered };
+            document.getElementById('output').textContent = JSON.stringify(output, null, 2);
+        };
+        reader.readAsText(fileInput.files[0]);
+    };
+</script>
+</body>
+</html>
