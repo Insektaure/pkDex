@@ -1,112 +1,114 @@
 {
-    "title": "pkDex - A Pokemon Encyclopedia for Nintendo Switch Games",
-
-    "tabs": {
-        "kanto": "Kanto (Let's Go! Pikachu & Eevee)",
-        "sinnoh": "Sinnoh (Brilliant Diamond & Shining Pearl)",
-        "sinnoh_arceus": "└ Sinnoh (Legends: Arceus)",
-        "galar": "Galar (Sword & Shield)",
-        "isle_armor": "└ Isle of Armor (DLC 1)",
-        "crown_tundra": "└ Crown Tundra (DLC 2)",
-        "paldea": "Paldea (Scarlet & Violet)",
-        "kitakami": "└ Kitakami (The Teal Mask - DLC 1)",
-        "blueberry_academy": "└ Blueberry Academy (The Indigo Disk - DLC 2)",
-        "kalos_lza": "Kalos (Legends: Z-A)",
-        "settings": "Settings",
-        "about": "About pkDex",
-        "changelog": "Changelog"
+  "title": "pkDex - A Pokemon Encyclopedia for Nintendo Switch Games",
+  "tabs": {
+    "kanto": "Kanto (Let's Go! Pikachu & Eevee)",
+    "sinnoh": "Sinnoh (Brilliant Diamond & Shining Pearl)",
+    "sinnoh_arceus": "└ Sinnoh (Legends: Arceus)",
+    "galar": "Galar (Sword & Shield)",
+    "isle_armor": "└ Isle of Armor (DLC 1)",
+    "crown_tundra": "└ Crown Tundra (DLC 2)",
+    "paldea": "Paldea (Scarlet & Violet)",
+    "kitakami": "└ Kitakami (The Teal Mask - DLC 1)",
+    "blueberry_academy": "└ Blueberry Academy (The Indigo Disk - DLC 2)",
+    "kalos_lza": "Kalos (Legends: Z-A)",
+    "settings": "Settings",
+    "about": "About pkDex",
+    "changelog": "Changelog"
+  },
+  "welcome": "Welcome to the pkDex App !",
+  "settings": {
+    "regions": {
+      "all_regions": "All Regions",
+      "kanto": "Kanto (LGPE)",
+      "sinnoh": "Sinnoh (BDSP)",
+      "sinnoh_arceus": "Sinnoh (Legends Arceus)",
+      "galar": "Galar (SwSh)",
+      "isle_armor": "Isle of Armor (SwSh DLC 1)",
+      "crown_tundra": "Crown Tundra (SwSh DLC 2)",
+      "paldea": "Paldea (ScVi)",
+      "kitakami": "Kitakami (ScVi DLC 1)",
+      "blueberry_academy": "Blueberry Academy (ScVi DLC 2)",
+      "kalos_lza": "Kalos (Legends Z-A)"
     },
-
-    "welcome": "Welcome to the pkDex App !",
-
-    "settings": {
-        "select_region_to_reset": "Select Region to Reset",
-        "regions": {
-            "all_regions": "All Regions",
-            "kanto": "Kanto (LGPE)",
-            "sinnoh": "Sinnoh (BDSP)",
-            "sinnoh_arceus": "Sinnoh (Legends Arceus)",
-            "galar": "Galar (SwSh)",
-            "isle_armor": "Isle of Armor (SwSh DLC 1)",
-            "crown_tundra": "Crown Tundra (SwSh DLC 2)",
-            "paldea": "Paldea (ScVi)",
-            "kitakami": "Kitakami (ScVi DLC 1)",
-            "blueberry_academy": "Blueberry Academy (ScVi DLC 2)",
-            "kalos_lza": "Kalos (Legends Z-A)"
-        },
-        "reset_confirm_all": "Are you sure you want to reset all Pokemon capture statuses for all regions? This action cannot be undone.",
-        "reset_confirm_region": "Are you sure you want to reset all Pokemon capture statuses for the {region} region? This action cannot be undone.",
-        "reset_success_all": "All Pokemon capture statuses have been reset.",
-        "reset_success_region": "Pokemon capture statuses for {region} have been reset.",
-        "reset_failure": "Failed to reset Pokemon capture statuses.",
-        "reset_button": "Reset",
-        "cancel_button": "Cancel",
-        "settings": "Settings",
-        "error_tab_frame": "Could not find tabFrame in main.xml",
-        "check_updates": "Check Updates",
-        "launch_updater": "Launch Updater",
-        "reset_capture_status": "Reset Capture Status",
-        "hide_bottom_bar": "Hide Bottom Bar",
-        "download_high_res_images": "Download High-Res Image Pack (~ 75Mo)",
-        "extract_high_res_images": "Extract High-Res Image Pack",
-        "changelog_content": "Changelog Content",
-        "updates": "Updates",
-        "check_updates_on_launch": "Check for updates on launch",
-        "pokemon_data": "Pokemon Data",
-        "user_interface": "User Interface",
-        "resources": "Resources"
+    "locales": {
+      "en-US": "English (US)",
+      "fr-FR": "Français (France)"
     },
-
-    "about": {
-        "title": "pkDex\nv1.5.2",
-        "description": "pkDex is a simple app to view Pokemon data offline, for the Nintendo Switch games.",
-        "github": "Find it on github.com/Insektaure/pkDex",
-        "licence": "Licensed under Apache 2.0",
-        "logo_credit": "Logo generated with InvokeAI"
-    },
-
-    "common": {
-        "ok": "OK",
-        "cancel": "Cancel",
-        "back": "Back",
-        "exit": "Exit",
-        "exit_hint": "Quit pkDex ?",
-        "open": "Open",
-        "on": "On",
-        "off": "Off",
-        "delete": "Delete",
-        "save": "Save",
-        "input": "Please input...",
-        "submit": "Submit",
-        "close": "Close"
-    },
-
-    "listing": {
-        "previous_page": "Previous Page",
-        "next_page": "Next Page",
-        "toggle_capture_status": "Toggle Capture Status"
-    },
-
-    "view": {
-      "infos": {
-        "captured": "Captured",
-        "title": {
-          "national_number": "National N°",
-          "regional_number": "Regional N°",
-          "shiny": "Shiny",
-          "type": "Type",
-          "version": "Version Exclusive",
-          "evolution": "Evolution",
-          "locations": "Locations"
-        },
-        "content": {
-          "available": "Available",
-          "locked": "Locked"
-        }
+    "i18n_title": "Language",
+    "select_locale": "Select Language",
+    "select_region_to_reset": "Select Region to Reset",
+    "reset_confirm_all": "Are you sure you want to reset all Pokemon capture statuses for all regions? This action cannot be undone.",
+    "reset_confirm_region": "Are you sure you want to reset all Pokemon capture statuses for the {region} region? This action cannot be undone.",
+    "reset_success_all": "All Pokemon capture statuses have been reset.",
+    "reset_success_region": "Pokemon capture statuses for {region} have been reset.",
+    "reset_failure": "Failed to reset Pokemon capture statuses.",
+    "reset_button": "Reset",
+    "cancel_button": "Cancel",
+    "settings": "Settings",
+    "error_tab_frame": "Could not find tabFrame in main.xml",
+    "check_updates": "Check Updates",
+    "launch_updater": "Launch Updater",
+    "reset_capture_status": "Reset Capture Status",
+    "hide_bottom_bar": "Hide Bottom Bar",
+    "download_high_res_images": "Download High-Res Image Pack (~ 75Mo)",
+    "extract_high_res_images": "Extract High-Res Image Pack",
+    "changelog_content": "Changelog Content",
+    "updates": "Updates",
+    "check_updates_on_launch": "Check for updates on launch",
+    "pokemon_data": "Pokemon Data",
+    "user_interface": "User Interface",
+    "resources": "Resources",
+    "locale_restart_message": "The language change will apply after restarting the app.",
+    "restart_now": "Restart Now",
+    "restart_later": "Later"
+  },
+  "about": {
+    "title": "pkDex\nv1.5.2",
+    "description": "pkDex is a simple app to view Pokemon data offline, for the Nintendo Switch games.",
+    "github": "Find it on github.com/Insektaure/pkDex",
+    "licence": "Licensed under Apache 2.0",
+    "logo_credit": "Logo generated with InvokeAI"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "back": "Back",
+    "exit": "Exit",
+    "exit_hint": "Quit pkDex ?",
+    "open": "Open",
+    "on": "On",
+    "off": "Off",
+    "delete": "Delete",
+    "save": "Save",
+    "input": "Please input...",
+    "submit": "Submit",
+    "close": "Close"
+  },
+  "listing": {
+    "previous_page": "Previous Page",
+    "next_page": "Next Page",
+    "toggle_capture_status": "Toggle Capture Status"
+  },
+  "view": {
+    "infos": {
+      "captured": "Captured",
+      "title": {
+        "national_number": "National N°",
+        "regional_number": "Regional N°",
+        "shiny": "Shiny",
+        "type": "Type",
+        "version": "Version Exclusive",
+        "evolution": "Evolution",
+        "locations": "Locations"
       },
-      "navigation": {
-        "previous_pokemon": "Previous Pokemon",
-        "next_pokemon": "Next Pokemon"
+      "content": {
+        "available": "Available",
+        "locked": "Locked"
       }
+    },
+    "navigation": {
+      "previous_pokemon": "Previous Pokemon",
+      "next_pokemon": "Next Pokemon"
     }
+  }
 }

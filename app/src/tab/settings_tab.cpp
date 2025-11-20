@@ -7,6 +7,7 @@
 #include <switch.h>
 #include <sys/stat.h>
 #include <borealis/core/i18n.hpp>
+#include "i18n.hpp"
 
 // Function to check if a file exists
 bool fileExists(const std::string& path) {
@@ -197,6 +198,56 @@ SettingsTab::SettingsTab()
         // Save the selected region index to config
         pkdex::Config::setInt("selected_region_index", selected);
     });
+
+    // Initialize the locale selector
+    // Supported locales list (value) and their display names (label)
+    std::vector<std::string> localeValues = {"en-US", "fr-FR"};
+    std::vector<std::string> localeLabels = {
+        //pkdex::I18n::getStr("pkdex/settings/locales/en-US"),
+        //pkdex::I18n::getStr("pkdex/settings/locales/fr-FR"),
+        "pkdex/settings/locales/en-US"_i18n,
+        "pkdex/settings/locales/fr-FR"_i18n,
+    };
+
+    // Load current preference (default: auto)
+    std::string savedLocale = pkdex::Config::getString("i18n_locale", "en-US");
+    int savedIndex = 0;
+    for (size_t i = 0; i < localeValues.size(); i++)
+    {
+        if (localeValues[i] == savedLocale)
+        {
+            savedIndex = (int)i;
+            break;
+        }
+    }
+
+    localeSelector->init(
+        "pkdex/settings/select_locale"_i18n,
+        localeLabels,
+        savedIndex,
+        // on selection
+        [this, localeValues](int selected) {
+            // Persist selected locale code
+            if (selected >= 0 && selected < (int)localeValues.size())
+                pkdex::Config::setString("i18n_locale", localeValues[selected]);
+
+            // Mark to show restart prompt after the dropdown dismisses
+            this->pendingLocaleRestartPrompt = true;
+        },
+        // on dismiss (called after the dropdown is closed)
+        [this](int /*selected*/) {
+            if (!this->pendingLocaleRestartPrompt)
+                return;
+            this->pendingLocaleRestartPrompt = false;
+
+            auto dialog = new brls::Dialog("pkdex/settings/locale_restart_message"_i18n);
+            dialog->addButton("pkdex/settings/restart_now"_i18n, []() {
+                brls::Application::quit();
+            });
+            dialog->addButton("pkdex/settings/restart_later"_i18n, []() {});
+            dialog->open();
+        }
+    );
 
     // Initialize the toggle for hiding the bottom bar
     bool hideBottomBar = pkdex::Config::getBool("toggle_hide_bottom_bar", false);

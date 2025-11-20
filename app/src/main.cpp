@@ -13,6 +13,7 @@
 #include "tab/settings_tab.hpp"
 #include "tab/changelog_tab.hpp"
 #include "activity/main_activity.hpp"
+#include "i18n.hpp"
 
 #if defined(__PSV__) && defined(BOREALIS_USE_OPENGL)
 // Needed for the OpenGL driver to work
@@ -22,7 +23,7 @@ extern "C" unsigned int sceLibcHeapSize = 2 * 1024 * 1024;
 using namespace brls::literals; // for _i18n
 
 // Set this to true to enable logging to file, false to disable
-const bool ENABLE_FILE_LOGGING = false;
+const bool ENABLE_FILE_LOGGING = true;
 
 int main(int argc, char* argv[])
 {
@@ -50,6 +51,9 @@ int main(int argc, char* argv[])
         }
     }
 
+    // force initialize the locale for i18n - defaults to en-US if not set
+    brls::Platform::APP_LOCALE_DEFAULT = pkdex::Config::getString("i18n_locale", "en-US");
+
     // Init the app and i18n
     if (!brls::Application::init())
     {
@@ -69,8 +73,6 @@ int main(int argc, char* argv[])
 
     // Register region-specific factory methods
     brls::Application::registerXMLView("KantoTab", RecyclingListTab::createKanto);
-    //brls::Application::registerXMLView("JohtoTab", RecyclingListTab::createJohto);
-    //brls::Application::registerXMLView("HoennTab", RecyclingListTab::createHoenn);
     brls::Application::registerXMLView("SinnohTab", RecyclingListTab::createSinnoh);
     brls::Application::registerXMLView("SinnohArceusTab", RecyclingListTab::createSinnohArceus);
     brls::Application::registerXMLView("GalarTab", RecyclingListTab::createGalar);

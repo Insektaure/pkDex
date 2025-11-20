@@ -1,0 +1,114 @@
+{
+  "title": "pkDex - Une encyclopédie Pokémon pour les jeux Nintendo Switch",
+  "tabs": {
+    "kanto": "Kanto (Let's Go! Pikachu & Évoli)",
+    "sinnoh": "Sinnoh (Diamant Étincelant & Perle Scintillante)",
+    "sinnoh_arceus": "└ Sinnoh (Légendes : Arceus)",
+    "galar": "Galar (Épée & Bouclier)",
+    "isle_armor": "└ Isolarmure (DLC 1)",
+    "crown_tundra": "└ Couronneige (DLC 2)",
+    "paldea": "Paldea (Écarlate & Violet)",
+    "kitakami": "└ Septentria (Le Masque Turquoise - DLC 1)",
+    "blueberry_academy": "└ Institut Myrtille (Le Disque Indigo - DLC 2)",
+    "kalos_lza": "Kalos (Légendes : Z-A)",
+    "settings": "Paramètres",
+    "about": "À propos de pkDex",
+    "changelog": "Historique des modifications"
+  },
+  "welcome": "Bienvenue dans l'application pkDex !",
+  "settings": {
+    "regions": {
+      "all_regions": "Toutes les régions",
+      "kanto": "Kanto (LGPE)",
+      "sinnoh": "Sinnoh (DEPS)",
+      "sinnoh_arceus": "Sinnoh (Légendes Arceus)",
+      "galar": "Galar (Épée/Bouclier)",
+      "isle_armor": "Isolarmure (DLC 1 Épée/Bouclier)",
+      "crown_tundra": "Couronneige (DLC 2 Épée/Bouclier)",
+      "paldea": "Paldea (Écarlate/Violet)",
+      "kitakami": "Septentria (DLC 1 Écarlate/Violet)",
+      "blueberry_academy": "Institut Myrtille (DLC 2 Écarlate/Violet)",
+      "kalos_lza": "Kalos (Légendes Z-A)"
+    },
+    "locales": {
+      "en-US": "English (US)",
+      "fr-FR": "Français (France)"
+    },
+    "i18n_title": "Langue",
+    "select_locale": "Sélectionner la langue",
+    "select_region_to_reset": "Sélectionner la région à réinitialiser",
+    "reset_confirm_all": "Êtes-vous sûr de vouloir réinitialiser le statut de capture de tous les Pokémon pour toutes les régions ? Cette action est irréversible.",
+    "reset_confirm_region": "Êtes-vous sûr de vouloir réinitialiser le statut de capture de tous les Pokémon pour la région {region} ? Cette action est irréversible.",
+    "reset_success_all": "Le statut de capture de tous les Pokémon a été réinitialisé.",
+    "reset_success_region": "Le statut de capture des Pokémon pour la région {region} a été réinitialisé.",
+    "reset_failure": "Échec de la réinitialisation du statut de capture des Pokémon.",
+    "reset_button": "Réinitialiser",
+    "cancel_button": "Annuler",
+    "settings": "Paramètres",
+    "error_tab_frame": "Impossible de trouver tabFrame dans main.xml",
+    "check_updates": "Vérifier les mises à jour",
+    "launch_updater": "Lancer le programme de mise à jour",
+    "reset_capture_status": "Réinitialiser le statut de capture",
+    "hide_bottom_bar": "Masquer la barre inférieure",
+    "download_high_res_images": "Télécharger le pack d'images HD (~ 75Mo)",
+    "extract_high_res_images": "Extraire le pack d'images HD",
+    "changelog_content": "Contenu de l'historique",
+    "updates": "Mises à jour",
+    "check_updates_on_launch": "Vérifier les mises à jour au lancement",
+    "pokemon_data": "Données Pokémon",
+    "user_interface": "Interface utilisateur",
+    "resources": "Ressources",
+    "locale_restart_message": "Le changement de langue sera appliqué après le redémarrage de l'application.",
+    "restart_now": "Redémarrer maintenant",
+    "restart_later": "Plus tard"
+  },
+  "about": {
+    "title": "pkDex\nv1.5.2",
+    "description": "pkDex est une application simple pour consulter les données Pokémon hors ligne, pour les jeux Nintendo Switch.",
+    "github": "Retrouvez-le sur github.com/Insektaure/pkDex",
+    "licence": "Sous licence Apache 2.0",
+    "logo_credit": "Logo généré avec InvokeAI"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Annuler",
+    "back": "Retour",
+    "exit": "Quitter",
+    "exit_hint": "Quitter pkDex ?",
+    "open": "Ouvrir",
+    "on": "Activé",
+    "off": "Désactivé",
+    "delete": "Supprimer",
+    "save": "Enregistrer",
+    "input": "Veuillez saisir...",
+    "submit": "Valider",
+    "close": "Fermer"
+  },
+  "listing": {
+    "previous_page": "Page précédente",
+    "next_page": "Page suivante",
+    "toggle_capture_status": "Changer le statut de capture"
+  },
+  "view": {
+    "infos": {
+      "captured": "Capturé",
+      "title": {
+        "national_number": "N° National",
+        "regional_number": "N° Régional",
+        "shiny": "Chromatique",
+        "type": "Type",
+        "version": "Exclusivité Version",
+        "evolution": "Évolution",
+        "locations": "Emplacements"
+      },
+      "content": {
+        "available": "Disponible",
+        "locked": "Verrouillé"
+      }
+    },
+    "navigation": {
+      "previous_pokemon": "Pokémon précédent",
+      "next_pokemon": "Pokémon suivant"
+    }
+  }
+}

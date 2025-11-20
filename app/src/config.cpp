@@ -190,4 +190,18 @@ bool Config::setInt(const std::string& key, int value) {
     return updateConfigKey(key, std::to_string(value));
 }
 
+std::string Config::getString(const std::string& key, const std::string& defaultValue)
+{
+    auto config = readConfigFile();
+    auto it = config.find(key);
+    if (it == config.end())
+        return defaultValue;
+    return it->second;
+}
+
+bool Config::setString(const std::string& key, const std::string& value)
+{
+    return updateConfigKey(key, value);
+}
+
 } // namespace pkdex

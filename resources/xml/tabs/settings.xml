@@ -67,6 +67,17 @@
             <brls:Header
                     width="auto"
                     height="auto"
+                    title="@i18n/pkdex/settings/i18n_title"
+                    marginTop="10px"
+                    marginBottom="10px"/>
+
+            <brls:SelectorCell
+                    title="@i18n/pkdex/settings/select_locale"
+                    id="localeSelector"/>
+
+            <brls:Header
+                    width="auto"
+                    height="auto"
                     title="@i18n/pkdex/settings/resources"
                     marginTop="10px"
                     marginBottom="10px"/>
