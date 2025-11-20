@@ -50,7 +50,7 @@
     "launch_updater": "Launch Updater",
     "reset_capture_status": "Reset Capture Status",
     "hide_bottom_bar": "Hide Bottom Bar",
-    "download_high_res_images": "Download High-Res Image Pack (~ 75Mo)",
+    "download_high_res_images": "Download High-Res Image Pack (75MB)",
     "extract_high_res_images": "Extract High-Res Image Pack",
     "changelog_content": "Changelog Content",
     "updates": "Updates",
@@ -60,7 +60,15 @@
     "resources": "Resources",
     "locale_restart_message": "The language change will apply after restarting the app.",
     "restart_now": "Restart Now",
-    "restart_later": "Later"
+    "restart_later": "Later",
+    "updater_app_missing": "The updater application is missing. Would you like to download it now?",
+    "updater_app_launch": "This will close pkDex and launch the updater. Make sure you have downloaded an update first.",
+    "update_file_redownload": "An update file already exists. Do you want to redownload it ?",
+    "img_pack_extraction_confirm": "Extract high-resolution image pack ?\n\nThis may take a while.",
+    "img_pack_extraction_failure": "Extraction failed. Please try again or extract the zip file manually.",
+    "img_pack_keep_zipfile": "Extraction complete !\nHigh-resolution images are now available.\n\nDo you want to keep the downloaded zip file ?",
+    "img_pack_redownload": "High-resolution image pack already exists.\n\nDo you want to redownload it ?",
+    "img_pack_download_complete": "Download complete !\n\nHigh-resolution images are now available for extraction.\n\nUse the 'Extract High-Res Image Pack' button in Settings."
   },
   "about": {
     "title": "pkDex\nv1.5.2",
@@ -82,7 +90,12 @@
     "save": "Save",
     "input": "Please input...",
     "submit": "Submit",
-    "close": "Close"
+    "close": "Close",
+    "redownload": "Redownload",
+    "extract": "Extract",
+    "keep": "Keep",
+    "download": "Download",
+    "launch": "Launch"
   },
   "listing": {
     "previous_page": "Previous Page",

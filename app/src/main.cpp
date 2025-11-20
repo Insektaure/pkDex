@@ -13,7 +13,6 @@
 #include "tab/settings_tab.hpp"
 #include "tab/changelog_tab.hpp"
 #include "activity/main_activity.hpp"
-#include "i18n.hpp"
 
 #if defined(__PSV__) && defined(BOREALIS_USE_OPENGL)
 // Needed for the OpenGL driver to work

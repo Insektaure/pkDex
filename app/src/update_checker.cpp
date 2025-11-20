@@ -12,6 +12,8 @@
 #include <errno.h>
 #include <fcntl.h>
 
+using namespace brls::literals; // for _i18n
+
 // Function to create directory recursively
 bool createDirRecursively(const std::string& path) {
     brls::Logger::debug("Creating directory: {}", path);
@@ -437,10 +439,10 @@ bool downloadLatestVersion(const std::string& version) {
 
     if (fileExists) {
         // File exists, ask user if they want to redownload
-        auto dialog = new brls::Dialog("An update file already exists. Do you want to redownload it ?");
+        auto dialog = new brls::Dialog("pkdex/settings/update_file_redownload"_i18n);
 
         // Add redownload button
-        dialog->addButton("Redownload", [version, downloadUrl, filename]() {
+        dialog->addButton("pkdex/common/redownload"_i18n, [version, downloadUrl, filename]() {
             // Delete the existing file
             if (remove(filename.c_str()) != 0) {
                 brls::Application::notify("Failed to delete existing update file. Please delete it manually.");
@@ -458,7 +460,7 @@ bool downloadLatestVersion(const std::string& version) {
         });
 
         // Add cancel button
-        dialog->addButton("Cancel", []() {
+        dialog->addButton("pkdex/common/cancel"_i18n, []() {
             // Do nothing, dialog will close automatically
             brls::Application::notify("Download canceled. Existing update file kept.");
         });
@@ -725,10 +727,10 @@ bool downloadHighResImagePack() {
 
     if (fileExists) {
         // File exists, ask user if they want to redownload
-        auto dialog = new brls::Dialog("High-resolution image pack already exists.\n\nDo you want to redownload it ?");
+        auto dialog = new brls::Dialog("pkdex/settings/img_pack_redownload"_i18n);
 
         // Add redownload button
-        dialog->addButton("Redownload", [filename]() {
+        dialog->addButton("pkdex/common/redownload"_i18n, [filename]() {
             // Delete the existing file
             if (remove(filename.c_str()) != 0) {
                 brls::Application::notify("Failed to delete existing file. Please delete it manually.");
@@ -814,10 +816,10 @@ bool downloadHighResImagePack() {
 
                         brls::sync([]() {
                             // Create a dialog to inform the user that the download is complete
-                            auto dialog = new brls::Dialog("Download complete !\n\nHigh-resolution images are now available for extraction.\n\nUse the 'Extract High-Res Image Pack' button in Settings.");
+                            auto dialog = new brls::Dialog("pkdex/settings/img_pack_download_complete"_i18n);
 
                             // Add OK button
-                            dialog->addButton("OK", []() {
+                            dialog->addButton("pkdex/common/ok"_i18n, []() {
                                 // Dialog will close automatically
                             });
 
@@ -850,7 +852,7 @@ bool downloadHighResImagePack() {
         });
 
         // Add cancel button
-        dialog->addButton("Cancel", []() {
+        dialog->addButton("pkdex/common/cancel"_i18n, []() {
             // Do nothing, dialog will close automatically
             brls::Application::notify("Download canceled. Existing file kept.");
         });
@@ -939,10 +941,10 @@ bool downloadHighResImagePack() {
 
                 brls::sync([]() {
                     // Create a dialog to inform the user that the download is complete
-                    auto dialog = new brls::Dialog("Download complete !\n\nHigh-resolution images are now available for extraction.\n\nUse the 'Extract High-Res Image Pack' button in Settings.");
+                    auto dialog = new brls::Dialog("pkdex/settings/img_pack_download_complete"_i18n);
 
                     // Add OK button
-                    dialog->addButton("OK", []() {
+                    dialog->addButton("pkdex/common/ok"_i18n, []() {
                         // Dialog will close automatically
                     });
 
@@ -990,10 +992,10 @@ bool extractHighResImagePack() {
     }
 
     // Show a dialog to confirm extraction
-    auto dialog = new brls::Dialog("Extract high-resolution image pack ?\n\nThis may take a while.");
+    auto dialog = new brls::Dialog("pkdex/settings/img_pack_extraction_confirm"_i18n);
 
     // Add extract button
-    dialog->addButton("Extract", [zipFilePath, extractPath]() {
+    dialog->addButton("pkdex/common/extract"_i18n, [zipFilePath, extractPath]() {
         // Create a box to hold the progress components
         brls::Box* progressBox = new brls::Box();
         progressBox->setAxis(brls::Axis::COLUMN);
@@ -1069,23 +1071,23 @@ bool extractHighResImagePack() {
                 progressDialog->close();
 
                 if (!extractSuccess) {
-                    auto resultDialog = new brls::Dialog("Extraction failed. Please try again or extract the zip file manually.");
-                    resultDialog->addButton("OK", []() {
+                    auto resultDialog = new brls::Dialog("pkdex/settings/img_pack_extraction_failure"_i18n);
+                    resultDialog->addButton("pkdex/common/ok"_i18n, []() {
                         // Dialog will close automatically
                     });
                     resultDialog->open();
                 } else {
                     // Ask user if they want to keep the downloaded zip file
-                    auto resultDialog = new brls::Dialog("Extraction complete !\nHigh-resolution images are now available.\n\nDo you want to keep the downloaded zip file ?");
+                    auto resultDialog = new brls::Dialog("pkdex/settings/img_pack_keep_zipfile"_i18n);
 
                     // Add "Keep" button
-                    resultDialog->addButton("Keep", []() {
+                    resultDialog->addButton("pkdex/common/keep"_i18n, []() {
                         // Do nothing, just keep the file
                         brls::Application::notify("Zip file has been kept.");
                     });
 
                     // Add "Delete" button
-                    resultDialog->addButton("Delete", [zipFilePath]() {
+                    resultDialog->addButton("pkdex/common/delete"_i18n, [zipFilePath]() {
                         // Delete the zip file
                         if (std::remove(zipFilePath.c_str()) == 0) {
                             brls::Application::notify("Zip file has been deleted.");
@@ -1101,7 +1103,7 @@ bool extractHighResImagePack() {
     });
 
     // Add cancel button
-    dialog->addButton("Cancel", []() {
+    dialog->addButton("pkdex/common/cancel"_i18n, []() {
         // Do nothing, dialog will close automatically
     });
 
@@ -1126,12 +1128,12 @@ bool manualCheckForUpdates() {
         auto dialog = new brls::Dialog("New version available: " + newVersion + " (Current: " + pkdex::CURRENT_VERSION + ")");
 
         // Add download button
-        dialog->addButton("Download", [newVersion]() {
+        dialog->addButton("pkdex/common/download"_i18n, [newVersion]() {
             downloadLatestVersion(newVersion);
         });
 
         // Add cancel button
-        dialog->addButton("Cancel", []() {
+        dialog->addButton("pkdex/common/cancel"_i18n, []() {
             // Do nothing, dialog will close automatically
         });
 

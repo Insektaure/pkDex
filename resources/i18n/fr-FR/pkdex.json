@@ -50,7 +50,7 @@
     "launch_updater": "Lancer le programme de mise à jour",
     "reset_capture_status": "Réinitialiser le statut de capture",
     "hide_bottom_bar": "Masquer la barre inférieure",
-    "download_high_res_images": "Télécharger le pack d'images HD (~ 75Mo)",
+    "download_high_res_images": "Télécharger le pack d'images HD (75Mo)",
     "extract_high_res_images": "Extraire le pack d'images HD",
     "changelog_content": "Contenu de l'historique",
     "updates": "Mises à jour",
@@ -60,7 +60,15 @@
     "resources": "Ressources",
     "locale_restart_message": "Le changement de langue sera appliqué après le redémarrage de l'application.",
     "restart_now": "Redémarrer maintenant",
-    "restart_later": "Plus tard"
+    "restart_later": "Plus tard",
+    "updater_app_missing": "L'application de mise à jour est manquante. Voulez-vous la télécharger maintenant ?",
+    "updater_app_launch": "Cela va fermer pkDex et lancer le programme de mise à jour. Assurez-vous d'avoir téléchargé une mise à jour au préalable.",
+    "update_file_redownload": "Un fichier de mise à jour existe déjà. Voulez-vous le retélécharger ?",
+    "img_pack_extraction_confirm": "Extraire le pack d'images haute résolution ?\n\nCela peut prendre un certain temps.",
+    "img_pack_extraction_failure": "Échec de l'extraction. Veuillez réessayer ou extraire le fichier zip manuellement.",
+    "img_pack_keep_zipfile": "Extraction terminée !\nLes images haute résolution sont maintenant disponibles.\n\nVoulez-vous conserver le fichier zip téléchargé ?",
+    "img_pack_redownload": "Le pack d'images haute résolution existe déjà.\n\nVoulez-vous le retélécharger ?",
+    "img_pack_download_complete": "Téléchargement terminé !\n\nLes images haute résolution sont maintenant disponibles pour l'extraction.\n\nUtilisez le bouton « Extraire le pack d'images HD » dans les paramètres."
   },
   "about": {
     "title": "pkDex\nv1.5.2",
@@ -82,7 +90,12 @@
     "save": "Enregistrer",
     "input": "Veuillez saisir...",
     "submit": "Valider",
-    "close": "Fermer"
+    "close": "Fermer",
+    "redownload": "Retélécharger",
+    "extract": "Extraire",
+    "keep": "Conserver",
+    "download": "Télécharger",
+    "launch": "Lancer"
   },
   "listing": {
     "previous_page": "Page précédente",

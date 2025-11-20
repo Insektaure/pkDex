@@ -7,7 +7,8 @@
 #include <switch.h>
 #include <sys/stat.h>
 #include <borealis/core/i18n.hpp>
-#include "i18n.hpp"
+
+using namespace brls::literals; // for _i18n
 
 // Function to check if a file exists
 bool fileExists(const std::string& path) {
@@ -24,17 +25,17 @@ void launchUpdaterApp() {
     // Check if the updater file exists
     if (!fileExists(updaterPath)) {
         // Show a dialog with option to download the updater
-        auto errorDialog = new brls::Dialog("The updater application is missing. Would you like to download it now?");
+        auto errorDialog = new brls::Dialog("pkdex/settings/updater_app_missing"_i18n);
 
         // Add Download button
-        errorDialog->addButton("Download", []() {
+        errorDialog->addButton("pkdex/common/download"_i18n, []() {
             // Get the current version to use for downloading
             std::string version = pkdex::CURRENT_VERSION;
             downloadUpdater(version);
         });
 
         // Add Cancel button
-        errorDialog->addButton("Cancel", []() {
+        errorDialog->addButton("pkdex/common/cancel"_i18n, []() {
             // Do nothing, dialog will close automatically
         });
 
@@ -44,10 +45,10 @@ void launchUpdaterApp() {
     }
 
     // Show a confirmation dialog
-    auto dialog = new brls::Dialog("This will close pkDex and launch the updater. Make sure you have downloaded an update first.");
+    auto dialog = new brls::Dialog("pkdex/settings/updater_app_launch"_i18n);
 
     // Add confirm button
-    dialog->addButton("Launch", [updaterPath]() {
+    dialog->addButton("pkdex/common/launch"_i18n, [updaterPath]() {
         // Set the next application to load when this one exits
         envSetNextLoad(updaterPath, "");
 
@@ -56,7 +57,7 @@ void launchUpdaterApp() {
     });
 
     // Add cancel button
-    dialog->addButton("Cancel", []() {
+    dialog->addButton("pkdex/common/cancel"_i18n, []() {
         // Do nothing, dialog will close automatically
     });
 
@@ -209,7 +210,7 @@ SettingsTab::SettingsTab()
         "pkdex/settings/locales/fr-FR"_i18n,
     };
 
-    // Load current preference (default: auto)
+    // Load current preference (default: en-US)
     std::string savedLocale = pkdex::Config::getString("i18n_locale", "en-US");
     int savedIndex = 0;
     for (size_t i = 0; i < localeValues.size(); i++)
