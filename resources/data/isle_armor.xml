@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pokedex region="isle_of_armor">
+<pokedex region="isle_armor">
     <pokemon id="079" name="Slowpoke" regionalDexNumber="001" type="Psychic">
         <evolution>Slowpoke – Galarica Cuff → Slowbro | – Galarica Wreath → Slowking</evolution>
         <locations>Fields of Honor</locations>
