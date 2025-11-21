@@ -1,1456 +1,1213 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pokedex region="sinnoh_arceus">
-
     <pokemon id="722" name="Rowlet" regionalDexNumber="001" type="Grass / Flying">
         <evolution>Rowlet – Lvl 17 → Dartrix – Lvl 36 → Decidueye</evolution>
         <locations>Jubilife Village, Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="723" name="Dartrix" regionalDexNumber="002" type="Grass / Flying">
         <evolution>Rowlet – Lvl 17 → Dartrix – Lvl 36 → Decidueye</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="724" name="Decidueye" regionalDexNumber="003" type="Grass / Fighting">
         <evolution>Rowlet – Lvl 17 → Dartrix – Lvl 36 → Decidueye</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="155" name="Cyndaquil" regionalDexNumber="004" type="Fire">
         <evolution>Cyndaquil – Lvl 17 → Quilava – Lvl 36 → Typhlosion</evolution>
         <locations>Jubilife Village, Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="156" name="Quilava" regionalDexNumber="005" type="Fire">
         <evolution>Cyndaquil – Lvl 17 → Quilava – Lvl 36 → Typhlosion</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="157" name="Typhlosion" regionalDexNumber="006" type="Fire / Ghost">
         <evolution>Cyndaquil – Lvl 17 → Quilava – Lvl 36 → Typhlosion</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="501" name="Oshawott" regionalDexNumber="007" type="Water">
         <evolution>Oshawott – Lvl 17 → Dewott – Lvl 36 → Samurott</evolution>
         <locations>Jubilife Village, Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="502" name="Dewott" regionalDexNumber="008" type="Water">
         <evolution>Oshawott – Lvl 17 → Dewott – Lvl 36 → Samurott</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="503" name="Samurott" regionalDexNumber="009" type="Water / Dark">
         <evolution>Oshawott – Lvl 17 → Dewott – Lvl 36 → Samurott</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="399" name="Bidoof" regionalDexNumber="010" type="Normal">
         <evolution>Bidoof – Lvl 15 → Bibarel</evolution>
         <locations>Aspiration Hill, Horseshoe Plains, Tidewater Dam, Droning Meadow, Gapejaw Bog, Ursa's Ring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="400" name="Bibarel" regionalDexNumber="011" type="Normal / Water">
         <evolution>Bidoof – Lvl 15 → Bibarel</evolution>
         <locations>Tidewater Dam, Droning Meadow, Gapejaw Bog, Ursa's Ring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="396" name="Starly" regionalDexNumber="012" type="Normal / Flying">
         <evolution>Starly – Lvl 14 → Staravia – Lvl 34 → Staraptor</evolution>
         <locations>Aspiration Hill, Horseshoe Plains, Tidewater Dam, Deadwood Haunt, Ginkgo Landing, Windswept Run</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="397" name="Staravia" regionalDexNumber="013" type="Normal / Flying">
         <evolution>Starly – Lvl 14 → Staravia – Lvl 34 → Staraptor</evolution>
         <locations>Nature’s Pantry, Sandgem Flats, Tidewater Dam, Ramanas Island</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="398" name="Staraptor" regionalDexNumber="014" type="Normal / Flying">
         <evolution>Starly – Lvl 14 → Staravia – Lvl 34 → Staraptor</evolution>
         <locations>Nature’s Pantry</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="403" name="Shinx" regionalDexNumber="015" type="Electric">
         <evolution>Shinx – Lvl 15 → Luxio – Lvl 30 → Luxray</evolution>
         <locations>Aspiration Hill, Oreburrow Tunnel, Floaro Gardens</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="404" name="Luxio" regionalDexNumber="016" type="Electric">
         <evolution>Shinx – Lvl 15 → Luxio – Lvl 30 → Luxray</evolution>
         <locations>Oreburrow Tunnel, Sandgem Flats, Floaro Gardens</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="405" name="Luxray" regionalDexNumber="017" type="Electric">
         <evolution>Shinx – Lvl 15 → Luxio – Lvl 30 → Luxray</evolution>
         <locations>Sandgem Flats, Cloudcap Pass, Heavenward Lookout, Sacred Plaza, Sonorous Path</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="265" name="Wurmple" regionalDexNumber="018" type="Bug">
         <evolution>Wurmple – Lvl 7 → Silcoon – Lvl 10 → Beautifly | – Lvl 7 → Cascoon – Lvl 10 → Dustox</evolution>
         <locations>Horseshoe Plains, The Heartwood, Floaro Gardens</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="266" name="Silcoon" regionalDexNumber="019" type="Bug">
         <evolution>Wurmple – Lvl 7 → Silcoon – Lvl 10 → Beautifly</evolution>
         <locations>The Heartwood, Floaro Gardens</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="267" name="Beautifly" regionalDexNumber="020" type="Bug / Flying">
         <evolution>Wurmple – Lvl 7 → Silcoon – Lvl 10 → Beautifly</evolution>
         <locations>The Heartwood, Grueling Grove, Floaro Gardens, Veilstone Cape</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="268" name="Cascoon" regionalDexNumber="021" type="Bug">
         <evolution>Wurmple – Lvl 7 → Cascoon – Lvl 10 → Dustox</evolution>
         <locations>The Heartwood, Floaro Gardens</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="269" name="Dustox" regionalDexNumber="022" type="Bug / Poison">
         <evolution>Wurmple – Lvl 7 → Cascoon – Lvl 10 → Dustox</evolution>
         <locations>The Heartwood, Grueling Grove, Floaro Gardens, Veilstone Cape</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="077" name="Ponyta" regionalDexNumber="023" type="Fire">
         <evolution>Ponyta – Lvl 40 → Rapidash</evolution>
         <locations>Horseshoe Plains</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="078" name="Rapidash" regionalDexNumber="024" type="Fire">
         <evolution>Ponyta – Lvl 40 → Rapidash</evolution>
         <locations>Horseshoe Plains</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="133" name="Eevee" regionalDexNumber="025" type="Normal">
         <evolution>Eevee → Vaporeon | Jolteon | Flareon | Espeon | Umbreon | Leafeon | Glaceon | Sylveon</evolution>
         <locations>Horseshoe Plains, Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="134" name="Vaporeon" regionalDexNumber="026" type="Water">
         <evolution>Eevee – Water Stone → Vaporeon</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="135" name="Jolteon" regionalDexNumber="027" type="Electric">
         <evolution>Eevee – Thunder Stone → Jolteon</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="136" name="Flareon" regionalDexNumber="028" type="Fire">
         <evolution>Eevee – Fire Stone → Flareon</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="196" name="Espeon" regionalDexNumber="029" type="Psychic">
         <evolution>Eevee – High Friendship, Daytime → Espeon</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="197" name="Umbreon" regionalDexNumber="030" type="Dark">
         <evolution>Eevee – High Friendship, Nighttime → Umbreon</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="470" name="Leafeon" regionalDexNumber="031" type="Grass">
         <evolution>Eevee – Leaf Stone → Leafeon</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="471" name="Glaceon" regionalDexNumber="032" type="Ice">
         <evolution>Eevee – Ice Stone → Glaceon</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="700" name="Sylveon" regionalDexNumber="033" type="Fairy">
         <evolution>Eevee – after learning Fairy move + High Friendship → Sylveon</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="041" name="Zubat" regionalDexNumber="034" type="Poison / Flying">
         <evolution>Zubat – Lvl 22 → Golbat – High Friendship → Crobat</evolution>
         <locations>Deertrack Path, Oreburrow Tunnel, Nature’s Pantry, The Heartwood, Bolderoll Slope, Cloudpool Ridge, Diamond Heath</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="042" name="Golbat" regionalDexNumber="035" type="Poison / Flying">
         <evolution>Zubat – Lvl 22 → Golbat – High Friendship → Crobat</evolution>
         <locations>Oreburrow Tunnel, Bolderoll Slope, Cloudpool Ridge, Diamond Heath, Heavenward Lookout, Snowpoint Temple, Wayward Cave</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="169" name="Crobat" regionalDexNumber="036" type="Poison / Flying">
         <evolution>Zubat – Lvl 22 → Golbat – High Friendship → Crobat</evolution>
         <locations>Icebound Falls, Wayward Cave</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="425" name="Drifloon" regionalDexNumber="037" type="Ghost / Flying">
         <evolution>Drifloon – Lvl 28 → Drifblim</evolution>
         <locations>Aspiration Hill, Horseshoe Plains, Floaro Gardens, Ramanas Island</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="426" name="Drifblim" regionalDexNumber="038" type="Ghost / Flying">
         <evolution>Drifloon – Lvl 28 → Drifblim</evolution>
         <locations>Sandgem Flats, Bathers' Lagoon, Deadwood Haunt, Ginkgo Landing, Ramanas Island, Tranquility Cove</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="401" name="Kricketot" regionalDexNumber="039" type="Bug">
         <evolution>Kricketot – Lvl 10 → Kricketune</evolution>
         <locations>Deertrack Path, Nature’s Pantry, Cloudpool Ridge, Golden Lowlands, Windswept Run</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="402" name="Kricketune" regionalDexNumber="040" type="Bug">
         <evolution>Kricketot – Lvl 10 → Kricketune</evolution>
         <locations>Nature’s Pantry, Cloudpool Ridge, Golden Lowlands</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="418" name="Buizel" regionalDexNumber="041" type="Water">
         <evolution>Buizel – Lvl 26 → Floatzel</evolution>
         <locations>Horseshoe Plains, Aipom Hill, Bathers' Lagoon, Windswept Run, Worn Bridge</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="419" name="Floatzel" regionalDexNumber="042" type="Water">
         <evolution>Buizel – Lvl 26 → Floatzel</evolution>
         <locations>Aipom Hill, Bathers' Lagoon, Worn Bridge</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="412" name="Burmy" regionalDexNumber="043" type="Bug">
         <evolution>Burmy – Lvl 20, Female → Wormadam | – Lvl 20, Male → Mothim</evolution>
         <locations>Lake Acuity, Aspiration Hill, Horseshoe Plains, Deertrack Path, Deertrack Heights, Nature’s Pantry, Grueling Grove, Tidewater Dam, Avalanche Slopes, Bathers' Lagoon, Bonechill Wastes, Celestica Ruins, Celestica Trail, Cloudpool Ridge, Crossing Slope, Deadwood Haunt, Droning Meadow, Gapejaw Bog, Ginkgo Landing, Glacier Terrace, Golden Lowlands, Heavenward Lookout, Sacred Plaza, Shrouded Ruins, Stonetooth Rows, Tranquility Cove, Ursa's Ring, Veilstone Cape</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="413" name="Wormadam" regionalDexNumber="044" type="Bug / Grass">
         <evolution>Burmy – Lvl 20, Female → Wormadam | – Lvl 20, Male → Mothim</evolution>
         <locations>Lake Acuity, Aspiration Hill, Horseshoe Plains, Grueling Grove, Sandgem Flats, Tidewater Dam, Avalanche Slopes, Bathers' Lagoon, Bonechill Wastes, Celestica Ruins, Celestica Trail, Crossing Slope, Deadwood Haunt, Droning Meadow, Gapejaw Bog, Ginkgo Landing, Glacier Terrace, Golden Lowlands, Heavenward Lookout, Sacred Plaza, Stonetooth Rows, Tranquility Cove, Ursa's Ring, Veilstone Cape</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="414" name="Mothim" regionalDexNumber="045" type="Bug / Flying">
         <evolution>Burmy – Lvl 20, Female → Wormadam | – Lvl 20, Male → Mothim</evolution>
         <locations>Grueling Grove, Aipom Hill, Ginkgo Landing, Spring Path, Veilstone Cape, Wayward Wood</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="074" name="Geodude" regionalDexNumber="046" type="Rock / Ground">
         <evolution>Geodude – Lvl 25 → Graveler – Trade → Golem</evolution>
         <locations>Deertrack Heights, Oreburrow Tunnel, Aipom Hill, Bathers' Lagoon, Bolderoll Ravine, Bolderoll Slope, Celestica Ruins, Clamberclaw Cliffs, Gapejaw Bog, Ginkgo Landing, Scarlet Bog, Ursa's Ring, Veilstone Cape, Worn Bridge</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="075" name="Graveler" regionalDexNumber="047" type="Rock / Ground">
         <evolution>Geodude – Lvl 25 → Graveler – Trade → Golem</evolution>
         <locations>Oreburrow Tunnel, Sandgem Flats, Bolderoll Ravine, Bolderoll Slope, Celestica Ruins, Clamberclaw Cliffs, Firespit Island, Gapejaw Bog, Heavenward Lookout, Islespy Shore, Scarlet Bog, Snowpoint Temple, Spring Path, Ursa's Ring, Windbreak Stand</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="076" name="Golem" regionalDexNumber="048" type="Rock / Ground">
         <evolution>Geodude – Lvl 25 → Graveler – Trade → Golem</evolution>
         <locations>Bolderoll Ravine</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="234" name="Stantler" regionalDexNumber="049" type="Normal">
         <evolution>Stantler – use Psyshield Bash 20 times in Agile Style → Wyrdeer</evolution>
         <locations>Deertrack Heights, Wayward Wood, Windbreak Stand</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="899" name="Wyrdeer" regionalDexNumber="050" type="Normal / Psychic">
         <evolution>Stantler – use Psyshield Bash 20 times in Agile Style → Wyrdeer</evolution>
         <locations>Evolve Stantler</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="446" name="Munchlax" regionalDexNumber="051" type="Normal">
         <evolution>Munchlax – High Friendship → Snorlax</evolution>
         <locations>Deertrack Heights, Snowfall Hot Spring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="143" name="Snorlax" regionalDexNumber="052" type="Normal">
         <evolution>Munchlax – High Friendship → Snorlax</evolution>
         <locations>Sandgem Flats, Snowfall Hot Spring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="046" name="Paras" regionalDexNumber="053" type="Bug / Grass">
         <evolution>Paras – Lvl 24 → Parasect</evolution>
         <locations>Nature’s Pantry, Cloudpool Ridge, Cottonsedge Prairie, Diamond Heath, Golden Lowlands, Heavenward Lookout, Wayward Wood, Windbreak Stand</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="047" name="Parasect" regionalDexNumber="054" type="Bug / Grass">
         <evolution>Paras – Lvl 24 → Parasect</evolution>
         <locations>Nature’s Pantry, Cloudpool Ridge, Cottonsedge Prairie, Diamond Heath, Golden Lowlands, Heavenward Lookout, Wayward Wood, Windbreak Stand</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="172" name="Pichu" regionalDexNumber="055" type="Electric">
         <evolution>Pichu – High Friendship → Pikachu – Thunder Stone → Raichu</evolution>
         <locations>Nature’s Pantry, Floaro Gardens, Golden Lowlands</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="025" name="Pikachu" regionalDexNumber="056" type="Electric">
         <evolution>Pichu – High Friendship → Pikachu – Thunder Stone → Raichu</evolution>
         <locations>Nature’s Pantry, Golden Lowlands</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="026" name="Raichu" regionalDexNumber="057" type="Electric">
         <evolution>Pichu – High Friendship → Pikachu – Thunder Stone → Raichu</evolution>
         <locations>Golden Lowlands</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="063" name="Abra" regionalDexNumber="058" type="Psychic">
         <evolution>Abra – Lvl 16 → Kadabra – Trade → Alakazam</evolution>
         <locations>Sandgem Flats, Lake Acuity, Windswept Run</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="064" name="Kadabra" regionalDexNumber="059" type="Psychic">
         <evolution>Abra – Lvl 16 → Kadabra – Trade → Alakazam</evolution>
         <locations>Sandgem Flats, Lake Acuity, Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="065" name="Alakazam" regionalDexNumber="060" type="Psychic">
         <evolution>Abra – Lvl 16 → Kadabra – Trade → Alakazam</evolution>
         <locations>Sandgem Flats, Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="390" name="Chimchar" regionalDexNumber="061" type="Fire">
         <evolution>Chimchar – Lvl 14 → Monferno – Lvl 36 → Infernape</evolution>
         <locations>Deertrack Heights, Ramanas Island</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="391" name="Monferno" regionalDexNumber="062" type="Fire / Fighting">
         <evolution>Chimchar – Lvl 14 → Monferno – Lvl 36 → Infernape</evolution>
         <locations>Ramanas Island</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="392" name="Infernape" regionalDexNumber="063" type="Fire / Fighting">
         <evolution>Chimchar – Lvl 14 → Monferno – Lvl 36 → Infernape</evolution>
         <locations>Ramanas Island</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="427" name="Buneary" regionalDexNumber="064" type="Normal">
         <evolution>Buneary – High Friendship → Lopunny</evolution>
         <locations>The Heartwood, Bonechill Wastes, Snowfall Hot Spring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="428" name="Lopunny" regionalDexNumber="065" type="Normal">
         <evolution>Buneary – High Friendship → Lopunny</evolution>
         <locations>The Heartwood, Bonechill Wastes, Snowfall Hot Spring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="420" name="Cherubi" regionalDexNumber="066" type="Grass">
         <evolution>Cherubi – Lvl 25 → Cherrim</evolution>
         <locations>The Heartwood, Fabled Spring, Gapejaw Bog, Lonely Spring, Primeval Grotto</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="421" name="Cherrim" regionalDexNumber="067" type="Grass">
         <evolution>Cherubi – Lvl 25 → Cherrim</evolution>
         <locations>The Heartwood, Fabled Spring, Gapejaw Bog, Lonely Spring, Primeval Grotto</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="054" name="Psyduck" regionalDexNumber="068" type="Water">
         <evolution>Psyduck – Lvl 33 → Golduck</evolution>
         <locations>The Heartwood, Bathers' Lagoon, Gapejaw Bog, Golden Lowlands, Holm of Trials, Lonely Spring, Wayward Wood</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="055" name="Golduck" regionalDexNumber="069" type="Water">
         <evolution>Psyduck – Lvl 33 → Golduck</evolution>
         <locations>Bathers' Lagoon, Gapejaw Bog, Golden Lowlands, Holm of Trials, Lonely Spring, Spring Path, Wayward Wood</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="415" name="Combee" regionalDexNumber="070" type="Bug / Flying">
         <evolution>Combee – Lvl 21, Female → Vespiquen</evolution>
         <locations>The Heartwood, Grueling Grove, Aipom Hill, Cloudpool Ridge, Cottonsedge Prairie, Droning Meadow, Lake Valor, Ramanas Island</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="416" name="Vespiquen" regionalDexNumber="071" type="Bug / Flying">
         <evolution>Combee – Lvl 21, Female → Vespiquen</evolution>
         <locations>Cottonsedge Prairie, Droning Meadow, Lake Valor</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="123" name="Scyther" regionalDexNumber="072" type="Bug / Flying">
         <evolution>Scyther – Trade holding Metal Coat → Scizor | – Black Augurite → Kleavor</evolution>
         <locations>Grandtree Arena, Primeval Grotto</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="900" name="Kleavor" regionalDexNumber="073" type="Bug / Rock">
         <evolution>Scyther – Trade holding Metal Coat → Scizor | – Black Augurite → Kleavor</evolution>
         <locations>Evolve Scyther</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="212" name="Scizor" regionalDexNumber="074" type="Bug / Steel">
         <evolution>Scyther – Trade holding Metal Coat → Scizor | – Black Augurite → Kleavor</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="214" name="Heracross" regionalDexNumber="075" type="Bug / Fighting">
         <evolution>-</evolution>
         <locations>Grueling Grove, Lonely Spring, Wayward Wood</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="439" name="Mime Jr." regionalDexNumber="076" type="Psychic / Fairy">
         <evolution>Mime Jr. – After learning Mimic → Mr. Mime</evolution>
         <locations>Horseshoe Plains, Sandgem Flats</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="122" name="Mr. Mime" regionalDexNumber="077" type="Psychic / Fairy">
         <evolution>Mime Jr. – After learning Mimic → Mr. Mime</evolution>
         <locations>Sandgem Flats</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="190" name="Aipom" regionalDexNumber="078" type="Normal">
         <evolution>Aipom – After learning Double Hit → Ambipom</evolution>
         <locations>Aipom Hill, Glacier Terrace, Heart's Crag, Hideaway Bay, Ramanas Island, Snowfall Hot Spring, Whiteout Valley</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="424" name="Ambipom" regionalDexNumber="079" type="Normal">
         <evolution>Aipom – After learning Double Hit → Ambipom</evolution>
         <locations>Aipom Hill, Arena's Approach, Avalanche Slopes, Heart's Crag, Hideaway Bay</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="129" name="Magikarp" regionalDexNumber="080" type="Water">
         <evolution>Magikarp – Lvl 20 → Gyarados</evolution>
         <locations>Obsidian Falls, Lake Verity, Fabled Spring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="130" name="Gyarados" regionalDexNumber="081" type="Water / Flying">
         <evolution>Magikarp – Lvl 20 → Gyarados</evolution>
         <locations>Obsidian Falls, Lake Verity, Primeval Grotto, Sand's Reach</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="422" name="Shellos" regionalDexNumber="082" type="Water">
         <evolution>Shellos – Lvl 30 → Gastrodon</evolution>
         <locations>Sandgem Flats, Ramanas Island, Seagrass Haven, Tranquility Cove</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="423" name="Gastrodon" regionalDexNumber="083" type="Water / Ground">
         <evolution>Shellos – Lvl 30 → Gastrodon</evolution>
         <locations>Sandgem Flats, Ramanas Island, Seagrass Haven</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="211" name="Qwilfish" regionalDexNumber="084" type="Dark / Poison">
         <evolution>Qwilfish – use Barb Barrage 20 times in Strong Style → Overqwil</evolution>
         <locations>Islespy Shore, Lunker's Lair, Ramanas Island, Tranquility Cove</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="904" name="Overqwil" regionalDexNumber="085" type="Dark / Poison">
         <evolution>Qwilfish – use Barb Barrage 20 times in Strong Style → Overqwil</evolution>
         <locations>Evolve Qwilfish</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="440" name="Happiny" regionalDexNumber="086" type="Normal">
         <evolution>Happiny – hold Oval Stone, Daytime → Chansey – High Friendship → Blissey</evolution>
         <locations>Obsidian Falls, Oreburrow Tunnel, Avalanche Slopes, Hideaway Bay</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="113" name="Chansey" regionalDexNumber="087" type="Normal">
         <evolution>Happiny – hold Oval Stone, Daytime → Chansey – High Friendship → Blissey</evolution>
         <locations>Obsidian Falls, Avalanche Slopes, Hideaway Bay, Tombolo Walk</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="242" name="Blissey" regionalDexNumber="088" type="Normal">
         <evolution>Happiny – hold Oval Stone, Daytime → Chansey – High Friendship → Blissey</evolution>
         <locations>Obsidian Falls, Avalanche Slopes</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="406" name="Budew" regionalDexNumber="089" type="Grass / Poison">
         <evolution>Budew – high Friendship, Daytime → Roselia – Shiny Stone → Roserade</evolution>
         <locations>Fabled Spring, Gapejaw Bog, Golden Lowlands</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="315" name="Roselia" regionalDexNumber="090" type="Grass / Poison">
         <evolution>Budew – high Friendship, Daytime → Roselia – Shiny Stone → Roserade</evolution>
         <locations>Cloudpool Ridge, Fabled Spring, Gapejaw Bog</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="407" name="Roserade" regionalDexNumber="091" type="Grass / Poison">
         <evolution>Budew – high Friendship, Daytime → Roselia – Shiny Stone → Roserade</evolution>
         <locations>Cloudpool Ridge</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="455" name="Carnivine" regionalDexNumber="092" type="Grass">
         <evolution>-</evolution>
         <locations>Cloudpool Ridge, Gapejaw Bog, Golden Lowlands, Holm of Trials, Lonely Spring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="548" name="Petilil" regionalDexNumber="093" type="Grass">
         <evolution>Petilil – Sun Stone → Lilligant</evolution>
         <locations>Cottonsedge Prairie, Holm of Trials</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="549" name="Lilligant" regionalDexNumber="094" type="Grass / Fighting">
         <evolution>Petilil – Sun Stone → Lilligant</evolution>
         <locations>Evolve Petilil</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="114" name="Tangela" regionalDexNumber="095" type="Grass">
         <evolution>Tangela – After learning Ancient Power → Tangrowth</evolution>
         <locations>Crossing Slope, Gapejaw Bog</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="465" name="Tangrowth" regionalDexNumber="096" type="Grass">
         <evolution>Tangela – After learning Ancient Power → Tangrowth</evolution>
         <locations>Gapejaw Bog</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="339" name="Barboach" regionalDexNumber="097" type="Water / Ground">
         <evolution>Barboach – Lvl 30 → Whiscash</evolution>
         <locations>Gapejaw Bog, Lake Valor, Wayward Cave</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="340" name="Whiscash" regionalDexNumber="098" type="Water / Ground">
         <evolution>Barboach – Lvl 30 → Whiscash</evolution>
         <locations>Gapejaw Bog, Lake Valor, Wayward Cave</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="453" name="Croagunk" regionalDexNumber="099" type="Poison / Fighting">
         <evolution>Croagunk – Lvl 37 → Toxicroak</evolution>
         <locations>Ancient Quarry, Gapejaw Bog, Holm of Trials, Scarlet Bog</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="454" name="Toxicroak" regionalDexNumber="100" type="Poison / Fighting">
         <evolution>Croagunk – Lvl 37 → Toxicroak</evolution>
         <locations>Ancient Quarry, Holm of Trials, Spring Path</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="280" name="Ralts" regionalDexNumber="101" type="Psychic / Fairy">
         <evolution>Ralts – Lvl 20 → Kirlia – Lvl 30 → Gardevoir | – Dawn Stone, Male → Gallade</evolution>
         <locations>Gapejaw Bog, Heart's Crag, Shrouded Ruins, Snowpoint Temple</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="281" name="Kirlia" regionalDexNumber="102" type="Psychic / Fairy">
         <evolution>Ralts – Lvl 20 → Kirlia – Lvl 30 → Gardevoir | – Dawn Stone, Male → Gallade</evolution>
         <locations>Heart's Crag, Shrouded Ruins, Snowpoint Temple</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="282" name="Gardevoir" regionalDexNumber="103" type="Psychic / Fairy">
         <evolution>Ralts – Lvl 20 → Kirlia – Lvl 30 → Gardevoir</evolution>
         <locations>Heart's Crag</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="475" name="Gallade" regionalDexNumber="104" type="Psychic / Fighting">
         <evolution>Ralts – Lvl 20 → Kirlia – Dawn Stone, Male → Gallade</evolution>
         <locations>Snowpoint Temple</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="193" name="Yanma" regionalDexNumber="105" type="Bug / Flying">
         <evolution>Yanma – After learning Ancient Power → Yanmega</evolution>
         <locations>Droning Meadow, Gapejaw Bog, Heavenward Lookout, Ursa's Ring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="469" name="Yanmega" regionalDexNumber="106" type="Bug / Flying">
         <evolution>Yanma – After learning Ancient Power → Yanmega</evolution>
         <locations>Droning Meadow, Heavenward Lookout</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="449" name="Hippopotas" regionalDexNumber="107" type="Ground">
         <evolution>Hippopotas – Lvl 34 → Hippowdon</evolution>
         <locations>Celestica Trail, Scarlet Bog, Sludge Mound</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="450" name="Hippowdon" regionalDexNumber="108" type="Ground">
         <evolution>Hippopotas – Lvl 34 → Hippowdon</evolution>
         <locations>Celestica Trail, Scarlet Bog, Sludge Mound</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="417" name="Pachirisu" regionalDexNumber="109" type="Electric">
         <evolution>-</evolution>
         <locations>Droning Meadow</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="434" name="Stunky" regionalDexNumber="110" type="Poison / Dark">
         <evolution>Stunky – Lvl 34 → Skuntank</evolution>
         <locations>Ancient Quarry, Scarlet Bog</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="435" name="Skuntank" regionalDexNumber="111" type="Poison / Dark">
         <evolution>Stunky – Lvl 34 → Skuntank</evolution>
         <locations>Ancient Quarry, Scarlet Bog</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="216" name="Teddiursa" regionalDexNumber="112" type="Normal">
         <evolution>Teddiursa – Lvl 30 → Ursaring – use Peat Block, under a full moon → Ursaluna</evolution>
         <locations>Sonorous Path, Ursa's Ring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="217" name="Ursaring" regionalDexNumber="113" type="Normal">
         <evolution>Teddiursa – Lvl 30 → Ursaring – use Peat Block, under a full moon → Ursaluna</evolution>
         <locations>Sonorous Path, Ursa's Ring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="901" name="Ursaluna" regionalDexNumber="114" type="Ground / Normal">
         <evolution>Teddiursa – Lvl 30 → Ursaring – use Peat Block, under a full moon → Ursaluna</evolution>
         <locations>Evolve Teddiursa / Ursaring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="704" name="Goomy" regionalDexNumber="115" type="Dragon">
         <evolution>Goomy – Lvl 40 → Sliggoo – Lvl 50, during rain → Goodra</evolution>
         <locations>Ancient Quarry, Holm of Trials</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="705" name="Sliggoo" regionalDexNumber="116" type="Steel / Dragon">
         <evolution>Goomy – Lvl 40 → Sliggoo – Lvl 50, during rain → Goodra</evolution>
         <locations>Ancient Quarry, Holm of Trials</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="706" name="Goodra" regionalDexNumber="117" type="Steel / Dragon">
         <evolution>Goomy – Lvl 40 → Sliggoo – Lvl 50, during rain → Goodra</evolution>
         <locations>Ancient Quarry</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="095" name="Onix" regionalDexNumber="118" type="Rock / Ground">
         <evolution>Onix – Trade holding Metal Coat → Steelix</evolution>
         <locations>Bolderoll Slope, Celestica Trail, Lake Valor, Scarlet Bog</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="208" name="Steelix" regionalDexNumber="119" type="Steel / Ground">
         <evolution>Onix – Trade holding Metal Coat → Steelix</evolution>
         <locations>Celestica Trail</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="111" name="Rhyhorn" regionalDexNumber="120" type="Ground / Rock">
         <evolution>Rhyhorn – Lvl 42 → Rhydon – Trade holding Protector → Rhyperior</evolution>
         <locations>Bolderoll Slope, Celestica Trail, Diamond Heath, Sacred Plaza, Shrouded Ruins</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="112" name="Rhydon" regionalDexNumber="121" type="Ground / Rock">
         <evolution>Rhyhorn – Lvl 42 → Rhydon – Trade holding Protector → Rhyperior</evolution>
         <locations>Celestica Trail, Sacred Plaza, Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="464" name="Rhyperior" regionalDexNumber="122" type="Ground / Rock">
         <evolution>Rhyhorn – Lvl 42 → Rhydon – Trade holding Protector → Rhyperior</evolution>
         <locations>Sacred Plaza, Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="438" name="Bonsly" regionalDexNumber="123" type="Rock">
         <evolution>Bonsly – after learning Mimic → Sudowoodo</evolution>
         <locations>Celestica Ruins, Cloudpool Ridge</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="185" name="Sudowoodo" regionalDexNumber="124" type="Rock">
         <evolution>Bonsly – after learning Mimic → Sudowoodo</evolution>
         <locations>Celestica Ruins, Cloudpool Ridge</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="108" name="Lickitung" regionalDexNumber="125" type="Normal">
         <evolution>Lickitung – After learning Rollout → Lickilicky</evolution>
         <locations>Avalanche Slopes, Shrouded Ruins, Snowfall Hot Spring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="463" name="Lickilicky" regionalDexNumber="126" type="Normal">
         <evolution>Lickitung – After learning Rollout → Lickilicky</evolution>
         <locations>Avalanche Slopes, Shrouded Ruins</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="175" name="Togepi" regionalDexNumber="127" type="Fairy">
         <evolution>Togepi – High Friendship → Togetic – Shiny Stone → Togekiss</evolution>
         <locations>Bathers' Lagoon, Cottonsedge Prairie, Tranquility Cove</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="176" name="Togetic" regionalDexNumber="128" type="Fairy / Flying">
         <evolution>Togepi – High Friendship → Togetic – Shiny Stone → Togekiss</evolution>
         <locations>Bolderoll Slope, Cottonsedge Prairie, Tranquility Cove</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="468" name="Togekiss" regionalDexNumber="129" type="Fairy / Flying">
         <evolution>Togepi – High Friendship → Togetic – Shiny Stone → Togekiss</evolution>
         <locations>Lake Verity</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="387" name="Turtwig" regionalDexNumber="130" type="Grass">
         <evolution>Turtwig – Lvl 18 → Grotle – Lvl 32 → Torterra</evolution>
         <locations>Droning Meadow</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="388" name="Grotle" regionalDexNumber="131" type="Grass">
         <evolution>Turtwig – Lvl 18 → Grotle – Lvl 32 → Torterra</evolution>
         <locations>Droning Meadow</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="389" name="Torterra" regionalDexNumber="132" type="Grass / Ground">
         <evolution>Turtwig – Lvl 18 → Grotle – Lvl 32 → Torterra</evolution>
         <locations>Holm of Trials</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="137" name="Porygon" regionalDexNumber="133" type="Normal">
         <evolution>Porygon – Trade holding Upgrade) → Porygon2 – Trade holding Dubious Disc → Porygon-Z</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="233" name="Porygon2" regionalDexNumber="134" type="Normal">
         <evolution>Porygon – Trade holding Upgrade) → Porygon2 – Trade holding Dubious Disc → Porygon-Z</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="474" name="Porygon-Z" regionalDexNumber="135" type="Normal">
         <evolution>Porygon – Trade holding Upgrade) → Porygon2 – Trade holding Dubious Disc → Porygon-Z</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="092" name="Gastly" regionalDexNumber="136" type="Ghost / Poison">
         <evolution>Gastly – Lvl 25 → Haunter – Trade → Gengar</evolution>
         <locations>Bolderoll Ravine, Celestica Ruins, Gapejaw Bog, Golden Lowlands, Sacred Plaza, Scarlet Bog, Shrouded Ruins</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="093" name="Haunter" regionalDexNumber="137" type="Ghost / Poison">
         <evolution>Gastly – Lvl 25 → Haunter – Trade → Gengar</evolution>
         <locations>Bolderoll Ravine, Celestica Ruins, Cottonsedge Prairie, Gapejaw Bog, Sacred Plaza, Scarlet Bog, Shrouded Ruins</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="094" name="Gengar" regionalDexNumber="138" type="Ghost / Poison">
         <evolution>Gastly – Lvl 25 → Haunter – Trade → Gengar</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="442" name="Spiritomb" regionalDexNumber="139" type="Ghost / Dark">
         <evolution>-</evolution>
         <locations>Shrouded Ruins, massive mass outbreaks (after completing Request 22)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="198" name="Murkrow" regionalDexNumber="140" type="Dark / Flying">
         <evolution>Murkrow – Dusk Stone → Honchkrow</evolution>
         <locations>Cloudpool Ridge, Crossing Slope, Hideaway Bay, Islespy Shore, Veilstone Cape</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="430" name="Honchkrow" regionalDexNumber="141" type="Dark / Flying">
         <evolution>Murkrow – Dusk Stone → Honchkrow</evolution>
         <locations>Bathers' Lagoon, Cloudpool Ridge</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="201" name="Unown" regionalDexNumber="142" type="Psychic">
         <evolution>-</evolution>
         <locations>Solaceon Ruins, massive mass outbreaks (all 28 forms appear after completing the Unown Research Notes)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="363" name="Spheal" regionalDexNumber="143" type="Ice / Water">
         <evolution>Spheal – Lvl 32 → Sealeo – Lvl 44 → Walrein</evolution>
         <locations>Ginkgo Landing</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="364" name="Sealeo" regionalDexNumber="144" type="Ice / Water">
         <evolution>Spheal – Lvl 32 → Sealeo – Lvl 44 → Walrein</evolution>
         <locations>Islespy Shore</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="365" name="Walrein" regionalDexNumber="145" type="Ice / Water">
         <evolution>Spheal – Lvl 32 → Sealeo – Lvl 44 → Walrein</evolution>
         <locations>Ginkgo Landing, Islespy Shore</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="223" name="Remoraid" regionalDexNumber="146" type="Water">
         <evolution>Remoraid – Lvl 25 → Octillery</evolution>
         <locations>Castaway Shore, Sand's Reach, Tranquility Cove</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="224" name="Octillery" regionalDexNumber="147" type="Water">
         <evolution>Remoraid – Lvl 25 → Octillery</evolution>
         <locations>Castaway Shore, Islespy Shore</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="451" name="Skorupi" regionalDexNumber="148" type="Poison / Bug">
         <evolution>Skorupi – Lvl 40 → Drapion</evolution>
         <locations>Castaway Shore, Ginkgo Landing</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="452" name="Drapion" regionalDexNumber="149" type="Poison / Dark">
         <evolution>Skorupi – Lvl 40 → Drapion</evolution>
         <locations>Ginkgo Landing</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="058" name="Growlithe" regionalDexNumber="150" type="Fire / Rock">
         <evolution>Growlithe – Fire Stone → Arcanine</evolution>
         <locations>Veilstone Cape, Windbreak Stand</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="059" name="Arcanine" regionalDexNumber="151" type="Fire / Rock">
         <evolution>Growlithe – Fire Stone → Arcanine</evolution>
         <locations>Evolve Growlithe</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="431" name="Glameow" regionalDexNumber="152" type="Normal">
         <evolution>Glameow – Lvl 38 → Purugly</evolution>
         <locations>Crossing Slope, Glacier Terrace, Veilstone Cape</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="432" name="Purugly" regionalDexNumber="153" type="Normal">
         <evolution>Glameow – Lvl 38 → Purugly</evolution>
         <locations>Crossing Slope, Glacier Terrace, Veilstone Cape</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="066" name="Machop" regionalDexNumber="154" type="Fighting">
         <evolution>Machop – Lvl 28 → Machoke – Trade → Machamp</evolution>
         <locations>Obsidian Falls, Oreburrow Tunnel, Arena's Approach, Bolderoll Ravine, Castaway Shore, Cloudcap Pass, Icebound Falls, Snowfall Hot Spring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="067" name="Machoke" regionalDexNumber="155" type="Fighting">
         <evolution>Machop – Lvl 28 → Machoke – Trade → Machamp</evolution>
         <locations>Obsidian Falls, Arena's Approach, Bolderoll Ravine, Castaway Shore, Cloudcap Pass, Icebound Falls, Snowfall Hot Spring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="068" name="Machamp" regionalDexNumber="156" type="Fighting">
         <evolution>Machop – Lvl 28 → Machoke – Trade → Machamp</evolution>
         <locations>Arena's Approach</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="441" name="Chatot" regionalDexNumber="157" type="Normal / Flying">
         <evolution>-</evolution>
         <locations>Deadwood Haunt</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="355" name="Duskull" regionalDexNumber="158" type="Ghost">
         <evolution>Duskull – Lvl 37 → Dusclops – Trade holding Reaper Cloth → Dusknoir</evolution>
         <locations>Arena's Approach, Avalanche Slopes, Deadwood Haunt</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="356" name="Dusclops" regionalDexNumber="159" type="Ghost">
         <evolution>Duskull – Lvl 37 → Dusclops – Trade holding Reaper Cloth → Dusknoir</evolution>
         <locations>Arena's Approach, Avalanche Slopes, Deadwood Haunt</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="477" name="Dusknoir" regionalDexNumber="160" type="Ghost">
         <evolution>Duskull – Lvl 37 → Dusclops – Trade holding Reaper Cloth → Dusknoir</evolution>
         <locations>Deadwood Haunt</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="393" name="Piplup" regionalDexNumber="161" type="Water">
         <evolution>Piplup – Lvl 16 → Prinplup – Lvl 36 → Empoleon</evolution>
         <locations>Spring Path</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="394" name="Prinplup" regionalDexNumber="162" type="Water">
         <evolution>Piplup – Lvl 16 → Prinplup – Lvl 36 → Empoleon</evolution>
         <locations>Spring Path</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="395" name="Empoleon" regionalDexNumber="163" type="Water / Steel">
         <evolution>Piplup – Lvl 16 → Prinplup – Lvl 36 → Empoleon</evolution>
         <locations>Islespy Shore</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="458" name="Mantyke" regionalDexNumber="164" type="Water / Flying">
         <evolution>Mantyke – with Remoraid in party → Mantine</evolution>
         <locations>Ginkgo Landing, Tranquility Cove</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="226" name="Mantine" regionalDexNumber="165" type="Water / Flying">
         <evolution>Mantyke – with Remoraid in party → Mantine</evolution>
         <locations>Tranquility Cove</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="550" name="Basculin" regionalDexNumber="166" type="Water">
         <evolution>Basculin – receive 294 recoil damage in battle → Basculegion</evolution>
         <locations>Fabled Spring, Heart's Crag, Islespy Shore, Lake Acuity, Tranquility Cove</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="902" name="Basculegion" regionalDexNumber="167" type="Water / Ghost">
         <evolution>Basculin – receive 294 recoil damage in battle → Basculegion</evolution>
         <locations>Evolve Basculin</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="037" name="Vulpix" regionalDexNumber="168" type="Fire">
         <evolution>Vulpix – Fire Stone → Ninetales</evolution>
         <locations>Veilstone Cape</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="038" name="Ninetales" regionalDexNumber="169" type="Fire">
         <evolution>Vulpix – Fire Stone → Ninetales</evolution>
         <locations>Firespit Island</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="072" name="Tentacool" regionalDexNumber="170" type="Water / Poison">
         <evolution>Tentacool – Lvl 30 → Tentacruel</evolution>
         <locations>Islespy Shore, Lunker's Lair, Seagrass Haven</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="073" name="Tentacruel" regionalDexNumber="171" type="Water / Poison">
         <evolution>Tentacool – Lvl 30 → Tentacruel</evolution>
         <locations>Islespy Shore, Lunker's Lair, Seagrass Haven</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="456" name="Finneon" regionalDexNumber="172" type="Water">
         <evolution>Finneon – Lvl 33 → Lumineon</evolution>
         <locations>Seagrass Haven</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="457" name="Lumineon" regionalDexNumber="173" type="Water">
         <evolution>Finneon – Lvl 33 → Lumineon</evolution>
         <locations>Seagrass Haven</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="240" name="Magby" regionalDexNumber="174" type="Fire">
         <evolution>Magby – Lvl 30 → Magmar – Trade holding Magmarizer → Magmortar</evolution>
         <locations>Firespit Island</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="126" name="Magmar" regionalDexNumber="175" type="Fire">
         <evolution>Magby – Lvl 30 → Magmar – Trade holding Magmarizer → Magmortar</evolution>
         <locations>Firespit Island</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="467" name="Magmortar" regionalDexNumber="176" type="Fire">
         <evolution>Magby – Lvl 30 → Magmar – Trade holding Magmarizer → Magmortar</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="081" name="Magnemite" regionalDexNumber="177" type="Electric / Steel">
         <evolution>Magnemite – Lvl 30 → Magneton – Thunder Stone → Magnezone</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="082" name="Magneton" regionalDexNumber="178" type="Electric / Steel">
         <evolution>Magnemite – Lvl 30 → Magneton – Thunder Stone → Magnezone</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="462" name="Magnezone" regionalDexNumber="179" type="Electric / Steel">
         <evolution>Magnemite – Lvl 30 → Magneton – Thunder Stone → Magnezone</evolution>
         <locations>Celestica Trail, Clamberclaw Cliffs, Fabled Spring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="436" name="Bronzor" regionalDexNumber="180" type="Steel / Psychic">
         <evolution>Bronzor – Lvl 33 → Bronzong</evolution>
         <locations>Ancient Quarry, Celestica Ruins, Clamberclaw Cliffs, Lake Acuity, Stonetooth Rows</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="437" name="Bronzong" regionalDexNumber="181" type="Steel / Psychic">
         <evolution>Bronzor – Lvl 33 → Bronzong</evolution>
         <locations>Ancient Quarry, Celestica Ruins, Clamberclaw Cliffs, Lake Acuity, Stonetooth Rows</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="239" name="Elekid" regionalDexNumber="182" type="Electric">
         <evolution>Elekid – Lvl 30 → Electabuzz – Trade holding Electirizer → Electivire</evolution>
         <locations>Arena's Approach, Cloudcap Pass, Icebound Falls</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="125" name="Electabuzz" regionalDexNumber="183" type="Electric">
         <evolution>Elekid – Lvl 30 → Electabuzz – Trade holding Electirizer → Electivire</evolution>
         <locations>Arena's Approach, Cloudcap Pass, Icebound Falls</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="466" name="Electivire" regionalDexNumber="184" type="Electric">
         <evolution>Elekid – Lvl 30 → Electabuzz – Trade holding Electirizer → Electivire</evolution>
         <locations>Cloudcap Pass</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="207" name="Gligar" regionalDexNumber="185" type="Ground / Flying">
         <evolution>Gligar – Hold Razor Fang, Nighttime → Gliscor</evolution>
         <locations>Primeval Grotto</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="472" name="Gliscor" regionalDexNumber="186" type="Ground / Flying">
         <evolution>Gligar – Hold Razor Fang, Nighttime → Gliscor</evolution>
         <locations>Primeval Grotto</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="443" name="Gible" regionalDexNumber="187" type="Dragon / Ground">
         <evolution>Gible – Lvl 24 → Gabite – Lvl 48 → Garchomp</evolution>
         <locations>Clamberclaw Cliffs, Wayward Cave</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="444" name="Gabite" regionalDexNumber="188" type="Dragon / Ground">
         <evolution>Gible – Lvl 24 → Gabite – Lvl 48 → Garchomp</evolution>
         <locations>Avalanche Slopes, Clamberclaw Cliffs</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="445" name="Garchomp" regionalDexNumber="189" type="Dragon / Ground">
         <evolution>Gible – Lvl 24 → Gabite – Lvl 48 → Garchomp</evolution>
         <locations>Avalanche Slopes</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="299" name="Nosepass" regionalDexNumber="190" type="Rock">
         <evolution>Nosepass – Thunder Stone → Probopass</evolution>
         <locations>Celestica Ruins, Primeval Grotto</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="476" name="Probopass" regionalDexNumber="191" type="Rock / Steel">
         <evolution>Nosepass – Thunder Stone → Probopass</evolution>
         <locations>Primeval Grotto</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="100" name="Voltorb" regionalDexNumber="192" type="Electric / Grass">
         <evolution>Voltorb – Lvl 30 → Electrode</evolution>
         <locations>Sacred Plaza</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="101" name="Electrode" regionalDexNumber="193" type="Electric / Grass">
         <evolution>Voltorb – Lvl 30 → Electrode</evolution>
         <locations>Evolve Voltorb</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="479" name="Rotom" regionalDexNumber="194" type="Electric / Ghost">
         <evolution>-</evolution>
         <locations>Sacred Plaza, Stonetooth Rows</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="433" name="Chingling" regionalDexNumber="195" type="Psychic">
         <evolution>Chingling – High Friendship, Nighttime → Chimecho</evolution>
         <locations>Lake Acuity, Sacred Plaza</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="358" name="Chimecho" regionalDexNumber="196" type="Psychic">
         <evolution>Chingling – High Friendship, Nighttime → Chimecho</evolution>
         <locations>Celestica Trail, Lake Acuity</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="200" name="Misdreavus" regionalDexNumber="197" type="Ghost">
         <evolution>Misdreavus – Dusk Stone → Mismagius</evolution>
         <locations>Celestica Ruins, Sacred Plaza, Stonetooth Rows, Ice Column Chamber</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="429" name="Mismagius" regionalDexNumber="198" type="Ghost">
         <evolution>Misdreavus – Dusk Stone → Mismagius</evolution>
         <locations>Stonetooth Rows</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="173" name="Cleffa" regionalDexNumber="199" type="Fairy">
         <evolution>Cleffa – High Friendship → Clefairy – Moon Stone → Clefable</evolution>
         <locations>Fabled Spring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="035" name="Clefairy" regionalDexNumber="200" type="Fairy">
         <evolution>Cleffa – High Friendship → Clefairy – Moon Stone → Clefable</evolution>
         <locations>Fabled Spring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="036" name="Clefable" regionalDexNumber="201" type="Fairy">
         <evolution>Cleffa – High Friendship → Clefairy – Moon Stone → Clefable</evolution>
         <locations>Fabled Spring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="215" name="Sneasel" regionalDexNumber="202" type="Fighting / Poison">
         <evolution>Sneasel – Razor Claw, Daytime → Sneasler | – Razor Claw, Nighttime → Weavile</evolution>
         <locations>Celestica Trail, Primeval Grotto, Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="903" name="Sneasler" regionalDexNumber="203" type="Fighting / Poison">
         <evolution>Sneasel – Razor Claw, Daytime → Sneasler | – Razor Claw, Nighttime → Weavile</evolution>
         <locations>Evolve Sneasel</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="461" name="Weavile" regionalDexNumber="204" type="Dark / Ice">
         <evolution>Sneasel – Razor Claw, Daytime → Sneasler | – Razor Claw, Nighttime → Weavile</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="361" name="Snorunt" regionalDexNumber="205" type="Ice">
         <evolution>Snorunt – Lvl 42 → Glalie</evolution>
         <locations>Avalanche Slopes, Avalugg's Legacy, Bonechill Wastes, Whiteout Valley</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="362" name="Glalie" regionalDexNumber="206" type="Ice">
         <evolution>Snorunt – Lvl 42 → Glalie</evolution>
         <locations>Avalanche Slopes, Avalugg's Legacy, Bonechill Wastes</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="478" name="Froslass" regionalDexNumber="207" type="Ice / Ghost">
         <evolution>Snorunt – Dawn Stone, Female → Froslass</evolution>
         <locations>Avalanche Slopes, Avalugg's Legacy, Bonechill Wastes, Ice Column Chamber</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="408" name="Cranidos" regionalDexNumber="208" type="Rock">
         <evolution>Cranidos – Lvl 30 → Rampardos</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="409" name="Rampardos" regionalDexNumber="209" type="Rock">
         <evolution>Cranidos – Lvl 30 → Rampardos</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="410" name="Shieldon" regionalDexNumber="210" type="Rock / Steel">
         <evolution>Shieldon – Lvl 30 → Bastiodon</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="411" name="Bastiodon" regionalDexNumber="211" type="Rock / Steel">
         <evolution>Shieldon – Lvl 30 → Bastiodon</evolution>
         <locations>Space-Time Distortion</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="220" name="Swinub" regionalDexNumber="212" type="Ice / Ground">
         <evolution>Swinub – Lvl 33 → Piloswine – after learning Ancient Power → Mamoswine</evolution>
         <locations>Avalanche Slopes, Avalugg's Legacy, Bonechill Wastes</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="221" name="Piloswine" regionalDexNumber="213" type="Ice / Ground">
         <evolution>Swinub – Lvl 33 → Piloswine – after learning Ancient Power → Mamoswine</evolution>
         <locations>Avalanche Slopes, Avalugg's Legacy, Bonechill Wastes</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="473" name="Mamoswine" regionalDexNumber="214" type="Ice / Ground">
         <evolution>Swinub – Lvl 33 → Piloswine – after learning Ancient Power → Mamoswine</evolution>
         <locations>Evolve Swinub / Piloswine</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="712" name="Bergmite" regionalDexNumber="215" type="Ice">
         <evolution>Bergmite – Lvl 37 → Avalugg</evolution>
         <locations>Arena's Approach, Avalugg's Legacy, Ice Column Chamber</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="713" name="Avalugg" regionalDexNumber="216" type="Ice / Rock">
         <evolution>Bergmite – Lvl 37 → Avalugg</evolution>
         <locations>Avalugg's Legacy</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="459" name="Snover" regionalDexNumber="217" type="Grass / Ice">
         <evolution>Snover – Lvl 40 → Abomasnow</evolution>
         <locations>Avalugg's Legacy, Glacier Terrace</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="460" name="Abomasnow" regionalDexNumber="218" type="Grass / Ice">
         <evolution>Snover – Lvl 40 → Abomasnow</evolution>
         <locations>Avalugg's Legacy, Glacier Terrace</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="570" name="Zorua" regionalDexNumber="219" type="Normal / Ghost">
         <evolution>Zorua – Lvl 30 → Zoroark</evolution>
         <locations>Bonechill Wastes</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="571" name="Zoroark" regionalDexNumber="220" type="Normal / Ghost">
         <evolution>Zorua – Lvl 30 → Zoroark</evolution>
         <locations>Bonechill Wastes, Lake Acuity</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="627" name="Rufflet" regionalDexNumber="221" type="Normal / Flying">
         <evolution>Rufflet – Lvl 54 → Braviary</evolution>
         <locations>Snowpoint Temple</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="628" name="Braviary" regionalDexNumber="222" type="Psychic / Flying">
         <evolution>Rufflet – Lvl 54 → Braviary</evolution>
         <locations>Snowpoint Temple</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="447" name="Riolu" regionalDexNumber="223" type="Fighting">
         <evolution>Riolu – High Friendship, Daytime → Lucario</evolution>
         <locations>Icebound Falls, Snowfall Hot Spring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="448" name="Lucario" regionalDexNumber="224" type="Fighting / Steel">
         <evolution>Riolu – High Friendship, Daytime → Lucario</evolution>
         <locations>Icebound Falls, Snowfall Hot Spring</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="480" name="Uxie" regionalDexNumber="225" type="Psychic" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Lake Acuity</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="481" name="Mesprit" regionalDexNumber="226" type="Psychic" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Lake Verity</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="482" name="Azelf" regionalDexNumber="227" type="Psychic" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Lake Valor</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="485" name="Heatran" regionalDexNumber="228" type="Fire / Steel" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Firespit Island</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="486" name="Regigigas" regionalDexNumber="229" type="Normal" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Snowpoint Temple</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="488" name="Cresselia" regionalDexNumber="230" type="Psychic" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Moonview Arena</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="641" name="Tornadus" regionalDexNumber="231" type="Flying" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Bonechill Wastes</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="642" name="Thundurus" regionalDexNumber="232" type="Electric / Flying" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Coastlands Camp</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="645" name="Landorus" regionalDexNumber="233" type="Ground / Flying" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Ramanas Island</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="905" name="Enamorus" regionalDexNumber="234" type="Fairy / Flying" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Scarlet Bog</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="483" name="Dialga" regionalDexNumber="235" type="Steel / Dragon" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Temple of Sinnoh</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="484" name="Palkia" regionalDexNumber="236" type="Water / Dragon" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Temple of Sinnoh</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="487" name="Giratina" regionalDexNumber="237" type="Ghost / Dragon" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Turnback Cave</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="493" name="Arceus" regionalDexNumber="238" type="Normal" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Temple of Sinnoh</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="489" name="Phione" regionalDexNumber="239" type="Water" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Seaside Hollow</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="490" name="Manaphy" regionalDexNumber="240" type="Water" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Seaside Hollow</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="492" name="Shaymin" regionalDexNumber="241" type="Grass" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Floaro Gardens (require save data from Sword / Shield)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="491" name="Darkrai" regionalDexNumber="242" type="Dark" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Clamberclaw Cliffs (require save data from Brilliant Diamond / Shining Pearl)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
 </pokedex>

@@ -1,1205 +1,1004 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pokedex region="kitakami">
-
     <pokemon id="167" name="Spinarak" regionalDexNumber="001" type="Bug / Poison">
         <evolution>Spinarak – Lvl 22 → Ariados</evolution>
         <locations>Kitakami Road, Apple Hills, Loyalty Plaza, Reveler's Road, Kitakami Hall, Mossfell Confluence, Fellhorn Gorge, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="168" name="Ariados" regionalDexNumber="002" type="Bug / Poison">
         <evolution>Spinarak – Lvl 22 → Ariados</evolution>
         <locations>Mossfell Confluence, Fellhorn Gorge, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="193" name="Yanma" regionalDexNumber="003" type="Bug / Flying">
         <evolution>Yanma – After learning Ancient Power → Yanmega</evolution>
         <locations>Kitakami Road, Mossfell Confluence, Oni Mountain, Infernal Pass, Crystal Pool, Wistful Fields, Paradise Barrens, Timeless Woods, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="469" name="Yanmega" regionalDexNumber="004" type="Bug / Flying">
         <evolution>Yanma – After learning Ancient Power → Yanmega</evolution>
         <locations>Evolve Yanma</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="194" name="Wooper" regionalDexNumber="005" type="Water / Ground">
         <evolution>Wooper – Lvl 20 → Quagsire</evolution>
         <locations>Tagtree Thicket, Casseroya Lake, North Province (Area One), North Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area Three), Glaseado Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="195" name="Quagsire" regionalDexNumber="006" type="Water / Ground">
         <evolution>Wooper – Lvl 20 → Quagsire</evolution>
         <locations>Mossfell Confluence, Fellhorn Gorge, Oni Mountain, Infernal Pass, Chilling Waterhead, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="261" name="Poochyena" regionalDexNumber="007" type="Dark">
         <evolution>Poochyena – Lvl 18 → Mightyena</evolution>
         <locations>Kitakami Road, Apple Hills, Loyalty Plaza, Oni Mountain, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="262" name="Mightyena" regionalDexNumber="008" type="Dark">
         <evolution>Poochyena – Lvl 18 → Mightyena</evolution>
         <locations>Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="313" name="Volbeat" regionalDexNumber="009" type="Bug">
         <evolution>-</evolution>
         <locations>Kitakami Road, Apple Hills, Loyalty Plaza, Reveler's Road, Mossfell Confluence, Fellhorn Gorge, Wistful Fields, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="314" name="Illumise" regionalDexNumber="010" type="Bug">
         <evolution>-</evolution>
         <locations>Kitakami Road, Apple Hills, Loyalty Plaza, Reveler's Road, Mossfell Confluence, Fellhorn Gorge, Wistful Fields, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="341" name="Corphish" regionalDexNumber="011" type="Water">
         <evolution>Corphish – Lvl 30 → Crawdaunt</evolution>
         <locations>Kitakami Road, Reveler's Road, Mossfell Confluence, Fellhorn Gorge</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="342" name="Crawdaunt" regionalDexNumber="012" type="Water / Dark">
         <evolution>Corphish – Lvl 30 → Crawdaunt</evolution>
         <locations>Fellhorn Gorge</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="540" name="Sewaddle" regionalDexNumber="013" type="Bug / Grass">
         <evolution>Sewaddle – Lvl 18 → Swadloon – High Friendship → Leavanny</evolution>
         <locations>Kitakami Road, Apple Hills, Loyalty Plaza, Mossfell Confluence, Wistful Fields</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="541" name="Swadloon" regionalDexNumber="014" type="Bug / Grass">
         <evolution>Sewaddle – Lvl 18 → Swadloon – High Friendship → Leavanny</evolution>
         <locations>Mossfell Confluence, Wistful Fields</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="542" name="Leavanny" regionalDexNumber="015" type="Bug / Grass">
         <evolution>Sewaddle – Lvl 18 → Swadloon – High Friendship → Leavanny</evolution>
         <locations>Mossfell Confluence, Wistful Fields</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="742" name="Cutiefly" regionalDexNumber="016" type="Bug / Fairy">
         <evolution>Cutiefly – Lvl 25 → Ribombee</evolution>
         <locations>Kitakami Road, Mossfell Confluence, Wistful Fields, Paradise Barrens</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="743" name="Ribombee" regionalDexNumber="017" type="Bug / Fairy">
         <evolution>Cutiefly – Lvl 25 → Ribombee</evolution>
         <locations>Mossfell Confluence, Wistful Fields</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="023" name="Ekans" regionalDexNumber="018" type="Poison">
         <evolution>Ekans – Lvl 22 → Arbok</evolution>
         <locations>Kitakami Road, Apple Hills, Loyalty Plaza, Reveler's Road, Mossfell Confluence, Fellhorn Gorge, Oni Mountain, Wistful Fields</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="024" name="Arbok" regionalDexNumber="019" type="Poison">
         <evolution>Ekans – Lvl 22 → Arbok</evolution>
         <locations>Mossfell Confluence, Fellhorn Gorge, Oni's Maw</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="172" name="Pichu" regionalDexNumber="020" type="Electric">
         <evolution>Pichu – High Friendship → Pikachu – Thunder Stone → Raichu</evolution>
         <locations>Kitakami Road, Apple Hills, Loyalty Plaza, Reveler's Road, Oni Mountain, Oni's Maw, Infernal Pass, Crystal Pool, Wistful Fields</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="025" name="Pikachu" regionalDexNumber="021" type="Electric">
         <evolution>Pichu – High Friendship → Pikachu – Thunder Stone → Raichu</evolution>
         <locations>Kitakami Road, Apple Hills, Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="026" name="Raichu" regionalDexNumber="022" type="Electric">
         <evolution>Pichu – High Friendship → Pikachu – Thunder Stone → Raichu</evolution>
         <locations>Evolve Pikachu</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="069" name="Bellsprout" regionalDexNumber="023" type="Grass / Poison">
         <evolution>Bellsprout – Lvl 21 → Weepinbell – Leaf Stone → Victreebel</evolution>
         <locations>Kitakami Road, Apple Hills, Loyalty Plaza, Mossfell Confluence</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="070" name="Weepinbell" regionalDexNumber="024" type="Grass / Poison">
         <evolution>Bellsprout – Lvl 21 → Weepinbell – Leaf Stone → Victreebel</evolution>
         <locations>Mossfell Confluence</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="071" name="Victreebel" regionalDexNumber="025" type="Grass / Poison">
         <evolution>Bellsprout – Lvl 21 → Weepinbell – Leaf Stone → Victreebel</evolution>
         <locations>Evolve Bellsprout / Weepinbell</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="161" name="Sentret" regionalDexNumber="026" type="Normal">
         <evolution>Sentret – Lvl 15 → Furret</evolution>
         <locations>Kitakami Road, Apple Hills, Loyalty Plaza, Reveler's Road, Kitakami Hall, Mossfell Confluence</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="162" name="Furret" regionalDexNumber="027" type="Normal">
         <evolution>Sentret – Lvl 15 → Furret</evolution>
         <locations>Kitakami Road, Apple Hills, Reveler's Road, Kitakami Hall, Mossfell Confluence</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="396" name="Starly" regionalDexNumber="028" type="Normal / Flying">
         <evolution>Starly – Lvl 14 → Staravia – Lvl 34 → Staraptor</evolution>
         <locations>Kitakami Road, Apple Hills, Loyalty Plaza, Reveler's Road, Kitakami Hall, Mossfell Confluence, Fellhorn Gorge, Oni Mountain, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="397" name="Staravia" regionalDexNumber="029" type="Normal / Flying">
         <evolution>Starly – Lvl 14 → Staravia – Lvl 34 → Staraptor</evolution>
         <locations>Mossfell Confluence, Fellhorn Gorge, Oni Mountain, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="398" name="Staraptor" regionalDexNumber="030" type="Normal / Flying">
         <evolution>Starly – Lvl 14 → Staravia – Lvl 34 → Staraptor</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="753" name="Fomantis" regionalDexNumber="031" type="Grass">
         <evolution>Fomantis – Lvl 34, Daytime → Lurantis</evolution>
         <locations>Kitakami Road, Apple Hills, Loyalty Plaza, Kitakami Hall, Mossfell Confluence, Oni Mountain, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="754" name="Lurantis" regionalDexNumber="032" type="Grass">
         <evolution>Fomantis – Lvl 34, Daytime → Lurantis</evolution>
         <locations>Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="840" name="Applin" regionalDexNumber="033" type="Grass / Dragon">
         <evolution>Applin – Tart Apple → Flapple | – Sweet Apple → Appletun | – Syrupy Apple → Dipplin</evolution>
         <locations>Kitakami Road, Apple Hills, Mossfell Confluence</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="841" name="Flapple" regionalDexNumber="034" type="Grass / Dragon">
         <evolution>Applin – Tart Apple → Flapple | – Sweet Apple → Appletun | – Syrupy Apple → Dipplin</evolution>
         <locations>Mossfell Confluence</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="842" name="Appletun" regionalDexNumber="035" type="Grass / Dragon">
         <evolution>Applin – Tart Apple → Flapple | – Sweet Apple → Appletun | – Syrupy Apple → Dipplin</evolution>
         <locations>Mossfell Confluence</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="1011" name="Dipplin" regionalDexNumber="036" type="Grass / Dragon">
         <evolution>Applin – Tart Apple → Flapple | – Sweet Apple → Appletun | – Syrupy Apple → Dipplin</evolution>
         <locations>Evolve Applin</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="037" name="Vulpix" regionalDexNumber="037" type="Fire">
         <evolution>Vulpix – Fire Stone → Ninetales</evolution>
         <locations>Reveler's Road, Kitakami Hall, Mossfell Confluence, Fellhorn Gorge, Oni Mountain, Oni's Maw, Infernal Pass, Crystal Pool, Chilling Waterhead, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="038" name="Ninetales" regionalDexNumber="038" type="Fire">
         <evolution>Vulpix – Fire Stone → Ninetales</evolution>
         <locations>Evolve Vulpix</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="060" name="Poliwag" regionalDexNumber="039" type="Water">
         <evolution>Poliwag – Lvl 25 → Poliwhirl – Water Stone → Poliwrath</evolution>
         <locations>Kitakami Road, Reveler's Road, Mossfell Confluence, Fellhorn Gorge</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="061" name="Poliwhirl" regionalDexNumber="040" type="Water">
         <evolution>Poliwag – Lvl 25 → Poliwhirl – Water Stone → Poliwrath</evolution>
         <locations>Mossfell Confluence, Fellhorn Gorge</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="062" name="Poliwrath" regionalDexNumber="041" type="Water / Fighting">
         <evolution>Poliwag – Lvl 25 → Poliwhirl – Water Stone → Poliwrath</evolution>
         <locations>Evolve Poliwag / Poliwhirl</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="186" name="Politoed" regionalDexNumber="042" type="Water">
         <evolution>Poliwag – Lvl 25 → Poliwhirl – Trade holding Kings Rock → Politoed</evolution>
         <locations>Evolve Poliwag / Poliwhirl</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="129" name="Magikarp" regionalDexNumber="043" type="Water">
         <evolution>Magikarp – Lvl 20 → Gyarados</evolution>
         <locations>Reveler's Road, Mossfell Confluence, Fellhorn Gorge, Oni Mountain, Oni's Maw, Infernal Pass, Chilling Waterhead, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="130" name="Gyarados" regionalDexNumber="044" type="Water / Flying">
         <evolution>Magikarp – Lvl 20 → Gyarados</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Chilling Waterhead, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="163" name="Hoothoot" regionalDexNumber="045" type="Normal / Flying">
         <evolution>Hoothoot – Lvl 20 → Noctowl</evolution>
         <locations>Reveler's Road, Kitakami Hall, Mossfell Confluence, Fellhorn Gorge, Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="164" name="Noctowl" regionalDexNumber="046" type="Normal / Flying">
         <evolution>Hoothoot – Lvl 20 → Noctowl</evolution>
         <locations>Mossfell Confluence, Fellhorn Gorge, Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="190" name="Aipom" regionalDexNumber="047" type="Normal">
         <evolution>Aipom – After learning Double Hit → Ambipom</evolution>
         <locations>Reveler's Road, Kitakami Hall, Mossfell Confluence, Fellhorn Gorge, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
-
     <pokemon id="424" name="Ambipom" regionalDexNumber="048" type="Normal">
         <evolution>Aipom – After learning Double Hit → Ambipom</evolution>
         <locations>Evolve Aipom</locations>
         <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
-
     <pokemon id="214" name="Heracross" regionalDexNumber="049" type="Bug / Fighting">
         <evolution>-</evolution>
         <locations>Reveler's Road, Kitakami Hall, Mossfell Confluence, Fellhorn Gorge, Oni Mountain, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="220" name="Swinub" regionalDexNumber="050" type="Ice / Ground">
         <evolution>Swinub – Lvl 33 → Piloswine – after learning Ancient Power → Mamoswine</evolution>
         <locations>Reveler's Road, Kitakami Hall, Mossfell Confluence, Oni Mountain, Oni's Maw, Chilling Waterhead</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="221" name="Piloswine" regionalDexNumber="051" type="Ice / Ground">
         <evolution>Swinub – Lvl 33 → Piloswine – after learning Ancient Power → Mamoswine</evolution>
         <locations>Chilling Waterhead</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="473" name="Mamoswine" regionalDexNumber="052" type="Ice / Ground">
         <evolution>Swinub – Lvl 33 → Piloswine – after learning Ancient Power → Mamoswine</evolution>
         <locations>Evolve Swinub / Piloswine</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="234" name="Stantler" regionalDexNumber="053" type="Normal">
         <evolution>-</evolution>
         <locations>Reveler's Road, Kitakami Hall, Mossfell Confluence, Oni Mountain, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="273" name="Seedot" regionalDexNumber="054" type="Grass">
         <evolution>Seedot – Lvl 14 → Nuzleaf – Leaf Stone → Shiftry</evolution>
         <locations>Reveler's Road, Kitakami Hall, Mossfell Confluence, Fellhorn Gorge, Oni Mountain, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="274" name="Nuzleaf" regionalDexNumber="055" type="Grass / Dark">
         <evolution>Seedot – Lvl 14 → Nuzleaf – Leaf Stone → Shiftry</evolution>
         <locations>Reveler's Road, Mossfell Confluence, Fellhorn Gorge, Oni Mountain, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="275" name="Shiftry" regionalDexNumber="056" type="Grass / Dark">
         <evolution>Seedot – Lvl 14 → Nuzleaf – Leaf Stone → Shiftry</evolution>
         <locations>Evolve Seedot / Nuzleaf</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="280" name="Ralts" regionalDexNumber="057" type="Psychic / Fairy">
         <evolution>Ralts – Lvl 20 → Kirlia – Lvl 30 → Gardevoir | – Dawn Stone, Male → Gallade</evolution>
         <locations>Reveler's Road, Kitakami Hall, Mossfell Confluence, Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="281" name="Kirlia" regionalDexNumber="058" type="Psychic / Fairy">
         <evolution>Ralts – Lvl 20 → Kirlia – Lvl 30 → Gardevoir | – Dawn Stone, Male → Gallade</evolution>
         <locations>Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="282" name="Gardevoir" regionalDexNumber="059" type="Psychic / Fairy">
         <evolution>Ralts – Lvl 20 → Kirlia – Lvl 30 → Gardevoir</evolution>
         <locations>Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="475" name="Gallade" regionalDexNumber="060" type="Psychic / Fighting">
         <evolution>Ralts – Lvl 20 → Kirlia – Dawn Stone, Male → Gallade</evolution>
         <locations>Fellhorn Gorge, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="401" name="Kricketot" regionalDexNumber="061" type="Bug">
         <evolution>Kricketot – Lvl 10 → Kricketune</evolution>
         <locations>Reveler's Road, Kitakami Hall, Mossfell Confluence, Oni Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="402" name="Kricketune" regionalDexNumber="062" type="Bug">
         <evolution>Kricketot – Lvl 10 → Kricketune</evolution>
         <locations>Reveler's Road, Kitakami Hall, Mossfell Confluence, Oni Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="417" name="Pachirisu" regionalDexNumber="063" type="Electric">
         <evolution>-</evolution>
         <locations>Reveler's Road, Kitakami Hall, Mossfell Confluence, Oni Mountain, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="447" name="Riolu" regionalDexNumber="064" type="Fighting">
         <evolution>Riolu – High Friendship, Daytime → Lucario</evolution>
         <locations>North Province (Area One), North Province (Area Two), South Province (Area Four), South Province (Area Six)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="448" name="Lucario" regionalDexNumber="065" type="Fighting / Steel">
         <evolution>Riolu – High Friendship, Daytime → Lucario</evolution>
         <locations>North Province (Area One), North Province (Area Two), South Province (Area Four), South Province (Area Six)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="548" name="Petilil" regionalDexNumber="066" type="Grass">
         <evolution>Petilil – Sun Stone → Lilligant</evolution>
         <locations>Reveler's Road, Kitakami Hall, Mossfell Confluence, Wistful Fields, Paradise Barrens</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="549" name="Lilligant" regionalDexNumber="067" type="Grass">
         <evolution>Petilil – Sun Stone → Lilligant</evolution>
         <locations>Evolve Petilil</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="708" name="Phantump" regionalDexNumber="068" type="Ghost / Grass">
         <evolution>Phantump – Trade → Trevenant</evolution>
         <locations>Reveler's Road, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="709" name="Trevenant" regionalDexNumber="069" type="Ghost / Grass">
         <evolution>Phantump – Trade → Trevenant</evolution>
         <locations>Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="744" name="Rockruff" regionalDexNumber="070" type="Rock">
         <evolution>Rockruff – Lvl 25, Daytime / Nighttime / Dusk → Lycanroc</evolution>
         <locations>
             Reveler's Road, Kitakami Hall, Oni Mountain, Oni's Maw, Infernal Pass, Crystal Pool, Chilling Waterhead, Wistful Fields, Paradise Barrens, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="745" name="Lycanroc" regionalDexNumber="071" type="Rock">
         <evolution>Rockruff – Lvl 25, Daytime / Nighttime / Dusk → Lycanroc</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="819" name="Skwovet" regionalDexNumber="072" type="Normal">
         <evolution>Skwovet – Lvl 24 → Greedent</evolution>
         <locations>Reveler's Road, Kitakami Hall, Mossfell Confluence, Wistful Fields, Paradise Barrens</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="820" name="Greedent" regionalDexNumber="073" type="Normal">
         <evolution>Skwovet – Lvl 24 → Greedent</evolution>
         <locations>Fellhorn Gorge, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="948" name="Toedscool" regionalDexNumber="074" type="Ground / Grass">
         <evolution>Toedscool – Lvl 30 → Toedscruel</evolution>
         <locations>Reveler's Road, Kitakami Hall, Mossfell Confluence, Fellhorn Gorge, Oni Mountain, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="949" name="Toedscruel" regionalDexNumber="075" type="Ground / Grass">
         <evolution>Toedscool – Lvl 30 → Toedscruel</evolution>
         <locations>Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="1012" name="Poltchageist" regionalDexNumber="076" type="Grass / Ghost">
         <evolution>Poltchageist – Unremarkable Teacup → Sinistcha</evolution>
         <locations>Reveler's Road, Mossfell Confluence</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="1013" name="Sinistcha" regionalDexNumber="077" type="Grass / Ghost">
         <evolution>Poltchageist – Unremarkable Teacup → Sinistcha</evolution>
         <locations>Evolve Poltchageist</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="058" name="Growlithe" regionalDexNumber="078" type="Fire">
         <evolution>Growlithe – Fire Stone → Arcanine</evolution>
         <locations>Apple Hills, Reveler's Road, Mossfell Confluence, Oni Mountain, Oni's Maw, Infernal Pass, Crystal Pool, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="059" name="Arcanine" regionalDexNumber="079" type="Fire">
         <evolution>Growlithe – Fire Stone → Arcanine</evolution>
         <locations>Evolve Growlithe</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="074" name="Geodude" regionalDexNumber="080" type="Rock / Ground">
         <evolution>Geodude – Lvl 25 → Graveler – Trade → Golem</evolution>
         <locations>Kitakami Road, Apple Hills, Reveler's Road, Oni Mountain, Oni's Maw, Infernal Pass, Chilling Waterhead, Wistful Fields, Paradise Barrens, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="075" name="Graveler" regionalDexNumber="081" type="Rock / Ground">
         <evolution>Geodude – Lvl 25 → Graveler – Trade → Golem</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Infernal Pass, Crystal Pool, Chilling Waterhead, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="076" name="Golem" regionalDexNumber="082" type="Rock / Ground">
         <evolution>Geodude – Lvl 25 → Graveler – Trade → Golem</evolution>
         <locations>Evolve Geodude / Graveler</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="438" name="Bonsly" regionalDexNumber="083" type="Rock">
         <evolution>Bonsly – after learning Mimic → Sudowoodo</evolution>
         <locations>Apple Hills, Reveler's Road, Oni Mountain, Oni's Maw, Wistful Fields, Paradise Barrens</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="185" name="Sudowoodo" regionalDexNumber="084" type="Rock">
         <evolution>Bonsly – after learning Mimic → Sudowoodo</evolution>
         <locations>Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="532" name="Timburr" regionalDexNumber="085" type="Fighting">
         <evolution>Timburr – Lvl 25 → Gurdurr – Trade → Conkeldurr</evolution>
         <locations>Apple Hills, Reveler's Road, Mossfell Confluence, Fellhorn Gorge, Oni Mountain, Oni's Maw, Infernal Pass, Crystal Pool, Wistful Fields, Paradise Barrens, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="533" name="Gurdurr" regionalDexNumber="086" type="Fighting">
         <evolution>Timburr – Lvl 25 → Gurdurr – Trade → Conkeldurr</evolution>
         <locations>Mossfell Confluence, Fellhorn Gorge, Paradise Barrens</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="534" name="Conkeldurr" regionalDexNumber="087" type="Fighting">
         <evolution>Timburr – Lvl 25 → Gurdurr – Trade → Conkeldurr</evolution>
         <locations>Evolve Timburr / Gurdurr</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="714" name="Noibat" regionalDexNumber="088" type="Flying / Dragon">
         <evolution>Noibat – Lvl 48 → Noivern</evolution>
         <locations>Apple Hills, Reveler's Road, Kitakami Hall, Mossfell Confluence, Fellhorn Gorge, Oni Mountain, Oni's Maw, Crystal Pool, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="715" name="Noivern" regionalDexNumber="089" type="Flying / Dragon">
         <evolution>Noibat – Lvl 48 → Noivern</evolution>
         <locations>Evolve Noibat</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="846" name="Arrokuda" regionalDexNumber="090" type="Water">
         <evolution>Arrokuda – Lvl 26 → Barraskewda</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Oni's Maw, Crystal Pool, Chilling Waterhead, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="847" name="Barraskewda" regionalDexNumber="091" type="Water">
         <evolution>Arrokuda – Lvl 26 → Barraskewda</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Chilling Waterhead</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="856" name="Hatenna" regionalDexNumber="092" type="Psychic">
         <evolution>Hatenna – Lvl 32 → Hattrem – Lvl 42 → Hatterene</evolution>
         <locations>Apple Hills, Oni Mountain, Oni's Maw, Infernal Pass, Crystal Pool, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="857" name="Hattrem" regionalDexNumber="093" type="Psychic">
         <evolution>Hatenna – Lvl 32 → Hattrem – Lvl 42 → Hatterene</evolution>
         <locations>Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="858" name="Hatterene" regionalDexNumber="094" type="Psychic / Fairy">
         <evolution>Hatenna – Lvl 32 → Hattrem – Lvl 42 → Hatterene</evolution>
         <locations>Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="877" name="Morpeko" regionalDexNumber="095" type="Electric / Dark">
         <evolution>-</evolution>
         <locations>Apple Hills, Reveler's Road, Oni Mountain, Oni's Maw, Wistful Fields, Paradise Barrens</locations>
         <exclusiveVersion>Violet</exclusiveVersion>
     </pokemon>
-
     <pokemon id="968" name="Orthworm" regionalDexNumber="096" type="Steel">
         <evolution>-</evolution>
         <locations>Apple Hills, Reveler's Road, Oni Mountain, Oni's Maw, Wistful Fields, Paradise Barrens, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="924" name="Tandemaus" regionalDexNumber="097" type="Normal">
         <evolution>Tandemaus – Lvl 25 → Maushold</evolution>
         <locations>Kitakami Road, Apple Hills, Reveler's Road, Oni Mountain, Oni's Maw, Wistful Fields, Paradise Barrens, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="925" name="Maushold" regionalDexNumber="098" type="Normal">
         <evolution>Tandemaus – Lvl 25 → Maushold</evolution>
         <locations>Evolve Tandemaus</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="056" name="Mankey" regionalDexNumber="099" type="Fighting">
         <evolution>Mankey – Lvl 28 → Primeape – Use Rage Fist 20 times → Annihilape</evolution>
         <locations>Kitakami Road, Apple Hills, Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="057" name="Primeape" regionalDexNumber="100" type="Fighting">
         <evolution>Mankey – Lvl 28 → Primeape – Use Rage Fist 20 times → Annihilape</evolution>
         <locations>Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="979" name="Annihilape" regionalDexNumber="101" type="Fighting / Ghost">
         <evolution>Mankey – Lvl 28 → Primeape – Use Rage Fist 20 times → Annihilape</evolution>
         <locations>Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="446" name="Munchlax" regionalDexNumber="102" type="Normal">
         <evolution>Munchlax – High Friendship → Snorlax</evolution>
         <locations>Kitakami Road, Apple Hills, Loyalty Plaza, Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="143" name="Snorlax" regionalDexNumber="103" type="Normal">
         <evolution>Munchlax – High Friendship → Snorlax</evolution>
         <locations>Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="270" name="Lotad" regionalDexNumber="104" type="Water / Grass">
         <evolution>Lotad – Lvl 14 → Lombre – Water Stone → Ludicolo</evolution>
         <locations>Apple Hills, Reveler's Road, Oni Mountain, Infernal Pass, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="271" name="Lombre" regionalDexNumber="105" type="Water / Grass">
         <evolution>Lotad – Lvl 14 → Lombre – Water Stone → Ludicolo</evolution>
         <locations>Apple Hills, Mossfell Confluence, Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="272" name="Ludicolo" regionalDexNumber="106" type="Water / Grass">
         <evolution>Lotad – Lvl 14 → Lombre – Water Stone → Ludicolo</evolution>
         <locations>Evolve Lotad / Lombre</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="299" name="Nosepass" regionalDexNumber="107" type="Rock">
         <evolution>Nosepass – Thunder Stone → Probopass</evolution>
         <locations>Oni Mountain, Oni's Maw, Wistful Fields, Paradise Barrens, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="476" name="Probopass" regionalDexNumber="108" type="Rock / Steel">
         <evolution>Nosepass – Thunder Stone → Probopass</evolution>
         <locations>Evolve Nosepass</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="403" name="Shinx" regionalDexNumber="109" type="Electric">
         <evolution>Shinx – Lvl 15 → Luxio – Lvl 30 → Luxray</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="404" name="Luxio" regionalDexNumber="110" type="Electric">
         <evolution>Shinx – Lvl 15 → Luxio – Lvl 30 → Luxray</evolution>
         <locations>Fellhorn Gorge, Oni Mountain,Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="405" name="Luxray" regionalDexNumber="111" type="Electric">
         <evolution>Shinx – Lvl 15 → Luxio – Lvl 30 → Luxray</evolution>
         <locations>Fellhorn Gorge, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="736" name="Grubbin" regionalDexNumber="112" type="Bug">
         <evolution>Grubbin – Lvl 20 → Charjabug – Thunder Stone → Vikavolt</evolution>
         <locations>Kitakami Road, Apple Hills, Fellhorn Gorge, Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="737" name="Charjabug" regionalDexNumber="113" type="Bug / Electric">
         <evolution>Grubbin – Lvl 20 → Charjabug – Thunder Stone → Vikavolt</evolution>
         <locations>Fellhorn Gorge, Oni Mountain,Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="738" name="Vikavolt" regionalDexNumber="114" type="Bug / Electric">
         <evolution>Grubbin – Lvl 20 → Charjabug – Thunder Stone → Vikavolt</evolution>
         <locations>Crystal Pool</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="741" name="Oricorio" regionalDexNumber="115" type="Fire / Flying">
         <evolution>-</evolution>
         <locations>Wistful Fields</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="027" name="Sandshrew" regionalDexNumber="116" type="Ground">
         <evolution>Sandshrew – Lvl 22 → Sandslash</evolution>
         <locations>Reveler's Road, Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="028" name="Sandslash" regionalDexNumber="117" type="Ground">
         <evolution>Sandshrew – Lvl 22 → Sandslash</evolution>
         <locations>Oni Mountain, Paradise Barrens, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="092" name="Gastly" regionalDexNumber="118" type="Ghost / Poison">
         <evolution>Gastly – Lvl 25 → Haunter – Trade → Gengar</evolution>
         <locations>Apple Hills, Mossfell Confluence, Oni Mountain, Wistful Fields, Paradise Barrens</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="093" name="Haunter" regionalDexNumber="119" type="Ghost / Poison">
         <evolution>Gastly – Lvl 25 → Haunter – Trade → Gengar</evolution>
         <locations>Mossfell Confluence, Oni Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="094" name="Gengar" regionalDexNumber="120" type="Ghost / Poison">
         <evolution>Gastly – Lvl 25 → Haunter – Trade → Gengar</evolution>
         <locations>Mossfell Confluence</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="207" name="Gligar" regionalDexNumber="121" type="Ground / Flying">
         <evolution>Gligar – Hold Razor Fang, Nighttime → Gliscor</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
-
     <pokemon id="472" name="Gliscor" regionalDexNumber="122" type="Ground / Flying">
         <evolution>Gligar – Hold Razor Fang, Nighttime → Gliscor</evolution>
         <locations>Evolve Gligar</locations>
         <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
-
     <pokemon id="228" name="Houndour" regionalDexNumber="123" type="Dark / Fire">
         <evolution>Houndour – Lvl 24 → Houndoom</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Infernal Pass, Crystal Pool, Chilling Waterhead, Wistful Fields, Paradise Barrens, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="229" name="Houndoom" regionalDexNumber="124" type="Dark / Fire">
         <evolution>Houndour – Lvl 24 → Houndoom</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Infernal Pass, Crystal Pool, Chilling Waterhead, Paradise Barrens, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="325" name="Spoink" regionalDexNumber="125" type="Psychic">
         <evolution>Spoink – Lvl 32 → Grumpig</evolution>
         <locations>Oni Mountain, Infernal Pass, Chilling Waterhead, Wistful Fields, Paradise Barrens</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="326" name="Grumpig" regionalDexNumber="126" type="Psychic">
         <evolution>Spoink – Lvl 32 → Grumpig</evolution>
         <locations>Evolve Spoink</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="629" name="Vullaby" regionalDexNumber="127" type="Dark / Flying">
         <evolution>Vullaby – Lvl 54 → Mandibuzz</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="630" name="Mandibuzz" regionalDexNumber="128" type="Dark / Flying">
         <evolution>Vullaby – Lvl 54 → Mandibuzz</evolution>
         <locations>Evolve Vullaby</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="749" name="Mudbray" regionalDexNumber="129" type="Ground">
         <evolution>Mudbray – Lvl 30 → Mudsdale</evolution>
         <locations>Wistful Fields, Paradise Barrens</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="750" name="Mudsdale" regionalDexNumber="130" type="Ground">
         <evolution>Mudbray – Lvl 30 → Mudsdale</evolution>
         <locations>Evolve Mudbray</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="782" name="Jangmo-o" regionalDexNumber="131" type="Dragon">
         <evolution>Jangmo-o – Lvl 35 → Hakamo-o – Lvl 45 → Kommo-o</evolution>
         <locations>Wistful Fields, Paradise Barrens, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="783" name="Hakamo-o" regionalDexNumber="132" type="Dragon / Fighting">
         <evolution>Jangmo-o – Lvl 35 → Hakamo-o – Lvl 45 → Kommo-o</evolution>
         <locations>Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="784" name="Kommo-o" regionalDexNumber="133" type="Dragon / Fighting">
         <evolution>Jangmo-o – Lvl 35 → Hakamo-o – Lvl 45 → Kommo-o</evolution>
         <locations>Evolve Jangmo-o / Hakamo-o</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="962" name="Bombirdier" regionalDexNumber="134" type="Flying / Dark">
         <evolution>-</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="109" name="Koffing" regionalDexNumber="135" type="Poison">
         <evolution>Koffing – Lvl 35 → Weezing</evolution>
         <locations>Oni Mountain, Infernal Pass, Crystal Pool</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="110" name="Weezing" regionalDexNumber="136" type="Poison">
         <evolution>Koffing – Lvl 35 → Weezing</evolution>
         <locations>Evolve Koffing</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="619" name="Mienfoo" regionalDexNumber="137" type="Fighting">
         <evolution>Mienfoo – Lvl 50 → Mienshao</evolution>
         <locations>Kitakami Road, Apple Hills, Oni Mountain, Chilling Waterhead, Wistful Fields, Paradise Barrens</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="620" name="Mienshao" regionalDexNumber="138" type="Fighting">
         <evolution>Mienfoo – Lvl 50 → Mienshao</evolution>
         <locations>Evolve Mienfoo</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="355" name="Duskull" regionalDexNumber="139" type="Ghost">
         <evolution>Duskull – Lvl 37 → Dusclops – Trade holding Reaper Cloth → Dusknoir</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Infernal Pass, Crystal Pool, Chilling Waterhead, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="356" name="Dusclops" regionalDexNumber="140" type="Ghost">
         <evolution>Duskull – Lvl 37 → Dusclops – Trade holding Reaper Cloth → Dusknoir</evolution>
         <locations>Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="477" name="Dusknoir" regionalDexNumber="141" type="Ghost">
         <evolution>Duskull – Lvl 37 → Dusclops – Trade holding Reaper Cloth → Dusknoir</evolution>
         <locations>Evolve Duskull / Dusclops</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="433" name="Chingling" regionalDexNumber="142" type="Psychic">
         <evolution>Chingling – High Friendship, Nighttime → Chimecho</evolution>
         <locations>Oni Mountain, Infernal Pass, Crystal Pool, Chilling Waterhead</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="358" name="Chimecho" regionalDexNumber="143" type="Psychic">
         <evolution>Chingling – High Friendship, Nighttime → Chimecho</evolution>
         <locations>Oni Mountain, Infernal Pass, Crystal Pool</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="218" name="Slugma" regionalDexNumber="144" type="Fire">
         <evolution>Slugma – Lvl 38 → Magcargo</evolution>
         <locations>Oni Mountain, Infernal Pass, Crystal Pool</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="219" name="Magcargo" regionalDexNumber="145" type="Fire / Rock">
         <evolution>Slugma – Lvl 38 → Magcargo</evolution>
         <locations>Evolve Slugma</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="607" name="Litwick" regionalDexNumber="146" type="Ghost / Fire">
         <evolution>Litwick – Lvl 41 → Lampent – Dusk Stone → Chandelure</evolution>
         <locations>Oni Mountain, Infernal Pass, Crystal Pool, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="608" name="Lampent" regionalDexNumber="147" type="Ghost / Fire">
         <evolution>Litwick – Lvl 41 → Lampent – Dusk Stone → Chandelure</evolution>
         <locations>Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="609" name="Chandelure" regionalDexNumber="148" type="Ghost / Fire">
         <evolution>Litwick – Lvl 41 → Lampent – Dusk Stone → Chandelure</evolution>
         <locations>Evolve Litwick / Lampent</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="283" name="Surskit" regionalDexNumber="149" type="Bug / Water">
         <evolution>Surskit – Lvl 22 → Masquerain</evolution>
         <locations>Mossfell Confluence, Oni Mountain, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="284" name="Masquerain" regionalDexNumber="150" type="Bug / Flying">
         <evolution>Surskit – Lvl 22 → Masquerain</evolution>
         <locations>Mossfell Confluence, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="173" name="Cleffa" regionalDexNumber="151" type="Fairy">
         <evolution>Cleffa – High Friendship → Clefairy – Moon Stone → Clefable</evolution>
         <locations>Reveler's Road, Kitakami Hall, Oni Mountain, Infernal Pass, Crystal Pool</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="035" name="Clefairy" regionalDexNumber="152" type="Fairy">
         <evolution>Cleffa – High Friendship → Clefairy – Moon Stone → Clefable</evolution>
         <locations>Reveler's Road, Kitakami Hall, Infernal Pass, Oni's Maw, Crystal Pool</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="036" name="Clefable" regionalDexNumber="153" type="Fairy">
         <evolution>Cleffa – High Friendship → Clefairy – Moon Stone → Clefable</evolution>
         <locations>Evolve Clefairy / Cleffa</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="436" name="Bronzor" regionalDexNumber="154" type="Steel / Psychic">
         <evolution>Bronzor – Lvl 33 → Bronzong</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Infernal Pass, Crystal Pool, Chilling Waterhead, Wistful Fields, Paradise Barrens, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="437" name="Bronzong" regionalDexNumber="155" type="Steel / Psychic">
         <evolution>Bronzor – Lvl 33 → Bronzong</evolution>
         <locations>Oni Mountain</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="969" name="Glimmet" regionalDexNumber="156" type="Rock / Poison">
         <evolution>Glimmet – Lvl 35 → Glimmora</evolution>
         <locations>Oni Mountain, Infernal Pass, Crystal Pool</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="970" name="Glimmora" regionalDexNumber="157" type="Rock / Poison">
         <evolution>Glimmet – Lvl 35 → Glimmora</evolution>
         <locations>Oni Mountain, Crystal Pool</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="349" name="Feebas" regionalDexNumber="158" type="Water">
         <evolution>Feebas – Trade holding Prism Scale, or level up with max Beauty → Milotic</evolution>
         <locations>Oni Mountain, Crystal Pool</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="350" name="Milotic" regionalDexNumber="159" type="Water">
         <evolution>Feebas – Trade holding Prism Scale, or level up with max Beauty → Milotic</evolution>
         <locations>Evolve Feebas</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="206" name="Dunsparce" regionalDexNumber="160" type="Normal">
         <evolution>Dunsparce – After learning Hyper Drill → Dudunsparce</evolution>
         <locations>Oni Mountain, Crystal Pool, Chilling Waterhead, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="982" name="Dudunsparce" regionalDexNumber="161" type="Normal">
         <evolution>Dunsparce – After learning Hyper Drill → Dudunsparce</evolution>
         <locations>Oni Mountain, Chilling Waterhead, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="339" name="Barboach" regionalDexNumber="162" type="Water / Ground">
         <evolution>Barboach – Lvl 30 → Whiscash</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Crystal Pool</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="340" name="Whiscash" regionalDexNumber="163" type="Water / Ground">
         <evolution>Barboach – Lvl 30 → Whiscash</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="443" name="Gible" regionalDexNumber="164" type="Dragon / Ground">
         <evolution>Gible – Lvl 24 → Gabite – Lvl 48 → Garchomp</evolution>
         <locations>Oni Mountain, Crystal Pool, Wistful Fields, Paradise Barrens</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="444" name="Gabite" regionalDexNumber="165" type="Dragon / Ground">
         <evolution>Gible – Lvl 24 → Gabite – Lvl 48 → Garchomp</evolution>
         <locations>Oni Mountain, Crystal Pool</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="445" name="Garchomp" regionalDexNumber="166" type="Dragon / Ground">
         <evolution>Gible – Lvl 24 → Gabite – Lvl 48 → Garchomp</evolution>
         <locations>Evolve Gible / Gabite</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="703" name="Carbink" regionalDexNumber="167" type="Rock / Fairy">
         <evolution>-</evolution>
         <locations>Oni Mountain, Crystal Pool, Chilling Waterhead</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="757" name="Salandit" regionalDexNumber="168" type="Poison / Fire">
         <evolution>Salandit – Lvl 33, Female → Salazzle</evolution>
         <locations>Apple Hills, Reveler's Road, Oni Mountain, Oni's Maw, Crystal Pool</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="758" name="Salazzle" regionalDexNumber="169" type="Poison / Fire">
         <evolution>Salandit – Lvl 33, Female → Salazzle</evolution>
         <locations>Evolve Salandit</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="215" name="Sneasel" regionalDexNumber="170" type="Dark / Ice">
         <evolution>Sneasel – Razor Claw, Nighttime → Weavile</evolution>
         <locations>Oni Mountain, Chilling Waterhead, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="461" name="Weavile" regionalDexNumber="171" type="Dark / Ice">
         <evolution>Sneasel – Razor Claw, Nighttime → Weavile</evolution>
         <locations>Evolve Sneasel</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="361" name="Snorunt" regionalDexNumber="172" type="Ice">
         <evolution>Snorunt – Lvl 42 → Glalie</evolution>
         <locations>Oni Mountain, Chilling Waterhead</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="362" name="Glalie" regionalDexNumber="173" type="Ice">
         <evolution>Snorunt – Lvl 42 → Glalie</evolution>
         <locations>Evolve Snorunt</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="478" name="Froslass" regionalDexNumber="174" type="Ice / Ghost">
         <evolution>Snorunt – Dawn Stone, Female → Froslass</evolution>
         <locations>Evolve Snorunt</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="602" name="Tynamo" regionalDexNumber="175" type="Electric">
         <evolution>Tynamo – Lvl 39 → Eelektrik – Thunder Stone → Eelektross</evolution>
         <locations>Oni Mountain, Chilling Waterhead</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="603" name="Eelektrik" regionalDexNumber="176" type="Electric">
         <evolution>Tynamo – Lvl 39 → Eelektrik – Thunder Stone → Eelektross</evolution>
         <locations>Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="604" name="Eelektross" regionalDexNumber="177" type="Electric">
         <evolution>Tynamo – Lvl 39 → Eelektrik – Thunder Stone → Eelektross</evolution>
         <locations>Evolve Tynamo / Eelektrik</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="704" name="Goomy" regionalDexNumber="178" type="Dragon">
         <evolution>Goomy – Lvl 40 → Sliggoo – Lvl 50, during rain → Goodra</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Chilling Waterhead, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="705" name="Sliggoo" regionalDexNumber="179" type="Dragon">
         <evolution>Goomy – Lvl 40 → Sliggoo – Lvl 50, during rain → Goodra</evolution>
         <locations>Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="706" name="Goodra" regionalDexNumber="180" type="Dragon">
         <evolution>Goomy – Lvl 40 → Sliggoo – Lvl 50, during rain → Goodra</evolution>
         <locations>Evolve Goomy / Sliggoo</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="580" name="Ducklett" regionalDexNumber="181" type="Water / Flying">
         <evolution>Ducklett – Lvl 35 → Swanna</evolution>
         <locations>Mossfell Confluence, Fellhorn Gorge, Oni Mountain, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="581" name="Swanna" regionalDexNumber="182" type="Water / Flying">
         <evolution>Ducklett – Lvl 35 → Swanna</evolution>
         <locations>Fellhorn Gorge, Kitakami Wilds</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="833" name="Chewtle" regionalDexNumber="183" type="Water">
         <evolution>Chewtle – Lvl 22 → Drednaw</evolution>
         <locations>Mossfell Confluence, Fellhorn Gorge, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="834" name="Drednaw" regionalDexNumber="184" type="Water / Rock">
         <evolution>Chewtle – Lvl 22 → Drednaw</evolution>
         <locations>Fellhorn Gorge, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="845" name="Cramorant" regionalDexNumber="185" type="Flying / Water">
         <evolution>-</evolution>
         <locations>Fellhorn Gorge, Kitakami Wilds</locations>
         <exclusiveVersion>Scarlet</exclusiveVersion>
     </pokemon>
-
     <pokemon id="624" name="Pawniard" regionalDexNumber="186" type="Dark / Steel">
         <evolution>Pawniard – Lvl 52 → Bisharp – defeat 3 Bisharp that are holding Leader's Crest → Kingambit</evolution>
         <locations>Fellhorn Gorge, Oni Mountain, Wistful Fields, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="625" name="Bisharp" regionalDexNumber="187" type="Dark / Steel">
         <evolution>Pawniard – Lvl 52 → Bisharp – defeat 3 Bisharp that are holding Leader's Crest → Kingambit</evolution>
         <locations>Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="983" name="Kingambit" regionalDexNumber="188" type="Dark / Steel">
         <evolution>Pawniard – Lvl 52 → Bisharp – defeat 3 Bisharp that are holding Leader's Crest → Kingambit</evolution>
         <locations>Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="778" name="Mimikyu" regionalDexNumber="189" type="Ghost / Fairy">
         <evolution>-</evolution>
         <locations>Oni Mountain, Infernal Pass, Chilling Waterhead, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="859" name="Impidimp" regionalDexNumber="190" type="Dark / Fairy">
         <evolution>Impidimp – Lvl 32 → Morgrem – Lvl 42 → Grimmsnarl</evolution>
         <locations>Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="860" name="Morgrem" regionalDexNumber="191" type="Dark / Fairy">
         <evolution>Impidimp – Lvl 32 → Morgrem – Lvl 42 → Grimmsnarl</evolution>
         <locations>Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="861" name="Grimmsnarl" regionalDexNumber="192" type="Dark / Fairy">
         <evolution>Impidimp – Lvl 32 → Morgrem – Lvl 42 → Grimmsnarl</evolution>
         <locations>Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="879" name="Indeedee" regionalDexNumber="193" type="Psychic / Normal">
         <evolution>-</evolution>
         <locations>Oni Mountain, Paradise Barrens, Kitakami Wilds, Timeless Woods</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="550" name="Basculin" regionalDexNumber="194" type="Water">
         <evolution>Basculin – receive 294 recoil damage in battle → Basculegion</evolution>
         <locations>Timeless Woods </locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="902" name="Basculegion" regionalDexNumber="195" type="Water / Ghost">
         <evolution>Basculin – receive 294 recoil damage in battle → Basculegion</evolution>
         <locations>Evolve Basculin</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="901" name="Ursaluna" regionalDexNumber="196" type="Ground / Normal" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Timeless Woods (Bloodmoon)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="1014" name="Okidogi" regionalDexNumber="197" type="Poison / Fighting" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Paradise Barrens (after completing the main story of The Teal Mask)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="1015" name="Munkidori" regionalDexNumber="198" type="Poison / Psychic" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Wistful Fields (after completing the main story of The Teal Mask)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="1016" name="Fezandipiti" regionalDexNumber="199" type="Poison / Fairy" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Oni Mountain (after completing the main story of The Teal Mask)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
     <pokemon id="1017" name="Ogerpon" regionalDexNumber="200" type="Grass" shinyLocked="true">
         <evolution>-</evolution>
         <locations>Dreaded Den (Teal Mask)</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-
 </pokedex>
