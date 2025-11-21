@@ -109,8 +109,29 @@ The application includes a settings menu that allows users to:
 Enabling automatic update checks will prompt the application to check for the latest version on startup, ensuring you always have the most up-to-date information.\
 You can download updates at any time from the `settings` menu (_**Check for updates**_ button).
 
-Changing the settings will generate a `config.ini` file in the `/config/pkDex` directory, which will be used to store user preferences.
+## Localization (i18n)
 
+pkDex supports multiple languages using JSON translation files loaded at runtime.
+
+- UI strings in XML use i18n references like `@i18n/pkdex/...`.
+- Translation files are located in `resources/i18n/<locale>/*.json`.
+- The default English strings are in `resources/i18n/en-US/pkdex.json`.
+- To add a new language, create `resources/i18n/<your-locale>/pkdex.json` with the same keys.
+
+Overriding data from XML files:
+- Game data (for example, Pokémon names, types, evolution text, locations, etc.) are read from the XML files in `resources/data/<region>.xml`.
+- You can override any of these texts per locale by adding entries under `data/<region>/<id>/<field>` in your locale JSON.
+    - Example (French):
+        - `data/kanto/001/name`: Bulbizarre
+        - `data/kanto/001/type`: Plante / Poison
+        - Fields supported: `name`, `type`, `evolution`, `locations`, `exclusiveVersion`.
+- If an override key is missing, the app will fall back to the original text in the XML.
+
+Locales follow Borealis conventions with a fallback to `en-US` as the default.
+
+## Config save
+
+Changing the settings will generate a `config.ini` file in the `/config/pkDex` directory, which will be used to store user preferences.
 
 ## Requirements
 

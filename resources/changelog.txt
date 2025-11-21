@@ -1,3 +1,15 @@
+## Version 1.6.0
+- New Feature release - Main App :
+    - Add i18n translation support for :
+        - French
+        - German
+- Settings menu :
+    - Add option to change application language (English, French, German)
+- Fix wrong National N° for some Pokemon in :
+    - Blueberry Academy
+    - Isle of Armor
+    - Paldea
+
 ## Version 1.5.2 (2025-11-16)
 - Minor Feature release - Main App :
     - Recompiled version using new libNX 4.10.0 for HOS 21.0.0 support
