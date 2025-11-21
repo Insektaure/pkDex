@@ -22,7 +22,7 @@ extern "C" unsigned int sceLibcHeapSize = 2 * 1024 * 1024;
 using namespace brls::literals; // for _i18n
 
 // Set this to true to enable logging to file, false to disable
-const bool ENABLE_FILE_LOGGING = true;
+const bool ENABLE_FILE_LOGGING = false;
 
 int main(int argc, char* argv[])
 {
