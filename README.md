@@ -167,7 +167,7 @@ Changing the settings will generate a `config.ini` file in the `/config/pkDex` d
 
 ### Building for Nintendo Switch
 
-1. Make sure you have devkitPro installed with Switch development tools.
+1. Make sure you have [devkitPro](https://github.com/devkitpro) latest version installed with Switch development tools and [jq](https://jqlang.org/download/) (for json minification at build).
 
 2. Build the application:
    ```bash
