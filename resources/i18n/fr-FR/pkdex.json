@@ -32,13 +32,14 @@
     },
     "locales": {
       "en-US": "English (US)",
-      "fr-FR": "Français (France)"
+      "fr-FR": "Français (France)",
+      "de-DE": "Deutsch (Deutschland)"
     },
     "i18n_title": "Langue",
     "select_locale": "Sélectionner la langue",
-    "select_region_to_reset": "Sélectionner la région à réinitialiser",
-    "reset_confirm_all": "Êtes-vous sûr de vouloir réinitialiser le statut de capture de tous les Pokémon pour toutes les régions ? Cette action est irréversible.",
-    "reset_confirm_region": "Êtes-vous sûr de vouloir réinitialiser le statut de capture de tous les Pokémon pour la région {region} ? Cette action est irréversible.",
+    "select_region_to_reset": "Sélectionner la région",
+    "reset_confirm_all": "Êtes-vous sûr de vouloir réinitialiser le statut de capture de tous les Pokémon pour toutes les régions ?\nCette action est irréversible.",
+    "reset_confirm_region": "Êtes-vous sûr de vouloir réinitialiser le statut de capture de tous les Pokémon pour la région {region} ?\nCette action est irréversible.",
     "reset_success_all": "Le statut de capture de tous les Pokémon a été réinitialisé.",
     "reset_success_region": "Le statut de capture des Pokémon pour la région {region} a été réinitialisé.",
     "reset_failure": "Échec de la réinitialisation du statut de capture des Pokémon.",
@@ -98,8 +99,8 @@
     "launch": "Lancer"
   },
   "listing": {
-    "previous_page": "Page précédente",
-    "next_page": "Page suivante",
+    "previous_page": "Page <",
+    "next_page": "Page >",
     "toggle_capture_status": "Changer le statut de capture"
   },
   "view": {

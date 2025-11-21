@@ -32,13 +32,14 @@
     },
     "locales": {
       "en-US": "English (US)",
-      "fr-FR": "Français (France)"
+      "fr-FR": "Français (France)",
+      "de-DE": "Deutsch (Deutschland)"
     },
     "i18n_title": "Language",
     "select_locale": "Select Language",
     "select_region_to_reset": "Select Region to Reset",
-    "reset_confirm_all": "Are you sure you want to reset all Pokemon capture statuses for all regions? This action cannot be undone.",
-    "reset_confirm_region": "Are you sure you want to reset all Pokemon capture statuses for the {region} region? This action cannot be undone.",
+    "reset_confirm_all": "Are you sure you want to reset all Pokemon capture statuses for all regions?\nThis action cannot be undone.",
+    "reset_confirm_region": "Are you sure you want to reset all Pokemon capture statuses for the {region} region?\nThis action cannot be undone.",
     "reset_success_all": "All Pokemon capture statuses have been reset.",
     "reset_success_region": "Pokemon capture statuses for {region} have been reset.",
     "reset_failure": "Failed to reset Pokemon capture statuses.",
