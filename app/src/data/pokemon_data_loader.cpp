@@ -1,5 +1,6 @@
 #include "data/pokemon_data_loader.hpp"
 #include <borealis/core/logger.hpp>
+#include <borealis/core/i18n.hpp>
 #include <tinyxml2.h>
 #include "data/pokemon_tracker.hpp"
 
@@ -31,7 +32,7 @@ std::vector<Pokemon> PokemonDataLoader::loadPokemonFromRegion(const std::string&
          pokemonElement;
          pokemonElement = pokemonElement->NextSiblingElement("pokemon"))
     {
-        Pokemon pokemon = parsePokemonNode(pokemonElement);
+        Pokemon pokemon = parsePokemonNode(pokemonElement, region);
         pokemons.push_back(pokemon);
     }
 
@@ -72,7 +73,7 @@ Pokemon PokemonDataLoader::loadPokemonById(const std::string& id)
             const char* pokemonId = pokemonElement->Attribute("id");
             if (pokemonId && id == pokemonId)
             {
-                return parsePokemonNode(pokemonElement);
+                return parsePokemonNode(pokemonElement, region);
             }
         }
     }
@@ -82,7 +83,7 @@ Pokemon PokemonDataLoader::loadPokemonById(const std::string& id)
     return Pokemon(id, "Unknown");
 }
 
-Pokemon PokemonDataLoader::parsePokemonNode(tinyxml2::XMLElement* pokemonElement)
+Pokemon PokemonDataLoader::parsePokemonNode(tinyxml2::XMLElement* pokemonElement, const std::string& region)
 {
     const char* id = pokemonElement->Attribute("id");
     const char* name = pokemonElement->Attribute("name");
@@ -112,14 +113,43 @@ Pokemon PokemonDataLoader::parsePokemonNode(tinyxml2::XMLElement* pokemonElement
         locations = locationsElement->GetText();
     }
 
+    // Apply i18n overrides if available
+    std::string regionalId = regionalDexNumber ? regionalDexNumber : "";
+    auto makeKey = [&](const std::string& field) {
+        return "data/" + region + "/" + regionalId + "/" + field;
+    };
+
+    // name and attributes may be overridden
+    std::string nameStr = name ? name : "";
+    std::string typeStr = type ? type : "";
+    std::string evolutionStr = evolution;
+    std::string exclusiveVersionStr = exclusiveVersion;
+    std::string locationsStr = locations;
+
+    if (!regionalId.empty())
+    {
+        std::string o;
+        o = brls::getStr(makeKey("name"));
+        if (o != makeKey("name")) nameStr = o;
+        o = brls::getStr(makeKey("type"));
+        if (o != makeKey("type")) typeStr = o;
+        o = brls::getStr(makeKey("evolution"));
+        if (o != makeKey("evolution")) evolutionStr = o;
+        o = brls::getStr(makeKey("exclusiveVersion"));
+        if (o != makeKey("exclusiveVersion")) exclusiveVersionStr = o;
+        o = brls::getStr(makeKey("locations"));
+        if (o != makeKey("locations")) locationsStr = o;
+    }
+
     return Pokemon(
         id ? id : "",
-        name ? name : "",
-        regionalDexNumber ? regionalDexNumber : "",
-        type ? type : "",
-        evolution,
-        exclusiveVersion,
-        locations,
+        nameStr,
+        //regionalDexNumber ? regionalDexNumber : "",
+        regionalId,
+        typeStr,
+        evolutionStr,
+        exclusiveVersionStr,
+        locationsStr,
         shinyLocked
     );
 }

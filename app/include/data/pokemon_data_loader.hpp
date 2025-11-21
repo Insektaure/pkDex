@@ -15,5 +15,5 @@ public:
     
 private:
     // Helper method to parse a Pokemon XML node
-    static Pokemon parsePokemonNode(tinyxml2::XMLElement* pokemonElement);
+    static Pokemon parsePokemonNode(tinyxml2::XMLElement* pokemonElement, const std::string& region);
 };

@@ -7,6 +7,7 @@
 <body>
 <input type="file" id="xmlFile" accept=".xml">
 <button id="convertBtn">Convert to JSON</button>
+<button id="copyBtn">Copy JSON to Clipboard</button>
 <pre id="output"></pre>
 <script>
     document.getElementById('convertBtn').onclick = function () {
@@ -42,14 +43,52 @@
                     exclusiveVersion
                 };
             });
-            // Build an array of objects in order by regionalDexNumber
-            const ordered = Object.keys(Obj)
+            // // Build an array of objects in order by regionalDexNumber
+            // const ordered = Object.keys(Obj)
+            //     .sort((a, b) => parseInt(a) - parseInt(b))
+            //     .map(num => ({ [num]: Obj[num] }));
+            // const output = { [region]: ordered };
+            // document.getElementById('output').textContent = JSON.stringify(output, null, 2);
+
+            // Order Obj by regionalDexNumber
+            const orderedObj = {};
+            Object.keys(Obj)
                 .sort((a, b) => parseInt(a) - parseInt(b))
-                .map(num => ({ [num]: Obj[num] }));
-            const output = { [region]: ordered };
-            document.getElementById('output').textContent = JSON.stringify(output, null, 2);
+                .forEach(num => {
+                    orderedObj[num] = Obj[num];
+                });
+            const output = { [region]: orderedObj };
+
+            // Manual pretty-print to preserve order
+            function orderedStringify(obj) {
+                const region = Object.keys(obj)[0];
+                const pokedex = obj[region];
+                //let str = `{\n  "${region}": {\n`;
+                let str = `"${region}": {\n`;
+                const nums = Object.keys(pokedex).sort((a, b) => parseInt(a) - parseInt(b));
+                nums.forEach((num, idx) => {
+                    str += `    "${num}": ${JSON.stringify(pokedex[num], null, 6)}`;
+                    if (idx < nums.length - 1) str += ',\n';
+                    else str += '\n';
+                });
+                //str += '  }\n}';
+                str += '  }';
+                return str;
+            }
+            document.getElementById('output').textContent = orderedStringify(output);
         };
         reader.readAsText(fileInput.files[0]);
+    };
+
+    document.getElementById('copyBtn').onclick = function () {
+        const output = document.getElementById('output').textContent;
+        if (!output) {
+            alert('No JSON content to copy.');
+            return;
+        }
+        navigator.clipboard.writeText(output)
+            .then(() => alert('JSON copied to clipboard!'))
+            .catch(() => alert('Failed to copy JSON.'));
     };
 </script>
 </body>
