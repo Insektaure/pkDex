@@ -33,7 +33,8 @@
     "locales": {
       "en-US": "English (US)",
       "fr-FR": "Français (France)",
-      "de-DE": "Deutsch (Deutschland)"
+      "de-DE": "Deutsch (Deutschland)",
+      "ja-JP": "日本語（日本)"
     },
     "i18n_title": "Sprache",
     "select_locale": "Sprache auswählen",

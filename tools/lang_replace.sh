@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LANG="de"
+LANG="jp"
 
 JSON_FILE="data.json"
 JSON_FILE_TRANSLATED="data_translated.json"

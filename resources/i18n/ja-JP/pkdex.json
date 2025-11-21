@@ -1,0 +1,129 @@
+{
+  "title": "pkDex - ニンテンドースイッチ用ポケモン百科事典",
+  "tabs": {
+    "kanto": "カントー（ポケットモンスター Let's Go! ピカチュウ・Let's Go! イーブイ）",
+    "sinnoh": "シンオウ（ポケットモンスター ブリリアントダイヤモンド・シャイニングパール）",
+    "sinnoh_arceus": "└ シンオウ（Pokémon LEGENDS アルセウス）",
+    "galar": "ガラル（ポケットモンスター ソード・シールド）",
+    "isle_armor": "└ ヨロイじま（エキスパンションパス 第1弾）",
+    "crown_tundra": "└ カンムリせつげん（エキスパンションパス 第2弾）",
+    "paldea": "パルデア（ポケットモンスター スカーレット・バイオレット）",
+    "kitakami": "└ キタカミの里（碧の仮面 - 第1弾DLC）",
+    "blueberry_academy": "└ ブルーベリー学園（藍の円盤 - 第2弾DLC）",
+    "kalos_lza": "カロス（Pokémon LEGENDS Z-A）",
+    "settings": "設定",
+    "about": "pkDexについて",
+    "changelog": "更新履歴"
+  },
+  "welcome": "pkDexアプリへようこそ！",
+  "settings": {
+    "regions": {
+      "all_regions": "すべての地方",
+      "kanto": "カントー（LGPE）",
+      "sinnoh": "シンオウ（BDSP）",
+      "sinnoh_arceus": "シンオウ（LEGENDS アルセウス）",
+      "galar": "ガラル（ソード・シールド）",
+      "isle_armor": "ヨロイじま（ソード・シールドDLC1）",
+      "crown_tundra": "カンムリせつげん（ソード・シールドDLC2）",
+      "paldea": "パルデア（スカーレット・バイオレット）",
+      "kitakami": "キタカミの里（スカーレット・バイオレットDLC1）",
+      "blueberry_academy": "ブルーベリー学園（スカーレット・バイオレットDLC2）",
+      "kalos_lza": "カロス（LEGENDS Z-A）"
+    },
+    "locales": {
+      "en-US": "English (US)",
+      "fr-FR": "Français (France)",
+      "de-DE": "Deutsch (Deutschland)",
+      "ja-JP": "日本語（日本)"
+    },
+    "i18n_title": "言語",
+    "select_locale": "言語を選択",
+    "select_region_to_reset": "リセットする地方を選択",
+    "reset_confirm_all": "すべての地方のポケモン捕獲状況をリセットしますか？\nこの操作は元に戻せません。",
+    "reset_confirm_region": "{region}地方のポケモン捕獲状況をリセットしますか？\nこの操作は元に戻せません。",
+    "reset_success_all": "すべてのポケモン捕獲状況がリセットされました。",
+    "reset_success_region": "{region}地方のポケモン捕獲状況がリセットされました。",
+    "reset_failure": "ポケモン捕獲状況のリセットに失敗しました。",
+    "reset_button": "リセット",
+    "cancel_button": "キャンセル",
+    "settings": "設定",
+    "error_tab_frame": "main.xmlでtabFrameが見つかりませんでした",
+    "check_updates": "アップデートを確認",
+    "launch_updater": "アップデーターを起動",
+    "reset_capture_status": "捕獲状況をリセット",
+    "hide_bottom_bar": "下部バーを非表示",
+    "download_high_res_images": "高解像度画像パックをダウンロード（75MB）",
+    "extract_high_res_images": "高解像度画像パックを展開",
+    "changelog_content": "更新履歴内容",
+    "updates": "アップデート",
+    "check_updates_on_launch": "起動時にアップデートを確認",
+    "pokemon_data": "ポケモンデータ",
+    "user_interface": "ユーザーインターフェース",
+    "resources": "リソース",
+    "locale_restart_message": "言語変更はアプリ再起動後に適用されます。",
+    "restart_now": "今すぐ再起動",
+    "restart_later": "後で",
+    "updater_app_missing": "アップデーターアプリが見つかりません。今すぐダウンロードしますか？",
+    "updater_app_launch": "これによりpkDexが終了し、アップデーターが起動します。先にアップデートをダウンロードしてください。",
+    "update_file_redownload": "アップデートファイルが既に存在します。再ダウンロードしますか？",
+    "img_pack_extraction_confirm": "高解像度画像パックを展開しますか？\n\nしばらく時間がかかる場合があります。",
+    "img_pack_extraction_failure": "展開に失敗しました。再試行するか、手動でZIPファイルを展開してください。",
+    "img_pack_keep_zipfile": "展開が完了しました！\n高解像度画像が利用可能です。\n\nダウンロードしたZIPファイルを保持しますか？",
+    "img_pack_redownload": "高解像度画像パックは既に存在します。\n\n再ダウンロードしますか？",
+    "img_pack_download_complete": "ダウンロード完了！\n\n高解像度画像が展開可能です。\n\n設定の「高解像度画像パックを展開」ボタンを使用してください。"
+  },
+  "about": {
+    "title": "pkDex\nv1.6.0",
+    "description": "pkDexは、ニンテンドースイッチ用ポケモンゲームのデータをオフラインで閲覧できるシンプルなアプリです。",
+    "github": "github.com/Insektaure/pkDex で公開中",
+    "licence": "Apache 2.0 ライセンス",
+    "logo_credit": "ロゴはInvokeAIで生成"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "キャンセル",
+    "back": "戻る",
+    "exit": "終了",
+    "exit_hint": "pkDexを終了しますか？",
+    "open": "開く",
+    "on": "オン",
+    "off": "オフ",
+    "delete": "削除",
+    "save": "保存",
+    "input": "入力してください...",
+    "submit": "送信",
+    "close": "閉じる",
+    "redownload": "再ダウンロード",
+    "extract": "展開",
+    "keep": "保持",
+    "download": "ダウンロード",
+    "launch": "起動"
+  },
+  "listing": {
+    "previous_page": "前のページ",
+    "next_page": "次のページ",
+    "toggle_capture_status": "捕獲状況を切り替え"
+  },
+  "view": {
+    "infos": {
+      "captured": "捕獲済み",
+      "title": {
+        "national_number": "全国図鑑No.",
+        "regional_number": "地方図鑑No.",
+        "shiny": "色違い",
+        "type": "タイプ",
+        "version": "バージョン限定",
+        "evolution": "進化",
+        "locations": "出現場所"
+      },
+      "content": {
+        "available": "入手可能",
+        "locked": "ロック中"
+      }
+    },
+    "navigation": {
+      "previous_pokemon": "前のポケモン",
+      "next_pokemon": "次のポケモン"
+    }
+  }
+}

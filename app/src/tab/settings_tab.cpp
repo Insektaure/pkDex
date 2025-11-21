@@ -202,11 +202,12 @@ SettingsTab::SettingsTab()
 
     // Initialize the locale selector
     // Supported locales list (value) and their display names (label)
-    std::vector<std::string> localeValues = {"en-US", "fr-FR", "de-DE"};
+    std::vector<std::string> localeValues = {"en-US", "fr-FR", "de-DE", "ja-JP"};
     std::vector<std::string> localeLabels = {
         "pkdex/settings/locales/en-US"_i18n,
         "pkdex/settings/locales/fr-FR"_i18n,
-        "pkdex/settings/locales/de-DE"_i18n
+        "pkdex/settings/locales/de-DE"_i18n,
+        "pkdex/settings/locales/ja-JP"_i18n
     };
 
     // Load current preference (default: en-US)
