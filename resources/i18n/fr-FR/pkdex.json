@@ -34,6 +34,8 @@
       "en-US": "English (US)",
       "fr-FR": "Français (France)",
       "de-DE": "Deutsch (Deutschland)",
+      "es-ES": "Español (España)",
+      "it-IT": "Italiano (Italia)",
       "ja-JP": "日本語（日本)"
     },
     "i18n_title": "Langue",

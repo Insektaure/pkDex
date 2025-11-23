@@ -1,0 +1,131 @@
+{
+  "title": "pkDex - Un'enciclopedia Pokémon per i giochi Nintendo Switch",
+  "tabs": {
+    "kanto": "Kanto (Let's Go! Pikachu & Eevee)",
+    "sinnoh": "Sinnoh (Diamante Lucente & Perla Splendente)",
+    "sinnoh_arceus": "└ Sinnoh (Leggende: Arceus)",
+    "galar": "Galar (Spada & Scudo)",
+    "isle_armor": "└ Isola dell'Armatura (DLC 1)",
+    "crown_tundra": "└ Landa Corona (DLC 2)",
+    "paldea": "Paldea (Scarlatto & Violetto)",
+    "kitakami": "└ Nordivia (La Maschera Turchese - DLC 1)",
+    "blueberry_academy": "└ Istituto Mirtillo (Il Disco Indaco - DLC 2)",
+    "kalos_lza": "Kalos (Leggende: Z-A)",
+    "settings": "Impostazioni",
+    "about": "Informazioni su pkDex",
+    "changelog": "Registro modifiche"
+  },
+  "welcome": "Benvenuto nell'app pkDex!",
+  "settings": {
+    "regions": {
+      "all_regions": "Tutte le regioni",
+      "kanto": "Kanto (LGPE)",
+      "sinnoh": "Sinnoh (DLPS)",
+      "sinnoh_arceus": "Sinnoh (Leggende Arceus)",
+      "galar": "Galar (SpSc)",
+      "isle_armor": "Isola dell'Armatura (SpSc DLC 1)",
+      "crown_tundra": "Landa Corona (SpSc DLC 2)",
+      "paldea": "Paldea (ScVi)",
+      "kitakami": "Nordivia (ScVi DLC 1)",
+      "blueberry_academy": "Istituto Mirtillo (ScVi DLC 2)",
+      "kalos_lza": "Kalos (Leggende Z-A)"
+    },
+    "locales": {
+      "en-US": "English (US)",
+      "fr-FR": "Français (France)",
+      "de-DE": "Deutsch (Deutschland)",
+      "es-ES": "Español (España)",
+      "it-IT": "Italiano (Italia)",
+      "ja-JP": "日本語（日本)"
+    },
+    "i18n_title": "Lingua",
+    "select_locale": "Seleziona lingua",
+    "select_region_to_reset": "Seleziona la regione da reimpostare",
+    "reset_confirm_all": "Sei sicuro di voler reimpostare lo stato di cattura di tutti i Pokémon per tutte le regioni?\nQuesta azione non può essere annullata.",
+    "reset_confirm_region": "Sei sicuro di voler reimpostare lo stato di cattura di tutti i Pokémon per la regione {region}?\nQuesta azione non può essere annullata.",
+    "reset_success_all": "Lo stato di cattura di tutti i Pokémon è stato reimpostato.",
+    "reset_success_region": "Lo stato di cattura dei Pokémon per la regione {region} è stato reimpostato.",
+    "reset_failure": "Impossibile reimpostare lo stato di cattura dei Pokémon.",
+    "reset_button": "Reimposta",
+    "cancel_button": "Annulla",
+    "settings": "Impostazioni",
+    "error_tab_frame": "Impossibile trovare tabFrame in main.xml",
+    "check_updates": "Verifica aggiornamenti",
+    "launch_updater": "Avvia aggiornamento",
+    "reset_capture_status": "Reimposta stato di cattura",
+    "hide_bottom_bar": "Nascondi barra inferiore",
+    "download_high_res_images": "Scarica pacchetto immagini ad alta risoluzione (75MB)",
+    "extract_high_res_images": "Estrai pacchetto immagini ad alta risoluzione",
+    "changelog_content": "Contenuto registro modifiche",
+    "updates": "Aggiornamenti",
+    "check_updates_on_launch": "Verifica aggiornamenti all'avvio",
+    "pokemon_data": "Dati Pokémon",
+    "user_interface": "Interfaccia utente",
+    "resources": "Risorse",
+    "locale_restart_message": "Il cambio lingua sarà applicato dopo il riavvio dell'app.",
+    "restart_now": "Riavvia ora",
+    "restart_later": "Più tardi",
+    "updater_app_missing": "L'applicazione di aggiornamento è mancante. Vuoi scaricarla ora?",
+    "updater_app_launch": "Questo chiuderà pkDex e avvierà l'aggiornamento. Assicurati di aver scaricato prima un aggiornamento.",
+    "update_file_redownload": "Un file di aggiornamento esiste già. Vuoi riscaricarlo?",
+    "img_pack_extraction_confirm": "Estrarre il pacchetto immagini ad alta risoluzione?\n\nQuesta operazione potrebbe richiedere del tempo.",
+    "img_pack_extraction_failure": "Estrazione fallita. Riprova o estrai manualmente il file zip.",
+    "img_pack_keep_zipfile": "Estrazione completata!\nLe immagini ad alta risoluzione sono ora disponibili.\n\nVuoi mantenere il file zip scaricato?",
+    "img_pack_redownload": "Il pacchetto immagini ad alta risoluzione esiste già.\n\nVuoi riscaricarlo?",
+    "img_pack_download_complete": "Download completato!\n\nLe immagini ad alta risoluzione sono ora disponibili per l'estrazione.\n\nUsa il pulsante 'Estrai pacchetto immagini ad alta risoluzione' nelle Impostazioni."
+  },
+  "about": {
+    "title": "pkDex\nv1.6.0",
+    "description": "pkDex è un'app semplice per visualizzare dati Pokémon offline, per i giochi Nintendo Switch.",
+    "github": "Trovalo su github.com/Insektaure/pkDex",
+    "licence": "Concesso in licenza Apache 2.0",
+    "logo_credit": "Logo generato con InvokeAI"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Annulla",
+    "back": "Indietro",
+    "exit": "Esci",
+    "exit_hint": "Uscire da pkDex?",
+    "open": "Apri",
+    "on": "Attivo",
+    "off": "Disattivo",
+    "delete": "Elimina",
+    "save": "Salva",
+    "input": "Inserisci...",
+    "submit": "Invia",
+    "close": "Chiudi",
+    "redownload": "Riscarica",
+    "extract": "Estrai",
+    "keep": "Mantieni",
+    "download": "Scarica",
+    "launch": "Avvia"
+  },
+  "listing": {
+    "previous_page": "Pagina precedente",
+    "next_page": "Pagina successiva",
+    "toggle_capture_status": "Cambia stato di cattura"
+  },
+  "view": {
+    "infos": {
+      "captured": "Catturato",
+      "title": {
+        "national_number": "N° Nazionale",
+        "regional_number": "N° Regionale",
+        "shiny": "Cromatico",
+        "type": "Tipo",
+        "version": "Esclusiva versione",
+        "evolution": "Evoluzione",
+        "locations": "Luoghi"
+      },
+      "content": {
+        "available": "Disponibile",
+        "locked": "Bloccato"
+      }
+    },
+    "navigation": {
+      "previous_pokemon": "Pokémon precedente",
+      "next_pokemon": "Pokémon successivo"
+    }
+  }
+}

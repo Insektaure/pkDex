@@ -1,0 +1,14 @@
+{
+  "ok": "OK",
+  "cancel": "Annulla",
+  "back": "Indietro",
+  "exit": "Esci",
+  "exit_hint": "Uscire da pkDex?",
+  "open": "Apri",
+  "on": "Acceso",
+  "off": "Spento",
+  "delete": "Elimina",
+  "save": "Salva",
+  "input": "Per favore inserisci...",
+  "submit": "Invia"
+}
