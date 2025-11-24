@@ -295,79 +295,45 @@ bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
 {
     // Get the currently focused view
     brls::View* focusedView = brls::Application::getCurrentFocus();
-
-    // Try to cast it to a RecyclerCell
     brls::RecyclerCell* focusedCell = dynamic_cast<brls::RecyclerCell*>(focusedView);
-
-    // If the focused view is a RecyclerCell, use its index path
     brls::IndexPath currentSelection;
     if (focusedCell)
-    {
         currentSelection = focusedCell->getIndexPath();
-    }
     else
-    {
-        // Fallback to the data source's current selection
         currentSelection = this->dataSource->getCurrentSelection();
-    }
 
-    // Calculate the actual index based on section and row
     int actualIndex = currentSelection.section * 30 + currentSelection.row;
-
-    // Get the Pokemon at the current index
     Pokemon& pokemon = pokemons[actualIndex];
-
-    // Get current capture states
     pkdex::CaptureStates states = pkdex::PokemonTracker::getCaptureStates(currentRegion, pokemon.regionalDexNumber);
 
-    // Create dialog text with current state
-    std::string dialogText = "Toggle capture states for " + pokemon.name + ":\n";
-    dialogText += (states.normal ? "[X] " : "[ ] ") + std::string("Normal\n");
-    dialogText += (states.shiny ? "[X] " : "[ ] ") + std::string("Shiny\n");
-    dialogText += (states.alpha ? "[X] " : "[ ] ") + std::string("Alpha\n");
-    dialogText += (states.shinyAlpha ? "[X] " : "[ ] ") + std::string("Shiny Alpha");
+    // Create a custom context menu using a Box with BooleanCells
+    auto* menuBox = new brls::Box();
+    menuBox->setAxis(brls::Axis::COLUMN);
+    menuBox->setPadding(24);
 
-    brls::Dialog* dialog = new brls::Dialog(dialogText);
-    dialog->addButton(states.normal ? "Unset Normal" : "Set Normal", [=]() {
-        float contentOffset = recycler->getContentOffsetY();
-        pkdex::PokemonTracker::toggleCaptureState(currentRegion, pokemon.regionalDexNumber, 0);
-        brls::Application::notify(pokemon.name + (states.normal ? " normal unset" : " normal set"));
-        recycler->reloadData();
-        recycler->setDefaultCellFocus(currentSelection);
-        this->dataSource->setCurrentSelection(currentSelection);
-        recycler->setContentOffsetY(contentOffset, false);
-        recycler->selectRowAt(currentSelection, false);
-        recycler->invalidate();
-        brls::Application::giveFocus(recycler);
-    });
-    dialog->addButton(states.shiny ? "Unset Shiny" : "Set Shiny", [=]() {
-        float contentOffset = recycler->getContentOffsetY();
-        pkdex::PokemonTracker::toggleCaptureState(currentRegion, pokemon.regionalDexNumber, 1);
-        brls::Application::notify(pokemon.name + (states.shiny ? " shiny unset" : " shiny set"));
-        recycler->reloadData();
-        recycler->setDefaultCellFocus(currentSelection);
-        this->dataSource->setCurrentSelection(currentSelection);
-        recycler->setContentOffsetY(contentOffset, false);
-        recycler->selectRowAt(currentSelection, false);
-        recycler->invalidate();
-        brls::Application::giveFocus(recycler);
-    });
-    dialog->addButton(states.alpha ? "Unset Alpha" : "Set Alpha", [=]() {
-        float contentOffset = recycler->getContentOffsetY();
-        pkdex::PokemonTracker::toggleCaptureState(currentRegion, pokemon.regionalDexNumber, 2);
-        brls::Application::notify(pokemon.name + (states.alpha ? " alpha unset" : " alpha set"));
-        recycler->reloadData();
-        recycler->setDefaultCellFocus(currentSelection);
-        this->dataSource->setCurrentSelection(currentSelection);
-        recycler->setContentOffsetY(contentOffset, false);
-        recycler->selectRowAt(currentSelection, false);
-        recycler->invalidate();
-        brls::Application::giveFocus(recycler);
-    });
-    // If you want a 4th button, you may need to use a custom dialog or menu, but for now, use a notification for shiny alpha
-    dialog->setCancelable(true);
-    dialog->open();
+    auto addToggle = [&](const std::string& label, bool value, int stateIndex) {
+        auto* cell = new brls::BooleanCell();
+        cell->init(label, value, [=](bool checked) {
+            pkdex::PokemonTracker::toggleCaptureState(currentRegion, pokemon.regionalDexNumber, stateIndex);
+        });
+        menuBox->addView(cell);
+    };
 
+    addToggle("Normal", states.normal, 0);
+    addToggle("Shiny", states.shiny, 1);
+    addToggle("Alpha", states.alpha, 2);
+    addToggle("Shiny Alpha", states.shinyAlpha, 3);
+
+    // Present the menu as a dialog using the Box* constructor
+    brls::Dialog* menuDialog = new brls::Dialog(menuBox);
+    menuDialog->setCancelable(true);
+    // Set a close callback to restore focus/selection only when the dialog is actually closed by the user
+    menuDialog->registerAction("Close", brls::BUTTON_B, [=](brls::View*) {
+        menuDialog->close([=] {
+        });
+        return true;
+    }, true);
+    menuDialog->open();
     return true;
 }
 
