@@ -23,4 +23,10 @@
         marginLeft="@style/brls/sidebar/item_accent_margin_sides"
         marginRight="@style/brls/sidebar/item_accent_margin_sides" />
 
+    <brls:Image
+        id="rightIcon"
+        width="44px"
+        height="44px"
+        marginRight="16px"/>
+
 </brls:Box>

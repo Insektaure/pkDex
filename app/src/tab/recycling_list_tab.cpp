@@ -70,19 +70,24 @@ brls::RecyclerCell* DataSource::cellForRow(brls::RecyclerFrame* recycler, brls::
     // Change the background color for captured Pokemon
     if (isCaptured) {
         // Use a green background for captured Pokemon
-        //item->setBackgroundColor(nvgRGB(100, 200, 100)); // Green
-        item->setBackgroundColor(nvgRGB(173, 160, 75)); // Light yellow
+        //item->setBackgroundColor(nvgRGB(173, 160, 75)); // Light yellow
         // Hide the highlight background to keep our custom background visible when focused
-        item->setHideHighlightBackground(true);
+        //item->setHideHighlightBackground(true);
         // Keep the highlight border visible for better UX
-        item->setHideHighlightBorder(false);
+        //item->setHideHighlightBorder(false);
+        // Show a Pokeball icon for captured Pokemon instead of changing background color
+        item->rightIcon->setImageFromRes("img/pokeball.png");
+        item->rightIcon->setVisibility(brls::Visibility::VISIBLE);
     } else {
         // Use transparent background for non-captured Pokemon
-        item->setBackgroundColor(brls::TRANSPARENT);
+        //item->setBackgroundColor(brls::TRANSPARENT);
         // Show the highlight background for non-captured Pokemon
-        item->setHideHighlightBackground(false);
+        //item->setHideHighlightBackground(false);
         // Show the highlight border for non-captured Pokemon
-        item->setHideHighlightBorder(false);
+        //item->setHideHighlightBorder(false);
+        // Show a blank icon for non-captured Pokemon to hide the icon
+        item->rightIcon->setImageFromRes("");
+        item->rightIcon->setVisibility(brls::Visibility::GONE);
     }
 
     return item;
