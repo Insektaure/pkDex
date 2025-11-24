@@ -23,8 +23,24 @@
         marginLeft="@style/brls/sidebar/item_accent_margin_sides"
         marginRight="@style/brls/sidebar/item_accent_margin_sides" />
 
+
     <brls:Image
         id="rightIcon"
+        width="44px"
+        height="44px"
+        marginRight="4px"/>
+    <brls:Image
+        id="rightIcon2"
+        width="44px"
+        height="44px"
+        marginRight="4px"/>
+    <brls:Image
+        id="rightIcon3"
+        width="44px"
+        height="44px"
+        marginRight="4px"/>
+    <brls:Image
+        id="rightIcon4"
         width="44px"
         height="44px"
         marginRight="16px"/>

@@ -69,37 +69,39 @@ brls::RecyclerCell* DataSource::cellForRow(brls::RecyclerFrame* recycler, brls::
     item->label->setText(pokemons[actualIndex].regionalDexNumber + " - " + pokemons[actualIndex].name);
     item->image->setImageFromRes("img/pokemon/icons/" + pokemons[actualIndex].id + ".png");
 
-    // Show all icons for tracked states (horizontal layout)
-    std::string icons = "";
+    // Set up to four icons for tracked states
+    std::vector<std::string> iconPaths;
     if (captureStates.normal)
-        icons += "img/pokeball.png;";
+        iconPaths.push_back("img/pokeball.png");
     if (captureStates.shiny)
-        icons += "img/pokeball_shiny.png;";
+        iconPaths.push_back("img/shiny.png");
     if (captureStates.alpha)
-        icons += "img/pokeball_alpha.png;";
+        iconPaths.push_back("img/alpha.png");
     if (captureStates.shinyAlpha)
-        icons += "img/pokeball_shiny_alpha.png;";
+        iconPaths.push_back("img/shiny_alpha.png");
 
-    // Remove trailing semicolon
-    if (!icons.empty() && icons.back() == ';')
-        icons.pop_back();
+    // Set all icons invisible by default
+    item->rightIcon->setVisibility(brls::Visibility::GONE);
+    item->rightIcon2->setVisibility(brls::Visibility::GONE);
+    item->rightIcon3->setVisibility(brls::Visibility::GONE);
+    item->rightIcon4->setVisibility(brls::Visibility::GONE);
 
-    // If no icons, hide the rightIcon
-    if (icons.empty()) {
-        item->rightIcon->setImageFromRes("");
-        item->rightIcon->setVisibility(brls::Visibility::GONE);
-    } else {
-        // If only one icon, show it
-        size_t sep = icons.find(';');
-        if (sep == std::string::npos) {
-            item->rightIcon->setImageFromRes(icons);
-            item->rightIcon->setVisibility(brls::Visibility::VISIBLE);
-        } else {
-            // If multiple icons, show the first and add a badge or indicator (for now, just show the first)
-            item->rightIcon->setImageFromRes(icons.substr(0, sep));
-            item->rightIcon->setVisibility(brls::Visibility::VISIBLE);
-            // TODO: For full support, extend RecyclerCell to show multiple icons horizontally
-        }
+    // Show icons in order
+    if (iconPaths.size() > 0) {
+        item->rightIcon->setImageFromRes(iconPaths[0]);
+        item->rightIcon->setVisibility(brls::Visibility::VISIBLE);
+    }
+    if (iconPaths.size() > 1) {
+        item->rightIcon2->setImageFromRes(iconPaths[1]);
+        item->rightIcon2->setVisibility(brls::Visibility::VISIBLE);
+    }
+    if (iconPaths.size() > 2) {
+        item->rightIcon3->setImageFromRes(iconPaths[2]);
+        item->rightIcon3->setVisibility(brls::Visibility::VISIBLE);
+    }
+    if (iconPaths.size() > 3) {
+        item->rightIcon4->setImageFromRes(iconPaths[3]);
+        item->rightIcon4->setVisibility(brls::Visibility::VISIBLE);
     }
 
     return item;

@@ -15,10 +15,14 @@ class RecyclerCell
   public:
     RecyclerCell();
 
-    BRLS_BIND(brls::Rectangle, accent, "brls/sidebar/item_accent");
-    BRLS_BIND(brls::Label, label, "title");
-    BRLS_BIND(brls::Image, image, "image");
-    BRLS_BIND(brls::Image, rightIcon, "rightIcon");
+
+  BRLS_BIND(brls::Rectangle, accent, "brls/sidebar/item_accent");
+  BRLS_BIND(brls::Label, label, "title");
+  BRLS_BIND(brls::Image, image, "image");
+  BRLS_BIND(brls::Image, rightIcon, "rightIcon");
+  BRLS_BIND(brls::Image, rightIcon2, "rightIcon2");
+  BRLS_BIND(brls::Image, rightIcon3, "rightIcon3");
+  BRLS_BIND(brls::Image, rightIcon4, "rightIcon4");
 
     static RecyclerCell* create();
 };
