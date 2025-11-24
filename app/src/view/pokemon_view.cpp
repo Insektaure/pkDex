@@ -65,10 +65,12 @@ void PokemonView::loadPokemon(const Pokemon& newPokemon)
     // Use the stored region instead of trying to get it from the parent
     // The region is set in the constructor
 
-    // Check if the Pokemon is captured
-    bool isCaptured = pkdex::PokemonTracker::isCaptured(region, pokemon.regionalDexNumber);
 
-    // Update the applet frame with a checkmark if the Pokemon is captured
+    // Check if the Pokemon is captured in any state
+    pkdex::CaptureStates states = pkdex::PokemonTracker::getCaptureStates(region, pokemon.regionalDexNumber);
+    bool isCaptured = states.normal || states.shiny || states.alpha || states.shinyAlpha;
+
+    // Update the applet frame with a checkmark if the Pokemon is captured in any state
     std::string title = pokemon.name + " | N°" + pokemon.regionalDexNumber;
     if (isCaptured) {
         title = title + " " + "pkdex/view/infos/captured"_i18n;

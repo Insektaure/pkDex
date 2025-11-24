@@ -11,25 +11,35 @@ namespace pkdex {
 /**
  * @brief Utility class for tracking captured Pokémon
  */
+
+struct CaptureStates {
+    bool normal = false;
+    bool shiny = false;
+    bool alpha = false;
+    bool shinyAlpha = false;
+};
+
 class PokemonTracker {
 public:
-    /**
-     * @brief Check if a Pokémon is captured
-     * 
-     * @param region The region of the Pokémon
-     * @param regionalDexNumber The regional dex number of the Pokémon
-     * @return bool True if the Pokémon is captured, false otherwise
-     */
-    static bool isCaptured(const std::string& region, const std::string& regionalDexNumber);
 
     /**
-     * @brief Toggle the capture status of a Pokémon
+     * @brief Get the capture states of a Pokémon
      * 
      * @param region The region of the Pokémon
      * @param regionalDexNumber The regional dex number of the Pokémon
-     * @return bool The new capture status (true if captured, false if not)
+     * @return CaptureStates The capture states
      */
-    static bool toggleCaptureStatus(const std::string& region, const std::string& regionalDexNumber);
+    static CaptureStates getCaptureStates(const std::string& region, const std::string& regionalDexNumber);
+
+    /**
+     * @brief Toggle a specific capture state of a Pokémon
+     * 
+     * @param region The region of the Pokémon
+     * @param regionalDexNumber The regional dex number of the Pokémon
+     * @param stateIndex 0=normal, 1=shiny, 2=alpha, 3=shinyAlpha
+     * @return CaptureStates The new capture states
+     */
+    static CaptureStates toggleCaptureState(const std::string& region, const std::string& regionalDexNumber, int stateIndex);
 
     /**
      * @brief Reset all Pokémon capture statuses for all regions

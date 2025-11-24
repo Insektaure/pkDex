@@ -194,32 +194,61 @@ bool PokemonTracker::updateTrackerKey(const std::string& region, const std::stri
     return true;
 }
 
+
 std::string PokemonTracker::generateKey(const std::string& region, const std::string& regionalDexNumber) {
     return region + "_" + regionalDexNumber;
 }
 
-bool PokemonTracker::isCaptured(const std::string& region, const std::string& regionalDexNumber) {
+
+// Convert string value to CaptureStates struct (comma-separated 1/0/0/1)
+static CaptureStates stringToCaptureStates(const std::string& value) {
+    CaptureStates states;
+    std::istringstream ss(value);
+    std::string token;
+    int idx = 0;
+    while (std::getline(ss, token, ',') && idx < 4) {
+        bool val = (token == "1");
+        switch (idx) {
+            case 0: states.normal = val; break;
+            case 1: states.shiny = val; break;
+            case 2: states.alpha = val; break;
+            case 3: states.shinyAlpha = val; break;
+        }
+        idx++;
+    }
+    return states;
+}
+
+// Convert CaptureStates struct to string value
+static std::string captureStatesToString(const CaptureStates& states) {
+    return std::string(states.normal ? "1" : "0") + "," +
+           (states.shiny ? "1" : "0") + "," +
+           (states.alpha ? "1" : "0") + "," +
+           (states.shinyAlpha ? "1" : "0");
+}
+
+CaptureStates PokemonTracker::getCaptureStates(const std::string& region, const std::string& regionalDexNumber) {
     auto tracker = readTrackerFile(region);
     std::string key = generateKey(region, regionalDexNumber);
     auto it = tracker.find(key);
-
     if (it == tracker.end()) {
-        return false; // Not found, so not captured
+        return CaptureStates{};
     }
-
-    // Convert string to bool
-    return it->second == "1";
+    return stringToCaptureStates(it->second);
 }
 
-bool PokemonTracker::toggleCaptureStatus(const std::string& region, const std::string& regionalDexNumber) {
+CaptureStates PokemonTracker::toggleCaptureState(const std::string& region, const std::string& regionalDexNumber, int stateIndex) {
     std::string key = generateKey(region, regionalDexNumber);
-    bool currentStatus = isCaptured(region, regionalDexNumber);
-    bool newStatus = !currentStatus;
-
-    // Update the tracker file
-    updateTrackerKey(region, key, newStatus ? "1" : "0");
-
-    return newStatus;
+    CaptureStates states = getCaptureStates(region, regionalDexNumber);
+    switch (stateIndex) {
+        case 0: states.normal = !states.normal; break;
+        case 1: states.shiny = !states.shiny; break;
+        case 2: states.alpha = !states.alpha; break;
+        case 3: states.shinyAlpha = !states.shinyAlpha; break;
+        default: break;
+    }
+    updateTrackerKey(region, key, captureStatesToString(states));
+    return states;
 }
 
 bool PokemonTracker::resetAllCaptureStatus() {

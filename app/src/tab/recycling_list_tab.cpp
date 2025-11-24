@@ -58,8 +58,10 @@ brls::RecyclerCell* DataSource::cellForRow(brls::RecyclerFrame* recycler, brls::
         region = "paldea";
     }
 
-    // Check if the Pokemon is captured
-    bool isCaptured = pkdex::PokemonTracker::isCaptured(region, pokemons[actualIndex].regionalDexNumber);
+
+
+    // Get the capture states
+    pkdex::CaptureStates captureStates = pkdex::PokemonTracker::getCaptureStates(region, pokemons[actualIndex].regionalDexNumber);
 
     RecyclerCell* item = (RecyclerCell*)recycler->dequeueReusableCell("Cell");
 
@@ -67,27 +69,37 @@ brls::RecyclerCell* DataSource::cellForRow(brls::RecyclerFrame* recycler, brls::
     item->label->setText(pokemons[actualIndex].regionalDexNumber + " - " + pokemons[actualIndex].name);
     item->image->setImageFromRes("img/pokemon/icons/" + pokemons[actualIndex].id + ".png");
 
-    // Change the background color for captured Pokemon
-    if (isCaptured) {
-        // Use a green background for captured Pokemon
-        //item->setBackgroundColor(nvgRGB(173, 160, 75)); // Light yellow
-        // Hide the highlight background to keep our custom background visible when focused
-        //item->setHideHighlightBackground(true);
-        // Keep the highlight border visible for better UX
-        //item->setHideHighlightBorder(false);
-        // Show a Pokeball icon for captured Pokemon instead of changing background color
-        item->rightIcon->setImageFromRes("img/pokeball.png");
-        item->rightIcon->setVisibility(brls::Visibility::VISIBLE);
-    } else {
-        // Use transparent background for non-captured Pokemon
-        //item->setBackgroundColor(brls::TRANSPARENT);
-        // Show the highlight background for non-captured Pokemon
-        //item->setHideHighlightBackground(false);
-        // Show the highlight border for non-captured Pokemon
-        //item->setHideHighlightBorder(false);
-        // Show a blank icon for non-captured Pokemon to hide the icon
+    // Show all icons for tracked states (horizontal layout)
+    std::string icons = "";
+    if (captureStates.normal)
+        icons += "img/pokeball.png;";
+    if (captureStates.shiny)
+        icons += "img/pokeball_shiny.png;";
+    if (captureStates.alpha)
+        icons += "img/pokeball_alpha.png;";
+    if (captureStates.shinyAlpha)
+        icons += "img/pokeball_shiny_alpha.png;";
+
+    // Remove trailing semicolon
+    if (!icons.empty() && icons.back() == ';')
+        icons.pop_back();
+
+    // If no icons, hide the rightIcon
+    if (icons.empty()) {
         item->rightIcon->setImageFromRes("");
         item->rightIcon->setVisibility(brls::Visibility::GONE);
+    } else {
+        // If only one icon, show it
+        size_t sep = icons.find(';');
+        if (sep == std::string::npos) {
+            item->rightIcon->setImageFromRes(icons);
+            item->rightIcon->setVisibility(brls::Visibility::VISIBLE);
+        } else {
+            // If multiple icons, show the first and add a badge or indicator (for now, just show the first)
+            item->rightIcon->setImageFromRes(icons.substr(0, sep));
+            item->rightIcon->setVisibility(brls::Visibility::VISIBLE);
+            // TODO: For full support, extend RecyclerCell to show multiple icons horizontally
+        }
     }
 
     return item;
@@ -303,37 +315,56 @@ bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
     // Get the Pokemon at the current index
     Pokemon& pokemon = pokemons[actualIndex];
 
-    // Toggle the capture status
-    bool newStatus = pkdex::PokemonTracker::toggleCaptureStatus(currentRegion, pokemon.regionalDexNumber);
+    // Get current capture states
+    pkdex::CaptureStates states = pkdex::PokemonTracker::getCaptureStates(currentRegion, pokemon.regionalDexNumber);
 
-    // Show a notification
-    std::string message = pokemon.name + " " + (newStatus ? "captured!" : "released!");
-    brls::Application::notify(message);
+    // Create dialog text with current state
+    std::string dialogText = "Toggle capture states for " + pokemon.name + ":\n";
+    dialogText += (states.normal ? "[X] " : "[ ] ") + std::string("Normal\n");
+    dialogText += (states.shiny ? "[X] " : "[ ] ") + std::string("Shiny\n");
+    dialogText += (states.alpha ? "[X] " : "[ ] ") + std::string("Alpha\n");
+    dialogText += (states.shinyAlpha ? "[X] " : "[ ] ") + std::string("Shiny Alpha");
 
-    // Store the current content offset before reloading
-    float contentOffset = recycler->getContentOffsetY();
-
-    // Set the default cell focus to the current selection before reloading
-    // This ensures the correct row is selected after reloading
-    recycler->setDefaultCellFocus(currentSelection);
-
-    // Refresh the UI to update the cell
-    recycler->reloadData();
-
-    // Restore the selection after reloading the data
-    this->dataSource->setCurrentSelection(currentSelection);
-
-    // Restore the content offset
-    recycler->setContentOffsetY(contentOffset, false);
-
-    // Ensure the cell is visible and selected
-    recycler->selectRowAt(currentSelection, false);
-
-    // Force a refresh of the recycler to ensure all cells are properly positioned
-    recycler->invalidate();
-
-    // Give focus to the recycler itself to ensure joystick scrolling works properly
-    brls::Application::giveFocus(recycler);
+    brls::Dialog* dialog = new brls::Dialog(dialogText);
+    dialog->addButton(states.normal ? "Unset Normal" : "Set Normal", [=]() {
+        float contentOffset = recycler->getContentOffsetY();
+        pkdex::PokemonTracker::toggleCaptureState(currentRegion, pokemon.regionalDexNumber, 0);
+        brls::Application::notify(pokemon.name + (states.normal ? " normal unset" : " normal set"));
+        recycler->reloadData();
+        recycler->setDefaultCellFocus(currentSelection);
+        this->dataSource->setCurrentSelection(currentSelection);
+        recycler->setContentOffsetY(contentOffset, false);
+        recycler->selectRowAt(currentSelection, false);
+        recycler->invalidate();
+        brls::Application::giveFocus(recycler);
+    });
+    dialog->addButton(states.shiny ? "Unset Shiny" : "Set Shiny", [=]() {
+        float contentOffset = recycler->getContentOffsetY();
+        pkdex::PokemonTracker::toggleCaptureState(currentRegion, pokemon.regionalDexNumber, 1);
+        brls::Application::notify(pokemon.name + (states.shiny ? " shiny unset" : " shiny set"));
+        recycler->reloadData();
+        recycler->setDefaultCellFocus(currentSelection);
+        this->dataSource->setCurrentSelection(currentSelection);
+        recycler->setContentOffsetY(contentOffset, false);
+        recycler->selectRowAt(currentSelection, false);
+        recycler->invalidate();
+        brls::Application::giveFocus(recycler);
+    });
+    dialog->addButton(states.alpha ? "Unset Alpha" : "Set Alpha", [=]() {
+        float contentOffset = recycler->getContentOffsetY();
+        pkdex::PokemonTracker::toggleCaptureState(currentRegion, pokemon.regionalDexNumber, 2);
+        brls::Application::notify(pokemon.name + (states.alpha ? " alpha unset" : " alpha set"));
+        recycler->reloadData();
+        recycler->setDefaultCellFocus(currentSelection);
+        this->dataSource->setCurrentSelection(currentSelection);
+        recycler->setContentOffsetY(contentOffset, false);
+        recycler->selectRowAt(currentSelection, false);
+        recycler->invalidate();
+        brls::Application::giveFocus(recycler);
+    });
+    // If you want a 4th button, you may need to use a custom dialog or menu, but for now, use a notification for shiny alpha
+    dialog->setCancelable(true);
+    dialog->open();
 
     return true;
 }
