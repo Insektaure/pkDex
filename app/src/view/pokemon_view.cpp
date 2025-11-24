@@ -38,13 +38,13 @@ PokemonView::PokemonView(Pokemon pokemon, int pokemonIndex, const std::string& r
     holder->addGestureRecognizer(new brls::TapGestureRecognizer(holder));
 
     holder->registerClickAction(dismissAction);
-    holder->registerAction("pkdex/common/close"_i18n, brls::ControllerButton::BUTTON_RB, dismissAction, true);
-    registerAction("pkdex/common/close"_i18n, brls::ControllerButton::BUTTON_RB, dismissAction, true);
+    holder->registerAction("pkdex/common/close"_i18n, brls::ControllerButton::BUTTON_B, dismissAction, true);
+    registerAction("pkdex/common/close"_i18n, brls::ControllerButton::BUTTON_B, dismissAction, true);
 
-    // Register ZL and ZR button actions for navigating between Pokemon
-    this->registerAction("pkdex/view/navigation/previous_pokemon"_i18n, brls::BUTTON_LT,
+    // Register L and R button actions for navigating between Pokemon
+    this->registerAction("pkdex/view/navigation/previous_pokemon"_i18n, brls::BUTTON_LB,
         std::bind(&PokemonView::navigateToPreviousPokemon, this, std::placeholders::_1), false, true);
-    this->registerAction("pkdex/view/navigation/next_pokemon"_i18n, brls::BUTTON_RT,
+    this->registerAction("pkdex/view/navigation/next_pokemon"_i18n, brls::BUTTON_RB,
         std::bind(&PokemonView::navigateToNextPokemon, this, std::placeholders::_1), false, true);
 
     // Load the Pokemon data
