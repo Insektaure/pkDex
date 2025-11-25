@@ -106,6 +106,13 @@
     "next_page": "Nächste Seite",
     "toggle_capture_status": "Fangstatus umschalten"
   },
+  "capture_toggle": {
+    "title": "Fangstatus ändern",
+    "normal": "Normal",
+    "shiny": "Schillernd",
+    "alpha": "Elite",
+    "shiny_alpha": "Schillernd Elite"
+  },
   "view": {
     "infos": {
       "captured": "Gefangen",

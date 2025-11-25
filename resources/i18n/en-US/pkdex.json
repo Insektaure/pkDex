@@ -106,6 +106,13 @@
     "next_page": "Next Page",
     "toggle_capture_status": "Toggle Capture Status"
   },
+  "capture_toggle": {
+    "title": "Capture Status",
+    "normal": "Regular",
+    "shiny": "Shiny",
+    "alpha": "Alpha",
+    "shiny_alpha": "Shiny Alpha"
+  },
   "view": {
     "infos": {
       "captured": "Captured",

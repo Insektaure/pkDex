@@ -106,6 +106,13 @@
     "next_page": "Pagina successiva",
     "toggle_capture_status": "Cambia stato di cattura"
   },
+  "capture_toggle": {
+    "title": "Stato di cattura",
+    "normal": "Normale",
+    "shiny": "Cromatico",
+    "alpha": "Alfa",
+    "shiny_alpha": "Alfa Cromatico"
+  },
   "view": {
     "infos": {
       "captured": "Catturato",

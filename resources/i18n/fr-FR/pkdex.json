@@ -106,6 +106,13 @@
     "next_page": "Page >",
     "toggle_capture_status": "Changer le statut de capture"
   },
+  "capture_toggle": {
+    "title": "Statut de capture",
+    "normal": "Normal",
+    "shiny": "Chromatique",
+    "alpha": "Baron",
+    "shiny_alpha": "Baron Chromatique"
+  },
   "view": {
     "infos": {
       "captured": "Capturé",
@@ -128,4 +135,4 @@
       "next_pokemon": "Pokémon suivant"
     }
   }
-}
+},

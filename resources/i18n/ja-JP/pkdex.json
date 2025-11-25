@@ -106,6 +106,13 @@
     "next_page": "次のページ",
     "toggle_capture_status": "捕獲状況を切り替え"
   },
+  "capture_toggle": {
+    "title": "捕獲状況を切り替え",
+    "normal": "ノーマル",
+    "shiny": "色違い",
+    "alpha": "オヤブン",
+    "shiny_alpha": "色違いオヤブン"
+  },
   "view": {
     "infos": {
       "captured": "捕獲済み",
