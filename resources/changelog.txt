@@ -8,12 +8,17 @@
         - Japanese (UI Transl. with AI assistance -fixes appreciated-)
      - Replace yellow background color for captured status by an icon on the right
      - Adjust navigation button in pokemon view for consistency
+     - Tracker :
+        - Can now track Regular, Shiny, Alpha & Shiny Alpha separately
+        - Previous tracking file are backwards compatible (will be updated on status change)
 - Settings menu :
     - Add option to change application language (English, French, German, Spanish, Italian, Japanese)
 - Fix wrong National N° for some Pokemon in :
     - Blueberry Academy
     - Isle of Armor
     - Paldea
+- Other impovements
+    - Json files are now minified at build to reduce application size
 
 ## Version 1.5.2 (2025-11-16)
 - Minor Feature release - Main App :
