@@ -1,16 +1,16 @@
-## Version 1.6.0
+## Version 1.6.0 (2025-11-25)
 - New Feature release - Main App :
     - Add i18n translation support for :
         - French (Transl. by Insektaure)
-        - German (Transl. by Inssektaure, UI with AI assistance)
+        - German (Transl. by Inssektaure & Dev9212, UI with AI assistance)
         - Spanish (UI Transl. with AI assistance -fixes appreciated-)
         - Italian (UI Transl. with AI assistance -fixes appreciated-)
         - Japanese (UI Transl. with AI assistance -fixes appreciated-)
-     - Replace yellow background color for captured status by an icon on the right
      - Adjust navigation button in pokemon view for consistency
      - Tracker :
         - Can now track Regular, Shiny, Alpha & Shiny Alpha separately
         - Previous tracking file are backwards compatible (will be updated on status change)
+        - Replaced yellow background color for captured status by icons on the right
 - Settings menu :
     - Add option to change application language (English, French, German, Spanish, Italian, Japanese)
 - Fix wrong National N° for some Pokemon in :
@@ -18,7 +18,8 @@
     - Isle of Armor
     - Paldea
 - Other impovements
-    - Json files are now minified at build to reduce application size
+    - Json files are now minified at build to help reduce application size
+    - Added custom font to improve readability and support more characters for i18n
 
 ## Version 1.5.2 (2025-11-16)
 - Minor Feature release - Main App :
