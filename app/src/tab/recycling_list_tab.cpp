@@ -311,7 +311,22 @@ bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
     menuBox->setAxis(brls::Axis::COLUMN);
     menuBox->setPadding(24);
 
-    // Create the dialog first
+    // Add a centered title label to the menuBox
+    auto* titleLabel = new brls::Label();
+    titleLabel->setText("pkdex/capture_toggle/title"_i18n);
+    titleLabel->setHorizontalAlign(brls::HorizontalAlign::CENTER);
+    titleLabel->setFontSize(28);
+    titleLabel->setMaxHeight(48);
+    menuBox->addView(titleLabel);
+    
+    // Add a vertical spacer for separation
+    auto* spacer = new brls::Box();
+    spacer->setAxis(brls::Axis::COLUMN);
+    spacer->setMinHeight(24); // 24px vertical space
+    spacer->setMaxHeight(24);
+    menuBox->addView(spacer);
+
+    // Create the dialog
     auto* menuDialog = new brls::Dialog(menuBox);
     menuDialog->setCancelable(true);
 
@@ -335,12 +350,12 @@ bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
         menuBox->addView(cell);
     };
 
-    addToggle("Normal", states.normal, 0);
-    addToggle("Shiny", states.shiny, 1);
-    addToggle("Alpha", states.alpha, 2);
-    addToggle("Shiny Alpha", states.shinyAlpha, 3);
+    addToggle("pkdex/capture_toggle/normal"_i18n, states.normal, 0);
+    addToggle("pkdex/capture_toggle/shiny"_i18n, states.shiny, 1);
+    addToggle("pkdex/capture_toggle/alpha"_i18n, states.alpha, 2);
+    addToggle("pkdex/capture_toggle/shiny_alpha"_i18n, states.shinyAlpha, 3);
 
-    menuDialog->registerAction("Close", brls::BUTTON_B, [=](brls::View*) {
+    menuDialog->registerAction("close"_i18n, brls::BUTTON_B, [=](brls::View*) {
     menuDialog->close([=] {});
         return true;
     }, true);
