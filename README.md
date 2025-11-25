@@ -280,7 +280,7 @@ make build-all
 - **Datasets**: Pokémon data sourced from various community resources and official game data (serebii.net / pokemondb.net / bulbapedia.bulbagarden.net).
 - Switchbrew for their research and [libnx](https://github.com/switchbrew/libnx) which makes it possible to create homebrew
 - ReSwitched for their research, [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere), and [libstratosphere](https://github.com/Atmosphere-NX/libstratosphere) which is invaluable for Switch homebrew
-
+- @Dev9212 for helping on the German translation
 ## License
 
 This project is licensed under the GNU General Public License v2.0 - see the [LICENSE](LICENSE) file for details.
