@@ -311,10 +311,26 @@ bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
     menuBox->setAxis(brls::Axis::COLUMN);
     menuBox->setPadding(24);
 
+    // Create the dialog first
+    auto* menuDialog = new brls::Dialog(menuBox);
+    menuDialog->setCancelable(true);
+
     auto addToggle = [&](const std::string& label, bool value, int stateIndex) {
         auto* cell = new brls::BooleanCell();
         cell->init(label, value, [=](bool checked) {
             pkdex::PokemonTracker::toggleCaptureState(currentRegion, pokemon.regionalDexNumber, stateIndex);
+            // Close the dialog, then restore focus/selection in the close callback
+            menuDialog->close([=] {
+                float contentOffset = recycler->getContentOffsetY();
+                recycler->reloadData();
+                recycler->invalidate();
+                recycler->setDefaultCellFocus(currentSelection);
+                this->dataSource->setCurrentSelection(currentSelection);
+                recycler->setContentOffsetY(contentOffset, false);
+                recycler->selectRowAt(currentSelection, false);
+                brls::Application::giveFocus(recycler);
+            });
+            return true;
         });
         menuBox->addView(cell);
     };
@@ -324,13 +340,8 @@ bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
     addToggle("Alpha", states.alpha, 2);
     addToggle("Shiny Alpha", states.shinyAlpha, 3);
 
-    // Present the menu as a dialog using the Box* constructor
-    brls::Dialog* menuDialog = new brls::Dialog(menuBox);
-    menuDialog->setCancelable(true);
-    // Set a close callback to restore focus/selection only when the dialog is actually closed by the user
     menuDialog->registerAction("Close", brls::BUTTON_B, [=](brls::View*) {
-        menuDialog->close([=] {
-        });
+    menuDialog->close([=] {});
         return true;
     }, true);
     menuDialog->open();
