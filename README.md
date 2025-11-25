@@ -36,7 +36,9 @@ The developers are not responsible for any issues that may arise from using this
 
 - **Pokémon Tracker**:
   - Track caught Pokémon by marking them as caught on the list
-  - Caught Pokémon are highlighted in the list
+  - Caught Pokémon are highlighted in the list with icons for easy identification
+  - Toggle caught status by pressing the `Y` button on the list entry
+  - Can track Regular, Shiny, Alpha & Shiny Alpha separately (if available in selected game)
   - Ability to reset caught status for all Pokémon from the `settings` menu
   - Ability to reset caught status for specific Region from the `settings` menu
   - Caught status is saved in a `pkDex.tracker.{REGION}.ini` file in the `/switch/pkDex` directory (1 file per region)
@@ -72,7 +74,7 @@ The developers are not responsible for any issues that may arise from using this
     - Evolution details
     - Location information
     - Version exclusivity
-5. Press the `Y` button to mark a Pokémon as caught or uncaught. Caught Pokémon will be highlighted in the list.
+5. Press the `Y` button to open a Pokémon tracker menu to mark or unmark a Pokémon as caught.
 6. Marking a Pokémon as caught will create a `pkDex.tracker.{REGION}.ini` file in the `/switch/pkDex` directory.\
    Unmarking a Pokémon will set the corresponding line in `pkDex.tracker.{REGION}.ini` file accordingly. 
 7. Use the settings menu to enable or disable automatic new version checks & check for available updates manually. 
