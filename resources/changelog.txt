@@ -2,11 +2,11 @@
 - New Feature release - Main App :
     - Add i18n translation support for :
         - French (Transl. by Insektaure)
-        - German (Transl. by Inssektaure & Dev9212, UI with AI assistance)
+        - German (Transl. by Insektaure & Dev9212, UI with AI assistance)
         - Spanish (UI Transl. with AI assistance -fixes appreciated-)
         - Italian (UI Transl. with AI assistance -fixes appreciated-)
         - Japanese (UI Transl. with AI assistance -fixes appreciated-)
-     - Adjust navigation button in pokemon view for consistency
+     - Adjust navigation button in Pokemon view for consistency
      - Tracker :
         - Can now track Regular, Shiny, Alpha & Shiny Alpha separately
         - Previous tracking file are backwards compatible (will be updated on status change)
@@ -17,7 +17,7 @@
     - Blueberry Academy
     - Isle of Armor
     - Paldea
-- Other impovements
+- Other improvements
     - Json files are now minified at build to help reduce application size
     - Added custom font to improve readability and support more characters for i18n
 
