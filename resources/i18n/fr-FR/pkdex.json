@@ -102,7 +102,7 @@
     "launch": "Lancer"
   },
   "listing": {
-    "previous_page": "Page <",
+    "previous_page": "< Page",
     "next_page": "Page >",
     "toggle_capture_status": "Changer le statut de capture"
   },

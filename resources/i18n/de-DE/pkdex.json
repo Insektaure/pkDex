@@ -102,8 +102,8 @@
     "launch": "Starten"
   },
   "listing": {
-    "previous_page": "Vorherige Seite",
-    "next_page": "Nächste Seite",
+    "previous_page": "< Seite",
+    "next_page": "Seite >",
     "toggle_capture_status": "Fangstatus umschalten"
   },
   "capture_toggle": {

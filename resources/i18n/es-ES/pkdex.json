@@ -102,9 +102,9 @@
     "launch": "Iniciar"
   },
   "listing": {
-    "previous_page": "Página anterior",
-    "next_page": "Página siguiente",
-    "toggle_capture_status": "Alternar estado de captura"
+    "previous_page": "< Página",
+    "next_page": "Página >",
+    "toggle_capture_status": "Estado de captura"
   },
   "capture_toggle": {
     "title": "Estado de captura",

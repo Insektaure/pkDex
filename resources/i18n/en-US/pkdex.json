@@ -102,8 +102,8 @@
     "launch": "Launch"
   },
   "listing": {
-    "previous_page": "Previous Page",
-    "next_page": "Next Page",
+    "previous_page": "< Page",
+    "next_page": "Page >",
     "toggle_capture_status": "Toggle Capture Status"
   },
   "capture_toggle": {

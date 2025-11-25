@@ -102,8 +102,8 @@
     "launch": "Avvia"
   },
   "listing": {
-    "previous_page": "Pagina precedente",
-    "next_page": "Pagina successiva",
+    "previous_page": "< Pagina",
+    "next_page": "Pagina >",
     "toggle_capture_status": "Cambia stato di cattura"
   },
   "capture_toggle": {
