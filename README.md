@@ -252,24 +252,10 @@ make build-all
 
 ## Screenshots
 
+For static images, see the `screenshots` folder.
+
 <div align="center">
-    <img src="./screenshots/pkDex_1.jpg" alt="Screenshot 1" />
-    <br>
-    <img src="./screenshots/pkDex_2.jpg" alt="Screenshot 2" />
-    <br>
-    <img src="./screenshots/pkDex_3.jpg" alt="Screenshot 3" />
-    <br>
-    <img src="./screenshots/pkDex_4.jpg" alt="Screenshot 4" />
-    <br>
-    <img src="./screenshots/pkDex_4_1.jpg" alt="Screenshot 4.1" />
-    <br>
-    <img src="./screenshots/pkDex_4_2.jpg" alt="Screenshot 4.1" />
-    <br>
-    <img src="./screenshots/pkDex_5.jpg" alt="Screenshot 5" />
-    <br>
-    <img src="./screenshots/pkDex_6.jpg" alt="Screenshot 6" />
-    <br>
-    <img src="./screenshots/pkDex_7.jpg" alt="Screenshot 7" />
+    <img src="./screenshots/output.gif" alt="Screenshot sildeshow" />
 </div>
 
 ## Credits
