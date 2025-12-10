@@ -17097,6 +17097,946 @@
       "evolution": "-",
       "locations": "Wildsektor 20",
       "exclusiveVersion": "-"
+    },
+    "231": {
+      "name": "Diancie",
+      "type": "Gestein / Fee",
+      "evolution": "-",
+      "locations": "Die Nebenquest „Geheimnisvolles Geschenk“ nach Abschluss des Spiels",
+      "exclusiveVersion": "-"
+    },
+    "232": {
+      "name": "Mewtu",
+      "type": "Psycho",
+      "evolution": "-",
+      "locations": "Die Nebenquest „Geheimnisvolles Geschenk“ nach Abschluss des Spiels",
+      "exclusiveVersion": "-"
+    }
+  },
+  "hyperspace_lumiose": {
+    "001": {
+      "name": "Menki",
+      "type": "Kampf",
+      "evolution": "Menki – Lvl 28 → Rasaff – Use Rage Fist 20 times → Epitaff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "002": {
+      "name": "Rasaff",
+      "type": "Kampf",
+      "evolution": "Menki – Lvl 28 → Rasaff – Use Rage Fist 20 times → Epitaff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "003": {
+      "name": "Epitaff",
+      "type": "Kampf / Geist",
+      "evolution": "Menki – Lvl 28 → Rasaff – Use Rage Fist 20 times → Epitaff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "004": {
+      "name": "Mauzi",
+      "type": "Normal",
+      "evolution": "Mauzi – Lvl 28 → Mauzinger",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "005": {
+      "name": "Snobilikat",
+      "type": "Normal",
+      "evolution": "Mauzi – High Friendship → Snobilikat",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "006": {
+      "name": "Mauzinger",
+      "type": "Stahl",
+      "evolution": "Mauzi – Lvl 28 → Mauzinger",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "007": {
+      "name": "Porenta",
+      "type": "Normal / Flug",
+      "evolution": "Porenta – achieve 3 critical hits in one battle → Lauchzelot",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "008": {
+      "name": "Lauchzelot",
+      "type": "Kampf",
+      "evolution": "Porenta – achieve 3 critical hits in one battle → Lauchzelot",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "009": {
+      "name": "Tragosso",
+      "type": "Boden",
+      "evolution": "Tragosso – Lvl 28 → Knogga",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "010": {
+      "name": "Knogga",
+      "type": "Boden",
+      "evolution": "Tragosso – Lvl 28 → Knogga",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "011": {
+      "name": "Porygon",
+      "type": "Normal",
+      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "012": {
+      "name": "Porygon2",
+      "type": "Normal",
+      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "013": {
+      "name": "Porygon-Z",
+      "type": "Normal",
+      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "014": {
+      "name": "Chilingel",
+      "type": "Pflanze",
+      "evolution": "Chilingel – Feuer Stone → Halupenjo",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "015": {
+      "name": "Halupenjo",
+      "type": "Pflanze / Feuer",
+      "evolution": "Chilingel – Feuer Stone → Halupenjo",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "016": {
+      "name": "Forgita",
+      "type": "Fee / Stahl",
+      "evolution": "Forgita – Lvl 24 → Tafforgita – Lvl 38 → Granforgita",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "017": {
+      "name": "Tafforgita",
+      "type": "Fee / Stahl",
+      "evolution": "Forgita – Lvl 24 → Tafforgita – Lvl 38 → Granforgita",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "018": {
+      "name": "Granforgita",
+      "type": "Fee / Stahl",
+      "evolution": "Forgita – Lvl 24 → Tafforgita – Lvl 38 → Granforgita",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "019": {
+      "name": "Mopex",
+      "type": "Drache / Normal",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "020": {
+      "name": "Lumispross",
+      "type": "Gestein / Gift",
+      "evolution": "Lumispross – Lvl 35 → Lumiflora",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "021": {
+      "name": "Lumiflora",
+      "type": "Gestein / Gift",
+      "evolution": "Lumispross – Lvl 35 → Lumiflora",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "022": {
+      "name": "Rotom",
+      "type": "Elektro / Geist",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "023": {
+      "name": "Gruff",
+      "type": "Geist",
+      "evolution": "Gruff – Lvl 30, Nighttime → Friedwuff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "024": {
+      "name": "Friedwuff",
+      "type": "Geist",
+      "evolution": "Gruff – Lvl 30, Nighttime → Friedwuff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "025": {
+      "name": "Sankabuh",
+      "type": "Geist / Boden",
+      "evolution": "Sankabuh – Lvl 42 → Colossand",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "026": {
+      "name": "Colossand",
+      "type": "Geist / Boden",
+      "evolution": "Sankabuh – Lvl 42 → Colossand",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "027": {
+      "name": "Kecleon",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "028": {
+      "name": "Flaminkno",
+      "type": "Flug / Kampf",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "029": {
+      "name": "Frigometri",
+      "type": "Eis",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "030": {
+      "name": "Heerashai",
+      "type": "Wasser",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "031": {
+      "name": "Nigiragi",
+      "type": "Drache / Wasser",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "032": {
+      "name": "Frospino",
+      "type": "Drache / Eis",
+      "evolution": "Frospino – Lvl 35 → Cryospino – Lvl 54 → Espinodon",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "033": {
+      "name": "Cryospino",
+      "type": "Drache / Eis",
+      "evolution": "Frospino – Lvl 35 → Cryospino – Lvl 54 → Espinodon",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "034": {
+      "name": "Espinodon",
+      "type": "Drache / Eis",
+      "evolution": "Frospino – Lvl 35 → Cryospino – Lvl 54 → Espinodon",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "035": {
+      "name": "Gierspenst",
+      "type": "Geist",
+      "evolution": "Gierspenst – collect 999 Coins from Roaming Form → Monetigo",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "036": {
+      "name": "Monetigo",
+      "type": "Stahl / Geist",
+      "evolution": "Gierspenst – collect 999 Coins from Roaming Form → Monetigo",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "037": {
+      "name": "Baldorfish",
+      "type": "Unlicht / Gift",
+      "evolution": "Baldorfish – Lvl up while knowing Barb Barrage → Myriador",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "038": {
+      "name": "Myriador",
+      "type": "Unlicht / Gift",
+      "evolution": "Baldorfish – Lvl up while knowing Barb Barrage → Myriador",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "039": {
+      "name": "Geckarbor",
+      "type": "Pflanze",
+      "evolution": "Geckarbor – Lvl 16 → Reptain – Lvl 36 → Gewaldro",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "040": {
+      "name": "Reptain",
+      "type": "Pflanze",
+      "evolution": "Geckarbor – Lvl 16 → Reptain – Lvl 36 → Gewaldro",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "041": {
+      "name": "Gewaldro",
+      "type": "Pflanze",
+      "evolution": "Geckarbor – Lvl 16 → Reptain – Lvl 36 → Gewaldro",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "042": {
+      "name": "Flemmli",
+      "type": "Feuer",
+      "evolution": "Flemmli – Lvl 16 → Jungglut – Lvl 36 → Lohgock",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "043": {
+      "name": "Jungglut",
+      "type": "Feuer / Kampf",
+      "evolution": "Flemmli – Lvl 16 → Jungglut – Lvl 36 → Lohgock",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "044": {
+      "name": "Lohgock",
+      "type": "Feuer / Kampf",
+      "evolution": "Flemmli – Lvl 16 → Jungglut – Lvl 36 → Lohgock",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "045": {
+      "name": "Hydropi",
+      "type": "Wasser",
+      "evolution": "Hydropi – Lvl 16 → Moorabbel – Lvl 36 → Sumpex",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "046": {
+      "name": "Moorabbel",
+      "type": "Wasser / Boden",
+      "evolution": "Hydropi – Lvl 16 → Moorabbel – Lvl 36 → Sumpex",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "047": {
+      "name": "Sumpex",
+      "type": "Wasser / Boden",
+      "evolution": "Hydropi – Lvl 16 → Moorabbel – Lvl 36 → Sumpex",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "048": {
+      "name": "Barschwa",
+      "type": "Wasser",
+      "evolution": "Barschwa – Trade holding Prism Scale, or level up with max Beauty → Milotic",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "049": {
+      "name": "Milotic",
+      "type": "Wasser",
+      "evolution": "Barschwa – Trade holding Prism Scale, or level up with max Beauty → Milotic",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "050": {
+      "name": "Klingplim",
+      "type": "Psycho",
+      "evolution": "Klingplim – High Friendship, Nighttime → Palimpalim",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "051": {
+      "name": "Palimpalim",
+      "type": "Psycho",
+      "evolution": "Klingplim – High Friendship, Nighttime → Palimpalim",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "052": {
+      "name": "Servol",
+      "type": "Psycho / Normal",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "053": {
+      "name": "Felilou",
+      "type": "Unlicht",
+      "evolution": "Felilou – Lvl 20 → Kleoparda",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "054": {
+      "name": "Kleoparda",
+      "type": "Unlicht",
+      "evolution": "Felilou – Lvl 20 → Kleoparda",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "055": {
+      "name": "Somniam",
+      "type": "Psycho",
+      "evolution": "Somniam – Moon Stone → Somnivora",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "056": {
+      "name": "Somnivora",
+      "type": "Psycho",
+      "evolution": "Somniam – Moon Stone → Somnivora",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "057": {
+      "name": "Jiutesto",
+      "type": "Kampf",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "058": {
+      "name": "Karadonis",
+      "type": "Kampf",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "059": {
+      "name": "Makabaja",
+      "type": "Boden / Geist",
+      "evolution": "Makabaja – Lvl 34 → Echnatoll | – near Dusty Bowl → Oghnatoll",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "060": {
+      "name": "Oghnatoll",
+      "type": "Boden / Geist",
+      "evolution": "Makabaja – Lvl 34 → Echnatoll | – near Dusty Bowl → Oghnatoll",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "061": {
+      "name": "Echnatoll",
+      "type": "Geist",
+      "evolution": "Makabaja – Lvl 34 → Echnatoll | – near Dusty Bowl → Oghnatoll",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "062": {
+      "name": "Reißlaus",
+      "type": "Käfer / Wasser",
+      "evolution": "Reißlaus – Lvl 30 → Tectass",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "063": {
+      "name": "Tectass",
+      "type": "Käfer / Wasser",
+      "evolution": "Reißlaus – Lvl 30 → Tectass",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "064": {
+      "name": "Kleptifux",
+      "type": "Unlicht",
+      "evolution": "Kleptifux – Lvl 18 → Gaunux",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "065": {
+      "name": "Gaunux",
+      "type": "Unlicht",
+      "evolution": "Kleptifux – Lvl 18 → Gaunux",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "066": {
+      "name": "Klopptopus",
+      "type": "Kampf",
+      "evolution": "Klopptopus – After learning Taunt → Kaocto",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "067": {
+      "name": "Kaocto",
+      "type": "Kampf",
+      "evolution": "Klopptopus – After learning Taunt → Kaocto",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "068": {
+      "name": "Mimigma",
+      "type": "Geist / Fee",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "069": {
+      "name": "Axantor",
+      "type": "Käfer / Gestein",
+      "evolution": "Sichlor – Trade holding Metal Coat → Scherox | – Black Augurite → Axantor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "070": {
+      "name": "Morpeko",
+      "type": "Elektro / Unlicht",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "071": {
+      "name": "Golbit",
+      "type": "Boden / Geist",
+      "evolution": "Golbit – Lvl 43 → Golgantes",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "072": {
+      "name": "Golgantes",
+      "type": "Boden / Geist",
+      "evolution": "Golbit – Lvl 43 → Golgantes",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "073": {
+      "name": "Meikro",
+      "type": "Flug",
+      "evolution": "Meikro – Lvl 18 → Kranoviz – Lvl 38 → Krarmor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "074": {
+      "name": "Kranoviz",
+      "type": "Flug",
+      "evolution": "Meikro – Lvl 18 → Kranoviz – Lvl 38 → Krarmor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "075": {
+      "name": "Krarmor",
+      "type": "Flug / Stahl",
+      "evolution": "Meikro – Lvl 18 → Kranoviz – Lvl 38 → Krarmor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "076": {
+      "name": "Fluffeluff",
+      "type": "Normal / Fee",
+      "evolution": "Fluffeluff – High Friendship → Pummeluff – Moon Stone → Knuddeluff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "077": {
+      "name": "Pummeluff",
+      "type": "Normal / Fee",
+      "evolution": "Fluffeluff – High Friendship → Pummeluff – Moon Stone → Knuddeluff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "078": {
+      "name": "Knuddeluff",
+      "type": "Normal / Fee",
+      "evolution": "Fluffeluff – High Friendship → Pummeluff – Moon Stone → Knuddeluff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "079": {
+      "name": "Hefel",
+      "type": "Fee",
+      "evolution": "Hefel – Lvl 26 → Backel",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "080": {
+      "name": "Backel",
+      "type": "Fee",
+      "evolution": "Hefel – Lvl 26 → Backel",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "081": {
+      "name": "Staralili",
+      "type": "Normal / Flug",
+      "evolution": "Staralili – Lvl 14 → Staravia – Lvl 34 → Staraptor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "082": {
+      "name": "Staravia",
+      "type": "Normal / Flug",
+      "evolution": "Staralili – Lvl 14 → Staravia – Lvl 34 → Staraptor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "083": {
+      "name": "Staraptor",
+      "type": "Normal / Flug",
+      "evolution": "Staralili – Lvl 14 → Staravia – Lvl 34 → Staraptor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "084": {
+      "name": "Spoink",
+      "type": "Psycho",
+      "evolution": "Spoink – Lvl 32 → Groink",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "085": {
+      "name": "Groink",
+      "type": "Psycho",
+      "evolution": "Spoink – Lvl 32 → Groink",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "086": {
+      "name": "Krawalloro",
+      "type": "Normal / Flug",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "087": {
+      "name": "Krabbox",
+      "type": "Kampf",
+      "evolution": "Krabbox – Eis Stone → Krawell",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "088": {
+      "name": "Krawell",
+      "type": "Kampf / Eis",
+      "evolution": "Krabbox – Eis Stone → Krawell",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "089": {
+      "name": "Geosali",
+      "type": "Gestein",
+      "evolution": "Geosali – Lvl 24 → Sedisal – Lvl 38 → Saltigant",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "090": {
+      "name": "Sedisal",
+      "type": "Gestein",
+      "evolution": "Geosali – Lvl 24 → Sedisal – Lvl 38 → Saltigant",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "091": {
+      "name": "Saltigant",
+      "type": "Gestein",
+      "evolution": "Geosali – Lvl 24 → Sedisal – Lvl 38 → Saltigant",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "092": {
+      "name": "Schluppuck",
+      "type": "Gift",
+      "evolution": "Schluppuck – Lvl 26 → Schlukwech",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "093": {
+      "name": "Schlukwech",
+      "type": "Gift",
+      "evolution": "Schluppuck – Lvl 26 → Schlukwech",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "094": {
+      "name": "Zubat",
+      "type": "Gift / Flug",
+      "evolution": "Zubat – Lvl 22 → Golbat – High Friendship → Iksbat",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "095": {
+      "name": "Golbat",
+      "type": "Gift / Flug",
+      "evolution": "Zubat – Lvl 22 → Golbat – High Friendship → Iksbat",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "096": {
+      "name": "Iksbat",
+      "type": "Gift / Flug",
+      "evolution": "Zubat – Lvl 22 → Golbat – High Friendship → Iksbat",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "097": {
+      "name": "Knarbon",
+      "type": "Feuer",
+      "evolution": "Knarbon – Auspicious Armor → Crimanzo | – Malicious Armor→ Azugladis",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "098": {
+      "name": "Crimanzo",
+      "type": "Feuer / Psycho",
+      "evolution": "Knarbon – Auspicious Armor → Crimanzo",
+      "locations": "-",
+      "exclusiveVersion": "Scarlet"
+    },
+    "099": {
+      "name": "Azugladis",
+      "type": "Feuer / Geist",
+      "evolution": "Knarbon – Malicious Armor→ Azugladis",
+      "locations": "-",
+      "exclusiveVersion": "Violet"
+    },
+    "100": {
+      "name": "Mobtiff",
+      "type": "Unlicht",
+      "evolution": "Mobtiff – Lvl 30 → Mastifioso",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "101": {
+      "name": "Mastifioso",
+      "type": "Unlicht",
+      "evolution": "Mobtiff – Lvl 30 → Mastifioso",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "102": {
+      "name": "Toxel",
+      "type": "Elektro / Gift",
+      "evolution": "Toxel – Lvl 30 → Riffex",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "103": {
+      "name": "Riffex",
+      "type": "Elektro / Gift",
+      "evolution": "Toxel – Lvl 30 → Riffex",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "104": {
+      "name": "Sproxi",
+      "type": "Gift / Normal",
+      "evolution": "Sproxi – Lvl 28 → Affiti",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "105": {
+      "name": "Affiti",
+      "type": "Gift / Normal",
+      "evolution": "Sproxi – Lvl 28 → Affiti",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "106": {
+      "name": "Sengo",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "107": {
+      "name": "Vipitis",
+      "type": "Gift",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "108": {
+      "name": "Pantimimi",
+      "type": "Psycho / Fee",
+      "evolution": "Pantimimi – After learning Mimic → Pantimos – Lvl 42 → Pantifrost",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "109": {
+      "name": "Pantimos",
+      "type": "Eis / Psycho",
+      "evolution": "Pantimimi – After learning Mimic → Pantimos – Lvl 42 → Pantifrost",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "110": {
+      "name": "Pantifrost",
+      "type": "Eis / Psycho",
+      "evolution": "Pantimimi – After learning Mimic → Pantimos – Lvl 42 → Pantifrost",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "111": {
+      "name": "Tarnpignon",
+      "type": "Pflanze / Gift",
+      "evolution": "Tarnpignon – Lvl 39 → Hutsassa",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "112": {
+      "name": "Hutsassa",
+      "type": "Pflanze / Gift",
+      "evolution": "Tarnpignon – Lvl 39 → Hutsassa",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "113": {
+      "name": "Heatran",
+      "type": "Feuer / Stahl",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "114": {
+      "name": "Volcanion",
+      "type": "Feuer / Wasser",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "115": {
+      "name": "Kobalium",
+      "type": "Stahl / Kampf",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "116": {
+      "name": "Terrakium",
+      "type": "Gestein / Kampf",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "117": {
+      "name": "Viridium",
+      "type": "Pflanze / Kampf",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "118": {
+      "name": "Keldeo",
+      "type": "Wasser / Kampf",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "119": {
+      "name": "Meloetta",
+      "type": "Normal / Psycho",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "120": {
+      "name": "Genesect",
+      "type": "Käfer / Stahl",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "121": {
+      "name": "Hoopa",
+      "type": "Psycho / Geist",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "122": {
+      "name": "Marshadow",
+      "type": "Kampf / Geist",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "123": {
+      "name": "Meltan",
+      "type": "Stahl",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "124": {
+      "name": "Melmetal",
+      "type": "Stahl",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "125": {
+      "name": "Unlichtrai",
+      "type": "Unlicht",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "126": {
+      "name": "Latias",
+      "type": "Drache / Psycho",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "127": {
+      "name": "Latios",
+      "type": "Drache / Psycho",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "128": {
+      "name": "Kyogre",
+      "type": "Wasser",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "129": {
+      "name": "Groudon",
+      "type": "Boden",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "130": {
+      "name": "Rayquaza",
+      "type": "Drache / Flug",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "131": {
+      "name": "Magearna",
+      "type": "Stahl / Fee",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "132": {
+      "name": "Zeraora",
+      "type": "Elektro",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
     }
   }
 }

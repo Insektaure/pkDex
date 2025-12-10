@@ -56,6 +56,10 @@
             <KalosLzaTab/>
         </brls:Tab>
 
+        <brls:Tab label="@i18n/pkdex/tabs/hyperspace_lumiose">
+            <HyperspaceLumioseTab/>
+        </brls:Tab>
+
         <brls:Separator />
 
         <!-- Settings tab -->

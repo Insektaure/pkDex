@@ -1150,4 +1150,14 @@
         <locations>Wild Zone 20</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
+    <pokemon id="719" name="Diancie" regionalDexNumber="231" type="Rock / Fairy" shinyLocked="true">
+        <evolution>-</evolution>
+        <locations>Mystery Gift Sidequest after completing the game</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
+    <pokemon id="150" name="Mewtwo" regionalDexNumber="232" type="Psychic" shinyLocked="true">
+        <evolution>-</evolution>
+        <locations>Mystery Gift Sidequest after completing the game</locations>
+        <exclusiveVersion>-</exclusiveVersion>
+    </pokemon>
 </pokedex>

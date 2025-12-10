@@ -17097,6 +17097,946 @@
       "evolution": "-",
       "locations": "Wild Zone 20",
       "exclusiveVersion": "-"
+    },
+    "231": {
+      "name": "Diancie",
+      "type": "Roche / Fée",
+      "evolution": "-",
+      "locations": "Quête secondaire « Cadeau mystère » après avoir terminé le jeu",
+      "exclusiveVersion": "-"
+    },
+    "232": {
+      "name": "Mewtwo",
+      "type": "Psy",
+      "evolution": "-",
+      "locations": "Quête secondaire « Cadeau mystère » après avoir terminé le jeu",
+      "exclusiveVersion": "-"
+    }
+  },
+  "hyperspace_lumiose": {
+    "001": {
+      "name": "Férosinge",
+      "type": "Combat",
+      "evolution": "Férosinge – Lvl 28 → Colossinge – Use Rage Fist 20 times → Courrousinge",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "002": {
+      "name": "Colossinge",
+      "type": "Combat",
+      "evolution": "Férosinge – Lvl 28 → Colossinge – Use Rage Fist 20 times → Courrousinge",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "003": {
+      "name": "Courrousinge",
+      "type": "Combat / Spectre",
+      "evolution": "Férosinge – Lvl 28 → Colossinge – Use Rage Fist 20 times → Courrousinge",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "004": {
+      "name": "Miaouss",
+      "type": "Normal",
+      "evolution": "Miaouss – Lvl 28 → Berserkatt",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "005": {
+      "name": "Persian",
+      "type": "Normal",
+      "evolution": "Miaouss – High Friendship → Persian",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "006": {
+      "name": "Berserkatt",
+      "type": "Acier",
+      "evolution": "Miaouss – Lvl 28 → Berserkatt",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "007": {
+      "name": "Canarticho",
+      "type": "Normal / Vol",
+      "evolution": "Canarticho – achieve 3 critical hits in one battle → Palarticho",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "008": {
+      "name": "Palarticho",
+      "type": "Combat",
+      "evolution": "Canarticho – achieve 3 critical hits in one battle → Palarticho",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "009": {
+      "name": "Osselait",
+      "type": "Sol",
+      "evolution": "Osselait – Lvl 28 → Ossatueur",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "010": {
+      "name": "Ossatueur",
+      "type": "Sol",
+      "evolution": "Osselait – Lvl 28 → Ossatueur",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "011": {
+      "name": "Porygon",
+      "type": "Normal",
+      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "012": {
+      "name": "Porygon2",
+      "type": "Normal",
+      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "013": {
+      "name": "Porygon-Z",
+      "type": "Normal",
+      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "014": {
+      "name": "Pimito",
+      "type": "Plante",
+      "evolution": "Pimito – Feu Stone → Scovilain",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "015": {
+      "name": "Scovilain",
+      "type": "Plante / Feu",
+      "evolution": "Pimito – Feu Stone → Scovilain",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "016": {
+      "name": "Forgerette",
+      "type": "Fée / Acier",
+      "evolution": "Forgerette – Lvl 24 → Forgella – Lvl 38 → Forgelina",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "017": {
+      "name": "Forgella",
+      "type": "Fée / Acier",
+      "evolution": "Forgerette – Lvl 24 → Forgella – Lvl 38 → Forgelina",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "018": {
+      "name": "Forgelina",
+      "type": "Fée / Acier",
+      "evolution": "Forgerette – Lvl 24 → Forgella – Lvl 38 → Forgelina",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "019": {
+      "name": "Motorizard",
+      "type": "Dragon / Normal",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "020": {
+      "name": "Germéclat",
+      "type": "Roche / Poison",
+      "evolution": "Germéclat – Lvl 35 → Floréclat",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "021": {
+      "name": "Floréclat",
+      "type": "Roche / Poison",
+      "evolution": "Germéclat – Lvl 35 → Floréclat",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "022": {
+      "name": "Motisma",
+      "type": "Électrique / Spectre",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "023": {
+      "name": "Toutombe",
+      "type": "Spectre",
+      "evolution": "Toutombe – Lvl 30, Nighttime → Tomberro",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "024": {
+      "name": "Tomberro",
+      "type": "Spectre",
+      "evolution": "Toutombe – Lvl 30, Nighttime → Tomberro",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "025": {
+      "name": "Bacabouh",
+      "type": "Spectre / Sol",
+      "evolution": "Bacabouh – Lvl 42 → Trépassable",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "026": {
+      "name": "Trépassable",
+      "type": "Spectre / Sol",
+      "evolution": "Bacabouh – Lvl 42 → Trépassable",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "027": {
+      "name": "Kecleon",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "028": {
+      "name": "Flamenroule",
+      "type": "Vol / Combat",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "029": {
+      "name": "Hexagel",
+      "type": "Glace",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "030": {
+      "name": "Oyacata",
+      "type": "Eau",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "031": {
+      "name": "Nigirigon",
+      "type": "Dragon / Eau",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "032": {
+      "name": "Frigodo",
+      "type": "Dragon / Glace",
+      "evolution": "Frigodo – Lvl 35 → Cryodo – Lvl 54 → Glaivodo",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "033": {
+      "name": "Cryodo",
+      "type": "Dragon / Glace",
+      "evolution": "Frigodo – Lvl 35 → Cryodo – Lvl 54 → Glaivodo",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "034": {
+      "name": "Glaivodo",
+      "type": "Dragon / Glace",
+      "evolution": "Frigodo – Lvl 35 → Cryodo – Lvl 54 → Glaivodo",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "035": {
+      "name": "Mordudor",
+      "type": "Spectre",
+      "evolution": "Mordudor – collect 999 Coins from Roaming Form → Gromago",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "036": {
+      "name": "Gromago",
+      "type": "Acier / Spectre",
+      "evolution": "Mordudor – collect 999 Coins from Roaming Form → Gromago",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "037": {
+      "name": "Qwilfish",
+      "type": "Ténèbres / Poison",
+      "evolution": "Qwilfish – Lvl up while knowing Barb Barrage → Qwilpik",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "038": {
+      "name": "Qwilpik",
+      "type": "Ténèbres / Poison",
+      "evolution": "Qwilfish – Lvl up while knowing Barb Barrage → Qwilpik",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "039": {
+      "name": "Arcko",
+      "type": "Plante",
+      "evolution": "Arcko – Lvl 16 → Massko – Lvl 36 → Jungko",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "040": {
+      "name": "Massko",
+      "type": "Plante",
+      "evolution": "Arcko – Lvl 16 → Massko – Lvl 36 → Jungko",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "041": {
+      "name": "Jungko",
+      "type": "Plante",
+      "evolution": "Arcko – Lvl 16 → Massko – Lvl 36 → Jungko",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "042": {
+      "name": "Poussifeu",
+      "type": "Feu",
+      "evolution": "Poussifeu – Lvl 16 → Galifeu – Lvl 36 → Braségali",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "043": {
+      "name": "Galifeu",
+      "type": "Feu / Combat",
+      "evolution": "Poussifeu – Lvl 16 → Galifeu – Lvl 36 → Braségali",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "044": {
+      "name": "Braségali",
+      "type": "Feu / Combat",
+      "evolution": "Poussifeu – Lvl 16 → Galifeu – Lvl 36 → Braségali",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "045": {
+      "name": "Gobou",
+      "type": "Eau",
+      "evolution": "Gobou – Lvl 16 → Flobio – Lvl 36 → Laggron",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "046": {
+      "name": "Flobio",
+      "type": "Eau / Sol",
+      "evolution": "Gobou – Lvl 16 → Flobio – Lvl 36 → Laggron",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "047": {
+      "name": "Laggron",
+      "type": "Eau / Sol",
+      "evolution": "Gobou – Lvl 16 → Flobio – Lvl 36 → Laggron",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "048": {
+      "name": "Barpau",
+      "type": "Eau",
+      "evolution": "Barpau – Trade holding Prism Scale, or level up with max Beauty → Milobellus",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "049": {
+      "name": "Milobellus",
+      "type": "Eau",
+      "evolution": "Barpau – Trade holding Prism Scale, or level up with max Beauty → Milobellus",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "050": {
+      "name": "Korillon",
+      "type": "Psy",
+      "evolution": "Korillon – High Friendship, Nighttime → Éoko",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "051": {
+      "name": "Éoko",
+      "type": "Psy",
+      "evolution": "Korillon – High Friendship, Nighttime → Éoko",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "052": {
+      "name": "Wimessir",
+      "type": "Psy / Normal",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "053": {
+      "name": "Chacripan",
+      "type": "Ténèbres",
+      "evolution": "Chacripan – Lvl 20 → Léopardus",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "054": {
+      "name": "Léopardus",
+      "type": "Ténèbres",
+      "evolution": "Chacripan – Lvl 20 → Léopardus",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "055": {
+      "name": "Munna",
+      "type": "Psy",
+      "evolution": "Munna – Moon Stone → Mushana",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "056": {
+      "name": "Mushana",
+      "type": "Psy",
+      "evolution": "Munna – Moon Stone → Mushana",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "057": {
+      "name": "Judokrak",
+      "type": "Combat",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "058": {
+      "name": "Karaclée",
+      "type": "Combat",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "059": {
+      "name": "Tutafeh",
+      "type": "Sol / Spectre",
+      "evolution": "Tutafeh – Lvl 34 → Tutankafer | – near Dusty Bowl → Tutétékri",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "060": {
+      "name": "Tutétékri",
+      "type": "Sol / Spectre",
+      "evolution": "Tutafeh – Lvl 34 → Tutankafer | – near Dusty Bowl → Tutétékri",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "061": {
+      "name": "Tutankafer",
+      "type": "Spectre",
+      "evolution": "Tutafeh – Lvl 34 → Tutankafer | – near Dusty Bowl → Tutétékri",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "062": {
+      "name": "Sovkipou",
+      "type": "Insecte / Eau",
+      "evolution": "Sovkipou – Lvl 30 → Sarmuraï",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "063": {
+      "name": "Sarmuraï",
+      "type": "Insecte / Eau",
+      "evolution": "Sovkipou – Lvl 30 → Sarmuraï",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "064": {
+      "name": "Goupilou",
+      "type": "Ténèbres",
+      "evolution": "Goupilou – Lvl 18 → Roublenard",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "065": {
+      "name": "Roublenard",
+      "type": "Ténèbres",
+      "evolution": "Goupilou – Lvl 18 → Roublenard",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "066": {
+      "name": "Poulpaf",
+      "type": "Combat",
+      "evolution": "Poulpaf – After learning Taunt → Krakos",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "067": {
+      "name": "Krakos",
+      "type": "Combat",
+      "evolution": "Poulpaf – After learning Taunt → Krakos",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "068": {
+      "name": "Mimiqui",
+      "type": "Spectre / Fée",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "069": {
+      "name": "Hachécateur",
+      "type": "Insecte / Roche",
+      "evolution": "Insécateur – Trade holding Metal Coat → Cizayox | – Black Augurite → Hachécateur",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "070": {
+      "name": "Morpeko",
+      "type": "Électrique / Ténèbres",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "071": {
+      "name": "Gringolem",
+      "type": "Sol / Spectre",
+      "evolution": "Gringolem – Lvl 43 → Golemastoc",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "072": {
+      "name": "Golemastoc",
+      "type": "Sol / Spectre",
+      "evolution": "Gringolem – Lvl 43 → Golemastoc",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "073": {
+      "name": "Minisange",
+      "type": "Vol",
+      "evolution": "Minisange – Lvl 18 → Bleuseille – Lvl 38 → Corvaillus",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "074": {
+      "name": "Bleuseille",
+      "type": "Vol",
+      "evolution": "Minisange – Lvl 18 → Bleuseille – Lvl 38 → Corvaillus",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "075": {
+      "name": "Corvaillus",
+      "type": "Vol / Acier",
+      "evolution": "Minisange – Lvl 18 → Bleuseille – Lvl 38 → Corvaillus",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "076": {
+      "name": "Toudoudou",
+      "type": "Normal / Fée",
+      "evolution": "Toudoudou – High Friendship → Rondoudou – Moon Stone → Grodoudou",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "077": {
+      "name": "Rondoudou",
+      "type": "Normal / Fée",
+      "evolution": "Toudoudou – High Friendship → Rondoudou – Moon Stone → Grodoudou",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "078": {
+      "name": "Grodoudou",
+      "type": "Normal / Fée",
+      "evolution": "Toudoudou – High Friendship → Rondoudou – Moon Stone → Grodoudou",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "079": {
+      "name": "Pâtachiot",
+      "type": "Fée",
+      "evolution": "Pâtachiot – Lvl 26 → Briochien",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "080": {
+      "name": "Briochien",
+      "type": "Fée",
+      "evolution": "Pâtachiot – Lvl 26 → Briochien",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "081": {
+      "name": "Étourmi",
+      "type": "Normal / Vol",
+      "evolution": "Étourmi – Lvl 14 → Étourvol – Lvl 34 → Étouraptor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "082": {
+      "name": "Étourvol",
+      "type": "Normal / Vol",
+      "evolution": "Étourmi – Lvl 14 → Étourvol – Lvl 34 → Étouraptor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "083": {
+      "name": "Étouraptor",
+      "type": "Normal / Vol",
+      "evolution": "Étourmi – Lvl 14 → Étourvol – Lvl 34 → Étouraptor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "084": {
+      "name": "Spoink",
+      "type": "Psy",
+      "evolution": "Spoink – Lvl 32 → Groret",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "085": {
+      "name": "Groret",
+      "type": "Psy",
+      "evolution": "Spoink – Lvl 32 → Groret",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "086": {
+      "name": "Tapatoès",
+      "type": "Normal / Vol",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "087": {
+      "name": "Crabagarre",
+      "type": "Combat",
+      "evolution": "Crabagarre – Glace Stone → Crabominable",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "088": {
+      "name": "Crabominable",
+      "type": "Combat / Glace",
+      "evolution": "Crabagarre – Glace Stone → Crabominable",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "089": {
+      "name": "Selutin",
+      "type": "Roche",
+      "evolution": "Selutin – Lvl 24 → Amassel – Lvl 38 → Gigansel",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "090": {
+      "name": "Amassel",
+      "type": "Roche",
+      "evolution": "Selutin – Lvl 24 → Amassel – Lvl 38 → Gigansel",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "091": {
+      "name": "Gigansel",
+      "type": "Roche",
+      "evolution": "Selutin – Lvl 24 → Amassel – Lvl 38 → Gigansel",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "092": {
+      "name": "Gloupti",
+      "type": "Poison",
+      "evolution": "Gloupti – Lvl 26 → Avaltout",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "093": {
+      "name": "Avaltout",
+      "type": "Poison",
+      "evolution": "Gloupti – Lvl 26 → Avaltout",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "094": {
+      "name": "Nosferapti",
+      "type": "Poison / Vol",
+      "evolution": "Nosferapti – Lvl 22 → Nosferalto – High Friendship → Nostenfer",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "095": {
+      "name": "Nosferalto",
+      "type": "Poison / Vol",
+      "evolution": "Nosferapti – Lvl 22 → Nosferalto – High Friendship → Nostenfer",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "096": {
+      "name": "Nostenfer",
+      "type": "Poison / Vol",
+      "evolution": "Nosferapti – Lvl 22 → Nosferalto – High Friendship → Nostenfer",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "097": {
+      "name": "Charbambin",
+      "type": "Feu",
+      "evolution": "Charbambin – Auspicious Armor → Carmadura | – Malicious Armor→ Malvalame",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "098": {
+      "name": "Carmadura",
+      "type": "Feu / Psy",
+      "evolution": "Charbambin – Auspicious Armor → Carmadura",
+      "locations": "-",
+      "exclusiveVersion": "Scarlet"
+    },
+    "099": {
+      "name": "Malvalame",
+      "type": "Feu / Spectre",
+      "evolution": "Charbambin – Malicious Armor→ Malvalame",
+      "locations": "-",
+      "exclusiveVersion": "Violet"
+    },
+    "100": {
+      "name": "Grondogue",
+      "type": "Ténèbres",
+      "evolution": "Grondogue – Lvl 30 → Dogrino",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "101": {
+      "name": "Dogrino",
+      "type": "Ténèbres",
+      "evolution": "Grondogue – Lvl 30 → Dogrino",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "102": {
+      "name": "Toxizap",
+      "type": "Électrique / Poison",
+      "evolution": "Toxizap – Lvl 30 → Salarsen",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "103": {
+      "name": "Salarsen",
+      "type": "Électrique / Poison",
+      "evolution": "Toxizap – Lvl 30 → Salarsen",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "104": {
+      "name": "Gribouraigne",
+      "type": "Poison / Normal",
+      "evolution": "Gribouraigne – Lvl 28 → Tag-Tag",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "105": {
+      "name": "Tag-Tag",
+      "type": "Poison / Normal",
+      "evolution": "Gribouraigne – Lvl 28 → Tag-Tag",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "106": {
+      "name": "Mangriff",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "107": {
+      "name": "Séviper",
+      "type": "Poison",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "108": {
+      "name": "Mime Jr",
+      "type": "Psy / Fée",
+      "evolution": "Mime Jr – After learning Mimic → M. Mime – Lvl 42 → M. Glaquette",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "109": {
+      "name": "M. Mime",
+      "type": "Glace / Psy",
+      "evolution": "Mime Jr – After learning Mimic → M. Mime – Lvl 42 → M. Glaquette",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "110": {
+      "name": "M. Glaquette",
+      "type": "Glace / Psy",
+      "evolution": "Mime Jr – After learning Mimic → M. Mime – Lvl 42 → M. Glaquette",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "111": {
+      "name": "Trompignon",
+      "type": "Plante / Poison",
+      "evolution": "Trompignon – Lvl 39 → Gaulet",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "112": {
+      "name": "Gaulet",
+      "type": "Plante / Poison",
+      "evolution": "Trompignon – Lvl 39 → Gaulet",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "113": {
+      "name": "Heatran",
+      "type": "Feu / Acier",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "114": {
+      "name": "Volcanion",
+      "type": "Feu / Eau",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "115": {
+      "name": "Cobaltium",
+      "type": "Acier / Combat",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "116": {
+      "name": "Terrakium",
+      "type": "Roche / Combat",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "117": {
+      "name": "Viridium",
+      "type": "Plante / Combat",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "118": {
+      "name": "Keldeo",
+      "type": "Eau / Combat",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "119": {
+      "name": "Meloetta",
+      "type": "Normal / Psy",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "120": {
+      "name": "Genesect",
+      "type": "Insecte / Acier",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "121": {
+      "name": "Hoopa",
+      "type": "Psy / Spectre",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "122": {
+      "name": "Marshadow",
+      "type": "Combat / Spectre",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "123": {
+      "name": "Meltan",
+      "type": "Acier",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "124": {
+      "name": "Melmetal",
+      "type": "Acier",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "125": {
+      "name": "Ténèbresrai",
+      "type": "Ténèbres",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "126": {
+      "name": "Latias",
+      "type": "Dragon / Psy",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "127": {
+      "name": "Latios",
+      "type": "Dragon / Psy",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "128": {
+      "name": "Kyogre",
+      "type": "Eau",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "129": {
+      "name": "Groudon",
+      "type": "Sol",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "130": {
+      "name": "Rayquaza",
+      "type": "Dragon / Vol",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "131": {
+      "name": "Magearna",
+      "type": "Acier / Fée",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "132": {
+      "name": "Zeraora",
+      "type": "Électrique",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
     }
   }
 }

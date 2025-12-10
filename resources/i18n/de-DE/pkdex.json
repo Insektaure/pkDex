@@ -11,6 +11,7 @@
     "kitakami": "└ Kitakami (Die Türkisgrüne Maske - DLC 1)",
     "blueberry_academy": "└ Blaubeer-Akademie (Die Indigoblaue Scheibe - DLC 2)",
     "kalos_lza": "Kalos (Legenden: Z-A)",
+    "hyperspace_lumiose": "└ Dimensions-Illumina (Mega-Dimension DLC)",
     "settings": "Einstellungen",
     "about": "Über pkDex",
     "changelog": "Änderungsprotokoll"
@@ -28,7 +29,8 @@
       "paldea": "Paldea (Kar/Pur)",
       "kitakami": "Kitakami (Kar/Pur DLC 1)",
       "blueberry_academy": "Blaubeer-Akademie (Kar/Pur DLC 2)",
-      "kalos_lza": "Kalos (Legenden Z-A)"
+      "kalos_lza": "Kalos (Legenden Z-A)",
+      "hyperspace_lumiose": "Dimensions-Illumina (LZA DLC)"
     },
     "locales": {
       "en-US": "English (US)",
@@ -75,7 +77,7 @@
     "img_pack_download_complete": "Download abgeschlossen!\n\nHochauflösende Bilder sind jetzt zur Extraktion verfügbar.\n\nVerwenden Sie die Schaltfläche 'Hochauflösendes Bildpaket extrahieren' in den Einstellungen."
   },
   "about": {
-    "title": "pkDex\nv1.6.0",
+    "title": "pkDex\nv1.6.1",
     "description": "pkDex ist eine einfache App, um Pokémon-Daten offline für die Nintendo Switch-Spiele anzusehen.",
     "github": "Finden Sie es auf github.com/Insektaure/pkDex",
     "licence": "Lizenziert unter Apache 2.0",

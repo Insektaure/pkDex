@@ -240,14 +240,14 @@
     },
     "035": {
       "name": "ピッピ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピッピ – Moon Stone → ピクシー",
       "locations": "Mt. Moon",
       "exclusiveVersion": "-"
     },
     "036": {
       "name": "ピクシー",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピッピ – Moon Stone → ピクシー",
       "locations": "Mt. Moon",
       "exclusiveVersion": "-"
@@ -268,14 +268,14 @@
     },
     "039": {
       "name": "プリン",
-      "type": "ノーマル / Fairy",
+      "type": "ノーマル / フェアリー",
       "evolution": "プリン – Moon Stone → プクリン",
       "locations": "Route 5, 6, 7, 8",
       "exclusiveVersion": "-"
     },
     "040": {
       "name": "プクリン",
-      "type": "ノーマル / Fairy",
+      "type": "ノーマル / フェアリー",
       "evolution": "プリン – Moon Stone → プクリン",
       "locations": "Evolve プリン",
       "exclusiveVersion": "-"
@@ -849,7 +849,7 @@
     },
     "122": {
       "name": "バリヤード",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "-",
       "locations": "Route 11",
       "exclusiveVersion": "-"
@@ -1726,14 +1726,14 @@
     },
     "094": {
       "name": "マネネ",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "マネネ – After learning Mimic → バリヤード",
       "locations": "Brilliant Diamond → Route 209, 210 | Shining Pearl → Breed バリヤード",
       "exclusiveVersion": "-"
     },
     "095": {
       "name": "バリヤード",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "マネネ – After learning Mimic → バリヤード",
       "locations": "Brilliant Diamond → Route 218, 222, Dazzling Cave, Whiteout Cave, Icy Cave, Stargleam Cavern, Glacial Cavern | Shining Pearl → Dazzling Cave, Whiteout Cave, Icy Cave, Stargleam Cavern, Glacial Cavern",
       "exclusiveVersion": "-"
@@ -1761,21 +1761,21 @@
     },
     "099": {
       "name": "ピィ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Mt. Coronet",
       "exclusiveVersion": "-"
     },
     "100": {
       "name": "ピッピ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Mt. Coronet",
       "exclusiveVersion": "-"
     },
     "101": {
       "name": "ピクシー",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Evolve ピッピ / ピィ",
       "exclusiveVersion": "-"
@@ -1936,21 +1936,21 @@
     },
     "124": {
       "name": "ルリリ",
-      "type": "ノーマル / Fairy",
+      "type": "ノーマル / フェアリー",
       "evolution": "ルリリ – High Friendship → マリル – Lvl 18 → マリルリ",
       "locations": "Great Marsh",
       "exclusiveVersion": "-"
     },
     "125": {
       "name": "マリル",
-      "type": "みず / Fairy",
+      "type": "みず / フェアリー",
       "evolution": "ルリリ – High Friendship → マリル – Lvl 18 → マリルリ",
       "locations": "Great Marsh",
       "exclusiveVersion": "-"
     },
     "126": {
       "name": "マリルリ",
-      "type": "みず / Fairy",
+      "type": "みず / フェアリー",
       "evolution": "ルリリ – High Friendship → マリル – Lvl 18 → マリルリ",
       "locations": "Evolve マリル / ルリリ",
       "exclusiveVersion": "-"
@@ -2358,8 +2358,8 @@
     },
     "033": {
       "name": "ニンフィア",
-      "type": "Fairy",
-      "evolution": "イーブイ – after learning Fairy move + High Friendship → ニンフィア",
+      "type": "フェアリー",
+      "evolution": "イーブイ – after learning フェアリー move + High Friendship → ニンフィア",
       "locations": "Space-Time Distortion",
       "exclusiveVersion": "-"
     },
@@ -2659,14 +2659,14 @@
     },
     "076": {
       "name": "マネネ",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "マネネ – After learning Mimic → バリヤード",
       "locations": "Horseshoe Plains, Sandgem Flats",
       "exclusiveVersion": "-"
     },
     "077": {
       "name": "バリヤード",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "マネネ – After learning Mimic → バリヤード",
       "locations": "Sandgem Flats",
       "exclusiveVersion": "-"
@@ -2834,21 +2834,21 @@
     },
     "101": {
       "name": "ラルトス",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト | – Dawn Stone, Male → エルレイド",
       "locations": "Gapejaw Bog, Heart's Crag, Shrouded Ruins, Snowpoint Temple",
       "exclusiveVersion": "-"
     },
     "102": {
       "name": "キルリア",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト | – Dawn Stone, Male → エルレイド",
       "locations": "Heart's Crag, Shrouded Ruins, Snowpoint Temple",
       "exclusiveVersion": "-"
     },
     "103": {
       "name": "サーナイト",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト",
       "locations": "Heart's Crag",
       "exclusiveVersion": "-"
@@ -3016,21 +3016,21 @@
     },
     "127": {
       "name": "トゲピー",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "トゲピー – High Friendship → トゲチック – Shiny Stone → トゲキッス",
       "locations": "Bathers' Lagoon, Cottonsedge Prairie, Tranquility Cove",
       "exclusiveVersion": "-"
     },
     "128": {
       "name": "トゲチック",
-      "type": "Fairy / ひこう",
+      "type": "フェアリー / ひこう",
       "evolution": "トゲピー – High Friendship → トゲチック – Shiny Stone → トゲキッス",
       "locations": "Bolderoll Slope, Cottonsedge Prairie, Tranquility Cove",
       "exclusiveVersion": "-"
     },
     "129": {
       "name": "トゲキッス",
-      "type": "Fairy / ひこう",
+      "type": "フェアリー / ひこう",
       "evolution": "トゲピー – High Friendship → トゲチック – Shiny Stone → トゲキッス",
       "locations": "Lake Verity",
       "exclusiveVersion": "-"
@@ -3520,21 +3520,21 @@
     },
     "199": {
       "name": "ピィ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Fabled Spring",
       "exclusiveVersion": "-"
     },
     "200": {
       "name": "ピッピ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Fabled Spring",
       "exclusiveVersion": "-"
     },
     "201": {
       "name": "ピクシー",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Fabled Spring",
       "exclusiveVersion": "-"
@@ -3765,7 +3765,7 @@
     },
     "234": {
       "name": "ラブトロス",
-      "type": "Fairy / ひこう",
+      "type": "フェアリー / ひこう",
       "evolution": "-",
       "locations": "Scarlet Bog",
       "exclusiveVersion": "-"
@@ -4663,21 +4663,21 @@
     },
     "120": {
       "name": "ラルトス",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト | – Dawn Stone, Male → エルレイド",
       "locations": "Rolling Fields, South Lake Miloch, Dappled Grove, West Lake キバゴell, North Lake Miloch, Watchtower Ruins, Fields of Honor",
       "exclusiveVersion": "-"
     },
     "121": {
       "name": "キルリア",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト | – Dawn Stone, Male → エルレイド",
       "locations": "Evolve ラルトス",
       "exclusiveVersion": "-"
     },
     "122": {
       "name": "サーナイト",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト | – Dawn Stone, Male → エルレイド",
       "locations": "Dusty Bowl, Lake of Outrage",
       "exclusiveVersion": "-"
@@ -5118,28 +5118,28 @@
     },
     "185": {
       "name": "マホミル",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "マホミル – Spin around holding Sweet → マホイップ",
       "locations": "Route 4, Bridge Field, Giant's Mirror",
       "exclusiveVersion": "-"
     },
     "186": {
       "name": "マホイップ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "マホミル – Spin around holding Sweet → マホイップ",
       "locations": "Evolve マホミル",
       "exclusiveVersion": "-"
     },
     "187": {
       "name": "アブリー",
-      "type": "むし / Fairy",
+      "type": "むし / フェアリー",
       "evolution": "アブリー – Lvl 25 → アブリボン",
       "locations": "Route 4, Bridge Field, Giant's Mirror, Motostoke Riverbank",
       "exclusiveVersion": "-"
     },
     "188": {
       "name": "アブリボン",
-      "type": "むし / Fairy",
+      "type": "むし / フェアリー",
       "evolution": "アブリー – Lvl 25 → アブリボン",
       "locations": "Stony Wilderness",
       "exclusiveVersion": "-"
@@ -5251,8 +5251,8 @@
     },
     "204": {
       "name": "ニンフィア",
-      "type": "Fairy",
-      "evolution": "イーブイ – after learning Fairy move + High Friendship → ニンフィア",
+      "type": "フェアリー",
+      "evolution": "イーブイ – after learning フェアリー move + High Friendship → ニンフィア",
       "locations": "Evolve イーブイ",
       "exclusiveVersion": "-"
     },
@@ -5293,28 +5293,28 @@
     },
     "210": {
       "name": "ペロッパフ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ペロッパフ – Trade holding Whipped Dream → ペロリーム",
       "locations": "Route 5, Glimwood Tangle, Giant's Mirror, Stony Wilderness",
       "exclusiveVersion": "Sword"
     },
     "211": {
       "name": "ペロリーム",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ペロッパフ – Trade holding Whipped Dream → ペロリーム",
       "locations": "Evolve ペロッパフ",
       "exclusiveVersion": "Sword"
     },
     "212": {
       "name": "シュシュプ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "シュシュプ – Trade holding Sachet → フレフワン",
       "locations": "Route 5, Glimwood Tangle, Giant's Mirror, Stony Wilderness",
       "exclusiveVersion": "Shield"
     },
     "213": {
       "name": "フレフワン",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "シュシュプ – Trade holding Sachet → フレフワン",
       "locations": "Evolve シュシュプ",
       "exclusiveVersion": "Shield"
@@ -5489,21 +5489,21 @@
     },
     "238": {
       "name": "ベロバー",
-      "type": "あく / Fairy",
+      "type": "あく / フェアリー",
       "evolution": "ベロバー – Lvl 32 → ギモー – Lvl 42 → オーロンゲ",
       "locations": "Giant's Mirror, Hammerlocke Hills, Motostoke Outskirts, Stony Wilderness, Slippery Slope",
       "exclusiveVersion": "-"
     },
     "239": {
       "name": "ギモー",
-      "type": "あく / Fairy",
+      "type": "あく / フェアリー",
       "evolution": "ベロバー – Lvl 32 → ギモー – Lvl 42 → オーロンゲ",
       "locations": "Glimwood Tangle, Giant's Bed, Snowslide Slope, Giant's Foot",
       "exclusiveVersion": "-"
     },
     "240": {
       "name": "オーロンゲ",
-      "type": "あく / Fairy",
+      "type": "あく / フェアリー",
       "evolution": "ベロバー – Lvl 32 → ギモー – Lvl 42 → オーロンゲ",
       "locations": "Lake of Outrage",
       "exclusiveVersion": "-"
@@ -5524,7 +5524,7 @@
     },
     "243": {
       "name": "ブリムオン",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ミブリム – Lvl 32 → テブリム – Lvl 42 → ブリムオン",
       "locations": "Lake of Outrage",
       "exclusiveVersion": "-"
@@ -5580,7 +5580,7 @@
     },
     "251": {
       "name": "マタドガス",
-      "type": "どく / Fairy",
+      "type": "どく / フェアリー",
       "evolution": "ドガース – Lvl 35 → マタドガス",
       "locations": "Slumbering Weald, Lake of Outrage",
       "exclusiveVersion": "-"
@@ -5601,42 +5601,42 @@
     },
     "254": {
       "name": "ピィ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Breed ピッピ",
       "exclusiveVersion": "-"
     },
     "255": {
       "name": "ピッピ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Giant's Cap, Motostoke Riverbank, Giant's Bed, Snowslide Slope, Tunnel to the Top",
       "exclusiveVersion": "-"
     },
     "256": {
       "name": "ピクシー",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Evolve ピッピ / ピィ",
       "exclusiveVersion": "-"
     },
     "257": {
       "name": "トゲピー",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "トゲピー – High Friendship → トゲチック – Shiny Stone → トゲキッス",
       "locations": "Bridge Field",
       "exclusiveVersion": "-"
     },
     "258": {
       "name": "トゲチック",
-      "type": "Fairy / ひこう",
+      "type": "フェアリー / ひこう",
       "evolution": "トゲピー – High Friendship → トゲチック – Shiny Stone → トゲキッス",
       "locations": "Stony Wilderness",
       "exclusiveVersion": "-"
     },
     "259": {
       "name": "トゲキッス",
-      "type": "Fairy / ひこう",
+      "type": "フェアリー / ひこう",
       "evolution": "トゲピー – High Friendship → トゲチック – Shiny Stone → トゲキッス",
       "locations": "Evolve トゲピー / トゲチック",
       "exclusiveVersion": "-"
@@ -5657,14 +5657,14 @@
     },
     "262": {
       "name": "モンメン",
-      "type": "くさ / Fairy",
+      "type": "くさ / フェアリー",
       "evolution": "モンメン – Sun Stone → エルフーン",
       "locations": "Stony Wilderness, Ballimere Lake",
       "exclusiveVersion": "-"
     },
     "263": {
       "name": "エルフーン",
-      "type": "くさ / Fairy",
+      "type": "くさ / フェアリー",
       "evolution": "モンメン – Sun Stone → エルフーン",
       "locations": "Evolve モンメン",
       "exclusiveVersion": "-"
@@ -5888,7 +5888,7 @@
     },
     "295": {
       "name": "クチート",
-      "type": "はがね / Fairy",
+      "type": "はがね / フェアリー",
       "evolution": "-",
       "locations": "Bridge Field, Dusty Bowl, Lakeside Cave",
       "exclusiveVersion": "Sword"
@@ -5930,7 +5930,7 @@
     },
     "301": {
       "name": "ミミッキュ",
-      "type": "ゴースト / Fairy",
+      "type": "ゴースト / フェアリー",
       "evolution": "-",
       "locations": "Giant's Mirror, Slippery Slope, Frostpoint Field, Giant's Bed, Old Cemetery, Snowslide Slope, Giant's Foot, Frigid Sea, Three-Point Pass, Ballimere Lake",
       "exclusiveVersion": "-"
@@ -6161,7 +6161,7 @@
     },
     "334": {
       "name": "ギャロップ",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ポニータ – Lvl 40 → ギャロップ",
       "locations": "Evolve ポニータ",
       "exclusiveVersion": "Shield"
@@ -6203,14 +6203,14 @@
     },
     "340": {
       "name": "ネマシュ",
-      "type": "くさ / Fairy",
+      "type": "くさ / フェアリー",
       "evolution": "ネマシュ – Lvl 24 → マシェード",
       "locations": "Giant's Mirror, Hammerlocke Hills",
       "exclusiveVersion": "-"
     },
     "341": {
       "name": "マシェード",
-      "type": "くさ / Fairy",
+      "type": "くさ / フェアリー",
       "evolution": "ネマシュ – Lvl 24 → マシェード",
       "locations": "Glimwood Tangle",
       "exclusiveVersion": "-"
@@ -6371,7 +6371,7 @@
     },
     "364": {
       "name": "マネネ",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "マネネ – After learning Mimic → バリヤード – Lvl 42 → バリコオル",
       "locations": "Slippery Slope, Frostpoint Field, Giant's Bed, Old Cemetery, Snowslide Slope, Giant's Foot, Frigid Sea, Three-Point Pass, Ballimere Lake",
       "exclusiveVersion": "-"
@@ -6609,7 +6609,7 @@
     },
     "398": {
       "name": "ザシアン",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "-",
       "locations": "Tower Summit",
       "exclusiveVersion": "Sword"
@@ -6702,21 +6702,21 @@
     },
     "011": {
       "name": "ププリン",
-      "type": "ノーマル / Fairy",
+      "type": "ノーマル / フェアリー",
       "evolution": "ププリン – High Friendship → プリン – Moon Stone → プクリン",
       "locations": "Breed プリン / プクリン",
       "exclusiveVersion": "-"
     },
     "012": {
       "name": "プリン",
-      "type": "ノーマル / Fairy",
+      "type": "ノーマル / フェアリー",
       "evolution": "ププリン – High Friendship → プリン – Moon Stone → プクリン",
       "locations": "Challenge Beach, Fields of Honor",
       "exclusiveVersion": "-"
     },
     "013": {
       "name": "プクリン",
-      "type": "ノーマル / Fairy",
+      "type": "ノーマル / フェアリー",
       "evolution": "ププリン – High Friendship → プリン – Moon Stone → プクリン",
       "locations": "Evolve プリン / ププリン",
       "exclusiveVersion": "-"
@@ -6821,7 +6821,7 @@
     },
     "028": {
       "name": "クレッフィ",
-      "type": "はがね / Fairy",
+      "type": "はがね / フェアリー",
       "evolution": "-",
       "locations": "Fields of Honor",
       "exclusiveVersion": "-"
@@ -6863,21 +6863,21 @@
     },
     "034": {
       "name": "ラルトス",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト | – Dawn Stone, Male → エルレイド",
       "locations": "Rolling Fields, South Lake Miloch, Dappled Grove, West Lake キバゴell, North Lake Miloch, Watchtower Ruins, Fields of Honor",
       "exclusiveVersion": "-"
     },
     "035": {
       "name": "キルリア",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト | – Dawn Stone, Male → エルレイド",
       "locations": "Evolve ラルトス",
       "exclusiveVersion": "-"
     },
     "036": {
       "name": "サーナイト",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト",
       "locations": "Dusty Bowl, Lake of Outrage",
       "exclusiveVersion": "-"
@@ -7178,7 +7178,7 @@
     },
     "079": {
       "name": "キュワワー",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "-",
       "locations": "Fields of Honor, Soothing Wetlands, Training Lowlands, Insular Sea, Honeycalm Island",
       "exclusiveVersion": "-"
@@ -7346,7 +7346,7 @@
     },
     "103": {
       "name": "デデンネ",
-      "type": "でんき / Fairy",
+      "type": "でんき / フェアリー",
       "evolution": "-",
       "locations": "Challenge Beach",
       "exclusiveVersion": "-"
@@ -7598,21 +7598,21 @@
     },
     "139": {
       "name": "ルリリ",
-      "type": "ノーマル / Fairy",
+      "type": "ノーマル / フェアリー",
       "evolution": "ルリリ – High Friendship → マリル – Lvl 18 → マリルリ",
       "locations": "Brawlers' Cave",
       "exclusiveVersion": "-"
     },
     "140": {
       "name": "マリル",
-      "type": "みず / Fairy",
+      "type": "みず / フェアリー",
       "evolution": "ルリリ – High Friendship → マリル – Lvl 18 → マリルリ",
       "locations": "Evolve ルリリ",
       "exclusiveVersion": "-"
     },
     "141": {
       "name": "マリルリ",
-      "type": "みず / Fairy",
+      "type": "みず / フェアリー",
       "evolution": "ルリリ – High Friendship → マリル – Lvl 18 → マリルリ",
       "locations": "Evolve マリル / ルリリ",
       "exclusiveVersion": "-"
@@ -8174,7 +8174,7 @@
     },
     "010": {
       "name": "マネネ",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "マネネ – After learning Mimic → バリヤード – Lvl 42 → バリコオル",
       "locations": "Slippery Slope, Frostpoint Field, Giant's Bed, Old Cemetery, Snowslide Slope, Giant's Foot, Frigid Sea, Three-Point Pass, Ballimere Lake",
       "exclusiveVersion": "-"
@@ -8363,21 +8363,21 @@
     },
     "037": {
       "name": "ベロバー",
-      "type": "あく / Fairy",
+      "type": "あく / フェアリー",
       "evolution": "ベロバー – Lvl 32 → ギモー – Lvl 42 → オーロンゲ",
       "locations": "Giant's Mirror, Hammerlocke Hills, Motostoke Outskirts, Stony Wilderness, Slippery Slope",
       "exclusiveVersion": "-"
     },
     "038": {
       "name": "ギモー",
-      "type": "あく / Fairy",
+      "type": "あく / フェアリー",
       "evolution": "ベロバー – Lvl 32 → ギモー – Lvl 42 → オーロンゲ",
       "locations": "Glimwood Tangle, Giant's Bed, Snowslide Slope, Giant's Foot",
       "exclusiveVersion": "-"
     },
     "039": {
       "name": "オーロンゲ",
-      "type": "あく / Fairy",
+      "type": "あく / フェアリー",
       "evolution": "ベロバー – Lvl 32 → ギモー – Lvl 42 → オーロンゲ",
       "locations": "Lake of Outrage",
       "exclusiveVersion": "-"
@@ -8398,35 +8398,35 @@
     },
     "042": {
       "name": "ブリムオン",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ミブリム – Lvl 32 → テブリム – Lvl 42 → ブリムオン",
       "locations": "Lake of Outrage",
       "exclusiveVersion": "-"
     },
     "043": {
       "name": "ピィ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Breed ピッピ / ピクシー",
       "exclusiveVersion": "-"
     },
     "044": {
       "name": "ピッピ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Giant's Cap, Motostoke Riverbank, Giant's Bed, Snowslide Slope, Tunnel to the Top",
       "exclusiveVersion": "-"
     },
     "045": {
       "name": "ピクシー",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Evolve ピッピ / ピィ",
       "exclusiveVersion": "-"
     },
     "046": {
       "name": "ミミッキュ",
-      "type": "ゴースト / Fairy",
+      "type": "ゴースト / フェアリー",
       "evolution": "-",
       "locations": "Giant's Mirror, Slippery Slope, Frostpoint Field, Giant's Bed, Old Cemetery, Snowslide Slope, Giant's Foot, Frigid Sea, Three-Point Pass, Ballimere Lake",
       "exclusiveVersion": "-"
@@ -8678,8 +8678,8 @@
     },
     "082": {
       "name": "ニンフィア",
-      "type": "Fairy",
-      "evolution": "イーブイ – after learning Fairy move + High Friendship → ニンフィア",
+      "type": "フェアリー",
+      "evolution": "イーブイ – after learning フェアリー move + High Friendship → ニンフィア",
       "locations": "Evolve イーブイ",
       "exclusiveVersion": "-"
     },
@@ -8846,7 +8846,7 @@
     },
     "106": {
       "name": "ギャロップ",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ポニータ – Lvl 40 → ギャロップ",
       "locations": "Evolve ポニータ",
       "exclusiveVersion": "Shield"
@@ -9000,7 +9000,7 @@
     },
     "128": {
       "name": "メレシー",
-      "type": "いわ / Fairy",
+      "type": "いわ / フェアリー",
       "evolution": "-",
       "locations": "Tunnel to the Top, Roaring-Sea Caves, Lakeside Cave",
       "exclusiveVersion": "-"
@@ -9280,14 +9280,14 @@
     },
     "168": {
       "name": "モンメン",
-      "type": "くさ / Fairy",
+      "type": "くさ / フェアリー",
       "evolution": "モンメン – Sun Stone → エルフーン",
       "locations": "Stony Wilderness, Ballimere Lake",
       "exclusiveVersion": "-"
     },
     "169": {
       "name": "エルフーン",
-      "type": "くさ / Fairy",
+      "type": "くさ / フェアリー",
       "evolution": "モンメン – Sun Stone → エルフーン",
       "locations": "Evolve モンメン",
       "exclusiveVersion": "-"
@@ -9329,7 +9329,7 @@
     },
     "175": {
       "name": "クチート",
-      "type": "はがね / Fairy",
+      "type": "はがね / フェアリー",
       "evolution": "-",
       "locations": "Bridge Field, Dusty Bowl, Lakeside Cave",
       "exclusiveVersion": "Sword"
@@ -9898,21 +9898,21 @@
     },
     "046": {
       "name": "ルリリ",
-      "type": "ノーマル / Fairy",
+      "type": "ノーマル / フェアリー",
       "evolution": "ルリリ – High Friendship → マリル – Lvl 18 → マリルリ",
       "locations": "Tagtree Thicket, Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, South Paldean Sea",
       "exclusiveVersion": "-"
     },
     "047": {
       "name": "マリル",
-      "type": "みず / Fairy",
+      "type": "みず / フェアリー",
       "evolution": "ルリリ – High Friendship → マリル – Lvl 18 → マリルリ",
       "locations": "Tagtree Thicket, Asado Desert, Casseroya Lake, North Province (Area One), North Province (Area Two), North Province (Area Three), East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Two), West Province (Area Three), Glaseado Mountain, South Paldean Sea",
       "exclusiveVersion": "-"
     },
     "048": {
       "name": "マリルリ",
-      "type": "みず / Fairy",
+      "type": "みず / フェアリー",
       "evolution": "ルリリ – High Friendship → マリル – Lvl 18 → マリルリ",
       "locations": "Casseroya Lake, West Province (Area Two), West Province (Area Three)",
       "exclusiveVersion": "-"
@@ -9989,42 +9989,42 @@
     },
     "059": {
       "name": "ププリン",
-      "type": "ノーマル / Fairy",
+      "type": "ノーマル / フェアリー",
       "evolution": "ププリン – High Friendship → プリン – Moon Stone → プクリン",
       "locations": "East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Six), West Province (Area Two), West Province (Area Three), Glaseado Mountain, The Pokémon League",
       "exclusiveVersion": "-"
     },
     "060": {
       "name": "プリン",
-      "type": "ノーマル / Fairy",
+      "type": "ノーマル / フェアリー",
       "evolution": "ププリン – High Friendship → プリン – Moon Stone → プクリン",
       "locations": "North Province (Area One), South Province (Area Two), West Province (Area Three)",
       "exclusiveVersion": "-"
     },
     "061": {
       "name": "プクリン",
-      "type": "ノーマル / Fairy",
+      "type": "ノーマル / フェアリー",
       "evolution": "ププリン – High Friendship → プリン – Moon Stone → プクリン",
       "locations": "North Province (Area One)",
       "exclusiveVersion": "-"
     },
     "062": {
       "name": "ラルトス",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト | – Dawn Stone, Male → エルレイド",
       "locations": "South Province (Area One)",
       "exclusiveVersion": "-"
     },
     "063": {
       "name": "キルリア",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト | – Dawn Stone, Male → エルレイド",
       "locations": "East Province (Area Two), West Province (Area Two)",
       "exclusiveVersion": "-"
     },
     "064": {
       "name": "サーナイト",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト | – Dawn Stone, Male → エルレイド",
       "locations": "Glaseado Mountain",
       "exclusiveVersion": "-"
@@ -10108,14 +10108,14 @@
     },
     "076": {
       "name": "パピモッチ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "パピモッチ – Lvl 26 → バウッツェル",
       "locations": "East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Six), West Province (Area Three), The Pokémon League",
       "exclusiveVersion": "-"
     },
     "077": {
       "name": "バウッツェル",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "パピモッチ – Lvl 26 → バウッツェル",
       "locations": "East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Six), West Province (Area Three), The Pokémon League",
       "exclusiveVersion": "-"
@@ -10591,21 +10591,21 @@
     },
     "145": {
       "name": "フラベベ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "フラベベ – Lvl 19 → フラエッテ – Shiny Stone → フラージェス",
       "locations": "Tagtree Thicket, Asado Desert, North Province (Area One), North Province (Area Two), North Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), Glaseado Mountain, East Paldean Sea, The Pokémon League",
       "exclusiveVersion": "-"
     },
     "146": {
       "name": "フラエッテ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "フラベベ – Lvl 19 → フラエッテ – Shiny Stone → フラージェス",
       "locations": "Tagtree Thicket, Asado Desert, North Province (Area One), North Province (Area Two), North Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), The Great Crater of Paldea, Glaseado Mountain, East Paldean Sea, The Pokémon League",
       "exclusiveVersion": "-"
     },
     "147": {
       "name": "フラージェス",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "フラベベ – Lvl 19 → フラエッテ – Shiny Stone → フラージェス",
       "locations": "North Province (Area Three)",
       "exclusiveVersion": "-"
@@ -10885,8 +10885,8 @@
     },
     "187": {
       "name": "ニンフィア",
-      "type": "Fairy",
-      "evolution": "イーブイ – after learning Fairy move + High Friendship → ニンフィア",
+      "type": "フェアリー",
+      "evolution": "イーブイ – after learning フェアリー move + High Friendship → ニンフィア",
       "locations": "South Province (Area Six), West Province (Area Three)",
       "exclusiveVersion": "-"
     },
@@ -10976,7 +10976,7 @@
     },
     "200": {
       "name": "デデンネ",
-      "type": "でんき / Fairy",
+      "type": "でんき / フェアリー",
       "evolution": "-",
       "locations": "North Province (Area Three), West Province (Area Three)",
       "exclusiveVersion": "-"
@@ -11249,14 +11249,14 @@
     },
     "239": {
       "name": "ミミッキュ",
-      "type": "ゴースト / Fairy",
+      "type": "ゴースト / フェアリー",
       "evolution": "-",
       "locations": "Tagtree Thicket, East Province (Area Two)",
       "exclusiveVersion": "-"
     },
     "240": {
       "name": "クレッフィ",
-      "type": "はがね / Fairy",
+      "type": "はがね / フェアリー",
       "evolution": "-",
       "locations": "East Province (Area One), East Province (Area Two), East Province (Area Three), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Six), West Province (Area Two), West Province (Area Three), Glaseado Mountain, The Pokémon League",
       "exclusiveVersion": "-"
@@ -11529,21 +11529,21 @@
     },
     "279": {
       "name": "カヌチャン",
-      "type": "Fairy / はがね",
+      "type": "フェアリー / はがね",
       "evolution": "カヌチャン – Lvl 24 → ナカヌチャン – Lvl 38 → デカヌチャン",
       "locations": "Asado Desert, Casseroya Lake, North Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Three), Glaseado Mountain",
       "exclusiveVersion": "-"
     },
     "280": {
       "name": "ナカヌチャン",
-      "type": "Fairy / はがね",
+      "type": "フェアリー / はがね",
       "evolution": "カヌチャン – Lvl 24 → ナカヌチャン – Lvl 38 → デカヌチャン",
       "locations": "Asado Desert, Casseroya Lake, North Province (Area One), East Province (Area Two), South Province (Area One), South Province (Area Two), South Province (Area Three), South Province (Area Four), South Province (Area Five), South Province (Area Six), West Province (Area One), West Province (Area Three), Glaseado Mountain",
       "exclusiveVersion": "-"
     },
     "281": {
       "name": "デカヌチャン",
-      "type": "Fairy / はがね",
+      "type": "フェアリー / はがね",
       "evolution": "カヌチャン – Lvl 24 → ナカヌチャン – Lvl 38 → デカヌチャン",
       "locations": "Tera Raid Battles (5★, 6★)",
       "exclusiveVersion": "-"
@@ -11564,28 +11564,28 @@
     },
     "284": {
       "name": "ブリムオン",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ミブリム – Lvl 32 → テブリム – Lvl 42 → ブリムオン",
       "locations": "Tera Raid Battles (5★)",
       "exclusiveVersion": "-"
     },
     "285": {
       "name": "ベロバー",
-      "type": "あく / Fairy",
+      "type": "あく / フェアリー",
       "evolution": "ベロバー – Lvl 32 → ギモー – Lvl 42 → オーロンゲ",
       "locations": "Tagtree Thicket",
       "exclusiveVersion": "-"
     },
     "286": {
       "name": "ギモー",
-      "type": "あく / Fairy",
+      "type": "あく / フェアリー",
       "evolution": "ベロバー – Lvl 32 → ギモー – Lvl 42 → オーロンゲ",
       "locations": "Tagtree Thicket",
       "exclusiveVersion": "-"
     },
     "287": {
       "name": "オーロンゲ",
-      "type": "あく / Fairy",
+      "type": "あく / フェアリー",
       "evolution": "ベロバー – Lvl 32 → ギモー – Lvl 42 → オーロンゲ",
       "locations": "Tera Raid Battles (5★)",
       "exclusiveVersion": "-"
@@ -12215,7 +12215,7 @@
     },
     "377": {
       "name": "サケブシッポ",
-      "type": "Fairy / エスパー",
+      "type": "フェアリー / エスパー",
       "evolution": "-",
       "locations": "The Great Crater of Paldea",
       "exclusiveVersion": "Scarlet"
@@ -12229,7 +12229,7 @@
     },
     "379": {
       "name": "ハバタクカミ",
-      "type": "ゴースト / Fairy",
+      "type": "ゴースト / フェアリー",
       "evolution": "-",
       "locations": "The Great Crater of Paldea",
       "exclusiveVersion": "Scarlet"
@@ -12362,7 +12362,7 @@
     },
     "398": {
       "name": "テツノブジン",
-      "type": "Fairy / かくとう",
+      "type": "フェアリー / かくとう",
       "evolution": "-",
       "locations": "The Great Crater of Paldea",
       "exclusiveVersion": "Violet"
@@ -12490,14 +12490,14 @@
     },
     "016": {
       "name": "アブリー",
-      "type": "むし / Fairy",
+      "type": "むし / フェアリー",
       "evolution": "アブリー – Lvl 25 → アブリボン",
       "locations": "Kitakami Road, Mossfell Confluence, Wistful Fields, Paradise Barrens",
       "exclusiveVersion": "-"
     },
     "017": {
       "name": "アブリボン",
-      "type": "むし / Fairy",
+      "type": "むし / フェアリー",
       "evolution": "アブリー – Lvl 25 → アブリボン",
       "locations": "Mossfell Confluence, Wistful Fields",
       "exclusiveVersion": "-"
@@ -12777,21 +12777,21 @@
     },
     "057": {
       "name": "ラルトス",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト | – Dawn Stone, Male → エルレイド",
       "locations": "Reveler's Road, Kitakami Hall, Mossfell Confluence, Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods",
       "exclusiveVersion": "-"
     },
     "058": {
       "name": "キルリア",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト | – Dawn Stone, Male → エルレイド",
       "locations": "Oni Mountain, Wistful Fields, Paradise Barrens, Kitakami Wilds, Timeless Woods",
       "exclusiveVersion": "-"
     },
     "059": {
       "name": "サーナイト",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト",
       "locations": "Kitakami Wilds, Timeless Woods",
       "exclusiveVersion": "-"
@@ -13036,7 +13036,7 @@
     },
     "094": {
       "name": "ブリムオン",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ミブリム – Lvl 32 → テブリム – Lvl 42 → ブリムオン",
       "locations": "Timeless Woods",
       "exclusiveVersion": "-"
@@ -13435,21 +13435,21 @@
     },
     "151": {
       "name": "ピィ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Reveler's Road, Kitakami Hall, Oni Mountain, Infernal Pass, Crystal Pool",
       "exclusiveVersion": "-"
     },
     "152": {
       "name": "ピッピ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Reveler's Road, Kitakami Hall, Infernal Pass, Oni's Maw, Crystal Pool",
       "exclusiveVersion": "-"
     },
     "153": {
       "name": "ピクシー",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Evolve ピッピ / ピィ",
       "exclusiveVersion": "-"
@@ -13547,7 +13547,7 @@
     },
     "167": {
       "name": "メレシー",
-      "type": "いわ / Fairy",
+      "type": "いわ / フェアリー",
       "evolution": "-",
       "locations": "Oni Mountain, Crystal Pool, Chilling みずhead",
       "exclusiveVersion": "-"
@@ -13701,28 +13701,28 @@
     },
     "189": {
       "name": "ミミッキュ",
-      "type": "ゴースト / Fairy",
+      "type": "ゴースト / フェアリー",
       "evolution": "-",
       "locations": "Oni Mountain, Infernal Pass, Chilling みずhead, Kitakami Wilds, Timeless Woods",
       "exclusiveVersion": "-"
     },
     "190": {
       "name": "ベロバー",
-      "type": "あく / Fairy",
+      "type": "あく / フェアリー",
       "evolution": "ベロバー – Lvl 32 → ギモー – Lvl 42 → オーロンゲ",
       "locations": "Kitakami Wilds, Timeless Woods",
       "exclusiveVersion": "-"
     },
     "191": {
       "name": "ギモー",
-      "type": "あく / Fairy",
+      "type": "あく / フェアリー",
       "evolution": "ベロバー – Lvl 32 → ギモー – Lvl 42 → オーロンゲ",
       "locations": "Kitakami Wilds, Timeless Woods",
       "exclusiveVersion": "-"
     },
     "192": {
       "name": "オーロンゲ",
-      "type": "あく / Fairy",
+      "type": "あく / フェアリー",
       "evolution": "ベロバー – Lvl 32 → ギモー – Lvl 42 → オーロンゲ",
       "locations": "Timeless Woods",
       "exclusiveVersion": "-"
@@ -13771,7 +13771,7 @@
     },
     "199": {
       "name": "キチキギス",
-      "type": "どく / Fairy",
+      "type": "どく / フェアリー",
       "evolution": "-",
       "locations": "Oni Mountain (after completing the main story of The Teal Mask)",
       "exclusiveVersion": "-"
@@ -14074,14 +14074,14 @@
     },
     "042": {
       "name": "マホミル",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "マホミル – Spin around holding Sweet → マホイップ",
       "locations": "Chargestone Cavern, Polar Biome",
       "exclusiveVersion": "-"
     },
     "043": {
       "name": "マホイップ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "マホミル – Spin around holding Sweet → マホイップ",
       "locations": "Evolve マホミル",
       "exclusiveVersion": "-"
@@ -14172,21 +14172,21 @@
     },
     "056": {
       "name": "モンメン",
-      "type": "くさ / Fairy",
+      "type": "くさ / フェアリー",
       "evolution": "モンメン – Sun Stone → エルフーン",
       "locations": "Coastal Biome",
       "exclusiveVersion": "-"
     },
     "057": {
       "name": "エルフーン",
-      "type": "くさ / Fairy",
+      "type": "くさ / フェアリー",
       "evolution": "モンメン – Sun Stone → エルフーン",
       "locations": "Coastal Biome",
       "exclusiveVersion": "-"
     },
     "058": {
       "name": "キュワワー",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "-",
       "locations": "Coastal Biome",
       "exclusiveVersion": "-"
@@ -14837,14 +14837,14 @@
     },
     "151": {
       "name": "ブルー",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ブルー – Lvl 23 → グランブル",
       "locations": "Chargestone Cavern, Polar Biome",
       "exclusiveVersion": "-"
     },
     "152": {
       "name": "グランブル",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ブルー – Lvl 23 → グランブル",
       "locations": "Chargestone Cavern, Polar Biome",
       "exclusiveVersion": "-"
@@ -14886,7 +14886,7 @@
     },
     "158": {
       "name": "キュウコン",
-      "type": "こおり / Fairy",
+      "type": "こおり / フェアリー",
       "evolution": "ロコン – こおり Stone → キュウコン",
       "locations": "Evolve ロコン (Alolan form)",
       "exclusiveVersion": "Scarlet"
@@ -15362,7 +15362,7 @@
     },
     "226": {
       "name": "アシレーヌ",
-      "type": "みず / Fairy",
+      "type": "みず / フェアリー",
       "evolution": "アシマリ – Lvl 17 → オシャマリ – Lvl 34 → アシレーヌ",
       "locations": "Evolve オシャマリ",
       "exclusiveVersion": "-"
@@ -15749,21 +15749,21 @@
     },
     "038": {
       "name": "フラベベ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "フラベベ – Lvl 19 → フラエッテ – Shiny Stone → フラージェス",
       "locations": "Red Flower : Wild Zone 3, Bleu District, Jaune District, Magenta District, Rouge District, Vert District | Yellow Flower : Bleu District, Jaune District, Magenta District, Rouge District, Vert District | Orange Flower : Bleu District, Jaune District, Magenta District, Rouge District, Vert District | Blue Flower : Wild Zone 3, Bleu District, Jaune District, Magenta District, Rouge District, Vert District | White Flower : Wild Zone 3, Bleu District, Jaune District, Magenta District, Rouge District, Vert District",
       "exclusiveVersion": "-"
     },
     "039": {
       "name": "フラエッテ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "フラベベ – Lvl 19 → フラエッテ – Shiny Stone → フラージェス",
       "locations": "Red Flower : Wild Zone 7, Bleu District, Jaune District, Magenta District, Rouge District, Vert District | Yellow Flower : Bleu District, Jaune District, Magenta District, Rouge District, Vert District | Orange Flower : Wild Zone 7, Bleu District, Jaune District, Magenta District, Rouge District, Vert District | Blue Flower : Bleu District, Jaune District, Magenta District, Rouge District, Vert District | White Flower : Bleu District, Jaune District, Magenta District, Rouge District, Vert District",
       "exclusiveVersion": "-"
     },
     "040": {
       "name": "フラージェス",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "フラベベ – Lvl 19 → フラエッテ – Shiny Stone → フラージェス",
       "locations": "Red Flower : Wild Zone 16, Wild Zone 20 | Blue Flower : Wild Zone 16 | White Flower : Wild Zone 16",
       "exclusiveVersion": "-"
@@ -15840,7 +15840,7 @@
     },
     "051": {
       "name": "デデンネ",
-      "type": "でんき / Fairy",
+      "type": "でんき / フェアリー",
       "evolution": "-",
       "locations": "Wild Zone 20, Bleu District, Jaune District, Magenta District, Rouge District, Vert District",
       "exclusiveVersion": "-"
@@ -15868,21 +15868,21 @@
     },
     "055": {
       "name": "ピィ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Wild Zone 19, Bleu District, Jaune District, Magenta District, Rouge District, Vert District",
       "exclusiveVersion": "-"
     },
     "056": {
       "name": "ピッピ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Wild Zone 19",
       "exclusiveVersion": "-"
     },
     "057": {
       "name": "ピクシー",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ピィ – High Friendship → ピッピ – Moon Stone → ピクシー",
       "locations": "Wild Zone 20",
       "exclusiveVersion": "-"
@@ -16092,21 +16092,21 @@
     },
     "087": {
       "name": "ラルトス",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト | – Dawn Stone, Male → エルレイド",
       "locations": "Bleu District, Jaune District, Magenta District, Rouge District (Rouge Sector 7), Vert District",
       "exclusiveVersion": "-"
     },
     "088": {
       "name": "キルリア",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト | – Dawn Stone, Male → エルレイド",
       "locations": "Evolve ラルトス",
       "exclusiveVersion": "-"
     },
     "089": {
       "name": "サーナイト",
-      "type": "エスパー / Fairy",
+      "type": "エスパー / フェアリー",
       "evolution": "ラルトス – Lvl 20 → キルリア – Lvl 30 → サーナイト",
       "locations": "Wild Zone 20",
       "exclusiveVersion": "-"
@@ -16155,28 +16155,28 @@
     },
     "096": {
       "name": "シュシュプ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "シュシュプ – Trade holding Sachet → フレフワン",
       "locations": "Bleu District, Jaune District, Magenta District, Rouge District, Vert District",
       "exclusiveVersion": "-"
     },
     "097": {
       "name": "フレフワン",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "シュシュプ – Trade holding Sachet → フレフワン",
       "locations": "Evolve シュシュプ",
       "exclusiveVersion": "-"
     },
     "098": {
       "name": "ペロッパフ",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ペロッパフ – Trade holding Whipped Dream → ペロリーム",
       "locations": "Bleu District, Jaune District, Magenta District, Rouge District, Vert District",
       "exclusiveVersion": "-"
     },
     "099": {
       "name": "ペロリーム",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "ペロッパフ – Trade holding Whipped Dream → ペロリーム",
       "locations": "Evolve ペロッパフ",
       "exclusiveVersion": "-"
@@ -16239,8 +16239,8 @@
     },
     "108": {
       "name": "ニンフィア",
-      "type": "Fairy",
-      "evolution": "イーブイ – after learning Fairy move + High Friendship → ニンフィア",
+      "type": "フェアリー",
+      "evolution": "イーブイ – after learning フェアリー move + High Friendship → ニンフィア",
       "locations": "Wild Zone 20",
       "exclusiveVersion": "-"
     },
@@ -16400,7 +16400,7 @@
     },
     "131": {
       "name": "メレシー",
-      "type": "いわ / Fairy",
+      "type": "いわ / フェアリー",
       "evolution": "-",
       "locations": "Wild Zone 9, Wild Zone 20",
       "exclusiveVersion": "-"
@@ -16414,7 +16414,7 @@
     },
     "133": {
       "name": "クチート",
-      "type": "はがね / Fairy",
+      "type": "はがね / フェアリー",
       "evolution": "-",
       "locations": "Wild Zone 9, Wild Zone 17, Bleu District, Jaune District, Magenta District, Rouge District, Vert District",
       "exclusiveVersion": "-"
@@ -16799,7 +16799,7 @@
     },
     "188": {
       "name": "クレッフィ",
-      "type": "はがね / Fairy",
+      "type": "はがね / フェアリー",
       "evolution": "-",
       "locations": "Wild Zone 17, Wild Zone 20, The Sewers - Main Access, The Sewers - Canal Access",
       "exclusiveVersion": "-"
@@ -17079,7 +17079,7 @@
     },
     "228": {
       "name": "ゼルネアス",
-      "type": "Fairy",
+      "type": "フェアリー",
       "evolution": "-",
       "locations": "Wild Zone 11",
       "exclusiveVersion": "-"
@@ -17096,6 +17096,946 @@
       "type": "ドラゴン / じめん",
       "evolution": "-",
       "locations": "Wild Zone 20",
+      "exclusiveVersion": "-"
+    },
+    "231": {
+      "name": "ディアンシー",
+      "type": "いわ / フェアリー",
+      "evolution": "-",
+      "locations": "ゲームクリア後のミステリーギフトサイドクエスト",
+      "exclusiveVersion": "-"
+    },
+    "232": {
+      "name": "ミュウツー",
+      "type": "エスパー",
+      "evolution": "-",
+      "locations": "ゲームクリア後のミステリーギフトサイドクエスト",
+      "exclusiveVersion": "-"
+    }
+  },
+  "hyperspace_lumiose": {
+    "001": {
+      "name": "マンキー",
+      "type": "かくとう",
+      "evolution": "マンキー – Lvl 28 → オコリザル – Use Rage Fist 20 times → コノヨザル",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "002": {
+      "name": "オコリザル",
+      "type": "かくとう",
+      "evolution": "マンキー – Lvl 28 → オコリザル – Use Rage Fist 20 times → コノヨザル",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "003": {
+      "name": "コノヨザル",
+      "type": "かくとう / ゴースト",
+      "evolution": "マンキー – Lvl 28 → オコリザル – Use Rage Fist 20 times → コノヨザル",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "004": {
+      "name": "ニャース",
+      "type": "ノーマル",
+      "evolution": "ニャース – Lvl 28 → ニャイキング",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "005": {
+      "name": "ペルシアン",
+      "type": "ノーマル",
+      "evolution": "ニャース – High Friendship → ペルシアン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "006": {
+      "name": "ニャイキング",
+      "type": "はがね",
+      "evolution": "ニャース – Lvl 28 → ニャイキング",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "007": {
+      "name": "カモネギ",
+      "type": "ノーマル / ひこう",
+      "evolution": "カモネギ – achieve 3 critical hits in one battle → ネギガナイト",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "008": {
+      "name": "ネギガナイト",
+      "type": "かくとう",
+      "evolution": "カモネギ – achieve 3 critical hits in one battle → ネギガナイト",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "009": {
+      "name": "カラカラ",
+      "type": "じめん",
+      "evolution": "カラカラ – Lvl 28 → ガラガラ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "010": {
+      "name": "ガラガラ",
+      "type": "じめん",
+      "evolution": "カラカラ – Lvl 28 → ガラガラ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "011": {
+      "name": "ポリゴン",
+      "type": "ノーマル",
+      "evolution": "ポリゴン – Trade holding Upgrade → ポリゴン2 – Trade holding Dubious Disc → ポリゴン-Z",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "012": {
+      "name": "ポリゴン2",
+      "type": "ノーマル",
+      "evolution": "ポリゴン – Trade holding Upgrade → ポリゴン2 – Trade holding Dubious Disc → ポリゴン-Z",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "013": {
+      "name": "ポリゴン-Z",
+      "type": "ノーマル",
+      "evolution": "ポリゴン – Trade holding Upgrade → ポリゴン2 – Trade holding Dubious Disc → ポリゴン-Z",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "014": {
+      "name": "カプサイジ",
+      "type": "くさ",
+      "evolution": "カプサイジ – ほのお Stone → スコヴィラン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "015": {
+      "name": "スコヴィラン",
+      "type": "くさ / ほのお",
+      "evolution": "カプサイジ – ほのお Stone → スコヴィラン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "016": {
+      "name": "カヌチャン",
+      "type": "フェアリー / はがね",
+      "evolution": "カヌチャン – Lvl 24 → ナカヌチャン – Lvl 38 → デカヌチャン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "017": {
+      "name": "ナカヌチャン",
+      "type": "フェアリー / はがね",
+      "evolution": "カヌチャン – Lvl 24 → ナカヌチャン – Lvl 38 → デカヌチャン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "018": {
+      "name": "デカヌチャン",
+      "type": "フェアリー / はがね",
+      "evolution": "カヌチャン – Lvl 24 → ナカヌチャン – Lvl 38 → デカヌチャン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "019": {
+      "name": "モトトカゲ",
+      "type": "ドラゴン / ノーマル",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "020": {
+      "name": "キラーメ",
+      "type": "いわ / どく",
+      "evolution": "キラーメ – Lvl 35 → キラフロル",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "021": {
+      "name": "キラフロル",
+      "type": "いわ / どく",
+      "evolution": "キラーメ – Lvl 35 → キラフロル",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "022": {
+      "name": "ロトム",
+      "type": "でんき / ゴースト",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "023": {
+      "name": "ボチ",
+      "type": "ゴースト",
+      "evolution": "ボチ – Lvl 30, Nighttime → ハカドッグ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "024": {
+      "name": "ハカドッグ",
+      "type": "ゴースト",
+      "evolution": "ボチ – Lvl 30, Nighttime → ハカドッグ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "025": {
+      "name": "スナバァ",
+      "type": "ゴースト / じめん",
+      "evolution": "スナバァ – Lvl 42 → シロデスナ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "026": {
+      "name": "シロデスナ",
+      "type": "ゴースト / じめん",
+      "evolution": "スナバァ – Lvl 42 → シロデスナ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "027": {
+      "name": "カクレオン",
+      "type": "ノーマル",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "028": {
+      "name": "カラミンゴ",
+      "type": "ひこう / かくとう",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "029": {
+      "name": "フリージオ",
+      "type": "こおり",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "030": {
+      "name": "ヘイラッシャ",
+      "type": "みず",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "031": {
+      "name": "シャリタツ",
+      "type": "ドラゴン / みず",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "032": {
+      "name": "セビエ",
+      "type": "ドラゴン / こおり",
+      "evolution": "セビエ – Lvl 35 → セゴール – Lvl 54 → セグレイブ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "033": {
+      "name": "セゴール",
+      "type": "ドラゴン / こおり",
+      "evolution": "セビエ – Lvl 35 → セゴール – Lvl 54 → セグレイブ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "034": {
+      "name": "セグレイブ",
+      "type": "ドラゴン / こおり",
+      "evolution": "セビエ – Lvl 35 → セゴール – Lvl 54 → セグレイブ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "035": {
+      "name": "コレクレー",
+      "type": "ゴースト",
+      "evolution": "コレクレー – collect 999 Coins from Roaming Form → サーフゴー",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "036": {
+      "name": "サーフゴー",
+      "type": "はがね / ゴースト",
+      "evolution": "コレクレー – collect 999 Coins from Roaming Form → サーフゴー",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "037": {
+      "name": "ハリーセン",
+      "type": "あく / どく",
+      "evolution": "ハリーセン – Lvl up while knowing Barb Barrage → ハリーマン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "038": {
+      "name": "ハリーマン",
+      "type": "あく / どく",
+      "evolution": "ハリーセン – Lvl up while knowing Barb Barrage → ハリーマン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "039": {
+      "name": "キモリ",
+      "type": "くさ",
+      "evolution": "キモリ – Lvl 16 → ジュプトル – Lvl 36 → ジュカイン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "040": {
+      "name": "ジュプトル",
+      "type": "くさ",
+      "evolution": "キモリ – Lvl 16 → ジュプトル – Lvl 36 → ジュカイン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "041": {
+      "name": "ジュカイン",
+      "type": "くさ",
+      "evolution": "キモリ – Lvl 16 → ジュプトル – Lvl 36 → ジュカイン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "042": {
+      "name": "アチャモ",
+      "type": "ほのお",
+      "evolution": "アチャモ – Lvl 16 → ワカシャモ – Lvl 36 → バシャーモ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "043": {
+      "name": "ワカシャモ",
+      "type": "ほのお / かくとう",
+      "evolution": "アチャモ – Lvl 16 → ワカシャモ – Lvl 36 → バシャーモ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "044": {
+      "name": "バシャーモ",
+      "type": "ほのお / かくとう",
+      "evolution": "アチャモ – Lvl 16 → ワカシャモ – Lvl 36 → バシャーモ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "045": {
+      "name": "ミズゴロウ",
+      "type": "みず",
+      "evolution": "ミズゴロウ – Lvl 16 → ヌマクロー – Lvl 36 → ラグラージ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "046": {
+      "name": "ヌマクロー",
+      "type": "みず / じめん",
+      "evolution": "ミズゴロウ – Lvl 16 → ヌマクロー – Lvl 36 → ラグラージ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "047": {
+      "name": "ラグラージ",
+      "type": "みず / じめん",
+      "evolution": "ミズゴロウ – Lvl 16 → ヌマクロー – Lvl 36 → ラグラージ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "048": {
+      "name": "ヒンバス",
+      "type": "みず",
+      "evolution": "ヒンバス – Trade holding Prism Scale, or level up with max Beauty → ミロカロス",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "049": {
+      "name": "ミロカロス",
+      "type": "みず",
+      "evolution": "ヒンバス – Trade holding Prism Scale, or level up with max Beauty → ミロカロス",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "050": {
+      "name": "リーシャン",
+      "type": "エスパー",
+      "evolution": "リーシャン – High Friendship, Nighttime → チリーン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "051": {
+      "name": "チリーン",
+      "type": "エスパー",
+      "evolution": "リーシャン – High Friendship, Nighttime → チリーン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "052": {
+      "name": "イエッサン",
+      "type": "エスパー / ノーマル",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "053": {
+      "name": "チョロネコ",
+      "type": "あく",
+      "evolution": "チョロネコ – Lvl 20 → レパルダス",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "054": {
+      "name": "レパルダス",
+      "type": "あく",
+      "evolution": "チョロネコ – Lvl 20 → レパルダス",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "055": {
+      "name": "ムンナ",
+      "type": "エスパー",
+      "evolution": "ムンナ – Moon Stone → ムシャーナ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "056": {
+      "name": "ムシャーナ",
+      "type": "エスパー",
+      "evolution": "ムンナ – Moon Stone → ムシャーナ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "057": {
+      "name": "ナゲキ",
+      "type": "かくとう",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "058": {
+      "name": "ダゲキ",
+      "type": "かくとう",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "059": {
+      "name": "デスマス",
+      "type": "じめん / ゴースト",
+      "evolution": "デスマス – Lvl 34 → デスカーン | – near Dusty Bowl → デスバーン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "060": {
+      "name": "デスバーン",
+      "type": "じめん / ゴースト",
+      "evolution": "デスマス – Lvl 34 → デスカーン | – near Dusty Bowl → デスバーン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "061": {
+      "name": "デスカーン",
+      "type": "ゴースト",
+      "evolution": "デスマス – Lvl 34 → デスカーン | – near Dusty Bowl → デスバーン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "062": {
+      "name": "コソクムシ",
+      "type": "むし / みず",
+      "evolution": "コソクムシ – Lvl 30 → グソクムシャ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "063": {
+      "name": "グソクムシャ",
+      "type": "むし / みず",
+      "evolution": "コソクムシ – Lvl 30 → グソクムシャ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "064": {
+      "name": "クスネ",
+      "type": "あく",
+      "evolution": "クスネ – Lvl 18 → フォクスライ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "065": {
+      "name": "フォクスライ",
+      "type": "あく",
+      "evolution": "クスネ – Lvl 18 → フォクスライ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "066": {
+      "name": "タタッコ",
+      "type": "かくとう",
+      "evolution": "タタッコ – After learning Taunt → オトスパス",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "067": {
+      "name": "オトスパス",
+      "type": "かくとう",
+      "evolution": "タタッコ – After learning Taunt → オトスパス",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "068": {
+      "name": "ミミッキュ",
+      "type": "ゴースト / フェアリー",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "069": {
+      "name": "バサギリ",
+      "type": "むし / いわ",
+      "evolution": "ストライク – Trade holding Metal Coat → ハッサム | – Black Augurite → バサギリ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "070": {
+      "name": "モルペコ",
+      "type": "でんき / あく",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "071": {
+      "name": "ゴビット",
+      "type": "じめん / ゴースト",
+      "evolution": "ゴビット – Lvl 43 → ゴルーグ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "072": {
+      "name": "ゴルーグ",
+      "type": "じめん / ゴースト",
+      "evolution": "ゴビット – Lvl 43 → ゴルーグ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "073": {
+      "name": "ココガラ",
+      "type": "ひこう",
+      "evolution": "ココガラ – Lvl 18 → アオガラス – Lvl 38 → アーマーガア",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "074": {
+      "name": "アオガラス",
+      "type": "ひこう",
+      "evolution": "ココガラ – Lvl 18 → アオガラス – Lvl 38 → アーマーガア",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "075": {
+      "name": "アーマーガア",
+      "type": "ひこう / はがね",
+      "evolution": "ココガラ – Lvl 18 → アオガラス – Lvl 38 → アーマーガア",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "076": {
+      "name": "ププリン",
+      "type": "ノーマル / フェアリー",
+      "evolution": "ププリン – High Friendship → プリン – Moon Stone → プクリン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "077": {
+      "name": "プリン",
+      "type": "ノーマル / フェアリー",
+      "evolution": "ププリン – High Friendship → プリン – Moon Stone → プクリン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "078": {
+      "name": "プクリン",
+      "type": "ノーマル / フェアリー",
+      "evolution": "ププリン – High Friendship → プリン – Moon Stone → プクリン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "079": {
+      "name": "パピモッチ",
+      "type": "フェアリー",
+      "evolution": "パピモッチ – Lvl 26 → バウッツェル",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "080": {
+      "name": "バウッツェル",
+      "type": "フェアリー",
+      "evolution": "パピモッチ – Lvl 26 → バウッツェル",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "081": {
+      "name": "ムックル",
+      "type": "ノーマル / ひこう",
+      "evolution": "ムックル – Lvl 14 → ムクバード – Lvl 34 → ムクホーク",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "082": {
+      "name": "ムクバード",
+      "type": "ノーマル / ひこう",
+      "evolution": "ムックル – Lvl 14 → ムクバード – Lvl 34 → ムクホーク",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "083": {
+      "name": "ムクホーク",
+      "type": "ノーマル / ひこう",
+      "evolution": "ムックル – Lvl 14 → ムクバード – Lvl 34 → ムクホーク",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "084": {
+      "name": "バネブー",
+      "type": "エスパー",
+      "evolution": "バネブー – Lvl 32 → ブーピッグ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "085": {
+      "name": "ブーピッグ",
+      "type": "エスパー",
+      "evolution": "バネブー – Lvl 32 → ブーピッグ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "086": {
+      "name": "イキリンコ",
+      "type": "ノーマル / ひこう",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "087": {
+      "name": "マケンカニ",
+      "type": "かくとう",
+      "evolution": "マケンカニ – こおり Stone → ケケンカニ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "088": {
+      "name": "ケケンカニ",
+      "type": "かくとう / こおり",
+      "evolution": "マケンカニ – こおり Stone → ケケンカニ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "089": {
+      "name": "コジオ",
+      "type": "いわ",
+      "evolution": "コジオ – Lvl 24 → ジオヅム – Lvl 38 → キョジオーン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "090": {
+      "name": "ジオヅム",
+      "type": "いわ",
+      "evolution": "コジオ – Lvl 24 → ジオヅム – Lvl 38 → キョジオーン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "091": {
+      "name": "キョジオーン",
+      "type": "いわ",
+      "evolution": "コジオ – Lvl 24 → ジオヅム – Lvl 38 → キョジオーン",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "092": {
+      "name": "ゴクリン",
+      "type": "どく",
+      "evolution": "ゴクリン – Lvl 26 → マルノーム",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "093": {
+      "name": "マルノーム",
+      "type": "どく",
+      "evolution": "ゴクリン – Lvl 26 → マルノーム",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "094": {
+      "name": "ズバット",
+      "type": "どく / ひこう",
+      "evolution": "ズバット – Lvl 22 → ゴルバット – High Friendship → クロバット",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "095": {
+      "name": "ゴルバット",
+      "type": "どく / ひこう",
+      "evolution": "ズバット – Lvl 22 → ゴルバット – High Friendship → クロバット",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "096": {
+      "name": "クロバット",
+      "type": "どく / ひこう",
+      "evolution": "ズバット – Lvl 22 → ゴルバット – High Friendship → クロバット",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "097": {
+      "name": "カルボウ",
+      "type": "ほのお",
+      "evolution": "カルボウ – Auspicious Armor → グレンアルマ | – Malicious Armor→ ソウブレイズ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "098": {
+      "name": "グレンアルマ",
+      "type": "ほのお / エスパー",
+      "evolution": "カルボウ – Auspicious Armor → グレンアルマ",
+      "locations": "-",
+      "exclusiveVersion": "Scarlet"
+    },
+    "099": {
+      "name": "ソウブレイズ",
+      "type": "ほのお / ゴースト",
+      "evolution": "カルボウ – Malicious Armor→ ソウブレイズ",
+      "locations": "-",
+      "exclusiveVersion": "Violet"
+    },
+    "100": {
+      "name": "オラチフ",
+      "type": "あく",
+      "evolution": "オラチフ – Lvl 30 → マフィティフ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "101": {
+      "name": "マフィティフ",
+      "type": "あく",
+      "evolution": "オラチフ – Lvl 30 → マフィティフ",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "102": {
+      "name": "エレズン",
+      "type": "でんき / どく",
+      "evolution": "エレズン – Lvl 30 → ストリンダー",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "103": {
+      "name": "ストリンダー",
+      "type": "でんき / どく",
+      "evolution": "エレズン – Lvl 30 → ストリンダー",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "104": {
+      "name": "シルシュルー",
+      "type": "どく / ノーマル",
+      "evolution": "シルシュルー – Lvl 28 → タギングル",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "105": {
+      "name": "タギングル",
+      "type": "どく / ノーマル",
+      "evolution": "シルシュルー – Lvl 28 → タギングル",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "106": {
+      "name": "ザングース",
+      "type": "ノーマル",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "107": {
+      "name": "ハブネーク",
+      "type": "どく",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "108": {
+      "name": "マネネ",
+      "type": "エスパー / フェアリー",
+      "evolution": "マネネ – After learning Mimic → バリヤード – Lvl 42 → バリコオル",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "109": {
+      "name": "バリヤード",
+      "type": "こおり / エスパー",
+      "evolution": "マネネ – After learning Mimic → バリヤード – Lvl 42 → バリコオル",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "110": {
+      "name": "バリコオル",
+      "type": "こおり / エスパー",
+      "evolution": "マネネ – After learning Mimic → バリヤード – Lvl 42 → バリコオル",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "111": {
+      "name": "タマゲタケ",
+      "type": "くさ / どく",
+      "evolution": "タマゲタケ – Lvl 39 → モロバレル",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "112": {
+      "name": "モロバレル",
+      "type": "くさ / どく",
+      "evolution": "タマゲタケ – Lvl 39 → モロバレル",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "113": {
+      "name": "ヒードラン",
+      "type": "ほのお / はがね",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "114": {
+      "name": "ボルケニオン",
+      "type": "ほのお / みず",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "115": {
+      "name": "コバルオン",
+      "type": "はがね / かくとう",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "116": {
+      "name": "テラキオン",
+      "type": "いわ / かくとう",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "117": {
+      "name": "ビリジオン",
+      "type": "くさ / かくとう",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "118": {
+      "name": "ケルディオ",
+      "type": "みず / かくとう",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "119": {
+      "name": "メロエッタ",
+      "type": "ノーマル / エスパー",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "120": {
+      "name": "ゲノセクト",
+      "type": "むし / はがね",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "121": {
+      "name": "フーパ",
+      "type": "エスパー / ゴースト",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "122": {
+      "name": "マーシャドー",
+      "type": "かくとう / ゴースト",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "123": {
+      "name": "メルタン",
+      "type": "はがね",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "124": {
+      "name": "メルメタル",
+      "type": "はがね",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "125": {
+      "name": "ダークライ",
+      "type": "あく",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "126": {
+      "name": "ラティアス",
+      "type": "ドラゴン / エスパー",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "127": {
+      "name": "ラティオス",
+      "type": "ドラゴン / エスパー",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "128": {
+      "name": "カイオーガ",
+      "type": "みず",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "129": {
+      "name": "グラードン",
+      "type": "じめん",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "130": {
+      "name": "レックウザ",
+      "type": "ドラゴン / ひこう",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "131": {
+      "name": "マギアナ",
+      "type": "はがね / フェアリー",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "132": {
+      "name": "ゼラオラ",
+      "type": "でんき",
+      "evolution": "-",
+      "locations": "-",
       "exclusiveVersion": "-"
     }
   }

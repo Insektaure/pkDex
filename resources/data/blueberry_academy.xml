@@ -647,17 +647,17 @@
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
     <pokemon id="137" name="Porygon" regionalDexNumber="129" type="Normal">
-        <evolution>Porygon – Trade holding Upgrade) → Porygon2 – Trade holding Dubious Disc → Porygon-Z</evolution>
+        <evolution>Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z</evolution>
         <locations>Canyon Biome, Chargestone Cavern, Polar Biome</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
     <pokemon id="233" name="Porygon2" regionalDexNumber="130" type="Normal">
-        <evolution>Porygon – Trade holding Upgrade) → Porygon2 – Trade holding Dubious Disc → Porygon-Z</evolution>
+        <evolution>Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z</evolution>
         <locations>Evolve Porygon</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
     <pokemon id="474" name="Porygon-Z" regionalDexNumber="131" type="Normal">
-        <evolution>Porygon – Trade holding Upgrade) → Porygon2 – Trade holding Dubious Disc → Porygon-Z</evolution>
+        <evolution>Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z</evolution>
         <locations>Evolve Porygon2</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>

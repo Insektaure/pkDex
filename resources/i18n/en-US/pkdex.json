@@ -11,6 +11,7 @@
     "kitakami": "└ Kitakami (The Teal Mask - DLC 1)",
     "blueberry_academy": "└ Blueberry Academy (The Indigo Disk - DLC 2)",
     "kalos_lza": "Kalos (Legends: Z-A)",
+    "hyperspace_lumiose": "└ Hyperspace Lumiose (Mega-Dimension DLC)",
     "settings": "Settings",
     "about": "About pkDex",
     "changelog": "Changelog"
@@ -28,7 +29,8 @@
       "paldea": "Paldea (ScVi)",
       "kitakami": "Kitakami (ScVi DLC 1)",
       "blueberry_academy": "Blueberry Academy (ScVi DLC 2)",
-      "kalos_lza": "Kalos (Legends Z-A)"
+      "kalos_lza": "Kalos (Legends Z-A)",
+      "hyperspace_lumiose": "Hyperspace Lumiose (LZA DLC)"
     },
     "locales": {
       "en-US": "English (US)",
@@ -75,7 +77,7 @@
     "img_pack_download_complete": "Download complete !\n\nHigh-resolution images are now available for extraction.\n\nUse the 'Extract High-Res Image Pack' button in Settings."
   },
   "about": {
-    "title": "pkDex\nv1.6.0",
+    "title": "pkDex\nv1.6.1",
     "description": "pkDex is a simple app to view Pokemon data offline, for the Nintendo Switch games.",
     "github": "Find it on github.com/Insektaure/pkDex",
     "licence": "Licensed under Apache 2.0",

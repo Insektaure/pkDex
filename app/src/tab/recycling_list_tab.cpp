@@ -291,6 +291,11 @@ brls::View* RecyclingListTab::createKalosLza()
     return new RecyclingListTab("kalos_lza");
 }
 
+brls::View* RecyclingListTab::createHyperspaceLumiose()
+{
+    return new RecyclingListTab("hyperspace_lumiose");
+}
+
 bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
 {
     // Get the currently focused view
@@ -353,7 +358,7 @@ bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
     addToggle("pkdex/capture_toggle/normal"_i18n, states.normal, 0);
     addToggle("pkdex/capture_toggle/shiny"_i18n, states.shiny, 1);
     // Only show alpha and shiny alpha for sinnoh_arceus and kalos_lza
-    if (currentRegion == "sinnoh_arceus" || currentRegion == "kalos_lza") {
+    if (currentRegion == "sinnoh_arceus" || currentRegion == "kalos_lza" || currentRegion == "hyperspace_lumiose") {
         addToggle("pkdex/capture_toggle/alpha"_i18n, states.alpha, 2);
         addToggle("pkdex/capture_toggle/shiny_alpha"_i18n, states.shinyAlpha, 3);
     }
