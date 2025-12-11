@@ -17117,21 +17117,21 @@
     "001": {
       "name": "Menki",
       "type": "Kampf",
-      "evolution": "Menki – Lvl 28 → Rasaff – Use Rage Fist 20 times → Epitaff",
+      "evolution": "Menki – Lvl 28 → Rasaff – nach 20 Einsätzen der Attacke Zornesfaust  → Epitaff",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "002": {
       "name": "Rasaff",
       "type": "Kampf",
-      "evolution": "Menki – Lvl 28 → Rasaff – Use Rage Fist 20 times → Epitaff",
+      "evolution": "Menki – Lvl 28 → Rasaff – nach 20 Einsätzen der Attacke Zornesfaust  → Epitaff",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "003": {
       "name": "Epitaff",
       "type": "Kampf / Geist",
-      "evolution": "Menki – Lvl 28 → Rasaff – Use Rage Fist 20 times → Epitaff",
+      "evolution": "Menki – Lvl 28 → Rasaff – nach 20 Einsätzen der Attacke Zornesfaust  → Epitaff",
       "locations": "-",
       "exclusiveVersion": "-"
     },
@@ -17145,7 +17145,7 @@
     "005": {
       "name": "Snobilikat",
       "type": "Normal",
-      "evolution": "Mauzi – High Friendship → Snobilikat",
+      "evolution": "Mauzi – Hohe Zuneigung → Snobilikat",
       "locations": "-",
       "exclusiveVersion": "-"
     },
@@ -17159,14 +17159,14 @@
     "007": {
       "name": "Porenta",
       "type": "Normal / Flug",
-      "evolution": "Porenta – achieve 3 critical hits in one battle → Lauchzelot",
+      "evolution": "Porenta – nach dem Erzielen von drei Volltreffern innerhalb eines Kampfes → Lauchzelot",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "008": {
       "name": "Lauchzelot",
       "type": "Kampf",
-      "evolution": "Porenta – achieve 3 critical hits in one battle → Lauchzelot",
+      "evolution": "Porenta – nach dem Erzielen von drei Volltreffern innerhalb eines Kampfes → Lauchzelot",
       "locations": "-",
       "exclusiveVersion": "-"
     },
@@ -17187,35 +17187,35 @@
     "011": {
       "name": "Porygon",
       "type": "Normal",
-      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "evolution": "Porygon – Tausch mit getragenem Upgrade → Porygon2 – Tausch mit getragener Dubiosdisc → Porygon-Z",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "012": {
       "name": "Porygon2",
       "type": "Normal",
-      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "evolution": "Porygon – Tausch mit getragenem Upgrade → Porygon2 – Tausch mit getragener Dubiosdisc → Porygon-Z",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "013": {
       "name": "Porygon-Z",
       "type": "Normal",
-      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "evolution": "Porygon – Tausch mit getragenem Upgrade → Porygon2 – Tausch mit getragener Dubiosdisc → Porygon-Z",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "014": {
       "name": "Chilingel",
       "type": "Pflanze",
-      "evolution": "Chilingel – Feuer Stone → Halupenjo",
+      "evolution": "Chilingel – Feuerstein → Halupenjo",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "015": {
       "name": "Halupenjo",
       "type": "Pflanze / Feuer",
-      "evolution": "Chilingel – Feuer Stone → Halupenjo",
+      "evolution": "Chilingel – Feuerstein → Halupenjo",
       "locations": "-",
       "exclusiveVersion": "-"
     },
@@ -17271,14 +17271,14 @@
     "023": {
       "name": "Gruff",
       "type": "Geist",
-      "evolution": "Gruff – Lvl 30, Nighttime → Friedwuff",
+      "evolution": "Gruff – Lvl 30, Nachts → Friedwuff",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "024": {
       "name": "Friedwuff",
       "type": "Geist",
-      "evolution": "Gruff – Lvl 30, Nighttime → Friedwuff",
+      "evolution": "Gruff – Lvl 30, Nachts → Friedwuff",
       "locations": "-",
       "exclusiveVersion": "-"
     },
@@ -17355,28 +17355,28 @@
     "035": {
       "name": "Gierspenst",
       "type": "Geist",
-      "evolution": "Gierspenst – collect 999 Coins from Roaming Form → Monetigo",
+      "evolution": "Gierspenst – Sammel 999 Gierspenst-Münzen → Monetigo",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "036": {
       "name": "Monetigo",
       "type": "Stahl / Geist",
-      "evolution": "Gierspenst – collect 999 Coins from Roaming Form → Monetigo",
+      "evolution": "Gierspenst – Sammel 999 Gierspenst-Münzen → Monetigo",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "037": {
       "name": "Baldorfish",
       "type": "Unlicht / Gift",
-      "evolution": "Baldorfish – Lvl up while knowing Barb Barrage → Myriador",
+      "evolution": "Baldorfish – mit erlernter Attacke Giftstachelregen → Myriador",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "038": {
       "name": "Myriador",
       "type": "Unlicht / Gift",
-      "evolution": "Baldorfish – Lvl up while knowing Barb Barrage → Myriador",
+      "evolution": "Baldorfish – mit erlernter Attacke Giftstachelregen → Myriador",
       "locations": "-",
       "exclusiveVersion": "-"
     },
@@ -17446,28 +17446,28 @@
     "048": {
       "name": "Barschwa",
       "type": "Wasser",
-      "evolution": "Barschwa – Trade holding Prism Scale, or level up with max Beauty → Milotic",
+      "evolution": "Barschwa – Tausch trägt Schönheitsschuppe, oder  Lvl-Up mit max. Schönheitswert → Milotic",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "049": {
       "name": "Milotic",
       "type": "Wasser",
-      "evolution": "Barschwa – Trade holding Prism Scale, or level up with max Beauty → Milotic",
+      "evolution": "Barschwa – Tausch trägt Schönheitsschuppe, oder  Lvl-Up mit max. Schönheitswert → Milotic",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "050": {
       "name": "Klingplim",
       "type": "Psycho",
-      "evolution": "Klingplim – High Friendship, Nighttime → Palimpalim",
+      "evolution": "Klingplim – Hohe Zuneigung, Nachts → Palimpalim",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "051": {
       "name": "Palimpalim",
       "type": "Psycho",
-      "evolution": "Klingplim – High Friendship, Nighttime → Palimpalim",
+      "evolution": "Klingplim – Hohe Zuneigung, Nachts → Palimpalim",
       "locations": "-",
       "exclusiveVersion": "-"
     },
@@ -17495,14 +17495,14 @@
     "055": {
       "name": "Somniam",
       "type": "Psycho",
-      "evolution": "Somniam – Moon Stone → Somnivora",
+      "evolution": "Somniam – Mondstein → Somnivora",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "056": {
       "name": "Somnivora",
       "type": "Psycho",
-      "evolution": "Somniam – Moon Stone → Somnivora",
+      "evolution": "Somniam – Mondstein → Somnivora",
       "locations": "-",
       "exclusiveVersion": "-"
     },
@@ -17523,21 +17523,21 @@
     "059": {
       "name": "Makabaja",
       "type": "Boden / Geist",
-      "evolution": "Makabaja – Lvl 34 → Echnatoll | – near Dusty Bowl → Oghnatoll",
+      "evolution": "Makabaja – Lvl 34 → Echnatoll | – aus Galar-Makabaja → Oghnatoll",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "060": {
       "name": "Oghnatoll",
       "type": "Boden / Geist",
-      "evolution": "Makabaja – Lvl 34 → Echnatoll | – near Dusty Bowl → Oghnatoll",
+      "evolution": "Makabaja – Lvl 34 → Echnatoll | – aus Galar-Makabaja → Oghnatoll",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "061": {
       "name": "Echnatoll",
       "type": "Geist",
-      "evolution": "Makabaja – Lvl 34 → Echnatoll | – near Dusty Bowl → Oghnatoll",
+      "evolution": "Makabaja – Lvl 34 → Echnatoll | – aus Galar-Makabaja → Oghnatoll",
       "locations": "-",
       "exclusiveVersion": "-"
     },
@@ -17572,14 +17572,14 @@
     "066": {
       "name": "Klopptopus",
       "type": "Kampf",
-      "evolution": "Klopptopus – After learning Taunt → Kaocto",
+      "evolution": "Klopptopus – mit erlernter Attacke Verhöhner → Kaocto",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "067": {
       "name": "Kaocto",
       "type": "Kampf",
-      "evolution": "Klopptopus – After learning Taunt → Kaocto",
+      "evolution": "Klopptopus – mit erlernter Attacke Verhöhner → Kaocto",
       "locations": "-",
       "exclusiveVersion": "-"
     },
@@ -17593,7 +17593,7 @@
     "069": {
       "name": "Axantor",
       "type": "Käfer / Gestein",
-      "evolution": "Sichlor – Trade holding Metal Coat → Scherox | – Black Augurite → Axantor",
+      "evolution": "Sichlor – Tausch mit getragenem Metallmantel → Scherox | – Schwarzaugit anwenden → Axantor",
       "locations": "-",
       "exclusiveVersion": "-"
     },
@@ -17642,21 +17642,21 @@
     "076": {
       "name": "Fluffeluff",
       "type": "Normal / Fee",
-      "evolution": "Fluffeluff – High Friendship → Pummeluff – Moon Stone → Knuddeluff",
+      "evolution": "Fluffeluff – Hohe Zuneigung → Pummeluff – Mondstein → Knuddeluff",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "077": {
       "name": "Pummeluff",
       "type": "Normal / Fee",
-      "evolution": "Fluffeluff – High Friendship → Pummeluff – Moon Stone → Knuddeluff",
+      "evolution": "Fluffeluff – Hohe Zuneigung → Pummeluff – Mondstein → Knuddeluff",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "078": {
       "name": "Knuddeluff",
       "type": "Normal / Fee",
-      "evolution": "Fluffeluff – High Friendship → Pummeluff – Moon Stone → Knuddeluff",
+      "evolution": "Fluffeluff – Hohe Zuneigung → Pummeluff – Mondstein → Knuddeluff",
       "locations": "-",
       "exclusiveVersion": "-"
     },
@@ -17719,14 +17719,14 @@
     "087": {
       "name": "Krabbox",
       "type": "Kampf",
-      "evolution": "Krabbox – Eis Stone → Krawell",
+      "evolution": "Krabbox – Eisstein → Krawell",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "088": {
       "name": "Krawell",
       "type": "Kampf / Eis",
-      "evolution": "Krabbox – Eis Stone → Krawell",
+      "evolution": "Krabbox – Eisstein → Krawell",
       "locations": "-",
       "exclusiveVersion": "-"
     },
@@ -17768,42 +17768,42 @@
     "094": {
       "name": "Zubat",
       "type": "Gift / Flug",
-      "evolution": "Zubat – Lvl 22 → Golbat – High Friendship → Iksbat",
+      "evolution": "Zubat – Lvl 22 → Golbat – Hohe Zuneigung → Iksbat",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "095": {
       "name": "Golbat",
       "type": "Gift / Flug",
-      "evolution": "Zubat – Lvl 22 → Golbat – High Friendship → Iksbat",
+      "evolution": "Zubat – Lvl 22 → Golbat – Hohe Zuneigung → Iksbat",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "096": {
       "name": "Iksbat",
       "type": "Gift / Flug",
-      "evolution": "Zubat – Lvl 22 → Golbat – High Friendship → Iksbat",
+      "evolution": "Zubat – Lvl 22 → Golbat – Hohe Zuneigung → Iksbat",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "097": {
       "name": "Knarbon",
       "type": "Feuer",
-      "evolution": "Knarbon – Auspicious Armor → Crimanzo | – Malicious Armor→ Azugladis",
+      "evolution": "Knarbon – Glorienrüstung → Crimanzo | – Fluchrüstung → Azugladis",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "098": {
       "name": "Crimanzo",
       "type": "Feuer / Psycho",
-      "evolution": "Knarbon – Auspicious Armor → Crimanzo",
+      "evolution": "Knarbon – Glorienrüstung → Crimanzo",
       "locations": "-",
       "exclusiveVersion": "Scarlet"
     },
     "099": {
       "name": "Azugladis",
       "type": "Feuer / Geist",
-      "evolution": "Knarbon – Malicious Armor→ Azugladis",
+      "evolution": "Knarbon – Fluchrüstung → Azugladis",
       "locations": "-",
       "exclusiveVersion": "Violet"
     },
@@ -17866,21 +17866,21 @@
     "108": {
       "name": "Pantimimi",
       "type": "Psycho / Fee",
-      "evolution": "Pantimimi – After learning Mimic → Pantimos – Lvl 42 → Pantifrost",
+      "evolution": "Pantimimi – mit erlernter Attacke Mimikry → Pantimos – Lvl 42 → Pantifrost",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "109": {
       "name": "Pantimos",
       "type": "Eis / Psycho",
-      "evolution": "Pantimimi – After learning Mimic → Pantimos – Lvl 42 → Pantifrost",
+      "evolution": "Pantimimi – mit erlernter Attacke Mimikry → Pantimos – Lvl 42 → Pantifrost",
       "locations": "-",
       "exclusiveVersion": "-"
     },
     "110": {
       "name": "Pantifrost",
       "type": "Eis / Psycho",
-      "evolution": "Pantimimi – After learning Mimic → Pantimos – Lvl 42 → Pantifrost",
+      "evolution": "Pantimimi – mit erlernter Attacke Mimikry → Pantimos – Lvl 42 → Pantifrost",
       "locations": "-",
       "exclusiveVersion": "-"
     },
