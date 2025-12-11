@@ -1,3 +1,7 @@
+## Version 1.6.2 (2025-12-11)
+- Minor Feature release - Main App :
+    - Update German translation for Mega-Dimension DLC (Thanks @Dev9212)
+
 ## Version 1.6.1 (2025-12-10)
 - New Feature release - Main App :
     - Add Pokemon Legends Z-A Mega-Dimension DLC Pokedex support

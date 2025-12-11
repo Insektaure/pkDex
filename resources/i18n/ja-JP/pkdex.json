@@ -77,7 +77,7 @@
     "img_pack_download_complete": "ダウンロード完了！\n\n高解像度画像が展開可能です。\n\n設定の「高解像度画像パックを展開」ボタンを使用してください。"
   },
   "about": {
-    "title": "pkDex\nv1.6.1",
+    "title": "pkDex\nv1.6.2",
     "description": "pkDexは、ニンテンドースイッチ用ポケモンゲームのデータをオフラインで閲覧できるシンプルなアプリです。",
     "github": "github.com/Insektaure/pkDex で公開中",
     "licence": "Apache 2.0 ライセンス",
