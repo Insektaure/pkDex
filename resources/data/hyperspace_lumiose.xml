@@ -560,12 +560,12 @@
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="485" name="Heatran" regionalDexNumber="113" type="Fire / Steel">
+    <pokemon id="485" name="Heatran" regionalDexNumber="113" type="Fire / Steel" shinyLocked="true">
         <evolution>-</evolution>
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="721" name="Volcanion" regionalDexNumber="114" type="Fire / Water">
+    <pokemon id="721" name="Volcanion" regionalDexNumber="114" type="Fire / Water" shinyLocked="true">
         <evolution>-</evolution>
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -585,42 +585,42 @@
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="647" name="Keldeo" regionalDexNumber="118" type="Water / Fighting">
+    <pokemon id="647" name="Keldeo" regionalDexNumber="118" type="Water / Fighting" shinyLocked="true">
         <evolution>-</evolution>
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="648" name="Meloetta" regionalDexNumber="119" type="Normal / Psychic">
+    <pokemon id="648" name="Meloetta" regionalDexNumber="119" type="Normal / Psychic" shinyLocked="true">
         <evolution>-</evolution>
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="649" name="Genesect" regionalDexNumber="120" type="Bug / Steel">
+    <pokemon id="649" name="Genesect" regionalDexNumber="120" type="Bug / Steel" shinyLocked="true">
         <evolution>-</evolution>
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="720" name="Hoopa" regionalDexNumber="121" type="Psychic / Ghost">
+    <pokemon id="720" name="Hoopa" regionalDexNumber="121" type="Psychic / Ghost" shinyLocked="true">
         <evolution>-</evolution>
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="802" name="Marshadow" regionalDexNumber="122" type="Fighting / Ghost">
+    <pokemon id="802" name="Marshadow" regionalDexNumber="122" type="Fighting / Ghost" shinyLocked="true">
         <evolution>-</evolution>
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="808" name="Meltan" regionalDexNumber="123" type="Steel">
+    <pokemon id="808" name="Meltan" regionalDexNumber="123" type="Steel" shinyLocked="true">
         <evolution>-</evolution>
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="809" name="Melmetal" regionalDexNumber="124" type="Steel">
+    <pokemon id="809" name="Melmetal" regionalDexNumber="124" type="Steel" shinyLocked="true">
         <evolution>-</evolution>
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="491" name="Darkrai" regionalDexNumber="125" type="Dark">
+    <pokemon id="491" name="Darkrai" regionalDexNumber="125" type="Dark" shinyLocked="true">
         <evolution>-</evolution>
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
@@ -635,27 +635,27 @@
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="382" name="Kyogre" regionalDexNumber="128" type="Water">
+    <pokemon id="382" name="Kyogre" regionalDexNumber="128" type="Water" shinyLocked="true">
         <evolution>-</evolution>
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="383" name="Groudon" regionalDexNumber="129" type="Ground">
+    <pokemon id="383" name="Groudon" regionalDexNumber="129" type="Ground" shinyLocked="true">
         <evolution>-</evolution>
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="384" name="Rayquaza" regionalDexNumber="130" type="Dragon / Flying">
+    <pokemon id="384" name="Rayquaza" regionalDexNumber="130" type="Dragon / Flying" shinyLocked="true">
         <evolution>-</evolution>
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="801" name="Magearna" regionalDexNumber="131" type="Steel / Fairy">
+    <pokemon id="801" name="Magearna" regionalDexNumber="131" type="Steel / Fairy" shinyLocked="true">
         <evolution>-</evolution>
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
     </pokemon>
-    <pokemon id="807" name="Zeraora" regionalDexNumber="132" type="Electric">
+    <pokemon id="807" name="Zeraora" regionalDexNumber="132" type="Electric" shinyLocked="true">
         <evolution>-</evolution>
         <locations>-</locations>
         <exclusiveVersion>-</exclusiveVersion>
