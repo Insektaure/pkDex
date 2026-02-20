@@ -1,0 +1,928 @@
+{
+  "hyperspace_lumiose": {
+    "001": {
+      "name": "Mankey",
+      "type": "Fighting",
+      "evolution": "Mankey – Lvl 28 → Primeape – Use Rage Fist 20 times → Annihilape",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "002": {
+      "name": "Primeape",
+      "type": "Fighting",
+      "evolution": "Mankey – Lvl 28 → Primeape – Use Rage Fist 20 times → Annihilape",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "003": {
+      "name": "Annihilape",
+      "type": "Fighting / Ghost",
+      "evolution": "Mankey – Lvl 28 → Primeape – Use Rage Fist 20 times → Annihilape",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "004": {
+      "name": "Meowth",
+      "type": "Normal",
+      "evolution": "Meowth – Lvl 28 → Perrserker",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "005": {
+      "name": "Persian",
+      "type": "Normal",
+      "evolution": "Meowth – High Friendship → Persian",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "006": {
+      "name": "Perrserker",
+      "type": "Steel",
+      "evolution": "Meowth – Lvl 28 → Perrserker",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "007": {
+      "name": "Farfetch'd",
+      "type": "Normal / Flying",
+      "evolution": "Farfetch'd – achieve 3 critical hits in one battle → Sirfetch'd",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "008": {
+      "name": "Sirfetch'd",
+      "type": "Fighting",
+      "evolution": "Farfetch'd – achieve 3 critical hits in one battle → Sirfetch'd",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "009": {
+      "name": "Cubone",
+      "type": "Ground",
+      "evolution": "Cubone – Lvl 28 → Marowak",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "010": {
+      "name": "Marowak",
+      "type": "Ground",
+      "evolution": "Cubone – Lvl 28 → Marowak",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "011": {
+      "name": "Porygon",
+      "type": "Normal",
+      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "012": {
+      "name": "Porygon2",
+      "type": "Normal",
+      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "013": {
+      "name": "Porygon-Z",
+      "type": "Normal",
+      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "014": {
+      "name": "Capsakid",
+      "type": "Grass",
+      "evolution": "Capsakid – Fire Stone → Scovillain",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "015": {
+      "name": "Scovillain",
+      "type": "Grass / Fire",
+      "evolution": "Capsakid – Fire Stone → Scovillain",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "016": {
+      "name": "Tinkatink",
+      "type": "Fairy / Steel",
+      "evolution": "Tinkatink – Lvl 24 → Tinkatuff – Lvl 38 → Tinkaton",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "017": {
+      "name": "Tinkatuff",
+      "type": "Fairy / Steel",
+      "evolution": "Tinkatink – Lvl 24 → Tinkatuff – Lvl 38 → Tinkaton",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "018": {
+      "name": "Tinkaton",
+      "type": "Fairy / Steel",
+      "evolution": "Tinkatink – Lvl 24 → Tinkatuff – Lvl 38 → Tinkaton",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "019": {
+      "name": "Cyclizar",
+      "type": "Dragon / Normal",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "020": {
+      "name": "Glimmet",
+      "type": "Rock / Poison",
+      "evolution": "Glimmet – Lvl 35 → Glimmora",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "021": {
+      "name": "Glimmora",
+      "type": "Rock / Poison",
+      "evolution": "Glimmet – Lvl 35 → Glimmora",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "022": {
+      "name": "Rotom",
+      "type": "Electric / Ghost",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "023": {
+      "name": "Greavard",
+      "type": "Ghost",
+      "evolution": "Greavard – Lvl 30, Nighttime → Houndstone",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "024": {
+      "name": "Houndstone",
+      "type": "Ghost",
+      "evolution": "Greavard – Lvl 30, Nighttime → Houndstone",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "025": {
+      "name": "Sandygast",
+      "type": "Ghost / Ground",
+      "evolution": "Sandygast – Lvl 42 → Palossand",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "026": {
+      "name": "Palossand",
+      "type": "Ghost / Ground",
+      "evolution": "Sandygast – Lvl 42 → Palossand",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "027": {
+      "name": "Kecleon",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "028": {
+      "name": "Flamigo",
+      "type": "Flying / Fighting",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "029": {
+      "name": "Cryogonal",
+      "type": "Ice",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "030": {
+      "name": "Dondozo",
+      "type": "Water",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "031": {
+      "name": "Tatsugiri",
+      "type": "Dragon / Water",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "032": {
+      "name": "Frigibax",
+      "type": "Dragon / Ice",
+      "evolution": "Frigibax – Lvl 35 → Arctibax – Lvl 54 → Baxcalibur",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "033": {
+      "name": "Arctibax",
+      "type": "Dragon / Ice",
+      "evolution": "Frigibax – Lvl 35 → Arctibax – Lvl 54 → Baxcalibur",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "034": {
+      "name": "Baxcalibur",
+      "type": "Dragon / Ice",
+      "evolution": "Frigibax – Lvl 35 → Arctibax – Lvl 54 → Baxcalibur",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "035": {
+      "name": "Gimmighoul",
+      "type": "Ghost",
+      "evolution": "Gimmighoul – collect 999 Coins from Roaming Form → Gholdengo",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "036": {
+      "name": "Gholdengo",
+      "type": "Steel / Ghost",
+      "evolution": "Gimmighoul – collect 999 Coins from Roaming Form → Gholdengo",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "037": {
+      "name": "Qwilfish",
+      "type": "Dark / Poison",
+      "evolution": "Qwilfish – Lvl up while knowing Barb Barrage → Overqwil",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "038": {
+      "name": "Overqwil",
+      "type": "Dark / Poison",
+      "evolution": "Qwilfish – Lvl up while knowing Barb Barrage → Overqwil",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "039": {
+      "name": "Treecko",
+      "type": "Grass",
+      "evolution": "Treecko – Lvl 16 → Grovyle – Lvl 36 → Sceptile",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "040": {
+      "name": "Grovyle",
+      "type": "Grass",
+      "evolution": "Treecko – Lvl 16 → Grovyle – Lvl 36 → Sceptile",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "041": {
+      "name": "Sceptile",
+      "type": "Grass",
+      "evolution": "Treecko – Lvl 16 → Grovyle – Lvl 36 → Sceptile",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "042": {
+      "name": "Torchic",
+      "type": "Fire",
+      "evolution": "Torchic – Lvl 16 → Combusken – Lvl 36 → Blaziken",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "043": {
+      "name": "Combusken",
+      "type": "Fire / Fighting",
+      "evolution": "Torchic – Lvl 16 → Combusken – Lvl 36 → Blaziken",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "044": {
+      "name": "Blaziken",
+      "type": "Fire / Fighting",
+      "evolution": "Torchic – Lvl 16 → Combusken – Lvl 36 → Blaziken",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "045": {
+      "name": "Mudkip",
+      "type": "Water",
+      "evolution": "Mudkip – Lvl 16 → Marshtomp – Lvl 36 → Swampert",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "046": {
+      "name": "Marshtomp",
+      "type": "Water / Ground",
+      "evolution": "Mudkip – Lvl 16 → Marshtomp – Lvl 36 → Swampert",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "047": {
+      "name": "Swampert",
+      "type": "Water / Ground",
+      "evolution": "Mudkip – Lvl 16 → Marshtomp – Lvl 36 → Swampert",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "048": {
+      "name": "Feebas",
+      "type": "Water",
+      "evolution": "Feebas – Trade holding Prism Scale, or level up with max Beauty → Milotic",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "049": {
+      "name": "Milotic",
+      "type": "Water",
+      "evolution": "Feebas – Trade holding Prism Scale, or level up with max Beauty → Milotic",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "050": {
+      "name": "Chingling",
+      "type": "Psychic",
+      "evolution": "Chingling – High Friendship, Nighttime → Chimecho",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "051": {
+      "name": "Chimecho",
+      "type": "Psychic",
+      "evolution": "Chingling – High Friendship, Nighttime → Chimecho",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "052": {
+      "name": "Indeedee",
+      "type": "Psychic / Normal",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "053": {
+      "name": "Purrloin",
+      "type": "Dark",
+      "evolution": "Purrloin – Lvl 20 → Liepard",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "054": {
+      "name": "Liepard",
+      "type": "Dark",
+      "evolution": "Purrloin – Lvl 20 → Liepard",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "055": {
+      "name": "Munna",
+      "type": "Psychic",
+      "evolution": "Munna – Moon Stone → Musharna",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "056": {
+      "name": "Musharna",
+      "type": "Psychic",
+      "evolution": "Munna – Moon Stone → Musharna",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "057": {
+      "name": "Throh",
+      "type": "Fighting",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "058": {
+      "name": "Sawk",
+      "type": "Fighting",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "059": {
+      "name": "Yamask",
+      "type": "Ground / Ghost",
+      "evolution": "Yamask – Lvl 34 → Cofagrigus | – near Dusty Bowl → Runerigus",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "060": {
+      "name": "Runerigus",
+      "type": "Ground / Ghost",
+      "evolution": "Yamask – Lvl 34 → Cofagrigus | – near Dusty Bowl → Runerigus",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "061": {
+      "name": "Cofagrigus",
+      "type": "Ghost",
+      "evolution": "Yamask – Lvl 34 → Cofagrigus | – near Dusty Bowl → Runerigus",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "062": {
+      "name": "Wimpod",
+      "type": "Bug / Water",
+      "evolution": "Wimpod – Lvl 30 → Golisopod",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "063": {
+      "name": "Golisopod",
+      "type": "Bug / Water",
+      "evolution": "Wimpod – Lvl 30 → Golisopod",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "064": {
+      "name": "Nickit",
+      "type": "Dark",
+      "evolution": "Nickit – Lvl 18 → Thievul",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "065": {
+      "name": "Thievul",
+      "type": "Dark",
+      "evolution": "Nickit – Lvl 18 → Thievul",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "066": {
+      "name": "Clobbopus",
+      "type": "Fighting",
+      "evolution": "Clobbopus – After learning Taunt → Grapploct",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "067": {
+      "name": "Grapploct",
+      "type": "Fighting",
+      "evolution": "Clobbopus – After learning Taunt → Grapploct",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "068": {
+      "name": "Mimikyu",
+      "type": "Ghost / Fairy",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "069": {
+      "name": "Kleavor",
+      "type": "Bug / Rock",
+      "evolution": "Scyther – Trade holding Metal Coat → Scizor | – Black Augurite → Kleavor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "070": {
+      "name": "Morpeko",
+      "type": "Electric / Dark",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "071": {
+      "name": "Golett",
+      "type": "Ground / Ghost",
+      "evolution": "Golett – Lvl 43 → Golurk",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "072": {
+      "name": "Golurk",
+      "type": "Ground / Ghost",
+      "evolution": "Golett – Lvl 43 → Golurk",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "073": {
+      "name": "Rookidee",
+      "type": "Flying",
+      "evolution": "Rookidee – Lvl 18 → Corvisquire – Lvl 38 → Corviknight",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "074": {
+      "name": "Corvisquire",
+      "type": "Flying",
+      "evolution": "Rookidee – Lvl 18 → Corvisquire – Lvl 38 → Corviknight",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "075": {
+      "name": "Corviknight",
+      "type": "Flying / Steel",
+      "evolution": "Rookidee – Lvl 18 → Corvisquire – Lvl 38 → Corviknight",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "076": {
+      "name": "Igglybuff",
+      "type": "Normal / Fairy",
+      "evolution": "Igglybuff – High Friendship → Jigglypuff – Moon Stone → Wigglytuff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "077": {
+      "name": "Jigglypuff",
+      "type": "Normal / Fairy",
+      "evolution": "Igglybuff – High Friendship → Jigglypuff – Moon Stone → Wigglytuff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "078": {
+      "name": "Wigglytuff",
+      "type": "Normal / Fairy",
+      "evolution": "Igglybuff – High Friendship → Jigglypuff – Moon Stone → Wigglytuff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "079": {
+      "name": "Fidough",
+      "type": "Fairy",
+      "evolution": "Fidough – Lvl 26 → Dachsbun",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "080": {
+      "name": "Dachsbun",
+      "type": "Fairy",
+      "evolution": "Fidough – Lvl 26 → Dachsbun",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "081": {
+      "name": "Starly",
+      "type": "Normal / Flying",
+      "evolution": "Starly – Lvl 14 → Staravia – Lvl 34 → Staraptor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "082": {
+      "name": "Staravia",
+      "type": "Normal / Flying",
+      "evolution": "Starly – Lvl 14 → Staravia – Lvl 34 → Staraptor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "083": {
+      "name": "Staraptor",
+      "type": "Normal / Flying",
+      "evolution": "Starly – Lvl 14 → Staravia – Lvl 34 → Staraptor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "084": {
+      "name": "Spoink",
+      "type": "Psychic",
+      "evolution": "Spoink – Lvl 32 → Grumpig",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "085": {
+      "name": "Grumpig",
+      "type": "Psychic",
+      "evolution": "Spoink – Lvl 32 → Grumpig",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "086": {
+      "name": "Squawkabilly",
+      "type": "Normal / Flying",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "087": {
+      "name": "Crabrawler",
+      "type": "Fighting",
+      "evolution": "Crabrawler – Ice Stone → Crabominable",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "088": {
+      "name": "Crabominable",
+      "type": "Fighting / Ice",
+      "evolution": "Crabrawler – Ice Stone → Crabominable",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "089": {
+      "name": "Nacli",
+      "type": "Rock",
+      "evolution": "Nacli – Lvl 24 → Naclstack – Lvl 38 → Garganacl",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "090": {
+      "name": "Naclstack",
+      "type": "Rock",
+      "evolution": "Nacli – Lvl 24 → Naclstack – Lvl 38 → Garganacl",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "091": {
+      "name": "Garganacl",
+      "type": "Rock",
+      "evolution": "Nacli – Lvl 24 → Naclstack – Lvl 38 → Garganacl",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "092": {
+      "name": "Gulpin",
+      "type": "Poison",
+      "evolution": "Gulpin – Lvl 26 → Swalot",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "093": {
+      "name": "Swalot",
+      "type": "Poison",
+      "evolution": "Gulpin – Lvl 26 → Swalot",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "094": {
+      "name": "Zubat",
+      "type": "Poison / Flying",
+      "evolution": "Zubat – Lvl 22 → Golbat – High Friendship → Crobat",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "095": {
+      "name": "Golbat",
+      "type": "Poison / Flying",
+      "evolution": "Zubat – Lvl 22 → Golbat – High Friendship → Crobat",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "096": {
+      "name": "Crobat",
+      "type": "Poison / Flying",
+      "evolution": "Zubat – Lvl 22 → Golbat – High Friendship → Crobat",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "097": {
+      "name": "Charcadet",
+      "type": "Fire",
+      "evolution": "Charcadet – Auspicious Armor → Armarouge | – Malicious Armor→ Ceruledge",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "098": {
+      "name": "Armarouge",
+      "type": "Fire / Psychic",
+      "evolution": "Charcadet – Auspicious Armor → Armarouge",
+      "locations": "-",
+      "exclusiveVersion": "Scarlet"
+    },
+    "099": {
+      "name": "Ceruledge",
+      "type": "Fire / Ghost",
+      "evolution": "Charcadet – Malicious Armor→ Ceruledge",
+      "locations": "-",
+      "exclusiveVersion": "Violet"
+    },
+    "100": {
+      "name": "Maschiff",
+      "type": "Dark",
+      "evolution": "Maschiff – Lvl 30 → Mabosstiff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "101": {
+      "name": "Mabosstiff",
+      "type": "Dark",
+      "evolution": "Maschiff – Lvl 30 → Mabosstiff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "102": {
+      "name": "Toxel",
+      "type": "Electric / Poison",
+      "evolution": "Toxel – Lvl 30 → Toxtricity",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "103": {
+      "name": "Toxtricity",
+      "type": "Electric / Poison",
+      "evolution": "Toxel – Lvl 30 → Toxtricity",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "104": {
+      "name": "Shroodle",
+      "type": "Poison / Normal",
+      "evolution": "Shroodle – Lvl 28 → Grafaiai",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "105": {
+      "name": "Grafaiai",
+      "type": "Poison / Normal",
+      "evolution": "Shroodle – Lvl 28 → Grafaiai",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "106": {
+      "name": "Zangoose",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "107": {
+      "name": "Seviper",
+      "type": "Poison",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "108": {
+      "name": "Mime Jr.",
+      "type": "Psychic / Fairy",
+      "evolution": "Mime Jr. – After learning Mimic → Mr. Mime – Lvl 42 → Mr. Rime",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "109": {
+      "name": "Mr. Mime",
+      "type": "Ice / Psychic",
+      "evolution": "Mime Jr. – After learning Mimic → Mr. Mime – Lvl 42 → Mr. Rime",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "110": {
+      "name": "Mr. Rime",
+      "type": "Ice / Psychic",
+      "evolution": "Mime Jr. – After learning Mimic → Mr. Mime – Lvl 42 → Mr. Rime",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "111": {
+      "name": "Foongus",
+      "type": "Grass / Poison",
+      "evolution": "Foongus – Lvl 39 → Amoonguss",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "112": {
+      "name": "Amoonguss",
+      "type": "Grass / Poison",
+      "evolution": "Foongus – Lvl 39 → Amoonguss",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "113": {
+      "name": "Heatran",
+      "type": "Fire / Steel",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "114": {
+      "name": "Volcanion",
+      "type": "Fire / Water",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "115": {
+      "name": "Cobalion",
+      "type": "Steel / Fighting",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "116": {
+      "name": "Terrakion",
+      "type": "Rock / Fighting",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "117": {
+      "name": "Virizion",
+      "type": "Grass / Fighting",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "118": {
+      "name": "Keldeo",
+      "type": "Water / Fighting",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "119": {
+      "name": "Meloetta",
+      "type": "Normal / Psychic",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "120": {
+      "name": "Genesect",
+      "type": "Bug / Steel",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "121": {
+      "name": "Hoopa",
+      "type": "Psychic / Ghost",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "122": {
+      "name": "Marshadow",
+      "type": "Fighting / Ghost",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "123": {
+      "name": "Meltan",
+      "type": "Steel",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "124": {
+      "name": "Melmetal",
+      "type": "Steel",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "125": {
+      "name": "Darkrai",
+      "type": "Dark",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "126": {
+      "name": "Latias",
+      "type": "Dragon / Psychic",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "127": {
+      "name": "Latios",
+      "type": "Dragon / Psychic",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "128": {
+      "name": "Kyogre",
+      "type": "Water",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "129": {
+      "name": "Groudon",
+      "type": "Ground",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "130": {
+      "name": "Rayquaza",
+      "type": "Dragon / Flying",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "131": {
+      "name": "Magearna",
+      "type": "Steel / Fairy",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    "132": {
+      "name": "Zeraora",
+      "type": "Electric",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    }
+  }
+}

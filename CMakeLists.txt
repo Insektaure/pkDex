@@ -28,11 +28,11 @@ project(pkDex)
 # When updating the version, update both here and in version.hpp (CURRENT_VERSION)
 set(VERSION_MAJOR "1")
 set(VERSION_MINOR "6")
-set(VERSION_ALTER "3")
+set(VERSION_ALTER "4")
 set(VERSION_BUILD "0")
 set(PACKAGE_NAME "com.switch.pkdex")
 set(PSN_TITLE_ID  "BRLS00000")
-set(PSN_VERSION  "1.6.3")
+set(PSN_VERSION  "1.6.4")
 set(PROJECT_AUTHOR "Insektaure")
 set(PROJECT_ICON ${CMAKE_CURRENT_SOURCE_DIR}/resources/img/icon.jpg)
 set(PROJECT_RESOURCES ${CMAKE_CURRENT_SOURCE_DIR}/resources)
@@ -161,7 +161,7 @@ elseif (PLATFORM_SWITCH)
         COMMAND ${NX_NACPTOOL_EXE} --create "${PROJECT_NAME}" "${PROJECT_AUTHOR}" "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_ALTER}" ${PROJECT_NAME}.nacp --titleid=${PROJECT_TITLEID}
         COMMAND ${CMAKE_COMMAND} -E copy_directory ${PROJECT_RESOURCES} ${CMAKE_BINARY_DIR}/resources
         # Minify JSON files with jq in build output to reduce nro size
-        COMMAND find ${CMAKE_BINARY_DIR}/resources/i18n -type f -name "*.json" -exec sh -c 'jq -c . "$$1" > "$$1.tmp" && mv "$$1.tmp" "$$1"' _ {} \\\;
+        COMMAND find ${CMAKE_BINARY_DIR}/resources/i18n ${CMAKE_BINARY_DIR}/resources/data -type f -name "*.json" -exec sh -c 'jq -c . "$$1" > "$$1.tmp" && mv "$$1.tmp" "$$1"' _ {} \\\;
         #COMMAND ${CMAKE_COMMAND} -E remove_directory ${CMAKE_BINARY_DIR}/resources/font
         # delete material folder to reduce nro size
         COMMAND ${CMAKE_COMMAND} -E remove_directory ${CMAKE_BINARY_DIR}/resources/material

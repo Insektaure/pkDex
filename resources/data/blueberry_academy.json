@@ -1,0 +1,2198 @@
+{
+  "region": "blueberry_academy",
+  "pokemon": [
+    {
+      "id": "084",
+      "name": "Doduo",
+      "regionalDexNumber": "001",
+      "type": "Normal / Flying",
+      "evolution": "Doduo – Lvl 31 → Dodrio",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "085",
+      "name": "Dodrio",
+      "regionalDexNumber": "002",
+      "type": "Normal / Flying",
+      "evolution": "Doduo – Lvl 31 → Dodrio",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "102",
+      "name": "Exeggcute",
+      "regionalDexNumber": "003",
+      "type": "Grass / Psychic",
+      "evolution": "Exeggcute – Leaf Stone → Exeggutor",
+      "locations": "Savanna Biome, Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "103",
+      "name": "Exeggutor",
+      "regionalDexNumber": "004",
+      "type": "Grass / Psychic - Dragon",
+      "evolution": "Exeggcute – Leaf Stone → Exeggutor",
+      "locations": "Savanna Biome (Kantonian Form), Coastal Biome (Alolan Form)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "111",
+      "name": "Rhyhorn",
+      "regionalDexNumber": "005",
+      "type": "Ground / Rock",
+      "evolution": "Rhyhorn – Lvl 42 → Rhydon – Trade holding Protector → Rhyperior",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "112",
+      "name": "Rhydon",
+      "regionalDexNumber": "006",
+      "type": "Ground / Rock",
+      "evolution": "Rhyhorn – Lvl 42 → Rhydon – Trade holding Protector → Rhyperior",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "464",
+      "name": "Rhyperior",
+      "regionalDexNumber": "007",
+      "type": "Ground / Rock",
+      "evolution": "Rhyhorn – Lvl 42 → Rhydon – Trade holding Protector → Rhyperior",
+      "locations": "Evolve Rhyhorn / Rhydon",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "048",
+      "name": "Venonat",
+      "regionalDexNumber": "008",
+      "type": "Bug / Poison",
+      "evolution": "Venonat – Lvl 31 → Venomoth",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "049",
+      "name": "Venomoth",
+      "regionalDexNumber": "009",
+      "type": "Bug / Poison",
+      "evolution": "Venonat – Lvl 31 → Venomoth",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "239",
+      "name": "Elekid",
+      "regionalDexNumber": "010",
+      "type": "Electric",
+      "evolution": "Elekid – Lvl 30 → Electabuzz – Trade holding Electirizer → Electivire",
+      "locations": "Savanna Biome, Canyon Biome, Polar Biome, Chargestone Cavern",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "125",
+      "name": "Electabuzz",
+      "regionalDexNumber": "011",
+      "type": "Electric",
+      "evolution": "Elekid – Lvl 30 → Electabuzz – Trade holding Electirizer → Electivire",
+      "locations": "Savanna Biome, Canyon Biome, Polar Biome, Chargestone Cavern",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "466",
+      "name": "Electivire",
+      "regionalDexNumber": "012",
+      "type": "Electric",
+      "evolution": "Elekid – Lvl 30 → Electabuzz – Trade holding Electirizer → Electivire",
+      "locations": "Evolve Electabuzz / Elekid",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "240",
+      "name": "Magby",
+      "regionalDexNumber": "013",
+      "type": "Fire",
+      "evolution": "Magby – Lvl 30 → Magmar – Trade holding Magmarizer → Magmortar",
+      "locations": "Savanna Biome, Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "126",
+      "name": "Magmar",
+      "regionalDexNumber": "014",
+      "type": "Fire",
+      "evolution": "Magby – Lvl 30 → Magmar – Trade holding Magmarizer → Magmortar",
+      "locations": "Savanna Biome, Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "467",
+      "name": "Magmortar",
+      "regionalDexNumber": "015",
+      "type": "Fire",
+      "evolution": "Magby – Lvl 30 → Magmar – Trade holding Magmarizer → Magmortar",
+      "locations": "Evolve Magmar / Magby",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "440",
+      "name": "Happiny",
+      "regionalDexNumber": "016",
+      "type": "Normal",
+      "evolution": "Happiny – hold Oval Stone, Daytime → Chansey – High Friendship → Blissey",
+      "locations": "Savanna Biome, Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "113",
+      "name": "Chansey",
+      "regionalDexNumber": "017",
+      "type": "Normal",
+      "evolution": "Happiny – hold Oval Stone, Daytime → Chansey – High Friendship → Blissey",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "242",
+      "name": "Blissey",
+      "regionalDexNumber": "018",
+      "type": "Normal",
+      "evolution": "Happiny – hold Oval Stone, Daytime → Chansey – High Friendship → Blissey",
+      "locations": "Savanna Biome, Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "123",
+      "name": "Scyther",
+      "regionalDexNumber": "019",
+      "type": "Bug / Flying",
+      "evolution": "Scyther – Trade holding Metal Coat → Scizor | – Black Augurite → Kleavor",
+      "locations": "Savanna Biome, Canyon Biome, Chargestone Cavern",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "212",
+      "name": "Scizor",
+      "regionalDexNumber": "020",
+      "type": "Bug / Steel",
+      "evolution": "Scyther – Trade holding Metal Coat → Scizor | – Black Augurite → Kleavor",
+      "locations": "Savanna Biome, Canyon Biome, Chargestone Cavern",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "900",
+      "name": "Kleavor",
+      "regionalDexNumber": "021",
+      "type": "Bug / Rock",
+      "evolution": "Scyther – Trade holding Metal Coat → Scizor | – Black Augurite → Kleavor",
+      "locations": "Canyon Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "128",
+      "name": "Tauros",
+      "regionalDexNumber": "022",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Savanna Biome (Kantonian Form)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "522",
+      "name": "Blitzle",
+      "regionalDexNumber": "023",
+      "type": "Electric",
+      "evolution": "Blitzle – Lvl 27 → Zebstrika",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "523",
+      "name": "Zebstrika",
+      "regionalDexNumber": "024",
+      "type": "Electric",
+      "evolution": "Blitzle – Lvl 27 → Zebstrika",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "203",
+      "name": "Girafarig",
+      "regionalDexNumber": "025",
+      "type": "Normal / Psychic",
+      "evolution": "Girafarig – After learning Twin Beam → Farigiraf",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "981",
+      "name": "Farigiraf",
+      "regionalDexNumber": "026",
+      "type": "Normal / Psychic",
+      "evolution": "Girafarig – After learning Twin Beam → Farigiraf",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "551",
+      "name": "Sandile",
+      "regionalDexNumber": "027",
+      "type": "Ground / Dark",
+      "evolution": "Sandile – Lvl 29 → Krokorok – Lvl 40 → Krookodile",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "552",
+      "name": "Krokorok",
+      "regionalDexNumber": "028",
+      "type": "Ground / Dark",
+      "evolution": "Sandile – Lvl 29 → Krokorok – Lvl 40 → Krookodile",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "553",
+      "name": "Krookodile",
+      "regionalDexNumber": "029",
+      "type": "Ground / Dark",
+      "evolution": "Sandile – Lvl 29 → Krokorok – Lvl 40 → Krookodile",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "953",
+      "name": "Rellor",
+      "regionalDexNumber": "030",
+      "type": "Bug",
+      "evolution": "Rellor – walk 1,000 steps in Let's Go mode → Rabsca",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "954",
+      "name": "Rabsca",
+      "regionalDexNumber": "031",
+      "type": "Bug / Psychic",
+      "evolution": "Rellor – walk 1,000 steps in Let's Go mode → Rabsca",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "627",
+      "name": "Rufflet",
+      "regionalDexNumber": "032",
+      "type": "Normal / Flying",
+      "evolution": "Rufflet – Lvl 54 → Braviary",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "628",
+      "name": "Braviary",
+      "regionalDexNumber": "033",
+      "type": "Normal / Flying",
+      "evolution": "Rufflet – Lvl 54 → Braviary",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "629",
+      "name": "Vullaby",
+      "regionalDexNumber": "034",
+      "type": "Dark / Flying",
+      "evolution": "Vullaby – Lvl 54 → Mandibuzz",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "630",
+      "name": "Mandibuzz",
+      "regionalDexNumber": "035",
+      "type": "Dark / Flying",
+      "evolution": "Vullaby – Lvl 54 → Mandibuzz",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "667",
+      "name": "Litleo",
+      "regionalDexNumber": "036",
+      "type": "Fire / Normal",
+      "evolution": "Litleo – Lvl 35 → Pyroar",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "668",
+      "name": "Pyroar",
+      "regionalDexNumber": "037",
+      "type": "Fire / Normal",
+      "evolution": "Litleo – Lvl 35 → Pyroar",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "585",
+      "name": "Deerling",
+      "regionalDexNumber": "038",
+      "type": "Normal / Grass",
+      "evolution": "Deerling – Lvl 34 → Sawsbuck",
+      "locations": "Savanna Biome (Spring Form), Coastal Biome, Torchlit Labyrinth (Summer Form), Canyon Biome,\n            Chargestone Cavern (Autumn Form),Polar Biome (Winter Form)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "586",
+      "name": "Sawsbuck",
+      "regionalDexNumber": "039",
+      "type": "Normal / Grass",
+      "evolution": "Deerling – Lvl 34 → Sawsbuck",
+      "locations": "Savanna Biome (Spring Form), Coastal Biome, Torchlit Labyrinth (Summer Form), Canyon Biome,\n            Chargestone Cavern (Autumn Form), Polar Biome (Winter Form)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "235",
+      "name": "Smeargle",
+      "regionalDexNumber": "040",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Savanna Biome, Coastal Biome, Torchlit Labyrinth, Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "479",
+      "name": "Rotom",
+      "regionalDexNumber": "041",
+      "type": "Electric / Ghost",
+      "evolution": "-",
+      "locations": "Savanna Biome, Coastal Biome, Torchlit Labyrinth, Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "868",
+      "name": "Milcery",
+      "regionalDexNumber": "042",
+      "type": "Fairy",
+      "evolution": "Milcery – Spin around holding Sweet → Alcremie",
+      "locations": "Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "869",
+      "name": "Alcremie",
+      "regionalDexNumber": "043",
+      "type": "Fairy",
+      "evolution": "Milcery – Spin around holding Sweet → Alcremie",
+      "locations": "Evolve Milcery",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "328",
+      "name": "Trapinch",
+      "regionalDexNumber": "044",
+      "type": "Ground",
+      "evolution": "Trapinch – Lvl 35 → Vibrava – Lvl 45 → Flygon",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "329",
+      "name": "Vibrava",
+      "regionalDexNumber": "045",
+      "type": "Ground / Dragon",
+      "evolution": "Trapinch – Lvl 35 → Vibrava – Lvl 45 → Flygon",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "330",
+      "name": "Flygon",
+      "regionalDexNumber": "046",
+      "type": "Ground / Dragon",
+      "evolution": "Trapinch – Lvl 35 → Vibrava – Lvl 45 → Flygon",
+      "locations": "Savanna Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "731",
+      "name": "Pikipek",
+      "regionalDexNumber": "047",
+      "type": "Normal / Flying",
+      "evolution": "Pikipek – Lvl 14 → Trumbeak – Lvl 28 → Toucannon",
+      "locations": "Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "732",
+      "name": "Trumbeak",
+      "regionalDexNumber": "048",
+      "type": "Normal / Flying",
+      "evolution": "Pikipek – Lvl 14 → Trumbeak – Lvl 28 → Toucannon",
+      "locations": "Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "733",
+      "name": "Toucannon",
+      "regionalDexNumber": "049",
+      "type": "Normal / Flying",
+      "evolution": "Pikipek – Lvl 14 → Trumbeak – Lvl 28 → Toucannon",
+      "locations": "Coastal Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "072",
+      "name": "Tentacool",
+      "regionalDexNumber": "050",
+      "type": "Water / Poison",
+      "evolution": "Tentacool – Lvl 30 → Tentacruel",
+      "locations": "Coastal Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "073",
+      "name": "Tentacruel",
+      "regionalDexNumber": "051",
+      "type": "Water / Poison",
+      "evolution": "Tentacool – Lvl 30 → Tentacruel",
+      "locations": "Coastal Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "116",
+      "name": "Horsea",
+      "regionalDexNumber": "052",
+      "type": "Water",
+      "evolution": "Horsea – Lvl 32 → Seadra – Trade holding Dragon Scale → Kingdra",
+      "locations": "Coastal Biome, Torchlit Labyrinth, Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "117",
+      "name": "Seadra",
+      "regionalDexNumber": "053",
+      "type": "Water",
+      "evolution": "Horsea – Lvl 32 → Seadra – Trade holding Dragon Scale → Kingdra",
+      "locations": "Coastal Biome, Torchlit Labyrinth, Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "230",
+      "name": "Kingdra",
+      "regionalDexNumber": "054",
+      "type": "Water / Dragon",
+      "evolution": "Horsea – Lvl 32 → Seadra – Trade holding Dragon Scale → Kingdra",
+      "locations": "Evolve Horsea / Seadra",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "779",
+      "name": "Bruxish",
+      "regionalDexNumber": "055",
+      "type": "Water / Psychic",
+      "evolution": "-",
+      "locations": "Coastal Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "546",
+      "name": "Cottonee",
+      "regionalDexNumber": "056",
+      "type": "Grass / Fairy",
+      "evolution": "Cottonee – Sun Stone → Whimsicott",
+      "locations": "Coastal Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "547",
+      "name": "Whimsicott",
+      "regionalDexNumber": "057",
+      "type": "Grass / Fairy",
+      "evolution": "Cottonee – Sun Stone → Whimsicott",
+      "locations": "Coastal Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "764",
+      "name": "Comfey",
+      "regionalDexNumber": "058",
+      "type": "Fairy",
+      "evolution": "-",
+      "locations": "Coastal Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "287",
+      "name": "Slakoth",
+      "regionalDexNumber": "059",
+      "type": "Normal",
+      "evolution": "Slakoth – Lvl 18 → Vigoroth – Lvl 36 → Slaking",
+      "locations": "Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "288",
+      "name": "Vigoroth",
+      "regionalDexNumber": "060",
+      "type": "Normal",
+      "evolution": "Slakoth – Lvl 18 → Vigoroth – Lvl 36 → Slaking",
+      "locations": "Coastal Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "289",
+      "name": "Slaking",
+      "regionalDexNumber": "061",
+      "type": "Normal",
+      "evolution": "Slakoth – Lvl 18 → Vigoroth – Lvl 36 → Slaking",
+      "locations": "Coastal Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "043",
+      "name": "Oddish",
+      "regionalDexNumber": "062",
+      "type": "Grass / Poison",
+      "evolution": "Oddish – Lvl 21 → Gloom – Leaf Stone → Vileplume",
+      "locations": "Coastal Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "044",
+      "name": "Gloom",
+      "regionalDexNumber": "063",
+      "type": "Grass / Poison",
+      "evolution": "Oddish – Lvl 21 → Gloom – Leaf Stone → Vileplume",
+      "locations": "Coastal Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "045",
+      "name": "Vileplume",
+      "regionalDexNumber": "064",
+      "type": "Grass / Poison",
+      "evolution": "Oddish – Lvl 21 → Gloom – Leaf Stone → Vileplume",
+      "locations": "Coastal Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "182",
+      "name": "Bellossom",
+      "regionalDexNumber": "065",
+      "type": "Grass",
+      "evolution": "Oddish – Lvl 21 → Gloom – Sun Stone → Bellossom",
+      "locations": "Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "050",
+      "name": "Diglett",
+      "regionalDexNumber": "066",
+      "type": "Ground / Steel",
+      "evolution": "Diglett – Lvl 26 → Dugtrio",
+      "locations": "Coastal Biome, Torchlit Labyrinth (Alolan Form)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "051",
+      "name": "Dugtrio",
+      "regionalDexNumber": "067",
+      "type": "Ground / Steel",
+      "evolution": "Diglett – Lvl 26 → Dugtrio",
+      "locations": "Coastal Biome, Torchlit Labyrinth (Alolan Form)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "088",
+      "name": "Grimer",
+      "regionalDexNumber": "068",
+      "type": "Poison / Dark",
+      "evolution": "Grimer – Lvl 38 → Muk",
+      "locations": "Coastal Biome, Torchlit Labyrinth (Alolan Form)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "089",
+      "name": "Muk",
+      "regionalDexNumber": "069",
+      "type": "Poison / Dark",
+      "evolution": "Grimer – Lvl 38 → Muk",
+      "locations": "Coastal Biome, Torchlit Labyrinth (Alolan Form)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "335",
+      "name": "Zangoose",
+      "regionalDexNumber": "070",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "336",
+      "name": "Seviper",
+      "regionalDexNumber": "071",
+      "type": "Poison",
+      "evolution": "-",
+      "locations": "Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "739",
+      "name": "Crabrawler",
+      "regionalDexNumber": "072",
+      "type": "Fighting",
+      "evolution": "Crabrawler – Ice Stone → Crabominable",
+      "locations": "Coastal Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "740",
+      "name": "Crabominable",
+      "regionalDexNumber": "073",
+      "type": "Fighting / Ice",
+      "evolution": "Crabrawler – Ice Stone → Crabominable",
+      "locations": "Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "741",
+      "name": "Oricorio",
+      "regionalDexNumber": "074",
+      "type": "Fire / Flying",
+      "evolution": "-",
+      "locations": "Coastal Biome (Pa'u Style)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "079",
+      "name": "Slowpoke",
+      "regionalDexNumber": "075",
+      "type": "Psychic",
+      "evolution": "Slowpoke – Galarica Cuff → Slowbro | – Galarica Wreath → Slowking",
+      "locations": "Coastal Biome, Torchlit Labyrinth (Galarian Form)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "080",
+      "name": "Slowbro",
+      "regionalDexNumber": "076",
+      "type": "Poison / Psychic",
+      "evolution": "Slowpoke – Galarica Cuff → Slowbro | – Galarica Wreath → Slowking",
+      "locations": "Evolve Slowpoke (Galarian Form)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "199",
+      "name": "Slowking",
+      "regionalDexNumber": "077",
+      "type": "Poison / Psychic",
+      "evolution": "Slowpoke – Galarica Cuff → Slowbro | – Galarica Wreath → Slowking",
+      "locations": "Evolve Slowpoke (Galarian Form)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "170",
+      "name": "Chinchou",
+      "regionalDexNumber": "078",
+      "type": "Water / Electric",
+      "evolution": "Chinchou – Lvl 27 → Lanturn",
+      "locations": "Canyon Biome, Chargestone Cavern",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "171",
+      "name": "Lanturn",
+      "regionalDexNumber": "079",
+      "type": "Water / Electric",
+      "evolution": "Chinchou – Lvl 27 → Lanturn",
+      "locations": "Canyon Biome, Chargestone Cavern",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "686",
+      "name": "Inkay",
+      "regionalDexNumber": "080",
+      "type": "Dark / Psychic",
+      "evolution": "Inkay – Lvl 30 + holding console upside down → Malamar",
+      "locations": "Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "687",
+      "name": "Malamar",
+      "regionalDexNumber": "081",
+      "type": "Dark / Psychic",
+      "evolution": "Inkay – Lvl 30 + holding console upside down → Malamar",
+      "locations": "Evolve Inkay",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "370",
+      "name": "Luvdisc",
+      "regionalDexNumber": "082",
+      "type": "Water",
+      "evolution": "-",
+      "locations": "Coastal Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "456",
+      "name": "Finneon",
+      "regionalDexNumber": "083",
+      "type": "Water",
+      "evolution": "Finneon – Lvl 33 → Lumineon",
+      "locations": "Coastal Biome, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "457",
+      "name": "Lumineon",
+      "regionalDexNumber": "084",
+      "type": "Water",
+      "evolution": "Finneon – Lvl 33 → Lumineon",
+      "locations": "Coastal Biome, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "594",
+      "name": "Alomomola",
+      "regionalDexNumber": "085",
+      "type": "Water",
+      "evolution": "-",
+      "locations": "Coastal Biome, Torchlit Labyrinth, Canyon Biome, Chargestone Cavern",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "324",
+      "name": "Torkoal",
+      "regionalDexNumber": "086",
+      "type": "Fire",
+      "evolution": "-",
+      "locations": "Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "661",
+      "name": "Fletchling",
+      "regionalDexNumber": "087",
+      "type": "Normal / Flying",
+      "evolution": "Fletchling – Lvl 17 → Fletchinder – Lvl 35 → Talonflame",
+      "locations": "Coastal Biome, Torchlit Labyrinth, Canyon Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "662",
+      "name": "Fletchinder",
+      "regionalDexNumber": "088",
+      "type": "Fire / Flying",
+      "evolution": "Fletchling – Lvl 17 → Fletchinder – Lvl 35 → Talonflame",
+      "locations": "Coastal Biome, Torchlit Labyrinth, Canyon Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "663",
+      "name": "Talonflame",
+      "regionalDexNumber": "089",
+      "type": "Fire / Flying",
+      "evolution": "Fletchling – Lvl 17 → Fletchinder – Lvl 35 → Talonflame",
+      "locations": "Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "751",
+      "name": "Dewpider",
+      "regionalDexNumber": "090",
+      "type": "Water / Bug",
+      "evolution": "Dewpider – Lvl 22 → Araquanid",
+      "locations": "Savanna Biome, Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "752",
+      "name": "Araquanid",
+      "regionalDexNumber": "091",
+      "type": "Water / Bug",
+      "evolution": "Dewpider – Lvl 22 → Araquanid",
+      "locations": "Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "236",
+      "name": "Tyrogue",
+      "regionalDexNumber": "092",
+      "type": "Fighting",
+      "evolution": "Tyrogue – Lvl 20 → Hitmonlee | → Hitmonchan | → Hitmontop",
+      "locations": "Canyon Biome, Chargestone Cavern",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "106",
+      "name": "Hitmonlee",
+      "regionalDexNumber": "093",
+      "type": "Fighting",
+      "evolution": "Tyrogue – Lvl 20 + Attack > Defense → Hitmonlee",
+      "locations": "Canyon Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "107",
+      "name": "Hitmonchan",
+      "regionalDexNumber": "094",
+      "type": "Fighting",
+      "evolution": "Tyrogue – Lvl 20 + Attack < Defense → Hitmonchan",
+      "locations": "Canyon Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "237",
+      "name": "Hitmontop",
+      "regionalDexNumber": "095",
+      "type": "Fighting",
+      "evolution": "Tyrogue – Lvl 20 + Attack = Defense → Hitmonlee",
+      "locations": "Canyon Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "074",
+      "name": "Geodude",
+      "regionalDexNumber": "096",
+      "type": "Rock / Electric",
+      "evolution": "Geodude – Lvl 25 → Graveler – Trade → Golem",
+      "locations": "Canyon Biome, Chargestone Cavern (Alolan Form)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "075",
+      "name": "Graveler",
+      "regionalDexNumber": "097",
+      "type": "Rock / Electric",
+      "evolution": "Geodude – Lvl 25 → Graveler – Trade → Golem",
+      "locations": "Canyon Biome, Chargestone Cavern (Alolan Form)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "076",
+      "name": "Golem",
+      "regionalDexNumber": "098",
+      "type": "Rock / Electric",
+      "evolution": "Geodude – Lvl 25 → Graveler – Trade → Golem",
+      "locations": "Evolve Geodude / Graveler",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "529",
+      "name": "Drilbur",
+      "regionalDexNumber": "099",
+      "type": "Ground",
+      "evolution": "Drilbur – Lvl 31 → Excadrill",
+      "locations": "Chargestone Cavern, Canyon Biome, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "530",
+      "name": "Excadrill",
+      "regionalDexNumber": "100",
+      "type": "Ground / Steel",
+      "evolution": "Drilbur – Lvl 31 → Excadrill",
+      "locations": "Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "574",
+      "name": "Gothita",
+      "regionalDexNumber": "101",
+      "type": "Psychic",
+      "evolution": "Gothita – Lvl 32 → Gothorita – Lvl 41 → Gothitelle",
+      "locations": "Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "575",
+      "name": "Gothorita",
+      "regionalDexNumber": "102",
+      "type": "Psychic",
+      "evolution": "Gothita – Lvl 32 → Gothorita – Lvl 41 → Gothitelle",
+      "locations": "Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "576",
+      "name": "Gothitelle",
+      "regionalDexNumber": "103",
+      "type": "Psychic",
+      "evolution": "Gothita – Lvl 32 → Gothorita – Lvl 41 → Gothitelle",
+      "locations": "Coastal Biome, Torchlit Labyrinth",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "677",
+      "name": "Espurr",
+      "regionalDexNumber": "104",
+      "type": "Psychic",
+      "evolution": "Espurr – Lvl 25 → Meowstic",
+      "locations": "Coastal Biome, Canyon Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "678",
+      "name": "Meowstic",
+      "regionalDexNumber": "105",
+      "type": "Psychic",
+      "evolution": "Espurr – Lvl 25 → Meowstic",
+      "locations": "Coastal Biome, Canyon Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "774",
+      "name": "Minior",
+      "regionalDexNumber": "106",
+      "type": "Rock / Flying",
+      "evolution": "-",
+      "locations": "Coastal Biome, Torchlit Labyrinth, Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "408",
+      "name": "Cranidos",
+      "regionalDexNumber": "107",
+      "type": "Rock",
+      "evolution": "Cranidos – Lvl 30 → Rampardos",
+      "locations": "Canyon Biome",
+      "exclusiveVersion": "Scarlet"
+    },
+    {
+      "id": "409",
+      "name": "Rampardos",
+      "regionalDexNumber": "108",
+      "type": "Rock",
+      "evolution": "Cranidos – Lvl 30 → Rampardos",
+      "locations": "Evolve Cranidos",
+      "exclusiveVersion": "Scarlet"
+    },
+    {
+      "id": "410",
+      "name": "Shieldon",
+      "regionalDexNumber": "109",
+      "type": "Rock / Steel",
+      "evolution": "Shieldon – Lvl 30 → Bastiodon",
+      "locations": "Canyon Biome",
+      "exclusiveVersion": "Violet"
+    },
+    {
+      "id": "411",
+      "name": "Bastiodon",
+      "regionalDexNumber": "110",
+      "type": "Rock / Steel",
+      "evolution": "Shieldon – Lvl 30 → Bastiodon",
+      "locations": "Evolve Shieldon",
+      "exclusiveVersion": "Violet"
+    },
+    {
+      "id": "572",
+      "name": "Minccino",
+      "regionalDexNumber": "111",
+      "type": "Normal",
+      "evolution": "Minccino – Shiny Stone → Cinccino",
+      "locations": "Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "573",
+      "name": "Cinccino",
+      "regionalDexNumber": "112",
+      "type": "Normal",
+      "evolution": "Minccino – Shiny Stone → Cinccino",
+      "locations": "Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "227",
+      "name": "Skarmory",
+      "regionalDexNumber": "113",
+      "type": "Steel / Flying",
+      "evolution": "-",
+      "locations": "Canyon Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "333",
+      "name": "Swablu",
+      "regionalDexNumber": "114",
+      "type": "Normal / Flying",
+      "evolution": "Swablu – Lvl 35 → Altaria",
+      "locations": "Canyon Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "334",
+      "name": "Altaria",
+      "regionalDexNumber": "115",
+      "type": "Dragon / Flying",
+      "evolution": "Swablu – Lvl 35 → Altaria",
+      "locations": "Canyon Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "081",
+      "name": "Magnemite",
+      "regionalDexNumber": "116",
+      "type": "Electric / Steel",
+      "evolution": "Magnemite – Lvl 30 → Magneton – Thunder Stone → Magnezone",
+      "locations": "Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "082",
+      "name": "Magneton",
+      "regionalDexNumber": "117",
+      "type": "Electric / Steel",
+      "evolution": "Magnemite – Lvl 30 → Magneton – Thunder Stone → Magnezone",
+      "locations": "Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "462",
+      "name": "Magnezone",
+      "regionalDexNumber": "118",
+      "type": "Electric / Steel",
+      "evolution": "Magnemite – Lvl 30 → Magneton – Thunder Stone → Magnezone",
+      "locations": "Evolve Magnemite / Magneton",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "311",
+      "name": "Plusle",
+      "regionalDexNumber": "119",
+      "type": "Electric",
+      "evolution": "-",
+      "locations": "Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "312",
+      "name": "Minun",
+      "regionalDexNumber": "120",
+      "type": "Electric",
+      "evolution": "-",
+      "locations": "Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "559",
+      "name": "Scraggy",
+      "regionalDexNumber": "121",
+      "type": "Dark / Fighting",
+      "evolution": "Scraggy – Lvl 39 → Scrafty",
+      "locations": "Canyon Biome, Chargestone Cavern",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "560",
+      "name": "Scrafty",
+      "regionalDexNumber": "122",
+      "type": "Dark / Fighting",
+      "evolution": "Scraggy – Lvl 39 → Scrafty",
+      "locations": "Canyon Biome, Chargestone Cavern",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "622",
+      "name": "Golett",
+      "regionalDexNumber": "123",
+      "type": "Ground / Ghost",
+      "evolution": "Golett – Lvl 43 → Golurk",
+      "locations": "Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "623",
+      "name": "Golurk",
+      "regionalDexNumber": "124",
+      "type": "Ground / Ghost",
+      "evolution": "Golett – Lvl 43 → Golurk",
+      "locations": "Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "322",
+      "name": "Numel",
+      "regionalDexNumber": "125",
+      "type": "Fire / Ground",
+      "evolution": "Numel – Lvl 33 → Camerupt",
+      "locations": "Coastal Biome, Torchlit Labyrinth, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "323",
+      "name": "Camerupt",
+      "regionalDexNumber": "126",
+      "type": "Fire / Ground",
+      "evolution": "Numel – Lvl 33 → Camerupt",
+      "locations": "Coastal Biome, Torchlit Labyrinth, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "854",
+      "name": "Sinistea",
+      "regionalDexNumber": "127",
+      "type": "Ghost",
+      "evolution": "Sinistea – Cracked Pot → Polteageist",
+      "locations": "Canyon Biome, Chargestone Cavern",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "855",
+      "name": "Polteageist",
+      "regionalDexNumber": "128",
+      "type": "Ghost",
+      "evolution": "Sinistea – Cracked Pot → Polteageist",
+      "locations": "Evolve Sinistea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "137",
+      "name": "Porygon",
+      "regionalDexNumber": "129",
+      "type": "Normal",
+      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "233",
+      "name": "Porygon2",
+      "regionalDexNumber": "130",
+      "type": "Normal",
+      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "Evolve Porygon",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "474",
+      "name": "Porygon-Z",
+      "regionalDexNumber": "131",
+      "type": "Normal",
+      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "Evolve Porygon2",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "595",
+      "name": "Joltik",
+      "regionalDexNumber": "132",
+      "type": "Bug / Electric",
+      "evolution": "Joltik – Lvl 36 → Galvantula",
+      "locations": "Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "596",
+      "name": "Galvantula",
+      "regionalDexNumber": "133",
+      "type": "Bug / Electric",
+      "evolution": "Joltik – Lvl 36 → Galvantula",
+      "locations": "Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "602",
+      "name": "Tynamo",
+      "regionalDexNumber": "134",
+      "type": "Electric",
+      "evolution": "Tynamo – Lvl 39 → Eelektrik – Thunder Stone → Eelektross",
+      "locations": "Savanna Biome, Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "603",
+      "name": "Eelektrik",
+      "regionalDexNumber": "135",
+      "type": "Electric",
+      "evolution": "Tynamo – Lvl 39 → Eelektrik – Thunder Stone → Eelektross",
+      "locations": "Savanna Biome, Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "604",
+      "name": "Eelektross",
+      "regionalDexNumber": "136",
+      "type": "Electric",
+      "evolution": "Tynamo – Lvl 39 → Eelektrik – Thunder Stone → Eelektross",
+      "locations": "Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "374",
+      "name": "Beldum",
+      "regionalDexNumber": "137",
+      "type": "Steel / Psychic",
+      "evolution": "Beldum – Lvl 20 → Metang – Lvl 45 → Metagross",
+      "locations": "Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "375",
+      "name": "Metang",
+      "regionalDexNumber": "138",
+      "type": "Steel / Psychic",
+      "evolution": "Beldum – Lvl 20 → Metang – Lvl 45 → Metagross",
+      "locations": "Canyon Biome, Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "376",
+      "name": "Metagross",
+      "regionalDexNumber": "139",
+      "type": "Steel / Psychic",
+      "evolution": "Beldum – Lvl 20 → Metang – Lvl 45 → Metagross",
+      "locations": "Evolve Beldum / Metang",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "610",
+      "name": "Axew",
+      "regionalDexNumber": "140",
+      "type": "Dragon",
+      "evolution": "Axew – Lvl 38 → Fraxure – Lvl 48 → Haxorus",
+      "locations": "Canyon Biome, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "611",
+      "name": "Fraxure",
+      "regionalDexNumber": "141",
+      "type": "Dragon",
+      "evolution": "Axew – Lvl 38 → Fraxure – Lvl 48 → Haxorus",
+      "locations": "Canyon Biome, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "612",
+      "name": "Haxorus",
+      "regionalDexNumber": "142",
+      "type": "Dragon",
+      "evolution": "Axew – Lvl 38 → Fraxure – Lvl 48 → Haxorus",
+      "locations": "Evolve Axew / Fraxure",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "086",
+      "name": "Seel",
+      "regionalDexNumber": "143",
+      "type": "Water",
+      "evolution": "Seel – Lvl 34 → Dewgong",
+      "locations": "Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "087",
+      "name": "Dewgong",
+      "regionalDexNumber": "144",
+      "type": "Water / Ice",
+      "evolution": "Seel – Lvl 34 → Dewgong",
+      "locations": "Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "131",
+      "name": "Lapras",
+      "regionalDexNumber": "145",
+      "type": "Water / Ice",
+      "evolution": "-",
+      "locations": "Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "211",
+      "name": "Qwilfish",
+      "regionalDexNumber": "146",
+      "type": "Dark / Poison",
+      "evolution": "Qwilfish – Lvl up while knowing Barb Barrage → Overqwil",
+      "locations": "Polar Biome (Hisuian Form)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "904",
+      "name": "Overqwil",
+      "regionalDexNumber": "147",
+      "type": "Dark / Poison",
+      "evolution": "Qwilfish – Lvl up while knowing Barb Barrage → Overqwil",
+      "locations": "Evolve Qwilfish (Hisuian form)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "577",
+      "name": "Solosis",
+      "regionalDexNumber": "148",
+      "type": "Psychic",
+      "evolution": "Solosis – Lvl 32 → Duosion – Lvl 41 → Reuniclus",
+      "locations": "Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "578",
+      "name": "Duosion",
+      "regionalDexNumber": "149",
+      "type": "Psychic",
+      "evolution": "Solosis – Lvl 32 → Duosion – Lvl 41 → Reuniclus",
+      "locations": "Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "579",
+      "name": "Reuniclus",
+      "regionalDexNumber": "150",
+      "type": "Psychic",
+      "evolution": "Solosis – Lvl 32 → Duosion – Lvl 41 → Reuniclus",
+      "locations": "Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "209",
+      "name": "Snubbull",
+      "regionalDexNumber": "151",
+      "type": "Fairy",
+      "evolution": "Snubbull – Lvl 23 → Granbull",
+      "locations": "Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "210",
+      "name": "Granbull",
+      "regionalDexNumber": "152",
+      "type": "Fairy",
+      "evolution": "Snubbull – Lvl 23 → Granbull",
+      "locations": "Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "613",
+      "name": "Cubchoo",
+      "regionalDexNumber": "153",
+      "type": "Ice",
+      "evolution": "Cubchoo – Lvl 37 → Beartic",
+      "locations": "Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "614",
+      "name": "Beartic",
+      "regionalDexNumber": "154",
+      "type": "Ice",
+      "evolution": "Cubchoo – Lvl 37 → Beartic",
+      "locations": "Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "027",
+      "name": "Sandshrew",
+      "regionalDexNumber": "155",
+      "type": "Ice / Steel",
+      "evolution": "Sandshrew – Ice Stone → Sandslash",
+      "locations": "Chargestone Cavern, Polar Biome (Alolan Form)",
+      "exclusiveVersion": "Violet"
+    },
+    {
+      "id": "028",
+      "name": "Sandslash",
+      "regionalDexNumber": "156",
+      "type": "Ice / Steel",
+      "evolution": "Sandshrew – Ice Stone → Sandslash",
+      "locations": "Evolve Sandshrew (Alolan form)",
+      "exclusiveVersion": "Violet"
+    },
+    {
+      "id": "037",
+      "name": "Vulpix",
+      "regionalDexNumber": "157",
+      "type": "Ice",
+      "evolution": "Vulpix – Ice Stone → Ninetales",
+      "locations": "Chargestone Cavern, Polar Biome (Alolan Form)",
+      "exclusiveVersion": "Scarlet"
+    },
+    {
+      "id": "038",
+      "name": "Ninetales",
+      "regionalDexNumber": "158",
+      "type": "Ice / Fairy",
+      "evolution": "Vulpix – Ice Stone → Ninetales",
+      "locations": "Evolve Vulpix (Alolan form)",
+      "exclusiveVersion": "Scarlet"
+    },
+    {
+      "id": "459",
+      "name": "Snover",
+      "regionalDexNumber": "159",
+      "type": "Grass / Ice",
+      "evolution": "Snover – Lvl 40 → Abomasnow",
+      "locations": "Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "460",
+      "name": "Abomasnow",
+      "regionalDexNumber": "160",
+      "type": "Grass / Ice",
+      "evolution": "Snover – Lvl 40 → Abomasnow",
+      "locations": "Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "884",
+      "name": "Duraludon",
+      "regionalDexNumber": "161",
+      "type": "Steel / Dragon",
+      "evolution": "Duraludon – Metal Alloy → Archaludon",
+      "locations": "Chargestone Cavern, Polar Biome",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "1018",
+      "name": "Archaludon",
+      "regionalDexNumber": "162",
+      "type": "Steel / Dragon",
+      "evolution": "Duraludon – Metal Alloy → Archaludon",
+      "locations": "Evolve Duraludon",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "1019",
+      "name": "Hydrapple",
+      "regionalDexNumber": "163",
+      "type": "Grass / Dragon",
+      "evolution": "Applin – Syrupy Apple → Dipplin – After learning Dragon Cheer → Hydrapple",
+      "locations": "Evolve Dipplin",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "001",
+      "name": "Bulbasaur",
+      "regionalDexNumber": "164",
+      "type": "Grass / Poison",
+      "evolution": "Bulbasaur – Lvl 16 → Ivysaur – Lvl 32 → Venusaur",
+      "locations": "Coastal Biome, Torchlit Labyrinth (after boosting biodiversity in the Coastal Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "002",
+      "name": "Ivysaur",
+      "regionalDexNumber": "165",
+      "type": "Grass / Poison",
+      "evolution": "Bulbasaur – Lvl 16 → Ivysaur – Lvl 32 → Venusaur",
+      "locations": "Evolve Bulbasaur",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "003",
+      "name": "Venusaur",
+      "regionalDexNumber": "166",
+      "type": "Grass / Poison",
+      "evolution": "Bulbasaur – Lvl 16 → Ivysaur – Lvl 32 → Venusaur",
+      "locations": "Evolve Ivysaur",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "004",
+      "name": "Charmander",
+      "regionalDexNumber": "167",
+      "type": "Fire",
+      "evolution": "Charmander – Lvl 16 → Charmeleon – Lvl 36 → Charizard",
+      "locations": "Savanna Biome (after boosting biodiversity in the Savanna Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "005",
+      "name": "Charmeleon",
+      "regionalDexNumber": "168",
+      "type": "Fire",
+      "evolution": "Charmander – Lvl 16 → Charmeleon – Lvl 36 → Charizard",
+      "locations": "Evolve Charmander",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "006",
+      "name": "Charizard",
+      "regionalDexNumber": "169",
+      "type": "Fire / Flying",
+      "evolution": "Charmander – Lvl 16 → Charmeleon – Lvl 36 → Charizard",
+      "locations": "Evolve Charmeleon",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "007",
+      "name": "Squirtle",
+      "regionalDexNumber": "170",
+      "type": "Water",
+      "evolution": "Squirtle – Lvl 16 → Wartortle – Lvl 36 → Blastoise",
+      "locations": "Canyon Biome (after boosting biodiversity in the Canyon Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "008",
+      "name": "Wartortle",
+      "regionalDexNumber": "171",
+      "type": "Water",
+      "evolution": "Squirtle – Lvl 16 → Wartortle – Lvl 36 → Blastoise",
+      "locations": "Evolve Squirtle",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "009",
+      "name": "Blastoise",
+      "regionalDexNumber": "172",
+      "type": "Water",
+      "evolution": "Squirtle – Lvl 16 → Wartortle – Lvl 36 → Blastoise",
+      "locations": "Evolve Wartortle",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "152",
+      "name": "Chikorita",
+      "regionalDexNumber": "173",
+      "type": "Grass",
+      "evolution": "Chikorita – Lvl 16 → Bayleef – Lvl 32 → Meganium",
+      "locations": "Coastal Biome, Torchlit Labyrinth (after boosting biodiversity in the Coastal Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "153",
+      "name": "Bayleef",
+      "regionalDexNumber": "174",
+      "type": "Grass",
+      "evolution": "Chikorita – Lvl 16 → Bayleef – Lvl 32 → Meganium",
+      "locations": "Evolve Chikorita",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "154",
+      "name": "Meganium",
+      "regionalDexNumber": "175",
+      "type": "Grass",
+      "evolution": "Chikorita – Lvl 16 → Bayleef – Lvl 32 → Meganium",
+      "locations": "Evolve Bayleef",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "155",
+      "name": "Cyndaquil",
+      "regionalDexNumber": "176",
+      "type": "Fire",
+      "evolution": "Cyndaquil – Lvl 14 → Quilava – Lvl 36 → Typhlosion",
+      "locations": "Polar Biome (after boosting biodiversity in the Polar Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "156",
+      "name": "Quilava",
+      "regionalDexNumber": "177",
+      "type": "Fire",
+      "evolution": "Cyndaquil – Lvl 14 → Quilava – Lvl 36 → Typhlosion",
+      "locations": "Evolve Cyndaquil",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "157",
+      "name": "Typhlosion",
+      "regionalDexNumber": "178",
+      "type": "Fire",
+      "evolution": "Cyndaquil – Lvl 14 → Quilava – Lvl 36 → Typhlosion",
+      "locations": "Evolve Quilava",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "158",
+      "name": "Totodile",
+      "regionalDexNumber": "179",
+      "type": "Water",
+      "evolution": "Totodile – Lvl 18 → Croconaw – Lvl 30 → Feraligatr",
+      "locations": "Savanna Biome (after boosting biodiversity in the Savanna Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "159",
+      "name": "Croconaw",
+      "regionalDexNumber": "180",
+      "type": "Water",
+      "evolution": "Totodile – Lvl 18 → Croconaw – Lvl 30 → Feraligatr",
+      "locations": "Evolve Totodile",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "160",
+      "name": "Feraligatr",
+      "regionalDexNumber": "181",
+      "type": "Water",
+      "evolution": "Totodile – Lvl 18 → Croconaw – Lvl 30 → Feraligatr",
+      "locations": "Evolve Croconaw",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "252",
+      "name": "Treecko",
+      "regionalDexNumber": "182",
+      "type": "Grass",
+      "evolution": "Treecko – Lvl 16 → Grovyle – Lvl 36 → Sceptile",
+      "locations": "Canyon Biome (after boosting biodiversity in the Canyon Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "253",
+      "name": "Grovyle",
+      "regionalDexNumber": "183",
+      "type": "Grass",
+      "evolution": "Treecko – Lvl 16 → Grovyle – Lvl 36 → Sceptile",
+      "locations": "Evolve Treecko",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "254",
+      "name": "Sceptile",
+      "regionalDexNumber": "184",
+      "type": "Grass",
+      "evolution": "Treecko – Lvl 16 → Grovyle – Lvl 36 → Sceptile",
+      "locations": "Evolve Grovyle",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "255",
+      "name": "Torchic",
+      "regionalDexNumber": "185",
+      "type": "Fire",
+      "evolution": "Torchic – Lvl 16 → Combusken – Lvl 36 → Blaziken",
+      "locations": "Polar Biome (after boosting biodiversity in the Polar Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "256",
+      "name": "Combusken",
+      "regionalDexNumber": "186",
+      "type": "Fire / Fighting",
+      "evolution": "Torchic – Lvl 16 → Combusken – Lvl 36 → Blaziken",
+      "locations": "Evolve Torchic",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "257",
+      "name": "Blaziken",
+      "regionalDexNumber": "187",
+      "type": "Fire / Fighting",
+      "evolution": "Torchic – Lvl 16 → Combusken – Lvl 36 → Blaziken",
+      "locations": "Evolve Combusken",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "258",
+      "name": "Mudkip",
+      "regionalDexNumber": "188",
+      "type": "Water",
+      "evolution": "Mudkip – Lvl 16 → Marshtomp – Lvl 36 → Swampert",
+      "locations": "Torchlit Labyrinth (after boosting biodiversity in the Coastal Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "259",
+      "name": "Marshtomp",
+      "regionalDexNumber": "189",
+      "type": "Water / Ground",
+      "evolution": "Mudkip – Lvl 16 → Marshtomp – Lvl 36 → Swampert",
+      "locations": "Evolve Mudkip",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "260",
+      "name": "Swampert",
+      "regionalDexNumber": "190",
+      "type": "Water / Ground",
+      "evolution": "Mudkip – Lvl 16 → Marshtomp – Lvl 36 → Swampert",
+      "locations": "Evolve Marshtomp",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "387",
+      "name": "Turtwig",
+      "regionalDexNumber": "191",
+      "type": "Grass",
+      "evolution": "Turtwig – Lvl 18 → Grotle – Lvl 32 → Torterra",
+      "locations": "Canyon Biome, Chargestone Cavern (after boosting biodiversity in the Canyon Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "388",
+      "name": "Grotle",
+      "regionalDexNumber": "192",
+      "type": "Grass",
+      "evolution": "Turtwig – Lvl 18 → Grotle – Lvl 32 → Torterra",
+      "locations": "Evolve Turtwig",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "389",
+      "name": "Torterra",
+      "regionalDexNumber": "193",
+      "type": "Grass / Ground",
+      "evolution": "Turtwig – Lvl 18 → Grotle – Lvl 32 → Torterra",
+      "locations": "Evolve Grotle",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "390",
+      "name": "Chimchar",
+      "regionalDexNumber": "194",
+      "type": "Fire",
+      "evolution": "Chimchar – Lvl 14 → Monferno – Lvl 36 → Infernape",
+      "locations": "Chargestone Cavern, Polar Biome (after boosting biodiversity in the Polar Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "391",
+      "name": "Monferno",
+      "regionalDexNumber": "195",
+      "type": "Fire / Fighting",
+      "evolution": "Chimchar – Lvl 14 → Monferno – Lvl 36 → Infernape",
+      "locations": "Evolve Chimchar",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "392",
+      "name": "Infernape",
+      "regionalDexNumber": "196",
+      "type": "Fire / Fighting",
+      "evolution": "Chimchar – Lvl 14 → Monferno – Lvl 36 → Infernape",
+      "locations": "Evolve Monferno",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "393",
+      "name": "Piplup",
+      "regionalDexNumber": "197",
+      "type": "Water",
+      "evolution": "Piplup – Lvl 16 → Prinplup – Lvl 36 → Empoleon",
+      "locations": "Polar Biome (after boosting biodiversity in the Polar Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "394",
+      "name": "Prinplup",
+      "regionalDexNumber": "198",
+      "type": "Water",
+      "evolution": "Piplup – Lvl 16 → Prinplup – Lvl 36 → Empoleon",
+      "locations": "Evolve Piplup",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "395",
+      "name": "Empoleon",
+      "regionalDexNumber": "199",
+      "type": "Water / Steel",
+      "evolution": "Piplup – Lvl 16 → Prinplup – Lvl 36 → Empoleon",
+      "locations": "Evolve Prinplup",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "495",
+      "name": "Snivy",
+      "regionalDexNumber": "200",
+      "type": "Grass",
+      "evolution": "Snivy – Lvl 17 → Servine – Lvl 36 → Serperior",
+      "locations": "Savanna Biome (after boosting biodiversity in the Savanna Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "496",
+      "name": "Servine",
+      "regionalDexNumber": "201",
+      "type": "Grass",
+      "evolution": "Snivy – Lvl 17 → Servine – Lvl 36 → Serperior",
+      "locations": "Evolve Snivy",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "497",
+      "name": "Serperior",
+      "regionalDexNumber": "202",
+      "type": "Grass",
+      "evolution": "Snivy – Lvl 17 → Servine – Lvl 36 → Serperior",
+      "locations": "Evolve Servine",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "498",
+      "name": "Tepig",
+      "regionalDexNumber": "203",
+      "type": "Fire",
+      "evolution": "Tepig – Lvl 17 → Pignite – Lvl 36 → Emboar",
+      "locations": "Canyon Biome, Chargestone Cavern (after boosting biodiversity in the Canyon Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "499",
+      "name": "Pignite",
+      "regionalDexNumber": "204",
+      "type": "Fire / Fighting",
+      "evolution": "Tepig – Lvl 17 → Pignite – Lvl 36 → Emboar",
+      "locations": "Evolve Tepig",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "500",
+      "name": "Emboar",
+      "regionalDexNumber": "205",
+      "type": "Fire / Fighting",
+      "evolution": "Tepig – Lvl 17 → Pignite – Lvl 36 → Emboar",
+      "locations": "Evolve Pignite",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "501",
+      "name": "Oshawott",
+      "regionalDexNumber": "206",
+      "type": "Water",
+      "evolution": "Oshawott – Lvl 17 → Dewott – Lvl 36 → Samurott",
+      "locations": "Polar Biome (after boosting biodiversity in the Polar Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "502",
+      "name": "Dewott",
+      "regionalDexNumber": "207",
+      "type": "Water",
+      "evolution": "Oshawott – Lvl 17 → Dewott – Lvl 36 → Samurott",
+      "locations": "Evolve Oshawott",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "503",
+      "name": "Samurott",
+      "regionalDexNumber": "208",
+      "type": "Water",
+      "evolution": "Oshawott – Lvl 17 → Dewott – Lvl 36 → Samurott",
+      "locations": "Evolve Dewott",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "650",
+      "name": "Chespin",
+      "regionalDexNumber": "209",
+      "type": "Grass",
+      "evolution": "Chespin – Lvl 16 → Quilladin – Lvl 36 → Chesnaught",
+      "locations": "Chargestone Cavern (after boosting biodiversity in the Canyon Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "651",
+      "name": "Quilladin",
+      "regionalDexNumber": "210",
+      "type": "Grass",
+      "evolution": "Chespin – Lvl 16 → Quilladin – Lvl 36 → Chesnaught",
+      "locations": "Evolve Chespin",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "652",
+      "name": "Chesnaught",
+      "regionalDexNumber": "211",
+      "type": "Grass / Fighting",
+      "evolution": "Chespin – Lvl 16 → Quilladin – Lvl 36 → Chesnaught",
+      "locations": "Evolve Quilladin",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "653",
+      "name": "Fennekin",
+      "regionalDexNumber": "212",
+      "type": "Fire",
+      "evolution": "Fennekin – Lvl 16 → Braixen – Lvl 36 → Delphox",
+      "locations": "Savanna Biome (after boosting biodiversity in the Savanna Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "654",
+      "name": "Braixen",
+      "regionalDexNumber": "213",
+      "type": "Fire",
+      "evolution": "Fennekin – Lvl 16 → Braixen – Lvl 36 → Delphox",
+      "locations": "Evolve Fennekin",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "655",
+      "name": "Delphox",
+      "regionalDexNumber": "214",
+      "type": "Fire / Psychic",
+      "evolution": "Fennekin – Lvl 16 → Braixen – Lvl 36 → Delphox",
+      "locations": "Evolve Braixen",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "656",
+      "name": "Froakie",
+      "regionalDexNumber": "215",
+      "type": "Water",
+      "evolution": "Froakie – Lvl 16 → Frogadier – Lvl 36 → Greninja",
+      "locations": "Coastal Biome (after boosting biodiversity in the Coastal Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "657",
+      "name": "Frogadier",
+      "regionalDexNumber": "216",
+      "type": "Water",
+      "evolution": "Froakie – Lvl 16 → Frogadier – Lvl 36 → Greninja",
+      "locations": "Evolve Froakie",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "658",
+      "name": "Greninja",
+      "regionalDexNumber": "217",
+      "type": "Water / Dark",
+      "evolution": "Froakie – Lvl 16 → Frogadier – Lvl 36 → Greninja",
+      "locations": "Evolve Frogadier",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "722",
+      "name": "Rowlet",
+      "regionalDexNumber": "218",
+      "type": "Grass / Flying",
+      "evolution": "Rowlet – Lvl 17 → Dartrix – Lvl 34 → Decidueye",
+      "locations": "Savanna Biome (after boosting biodiversity in the Savanna Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "723",
+      "name": "Dartrix",
+      "regionalDexNumber": "219",
+      "type": "Grass / Flying",
+      "evolution": "Rowlet – Lvl 17 → Dartrix – Lvl 34 → Decidueye",
+      "locations": "Evolve Rowlet",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "724",
+      "name": "Decidueye",
+      "regionalDexNumber": "220",
+      "type": "Grass / Ghost",
+      "evolution": "Rowlet – Lvl 17 → Dartrix – Lvl 34 → Decidueye",
+      "locations": "Evolve Dartrix",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "725",
+      "name": "Litten",
+      "regionalDexNumber": "221",
+      "type": "Fire",
+      "evolution": "Litten – Lvl 17 → Torracat – Lvl 34 → Incineroar",
+      "locations": "Canyon Biome, Chargestone Cavern (after boosting biodiversity in the Canyon Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "726",
+      "name": "Torracat",
+      "regionalDexNumber": "222",
+      "type": "Fire",
+      "evolution": "Litten – Lvl 17 → Torracat – Lvl 34 → Incineroar",
+      "locations": "Evolve Litten",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "727",
+      "name": "Incineroar",
+      "regionalDexNumber": "223",
+      "type": "Fire / Dark",
+      "evolution": "Litten – Lvl 17 → Torracat – Lvl 34 → Incineroar",
+      "locations": "Evolve Torracat",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "728",
+      "name": "Popplio",
+      "regionalDexNumber": "224",
+      "type": "Water",
+      "evolution": "Popplio – Lvl 17 → Brionne – Lvl 34 → Primarina",
+      "locations": "Coastal Biome (after boosting biodiversity in the Coastal Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "729",
+      "name": "Brionne",
+      "regionalDexNumber": "225",
+      "type": "Water",
+      "evolution": "Popplio – Lvl 17 → Brionne – Lvl 34 → Primarina",
+      "locations": "Evolve Popplio",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "730",
+      "name": "Primarina",
+      "regionalDexNumber": "226",
+      "type": "Water / Fairy",
+      "evolution": "Popplio – Lvl 17 → Brionne – Lvl 34 → Primarina",
+      "locations": "Evolve Brionne",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "810",
+      "name": "Grookey",
+      "regionalDexNumber": "227",
+      "type": "Grass",
+      "evolution": "Grookey – Lvl 16 → Thwackey – Lvl 35 → Rillaboom",
+      "locations": "Coastal Biome (after boosting biodiversity in the Coastal Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "811",
+      "name": "Thwackey",
+      "regionalDexNumber": "228",
+      "type": "Grass",
+      "evolution": "Grookey – Lvl 16 → Thwackey – Lvl 35 → Rillaboom",
+      "locations": "Evolve Grookey",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "812",
+      "name": "Rillaboom",
+      "regionalDexNumber": "229",
+      "type": "Grass",
+      "evolution": "Grookey – Lvl 16 → Thwackey – Lvl 35 → Rillaboom",
+      "locations": "Evolve Thwackey",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "813",
+      "name": "Scorbunny",
+      "regionalDexNumber": "230",
+      "type": "Fire",
+      "evolution": "Scorbunny – Lvl 16 → Raboot – Lvl 35 → Cinderace",
+      "locations": "Chargestone Cavern, Polar Biome (after boosting biodiversity in the Polar Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "814",
+      "name": "Raboot",
+      "regionalDexNumber": "231",
+      "type": "Fire",
+      "evolution": "Scorbunny – Lvl 16 → Raboot – Lvl 35 → Cinderace",
+      "locations": "Evolve Scorbunny",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "815",
+      "name": "Cinderace",
+      "regionalDexNumber": "232",
+      "type": "Fire",
+      "evolution": "Scorbunny – Lvl 16 → Raboot – Lvl 35 → Cinderace",
+      "locations": "Evolve Raboot",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "816",
+      "name": "Sobble",
+      "regionalDexNumber": "233",
+      "type": "Water",
+      "evolution": "Sobble – Lvl 16 → Drizzile – Lvl 35 → Inteleon",
+      "locations": "Savanna Biome (after boosting biodiversity in the Savanna Biome)",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "817",
+      "name": "Drizzile",
+      "regionalDexNumber": "234",
+      "type": "Water",
+      "evolution": "Sobble – Lvl 16 → Drizzile – Lvl 35 → Inteleon",
+      "locations": "Evolve Sobble",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "818",
+      "name": "Inteleon",
+      "regionalDexNumber": "235",
+      "type": "Water",
+      "evolution": "Sobble – Lvl 16 → Drizzile – Lvl 35 → Inteleon",
+      "locations": "Evolve Drizzile",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "1020",
+      "name": "Gouging Fire",
+      "regionalDexNumber": "236",
+      "type": "Fire / Dragon",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "Area Zero (after starting Perrin's questline in The Indigo Disk)",
+      "exclusiveVersion": "Scarlet"
+    },
+    {
+      "id": "1021",
+      "name": "Raging Bolt",
+      "regionalDexNumber": "237",
+      "type": "Electric / Dragon",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "Area Zero (after starting Perrin's questline in The Indigo Disk)",
+      "exclusiveVersion": "Scarlet"
+    },
+    {
+      "id": "1023",
+      "name": "Iron Crown",
+      "regionalDexNumber": "238",
+      "type": "Steel / Psychic",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "Area Zero (after starting Perrin's questline in The Indigo Disk)",
+      "exclusiveVersion": "Violet"
+    },
+    {
+      "id": "1022",
+      "name": "Iron Boulder",
+      "regionalDexNumber": "239",
+      "type": "Rock / Psychic",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "Area Zero (after starting Perrin's questline in The Indigo Disk)",
+      "exclusiveVersion": "Violet"
+    },
+    {
+      "id": "1024",
+      "name": "Terapagos",
+      "regionalDexNumber": "240",
+      "type": "Normal",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "Area Zero Underdepths",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "1009",
+      "name": "Walking Wake",
+      "regionalDexNumber": "241",
+      "type": "Water / Dragon",
+      "evolution": "-",
+      "locations": "Event",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "1010",
+      "name": "Iron Leaves",
+      "regionalDexNumber": "242",
+      "type": "Grass / Psychic",
+      "evolution": "-",
+      "locations": "Event",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "1025",
+      "name": "Pecharunt",
+      "regionalDexNumber": "243",
+      "type": "Poison / Ghost",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "Loyalty Plaza (requires Mythical Pecha Berry)",
+      "exclusiveVersion": "-"
+    }
+  ]
+}

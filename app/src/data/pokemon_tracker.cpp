@@ -3,7 +3,7 @@
 #include <fstream>
 #include <filesystem>
 #include <sstream>
-#include <tinyxml2.h>
+#include <nlohmann/json.hpp>
 
 namespace pkdex {
 
@@ -26,30 +26,31 @@ std::vector<std::string> PokemonTracker::getAllRegions() {
     // Default regions if the file doesn't exist or can't be loaded
     std::vector<std::string> defaultRegions = {"kanto", "johto", "hoenn", "sinnoh", "sinnoh_arceus", "galar", "paldea"};
 
-    // Load the XML file
-    tinyxml2::XMLDocument doc;
-    std::string filePath = "romfs:/data/regions.xml";
-    tinyxml2::XMLError error = doc.LoadFile(filePath.c_str());
-
-    if (error != tinyxml2::XML_SUCCESS) {
-        brls::Logger::error("Failed to load regions data from {}: {}", filePath, doc.ErrorStr());
+    // Load the JSON file
+    std::string filePath = "romfs:/data/regions.json";
+    std::ifstream file(filePath);
+    if (!file.is_open()) {
+        brls::Logger::error("Failed to load regions data from {}", filePath);
         return defaultRegions;
     }
 
-    // Get the root element
-    tinyxml2::XMLElement* root = doc.FirstChildElement("regions");
-    if (!root) {
+    nlohmann::json doc;
+    try {
+        file >> doc;
+    } catch (const std::exception& e) {
+        brls::Logger::error("Failed to parse regions data from {}: {}", filePath, e.what());
+        return defaultRegions;
+    }
+
+    if (!doc.is_array()) {
         brls::Logger::error("Invalid regions data file format: {}", filePath);
         return defaultRegions;
     }
 
-    // Iterate through all region elements
     std::vector<std::string> regions;
-    for (tinyxml2::XMLElement* regionElement = root->FirstChildElement("region");
-         regionElement;
-         regionElement = regionElement->NextSiblingElement("region")) {
-        if (regionElement->GetText()) {
-            regions.push_back(regionElement->GetText());
+    for (const auto& entry : doc) {
+        if (entry.is_string()) {
+            regions.push_back(entry.get<std::string>());
         }
     }
 

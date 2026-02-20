@@ -1,0 +1,1383 @@
+{
+  "region": "kanto",
+  "pokemon": [
+    {
+      "id": "001",
+      "name": "Bulbasaur",
+      "regionalDexNumber": "001",
+      "type": "Grass / Poison",
+      "evolution": "Bulbasaur – Lvl 16 → Ivysaur – Lvl 32 → Venusaur",
+      "locations": "Cerulean City, Viridian Forest",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "002",
+      "name": "Ivysaur",
+      "regionalDexNumber": "002",
+      "type": "Grass / Poison",
+      "evolution": "Bulbasaur – Lvl 16 → Ivysaur – Lvl 32 → Venusaur",
+      "locations": "Evolve Bulbasaur",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "003",
+      "name": "Venusaur",
+      "regionalDexNumber": "003",
+      "type": "Grass / Poison",
+      "evolution": "Bulbasaur – Lvl 16 → Ivysaur – Lvl 32 → Venusaur",
+      "locations": "Evolve Bulbasaur / Ivysaur",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "004",
+      "name": "Charmander",
+      "regionalDexNumber": "004",
+      "type": "Fire",
+      "evolution": "Charmander – Lvl 16 → Charmeleon – Lvl 36 → Charizard",
+      "locations": "Route 3, 4, 24, Rock Tunnel",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "005",
+      "name": "Charmeleon",
+      "regionalDexNumber": "005",
+      "type": "Fire",
+      "evolution": "Charmander – Lvl 16 → Charmeleon – Lvl 36 → Charizard",
+      "locations": "Evolve Charmander",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "006",
+      "name": "Charizard",
+      "regionalDexNumber": "006",
+      "type": "Fire / Flying",
+      "evolution": "Charmander – Lvl 16 → Charmeleon – Lvl 36 → Charizard",
+      "locations": "Route 2, 3, 4, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 24, 25",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "007",
+      "name": "Squirtle",
+      "regionalDexNumber": "007",
+      "type": "Water",
+      "evolution": "Squirtle – Lvl 16 → Wartortle – Lvl 36 → Blastoise",
+      "locations": "Route 24, 25, Seafoam Islands, Vermilion City",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "008",
+      "name": "Wartortle",
+      "regionalDexNumber": "008",
+      "type": "Water",
+      "evolution": "Squirtle – Lvl 16 → Wartortle – Lvl 36 → Blastoise",
+      "locations": "Evolve Squirtle",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "009",
+      "name": "Blastoise",
+      "regionalDexNumber": "009",
+      "type": "Water",
+      "evolution": "Squirtle – Lvl 16 → Wartortle – Lvl 36 → Blastoise",
+      "locations": "Evolve Squirtle / Wartortle",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "010",
+      "name": "Caterpie",
+      "regionalDexNumber": "010",
+      "type": "Bug",
+      "evolution": "Caterpie – Lvl 7 → Metapod – Lvl 10 → Butterfree",
+      "locations": "Route 2, Viridian Forest",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "011",
+      "name": "Metapod",
+      "regionalDexNumber": "011",
+      "type": "Bug",
+      "evolution": "Caterpie – Lvl 7 → Metapod – Lvl 10 → Butterfree",
+      "locations": "Viridian Forest",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "012",
+      "name": "Butterfree",
+      "regionalDexNumber": "012",
+      "type": "Bug / Flying",
+      "evolution": "Caterpie – Lvl 7 → Metapod – Lvl 10 → Butterfree",
+      "locations": "Viridian Forest (Pikachu), Evolve Caterpie / Metapod",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "013",
+      "name": "Weedle",
+      "regionalDexNumber": "013",
+      "type": "Bug / Poison",
+      "evolution": "Weedle – Lvl 7 → Kakuna – Lvl 10 → Beedrill",
+      "locations": "Route 2, Viridian Forest",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "014",
+      "name": "Kakuna",
+      "regionalDexNumber": "014",
+      "type": "Bug / Poison",
+      "evolution": "Weedle – Lvl 7 → Kakuna – Lvl 10 → Beedrill",
+      "locations": "Viridian Forest",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "015",
+      "name": "Beedrill",
+      "regionalDexNumber": "015",
+      "type": "Bug / Poison",
+      "evolution": "Weedle – Lvl 7 → Kakuna – Lvl 10 → Beedrill",
+      "locations": "Viridian Forest (Eevee), Evolve Weedle / Kakuna",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "016",
+      "name": "Pidgey",
+      "regionalDexNumber": "016",
+      "type": "Normal / Flying",
+      "evolution": "Pidgey – Lvl 18 → Pidgeotto – Lvl 36 → Pidgeot",
+      "locations": "Route 1, 2, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 24, 25, Cerulean City, Cinnabar Island, Fuchsia City, Lavender Town, Pallet Town, Pewter City, Vermilion City, Viridian City, Viridian Forest",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "017",
+      "name": "Pidgeotto",
+      "regionalDexNumber": "017",
+      "type": "Normal / Flying",
+      "evolution": "Pidgey – Lvl 18 → Pidgeotto – Lvl 36 → Pidgeot",
+      "locations": "Route 1, 2, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 24, 25, Cerulean City, Cinnabar Island, Fuchsia City, Lavender Town, Pallet Town, Pewter City, Vermilion City, Viridian City",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "018",
+      "name": "Pidgeot",
+      "regionalDexNumber": "018",
+      "type": "Normal / Flying",
+      "evolution": "Pidgey – Lvl 18 → Pidgeotto – Lvl 36 → Pidgeot",
+      "locations": "Route 1, 2, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 24, 25, Cerulean City, Cinnabar Island, Fuchsia City, Lavender Town, Pallet Town, Pewter City, Vermilion City, Viridian City",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "019",
+      "name": "Rattata",
+      "regionalDexNumber": "019",
+      "type": "Normal",
+      "evolution": "Rattata – Lvl 20 → Raticate",
+      "locations": "Route 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 16, 17, 18, 21, 22, Cerulean City, Pokémon Mansion",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "020",
+      "name": "Raticate",
+      "regionalDexNumber": "020",
+      "type": "Normal",
+      "evolution": "Rattata – Lvl 20 → Raticate",
+      "locations": "Route 7, 8, 9, 10, 11, 16, 17, 18, 21, Pokémon Mansion",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "021",
+      "name": "Spearow",
+      "regionalDexNumber": "021",
+      "type": "Normal / Flying",
+      "evolution": "Spearow – Lvl 20 → Fearow",
+      "locations": "Route 3, 4, 9, 10, 22, 23",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "022",
+      "name": "Fearow",
+      "regionalDexNumber": "022",
+      "type": "Normal / Flying",
+      "evolution": "Spearow – Lvl 20 → Fearow",
+      "locations": "Route 3, 4, 9, 10, 22, 23",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "023",
+      "name": "Ekans",
+      "regionalDexNumber": "023",
+      "type": "Poison",
+      "evolution": "Ekans – Lvl 22 → Arbok",
+      "locations": "Route 3, 4",
+      "exclusiveVersion": "Let's Go Eevee"
+    },
+    {
+      "id": "024",
+      "name": "Arbok",
+      "regionalDexNumber": "024",
+      "type": "Poison",
+      "evolution": "Ekans – Lvl 22 → Arbok",
+      "locations": "Evolve Ekans",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "025",
+      "name": "Pikachu",
+      "regionalDexNumber": "025",
+      "type": "Electric",
+      "evolution": "Pikachu – Thunder Stone → Raichu",
+      "locations": "Pallet Town (Pikachu), Viridian Forest",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "026",
+      "name": "Raichu",
+      "regionalDexNumber": "026",
+      "type": "Electric",
+      "evolution": "Pikachu – Thunder Stone → Raichu",
+      "locations": "Saffron City",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "027",
+      "name": "Sandshrew",
+      "regionalDexNumber": "027",
+      "type": "Ground",
+      "evolution": "Sandshrew – Lvl 22 → Sandslash",
+      "locations": "Route 3, 4, Celadon City",
+      "exclusiveVersion": "Let's Go Pikachu"
+    },
+    {
+      "id": "028",
+      "name": "Sandslash",
+      "regionalDexNumber": "028",
+      "type": "Ground",
+      "evolution": "Sandshrew – Lvl 22 → Sandslash",
+      "locations": "Evolve Sandshrew",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "029",
+      "name": "Nidoran♀",
+      "regionalDexNumber": "029",
+      "type": "Poison",
+      "evolution": "Nidoran♀ – Lvl 16 → Nidorina – Moon Stone → Nidoqueen",
+      "locations": "Route 9, 10, 22, 23",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "030",
+      "name": "Nidorina",
+      "regionalDexNumber": "030",
+      "type": "Poison",
+      "evolution": "Nidoran♀ – Lvl 16 → Nidorina – Moon Stone → Nidoqueen",
+      "locations": "Route 9, 10, 23",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "031",
+      "name": "Nidoqueen",
+      "regionalDexNumber": "031",
+      "type": "Poison / Ground",
+      "evolution": "Nidoran♀ – Lvl 16 → Nidorina – Moon Stone → Nidoqueen",
+      "locations": "Route 23",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "032",
+      "name": "Nidoran♂",
+      "regionalDexNumber": "032",
+      "type": "Poison",
+      "evolution": "Nidoran♂ – Lvl 16 → Nidorino – Moon Stone → Nidoking",
+      "locations": "Route 9, 10, 22, 23",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "033",
+      "name": "Nidorino",
+      "regionalDexNumber": "033",
+      "type": "Poison",
+      "evolution": "Nidoran♂ – Lvl 16 → Nidorino – Moon Stone → Nidoking",
+      "locations": "Route 9, 10, 23",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "034",
+      "name": "Nidoking",
+      "regionalDexNumber": "034",
+      "type": "Poison / Ground",
+      "evolution": "Nidoran♂ – Lvl 16 → Nidorino – Moon Stone → Nidoking",
+      "locations": "Route 23",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "035",
+      "name": "Clefairy",
+      "regionalDexNumber": "035",
+      "type": "Fairy",
+      "evolution": "Clefairy – Moon Stone → Clefable",
+      "locations": "Mt. Moon",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "036",
+      "name": "Clefable",
+      "regionalDexNumber": "036",
+      "type": "Fairy",
+      "evolution": "Clefairy – Moon Stone → Clefable",
+      "locations": "Mt. Moon",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "037",
+      "name": "Vulpix",
+      "regionalDexNumber": "037",
+      "type": "Fire",
+      "evolution": "Vulpix – Fire Stone → Ninetales",
+      "locations": "Route 5, 6, 7, 8, Celadon City",
+      "exclusiveVersion": "Let's Go Eevee"
+    },
+    {
+      "id": "038",
+      "name": "Ninetales",
+      "regionalDexNumber": "038",
+      "type": "Fire",
+      "evolution": "Vulpix – Fire Stone → Ninetales",
+      "locations": "Route 7, 8",
+      "exclusiveVersion": "Let's Go Eevee"
+    },
+    {
+      "id": "039",
+      "name": "Jigglypuff",
+      "regionalDexNumber": "039",
+      "type": "Normal / Fairy",
+      "evolution": "Jigglypuff – Moon Stone → Wigglytuff",
+      "locations": "Route 5, 6, 7, 8",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "040",
+      "name": "Wigglytuff",
+      "regionalDexNumber": "040",
+      "type": "Normal / Fairy",
+      "evolution": "Jigglypuff – Moon Stone → Wigglytuff",
+      "locations": "Evolve Jigglypuff",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "041",
+      "name": "Zubat",
+      "regionalDexNumber": "041",
+      "type": "Poison / Flying",
+      "evolution": "Zubat – Lvl 22 → Golbat",
+      "locations": "Cerulean Cave, Diglett's Cave, Mt. Moon, Pokémon Tower, Rock Tunnel, Seafoam Islands, Victory Road",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "042",
+      "name": "Golbat",
+      "regionalDexNumber": "042",
+      "type": "Poison / Flying",
+      "evolution": "Zubat – Lvl 22 → Golbat",
+      "locations": "Cerulean Cave, Pokémon Tower, Rock Tunnel, Seafoam Islands, Victory Road",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "043",
+      "name": "Oddish",
+      "regionalDexNumber": "043",
+      "type": "Grass / Poison",
+      "evolution": "Oddish – Lvl 21 → Gloom – Leaf Stone → Vileplume",
+      "locations": "Route 1, 2, 12, 13, 14, 15, 21, 24, 25, Viridian Forest",
+      "exclusiveVersion": "Let's Go Pikachu"
+    },
+    {
+      "id": "044",
+      "name": "Gloom",
+      "regionalDexNumber": "044",
+      "type": "Grass / Poison",
+      "evolution": "Oddish – Lvl 21 → Gloom – Leaf Stone → Vileplume",
+      "locations": "Route 12, 13, 14, 15, 21",
+      "exclusiveVersion": "Let's Go Pikachu"
+    },
+    {
+      "id": "045",
+      "name": "Vileplume",
+      "regionalDexNumber": "045",
+      "type": "Grass / Poison",
+      "evolution": "Oddish – Lvl 21 → Gloom – Leaf Stone → Vileplume",
+      "locations": "Route 21",
+      "exclusiveVersion": "Let's Go Pikachu"
+    },
+    {
+      "id": "046",
+      "name": "Paras",
+      "regionalDexNumber": "046",
+      "type": "Bug / Grass",
+      "evolution": "Paras – Lvl 24 → Parasect",
+      "locations": "Mt. Moon",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "047",
+      "name": "Parasect",
+      "regionalDexNumber": "047",
+      "type": "Bug / Grass",
+      "evolution": "Paras – Lvl 24 → Parasect",
+      "locations": "Evolve Paras",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "048",
+      "name": "Venonat",
+      "regionalDexNumber": "048",
+      "type": "Bug / Poison",
+      "evolution": "Venonat – Lvl 31 → Venomoth",
+      "locations": "Route 14, 15, 24, 25",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "049",
+      "name": "Venomoth",
+      "regionalDexNumber": "049",
+      "type": "Bug / Poison",
+      "evolution": "Venonat – Lvl 31 → Venomoth",
+      "locations": "Route 14, 15",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "050",
+      "name": "Diglett",
+      "regionalDexNumber": "050",
+      "type": "Ground",
+      "evolution": "Diglett – Lvl 26 → Dugtrio",
+      "locations": "Diglett's Cave, Lavender Town",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "051",
+      "name": "Dugtrio",
+      "regionalDexNumber": "051",
+      "type": "Ground",
+      "evolution": "Diglett – Lvl 26 → Dugtrio",
+      "locations": "Diglett's Cave",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "052",
+      "name": "Meowth",
+      "regionalDexNumber": "052",
+      "type": "Normal",
+      "evolution": "Meowth – Lvl 28 → Persian",
+      "locations": "Route 24, 25, Cinnabar Island",
+      "exclusiveVersion": "Let's Go Eevee"
+    },
+    {
+      "id": "053",
+      "name": "Persian",
+      "regionalDexNumber": "053",
+      "type": "Normal",
+      "evolution": "Meowth – Lvl 28 → Persian",
+      "locations": "Vermilion City",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "054",
+      "name": "Psyduck",
+      "regionalDexNumber": "054",
+      "type": "Water",
+      "evolution": "Psyduck – Lvl 33 → Golduck",
+      "locations": "Route 4, 6, 17, 24, 25, Cerulean Cave",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "055",
+      "name": "Golduck",
+      "regionalDexNumber": "055",
+      "type": "Water",
+      "evolution": "Psyduck – Lvl 33 → Golduck",
+      "locations": "Cerulean Cave",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "056",
+      "name": "Mankey",
+      "regionalDexNumber": "056",
+      "type": "Fighting",
+      "evolution": "Mankey – Lvl 28 → Primeape",
+      "locations": "Route 3, 4",
+      "exclusiveVersion": "Let's Go Pikachu"
+    },
+    {
+      "id": "057",
+      "name": "Primeape",
+      "regionalDexNumber": "057",
+      "type": "Fighting",
+      "evolution": "Mankey – Lvl 28 → Primeape",
+      "locations": "Evolve Mankey",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "058",
+      "name": "Growlithe",
+      "regionalDexNumber": "058",
+      "type": "Fire",
+      "evolution": "Growlithe – Fire Stone → Arcanine",
+      "locations": "Route 5, 6, 7, 8",
+      "exclusiveVersion": "Let's Go Pikachu"
+    },
+    {
+      "id": "059",
+      "name": "Arcanine",
+      "regionalDexNumber": "059",
+      "type": "Fire",
+      "evolution": "Growlithe – Fire Stone → Arcanine",
+      "locations": "Route 7 (Pikachu), 8 (Pikachu), Vermilion City",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "060",
+      "name": "Poliwag",
+      "regionalDexNumber": "060",
+      "type": "Water",
+      "evolution": "Poliwag – Lvl 25 → Poliwhirl – Water Stone → Poliwrath",
+      "locations": "Route 22, 23, 25, Cerulean Cave",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "061",
+      "name": "Poliwhirl",
+      "regionalDexNumber": "061",
+      "type": "Water",
+      "evolution": "Poliwag – Lvl 25 → Poliwhirl – Water Stone → Poliwrath",
+      "locations": "Route 22, 23, 25, Cerulean Cave",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "062",
+      "name": "Poliwrath",
+      "regionalDexNumber": "062",
+      "type": "Water / Fighting",
+      "evolution": "Poliwag – Lvl 25 → Poliwhirl – Water Stone → Poliwrath",
+      "locations": "Cerulean Cave",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "063",
+      "name": "Abra",
+      "regionalDexNumber": "063",
+      "type": "Psychic",
+      "evolution": "Abra – Lvl 16 → Kadabra – Trade → Alakazam",
+      "locations": "Route 5, 6, 7, 8",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "064",
+      "name": "Kadabra",
+      "regionalDexNumber": "064",
+      "type": "Psychic",
+      "evolution": "Abra – Lvl 16 → Kadabra – Trade → Alakazam",
+      "locations": "Route 7, 8",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "065",
+      "name": "Alakazam",
+      "regionalDexNumber": "065",
+      "type": "Psychic",
+      "evolution": "Abra – Lvl 16 → Kadabra – Trade → Alakazam",
+      "locations": "Evolve Abra / Kadabra",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "066",
+      "name": "Machop",
+      "regionalDexNumber": "066",
+      "type": "Fighting",
+      "evolution": "Machop – Lvl 28 → Machoke – Trade → Machamp",
+      "locations": "Rock Tunnel, Victory Road",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "067",
+      "name": "Machoke",
+      "regionalDexNumber": "067",
+      "type": "Fighting",
+      "evolution": "Machop – Lvl 28 → Machoke – Trade → Machamp",
+      "locations": "Victory Road",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "068",
+      "name": "Machamp",
+      "regionalDexNumber": "068",
+      "type": "Fighting",
+      "evolution": "Machop – Lvl 28 → Machoke – Trade → Machamp",
+      "locations": "Evolve Machop / Machoke",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "069",
+      "name": "Bellsprout",
+      "regionalDexNumber": "069",
+      "type": "Grass / Poison",
+      "evolution": "Bellsprout – Lvl 21 → Weepinbell – Leaf Stone → Victreebel",
+      "locations": "Route 1, 2, 12, 13, 14, 15, 21, 24, 25, Viridian Forest",
+      "exclusiveVersion": "Let's Go Eevee"
+    },
+    {
+      "id": "070",
+      "name": "Weepinbell",
+      "regionalDexNumber": "070",
+      "type": "Grass / Poison",
+      "evolution": "Bellsprout – Lvl 21 → Weepinbell – Leaf Stone → Victreebel",
+      "locations": "Route 12, 13, 14, 15, 21",
+      "exclusiveVersion": "Let's Go Eevee"
+    },
+    {
+      "id": "071",
+      "name": "Victreebel",
+      "regionalDexNumber": "071",
+      "type": "Grass / Poison",
+      "evolution": "Bellsprout – Lvl 21 → Weepinbell – Leaf Stone → Victreebel",
+      "locations": "Route 21",
+      "exclusiveVersion": "Let's Go Eevee"
+    },
+    {
+      "id": "072",
+      "name": "Tentacool",
+      "regionalDexNumber": "072",
+      "type": "Water / Poison",
+      "evolution": "Tentacool – Lvl 30 → Tentacruel",
+      "locations": "Route 4, 10, 11, 12, 13, 18, 19, 20, 21, 24, Seafoam Islands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "073",
+      "name": "Tentacruel",
+      "regionalDexNumber": "073",
+      "type": "Water / Poison",
+      "evolution": "Tentacool – Lvl 30 → Tentacruel",
+      "locations": "Route 4, 10, 11, 12, 13, 18, 19, 20, 21, 24, Seafoam Islands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "074",
+      "name": "Geodude",
+      "regionalDexNumber": "074",
+      "type": "Rock / Ground",
+      "evolution": "Geodude – Lvl 25 → Graveler – Trade → Golem",
+      "locations": "Cerulean Cave, Mt. Moon, Rock Tunnel, Vermilion City, Victory Road",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "075",
+      "name": "Graveler",
+      "regionalDexNumber": "075",
+      "type": "Rock / Ground",
+      "evolution": "Geodude – Lvl 25 → Graveler – Trade → Golem",
+      "locations": "Cerulean Cave, Rock Tunnel, Victory Road",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "076",
+      "name": "Golem",
+      "regionalDexNumber": "076",
+      "type": "Rock / Ground",
+      "evolution": "Geodude – Lvl 25 → Graveler – Trade → Golem",
+      "locations": "Evolve Geodude / Graveler",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "077",
+      "name": "Ponyta",
+      "regionalDexNumber": "077",
+      "type": "Fire",
+      "evolution": "Ponyta – Lvl 40 → Rapidash",
+      "locations": "Route 17",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "078",
+      "name": "Rapidash",
+      "regionalDexNumber": "078",
+      "type": "Fire",
+      "evolution": "Ponyta – Lvl 40 → Rapidash",
+      "locations": "Route 17",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "079",
+      "name": "Slowpoke",
+      "regionalDexNumber": "079",
+      "type": "Water / Psychic",
+      "evolution": "Slowpoke – Lvl 37 → Slowbro",
+      "locations": "Seafoam Islands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "080",
+      "name": "Slowbro",
+      "regionalDexNumber": "080",
+      "type": "Water / Psychic",
+      "evolution": "Slowpoke – Lvl 37 → Slowbro",
+      "locations": "Seafoam Islands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "081",
+      "name": "Magnemite",
+      "regionalDexNumber": "081",
+      "type": "Electric / Steel",
+      "evolution": "Magnemite – Lvl 30 → Magneton",
+      "locations": "Power Plant",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "082",
+      "name": "Magneton",
+      "regionalDexNumber": "082",
+      "type": "Electric / Steel",
+      "evolution": "Magnemite – Lvl 30 → Magneton",
+      "locations": "Power Plant",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "083",
+      "name": "Farfetch'd",
+      "regionalDexNumber": "083",
+      "type": "Normal / Flying",
+      "evolution": "-",
+      "locations": "Route 12, 13",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "084",
+      "name": "Doduo",
+      "regionalDexNumber": "084",
+      "type": "Normal / Flying",
+      "evolution": "Doduo – Lvl 31 → Dodrio",
+      "locations": "Route 16, 17, 18",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "085",
+      "name": "Dodrio",
+      "regionalDexNumber": "085",
+      "type": "Normal / Flying",
+      "evolution": "Doduo – Lvl 31 → Dodrio",
+      "locations": "Route 16, 17, 18",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "086",
+      "name": "Seel",
+      "regionalDexNumber": "086",
+      "type": "Water",
+      "evolution": "Seel – Lvl 34 → Dewgong",
+      "locations": "Seafoam Islands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "087",
+      "name": "Dewgong",
+      "regionalDexNumber": "087",
+      "type": "Water / Ice",
+      "evolution": "Seel – Lvl 34 → Dewgong",
+      "locations": "Seafoam Islands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "088",
+      "name": "Grimer",
+      "regionalDexNumber": "088",
+      "type": "Poison",
+      "evolution": "Grimer – Lvl 38 → Muk",
+      "locations": "Cinnabar Island, Power Plant, Pokémon Mansion",
+      "exclusiveVersion": "Let's Go Pikachu"
+    },
+    {
+      "id": "089",
+      "name": "Muk",
+      "regionalDexNumber": "089",
+      "type": "Poison",
+      "evolution": "Grimer – Lvl 38 → Muk",
+      "locations": "Power Plant, Pokémon Mansion",
+      "exclusiveVersion": "Let's Go Pikachu"
+    },
+    {
+      "id": "090",
+      "name": "Shellder",
+      "regionalDexNumber": "090",
+      "type": "Water",
+      "evolution": "Shellder – Water Stone → Cloyster",
+      "locations": "Seafoam Islands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "091",
+      "name": "Cloyster",
+      "regionalDexNumber": "091",
+      "type": "Water / Ice",
+      "evolution": "Shellder – Water Stone → Cloyster",
+      "locations": "Seafoam Islands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "092",
+      "name": "Gastly",
+      "regionalDexNumber": "092",
+      "type": "Ghost / Poison",
+      "evolution": "Gastly – Lvl 25 → Haunter – Trade → Gengar",
+      "locations": "Pokémon Tower",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "093",
+      "name": "Haunter",
+      "regionalDexNumber": "093",
+      "type": "Ghost / Poison",
+      "evolution": "Gastly – Lvl 25 → Haunter – Trade → Gengar",
+      "locations": "Pokémon Tower",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "094",
+      "name": "Gengar",
+      "regionalDexNumber": "094",
+      "type": "Ghost / Poison",
+      "evolution": "Gastly – Lvl 25 → Haunter – Trade → Gengar",
+      "locations": "Evolve Gastly / Haunter",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "095",
+      "name": "Onix",
+      "regionalDexNumber": "095",
+      "type": "Rock / Ground",
+      "evolution": "-",
+      "locations": "Mt. Moon, Rock Tunnel, Victory Road",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "096",
+      "name": "Drowzee",
+      "regionalDexNumber": "096",
+      "type": "Psychic",
+      "evolution": "Drowzee – Lvl 26 → Hypno",
+      "locations": "Route 11",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "097",
+      "name": "Hypno",
+      "regionalDexNumber": "097",
+      "type": "Psychic",
+      "evolution": "Drowzee – Lvl 26 → Hypno",
+      "locations": "Evolve Drowzee",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "098",
+      "name": "Krabby",
+      "regionalDexNumber": "098",
+      "type": "Water",
+      "evolution": "Krabby – Lvl 28 → Kingler",
+      "locations": "Route 10, 12, 13",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "099",
+      "name": "Kingler",
+      "regionalDexNumber": "099",
+      "type": "Water",
+      "evolution": "Krabby – Lvl 28 → Kingler",
+      "locations": "Route 12, 13",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "100",
+      "name": "Voltorb",
+      "regionalDexNumber": "100",
+      "type": "Electric",
+      "evolution": "Voltorb – Lvl 30 → Electrode",
+      "locations": "Power Plant",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "101",
+      "name": "Electrode",
+      "regionalDexNumber": "101",
+      "type": "Electric",
+      "evolution": "Voltorb – Lvl 30 → Electrode",
+      "locations": "Power Plant",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "102",
+      "name": "Exeggcute",
+      "regionalDexNumber": "102",
+      "type": "Grass / Psychic",
+      "evolution": "Exeggcute – Leaf Stone → Exeggutor",
+      "locations": "Route 23",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "103",
+      "name": "Exeggutor",
+      "regionalDexNumber": "103",
+      "type": "Grass / Psychic",
+      "evolution": "Exeggcute – Leaf Stone → Exeggutor",
+      "locations": "Route 23, Indigo Plateau",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "104",
+      "name": "Cubone",
+      "regionalDexNumber": "104",
+      "type": "Ground",
+      "evolution": "Cubone – Lvl 28 → Marowak",
+      "locations": "Pokémon Tower, Rock Tunnel",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "105",
+      "name": "Marowak",
+      "regionalDexNumber": "105",
+      "type": "Ground",
+      "evolution": "Cubone – Lvl 28 → Marowak",
+      "locations": "Fuchsia City",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "106",
+      "name": "Hitmonlee",
+      "regionalDexNumber": "106",
+      "type": "Fighting",
+      "evolution": "-",
+      "locations": "Saffron City, Victory Road",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "107",
+      "name": "Hitmonchan",
+      "regionalDexNumber": "107",
+      "type": "Fighting",
+      "evolution": "-",
+      "locations": "Saffron City, Victory Road",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "108",
+      "name": "Lickitung",
+      "regionalDexNumber": "108",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Cerulean Cave",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "109",
+      "name": "Koffing",
+      "regionalDexNumber": "109",
+      "type": "Poison",
+      "evolution": "Koffing – Lvl 35 → Weezing",
+      "locations": "Power Plant, Pokémon Mansion",
+      "exclusiveVersion": "Let's Go Eevee"
+    },
+    {
+      "id": "110",
+      "name": "Weezing",
+      "regionalDexNumber": "110",
+      "type": "Poison",
+      "evolution": "Koffing – Lvl 35 → Weezing",
+      "locations": "Power Plant, Pokémon Mansion",
+      "exclusiveVersion": "Let's Go Eevee"
+    },
+    {
+      "id": "111",
+      "name": "Rhyhorn",
+      "regionalDexNumber": "111",
+      "type": "Ground / Rock",
+      "evolution": "Rhyhorn – Lvl 42 → Rhydon",
+      "locations": "Cerulean Cave, Rock Tunnel, Victory Road",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "112",
+      "name": "Rhydon",
+      "regionalDexNumber": "112",
+      "type": "Ground / Rock",
+      "evolution": "Rhyhorn – Lvl 42 → Rhydon",
+      "locations": "Cerulean Cave, Victory Road",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "113",
+      "name": "Chansey",
+      "regionalDexNumber": "113",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Route 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, Cerulean Cave, Diglett's Cave, Mt. Moon, Pokémon Tower, Power Plant, Victory Road, Pokémon Mansion",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "114",
+      "name": "Tangela",
+      "regionalDexNumber": "114",
+      "type": "Grass",
+      "evolution": "-",
+      "locations": "Route 21",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "115",
+      "name": "Kangaskhan",
+      "regionalDexNumber": "115",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Rock Tunnel",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "116",
+      "name": "Horsea",
+      "regionalDexNumber": "116",
+      "type": "Water",
+      "evolution": "Horsea – Lvl 32 → Seadra",
+      "locations": "Route 11, 12, 13",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "117",
+      "name": "Seadra",
+      "regionalDexNumber": "117",
+      "type": "Water",
+      "evolution": "Horsea – Lvl 32 → Seadra",
+      "locations": "Route 11, 12, 13",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "118",
+      "name": "Goldeen",
+      "regionalDexNumber": "118",
+      "type": "Water",
+      "evolution": "Goldeen – Lvl 33 → Seaking",
+      "locations": "Route 6",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "119",
+      "name": "Seaking",
+      "regionalDexNumber": "119",
+      "type": "Water",
+      "evolution": "Goldeen – Lvl 33 → Seaking",
+      "locations": "Route 6",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "120",
+      "name": "Staryu",
+      "regionalDexNumber": "120",
+      "type": "Water",
+      "evolution": "Staryu – Water Stone → Starmie",
+      "locations": "Route 18, 19, 21",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "121",
+      "name": "Starmie",
+      "regionalDexNumber": "121",
+      "type": "Water / Psychic",
+      "evolution": "Staryu – Water Stone → Starmie",
+      "locations": "Route 18, 19, 21",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "122",
+      "name": "Mr. Mime",
+      "regionalDexNumber": "122",
+      "type": "Psychic / Fairy",
+      "evolution": "-",
+      "locations": "Route 11",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "123",
+      "name": "Scyther",
+      "regionalDexNumber": "123",
+      "type": "Bug / Flying",
+      "evolution": "-",
+      "locations": "Route 14, 15",
+      "exclusiveVersion": "Let's Go Pikachu"
+    },
+    {
+      "id": "124",
+      "name": "Jynx",
+      "regionalDexNumber": "124",
+      "type": "Ice / Psychic",
+      "evolution": "-",
+      "locations": "Seafoam Islands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "125",
+      "name": "Electabuzz",
+      "regionalDexNumber": "125",
+      "type": "Electric",
+      "evolution": "-",
+      "locations": "Power Plant",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "126",
+      "name": "Magmar",
+      "regionalDexNumber": "126",
+      "type": "Fire",
+      "evolution": "-",
+      "locations": "Pokémon Mansion",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "127",
+      "name": "Pinsir",
+      "regionalDexNumber": "127",
+      "type": "Bug",
+      "evolution": "-",
+      "locations": "Route 14, 15",
+      "exclusiveVersion": "Let's Go Eevee"
+    },
+    {
+      "id": "128",
+      "name": "Tauros",
+      "regionalDexNumber": "128",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Route 14, 15",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "129",
+      "name": "Magikarp",
+      "regionalDexNumber": "129",
+      "type": "Water",
+      "evolution": "Magikarp – Lvl 20 → Gyarados",
+      "locations": "Route 4, 6, 10, 11, 12, 13, 18, 19, 20, 21, 22, 23, 24, 25, Cerulean Cave, Seafoam Islands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "130",
+      "name": "Gyarados",
+      "regionalDexNumber": "130",
+      "type": "Water / Flying",
+      "evolution": "Magikarp – Lvl 20 → Gyarados",
+      "locations": "Route 20",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "131",
+      "name": "Lapras",
+      "regionalDexNumber": "131",
+      "type": "Water / Ice",
+      "evolution": "-",
+      "locations": "Route 19, 20, Saffron City",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "132",
+      "name": "Ditto",
+      "regionalDexNumber": "132",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Cerulean Cave, Pokémon Mansion",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "133",
+      "name": "Eevee",
+      "regionalDexNumber": "133",
+      "type": "Normal",
+      "evolution": "Eevee → Vaporeon | Eevee → Jolteon | Eevee → Flareon",
+      "locations": "Route 17, Celadon City",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "134",
+      "name": "Vaporeon",
+      "regionalDexNumber": "134",
+      "type": "Water",
+      "evolution": "Eevee – Water Stone → Vaporeon",
+      "locations": "Evolve Eevee",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "135",
+      "name": "Jolteon",
+      "regionalDexNumber": "135",
+      "type": "Electric",
+      "evolution": "Eevee – Thunder Stone → Jolteon",
+      "locations": "Evolve Eevee",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "136",
+      "name": "Flareon",
+      "regionalDexNumber": "136",
+      "type": "Fire",
+      "evolution": "Eevee – Fire Stone → Flareon",
+      "locations": "Evolve Eevee",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "137",
+      "name": "Porygon",
+      "regionalDexNumber": "137",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Route 7, Silph Co.",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "138",
+      "name": "Omanyte",
+      "regionalDexNumber": "138",
+      "type": "Rock / Water",
+      "evolution": "Omanyte – Lvl 40 → Omastar",
+      "locations": "Cinnabar Island",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "139",
+      "name": "Omastar",
+      "regionalDexNumber": "139",
+      "type": "Rock / Water",
+      "evolution": "Omanyte – Lvl 40 → Omastar",
+      "locations": "Evolve Omanyte",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "140",
+      "name": "Kabuto",
+      "regionalDexNumber": "140",
+      "type": "Rock / Water",
+      "evolution": "Kabuto – Lvl 40 → Kabutops",
+      "locations": "Cinnabar Island",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "141",
+      "name": "Kabutops",
+      "regionalDexNumber": "141",
+      "type": "Rock / Water",
+      "evolution": "Kabuto – Lvl 40 → Kabutops",
+      "locations": "Evolve Kabuto",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "142",
+      "name": "Aerodactyl",
+      "regionalDexNumber": "142",
+      "type": "Rock / Flying",
+      "evolution": "-",
+      "locations": "Cinnabar Island",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "143",
+      "name": "Snorlax",
+      "regionalDexNumber": "143",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Route 12, 16, Cerulean Cave",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "144",
+      "name": "Articuno",
+      "regionalDexNumber": "144",
+      "type": "Ice / Flying",
+      "evolution": "-",
+      "locations": "Seafoam Islands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "145",
+      "name": "Zapdos",
+      "regionalDexNumber": "145",
+      "type": "Electric / Flying",
+      "evolution": "-",
+      "locations": "Power Plant",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "146",
+      "name": "Moltres",
+      "regionalDexNumber": "146",
+      "type": "Fire / Flying",
+      "evolution": "-",
+      "locations": "Victory Road",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "147",
+      "name": "Dratini",
+      "regionalDexNumber": "147",
+      "type": "Dragon",
+      "evolution": "Dratini – Lvl 30 → Dragonair – Lvl 55 → Dragonite",
+      "locations": "Route 10",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "148",
+      "name": "Dragonair",
+      "regionalDexNumber": "148",
+      "type": "Dragon",
+      "evolution": "Dratini – Lvl 30 → Dragonair – Lvl 55 → Dragonite",
+      "locations": "Route 10",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "149",
+      "name": "Dragonite",
+      "regionalDexNumber": "149",
+      "type": "Dragon / Flying",
+      "evolution": "Dratini – Lvl 30 → Dragonair – Lvl 55 → Dragonite",
+      "locations": "Route 1, 2, 3, 4, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 24, 25",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "150",
+      "name": "Mewtwo",
+      "regionalDexNumber": "150",
+      "type": "Psychic",
+      "evolution": "-",
+      "locations": "Cerulean Cave",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "151",
+      "name": "Mew",
+      "regionalDexNumber": "151",
+      "type": "Psychic",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "Trade / migrate from another game",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "808",
+      "name": "Meltan",
+      "regionalDexNumber": "152",
+      "type": "Steel",
+      "evolution": "-",
+      "locations": "Trade / migrate from another game",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "809",
+      "name": "Melmetal",
+      "regionalDexNumber": "153",
+      "type": "Steel",
+      "evolution": "-",
+      "locations": "Trade / migrate from another game",
+      "exclusiveVersion": "-"
+    }
+  ]
+}

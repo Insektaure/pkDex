@@ -1,38 +1,43 @@
 #include "data/pokemon_data_loader.hpp"
 #include <borealis/core/logger.hpp>
 #include <borealis/core/i18n.hpp>
-#include <tinyxml2.h>
+#include <fstream>
 #include "data/pokemon_tracker.hpp"
 
 std::vector<Pokemon> PokemonDataLoader::loadPokemonFromRegion(const std::string& region)
 {
     std::vector<Pokemon> pokemons;
 
-    // Load the XML file
-    tinyxml2::XMLDocument doc;
-    std::string filePath = "romfs:/data/" + region + ".xml";
-    tinyxml2::XMLError error = doc.LoadFile(filePath.c_str());
-
-    if (error != tinyxml2::XML_SUCCESS)
+    // Load the JSON file
+    std::string filePath = "romfs:/data/" + region + ".json";
+    std::ifstream file(filePath);
+    if (!file.is_open())
     {
-        brls::Logger::error("Failed to load Pokemon data from {}: {}", filePath, doc.ErrorStr());
+        brls::Logger::error("Failed to load Pokemon data from {}", filePath);
         return pokemons;
     }
 
-    // Get the root element
-    tinyxml2::XMLElement* root = doc.FirstChildElement("pokedex");
-    if (!root)
+    nlohmann::json doc;
+    try
+    {
+        file >> doc;
+    }
+    catch (const std::exception& e)
+    {
+        brls::Logger::error("Failed to parse Pokemon data from {}: {}", filePath, e.what());
+        return pokemons;
+    }
+
+    // Iterate through all Pokemon entries
+    if (!doc.contains("pokemon") || !doc["pokemon"].is_array())
     {
         brls::Logger::error("Invalid Pokemon data file format: {}", filePath);
         return pokemons;
     }
 
-    // Iterate through all Pokemon elements
-    for (tinyxml2::XMLElement* pokemonElement = root->FirstChildElement("pokemon");
-         pokemonElement;
-         pokemonElement = pokemonElement->NextSiblingElement("pokemon"))
+    for (const auto& entry : doc["pokemon"])
     {
-        Pokemon pokemon = parsePokemonNode(pokemonElement, region);
+        Pokemon pokemon = parsePokemonNode(entry, region);
         pokemons.push_back(pokemon);
     }
 
@@ -46,34 +51,38 @@ Pokemon PokemonDataLoader::loadPokemonById(const std::string& id)
 
     for (const std::string& region : regions)
     {
-        // Load the XML file
-        tinyxml2::XMLDocument doc;
-        std::string filePath = "romfs:/data/" + region + ".xml";
-        tinyxml2::XMLError error = doc.LoadFile(filePath.c_str());
-
-        if (error != tinyxml2::XML_SUCCESS)
+        // Load the JSON file
+        std::string filePath = "romfs:/data/" + region + ".json";
+        std::ifstream file(filePath);
+        if (!file.is_open())
         {
-            brls::Logger::error("Failed to load Pokemon data from {}: {}", filePath, doc.ErrorStr());
+            brls::Logger::error("Failed to load Pokemon data from {}", filePath);
             continue;
         }
 
-        // Get the root element
-        tinyxml2::XMLElement* root = doc.FirstChildElement("pokedex");
-        if (!root)
+        nlohmann::json doc;
+        try
+        {
+            file >> doc;
+        }
+        catch (const std::exception& e)
+        {
+            brls::Logger::error("Failed to parse Pokemon data from {}: {}", filePath, e.what());
+            continue;
+        }
+
+        if (!doc.contains("pokemon") || !doc["pokemon"].is_array())
         {
             brls::Logger::error("Invalid Pokemon data file format: {}", filePath);
             continue;
         }
 
-        // Iterate through all Pokemon elements
-        for (tinyxml2::XMLElement* pokemonElement = root->FirstChildElement("pokemon");
-             pokemonElement;
-             pokemonElement = pokemonElement->NextSiblingElement("pokemon"))
+        for (const auto& entry : doc["pokemon"])
         {
-            const char* pokemonId = pokemonElement->Attribute("id");
-            if (pokemonId && id == pokemonId)
+            std::string pokemonId = entry.value("id", "");
+            if (pokemonId == id)
             {
-                return parsePokemonNode(pokemonElement, region);
+                return parsePokemonNode(entry, region);
             }
         }
     }
@@ -83,73 +92,45 @@ Pokemon PokemonDataLoader::loadPokemonById(const std::string& id)
     return Pokemon(id, "Unknown");
 }
 
-Pokemon PokemonDataLoader::parsePokemonNode(tinyxml2::XMLElement* pokemonElement, const std::string& region)
+Pokemon PokemonDataLoader::parsePokemonNode(const nlohmann::json& j, const std::string& region)
 {
-    const char* id = pokemonElement->Attribute("id");
-    const char* name = pokemonElement->Attribute("name");
-    const char* regionalDexNumber = pokemonElement->Attribute("regionalDexNumber");
-    const char* type = pokemonElement->Attribute("type");
-    const char* shinyLockedStr = pokemonElement->Attribute("shinyLocked");
-    bool shinyLocked = (shinyLockedStr && strcmp(shinyLockedStr, "true") == 0);
-
-    std::string evolution;
-    tinyxml2::XMLElement* evolutionElement = pokemonElement->FirstChildElement("evolution");
-    if (evolutionElement && evolutionElement->GetText())
-    {
-        evolution = evolutionElement->GetText();
-    }
-
-    std::string exclusiveVersion;
-    tinyxml2::XMLElement* exclusiveVersionElement = pokemonElement->FirstChildElement("exclusiveVersion");
-    if (exclusiveVersionElement && exclusiveVersionElement->GetText())
-    {
-        exclusiveVersion = exclusiveVersionElement->GetText();
-    }
-
-    std::string locations;
-    tinyxml2::XMLElement* locationsElement = pokemonElement->FirstChildElement("locations");
-    if (locationsElement && locationsElement->GetText())
-    {
-        locations = locationsElement->GetText();
-    }
+    std::string id = j.value("id", "");
+    std::string name = j.value("name", "");
+    std::string regionalDexNumber = j.value("regionalDexNumber", "");
+    std::string type = j.value("type", "");
+    bool shinyLocked = j.value("shinyLocked", false);
+    std::string evolution = j.value("evolution", "");
+    std::string exclusiveVersion = j.value("exclusiveVersion", "");
+    std::string locations = j.value("locations", "");
 
     // Apply i18n overrides if available
-    std::string regionalId = regionalDexNumber ? regionalDexNumber : "";
     auto makeKey = [&](const std::string& field) {
-        return "data/" + region + "/" + regionalId + "/" + field;
+        return "data/" + region + "/" + regionalDexNumber + "/" + field;
     };
 
-    // name and attributes may be overridden
-    std::string nameStr = name ? name : "";
-    std::string typeStr = type ? type : "";
-    std::string evolutionStr = evolution;
-    std::string exclusiveVersionStr = exclusiveVersion;
-    std::string locationsStr = locations;
-
-    if (!regionalId.empty())
+    if (!regionalDexNumber.empty())
     {
         std::string o;
         o = brls::getStr(makeKey("name"));
-        if (o != makeKey("name")) nameStr = o;
+        if (o != makeKey("name")) name = o;
         o = brls::getStr(makeKey("type"));
-        if (o != makeKey("type")) typeStr = o;
+        if (o != makeKey("type")) type = o;
         o = brls::getStr(makeKey("evolution"));
-        if (o != makeKey("evolution")) evolutionStr = o;
+        if (o != makeKey("evolution")) evolution = o;
         o = brls::getStr(makeKey("exclusiveVersion"));
-        if (o != makeKey("exclusiveVersion")) exclusiveVersionStr = o;
+        if (o != makeKey("exclusiveVersion")) exclusiveVersion = o;
         o = brls::getStr(makeKey("locations"));
-        if (o != makeKey("locations")) locationsStr = o;
+        if (o != makeKey("locations")) locations = o;
     }
 
     return Pokemon(
-        id ? id : "",
-        nameStr,
-        //regionalDexNumber ? regionalDexNumber : "",
-        regionalId,
-        typeStr,
-        evolutionStr,
-        exclusiveVersionStr,
-        locationsStr,
+        id,
+        name,
+        regionalDexNumber,
+        type,
+        evolution,
+        exclusiveVersion,
+        locations,
         shinyLocked
     );
 }

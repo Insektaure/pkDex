@@ -1,0 +1,1208 @@
+{
+  "region": "hyperspace_lumiose",
+  "pokemon": [
+    {
+      "id": "056",
+      "name": "Mankey",
+      "regionalDexNumber": "001",
+      "type": "Fighting",
+      "evolution": "Mankey – Lvl 28 → Primeape – Use Rage Fist 20 times → Annihilape",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "057",
+      "name": "Primeape",
+      "regionalDexNumber": "002",
+      "type": "Fighting",
+      "evolution": "Mankey – Lvl 28 → Primeape – Use Rage Fist 20 times → Annihilape",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "058",
+      "name": "Annihilape",
+      "regionalDexNumber": "003",
+      "type": "Fighting / Ghost",
+      "evolution": "Mankey – Lvl 28 → Primeape – Use Rage Fist 20 times → Annihilape",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "052",
+      "name": "Meowth",
+      "regionalDexNumber": "004",
+      "type": "Normal",
+      "evolution": "Meowth – Lvl 28 → Perrserker",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "053",
+      "name": "Persian",
+      "regionalDexNumber": "005",
+      "type": "Normal",
+      "evolution": "Meowth – High Friendship → Persian",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "863",
+      "name": "Perrserker",
+      "regionalDexNumber": "006",
+      "type": "Steel",
+      "evolution": "Meowth – Lvl 28 → Perrserker",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "083",
+      "name": "Farfetch'd",
+      "regionalDexNumber": "007",
+      "type": "Normal / Flying",
+      "evolution": "Farfetch'd – achieve 3 critical hits in one battle → Sirfetch'd",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "865",
+      "name": "Sirfetch'd",
+      "regionalDexNumber": "008",
+      "type": "Fighting",
+      "evolution": "Farfetch'd – achieve 3 critical hits in one battle → Sirfetch'd",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "104",
+      "name": "Cubone",
+      "regionalDexNumber": "009",
+      "type": "Ground",
+      "evolution": "Cubone – Lvl 28 → Marowak",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "105",
+      "name": "Marowak",
+      "regionalDexNumber": "010",
+      "type": "Ground",
+      "evolution": "Cubone – Lvl 28 → Marowak",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "137",
+      "name": "Porygon",
+      "regionalDexNumber": "011",
+      "type": "Normal",
+      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "233",
+      "name": "Porygon2",
+      "regionalDexNumber": "012",
+      "type": "Normal",
+      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "474",
+      "name": "Porygon-Z",
+      "regionalDexNumber": "013",
+      "type": "Normal",
+      "evolution": "Porygon – Trade holding Upgrade → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "951",
+      "name": "Capsakid",
+      "regionalDexNumber": "014",
+      "type": "Grass",
+      "evolution": "Capsakid – Fire Stone → Scovillain",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "952",
+      "name": "Scovillain",
+      "regionalDexNumber": "015",
+      "type": "Grass / Fire",
+      "evolution": "Capsakid – Fire Stone → Scovillain",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "957",
+      "name": "Tinkatink",
+      "regionalDexNumber": "016",
+      "type": "Fairy / Steel",
+      "evolution": "Tinkatink – Lvl 24 → Tinkatuff – Lvl 38 → Tinkaton",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "958",
+      "name": "Tinkatuff",
+      "regionalDexNumber": "017",
+      "type": "Fairy / Steel",
+      "evolution": "Tinkatink – Lvl 24 → Tinkatuff – Lvl 38 → Tinkaton",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "959",
+      "name": "Tinkaton",
+      "regionalDexNumber": "018",
+      "type": "Fairy / Steel",
+      "evolution": "Tinkatink – Lvl 24 → Tinkatuff – Lvl 38 → Tinkaton",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "967",
+      "name": "Cyclizar",
+      "regionalDexNumber": "019",
+      "type": "Dragon / Normal",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "969",
+      "name": "Glimmet",
+      "regionalDexNumber": "020",
+      "type": "Rock / Poison",
+      "evolution": "Glimmet – Lvl 35 → Glimmora",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "970",
+      "name": "Glimmora",
+      "regionalDexNumber": "021",
+      "type": "Rock / Poison",
+      "evolution": "Glimmet – Lvl 35 → Glimmora",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "479",
+      "name": "Rotom",
+      "regionalDexNumber": "022",
+      "type": "Electric / Ghost",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "971",
+      "name": "Greavard",
+      "regionalDexNumber": "023",
+      "type": "Ghost",
+      "evolution": "Greavard – Lvl 30, Nighttime → Houndstone",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "972",
+      "name": "Houndstone",
+      "regionalDexNumber": "024",
+      "type": "Ghost",
+      "evolution": "Greavard – Lvl 30, Nighttime → Houndstone",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "769",
+      "name": "Sandygast",
+      "regionalDexNumber": "025",
+      "type": "Ghost / Ground",
+      "evolution": "Sandygast – Lvl 42 → Palossand",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "770",
+      "name": "Palossand",
+      "regionalDexNumber": "026",
+      "type": "Ghost / Ground",
+      "evolution": "Sandygast – Lvl 42 → Palossand",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "352",
+      "name": "Kecleon",
+      "regionalDexNumber": "027",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "973",
+      "name": "Flamigo",
+      "regionalDexNumber": "028",
+      "type": "Flying / Fighting",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "615",
+      "name": "Cryogonal",
+      "regionalDexNumber": "029",
+      "type": "Ice",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "977",
+      "name": "Dondozo",
+      "regionalDexNumber": "030",
+      "type": "Water",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "978",
+      "name": "Tatsugiri",
+      "regionalDexNumber": "031",
+      "type": "Dragon / Water",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "996",
+      "name": "Frigibax",
+      "regionalDexNumber": "032",
+      "type": "Dragon / Ice",
+      "evolution": "Frigibax – Lvl 35 → Arctibax – Lvl 54 → Baxcalibur",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "997",
+      "name": "Arctibax",
+      "regionalDexNumber": "033",
+      "type": "Dragon / Ice",
+      "evolution": "Frigibax – Lvl 35 → Arctibax – Lvl 54 → Baxcalibur",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "998",
+      "name": "Baxcalibur",
+      "regionalDexNumber": "034",
+      "type": "Dragon / Ice",
+      "evolution": "Frigibax – Lvl 35 → Arctibax – Lvl 54 → Baxcalibur",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "999",
+      "name": "Gimmighoul",
+      "regionalDexNumber": "035",
+      "type": "Ghost",
+      "evolution": "Gimmighoul – collect 999 Coins from Roaming Form → Gholdengo",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "1000",
+      "name": "Gholdengo",
+      "regionalDexNumber": "036",
+      "type": "Steel / Ghost",
+      "evolution": "Gimmighoul – collect 999 Coins from Roaming Form → Gholdengo",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "211",
+      "name": "Qwilfish",
+      "regionalDexNumber": "037",
+      "type": "Dark / Poison",
+      "evolution": "Qwilfish – Lvl up while knowing Barb Barrage → Overqwil",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "904",
+      "name": "Overqwil",
+      "regionalDexNumber": "038",
+      "type": "Dark / Poison",
+      "evolution": "Qwilfish – Lvl up while knowing Barb Barrage → Overqwil",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "252",
+      "name": "Treecko",
+      "regionalDexNumber": "039",
+      "type": "Grass",
+      "evolution": "Treecko – Lvl 16 → Grovyle – Lvl 36 → Sceptile",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "253",
+      "name": "Grovyle",
+      "regionalDexNumber": "040",
+      "type": "Grass",
+      "evolution": "Treecko – Lvl 16 → Grovyle – Lvl 36 → Sceptile",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "254",
+      "name": "Sceptile",
+      "regionalDexNumber": "041",
+      "type": "Grass",
+      "evolution": "Treecko – Lvl 16 → Grovyle – Lvl 36 → Sceptile",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "255",
+      "name": "Torchic",
+      "regionalDexNumber": "042",
+      "type": "Fire",
+      "evolution": "Torchic – Lvl 16 → Combusken – Lvl 36 → Blaziken",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "256",
+      "name": "Combusken",
+      "regionalDexNumber": "043",
+      "type": "Fire / Fighting",
+      "evolution": "Torchic – Lvl 16 → Combusken – Lvl 36 → Blaziken",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "257",
+      "name": "Blaziken",
+      "regionalDexNumber": "044",
+      "type": "Fire / Fighting",
+      "evolution": "Torchic – Lvl 16 → Combusken – Lvl 36 → Blaziken",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "258",
+      "name": "Mudkip",
+      "regionalDexNumber": "045",
+      "type": "Water",
+      "evolution": "Mudkip – Lvl 16 → Marshtomp – Lvl 36 → Swampert",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "259",
+      "name": "Marshtomp",
+      "regionalDexNumber": "046",
+      "type": "Water / Ground",
+      "evolution": "Mudkip – Lvl 16 → Marshtomp – Lvl 36 → Swampert",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "260",
+      "name": "Swampert",
+      "regionalDexNumber": "047",
+      "type": "Water / Ground",
+      "evolution": "Mudkip – Lvl 16 → Marshtomp – Lvl 36 → Swampert",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "349",
+      "name": "Feebas",
+      "regionalDexNumber": "048",
+      "type": "Water",
+      "evolution": "Feebas – Trade holding Prism Scale, or level up with max Beauty → Milotic",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "350",
+      "name": "Milotic",
+      "regionalDexNumber": "049",
+      "type": "Water",
+      "evolution": "Feebas – Trade holding Prism Scale, or level up with max Beauty → Milotic",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "433",
+      "name": "Chingling",
+      "regionalDexNumber": "050",
+      "type": "Psychic",
+      "evolution": "Chingling – High Friendship, Nighttime → Chimecho",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "358",
+      "name": "Chimecho",
+      "regionalDexNumber": "051",
+      "type": "Psychic",
+      "evolution": "Chingling – High Friendship, Nighttime → Chimecho",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "876",
+      "name": "Indeedee",
+      "regionalDexNumber": "052",
+      "type": "Psychic / Normal",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "509",
+      "name": "Purrloin",
+      "regionalDexNumber": "053",
+      "type": "Dark",
+      "evolution": "Purrloin – Lvl 20 → Liepard",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "510",
+      "name": "Liepard",
+      "regionalDexNumber": "054",
+      "type": "Dark",
+      "evolution": "Purrloin – Lvl 20 → Liepard",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "517",
+      "name": "Munna",
+      "regionalDexNumber": "055",
+      "type": "Psychic",
+      "evolution": "Munna – Moon Stone → Musharna",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "518",
+      "name": "Musharna",
+      "regionalDexNumber": "056",
+      "type": "Psychic",
+      "evolution": "Munna – Moon Stone → Musharna",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "538",
+      "name": "Throh",
+      "regionalDexNumber": "057",
+      "type": "Fighting",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "539",
+      "name": "Sawk",
+      "regionalDexNumber": "058",
+      "type": "Fighting",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "562",
+      "name": "Yamask",
+      "regionalDexNumber": "059",
+      "type": "Ground / Ghost",
+      "evolution": "Yamask – Lvl 34 → Cofagrigus | – near Dusty Bowl → Runerigus",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "867",
+      "name": "Runerigus",
+      "regionalDexNumber": "060",
+      "type": "Ground / Ghost",
+      "evolution": "Yamask – Lvl 34 → Cofagrigus | – near Dusty Bowl → Runerigus",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "563",
+      "name": "Cofagrigus",
+      "regionalDexNumber": "061",
+      "type": "Ghost",
+      "evolution": "Yamask – Lvl 34 → Cofagrigus | – near Dusty Bowl → Runerigus",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "767",
+      "name": "Wimpod",
+      "regionalDexNumber": "062",
+      "type": "Bug / Water",
+      "evolution": "Wimpod – Lvl 30 → Golisopod",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "768",
+      "name": "Golisopod",
+      "regionalDexNumber": "063",
+      "type": "Bug / Water",
+      "evolution": "Wimpod – Lvl 30 → Golisopod",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "827",
+      "name": "Nickit",
+      "regionalDexNumber": "064",
+      "type": "Dark",
+      "evolution": "Nickit – Lvl 18 → Thievul",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "828",
+      "name": "Thievul",
+      "regionalDexNumber": "065",
+      "type": "Dark",
+      "evolution": "Nickit – Lvl 18 → Thievul",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "852",
+      "name": "Clobbopus",
+      "regionalDexNumber": "066",
+      "type": "Fighting",
+      "evolution": "Clobbopus – After learning Taunt → Grapploct",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "853",
+      "name": "Grapploct",
+      "regionalDexNumber": "067",
+      "type": "Fighting",
+      "evolution": "Clobbopus – After learning Taunt → Grapploct",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "778",
+      "name": "Mimikyu",
+      "regionalDexNumber": "068",
+      "type": "Ghost / Fairy",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "900",
+      "name": "Kleavor",
+      "regionalDexNumber": "069",
+      "type": "Bug / Rock",
+      "evolution": "Scyther – Trade holding Metal Coat → Scizor | – Black Augurite → Kleavor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "877",
+      "name": "Morpeko",
+      "regionalDexNumber": "070",
+      "type": "Electric / Dark",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "622",
+      "name": "Golett",
+      "regionalDexNumber": "071",
+      "type": "Ground / Ghost",
+      "evolution": "Golett – Lvl 43 → Golurk",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "623",
+      "name": "Golurk",
+      "regionalDexNumber": "072",
+      "type": "Ground / Ghost",
+      "evolution": "Golett – Lvl 43 → Golurk",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "821",
+      "name": "Rookidee",
+      "regionalDexNumber": "073",
+      "type": "Flying",
+      "evolution": "Rookidee – Lvl 18 → Corvisquire – Lvl 38 → Corviknight",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "822",
+      "name": "Corvisquire",
+      "regionalDexNumber": "074",
+      "type": "Flying",
+      "evolution": "Rookidee – Lvl 18 → Corvisquire – Lvl 38 → Corviknight",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "823",
+      "name": "Corviknight",
+      "regionalDexNumber": "075",
+      "type": "Flying / Steel",
+      "evolution": "Rookidee – Lvl 18 → Corvisquire – Lvl 38 → Corviknight",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "174",
+      "name": "Igglybuff",
+      "regionalDexNumber": "076",
+      "type": "Normal / Fairy",
+      "evolution": "Igglybuff – High Friendship → Jigglypuff – Moon Stone → Wigglytuff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "039",
+      "name": "Jigglypuff",
+      "regionalDexNumber": "077",
+      "type": "Normal / Fairy",
+      "evolution": "Igglybuff – High Friendship → Jigglypuff – Moon Stone → Wigglytuff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "040",
+      "name": "Wigglytuff",
+      "regionalDexNumber": "078",
+      "type": "Normal / Fairy",
+      "evolution": "Igglybuff – High Friendship → Jigglypuff – Moon Stone → Wigglytuff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "926",
+      "name": "Fidough",
+      "regionalDexNumber": "079",
+      "type": "Fairy",
+      "evolution": "Fidough – Lvl 26 → Dachsbun",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "927",
+      "name": "Dachsbun",
+      "regionalDexNumber": "080",
+      "type": "Fairy",
+      "evolution": "Fidough – Lvl 26 → Dachsbun",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "396",
+      "name": "Starly",
+      "regionalDexNumber": "081",
+      "type": "Normal / Flying",
+      "evolution": "Starly – Lvl 14 → Staravia – Lvl 34 → Staraptor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "397",
+      "name": "Staravia",
+      "regionalDexNumber": "082",
+      "type": "Normal / Flying",
+      "evolution": "Starly – Lvl 14 → Staravia – Lvl 34 → Staraptor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "398",
+      "name": "Staraptor",
+      "regionalDexNumber": "083",
+      "type": "Normal / Flying",
+      "evolution": "Starly – Lvl 14 → Staravia – Lvl 34 → Staraptor",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "325",
+      "name": "Spoink",
+      "regionalDexNumber": "084",
+      "type": "Psychic",
+      "evolution": "Spoink – Lvl 32 → Grumpig",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "326",
+      "name": "Grumpig",
+      "regionalDexNumber": "085",
+      "type": "Psychic",
+      "evolution": "Spoink – Lvl 32 → Grumpig",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "931",
+      "name": "Squawkabilly",
+      "regionalDexNumber": "086",
+      "type": "Normal / Flying",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "739",
+      "name": "Crabrawler",
+      "regionalDexNumber": "087",
+      "type": "Fighting",
+      "evolution": "Crabrawler – Ice Stone → Crabominable",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "740",
+      "name": "Crabominable",
+      "regionalDexNumber": "088",
+      "type": "Fighting / Ice",
+      "evolution": "Crabrawler – Ice Stone → Crabominable",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "932",
+      "name": "Nacli",
+      "regionalDexNumber": "089",
+      "type": "Rock",
+      "evolution": "Nacli – Lvl 24 → Naclstack – Lvl 38 → Garganacl",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "933",
+      "name": "Naclstack",
+      "regionalDexNumber": "090",
+      "type": "Rock",
+      "evolution": "Nacli – Lvl 24 → Naclstack – Lvl 38 → Garganacl",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "934",
+      "name": "Garganacl",
+      "regionalDexNumber": "091",
+      "type": "Rock",
+      "evolution": "Nacli – Lvl 24 → Naclstack – Lvl 38 → Garganacl",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "316",
+      "name": "Gulpin",
+      "regionalDexNumber": "092",
+      "type": "Poison",
+      "evolution": "Gulpin – Lvl 26 → Swalot",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "317",
+      "name": "Swalot",
+      "regionalDexNumber": "093",
+      "type": "Poison",
+      "evolution": "Gulpin – Lvl 26 → Swalot",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "041",
+      "name": "Zubat",
+      "regionalDexNumber": "094",
+      "type": "Poison / Flying",
+      "evolution": "Zubat – Lvl 22 → Golbat – High Friendship → Crobat",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "042",
+      "name": "Golbat",
+      "regionalDexNumber": "095",
+      "type": "Poison / Flying",
+      "evolution": "Zubat – Lvl 22 → Golbat – High Friendship → Crobat",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "169",
+      "name": "Crobat",
+      "regionalDexNumber": "096",
+      "type": "Poison / Flying",
+      "evolution": "Zubat – Lvl 22 → Golbat – High Friendship → Crobat",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "935",
+      "name": "Charcadet",
+      "regionalDexNumber": "097",
+      "type": "Fire",
+      "evolution": "Charcadet – Auspicious Armor → Armarouge | – Malicious Armor→ Ceruledge",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "936",
+      "name": "Armarouge",
+      "regionalDexNumber": "098",
+      "type": "Fire / Psychic",
+      "evolution": "Charcadet – Auspicious Armor → Armarouge",
+      "locations": "-",
+      "exclusiveVersion": "Scarlet"
+    },
+    {
+      "id": "937",
+      "name": "Ceruledge",
+      "regionalDexNumber": "099",
+      "type": "Fire / Ghost",
+      "evolution": "Charcadet – Malicious Armor→ Ceruledge",
+      "locations": "-",
+      "exclusiveVersion": "Violet"
+    },
+    {
+      "id": "942",
+      "name": "Maschiff",
+      "regionalDexNumber": "100",
+      "type": "Dark",
+      "evolution": "Maschiff – Lvl 30 → Mabosstiff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "943",
+      "name": "Mabosstiff",
+      "regionalDexNumber": "101",
+      "type": "Dark",
+      "evolution": "Maschiff – Lvl 30 → Mabosstiff",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "848",
+      "name": "Toxel",
+      "regionalDexNumber": "102",
+      "type": "Electric / Poison",
+      "evolution": "Toxel – Lvl 30 → Toxtricity",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "849",
+      "name": "Toxtricity",
+      "regionalDexNumber": "103",
+      "type": "Electric / Poison",
+      "evolution": "Toxel – Lvl 30 → Toxtricity",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "944",
+      "name": "Shroodle",
+      "regionalDexNumber": "104",
+      "type": "Poison / Normal",
+      "evolution": "Shroodle – Lvl 28 → Grafaiai",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "945",
+      "name": "Grafaiai",
+      "regionalDexNumber": "105",
+      "type": "Poison / Normal",
+      "evolution": "Shroodle – Lvl 28 → Grafaiai",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "335",
+      "name": "Zangoose",
+      "regionalDexNumber": "106",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "336",
+      "name": "Seviper",
+      "regionalDexNumber": "107",
+      "type": "Poison",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "439",
+      "name": "Mime Jr.",
+      "regionalDexNumber": "108",
+      "type": "Psychic / Fairy",
+      "evolution": "Mime Jr. – After learning Mimic → Mr. Mime – Lvl 42 → Mr. Rime",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "122",
+      "name": "Mr. Mime",
+      "regionalDexNumber": "109",
+      "type": "Ice / Psychic",
+      "evolution": "Mime Jr. – After learning Mimic → Mr. Mime – Lvl 42 → Mr. Rime",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "866",
+      "name": "Mr. Rime",
+      "regionalDexNumber": "110",
+      "type": "Ice / Psychic",
+      "evolution": "Mime Jr. – After learning Mimic → Mr. Mime – Lvl 42 → Mr. Rime",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "590",
+      "name": "Foongus",
+      "regionalDexNumber": "111",
+      "type": "Grass / Poison",
+      "evolution": "Foongus – Lvl 39 → Amoonguss",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "591",
+      "name": "Amoonguss",
+      "regionalDexNumber": "112",
+      "type": "Grass / Poison",
+      "evolution": "Foongus – Lvl 39 → Amoonguss",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "485",
+      "name": "Heatran",
+      "regionalDexNumber": "113",
+      "type": "Fire / Steel",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "721",
+      "name": "Volcanion",
+      "regionalDexNumber": "114",
+      "type": "Fire / Water",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "638",
+      "name": "Cobalion",
+      "regionalDexNumber": "115",
+      "type": "Steel / Fighting",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "639",
+      "name": "Terrakion",
+      "regionalDexNumber": "116",
+      "type": "Rock / Fighting",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "640",
+      "name": "Virizion",
+      "regionalDexNumber": "117",
+      "type": "Grass / Fighting",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "647",
+      "name": "Keldeo",
+      "regionalDexNumber": "118",
+      "type": "Water / Fighting",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "648",
+      "name": "Meloetta",
+      "regionalDexNumber": "119",
+      "type": "Normal / Psychic",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "649",
+      "name": "Genesect",
+      "regionalDexNumber": "120",
+      "type": "Bug / Steel",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "720",
+      "name": "Hoopa",
+      "regionalDexNumber": "121",
+      "type": "Psychic / Ghost",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "802",
+      "name": "Marshadow",
+      "regionalDexNumber": "122",
+      "type": "Fighting / Ghost",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "808",
+      "name": "Meltan",
+      "regionalDexNumber": "123",
+      "type": "Steel",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "809",
+      "name": "Melmetal",
+      "regionalDexNumber": "124",
+      "type": "Steel",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "491",
+      "name": "Darkrai",
+      "regionalDexNumber": "125",
+      "type": "Dark",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "380",
+      "name": "Latias",
+      "regionalDexNumber": "126",
+      "type": "Dragon / Psychic",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "381",
+      "name": "Latios",
+      "regionalDexNumber": "127",
+      "type": "Dragon / Psychic",
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "382",
+      "name": "Kyogre",
+      "regionalDexNumber": "128",
+      "type": "Water",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "383",
+      "name": "Groudon",
+      "regionalDexNumber": "129",
+      "type": "Ground",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "384",
+      "name": "Rayquaza",
+      "regionalDexNumber": "130",
+      "type": "Dragon / Flying",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "801",
+      "name": "Magearna",
+      "regionalDexNumber": "131",
+      "type": "Steel / Fairy",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "807",
+      "name": "Zeraora",
+      "regionalDexNumber": "132",
+      "type": "Electric",
+      "shinyLocked": true,
+      "evolution": "-",
+      "locations": "-",
+      "exclusiveVersion": "-"
+    }
+  ]
+}

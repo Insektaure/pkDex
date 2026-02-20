@@ -1,0 +1,1909 @@
+{
+  "region": "isle_armor",
+  "pokemon": [
+    {
+      "id": "079",
+      "name": "Slowpoke",
+      "regionalDexNumber": "001",
+      "type": "Psychic",
+      "evolution": "Slowpoke – Galarica Cuff → Slowbro | – Galarica Wreath → Slowking",
+      "locations": "Fields of Honor",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "080",
+      "name": "Slowbro",
+      "regionalDexNumber": "002",
+      "type": "Poison / Psychic",
+      "evolution": "Slowpoke – Galarica Cuff → Slowbro | – Galarica Wreath → Slowking",
+      "locations": "Evolve Slowpoke / Galarian Slowpoke",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "199",
+      "name": "Slowking",
+      "regionalDexNumber": "003",
+      "type": "Poison / Psychic",
+      "evolution": "Slowpoke – Galarica Cuff → Slowbro | – Galarica Wreath → Slowking",
+      "locations": "Evolve Slowpoke / Galarian Slowpoke",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "427",
+      "name": "Buneary",
+      "regionalDexNumber": "004",
+      "type": "Normal",
+      "evolution": "Buneary – High Friendship → Lopunny",
+      "locations": "Challenge Beach, Fields of Honor",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "428",
+      "name": "Lopunny",
+      "regionalDexNumber": "005",
+      "type": "Normal",
+      "evolution": "Buneary – High Friendship → Lopunny",
+      "locations": "Evolve Buneary",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "440",
+      "name": "Happiny",
+      "regionalDexNumber": "006",
+      "type": "Normal",
+      "evolution": "Happiny – hold Oval Stone, Daytime → Chansey – High Friendship → Blissey",
+      "locations": "Challenge Beach, Challenge Road, Fields of Honor, Forest of Focus, Honeycalm Island, Insular Sea, Loop Lagoon, Soothing Wetlands, Stepping-Stone Sea, Training Lowlands, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "113",
+      "name": "Chansey",
+      "regionalDexNumber": "007",
+      "type": "Normal",
+      "evolution": "Happiny – hold Oval Stone, Daytime → Chansey – High Friendship → Blissey",
+      "locations": "Brawlers' Cave, Challenge Beach, Challenge Road, Courageous Cavern, Fields of Honor, Forest of Focus, Honeycalm Island, Loop Lagoon, Potbottom Desert, Soothing Wetlands, Stepping-Stone Sea, Training Lowlands, Warm-Up Tunnel, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "242",
+      "name": "Blissey",
+      "regionalDexNumber": "008",
+      "type": "Normal",
+      "evolution": "Happiny – hold Oval Stone, Daytime → Chansey – High Friendship → Blissey",
+      "locations": "Brawlers' Cave, Challenge Beach, Challenge Road, Courageous Cavern, Fields of Honor, Forest of Focus, Honeycalm Island, Loop Lagoon, Potbottom Desert, Soothing Wetlands, Stepping-Stone Sea, Training Lowlands, Warm-Up Tunnel, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "819",
+      "name": "Skwovet",
+      "regionalDexNumber": "009",
+      "type": "Normal",
+      "evolution": "Skwovet – Lvl 24 → Greedent",
+      "locations": "Route 1, 2, 3, 4, 5, Rolling Fields, Slumbering Weald, Dappled Grove, Motostoke Riverbank, North Lake Miloch, Watchtower Ruins, Challenge Beach, Fields of Honor, Forest of Focus, Insular Sea, Loop Lagoon, Soothing Wetlands, Stepping-Stone Sea, Training Lowlands, Workout Sea, Slippery Slope, Frostpoint Field, Giant's Bed, Giant's Foot, Ballimere Lake",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "820",
+      "name": "Greedent",
+      "regionalDexNumber": "010",
+      "type": "Normal",
+      "evolution": "Skwovet – Lvl 24 → Greedent",
+      "locations": "Route 6, 7, 9, Axew's Eye, Bridge Field, Giant's Cap, Giant's Mirror, Giant's Seat, Hammerlocke Hills, Lake of Outrage, Motostoke Riverbank, Slippery Slope, Frostpoint Field, Giant's Bed, Giant's Foot, Ballimere Lake",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "174",
+      "name": "Igglybuff",
+      "regionalDexNumber": "011",
+      "type": "Normal / Fairy",
+      "evolution": "Igglybuff – High Friendship → Jigglypuff – Moon Stone → Wigglytuff",
+      "locations": "Breed Jigglypuff / Wigglytuff",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "039",
+      "name": "Jigglypuff",
+      "regionalDexNumber": "012",
+      "type": "Normal / Fairy",
+      "evolution": "Igglybuff – High Friendship → Jigglypuff – Moon Stone → Wigglytuff",
+      "locations": "Challenge Beach, Fields of Honor",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "040",
+      "name": "Wigglytuff",
+      "regionalDexNumber": "013",
+      "type": "Normal / Fairy",
+      "evolution": "Igglybuff – High Friendship → Jigglypuff – Moon Stone → Wigglytuff",
+      "locations": "Evolve Jigglypuff / Igglybuff",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "824",
+      "name": "Blipbug",
+      "regionalDexNumber": "014",
+      "type": "Bug",
+      "evolution": "Blipbug – Lvl 10 → Dottler – Lvl 30 → Orbeetle",
+      "locations": "Route 1, 2, Slumbering Weald, Giant's Cap, Challenge Beach, Challenge Road, Fields of Honor, Honeycalm Island, Insular Sea, Loop Lagoon, Stepping-Stone Sea, Training Lowlands, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "825",
+      "name": "Dottler",
+      "regionalDexNumber": "015",
+      "type": "Bug / Psychic",
+      "evolution": "Blipbug – Lvl 10 → Dottler – Lvl 30 → Orbeetle",
+      "locations": "Route 5, Giant's Cap, Giant's Mirror, Stony Wilderness",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "826",
+      "name": "Orbeetle",
+      "regionalDexNumber": "016",
+      "type": "Bug / Psychic",
+      "evolution": "Blipbug – Lvl 10 → Dottler – Lvl 30 → Orbeetle",
+      "locations": "Slumbering Weald, Lake of Outrage",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "753",
+      "name": "Fomantis",
+      "regionalDexNumber": "017",
+      "type": "Grass",
+      "evolution": "Fomantis – Lvl 34, Daytime → Lurantis",
+      "locations": "Challenge Beach, Fields of Honor, Forest of Focus, Soothing Wetlands, Training Lowlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "754",
+      "name": "Lurantis",
+      "regionalDexNumber": "018",
+      "type": "Grass",
+      "evolution": "Fomantis – Lvl 34, Daytime → Lurantis",
+      "locations": "Evolve Fomantis",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "840",
+      "name": "Applin",
+      "regionalDexNumber": "019",
+      "type": "Grass / Dragon",
+      "evolution": "Applin – Tart Apple → Flapple | – Sweet Apple → Appletun",
+      "locations": "Route 5, Dusty Bowl, Giant's Mirror, Stony Wilderness, Challenge Beach, Fields of Honor, Forest of Focus, Insular Sea, Loop Lagoon, Soothing Wetlands, Stepping-Stone Sea, Training Lowlands, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "841",
+      "name": "Flapple",
+      "regionalDexNumber": "020",
+      "type": "Grass / Dragon",
+      "evolution": "Applin – Tart Apple → Flapple | – Sweet Apple → Appletun",
+      "locations": "Sword → Stepping-Stone Sea | Shield → Evolve Applin",
+      "exclusiveVersion": "Sword"
+    },
+    {
+      "id": "842",
+      "name": "Appletun",
+      "regionalDexNumber": "021",
+      "type": "Grass / Dragon",
+      "evolution": "Applin – Tart Apple → Flapple | – Sweet Apple → Appletun",
+      "locations": "Sword → Evolve Applin | Shield → Stepping-Stone Sea",
+      "exclusiveVersion": "Shield"
+    },
+    {
+      "id": "661",
+      "name": "Fletchling",
+      "regionalDexNumber": "022",
+      "type": "Normal / Flying",
+      "evolution": "Fletchling – Lvl 17 → Fletchinder – Lvl 35 → Talonflame",
+      "locations": "Challenge Road, Loop Lagoon, Potbottom Desert",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "662",
+      "name": "Fletchinder",
+      "regionalDexNumber": "023",
+      "type": "Fire / Flying",
+      "evolution": "Fletchling – Lvl 17 → Fletchinder – Lvl 35 → Talonflame",
+      "locations": "Honeycalm Island, Honeycalm Sea, Insular Sea, Loop Lagoon, Stepping-Stone Sea, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "663",
+      "name": "Talonflame",
+      "regionalDexNumber": "024",
+      "type": "Fire / Flying",
+      "evolution": "Fletchling – Lvl 17 → Fletchinder – Lvl 35 → Talonflame",
+      "locations": "Evolve Fletchling / Fletchinder",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "403",
+      "name": "Shinx",
+      "regionalDexNumber": "025",
+      "type": "Electric",
+      "evolution": "Shinx – Lvl 15 → Luxio – Lvl 30 → Luxray",
+      "locations": "Challenge Beach, Challenge Road, Potbottom Desert, Training Lowlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "404",
+      "name": "Luxio",
+      "regionalDexNumber": "026",
+      "type": "Electric",
+      "evolution": "Shinx – Lvl 15 → Luxio – Lvl 30 → Luxray",
+      "locations": "Evolve Shinx",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "405",
+      "name": "Luxray",
+      "regionalDexNumber": "027",
+      "type": "Electric",
+      "evolution": "Shinx – Lvl 15 → Luxio – Lvl 30 → Luxray",
+      "locations": "Evolve Shinx / Luxio",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "707",
+      "name": "Klefki",
+      "regionalDexNumber": "028",
+      "type": "Steel / Fairy",
+      "evolution": "-",
+      "locations": "Fields of Honor",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "624",
+      "name": "Pawniard",
+      "regionalDexNumber": "029",
+      "type": "Dark / Steel",
+      "evolution": "Pawniard – Lvl 52 → Bisharp",
+      "locations": "Route 8, Giant's Cap, Giant's Mirror, Motostoke Outskirts, Motostoke Riverbank, Stony Wilderness, Challenge Road, Forest of Focus, Potbottom Desert, Soothing Wetlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "625",
+      "name": "Bisharp",
+      "regionalDexNumber": "030",
+      "type": "Dark / Steel",
+      "evolution": "Pawniard – Lvl 52 → Bisharp",
+      "locations": "Lake of Outrage",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "063",
+      "name": "Abra",
+      "regionalDexNumber": "031",
+      "type": "Psychic",
+      "evolution": "Abra – Lvl 16 → Kadabra – Trade → Alakazam",
+      "locations": "Fields of Honor",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "064",
+      "name": "Kadabra",
+      "regionalDexNumber": "032",
+      "type": "Psychic",
+      "evolution": "Abra – Lvl 16 → Kadabra – Trade → Alakazam",
+      "locations": "Evolve Abra",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "065",
+      "name": "Alakazam",
+      "regionalDexNumber": "033",
+      "type": "Psychic",
+      "evolution": "Abra – Lvl 16 → Kadabra – Trade → Alakazam",
+      "locations": "Evolve Abra / Kadabra",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "280",
+      "name": "Ralts",
+      "regionalDexNumber": "034",
+      "type": "Psychic / Fairy",
+      "evolution": "Ralts – Lvl 20 → Kirlia – Lvl 30 → Gardevoir | – Dawn Stone, Male → Gallade",
+      "locations": "Rolling Fields, South Lake Miloch, Dappled Grove, West Lake Axewell, North Lake Miloch, Watchtower Ruins, Fields of Honor",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "281",
+      "name": "Kirlia",
+      "regionalDexNumber": "035",
+      "type": "Psychic / Fairy",
+      "evolution": "Ralts – Lvl 20 → Kirlia – Lvl 30 → Gardevoir | – Dawn Stone, Male → Gallade",
+      "locations": "Evolve Ralts",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "282",
+      "name": "Gardevoir",
+      "regionalDexNumber": "036",
+      "type": "Psychic / Fairy",
+      "evolution": "Ralts – Lvl 20 → Kirlia – Lvl 30 → Gardevoir",
+      "locations": "Dusty Bowl, Lake of Outrage",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "475",
+      "name": "Gallade",
+      "regionalDexNumber": "037",
+      "type": "Psychic / Fighting",
+      "evolution": "Ralts – Lvl 20 → Kirlia – Dawn Stone, Male → Gallade",
+      "locations": "Evolve Ralts / Kirlia",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "098",
+      "name": "Krabby",
+      "regionalDexNumber": "038",
+      "type": "Water",
+      "evolution": "Krabby – Lvl 28 → Kingler",
+      "locations": "South Lake Miloch, West Lake Axewell, Giant's Cap, Fields of Honor, Loop Lagoon",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "099",
+      "name": "Kingler",
+      "regionalDexNumber": "039",
+      "type": "Water",
+      "evolution": "Krabby – Lvl 28 → Kingler",
+      "locations": "Route 9, Axew's Eye",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "072",
+      "name": "Tentacool",
+      "regionalDexNumber": "040",
+      "type": "Water / Poison",
+      "evolution": "Tentacool – Lvl 30 → Tentacruel",
+      "locations": "Challenge Beach, Courageous Cavern, Fields of Honor, Honeycalm Island, Honeycalm Sea, Insular Sea, Loop Lagoon, Stepping-Stone Sea, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "073",
+      "name": "Tentacruel",
+      "regionalDexNumber": "041",
+      "type": "Water / Poison",
+      "evolution": "Tentacool – Lvl 30 → Tentacruel",
+      "locations": "Challenge Beach, Fields of Honor, Honeycalm Island, Honeycalm Sea, Insular Sea, Loop Lagoon, Stepping-Stone Sea, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "129",
+      "name": "Magikarp",
+      "regionalDexNumber": "042",
+      "type": "Water",
+      "evolution": "Magikarp – Lvl 20 → Gyarados",
+      "locations": "Route 2, 4, 5, 6, South Lake Miloch, East Lake Axewell, Slumbering Weald, Motostoke, Axew's Eye, Bridge Field, West Lake Axewell, North Lake Miloch, Challenge Beach, Courageous Cavern, Fields of Honor, Forest of Focus, Honeycalm Island, Honeycalm Sea, Insular Sea, Loop Lagoon, Soothing Wetlands, Stepping-Stone Sea, Training Lowlands, Workout Sea, Giant's Bed, Snowslide Slope, Giant's Foot, Roaring-Sea Caves, Frigid Sea, Ballimere Lake",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "130",
+      "name": "Gyarados",
+      "regionalDexNumber": "043",
+      "type": "Water / Flying",
+      "evolution": "Magikarp – Lvl 20 → Gyarados",
+      "locations": "Route 2, Axew's Eye, Bridge Field, Dusty Bowl, Giant's Cap, Giant's Mirror, Giant's Seat, Lake of Outrage, Honeycalm Island, Honeycalm Sea, Insular Sea, Stepping-Stone Sea, Workout Sea, Giant's Bed, Snowslide Slope, Giant's Foot, Frigid Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "223",
+      "name": "Remoraid",
+      "regionalDexNumber": "044",
+      "type": "Water",
+      "evolution": "Remoraid – Lvl 25 → Octillery",
+      "locations": "Route 9, South Lake Miloch, West Lake Axewell, Fields of Honor, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "224",
+      "name": "Octillery",
+      "regionalDexNumber": "045",
+      "type": "Water",
+      "evolution": "Remoraid – Lvl 25 → Octillery",
+      "locations": "Route 9, Axew's Eye, Fields of Honor, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "458",
+      "name": "Mantyke",
+      "regionalDexNumber": "046",
+      "type": "Water / Flying",
+      "evolution": "Mantyke – with Remoraid in party → Mantine",
+      "locations": "Route 9, Lake of Outrage, Motostoke Riverbank, Fields of Honor, Honeycalm Island, Honeycalm Sea, Insular Sea, Stepping-Stone Sea, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "226",
+      "name": "Mantine",
+      "regionalDexNumber": "047",
+      "type": "Water / Flying",
+      "evolution": "Mantyke – with Remoraid in party → Mantine",
+      "locations": "Route 9, Lake of Outrage",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "278",
+      "name": "Wingull",
+      "regionalDexNumber": "048",
+      "type": "Water / Flying",
+      "evolution": "Wingull – Lvl 25 → Pelipper",
+      "locations": "Rolling Fields, South Lake Miloch, East Lake Axewell, West Lake Axewell, North Lake Miloch, Watchtower Ruins, Challenge Beach, Fields of Honor, Honeycalm Island, Honeycalm Sea, Insular Sea, Loop Lagoon, Stepping-Stone Sea, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "279",
+      "name": "Pelipper",
+      "regionalDexNumber": "049",
+      "type": "Water / Flying",
+      "evolution": "Wingull – Lvl 25 → Pelipper",
+      "locations": "Route 9, Axew's Eye, Dusty Bowl, Hammerlocke Hills, Lake of Outrage, Challenge Beach, Fields of Honor, Honeycalm Island, Honeycalm Sea, Insular Sea, Loop Lagoon, Stepping-Stone Sea, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "451",
+      "name": "Skorupi",
+      "regionalDexNumber": "050",
+      "type": "Poison / Bug",
+      "evolution": "Skorupi – Lvl 40 → Drapion",
+      "locations": "Route 6, Giant's Mirror, Motostoke Riverbank, Soothing Wetlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "452",
+      "name": "Drapion",
+      "regionalDexNumber": "051",
+      "type": "Poison / Dark",
+      "evolution": "Skorupi – Lvl 40 → Drapion",
+      "locations": "Route 8, Lake of Outrage",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "206",
+      "name": "Dunsparce",
+      "regionalDexNumber": "052",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Soothing Wetlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "626",
+      "name": "Bouffalant",
+      "regionalDexNumber": "053",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Soothing Wetlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "108",
+      "name": "Lickitung",
+      "regionalDexNumber": "054",
+      "type": "Normal",
+      "evolution": "Lickitung – After learning Rollout → Lickilicky",
+      "locations": "Brawlers' Cave, Soothing Wetlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "463",
+      "name": "Lickilicky",
+      "regionalDexNumber": "055",
+      "type": "Normal",
+      "evolution": "Lickitung – After learning Rollout → Lickilicky",
+      "locations": "Evolve Lickitung",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "833",
+      "name": "Chewtle",
+      "regionalDexNumber": "056",
+      "type": "Water",
+      "evolution": "Chewtle – Lvl 22 → Drednaw",
+      "locations": "Route 2, 4, 5, Motostoke, Giant's Cap, Giant's Mirror, Motostoke Outskirts, Motostoke Riverbank, Hulbury, Galar Mine No. 2, Courageous Cavern, Soothing Wetlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "834",
+      "name": "Drednaw",
+      "regionalDexNumber": "057",
+      "type": "Water / Rock",
+      "evolution": "Chewtle – Lvl 22 → Drednaw",
+      "locations": "Route 6, Bridge Field, Dusty Bowl, Giant's Cap, Giant's Mirror, Lake of Outrage",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "194",
+      "name": "Wooper",
+      "regionalDexNumber": "058",
+      "type": "Water / Ground",
+      "evolution": "Wooper – Lvl 20 → Quagsire",
+      "locations": "South Lake Miloch, West Lake Axewell, Giant's Cap, Giant's Seat, Soothing Wetlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "195",
+      "name": "Quagsire",
+      "regionalDexNumber": "059",
+      "type": "Water / Ground",
+      "evolution": "Wooper – Lvl 20 → Quagsire",
+      "locations": "Giant's Cap, Giant's Seat, Lake of Outrage",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "704",
+      "name": "Goomy",
+      "regionalDexNumber": "060",
+      "type": "Dragon",
+      "evolution": "Goomy – Lvl 40 → Sliggoo – Lvl 50, during rain → Goodra",
+      "locations": "Lake of Outrage, Soothing Wetlands",
+      "exclusiveVersion": "Shield"
+    },
+    {
+      "id": "705",
+      "name": "Sliggoo",
+      "regionalDexNumber": "061",
+      "type": "Dragon",
+      "evolution": "Goomy – Lvl 40 → Sliggoo – Lvl 50, during rain → Goodra",
+      "locations": "Lake of Outrage",
+      "exclusiveVersion": "Shield"
+    },
+    {
+      "id": "706",
+      "name": "Goodra",
+      "regionalDexNumber": "062",
+      "type": "Dragon",
+      "evolution": "Goomy – Lvl 40 → Sliggoo – Lvl 50, during rain → Goodra",
+      "locations": "Evolve Goomy / Sliggoo",
+      "exclusiveVersion": "Shield"
+    },
+    {
+      "id": "621",
+      "name": "Druddigon",
+      "regionalDexNumber": "063",
+      "type": "Dragon",
+      "evolution": "-",
+      "locations": "Snowslide Slope, Path to the Peak, Three-Point Pass",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "616",
+      "name": "Shelmet",
+      "regionalDexNumber": "064",
+      "type": "Bug",
+      "evolution": "Shelmet – Trade with Karrablast → Accelgor",
+      "locations": "Sword → Route 7, Bridge Field, Hammerlocke Hills, Motostoke Riverbank, Soothing Wetlands, Giant's Bed | Shield → Route 7, Bridge Field, Giant's Cap, Hammerlocke Hills, Motostoke Riverbank, Soothing Wetlands, Giant's Bed",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "617",
+      "name": "Accelgor",
+      "regionalDexNumber": "065",
+      "type": "Bug",
+      "evolution": "Shelmet – Trade with Karrablast → Accelgor",
+      "locations": "Evolve Shelmet",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "588",
+      "name": "Karrablast",
+      "regionalDexNumber": "066",
+      "type": "Bug",
+      "evolution": "Karrablast – Trade with Shelmet → Escavalier",
+      "locations": "Sword → Route 7, Bridge Field, Giant's Cap, Hammerlocke Hills, Motostoke Riverbank, Forest of Focus, Old Cemetery | Shield → Route 7, Bridge Field, Hammerlocke Hills, Motostoke Riverbank, Forest of Focus, Old Cemetery",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "589",
+      "name": "Escavalier",
+      "regionalDexNumber": "067",
+      "type": "Bug / Steel",
+      "evolution": "Karrablast – Trade with Shelmet → Escavalier",
+      "locations": "Evolve Karrablast",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "001",
+      "name": "Bulbasaur",
+      "regionalDexNumber": "068",
+      "type": "Grass / Poison",
+      "shinyLocked": true,
+      "evolution": "Bulbasaur – Lvl 16 → Ivysaur – Lvl 32 → Venusaur",
+      "locations": "Master Dojo",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "002",
+      "name": "Ivysaur",
+      "regionalDexNumber": "069",
+      "type": "Grass / Poison",
+      "evolution": "Bulbasaur – Lvl 16 → Ivysaur – Lvl 32 → Venusaur",
+      "locations": "Evolve Bulbasaur",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "003",
+      "name": "Venusaur",
+      "regionalDexNumber": "070",
+      "type": "Grass / Poison",
+      "evolution": "Bulbasaur – Lvl 16 → Ivysaur – Lvl 32 → Venusaur",
+      "locations": "Evolve Bulbasaur / Ivysaur",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "007",
+      "name": "Squirtle",
+      "regionalDexNumber": "071",
+      "type": "Water",
+      "shinyLocked": true,
+      "evolution": "Squirtle – Lvl 16 → Wartortle – Lvl 36 → Blastoise",
+      "locations": "Master Dojo",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "008",
+      "name": "Wartortle",
+      "regionalDexNumber": "072",
+      "type": "Water",
+      "evolution": "Squirtle – Lvl 16 → Wartortle – Lvl 36 → Blastoise",
+      "locations": "Evolve Squirtle",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "009",
+      "name": "Blastoise",
+      "regionalDexNumber": "073",
+      "type": "Water",
+      "evolution": "Squirtle – Lvl 16 → Wartortle – Lvl 36 → Blastoise",
+      "locations": "Evolve Squirtle / Wartortle",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "543",
+      "name": "Venipede",
+      "regionalDexNumber": "074",
+      "type": "Bug / Poison",
+      "evolution": "Venipede – Lvl 22 → Whirlipede – Lvl 30 → Scolipede",
+      "locations": "Forest of Focus",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "544",
+      "name": "Whirlipede",
+      "regionalDexNumber": "075",
+      "type": "Bug / Poison",
+      "evolution": "Venipede – Lvl 22 → Whirlipede – Lvl 30 → Scolipede",
+      "locations": "Evolve Venipede",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "545",
+      "name": "Scolipede",
+      "regionalDexNumber": "076",
+      "type": "Bug / Poison",
+      "evolution": "Venipede – Lvl 22 → Whirlipede – Lvl 30 → Scolipede",
+      "locations": "Evolve Venipede / Whirlipede",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "590",
+      "name": "Foongus",
+      "regionalDexNumber": "077",
+      "type": "Grass / Poison",
+      "evolution": "Foongus – Lvl 39 → Amoonguss",
+      "locations": "Forest of Focus",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "591",
+      "name": "Amoonguss",
+      "regionalDexNumber": "078",
+      "type": "Grass / Poison",
+      "evolution": "Foongus – Lvl 39 → Amoonguss",
+      "locations": "Evolve Foongus",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "764",
+      "name": "Comfey",
+      "regionalDexNumber": "079",
+      "type": "Fairy",
+      "evolution": "-",
+      "locations": "Fields of Honor, Soothing Wetlands, Training Lowlands, Insular Sea, Honeycalm Island",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "114",
+      "name": "Tangela",
+      "regionalDexNumber": "080",
+      "type": "Grass",
+      "evolution": "Tangela – After learning Ancient Power → Tangrowth",
+      "locations": "Forest of Focus",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "465",
+      "name": "Tangrowth",
+      "regionalDexNumber": "081",
+      "type": "Grass",
+      "evolution": "Tangela – After learning Ancient Power → Tangrowth",
+      "locations": "Evolve Tangela",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "453",
+      "name": "Croagunk",
+      "regionalDexNumber": "082",
+      "type": "Poison / Fighting",
+      "evolution": "Croagunk – Lvl 37 → Toxicroak",
+      "locations": "Bridge Field, Dusty Bowl, Giant's Cap, Motostoke Outskirts, Stony Wilderness, Galar Mine No. 2, Forest of Focus, Soothing Wetlands",
+      "exclusiveVersion": "Shield"
+    },
+    {
+      "id": "454",
+      "name": "Toxicroak",
+      "regionalDexNumber": "083",
+      "type": "Poison / Fighting",
+      "evolution": "Croagunk – Lvl 37 → Toxicroak",
+      "locations": "Stony Wilderness",
+      "exclusiveVersion": "Shield"
+    },
+    {
+      "id": "172",
+      "name": "Pichu",
+      "regionalDexNumber": "084",
+      "type": "Electric",
+      "evolution": "Pichu – High Friendship → Pikachu – Thunder Stone → Raichu",
+      "locations": "Breed Pikachu",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "025",
+      "name": "Pikachu",
+      "regionalDexNumber": "085",
+      "type": "Electric",
+      "evolution": "Pichu – High Friendship → Pikachu – Thunder Stone → Raichu",
+      "locations": "Route 4, Stony Wilderness, Forest of Focus",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "026",
+      "name": "Raichu",
+      "regionalDexNumber": "086",
+      "type": "Electric",
+      "evolution": "Pichu – High Friendship → Pikachu – Thunder Stone → Raichu",
+      "locations": "Evolve Pikachu",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "570",
+      "name": "Zorua",
+      "regionalDexNumber": "087",
+      "type": "Dark",
+      "evolution": "Zorua – Lvl 30 → Zoroark",
+      "locations": "Forest of Focus",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "571",
+      "name": "Zoroark",
+      "regionalDexNumber": "088",
+      "type": "Dark",
+      "evolution": "Zorua – Lvl 30 → Zoroark",
+      "locations": "Evolve Zorua",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "765",
+      "name": "Oranguru",
+      "regionalDexNumber": "089",
+      "type": "Normal / Psychic",
+      "evolution": "-",
+      "locations": "Glimwood Tangle, Forest of Focus",
+      "exclusiveVersion": "Shield"
+    },
+    {
+      "id": "766",
+      "name": "Passimian",
+      "regionalDexNumber": "090",
+      "type": "Fighting",
+      "evolution": "-",
+      "locations": "Glimwood Tangle, Forest of Focus",
+      "exclusiveVersion": "Sword"
+    },
+    {
+      "id": "341",
+      "name": "Corphish",
+      "regionalDexNumber": "091",
+      "type": "Water",
+      "evolution": "Corphish – Lvl 30 → Crawdaunt",
+      "locations": "South Lake Miloch, Giant's Cap, Galar Mine No. 2, Challenge Beach, Forest of Focus, Soothing Wetlands, Training Lowlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "342",
+      "name": "Crawdaunt",
+      "regionalDexNumber": "092",
+      "type": "Water / Dark",
+      "evolution": "Corphish – Lvl 30 → Crawdaunt",
+      "locations": "Axew's Eye, Giant's Seat",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "845",
+      "name": "Cramorant",
+      "regionalDexNumber": "093",
+      "type": "Flying / Water",
+      "evolution": "-",
+      "locations": "Route 9, Bridge Field, Lake of Outrage, Stony Wilderness, Challenge Beach, Forest of Focus, Training Lowlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "118",
+      "name": "Goldeen",
+      "regionalDexNumber": "094",
+      "type": "Water",
+      "evolution": "Goldeen – Lvl 33 → Seaking",
+      "locations": "Route 4, 5, 6, South Lake Miloch, East Lake Axewell, Bridge Field, West Lake Axewell, Giant's Cap, North Lake Miloch, Forest of Focus",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "119",
+      "name": "Seaking",
+      "regionalDexNumber": "095",
+      "type": "Water",
+      "evolution": "Goldeen – Lvl 33 → Seaking",
+      "locations": "Evolve Goldeen",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "846",
+      "name": "Arrokuda",
+      "regionalDexNumber": "096",
+      "type": "Water",
+      "evolution": "Arrokuda – Lvl 26 → Barraskewda",
+      "locations": "Route 2, Motostoke Riverbank, Hulbury, Challenge Beach, Forest of Focus, Training Lowlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "847",
+      "name": "Barraskewda",
+      "regionalDexNumber": "097",
+      "type": "Water",
+      "evolution": "Arrokuda – Lvl 26 → Barraskewda",
+      "locations": "Route 2, Dusty Bowl, Lake of Outrage, Motostoke Riverbank",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "120",
+      "name": "Staryu",
+      "regionalDexNumber": "098",
+      "type": "Water",
+      "evolution": "Staryu – Water Stone → Starmie",
+      "locations": "Challenge Beach, Training Lowlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "121",
+      "name": "Starmie",
+      "regionalDexNumber": "099",
+      "type": "Water / Psychic",
+      "evolution": "Staryu – Water Stone → Starmie",
+      "locations": "Evolve Staryu",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "891",
+      "name": "Kubfu",
+      "regionalDexNumber": "100",
+      "type": "Fighting",
+      "shinyLocked": true,
+      "evolution": "Kubfu – Scroll Of Darkness / Waters, or in Tower of Darkness / Water in Galar → Urshifu",
+      "locations": "Received from Mustard at the Master Dojo after completing his trials",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "892",
+      "name": "Urshifu",
+      "regionalDexNumber": "101",
+      "type": "Fighting / Dark",
+      "shinyLocked": true,
+      "evolution": "Kubfu – Scroll Of Darkness / Waters, or in Tower of Darkness / Water in Galar → Urshifu",
+      "locations": "Evolve Kubfu",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "587",
+      "name": "Emolga",
+      "regionalDexNumber": "102",
+      "type": "Electric / Flying",
+      "evolution": "-",
+      "locations": "Forest of Focus",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "702",
+      "name": "Dedenne",
+      "regionalDexNumber": "103",
+      "type": "Electric / Fairy",
+      "evolution": "-",
+      "locations": "Challenge Beach",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "877",
+      "name": "Morpeko",
+      "regionalDexNumber": "104",
+      "type": "Electric / Dark",
+      "evolution": "-",
+      "locations": "Route 7, 9, Lake of Outrage, Challenge Beach, Ballimere Lake",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "081",
+      "name": "Magnemite",
+      "regionalDexNumber": "105",
+      "type": "Electric / Steel",
+      "evolution": "Magnemite – Lvl 30 → Magneton – Thunder Stone → Magnezone",
+      "locations": "Challenge Beach",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "082",
+      "name": "Magneton",
+      "regionalDexNumber": "106",
+      "type": "Electric / Steel",
+      "evolution": "Magnemite – Lvl 30 → Magneton – Thunder Stone → Magnezone",
+      "locations": "Evolve Magnemite",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "462",
+      "name": "Magnezone",
+      "regionalDexNumber": "107",
+      "type": "Electric / Steel",
+      "evolution": "Magnemite – Lvl 30 → Magneton – Thunder Stone → Magnezone",
+      "locations": "Evolve Magnemite / Magneton",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "686",
+      "name": "Inkay",
+      "regionalDexNumber": "108",
+      "type": "Dark / Psychic",
+      "evolution": "Inkay – Lvl 30 + holding console upside down → Malamar",
+      "locations": "Route 7, 9, Bridge Field, Hammerlocke Hills, Challenge Beach, Fields of Honor, Loop Lagoon, Training Lowlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "687",
+      "name": "Malamar",
+      "regionalDexNumber": "109",
+      "type": "Dark / Psychic",
+      "evolution": "Inkay – Lvl 30 + holding console upside down → Malamar",
+      "locations": "Evolve Inkay",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "746",
+      "name": "Wishiwashi",
+      "regionalDexNumber": "110",
+      "type": "Water",
+      "evolution": "-",
+      "locations": "Route 9, East Lake Axewell, Axew's Eye, West Lake Axewell, Hulbury, Challenge Beach, Honeycalm Island, Honeycalm Sea, Insular Sea, Stepping-Stone Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "318",
+      "name": "Carvanha",
+      "regionalDexNumber": "111",
+      "type": "Water / Dark",
+      "evolution": "Carvanha – Lvl 30 → Sharpedo",
+      "locations": "Training Lowlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "319",
+      "name": "Sharpedo",
+      "regionalDexNumber": "112",
+      "type": "Water / Dark",
+      "evolution": "Carvanha – Lvl 30 → Sharpedo",
+      "locations": "Honeycalm Sea, Training Lowlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "506",
+      "name": "Lillipup",
+      "regionalDexNumber": "113",
+      "type": "Normal",
+      "evolution": "Lillipup – Lvl 30 → Herdier – Lvl 30 → Stoutland",
+      "locations": "Training Lowlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "507",
+      "name": "Herdier",
+      "regionalDexNumber": "114",
+      "type": "Normal",
+      "evolution": "Lillipup – Lvl 30 → Herdier – Lvl 30 → Stoutland",
+      "locations": "Evolve Lillipup",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "508",
+      "name": "Stoutland",
+      "regionalDexNumber": "115",
+      "type": "Normal",
+      "evolution": "Lillipup – Lvl 30 → Herdier – Lvl 30 → Stoutland",
+      "locations": "Evolve Lillipup / Herdier",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "128",
+      "name": "Tauros",
+      "regionalDexNumber": "116",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Training Lowlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "241",
+      "name": "Miltank",
+      "regionalDexNumber": "117",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Training Lowlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "123",
+      "name": "Scyther",
+      "regionalDexNumber": "118",
+      "type": "Bug / Flying",
+      "evolution": "Scyther – Trade holding Metal Coat → Scizor",
+      "locations": "Training Lowlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "212",
+      "name": "Scizor",
+      "regionalDexNumber": "119",
+      "type": "Bug / Steel",
+      "evolution": "Scyther – Trade holding Metal Coat → Scizor",
+      "locations": "Evolve Scyther",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "127",
+      "name": "Pinsir",
+      "regionalDexNumber": "120",
+      "type": "Bug",
+      "evolution": "-",
+      "locations": "Training Lowlands",
+      "exclusiveVersion": "Sword"
+    },
+    {
+      "id": "214",
+      "name": "Heracross",
+      "regionalDexNumber": "121",
+      "type": "Bug / Fighting",
+      "evolution": "-",
+      "locations": "Training Lowlands",
+      "exclusiveVersion": "Shield"
+    },
+    {
+      "id": "557",
+      "name": "Dwebble",
+      "regionalDexNumber": "122",
+      "type": "Bug / Rock",
+      "evolution": "Dwebble – Lvl 34 → Crustle",
+      "locations": "Rolling Fields, South Lake Miloch, East Lake Axewell, West Lake Axewell, Giant's Seat, Hammerlocke Hills, North Lake Miloch, Stony Wilderness, Watchtower Ruins, Courageous Cavern, Loop Lagoon",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "558",
+      "name": "Crustle",
+      "regionalDexNumber": "123",
+      "type": "Bug / Rock",
+      "evolution": "Dwebble – Lvl 34 → Crustle",
+      "locations": "Axew's Eye",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "767",
+      "name": "Wimpod",
+      "regionalDexNumber": "124",
+      "type": "Bug / Water",
+      "evolution": "Wimpod – Lvl 30 → Golisopod",
+      "locations": "Bridge Field, Giant's Mirror, Hammerlocke Hills, Motostoke Riverbank, Galar Mine No. 2, Courageous Cavern",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "768",
+      "name": "Golisopod",
+      "regionalDexNumber": "125",
+      "type": "Bug / Water",
+      "evolution": "Wimpod – Lvl 30 → Golisopod",
+      "locations": "Lake of Outrage",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "871",
+      "name": "Pincurchin",
+      "regionalDexNumber": "126",
+      "type": "Electric",
+      "evolution": "-",
+      "locations": "Route 9, Courageous Cavern, Loop Lagoon, Frigid Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "747",
+      "name": "Mareanie",
+      "regionalDexNumber": "127",
+      "type": "Poison / Water",
+      "evolution": "Mareanie – Lvl 38 → Toxapex",
+      "locations": "Route 9, Giant's Mirror, Motostoke Riverbank, Loop Lagoon",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "748",
+      "name": "Toxapex",
+      "regionalDexNumber": "128",
+      "type": "Poison / Water",
+      "evolution": "Mareanie – Lvl 38 → Toxapex",
+      "locations": "Route 9",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "852",
+      "name": "Clobbopus",
+      "regionalDexNumber": "129",
+      "type": "Fighting",
+      "evolution": "Clobbopus – After learning Taunt → Grapploct",
+      "locations": "Route 9, Courageous Cavern, Loop Lagoon",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "853",
+      "name": "Grapploct",
+      "regionalDexNumber": "130",
+      "type": "Fighting",
+      "evolution": "Clobbopus – After learning Taunt → Grapploct",
+      "locations": "Evolve Clobbopus",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "090",
+      "name": "Shellder",
+      "regionalDexNumber": "131",
+      "type": "Water",
+      "evolution": "Shellder – Water Stone → Cloyster",
+      "locations": "East Lake Axewell, West Lake Axewell, Giant's Seat, Courageous Cavern, Loop Lagoon",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "091",
+      "name": "Cloyster",
+      "regionalDexNumber": "132",
+      "type": "Water / Ice",
+      "evolution": "Shellder – Water Stone → Cloyster",
+      "locations": "Giant's Seat, Courageous Cavern, Loop Lagoon",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "769",
+      "name": "Sandygast",
+      "regionalDexNumber": "133",
+      "type": "Ghost / Ground",
+      "evolution": "Sandygast – Lvl 42 → Palossand",
+      "locations": "Loop Lagoon",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "770",
+      "name": "Palossand",
+      "regionalDexNumber": "134",
+      "type": "Ghost / Ground",
+      "evolution": "Sandygast – Lvl 42 → Palossand",
+      "locations": "Evolve Sandygast",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "425",
+      "name": "Drifloon",
+      "regionalDexNumber": "135",
+      "type": "Ghost / Flying",
+      "evolution": "Drifloon – Lvl 28 → Drifblim",
+      "locations": "Route 5, South Lake Miloch, North Lake Miloch, Watchtower Ruins, Challenge Beach, Fields of Honor, Honeycalm Island, Honeycalm Sea, Insular Sea, Loop Lagoon, Stepping-Stone Sea, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "426",
+      "name": "Drifblim",
+      "regionalDexNumber": "136",
+      "type": "Ghost / Flying",
+      "evolution": "Drifloon – Lvl 28 → Drifblim",
+      "locations": "Axew's Eye",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "339",
+      "name": "Barboach",
+      "regionalDexNumber": "137",
+      "type": "Water / Ground",
+      "evolution": "Barboach – Lvl 30 → Whiscash",
+      "locations": "South Lake Miloch, Slumbering Weald, Motostoke, North Lake Miloch, Stony Wilderness, Galar Mine No. 2, Brawlers' Cave, Soothing Wetlands, Giant's Bed, Giant's Foot, Roaring-Sea Caves, Ballimere Lake",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "340",
+      "name": "Whiscash",
+      "regionalDexNumber": "138",
+      "type": "Water / Ground",
+      "evolution": "Barboach – Lvl 30 → Whiscash",
+      "locations": "Slumbering Weald, Soothing Wetlands, Giant's Bed, Giant's Foot",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "298",
+      "name": "Azurill",
+      "regionalDexNumber": "139",
+      "type": "Normal / Fairy",
+      "evolution": "Azurill – High Friendship → Marill – Lvl 18 → Azumarill",
+      "locations": "Brawlers' Cave",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "183",
+      "name": "Marill",
+      "regionalDexNumber": "140",
+      "type": "Water / Fairy",
+      "evolution": "Azurill – High Friendship → Marill – Lvl 18 → Azumarill",
+      "locations": "Evolve Azurill",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "184",
+      "name": "Azumarill",
+      "regionalDexNumber": "141",
+      "type": "Water / Fairy",
+      "evolution": "Azurill – High Friendship → Marill – Lvl 18 → Azumarill",
+      "locations": "Evolve Marill / Azurill",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "060",
+      "name": "Poliwag",
+      "regionalDexNumber": "142",
+      "type": "Water",
+      "evolution": "Poliwag – Lvl 25 → Poliwhirl – Water Stone → Poliwrath",
+      "locations": "Brawlers' Cave",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "061",
+      "name": "Poliwhirl",
+      "regionalDexNumber": "143",
+      "type": "Water",
+      "evolution": "Poliwag – Lvl 25 → Poliwhirl – Water Stone → Poliwrath",
+      "locations": "Evolve Poliwag",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "062",
+      "name": "Poliwrath",
+      "regionalDexNumber": "144",
+      "type": "Water / Fighting",
+      "evolution": "Poliwag – Lvl 25 → Poliwhirl – Water Stone → Poliwrath",
+      "locations": "Evolve Poliwag / Poliwhirl",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "186",
+      "name": "Politoed",
+      "regionalDexNumber": "145",
+      "type": "Water",
+      "evolution": "Poliwag – Lvl 25 → Poliwhirl – Trade holding Kings Rock → Politoed",
+      "locations": "Evolve Poliwag / Poliwhirl",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "054",
+      "name": "Psyduck",
+      "regionalDexNumber": "146",
+      "type": "Water",
+      "evolution": "Psyduck – Lvl 33 → Golduck",
+      "locations": "Brawlers' Cave, Challenge Beach",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "055",
+      "name": "Golduck",
+      "regionalDexNumber": "147",
+      "type": "Water",
+      "evolution": "Psyduck – Lvl 33 → Golduck",
+      "locations": "Evolve Psyduck",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "293",
+      "name": "Whismur",
+      "regionalDexNumber": "148",
+      "type": "Normal",
+      "evolution": "Whismur – Lvl 20 → Loudred – Lvl 40 → Exploud",
+      "locations": "Brawlers' Cave",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "294",
+      "name": "Loudred",
+      "regionalDexNumber": "149",
+      "type": "Normal",
+      "evolution": "Whismur – Lvl 20 → Loudred – Lvl 40 → Exploud",
+      "locations": "Evolve Whismur",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "295",
+      "name": "Exploud",
+      "regionalDexNumber": "150",
+      "type": "Normal",
+      "evolution": "Whismur – Lvl 20 → Loudred – Lvl 40 → Exploud",
+      "locations": "Evolve Whismur / Loudred",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "527",
+      "name": "Woobat",
+      "regionalDexNumber": "151",
+      "type": "Psychic / Flying",
+      "evolution": "Woobat – High Friendship → Swoobat",
+      "locations": "Bridge Field, Galar Mine, Giant's Mirror, Watchtower Ruins, Brawlers' Cave, Courageous Cavern",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "528",
+      "name": "Swoobat",
+      "regionalDexNumber": "152",
+      "type": "Psychic / Flying",
+      "evolution": "Woobat – High Friendship → Swoobat",
+      "locations": "Evolve Woobat",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "227",
+      "name": "Skarmory",
+      "regionalDexNumber": "153",
+      "type": "Steel / Flying",
+      "evolution": "-",
+      "locations": "Challenge Road",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "524",
+      "name": "Roggenrola",
+      "regionalDexNumber": "154",
+      "type": "Rock",
+      "evolution": "Roggenrola – Lvl 25 → Boldore – Trade → Gigalith",
+      "locations": "Rolling Fields, Galar Mine, Motostoke Outskirts, Stony Wilderness, Challenge Road",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "525",
+      "name": "Boldore",
+      "regionalDexNumber": "155",
+      "type": "Rock",
+      "evolution": "Roggenrola – Lvl 25 → Boldore – Trade → Gigalith",
+      "locations": "Route 8, Giant's Cap, Giant's Mirror, Lake of Outrage, Stony Wilderness",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "526",
+      "name": "Gigalith",
+      "regionalDexNumber": "156",
+      "type": "Rock",
+      "evolution": "Roggenrola – Lvl 25 → Boldore – Trade → Gigalith",
+      "locations": "Evolve Roggenrola / Boldore",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "744",
+      "name": "Rockruff",
+      "regionalDexNumber": "157",
+      "type": "Rock",
+      "evolution": "Rockruff – Lvl 25, Daytime / Nighttime / Dusk → Lycanroc",
+      "locations": "Challenge Road",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "745",
+      "name": "Lycanroc",
+      "regionalDexNumber": "158",
+      "type": "Rock",
+      "evolution": "Rockruff – Lvl 25, Daytime / Nighttime / Dusk → Lycanroc",
+      "locations": "Evolve Rockruff",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "757",
+      "name": "Salandit",
+      "regionalDexNumber": "159",
+      "type": "Poison / Fire",
+      "evolution": "Salandit – Lvl 33, Female → Salazzle",
+      "locations": "Sword → Stony Wilderness, Challenge Road | Shield → Motostoke Outskirts, Motostoke Riverbank, Stony Wilderness, Challenge Road",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "758",
+      "name": "Salazzle",
+      "regionalDexNumber": "160",
+      "type": "Poison / Fire",
+      "evolution": "Salandit – Lvl 33, Female → Salazzle",
+      "locations": "Evolve Salandit",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "559",
+      "name": "Scraggy",
+      "regionalDexNumber": "161",
+      "type": "Dark / Fighting",
+      "evolution": "Scraggy – Lvl 39 → Scrafty",
+      "locations": "Bridge Field, Dusty Bowl, Giant's Cap, Motostoke Outskirts, Stony Wilderness, Galar Mine No. 2, Challenge Road, Potbottom Desert",
+      "exclusiveVersion": "Sword"
+    },
+    {
+      "id": "560",
+      "name": "Scrafty",
+      "regionalDexNumber": "162",
+      "type": "Dark / Fighting",
+      "evolution": "Scraggy – Lvl 39 → Scrafty",
+      "locations": "Evolve Scraggy",
+      "exclusiveVersion": "Sword"
+    },
+    {
+      "id": "619",
+      "name": "Mienfoo",
+      "regionalDexNumber": "163",
+      "type": "Fighting",
+      "evolution": "Mienfoo – Lvl 50 → Mienshao",
+      "locations": "Challenge Road",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "620",
+      "name": "Mienshao",
+      "regionalDexNumber": "164",
+      "type": "Fighting",
+      "evolution": "Mienfoo – Lvl 50 → Mienshao",
+      "locations": "Evolve Mienfoo",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "782",
+      "name": "Jangmo-o",
+      "regionalDexNumber": "165",
+      "type": "Dragon",
+      "evolution": "Jangmo-o – Lvl 35 → Hakamo-o – Lvl 45 → Kommo-o",
+      "locations": "Lake of Outrage, Challenge Road, Potbottom Desert",
+      "exclusiveVersion": "Sword"
+    },
+    {
+      "id": "783",
+      "name": "Hakamo-o",
+      "regionalDexNumber": "166",
+      "type": "Dragon / Fighting",
+      "evolution": "Jangmo-o – Lvl 35 → Hakamo-o – Lvl 45 → Kommo-o",
+      "locations": "Lake of Outrage",
+      "exclusiveVersion": "Sword"
+    },
+    {
+      "id": "784",
+      "name": "Kommo-o",
+      "regionalDexNumber": "167",
+      "type": "Dragon / Fighting",
+      "evolution": "Jangmo-o – Lvl 35 → Hakamo-o – Lvl 45 → Kommo-o",
+      "locations": "Evolve Jangmo-o / Hakamo-o",
+      "exclusiveVersion": "Sword"
+    },
+    {
+      "id": "027",
+      "name": "Sandshrew",
+      "regionalDexNumber": "168",
+      "type": "Ground",
+      "evolution": "Sandshrew – Lvl 22 → Sandslash",
+      "locations": "Warm-Up Tunnel",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "028",
+      "name": "Sandslash",
+      "regionalDexNumber": "169",
+      "type": "Ground",
+      "evolution": "Sandshrew – Lvl 22 → Sandslash",
+      "locations": "Evolve Sandshrew",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "104",
+      "name": "Cubone",
+      "regionalDexNumber": "170",
+      "type": "Ground",
+      "evolution": "Cubone – Lvl 28 → Marowak",
+      "locations": "Warm-Up Tunnel",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "105",
+      "name": "Marowak",
+      "regionalDexNumber": "171",
+      "type": "Ground",
+      "evolution": "Cubone – Lvl 28 → Marowak",
+      "locations": "Evolve Cubone",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "115",
+      "name": "Kangaskhan",
+      "regionalDexNumber": "172",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Warm-Up Tunnel",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "324",
+      "name": "Torkoal",
+      "regionalDexNumber": "173",
+      "type": "Fire",
+      "evolution": "-",
+      "locations": "Route 6, Giant's Cap, Giant's Mirror, Motostoke Riverbank, Potbottom Desert, Warm-Up Tunnel",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "843",
+      "name": "Silicobra",
+      "regionalDexNumber": "174",
+      "type": "Ground",
+      "evolution": "Silicobra – Lvl 36 → Sandaconda",
+      "locations": "Route 6, Challenge Road, Forest of Focus, Potbottom Desert, Training Lowlands",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "844",
+      "name": "Sandaconda",
+      "regionalDexNumber": "175",
+      "type": "Ground",
+      "evolution": "Silicobra – Lvl 36 → Sandaconda",
+      "locations": "Route 8, Lake of Outrage",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "551",
+      "name": "Sandile",
+      "regionalDexNumber": "176",
+      "type": "Ground / Dark",
+      "evolution": "Sandile – Lvl 29 → Krokorok – Lvl 40 → Krookodile",
+      "locations": "Potbottom Desert",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "552",
+      "name": "Krokorok",
+      "regionalDexNumber": "177",
+      "type": "Ground / Dark",
+      "evolution": "Sandile – Lvl 29 → Krokorok – Lvl 40 → Krookodile",
+      "locations": "Evolve Sandile",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "553",
+      "name": "Krookodile",
+      "regionalDexNumber": "178",
+      "type": "Ground / Dark",
+      "evolution": "Sandile – Lvl 29 → Krokorok – Lvl 40 → Krookodile",
+      "locations": "Evolve Sandile / Krokorok",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "627",
+      "name": "Rufflet",
+      "regionalDexNumber": "179",
+      "type": "Normal / Flying",
+      "evolution": "Rufflet – Lvl 54 → Braviary",
+      "locations": "Route 8, Bridge Field, Stony Wilderness, Potbottom Desert",
+      "exclusiveVersion": "Sword"
+    },
+    {
+      "id": "628",
+      "name": "Braviary",
+      "regionalDexNumber": "180",
+      "type": "Normal / Flying",
+      "evolution": "Rufflet – Lvl 54 → Braviary",
+      "locations": "Dusty Bowl, Lake of Outrage",
+      "exclusiveVersion": "Sword"
+    },
+    {
+      "id": "629",
+      "name": "Vullaby",
+      "regionalDexNumber": "181",
+      "type": "Dark / Flying",
+      "evolution": "Vullaby – Lvl 54 → Mandibuzz",
+      "locations": "Route 8, Bridge Field, Stony Wilderness, Potbottom Desert",
+      "exclusiveVersion": "Shield"
+    },
+    {
+      "id": "630",
+      "name": "Mandibuzz",
+      "regionalDexNumber": "182",
+      "type": "Dark / Flying",
+      "evolution": "Vullaby – Lvl 54 → Mandibuzz",
+      "locations": "Dusty Bowl, Lake of Outrage",
+      "exclusiveVersion": "Shield"
+    },
+    {
+      "id": "111",
+      "name": "Rhyhorn",
+      "regionalDexNumber": "183",
+      "type": "Ground / Rock",
+      "evolution": "Rhyhorn – Lvl 42 → Rhydon – Trade holding Protector → Rhyperior",
+      "locations": "Route 8, Bridge Field, Giant's Cap, Giant's Mirror, Motostoke Riverbank, Stony Wilderness, Potbottom Desert",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "112",
+      "name": "Rhydon",
+      "regionalDexNumber": "184",
+      "type": "Ground / Rock",
+      "evolution": "Rhyhorn – Lvl 42 → Rhydon – Trade holding Protector → Rhyperior",
+      "locations": "Route 10, Dusty Bowl, Lake of Outrage",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "464",
+      "name": "Rhyperior",
+      "regionalDexNumber": "185",
+      "type": "Ground / Rock",
+      "evolution": "Rhyhorn – Lvl 42 → Rhydon – Trade holding Protector → Rhyperior",
+      "locations": "Evolve Rhyhorn / Rhydon",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "636",
+      "name": "Larvesta",
+      "regionalDexNumber": "186",
+      "type": "Bug / Fire",
+      "evolution": "Larvesta – Lvl 59 → Volcarona",
+      "locations": "Loop Lagoon, Forest of Focus, Fields of Honor, Challenge Beach, Loop Lagoon, Potbottom Desert",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "637",
+      "name": "Volcarona",
+      "regionalDexNumber": "187",
+      "type": "Bug / Fire",
+      "evolution": "Larvesta – Lvl 59 → Volcarona",
+      "locations": "Insular Sea, Challenge Beach, Potbottom Desert, Fields of Honor, Loop Lagoon",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "170",
+      "name": "Chinchou",
+      "regionalDexNumber": "188",
+      "type": "Water / Electric",
+      "evolution": "Chinchou – Lvl 27 → Lanturn",
+      "locations": "East Lake Axewell, West Lake Axewell, Giant's Mirror, Hulbury, Honeycalm Island, Honeycalm Sea, Insular Sea, Stepping-Stone Sea, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "171",
+      "name": "Lanturn",
+      "regionalDexNumber": "189",
+      "type": "Water / Electric",
+      "evolution": "Chinchou – Lvl 27 → Lanturn",
+      "locations": "Bridge Field, Dusty Bowl, Lake of Outrage, Honeycalm Island, Honeycalm Sea, Insular Sea, Stepping-Stone Sea, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "320",
+      "name": "Wailmer",
+      "regionalDexNumber": "190",
+      "type": "Water",
+      "evolution": "Wailmer – Lvl 40 → Wailord",
+      "locations": "Route 9, Honeycalm Island, Honeycalm Sea, Frigid Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "321",
+      "name": "Wailord",
+      "regionalDexNumber": "191",
+      "type": "Water",
+      "evolution": "Wailmer – Lvl 40 → Wailord",
+      "locations": "Route 9",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "592",
+      "name": "Frillish",
+      "regionalDexNumber": "192",
+      "type": "Water / Ghost",
+      "evolution": "Frillish – Lvl 40 → Jellicent",
+      "locations": "East Lake Axewell, Bridge Field, West Lake Axewell, North Lake Miloch, Stepping-Stone Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "593",
+      "name": "Jellicent",
+      "regionalDexNumber": "193",
+      "type": "Water / Ghost",
+      "evolution": "Frillish – Lvl 40 → Jellicent",
+      "locations": "Route 9, Lake of Outrage, Honeycalm Island, Honeycalm Sea, Insular Sea, Stepping-Stone Sea, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "690",
+      "name": "Skrelp",
+      "regionalDexNumber": "194",
+      "type": "Poison / Water",
+      "evolution": "Skrelp – Lvl 48 → Dragalge",
+      "locations": "Honeycalm Island, Honeycalm Sea, Insular Sea, Stepping-Stone Sea, Workout Sea",
+      "exclusiveVersion": "Shield"
+    },
+    {
+      "id": "691",
+      "name": "Dragalge",
+      "regionalDexNumber": "195",
+      "type": "Poison / Dragon",
+      "evolution": "Skrelp – Lvl 48 → Dragalge",
+      "locations": "Honeycalm Island, Honeycalm Sea, Insular Sea, Stepping-Stone Sea, Workout Sea",
+      "exclusiveVersion": "Shield"
+    },
+    {
+      "id": "692",
+      "name": "Clauncher",
+      "regionalDexNumber": "196",
+      "type": "Water",
+      "evolution": "Clauncher – Lvl 37 → Clawitzer",
+      "locations": "Honeycalm Island, Honeycalm Sea, Insular Sea, Stepping-Stone Sea, Workout Sea",
+      "exclusiveVersion": "Sword"
+    },
+    {
+      "id": "693",
+      "name": "Clawitzer",
+      "regionalDexNumber": "197",
+      "type": "Water",
+      "evolution": "Clauncher – Lvl 37 → Clawitzer",
+      "locations": "Honeycalm Island, Honeycalm Sea, Insular Sea, Stepping-Stone Sea, Workout Sea",
+      "exclusiveVersion": "Sword"
+    },
+    {
+      "id": "116",
+      "name": "Horsea",
+      "regionalDexNumber": "198",
+      "type": "Water",
+      "evolution": "Horsea – Lvl 32 → Seadra – Trade holding Dragon Scale → Kingdra",
+      "locations": "Insular Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "117",
+      "name": "Seadra",
+      "regionalDexNumber": "199",
+      "type": "Water",
+      "evolution": "Horsea – Lvl 32 → Seadra – Trade holding Dragon Scale → Kingdra",
+      "locations": "Evolve Horsea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "230",
+      "name": "Kingdra",
+      "regionalDexNumber": "200",
+      "type": "Water / Dragon",
+      "evolution": "Horsea – Lvl 32 → Seadra – Trade holding Dragon Scale → Kingdra",
+      "locations": "Evolve Horsea / Seadra",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "548",
+      "name": "Petilil",
+      "regionalDexNumber": "201",
+      "type": "Grass",
+      "evolution": "Petilil – Sun Stone → Lilligant",
+      "locations": "Honeycalm Island",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "549",
+      "name": "Lilligant",
+      "regionalDexNumber": "202",
+      "type": "Grass",
+      "evolution": "Petilil – Sun Stone → Lilligant",
+      "locations": "Evolve Petilil",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "415",
+      "name": "Combee",
+      "regionalDexNumber": "203",
+      "type": "Bug / Flying",
+      "evolution": "Combee – Lvl 21, Female → Vespiquen",
+      "locations": "Rolling Fields, Honeycalm Island",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "416",
+      "name": "Vespiquen",
+      "regionalDexNumber": "204",
+      "type": "Bug / Flying",
+      "evolution": "Combee – Lvl 21, Female → Vespiquen",
+      "locations": "Evolve Combee",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "102",
+      "name": "Exeggcute",
+      "regionalDexNumber": "205",
+      "type": "Grass / Psychic",
+      "evolution": "Exeggcute – Leaf Stone → Exeggutor",
+      "locations": "Insular Sea, Stepping-Stone Sea, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "103",
+      "name": "Exeggutor",
+      "regionalDexNumber": "206",
+      "type": "Grass / Psychic",
+      "evolution": "Exeggcute – Leaf Stone → Exeggutor",
+      "locations": "Evolve Exeggcute",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "132",
+      "name": "Ditto",
+      "regionalDexNumber": "207",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Lake of Outrage, Workout Sea",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "137",
+      "name": "Porygon",
+      "regionalDexNumber": "208",
+      "type": "Normal",
+      "shinyLocked": true,
+      "evolution": "Porygon – Trade holding Upgrade) → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "Master Dojo",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "233",
+      "name": "Porygon2",
+      "regionalDexNumber": "209",
+      "type": "Normal",
+      "evolution": "Porygon – Trade holding Upgrade) → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "Evolve Porygon",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "474",
+      "name": "Porygon-Z",
+      "regionalDexNumber": "210",
+      "type": "Normal",
+      "evolution": "Porygon – Trade holding Upgrade) → Porygon2 – Trade holding Dubious Disc → Porygon-Z",
+      "locations": "Evolve Porygon2",
+      "exclusiveVersion": "-"
+    },
+    {
+      "id": "893",
+      "name": "Zarude",
+      "regionalDexNumber": "211",
+      "type": "Dark / Grass",
+      "evolution": "-",
+      "locations": "Event",
+      "exclusiveVersion": "-"
+    }
+  ]
+}

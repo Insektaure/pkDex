@@ -1,3 +1,6 @@
+## Version 1.6.4 (2026-02-20)
+- Replace XML pokedex format with Json
+
 ## Version 1.6.3 (2025-12-19)
 - Minor Feature release - Main App :
     - Update Shiny Lock status for Mega-Dimension DLC

@@ -77,7 +77,7 @@
     "img_pack_download_complete": "¡Descarga completa!\n\nLas imágenes en alta resolución ya están disponibles para extraer.\n\nUsa el botón 'Extraer paquete de imágenes en alta resolución' en Configuración."
   },
   "about": {
-    "title": "pkDex\nv1.6.3",
+    "title": "pkDex\nv1.6.4",
     "description": "pkDex es una app sencilla para ver datos de Pokémon sin conexión, para los juegos de Nintendo Switch.",
     "github": "Encuéntralo en github.com/Insektaure/pkDex",
     "licence": "Licenciado bajo Apache 2.0",
