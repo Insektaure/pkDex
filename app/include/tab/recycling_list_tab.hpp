@@ -62,6 +62,7 @@ class RecyclingListTab : public brls::Box
 
     // Factory methods for specific regions
     static brls::View* createKanto();
+    static brls::View* createKantoFrlg();
     //static brls::View* createJohto();
     //static brls::View* createHoenn();
     static brls::View* createSinnoh();

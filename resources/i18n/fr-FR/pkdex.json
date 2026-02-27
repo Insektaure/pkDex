@@ -2,6 +2,7 @@
   "title": "pkDex - Une encyclopédie Pokémon pour les jeux Nintendo Switch",
   "tabs": {
     "kanto": "Kanto (Let's Go! Pikachu & Évoli)",
+    "kanto_frlg": "└ Kanto (Rouge Feu & Vert Feuille)",
     "sinnoh": "Sinnoh (Diamant Étincelant & Perle Scintillante)",
     "sinnoh_arceus": "└ Sinnoh (Légendes : Arceus)",
     "galar": "Galar (Épée & Bouclier)",
@@ -21,6 +22,7 @@
     "regions": {
       "all_regions": "Toutes les régions",
       "kanto": "Kanto (LGPE)",
+      "kanto_frlg": "Kanto (FRLG)",
       "sinnoh": "Sinnoh (DEPS)",
       "sinnoh_arceus": "Sinnoh (Légendes Arceus)",
       "galar": "Galar (Épée/Bouclier)",

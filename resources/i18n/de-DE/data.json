@@ -18038,5 +18038,1064 @@
       "locations": "-",
       "exclusiveVersion": "-"
     }
+  },
+  "kanto_frlg": {
+    "001": {
+      "name": "Bisasam",
+      "type": "Pflanze / Gift",
+      "evolution": "Bisasam – Lvl 16 → Bisaknosp – Lvl 32 → Bisaflor",
+      "locations": "Azuria City, Vertania-Wald",
+      "exclusiveVersion": "-"
+    },
+    "002": {
+      "name": "Bisaknosp",
+      "type": "Pflanze / Gift",
+      "evolution": "Bisasam – Lvl 16 → Bisaknosp – Lvl 32 → Bisaflor",
+      "locations": "Entwickelt sich aus Bisasam",
+      "exclusiveVersion": "-"
+    },
+    "003": {
+      "name": "Bisaflor",
+      "type": "Pflanze / Gift",
+      "evolution": "Bisasam – Lvl 16 → Bisaknosp – Lvl 32 → Bisaflor",
+      "locations": "Entwickelt sich aus Bisasam / Bisaknosp",
+      "exclusiveVersion": "-"
+    },
+    "004": {
+      "name": "Glumanda",
+      "type": "Feuer",
+      "evolution": "Glumanda – Lvl 16 → Glutexo – Lvl 36 → Glurak",
+      "locations": "Route 3, 4, 24, Felstunnel",
+      "exclusiveVersion": "-"
+    },
+    "005": {
+      "name": "Glutexo",
+      "type": "Feuer",
+      "evolution": "Glumanda – Lvl 16 → Glutexo – Lvl 36 → Glurak",
+      "locations": "Entwickelt sich aus Glumanda",
+      "exclusiveVersion": "-"
+    },
+    "006": {
+      "name": "Glurak",
+      "type": "Feuer / Flug",
+      "evolution": "Glumanda – Lvl 16 → Glutexo – Lvl 36 → Glurak",
+      "locations": "Route 2, 3, 4, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 24, 25",
+      "exclusiveVersion": "-"
+    },
+    "007": {
+      "name": "Schiggy",
+      "type": "Wasser",
+      "evolution": "Schiggy – Lvl 16 → Schillok – Lvl 36 → Turtok",
+      "locations": "Route 24, 25, Seeschauminseln, Orania City",
+      "exclusiveVersion": "-"
+    },
+    "008": {
+      "name": "Schillok",
+      "type": "Wasser",
+      "evolution": "Schiggy – Lvl 16 → Schillok – Lvl 36 → Turtok",
+      "locations": "Entwickelt sich aus Schiggy",
+      "exclusiveVersion": "-"
+    },
+    "009": {
+      "name": "Turtok",
+      "type": "Wasser",
+      "evolution": "Schiggy – Lvl 16 → Schillok – Lvl 36 → Turtok",
+      "locations": "Entwickelt sich aus Schiggy / Schillok",
+      "exclusiveVersion": "-"
+    },
+    "010": {
+      "name": "Raupy",
+      "type": "Käfer",
+      "evolution": "Raupy – Lvl 7 → Safcon – Lvl 10 → Smettbo",
+      "locations": "Route 2, Vertania-Wald",
+      "exclusiveVersion": "-"
+    },
+    "011": {
+      "name": "Safcon",
+      "type": "Käfer",
+      "evolution": "Raupy – Lvl 7 → Safcon – Lvl 10 → Smettbo",
+      "locations": "Vertania-Wald",
+      "exclusiveVersion": "-"
+    },
+    "012": {
+      "name": "Smettbo",
+      "type": "Käfer / Flug",
+      "evolution": "Raupy – Lvl 7 → Safcon – Lvl 10 → Smettbo",
+      "locations": "Vertania-Wald (Pikachu), Entwickelt sich aus Raupy / Safcon",
+      "exclusiveVersion": "-"
+    },
+    "013": {
+      "name": "Hornliu",
+      "type": "Käfer / Gift",
+      "evolution": "Hornliu – Lvl 7 → Kokuna – Lvl 10 → Bibor",
+      "locations": "Route 2, Vertania-Wald",
+      "exclusiveVersion": "-"
+    },
+    "014": {
+      "name": "Kokuna",
+      "type": "Käfer / Gift",
+      "evolution": "Hornliu – Lvl 7 → Kokuna – Lvl 10 → Bibor",
+      "locations": "Vertania-Wald",
+      "exclusiveVersion": "-"
+    },
+    "015": {
+      "name": "Bibor",
+      "type": "Käfer / Gift",
+      "evolution": "Hornliu – Lvl 7 → Kokuna – Lvl 10 → Bibor",
+      "locations": "Vertania-Wald (Evoli), Entwickelt sich aus Hornliu / Kokuna",
+      "exclusiveVersion": "-"
+    },
+    "016": {
+      "name": "Taubsi",
+      "type": "Normal / Flug",
+      "evolution": "Taubsi – Lvl 18 → Tauboga – Lvl 36 → Tauboss",
+      "locations": "Route 1, 2, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 24, 25, Azuria City, Zinnoberinsel, Fuchsania City, Lavandia, Alabastia, Marmoria City, Orania City, Vertania City, Vertania-Wald",
+      "exclusiveVersion": "-"
+    },
+    "017": {
+      "name": "Tauboga",
+      "type": "Normal / Flug",
+      "evolution": "Taubsi – Lvl 18 → Tauboga – Lvl 36 → Tauboss",
+      "locations": "Route 1, 2, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 24, 25, Azuria City, Zinnoberinsel, Fuchsania City, Lavandia, Alabastia, Marmoria City, Orania City, Vertania City",
+      "exclusiveVersion": "-"
+    },
+    "018": {
+      "name": "Tauboss",
+      "type": "Normal / Flug",
+      "evolution": "Taubsi – Lvl 18 → Tauboga – Lvl 36 → Tauboss",
+      "locations": "Route 1, 2, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 24, 25, Azuria City, Zinnoberinsel, Fuchsania City, Lavandia, Alabastia, Marmoria City, Orania City, Vertania City",
+      "exclusiveVersion": "-"
+    },
+    "019": {
+      "name": "Rattfratz",
+      "type": "Normal",
+      "evolution": "Rattfratz – Lvl 20 → Rattikarl",
+      "locations": "Route 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 16, 17, 18, 21, 22, Azuria City, Pokémon-Villa",
+      "exclusiveVersion": "-"
+    },
+    "020": {
+      "name": "Rattikarl",
+      "type": "Normal",
+      "evolution": "Rattfratz – Lvl 20 → Rattikarl",
+      "locations": "Route 7, 8, 9, 10, 11, 16, 17, 18, 21, Pokémon-Villa",
+      "exclusiveVersion": "-"
+    },
+    "021": {
+      "name": "Habitak",
+      "type": "Normal / Flug",
+      "evolution": "Habitak – Lvl 20 → Ibitak",
+      "locations": "Route 3, 4, 9, 10, 22, 23",
+      "exclusiveVersion": "-"
+    },
+    "022": {
+      "name": "Ibitak",
+      "type": "Normal / Flug",
+      "evolution": "Habitak – Lvl 20 → Ibitak",
+      "locations": "Route 3, 4, 9, 10, 22, 23",
+      "exclusiveVersion": "-"
+    },
+    "023": {
+      "name": "Rettan",
+      "type": "Gift",
+      "evolution": "Rettan – Lvl 22 → Arbok",
+      "locations": "Route 3, 4",
+      "exclusiveVersion": "Feuerrote"
+    },
+    "024": {
+      "name": "Arbok",
+      "type": "Gift",
+      "evolution": "Rettan – Lvl 22 → Arbok",
+      "locations": "Entwickelt sich aus Rettan",
+      "exclusiveVersion": "Feuerrote"
+    },
+    "025": {
+      "name": "Pikachu",
+      "type": "Elektro",
+      "evolution": "Pikachu – Donnerstein → Raichu",
+      "locations": "Alabastia (Pikachu), Vertania-Wald",
+      "exclusiveVersion": "-"
+    },
+    "026": {
+      "name": "Raichu",
+      "type": "Elektro",
+      "evolution": "Pikachu – Donnerstein → Raichu",
+      "locations": "Saffronia City",
+      "exclusiveVersion": "-"
+    },
+    "027": {
+      "name": "Sandan",
+      "type": "Boden",
+      "evolution": "Sandan – Lvl 22 → Sandamer",
+      "locations": "Route 3, 4, Prismania City",
+      "exclusiveVersion": "Blattgrüne"
+    },
+    "028": {
+      "name": "Sandamer",
+      "type": "Boden",
+      "evolution": "Sandan – Lvl 22 → Sandamer",
+      "locations": "Entwickelt sich aus Sandan",
+      "exclusiveVersion": "Blattgrüne"
+    },
+    "029": {
+      "name": "Nidoran♀",
+      "type": "Gift",
+      "evolution": "Nidoran♀ – Lvl 16 → Nidorina – Mondstein → Nidoqueen",
+      "locations": "Route 9, 10, 22, 23",
+      "exclusiveVersion": "-"
+    },
+    "030": {
+      "name": "Nidorina",
+      "type": "Gift",
+      "evolution": "Nidoran♀ – Lvl 16 → Nidorina – Mondstein → Nidoqueen",
+      "locations": "Route 9, 10, 23",
+      "exclusiveVersion": "-"
+    },
+    "031": {
+      "name": "Nidoqueen",
+      "type": "Gift / Boden",
+      "evolution": "Nidoran♀ – Lvl 16 → Nidorina – Mondstein → Nidoqueen",
+      "locations": "Route 23",
+      "exclusiveVersion": "-"
+    },
+    "032": {
+      "name": "Nidoran♂",
+      "type": "Gift",
+      "evolution": "Nidoran♂ – Lvl 16 → Nidorino – Mondstein → Nidoking",
+      "locations": "Route 9, 10, 22, 23",
+      "exclusiveVersion": "-"
+    },
+    "033": {
+      "name": "Nidorino",
+      "type": "Gift",
+      "evolution": "Nidoran♂ – Lvl 16 → Nidorino – Mondstein → Nidoking",
+      "locations": "Route 9, 10, 23",
+      "exclusiveVersion": "-"
+    },
+    "034": {
+      "name": "Nidoking",
+      "type": "Gift / Boden",
+      "evolution": "Nidoran♂ – Lvl 16 → Nidorino – Mondstein → Nidoking",
+      "locations": "Route 23",
+      "exclusiveVersion": "-"
+    },
+    "035": {
+      "name": "Piepi",
+      "type": "Fee",
+      "evolution": "Piepi – Mondstein → Pixi",
+      "locations": "Mondberg",
+      "exclusiveVersion": "-"
+    },
+    "036": {
+      "name": "Pixi",
+      "type": "Fee",
+      "evolution": "Piepi – Mondstein → Pixi",
+      "locations": "Mondberg",
+      "exclusiveVersion": "-"
+    },
+    "037": {
+      "name": "Vulpix",
+      "type": "Feuer",
+      "evolution": "Vulpix – Feuerstein → Vulnona",
+      "locations": "Route 5, 6, 7, 8, Prismania City",
+      "exclusiveVersion": "Blattgrüne"
+    },
+    "038": {
+      "name": "Vulnona",
+      "type": "Feuer",
+      "evolution": "Vulpix – Feuerstein → Vulnona",
+      "locations": "Route 7, 8",
+      "exclusiveVersion": "Blattgrüne"
+    },
+    "039": {
+      "name": "Pummeluff",
+      "type": "Normal / Fee",
+      "evolution": "Pummeluff – Mondstein → Knuddeluff",
+      "locations": "Route 5, 6, 7, 8",
+      "exclusiveVersion": "-"
+    },
+    "040": {
+      "name": "Knuddeluff",
+      "type": "Normal / Fee",
+      "evolution": "Pummeluff – Mondstein → Knuddeluff",
+      "locations": "Entwickelt sich aus Pummeluff",
+      "exclusiveVersion": "-"
+    },
+    "041": {
+      "name": "Zubat",
+      "type": "Gift / Flug",
+      "evolution": "Zubat – Lvl 22 → Golbat",
+      "locations": "Azuria Höhle, Digda-Höhle, Mondberg, Pokémon-Turm, Felstunnel, Seeschauminseln, Siegesstraße",
+      "exclusiveVersion": "-"
+    },
+    "042": {
+      "name": "Golbat",
+      "type": "Gift / Flug",
+      "evolution": "Zubat – Lvl 22 → Golbat",
+      "locations": "Azuria Höhle, Pokémon-Turm, Felstunnel, Seeschauminseln, Siegesstraße",
+      "exclusiveVersion": "-"
+    },
+    "043": {
+      "name": "Myrapla",
+      "type": "Pflanze / Gift",
+      "evolution": "Myrapla – Lvl 21 → Duflor – Blattstein → Giflor",
+      "locations": "Route 1, 2, 12, 13, 14, 15, 21, 24, 25, Vertania-Wald",
+      "exclusiveVersion": "Feuerrote"
+    },
+    "044": {
+      "name": "Duflor",
+      "type": "Pflanze / Gift",
+      "evolution": "Myrapla – Lvl 21 → Duflor – Blattstein → Giflor",
+      "locations": "Route 12, 13, 14, 15, 21",
+      "exclusiveVersion": "Feuerrote"
+    },
+    "045": {
+      "name": "Giflor",
+      "type": "Pflanze / Gift",
+      "evolution": "Myrapla – Lvl 21 → Duflor – Blattstein → Giflor",
+      "locations": "Route 21",
+      "exclusiveVersion": "Feuerrote"
+    },
+    "046": {
+      "name": "Paras",
+      "type": "Käfer / Pflanze",
+      "evolution": "Paras – Lvl 24 → Parasek",
+      "locations": "Mondberg",
+      "exclusiveVersion": "-"
+    },
+    "047": {
+      "name": "Parasek",
+      "type": "Käfer / Pflanze",
+      "evolution": "Paras – Lvl 24 → Parasek",
+      "locations": "Entwickelt sich aus Paras",
+      "exclusiveVersion": "-"
+    },
+    "048": {
+      "name": "Bluzuk",
+      "type": "Käfer / Gift",
+      "evolution": "Bluzuk – Lvl 31 → Omot",
+      "locations": "Route 14, 15, 24, 25",
+      "exclusiveVersion": "-"
+    },
+    "049": {
+      "name": "Omot",
+      "type": "Käfer / Gift",
+      "evolution": "Bluzuk – Lvl 31 → Omot",
+      "locations": "Route 14, 15",
+      "exclusiveVersion": "-"
+    },
+    "050": {
+      "name": "Digda",
+      "type": "Boden",
+      "evolution": "Digda – Lvl 26 → Digdri",
+      "locations": "Digda-Höhle, Lavandia",
+      "exclusiveVersion": "-"
+    },
+    "051": {
+      "name": "Digdri",
+      "type": "Boden",
+      "evolution": "Digda – Lvl 26 → Digdri",
+      "locations": "Digda-Höhle",
+      "exclusiveVersion": "-"
+    },
+    "052": {
+      "name": "Mauzi",
+      "type": "Normal",
+      "evolution": "Mauzi – Lvl 28 → Snobilikat",
+      "locations": "Route 24, 25, Zinnoberinsel",
+      "exclusiveVersion": "-"
+    },
+    "053": {
+      "name": "Snobilikat",
+      "type": "Normal",
+      "evolution": "Mauzi – Lvl 28 → Snobilikat",
+      "locations": "Orania City",
+      "exclusiveVersion": "-"
+    },
+    "054": {
+      "name": "Enton",
+      "type": "Wasser",
+      "evolution": "Enton – Lvl 33 → Entoron",
+      "locations": "Route 4, 6, 17, 24, 25, Azuria Höhle",
+      "exclusiveVersion": "Feuerrote"
+    },
+    "055": {
+      "name": "Entoron",
+      "type": "Wasser",
+      "evolution": "Enton – Lvl 33 → Entoron",
+      "locations": "Azuria Höhle",
+      "exclusiveVersion": "Feuerrote"
+    },
+    "056": {
+      "name": "Menki",
+      "type": "Kampf",
+      "evolution": "Menki – Lvl 28 → Rasaff",
+      "locations": "Route 3, 4",
+      "exclusiveVersion": "-"
+    },
+    "057": {
+      "name": "Rasaff",
+      "type": "Kampf",
+      "evolution": "Menki – Lvl 28 → Rasaff",
+      "locations": "Entwickelt sich aus Menki",
+      "exclusiveVersion": "-"
+    },
+    "058": {
+      "name": "Fukano",
+      "type": "Feuer",
+      "evolution": "Fukano – Feuerstein → Arkani",
+      "locations": "Route 5, 6, 7, 8",
+      "exclusiveVersion": "Feuerrote"
+    },
+    "059": {
+      "name": "Arkani",
+      "type": "Feuer",
+      "evolution": "Fukano – Feuerstein → Arkani",
+      "locations": "Route 7, 8, Orania City",
+      "exclusiveVersion": "Feuerrote"
+    },
+    "060": {
+      "name": "Quapsel",
+      "type": "Wasser",
+      "evolution": "Quapsel – Lvl 25 → Quaputzi – Wasserstein → Quappo",
+      "locations": "Route 22, 23, 25, Azuria Höhle",
+      "exclusiveVersion": "-"
+    },
+    "061": {
+      "name": "Quaputzi",
+      "type": "Wasser",
+      "evolution": "Quapsel – Lvl 25 → Quaputzi – Wasserstein → Quappo",
+      "locations": "Route 22, 23, 25, Azuria Höhle",
+      "exclusiveVersion": "-"
+    },
+    "062": {
+      "name": "Quappo",
+      "type": "Wasser / Kampf",
+      "evolution": "Quapsel – Lvl 25 → Quaputzi – Wasserstein → Quappo",
+      "locations": "Azuria Höhle",
+      "exclusiveVersion": "-"
+    },
+    "063": {
+      "name": "Abra",
+      "type": "Psycho",
+      "evolution": "Abra – Lvl 16 → Kadabra – Tausch → Simsala",
+      "locations": "Route 5, 6, 7, 8",
+      "exclusiveVersion": "-"
+    },
+    "064": {
+      "name": "Kadabra",
+      "type": "Psycho",
+      "evolution": "Abra – Lvl 16 → Kadabra – Tausch → Simsala",
+      "locations": "Route 7, 8",
+      "exclusiveVersion": "-"
+    },
+    "065": {
+      "name": "Simsala",
+      "type": "Psycho",
+      "evolution": "Abra – Lvl 16 → Kadabra – Tausch → Simsala",
+      "locations": "Entwickelt sich aus Abra / Kadabra",
+      "exclusiveVersion": "-"
+    },
+    "066": {
+      "name": "Machollo",
+      "type": "Kampf",
+      "evolution": "Machollo – Lvl 28 → Maschock – Tausch → Machomei",
+      "locations": "Felstunnel, Siegesstraße",
+      "exclusiveVersion": "-"
+    },
+    "067": {
+      "name": "Maschock",
+      "type": "Kampf",
+      "evolution": "Machollo – Lvl 28 → Maschock – Tausch → Machomei",
+      "locations": "Siegesstraße",
+      "exclusiveVersion": "-"
+    },
+    "068": {
+      "name": "Machomei",
+      "type": "Kampf",
+      "evolution": "Machollo – Lvl 28 → Maschock – Tausch → Machomei",
+      "locations": "Entwickelt sich aus Machollo / Maschock",
+      "exclusiveVersion": "-"
+    },
+    "069": {
+      "name": "Knofensa",
+      "type": "Pflanze / Gift",
+      "evolution": "Knofensa – Lvl 21 → Ultrigaria – Blattstein → Sarzenia",
+      "locations": "Route 1, 2, 12, 13, 14, 15, 21, 24, 25, Vertania-Wald",
+      "exclusiveVersion": "Blattgrüne"
+    },
+    "070": {
+      "name": "Ultrigaria",
+      "type": "Pflanze / Gift",
+      "evolution": "Knofensa – Lvl 21 → Ultrigaria – Blattstein → Sarzenia",
+      "locations": "Route 12, 13, 14, 15, 21",
+      "exclusiveVersion": "Blattgrüne"
+    },
+    "071": {
+      "name": "Sarzenia",
+      "type": "Pflanze / Gift",
+      "evolution": "Knofensa – Lvl 21 → Ultrigaria – Blattstein → Sarzenia",
+      "locations": "Route 21",
+      "exclusiveVersion": "Blattgrüne"
+    },
+    "072": {
+      "name": "Tentacha",
+      "type": "Wasser / Gift",
+      "evolution": "Tentacha – Lvl 30 → Tentoxa",
+      "locations": "Route 4, 10, 11, 12, 13, 18, 19, 20, 21, 24, Seeschauminseln",
+      "exclusiveVersion": "-"
+    },
+    "073": {
+      "name": "Tentoxa",
+      "type": "Wasser / Gift",
+      "evolution": "Tentacha – Lvl 30 → Tentoxa",
+      "locations": "Route 4, 10, 11, 12, 13, 18, 19, 20, 21, 24, Seeschauminseln",
+      "exclusiveVersion": "-"
+    },
+    "074": {
+      "name": "Kleinstein",
+      "type": "Gestein / Boden",
+      "evolution": "Kleinstein – Lvl 25 → Georok – Tausch → Geowaz",
+      "locations": "Azuria Höhle, Mondberg, Felstunnel, Orania City, Siegesstraße",
+      "exclusiveVersion": "-"
+    },
+    "075": {
+      "name": "Georok",
+      "type": "Gestein / Boden",
+      "evolution": "Kleinstein – Lvl 25 → Georok – Tausch → Geowaz",
+      "locations": "Azuria Höhle, Felstunnel, Siegesstraße",
+      "exclusiveVersion": "-"
+    },
+    "076": {
+      "name": "Geowaz",
+      "type": "Gestein / Boden",
+      "evolution": "Kleinstein – Lvl 25 → Georok – Tausch → Geowaz",
+      "locations": "Entwickelt sich aus Kleinstein / Georok",
+      "exclusiveVersion": "-"
+    },
+    "077": {
+      "name": "Ponita",
+      "type": "Feuer",
+      "evolution": "Ponita – Lvl 40 → Gallopa",
+      "locations": "Route 17",
+      "exclusiveVersion": "-"
+    },
+    "078": {
+      "name": "Gallopa",
+      "type": "Feuer",
+      "evolution": "Ponita – Lvl 40 → Gallopa",
+      "locations": "Route 17",
+      "exclusiveVersion": "-"
+    },
+    "079": {
+      "name": "Flegmon",
+      "type": "Wasser / Psycho",
+      "evolution": "Flegmon – Lvl 37 → Lahmus",
+      "locations": "Seeschauminseln",
+      "exclusiveVersion": "Blattgrüne"
+    },
+    "080": {
+      "name": "Lahmus",
+      "type": "Wasser / Psycho",
+      "evolution": "Flegmon – Lvl 37 → Lahmus",
+      "locations": "Seeschauminseln",
+      "exclusiveVersion": "Blattgrüne"
+    },
+    "081": {
+      "name": "Magnetilo",
+      "type": "Elektro / Stahl",
+      "evolution": "Magnetilo – Lvl 30 → Magneton",
+      "locations": "Kraftwerk",
+      "exclusiveVersion": "-"
+    },
+    "082": {
+      "name": "Magneton",
+      "type": "Elektro / Stahl",
+      "evolution": "Magnetilo – Lvl 30 → Magneton",
+      "locations": "Kraftwerk",
+      "exclusiveVersion": "-"
+    },
+    "083": {
+      "name": "Porenta",
+      "type": "Normal / Flug",
+      "evolution": "-",
+      "locations": "Route 12, 13",
+      "exclusiveVersion": "-"
+    },
+    "084": {
+      "name": "Dodu",
+      "type": "Normal / Flug",
+      "evolution": "Dodu – Lvl 31 → Dodri",
+      "locations": "Route 16, 17, 18",
+      "exclusiveVersion": "-"
+    },
+    "085": {
+      "name": "Dodri",
+      "type": "Normal / Flug",
+      "evolution": "Dodu – Lvl 31 → Dodri",
+      "locations": "Route 16, 17, 18",
+      "exclusiveVersion": "-"
+    },
+    "086": {
+      "name": "Jurob",
+      "type": "Wasser",
+      "evolution": "Jurob – Lvl 34 → Jugong",
+      "locations": "Seeschauminseln",
+      "exclusiveVersion": "-"
+    },
+    "087": {
+      "name": "Jugong",
+      "type": "Wasser / Eis",
+      "evolution": "Jurob – Lvl 34 → Jugong",
+      "locations": "Seeschauminseln",
+      "exclusiveVersion": "-"
+    },
+    "088": {
+      "name": "Sleima",
+      "type": "Gift",
+      "evolution": "Sleima – Lvl 38 → Sleimok",
+      "locations": "Zinnoberinsel, Kraftwerk, Pokémon-Villa",
+      "exclusiveVersion": "-"
+    },
+    "089": {
+      "name": "Sleimok",
+      "type": "Gift",
+      "evolution": "Sleima – Lvl 38 → Sleimok",
+      "locations": "Kraftwerk, Pokémon-Villa",
+      "exclusiveVersion": "-"
+    },
+    "090": {
+      "name": "Muschas",
+      "type": "Wasser",
+      "evolution": "Muschas – Wasserstein → Austos",
+      "locations": "Seeschauminseln",
+      "exclusiveVersion": "Feuerrote"
+    },
+    "091": {
+      "name": "Austos",
+      "type": "Wasser / Eis",
+      "evolution": "Muschas – Wasserstein → Austos",
+      "locations": "Seeschauminseln",
+      "exclusiveVersion": "Feuerrote"
+    },
+    "092": {
+      "name": "Nebulak",
+      "type": "Geist / Gift",
+      "evolution": "Nebulak – Lvl 25 → Alpollo – Tausch → Gengar",
+      "locations": "Pokémon-Turm",
+      "exclusiveVersion": "-"
+    },
+    "093": {
+      "name": "Alpollo",
+      "type": "Geist / Gift",
+      "evolution": "Nebulak – Lvl 25 → Alpollo – Tausch → Gengar",
+      "locations": "Pokémon-Turm",
+      "exclusiveVersion": "-"
+    },
+    "094": {
+      "name": "Gengar",
+      "type": "Geist / Gift",
+      "evolution": "Nebulak – Lvl 25 → Alpollo – Tausch → Gengar",
+      "locations": "Entwickelt sich aus Nebulak / Alpollo",
+      "exclusiveVersion": "-"
+    },
+    "095": {
+      "name": "Onix",
+      "type": "Gestein / Boden",
+      "evolution": "-",
+      "locations": "Mondberg, Felstunnel, Siegesstraße",
+      "exclusiveVersion": "-"
+    },
+    "096": {
+      "name": "Traumato",
+      "type": "Psycho",
+      "evolution": "Traumato – Lvl 26 → Hypno",
+      "locations": "Route 11",
+      "exclusiveVersion": "-"
+    },
+    "097": {
+      "name": "Hypno",
+      "type": "Psycho",
+      "evolution": "Traumato – Lvl 26 → Hypno",
+      "locations": "Entwickelt sich aus Traumato",
+      "exclusiveVersion": "-"
+    },
+    "098": {
+      "name": "Krabby",
+      "type": "Wasser",
+      "evolution": "Krabby – Lvl 28 → Kingler",
+      "locations": "Route 10, 12, 13",
+      "exclusiveVersion": "-"
+    },
+    "099": {
+      "name": "Kingler",
+      "type": "Wasser",
+      "evolution": "Krabby – Lvl 28 → Kingler",
+      "locations": "Route 12, 13",
+      "exclusiveVersion": "-"
+    },
+    "100": {
+      "name": "Voltobal",
+      "type": "Elektro",
+      "evolution": "Voltobal – Lvl 30 → Lektrobal",
+      "locations": "Kraftwerk",
+      "exclusiveVersion": "-"
+    },
+    "101": {
+      "name": "Lektrobal",
+      "type": "Elektro",
+      "evolution": "Voltobal – Lvl 30 → Lektrobal",
+      "locations": "Kraftwerk",
+      "exclusiveVersion": "-"
+    },
+    "102": {
+      "name": "Owei",
+      "type": "Pflanze / Psycho",
+      "evolution": "Owei – Blattstein → Kokowei",
+      "locations": "Route 23",
+      "exclusiveVersion": "-"
+    },
+    "103": {
+      "name": "Kokowei",
+      "type": "Pflanze / Psycho",
+      "evolution": "Owei – Blattstein → Kokowei",
+      "locations": "Route 23, Indigo Plateau",
+      "exclusiveVersion": "-"
+    },
+    "104": {
+      "name": "Tragosso",
+      "type": "Boden",
+      "evolution": "Tragosso – Lvl 28 → Knogga",
+      "locations": "Pokémon-Turm, Felstunnel",
+      "exclusiveVersion": "-"
+    },
+    "105": {
+      "name": "Knogga",
+      "type": "Boden",
+      "evolution": "Tragosso – Lvl 28 → Knogga",
+      "locations": "Fuchsania City",
+      "exclusiveVersion": "-"
+    },
+    "106": {
+      "name": "Kicklee",
+      "type": "Kampf",
+      "evolution": "-",
+      "locations": "Saffronia City, Siegesstraße",
+      "exclusiveVersion": "-"
+    },
+    "107": {
+      "name": "Nockchan",
+      "type": "Kampf",
+      "evolution": "-",
+      "locations": "Saffronia City, Siegesstraße",
+      "exclusiveVersion": "-"
+    },
+    "108": {
+      "name": "Schlurp",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Azuria Höhle",
+      "exclusiveVersion": "-"
+    },
+    "109": {
+      "name": "Smogon",
+      "type": "Gift",
+      "evolution": "Smogon – Lvl 35 → Smogmog",
+      "locations": "Kraftwerk, Pokémon-Villa",
+      "exclusiveVersion": "-"
+    },
+    "110": {
+      "name": "Smogmog",
+      "type": "Gift",
+      "evolution": "Smogon – Lvl 35 → Smogmog",
+      "locations": "Kraftwerk, Pokémon-Villa",
+      "exclusiveVersion": "-"
+    },
+    "111": {
+      "name": "Rihorn",
+      "type": "Boden / Gestein",
+      "evolution": "Rihorn – Lvl 42 → Rizeros",
+      "locations": "Azuria Höhle, Felstunnel, Siegesstraße",
+      "exclusiveVersion": "-"
+    },
+    "112": {
+      "name": "Rizeros",
+      "type": "Boden / Gestein",
+      "evolution": "Rihorn – Lvl 42 → Rizeros",
+      "locations": "Azuria Höhle, Siegesstraße",
+      "exclusiveVersion": "-"
+    },
+    "113": {
+      "name": "Chaneira",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Route 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, Azuria Höhle, Digda-Höhle, Mondberg, Pokémon-Turm, Kraftwerk, Siegesstraße, Pokémon-Villa",
+      "exclusiveVersion": "-"
+    },
+    "114": {
+      "name": "Tangela",
+      "type": "Pflanze",
+      "evolution": "-",
+      "locations": "Route 21",
+      "exclusiveVersion": "-"
+    },
+    "115": {
+      "name": "Kangama",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Felstunnel",
+      "exclusiveVersion": "-"
+    },
+    "116": {
+      "name": "Seeper",
+      "type": "Wasser",
+      "evolution": "Seeper – Lvl 32 → Seemon",
+      "locations": "Route 11, 12, 13",
+      "exclusiveVersion": "-"
+    },
+    "117": {
+      "name": "Seemon",
+      "type": "Wasser",
+      "evolution": "Seeper – Lvl 32 → Seemon",
+      "locations": "Route 11, 12, 13",
+      "exclusiveVersion": "-"
+    },
+    "118": {
+      "name": "Goldini",
+      "type": "Wasser",
+      "evolution": "Goldini – Lvl 33 → Golking",
+      "locations": "Route 6",
+      "exclusiveVersion": "-"
+    },
+    "119": {
+      "name": "Golking",
+      "type": "Wasser",
+      "evolution": "Goldini – Lvl 33 → Golking",
+      "locations": "Route 6",
+      "exclusiveVersion": "-"
+    },
+    "120": {
+      "name": "Sterndu",
+      "type": "Wasser",
+      "evolution": "Sterndu – Wasserstein → Starmie",
+      "locations": "Route 18, 19, 21",
+      "exclusiveVersion": "Blattgrüne"
+    },
+    "121": {
+      "name": "Starmie",
+      "type": "Wasser / Psycho",
+      "evolution": "Sterndu – Wasserstein → Starmie",
+      "locations": "Route 18, 19, 21",
+      "exclusiveVersion": "Blattgrüne"
+    },
+    "122": {
+      "name": "Pantimos",
+      "type": "Psycho / Fee",
+      "evolution": "-",
+      "locations": "Route 11",
+      "exclusiveVersion": "-"
+    },
+    "123": {
+      "name": "Sichlor",
+      "type": "Käfer / Flug",
+      "evolution": "-",
+      "locations": "Route 14, 15",
+      "exclusiveVersion": "Feuerrote"
+    },
+    "124": {
+      "name": "Rossana",
+      "type": "Eis / Psycho",
+      "evolution": "-",
+      "locations": "Seeschauminseln",
+      "exclusiveVersion": "-"
+    },
+    "125": {
+      "name": "Elektek",
+      "type": "Elektro",
+      "evolution": "-",
+      "locations": "Kraftwerk",
+      "exclusiveVersion": "Feuerrote"
+    },
+    "126": {
+      "name": "Magmar",
+      "type": "Feuer",
+      "evolution": "-",
+      "locations": "Pokémon-Villa",
+      "exclusiveVersion": "Blattgrüne"
+    },
+    "127": {
+      "name": "Pinsir",
+      "type": "Käfer",
+      "evolution": "-",
+      "locations": "Route 14, 15",
+      "exclusiveVersion": "Blattgrüne"
+    },
+    "128": {
+      "name": "Tauros",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Route 14, 15",
+      "exclusiveVersion": "-"
+    },
+    "129": {
+      "name": "Karpador",
+      "type": "Wasser",
+      "evolution": "Karpador – Lvl 20 → Garados",
+      "locations": "Route 4, 6, 10, 11, 12, 13, 18, 19, 20, 21, 22, 23, 24, 25, Azuria Höhle, Seeschauminseln",
+      "exclusiveVersion": "-"
+    },
+    "130": {
+      "name": "Garados",
+      "type": "Wasser / Flug",
+      "evolution": "Karpador – Lvl 20 → Garados",
+      "locations": "Route 20",
+      "exclusiveVersion": "-"
+    },
+    "131": {
+      "name": "Lapras",
+      "type": "Wasser / Eis",
+      "evolution": "-",
+      "locations": "Route 19, 20, Saffronia City",
+      "exclusiveVersion": "-"
+    },
+    "132": {
+      "name": "Ditto",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Azuria Höhle, Pokémon-Villa",
+      "exclusiveVersion": "-"
+    },
+    "133": {
+      "name": "Evoli",
+      "type": "Normal",
+      "evolution": "Evoli → Aquana | Evoli → Blitza | Evoli → Flamara",
+      "locations": "Route 17, Prismania City",
+      "exclusiveVersion": "-"
+    },
+    "134": {
+      "name": "Aquana",
+      "type": "Wasser",
+      "evolution": "Evoli – Wasserstein → Aquana",
+      "locations": "Entwickelt sich aus Evoli",
+      "exclusiveVersion": "-"
+    },
+    "135": {
+      "name": "Blitza",
+      "type": "Elektro",
+      "evolution": "Evoli – Donnerstein → Blitza",
+      "locations": "Entwickelt sich aus Evoli",
+      "exclusiveVersion": "-"
+    },
+    "136": {
+      "name": "Flamara",
+      "type": "Feuer",
+      "evolution": "Evoli – Feuerstein → Flamara",
+      "locations": "Entwickelt sich aus Evoli",
+      "exclusiveVersion": "-"
+    },
+    "137": {
+      "name": "Porygon",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Route 7, Silph Co.",
+      "exclusiveVersion": "-"
+    },
+    "138": {
+      "name": "Amonitas",
+      "type": "Gestein / Wasser",
+      "evolution": "Amonitas – Lvl 40 → Amoroso",
+      "locations": "Zinnoberinsel",
+      "exclusiveVersion": "-"
+    },
+    "139": {
+      "name": "Amoroso",
+      "type": "Gestein / Wasser",
+      "evolution": "Amonitas – Lvl 40 → Amoroso",
+      "locations": "Entwickelt sich aus Amonitas",
+      "exclusiveVersion": "-"
+    },
+    "140": {
+      "name": "Kabuto",
+      "type": "Gestein / Wasser",
+      "evolution": "Kabuto – Lvl 40 → Kabutops",
+      "locations": "Zinnoberinsel",
+      "exclusiveVersion": "-"
+    },
+    "141": {
+      "name": "Kabutops",
+      "type": "Gestein / Wasser",
+      "evolution": "Kabuto – Lvl 40 → Kabutops",
+      "locations": "Entwickelt sich aus Kabuto",
+      "exclusiveVersion": "-"
+    },
+    "142": {
+      "name": "Aerodactyl",
+      "type": "Gestein / Flug",
+      "evolution": "-",
+      "locations": "Zinnoberinsel",
+      "exclusiveVersion": "-"
+    },
+    "143": {
+      "name": "Relaxo",
+      "type": "Normal",
+      "evolution": "-",
+      "locations": "Route 12, 16, Azuria Höhle",
+      "exclusiveVersion": "-"
+    },
+    "144": {
+      "name": "Arktos",
+      "type": "Eis / Flug",
+      "evolution": "-",
+      "locations": "Seeschauminseln",
+      "exclusiveVersion": "-"
+    },
+    "145": {
+      "name": "Zapdos",
+      "type": "Elektro / Flug",
+      "evolution": "-",
+      "locations": "Kraftwerk",
+      "exclusiveVersion": "-"
+    },
+    "146": {
+      "name": "Lavados",
+      "type": "Feuer / Flug",
+      "evolution": "-",
+      "locations": "Siegesstraße",
+      "exclusiveVersion": "-"
+    },
+    "147": {
+      "name": "Dratini",
+      "type": "Drache",
+      "evolution": "Dratini – Lvl 30 → Dragonir – Lvl 55 → Dragoran",
+      "locations": "Route 10",
+      "exclusiveVersion": "-"
+    },
+    "148": {
+      "name": "Dragonir",
+      "type": "Drache",
+      "evolution": "Dratini – Lvl 30 → Dragonir – Lvl 55 → Dragoran",
+      "locations": "Route 10",
+      "exclusiveVersion": "-"
+    },
+    "149": {
+      "name": "Dragoran",
+      "type": "Drache / Flug",
+      "evolution": "Dratini – Lvl 30 → Dragonir – Lvl 55 → Dragoran",
+      "locations": "Route 1, 2, 3, 4, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 24, 25",
+      "exclusiveVersion": "-"
+    },
+    "150": {
+      "name": "Mewtu",
+      "type": "Psycho",
+      "evolution": "-",
+      "locations": "Azuria Höhle",
+      "exclusiveVersion": "-"
+    },
+    "151": {
+      "name": "Mew",
+      "type": "Psycho",
+      "evolution": "-",
+      "locations": "Tausch / Importieren von anderem Spiel",
+      "exclusiveVersion": "-"
+    }
   }
 }

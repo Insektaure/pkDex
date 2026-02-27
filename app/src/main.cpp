@@ -72,6 +72,7 @@ int main(int argc, char* argv[])
 
     // Register region-specific factory methods
     brls::Application::registerXMLView("KantoTab", RecyclingListTab::createKanto);
+    brls::Application::registerXMLView("KantoFrlgTab", RecyclingListTab::createKantoFrlg);
     brls::Application::registerXMLView("SinnohTab", RecyclingListTab::createSinnoh);
     brls::Application::registerXMLView("SinnohArceusTab", RecyclingListTab::createSinnohArceus);
     brls::Application::registerXMLView("GalarTab", RecyclingListTab::createGalar);

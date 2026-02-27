@@ -2,6 +2,7 @@
   "title": "pkDex - ニンテンドースイッチ用ポケモン百科事典",
   "tabs": {
     "kanto": "カントー（ポケットモンスター Let's Go! ピカチュウ・Let's Go! イーブイ）",
+    "kanto_frlg": "└ カントー (ファイアレッド & リーフグリーン)",
     "sinnoh": "シンオウ（ポケットモンスター ブリリアントダイヤモンド・シャイニングパール）",
     "sinnoh_arceus": "└ シンオウ（Pokémon LEGENDS アルセウス）",
     "galar": "ガラル（ポケットモンスター ソード・シールド）",
@@ -21,6 +22,7 @@
     "regions": {
       "all_regions": "すべての地方",
       "kanto": "カントー（LGPE）",
+      "kanto_frlg": "カントー (FRLG)",
       "sinnoh": "シンオウ（BDSP）",
       "sinnoh_arceus": "シンオウ（LEGENDS アルセウス）",
       "galar": "ガラル（ソード・シールド）",

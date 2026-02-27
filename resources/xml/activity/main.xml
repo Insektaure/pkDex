@@ -9,6 +9,10 @@
             <KantoTab/>
         </brls:Tab>
 
+        <brls:Tab label="@i18n/pkdex/tabs/kanto_frlg">
+            <KantoFrlgTab/>
+        </brls:Tab>
+
         <brls:Separator />
 
         <!-- Sinnoh Group -->

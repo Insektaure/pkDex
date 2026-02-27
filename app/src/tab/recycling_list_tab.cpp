@@ -246,6 +246,11 @@ brls::View* RecyclingListTab::createKanto()
     return new RecyclingListTab("kanto");
 }
 
+brls::View* RecyclingListTab::createKantoFrlg()
+{
+    return new RecyclingListTab("kanto_frlg");
+}
+
 brls::View* RecyclingListTab::createSinnoh()
 {
     return new RecyclingListTab("sinnoh");

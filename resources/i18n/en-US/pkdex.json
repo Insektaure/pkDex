@@ -2,6 +2,7 @@
   "title": "pkDex - A Pokemon Encyclopedia for Nintendo Switch Games",
   "tabs": {
     "kanto": "Kanto (Let's Go! Pikachu & Eevee)",
+    "kanto_frlg": "└ Kanto (FireRed & LeafGreen)",
     "sinnoh": "Sinnoh (Brilliant Diamond & Shining Pearl)",
     "sinnoh_arceus": "└ Sinnoh (Legends: Arceus)",
     "galar": "Galar (Sword & Shield)",
@@ -21,6 +22,7 @@
     "regions": {
       "all_regions": "All Regions",
       "kanto": "Kanto (LGPE)",
+      "kanto_frlg": "Kanto (FRLG)",
       "sinnoh": "Sinnoh (BDSP)",
       "sinnoh_arceus": "Sinnoh (Legends Arceus)",
       "galar": "Galar (SwSh)",
