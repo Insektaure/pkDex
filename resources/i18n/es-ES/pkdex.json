@@ -108,9 +108,9 @@
   "listing": {
     "previous_page": "< Página",
     "next_page": "Página >",
-    "toggle_capture_status": "Estado captura",
-    "bulk_actions": "Acciones masivas",
-    "multi_select": "Multi-selección"
+    "toggle_capture_status": "Estado",
+    "bulk_actions": "Todos",
+    "multi_select": "Selección"
   },
   "bulk_actions": {
     "title": "Acciones masivas",

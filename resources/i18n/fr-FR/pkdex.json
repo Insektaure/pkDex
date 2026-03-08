@@ -108,9 +108,9 @@
   "listing": {
     "previous_page": "< Page",
     "next_page": "Page >",
-    "toggle_capture_status": "Statut capture",
-    "bulk_actions": "Actions groupées",
-    "multi_select": "Multi-sélection"
+    "toggle_capture_status": "Statut",
+    "bulk_actions": "Tous",
+    "multi_select": "Sélection"
   },
   "bulk_actions": {
     "title": "Actions groupées",
