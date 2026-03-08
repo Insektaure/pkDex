@@ -450,11 +450,7 @@ bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
             cell->registerClickAction([=](brls::View*) {
                 menuDialog->close([=] {
                     pkdex::PokemonTracker::bulkSetCaptureState(region, selectedDexNumbers, stateIndex, value);
-                    brls::IndexPath sel = getFocusedIndexPath();
-                    multiSelectMode = false;
-                    selectedIndices.clear();
-                    updateMultiSelectLabel();
-                    refreshRecycler(sel);
+                    refreshRecycler(getFocusedIndexPath());
                 });
                 return true;
             });
