@@ -1,4 +1,4 @@
-## Version 1.6.5 (2026-03-08)
+## Version 1.6.5 (2026-03-09)
 - Add tracker bulk option to set all Pokemon inside a region as Caught / Shiny / Alpha / Shiny Alpha
 - Add tracker multi-select option to apply captured status to multiple Pokemon at once (enter mode with ZL, select with A, then apply status with Y)
 
