@@ -252,6 +252,54 @@ CaptureStates PokemonTracker::toggleCaptureState(const std::string& region, cons
     return states;
 }
 
+void PokemonTracker::bulkSetCaptureState(const std::string& region, const std::vector<std::string>& regionalDexNumbers, int stateIndex, bool value) {
+    // Read the tracker file once
+    auto tracker = readTrackerFile(region);
+
+    // Update all entries
+    for (const auto& dexNumber : regionalDexNumbers) {
+        std::string key = generateKey(region, dexNumber);
+        CaptureStates states;
+
+        auto it = tracker.find(key);
+        if (it != tracker.end()) {
+            // Parse existing states
+            std::istringstream ss(it->second);
+            std::string token;
+            int idx = 0;
+            while (std::getline(ss, token, ',') && idx < 4) {
+                bool val = (token == "1");
+                switch (idx) {
+                    case 0: states.normal = val; break;
+                    case 1: states.shiny = val; break;
+                    case 2: states.alpha = val; break;
+                    case 3: states.shinyAlpha = val; break;
+                }
+                idx++;
+            }
+        }
+
+        // Set the specific state
+        switch (stateIndex) {
+            case 0: states.normal = value; break;
+            case 1: states.shiny = value; break;
+            case 2: states.alpha = value; break;
+            case 3: states.shinyAlpha = value; break;
+            default: break;
+        }
+
+        // Convert back to string
+        std::string stateStr = std::string(states.normal ? "1" : "0") + "," +
+                               (states.shiny ? "1" : "0") + "," +
+                               (states.alpha ? "1" : "0") + "," +
+                               (states.shinyAlpha ? "1" : "0");
+        tracker[key] = stateStr;
+    }
+
+    // Write the tracker file once
+    writeTrackerFile(region, tracker);
+}
+
 bool PokemonTracker::resetAllCaptureStatus() {
     bool success = true;
     std::map<std::string, std::string> emptyTracker;

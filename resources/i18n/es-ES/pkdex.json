@@ -79,7 +79,7 @@
     "img_pack_download_complete": "¡Descarga completa!\n\nLas imágenes en alta resolución ya están disponibles para extraer.\n\nUsa el botón 'Extraer paquete de imágenes en alta resolución' en Configuración."
   },
   "about": {
-    "title": "pkDex\nv1.6.4",
+    "title": "pkDex\nv1.6.5",
     "description": "pkDex es una app sencilla para ver datos de Pokémon sin conexión, para los juegos de Nintendo Switch.",
     "github": "Encuéntralo en github.com/Insektaure/pkDex",
     "licence": "Licenciado bajo Apache 2.0",
@@ -108,7 +108,20 @@
   "listing": {
     "previous_page": "< Página",
     "next_page": "Página >",
-    "toggle_capture_status": "Estado de captura"
+    "toggle_capture_status": "Estado captura",
+    "bulk_actions": "Acciones masivas"
+  },
+  "bulk_actions": {
+    "title": "Acciones masivas",
+    "confirm": "¿Estás seguro? Esto afectará a {count} Pokémon.\nEsta acción no se puede deshacer.",
+    "mark_all_caught": "Marcar todos como Capturados",
+    "mark_all_shiny": "Marcar todos como Brillantes",
+    "mark_all_alpha": "Marcar todos como Alfa",
+    "mark_all_shiny_alpha": "Marcar todos como Alfa Brillante",
+    "clear_all_caught": "Borrar todos los Capturados",
+    "clear_all_shiny": "Borrar todos los Brillantes",
+    "clear_all_alpha": "Borrar todos los Alfa",
+    "clear_all_shiny_alpha": "Borrar todos los Alfa Brillantes"
   },
   "capture_toggle": {
     "title": "Estado de captura",

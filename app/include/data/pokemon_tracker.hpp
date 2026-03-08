@@ -42,6 +42,16 @@ public:
     static CaptureStates toggleCaptureState(const std::string& region, const std::string& regionalDexNumber, int stateIndex);
 
     /**
+     * @brief Set a specific capture state for multiple Pokémon at once
+     *
+     * @param region The region of the Pokémon
+     * @param regionalDexNumbers The regional dex numbers of the Pokémon to update
+     * @param stateIndex 0=normal, 1=shiny, 2=alpha, 3=shinyAlpha
+     * @param value The value to set (true=caught, false=not caught)
+     */
+    static void bulkSetCaptureState(const std::string& region, const std::vector<std::string>& regionalDexNumbers, int stateIndex, bool value);
+
+    /**
      * @brief Reset all Pokémon capture statuses for all regions
      * 
      * @return bool True if the operation was successful, false otherwise

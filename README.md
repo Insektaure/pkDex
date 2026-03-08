@@ -39,6 +39,7 @@ The developers are not responsible for any issues that may arise from using this
   - Caught Pokémon are highlighted in the list with icons for easy identification
   - Toggle caught status by pressing the `Y` button on the list entry
   - Can track Regular, Shiny, Alpha & Shiny Alpha separately (if available in selected game)
+  - **Bulk Actions**: Press the `X` button to mark or clear an entire region's dex at once (e.g. mark all as Caught, clear all Shiny, etc.)
   - Ability to reset caught status for all Pokémon from the `settings` menu
   - Ability to reset caught status for specific Region from the `settings` menu
   - Caught status is saved in a `pkDex.tracker.{REGION}.ini` file in the `/switch/pkDex` directory (1 file per region)
@@ -75,12 +76,13 @@ The developers are not responsible for any issues that may arise from using this
     - Location information
     - Version exclusivity
 5. Press the `Y` button to open a Pokémon tracker menu to mark or unmark a Pokémon as caught.
-6. Marking a Pokémon as caught will create a `pkDex.tracker.{REGION}.ini` file in the `/switch/pkDex` directory.\
-   Unmarking a Pokémon will set the corresponding line in `pkDex.tracker.{REGION}.ini` file accordingly. 
-7. Use the settings menu to enable or disable automatic new version checks & check for available updates manually. 
-8. Use the settings menu to download updates directly from the application (requires the `pkDexUpdater` application to be present to use update file). 
-9. Use the included updater application (`pkDexUpdater.nro`) to apply the downloaded update file.
-10. Use the settings menu to Download & Extract the High Resolution images pack directly from the application (requires an internet connection).
+6. Press the `X` button to open the Bulk Actions menu, allowing you to mark or clear capture status for all Pokémon in the current region at once.
+7. Marking a Pokémon as caught will create a `pkDex.tracker.{REGION}.ini` file in the `/switch/pkDex` directory.\
+   Unmarking a Pokémon will set the corresponding line in `pkDex.tracker.{REGION}.ini` file accordingly.
+8. Use the settings menu to enable or disable automatic new version checks & check for available updates manually.
+9. Use the settings menu to download updates directly from the application (requires the `pkDexUpdater` application to be present to use update file).
+10. Use the included updater application (`pkDexUpdater.nro`) to apply the downloaded update file.
+11. Use the settings menu to Download & Extract the High Resolution images pack directly from the application (requires an internet connection).
 
 ## How to Update
 

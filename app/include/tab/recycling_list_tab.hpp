@@ -89,6 +89,9 @@ class RecyclingListTab : public brls::Box
     // Toggle capture status of the currently selected Pokemon
     bool toggleCaptureStatus(brls::View* view);
 
+    // Open bulk actions dialog for the current region
+    bool openBulkActionsDialog(brls::View* view);
+
     // Jump to previous/next page (30 rows) using L/R buttons
     bool jumpToPreviousPage(brls::View* view);
     bool jumpToNextPage(brls::View* view);

@@ -79,7 +79,7 @@
     "img_pack_download_complete": "ダウンロード完了！\n\n高解像度画像が展開可能です。\n\n設定の「高解像度画像パックを展開」ボタンを使用してください。"
   },
   "about": {
-    "title": "pkDex\nv1.6.4",
+    "title": "pkDex\nv1.6.5",
     "description": "pkDexは、ニンテンドースイッチ用ポケモンゲームのデータをオフラインで閲覧できるシンプルなアプリです。",
     "github": "github.com/Insektaure/pkDex で公開中",
     "licence": "Apache 2.0 ライセンス",
@@ -108,7 +108,20 @@
   "listing": {
     "previous_page": "前のページ",
     "next_page": "次のページ",
-    "toggle_capture_status": "捕獲状況を切り替え"
+    "toggle_capture_status": "捕獲状況",
+    "bulk_actions": "一括操作"
+  },
+  "bulk_actions": {
+    "title": "一括操作",
+    "confirm": "本当によろしいですか？{count}匹のポケモンに影響します。\nこの操作は元に戻せません。",
+    "mark_all_caught": "すべてを捕獲済みにする",
+    "mark_all_shiny": "すべてを色違い捕獲済みにする",
+    "mark_all_alpha": "すべてをオヤブン捕獲済みにする",
+    "mark_all_shiny_alpha": "すべてを色違いオヤブン捕獲済みにする",
+    "clear_all_caught": "すべての捕獲済みをクリア",
+    "clear_all_shiny": "すべての色違いをクリア",
+    "clear_all_alpha": "すべてのオヤブンをクリア",
+    "clear_all_shiny_alpha": "すべての色違いオヤブンをクリア"
   },
   "capture_toggle": {
     "title": "捕獲状況を切り替え",

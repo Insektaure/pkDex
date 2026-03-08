@@ -79,7 +79,7 @@
     "img_pack_download_complete": "Download completato!\n\nLe immagini ad alta risoluzione sono ora disponibili per l'estrazione.\n\nUsa il pulsante 'Estrai pacchetto immagini ad alta risoluzione' nelle Impostazioni."
   },
   "about": {
-    "title": "pkDex\nv1.6.4",
+    "title": "pkDex\nv1.6.5",
     "description": "pkDex è un'app semplice per visualizzare dati Pokémon offline, per i giochi Nintendo Switch.",
     "github": "Trovalo su github.com/Insektaure/pkDex",
     "licence": "Concesso in licenza Apache 2.0",
@@ -108,7 +108,20 @@
   "listing": {
     "previous_page": "< Pagina",
     "next_page": "Pagina >",
-    "toggle_capture_status": "Cambia stato di cattura"
+    "toggle_capture_status": "Stato cattura",
+    "bulk_actions": "Azioni di massa"
+  },
+  "bulk_actions": {
+    "title": "Azioni di massa",
+    "confirm": "Sei sicuro? Questo interesserà {count} Pokémon.\nQuesta azione non può essere annullata.",
+    "mark_all_caught": "Segna tutti come Catturati",
+    "mark_all_shiny": "Segna tutti come Cromatici",
+    "mark_all_alpha": "Segna tutti come Alfa",
+    "mark_all_shiny_alpha": "Segna tutti come Alfa Cromatici",
+    "clear_all_caught": "Cancella tutti i Catturati",
+    "clear_all_shiny": "Cancella tutti i Cromatici",
+    "clear_all_alpha": "Cancella tutti gli Alfa",
+    "clear_all_shiny_alpha": "Cancella tutti gli Alfa Cromatici"
   },
   "capture_toggle": {
     "title": "Stato di cattura",

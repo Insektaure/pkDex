@@ -79,7 +79,7 @@
     "img_pack_download_complete": "Téléchargement terminé !\n\nLes images haute résolution sont maintenant disponibles pour l'extraction.\n\nUtilisez le bouton « Extraire le pack d'images HD » dans les paramètres."
   },
   "about": {
-    "title": "pkDex\nv1.6.4",
+    "title": "pkDex\nv1.6.5",
     "description": "pkDex est une application simple pour consulter les données Pokémon hors ligne, pour les jeux Nintendo Switch.",
     "github": "Retrouvez-le sur github.com/Insektaure/pkDex",
     "licence": "Sous licence Apache 2.0",
@@ -108,7 +108,20 @@
   "listing": {
     "previous_page": "< Page",
     "next_page": "Page >",
-    "toggle_capture_status": "Changer le statut de capture"
+    "toggle_capture_status": "Statut capture",
+    "bulk_actions": "Actions groupées"
+  },
+  "bulk_actions": {
+    "title": "Actions groupées",
+    "confirm": "Êtes-vous sûr ? Cela affectera {count} Pokémon.\nCette action est irréversible.",
+    "mark_all_caught": "Tout marquer comme Capturé",
+    "mark_all_shiny": "Tout marquer comme Chromatique",
+    "mark_all_alpha": "Tout marquer comme Baron",
+    "mark_all_shiny_alpha": "Tout marquer comme Baron Chromatique",
+    "clear_all_caught": "Effacer tous les Capturés",
+    "clear_all_shiny": "Effacer tous les Chromatiques",
+    "clear_all_alpha": "Effacer tous les Barons",
+    "clear_all_shiny_alpha": "Effacer tous les Barons Chromatiques"
   },
   "capture_toggle": {
     "title": "Statut de capture",

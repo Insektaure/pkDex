@@ -156,6 +156,10 @@ RecyclingListTab::RecyclingListTab(const std::string& region)
     // Register Y button action for toggling capture status
     this->registerAction("pkdex/listing/toggle_capture_status"_i18n, brls::BUTTON_Y,
         std::bind(&RecyclingListTab::toggleCaptureStatus, this, std::placeholders::_1), false, true);
+
+    // Register X button action for bulk actions
+    this->registerAction("pkdex/listing/bulk_actions"_i18n, brls::BUTTON_X,
+        std::bind(&RecyclingListTab::openBulkActionsDialog, this, std::placeholders::_1), false, true);
 }
 
 void RecyclingListTab::loadPokemonData(const std::string& region)
@@ -370,6 +374,119 @@ bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
 
     menuDialog->registerAction("close"_i18n, brls::BUTTON_B, [=](brls::View*) {
     menuDialog->close([=] {});
+        return true;
+    }, true);
+    menuDialog->open();
+    return true;
+}
+
+bool RecyclingListTab::openBulkActionsDialog(brls::View* view)
+{
+    // Build a list of all regional dex numbers for the current region
+    std::vector<std::string> allDexNumbers;
+    for (const auto& pokemon : pokemons) {
+        allDexNumbers.push_back(pokemon.regionalDexNumber);
+    }
+
+    int totalCount = allDexNumbers.size();
+    std::string region = currentRegion;
+    bool hasAlpha = (region == "sinnoh_arceus" || region == "kalos_lza" || region == "hyperspace_lumiose");
+
+    // Save current selection and scroll position for restoration after bulk action
+    brls::View* focusedView = brls::Application::getCurrentFocus();
+    brls::RecyclerCell* focusedCell = dynamic_cast<brls::RecyclerCell*>(focusedView);
+    brls::IndexPath currentSelection;
+    if (focusedCell)
+        currentSelection = focusedCell->getIndexPath();
+    else
+        currentSelection = this->dataSource->getCurrentSelection();
+
+    // Create the bulk actions menu
+    auto* menuBox = new brls::Box();
+    menuBox->setAxis(brls::Axis::COLUMN);
+    menuBox->setPadding(24);
+
+    auto* titleLabel = new brls::Label();
+    titleLabel->setText("pkdex/bulk_actions/title"_i18n);
+    titleLabel->setHorizontalAlign(brls::HorizontalAlign::CENTER);
+    titleLabel->setFontSize(28);
+    titleLabel->setMaxHeight(48);
+    menuBox->addView(titleLabel);
+
+    auto* spacer = new brls::Box();
+    spacer->setAxis(brls::Axis::COLUMN);
+    spacer->setMinHeight(24);
+    spacer->setMaxHeight(24);
+    menuBox->addView(spacer);
+
+    auto* menuDialog = new brls::Dialog(menuBox);
+    menuDialog->setCancelable(true);
+
+    // Helper to add a bulk action button that shows a confirmation dialog
+    auto addBulkAction = [=](const std::string& label, int stateIndex, bool value) {
+        auto* cell = new brls::DetailCell();
+        cell->setText(label);
+        cell->setDetailText(std::to_string(totalCount) + " Pokémon");
+        cell->registerClickAction([=](brls::View*) {
+            // Close the bulk actions menu, then show confirmation
+            menuDialog->close([=] {
+                std::string confirmMsg = "pkdex/bulk_actions/confirm"_i18n;
+                // Replace {count} with the actual count
+                std::string countStr = std::to_string(totalCount);
+                size_t pos = confirmMsg.find("{count}");
+                if (pos != std::string::npos) {
+                    confirmMsg.replace(pos, 7, countStr);
+                }
+
+                auto* confirmDialog = new brls::Dialog(confirmMsg);
+                confirmDialog->setCancelable(true);
+                confirmDialog->addButton("pkdex/common/cancel"_i18n, []() {});
+                confirmDialog->addButton("pkdex/common/ok"_i18n, [=]() {
+                    // Perform the bulk action
+                    pkdex::PokemonTracker::bulkSetCaptureState(region, allDexNumbers, stateIndex, value);
+
+                    // Refresh the recycler
+                    float contentOffset = recycler->getContentOffsetY();
+                    recycler->reloadData();
+                    recycler->invalidate();
+                    recycler->setDefaultCellFocus(currentSelection);
+                    this->dataSource->setCurrentSelection(currentSelection);
+                    recycler->setContentOffsetY(contentOffset, false);
+                    recycler->selectRowAt(currentSelection, false);
+                    brls::Application::giveFocus(recycler);
+                });
+                confirmDialog->open();
+            });
+            return true;
+        });
+        menuBox->addView(cell);
+    };
+
+    // "Mark all as" actions
+    addBulkAction("pkdex/bulk_actions/mark_all_caught"_i18n, 0, true);
+    addBulkAction("pkdex/bulk_actions/mark_all_shiny"_i18n, 1, true);
+    if (hasAlpha) {
+        addBulkAction("pkdex/bulk_actions/mark_all_alpha"_i18n, 2, true);
+        addBulkAction("pkdex/bulk_actions/mark_all_shiny_alpha"_i18n, 3, true);
+    }
+
+    // Separator
+    auto* separator = new brls::Box();
+    separator->setAxis(brls::Axis::COLUMN);
+    separator->setMinHeight(16);
+    separator->setMaxHeight(16);
+    menuBox->addView(separator);
+
+    // "Clear all" actions
+    addBulkAction("pkdex/bulk_actions/clear_all_caught"_i18n, 0, false);
+    addBulkAction("pkdex/bulk_actions/clear_all_shiny"_i18n, 1, false);
+    if (hasAlpha) {
+        addBulkAction("pkdex/bulk_actions/clear_all_alpha"_i18n, 2, false);
+        addBulkAction("pkdex/bulk_actions/clear_all_shiny_alpha"_i18n, 3, false);
+    }
+
+    menuDialog->registerAction("close"_i18n, brls::BUTTON_B, [=](brls::View*) {
+        menuDialog->close([=] {});
         return true;
     }, true);
     menuDialog->open();
