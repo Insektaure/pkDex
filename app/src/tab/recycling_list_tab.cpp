@@ -164,6 +164,11 @@ RecyclingListTab::RecyclingListTab(const std::string& region)
     // Inflate the tab from the XML file
     this->inflateFromXMLRes("xml/tabs/recycling_list.xml");
 
+    // Style the multi-select label
+    multiSelectLabel->setHorizontalAlign(brls::HorizontalAlign::CENTER);
+    multiSelectLabel->setFontSize(18);
+    multiSelectLabel->setMargins(8, 16, 8, 16);
+
     // Load Pokemon data from the specified region
     loadPokemonData(region);
 
@@ -358,12 +363,26 @@ void RecyclingListTab::refreshRecycler(const brls::IndexPath& sel)
     brls::Application::giveFocus(recycler);
 }
 
+void RecyclingListTab::updateMultiSelectLabel()
+{
+    if (multiSelectMode) {
+        std::string text = "pkdex/listing/multi_select"_i18n;
+        text += " — " + std::to_string(selectedIndices.size()) + " / " + std::to_string(pokemons.size());
+        multiSelectLabel->setText(text);
+        multiSelectLabel->setVisibility(brls::Visibility::VISIBLE);
+    } else {
+        multiSelectLabel->setVisibility(brls::Visibility::GONE);
+    }
+}
+
 bool RecyclingListTab::toggleMultiSelectMode(brls::View* view)
 {
     multiSelectMode = !multiSelectMode;
 
     if (!multiSelectMode) {
         exitMultiSelectMode();
+    } else {
+        updateMultiSelectLabel();
     }
     return true;
 }
@@ -374,6 +393,7 @@ void RecyclingListTab::toggleIndexSelection(int index)
         selectedIndices.erase(index);
     else
         selectedIndices.insert(index);
+    updateMultiSelectLabel();
 }
 
 void RecyclingListTab::exitMultiSelectMode()
@@ -381,6 +401,7 @@ void RecyclingListTab::exitMultiSelectMode()
     brls::IndexPath sel = getFocusedIndexPath();
     multiSelectMode = false;
     selectedIndices.clear();
+    updateMultiSelectLabel();
     refreshRecycler(sel);
 }
 
@@ -432,6 +453,7 @@ bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
                     brls::IndexPath sel = getFocusedIndexPath();
                     multiSelectMode = false;
                     selectedIndices.clear();
+                    updateMultiSelectLabel();
                     refreshRecycler(sel);
                 });
                 return true;

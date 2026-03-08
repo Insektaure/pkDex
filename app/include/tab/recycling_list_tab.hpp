@@ -120,6 +120,10 @@ class RecyclingListTab : public brls::Box
     // Ensure the cell at the given index path is fully visible
     void ensureCellVisible(const brls::IndexPath& indexPath);
 
+    // Update the multi-select label text and visibility
+    void updateMultiSelectLabel();
+
+    BRLS_BIND(brls::Label, multiSelectLabel, "multiSelectLabel");
     BRLS_BIND(brls::RecyclerFrame, recycler, "recycler");
     DataSource* dataSource;
 };

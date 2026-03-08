@@ -1,6 +1,13 @@
 <brls:Box
     width="auto"
-    height="auto">
+    height="auto"
+    axis="column">
+
+    <brls:Label
+        id="multiSelectLabel"
+        width="auto"
+        height="auto"
+        visibility="gone"/>
 
     <brls:RecyclerFrame
         id="recycler"
