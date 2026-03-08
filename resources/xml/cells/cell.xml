@@ -5,6 +5,14 @@
     paddingTop="12.5"
     paddingBottom="12.5">
 
+    <brls:Rectangle
+        id="selectIndicator"
+        width="4px"
+        height="44px"
+        visibility="gone"
+        marginLeft="4px"
+        marginRight="4px"/>
+
     <brls:Image
         id="image"
         width="44px"

@@ -3,6 +3,7 @@
 #include <borealis.hpp>
 #include <borealis/views/button.hpp>
 #include <map>
+#include <set>
 
 class RecyclerHeader
     : public brls::RecyclerHeader
@@ -17,6 +18,7 @@ class RecyclerCell
 
 
   BRLS_BIND(brls::Rectangle, accent, "brls/sidebar/item_accent");
+  BRLS_BIND(brls::Rectangle, selectIndicator, "selectIndicator");
   BRLS_BIND(brls::Label, label, "title");
   BRLS_BIND(brls::Image, image, "image");
   BRLS_BIND(brls::Image, rightIcon, "rightIcon");
@@ -82,11 +84,27 @@ class RecyclingListTab : public brls::Box
     // Get the current region
     std::string getCurrentRegion() const { return currentRegion; }
 
+    // Multi-select mode
+    bool isMultiSelectMode() const { return multiSelectMode; }
+    bool isIndexSelected(int index) const { return selectedIndices.count(index) > 0; }
+    void toggleIndexSelection(int index);
+    void exitMultiSelectMode();
+
+    // Refresh the recycler and restore focus to the given index path
+    void refreshRecycler(const brls::IndexPath& sel);
+
   private:
     // Current region
     std::string currentRegion;
 
-    // Toggle capture status of the currently selected Pokemon
+    // Multi-select state
+    bool multiSelectMode = false;
+    std::set<int> selectedIndices;
+
+    // Toggle multi-select mode on/off
+    bool toggleMultiSelectMode(brls::View* view);
+
+    // Toggle capture status of the currently selected Pokemon (or multi-selected)
     bool toggleCaptureStatus(brls::View* view);
 
     // Open bulk actions dialog for the current region
@@ -95,6 +113,9 @@ class RecyclingListTab : public brls::Box
     // Jump to previous/next page (30 rows) using L/R buttons
     bool jumpToPreviousPage(brls::View* view);
     bool jumpToNextPage(brls::View* view);
+
+    // Get the index path of the currently focused cell
+    brls::IndexPath getFocusedIndexPath();
 
     // Ensure the cell at the given index path is fully visible
     void ensureCellVisible(const brls::IndexPath& indexPath);

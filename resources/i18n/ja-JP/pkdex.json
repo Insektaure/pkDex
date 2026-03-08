@@ -109,7 +109,8 @@
     "previous_page": "前のページ",
     "next_page": "次のページ",
     "toggle_capture_status": "捕獲状況",
-    "bulk_actions": "一括操作"
+    "bulk_actions": "一括操作",
+    "multi_select": "複数選択"
   },
   "bulk_actions": {
     "title": "一括操作",

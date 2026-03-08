@@ -109,7 +109,8 @@
     "previous_page": "< Pagina",
     "next_page": "Pagina >",
     "toggle_capture_status": "Stato cattura",
-    "bulk_actions": "Azioni di massa"
+    "bulk_actions": "Azioni di massa",
+    "multi_select": "Multi-selezione"
   },
   "bulk_actions": {
     "title": "Azioni di massa",

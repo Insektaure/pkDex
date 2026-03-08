@@ -109,7 +109,8 @@
     "previous_page": "< Seite",
     "next_page": "Seite >",
     "toggle_capture_status": "Fangstatus",
-    "bulk_actions": "Massenaktionen"
+    "bulk_actions": "Massenaktionen",
+    "multi_select": "Mehrfachauswahl"
   },
   "bulk_actions": {
     "title": "Massenaktionen",

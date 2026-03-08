@@ -109,7 +109,8 @@
     "previous_page": "< Página",
     "next_page": "Página >",
     "toggle_capture_status": "Estado captura",
-    "bulk_actions": "Acciones masivas"
+    "bulk_actions": "Acciones masivas",
+    "multi_select": "Multi-selección"
   },
   "bulk_actions": {
     "title": "Acciones masivas",

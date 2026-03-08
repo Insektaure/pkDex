@@ -69,6 +69,14 @@ brls::RecyclerCell* DataSource::cellForRow(brls::RecyclerFrame* recycler, brls::
     item->label->setText(pokemons[actualIndex].regionalDexNumber + " - " + pokemons[actualIndex].name);
     item->image->setImageFromRes("img/pokemon/icons/" + pokemons[actualIndex].id + ".png");
 
+    // Show/hide multi-select indicator
+    if (parentTab && parentTab->isMultiSelectMode() && parentTab->isIndexSelected(actualIndex)) {
+        item->selectIndicator->setColor(nvgRGB(0, 255, 200));
+        item->selectIndicator->setVisibility(brls::Visibility::VISIBLE);
+    } else {
+        item->selectIndicator->setVisibility(brls::Visibility::GONE);
+    }
+
     // Set up to four icons for tracked states
     std::vector<std::string> iconPaths;
     if (captureStates.normal)
@@ -112,14 +120,34 @@ void DataSource::didSelectRowAt(brls::RecyclerFrame* recycler, brls::IndexPath i
     // Update the current selection
     currentSelection = indexPath;
 
-    // Get the current region from the parent tab
-    std::string region = "paldea"; // Default to paldea if we can't get the region
+    // Get the parent tab
     RecyclingListTab* parentTab = dynamic_cast<RecyclingListTab*>(recycler->getParent());
-    if (parentTab) {
-        region = parentTab->getCurrentRegion();    }
 
-    // Calculate the actual index based on section and row, same as in cellForRow
+    // Calculate the actual index based on section and row
     int actualIndex = indexPath.section * 30 + indexPath.row;
+
+    // In multi-select mode, A button toggles selection instead of opening detail
+    if (parentTab && parentTab->isMultiSelectMode()) {
+        parentTab->toggleIndexSelection(actualIndex);
+        // Update just this cell's indicator without full reload
+        brls::View* focusedView = brls::Application::getCurrentFocus();
+        RecyclerCell* cell = dynamic_cast<RecyclerCell*>(focusedView);
+        if (cell) {
+            if (parentTab->isIndexSelected(actualIndex)) {
+                cell->selectIndicator->setColor(nvgRGB(0, 255, 200));
+                cell->selectIndicator->setVisibility(brls::Visibility::VISIBLE);
+            } else {
+                cell->selectIndicator->setVisibility(brls::Visibility::GONE);
+            }
+        }
+        return;
+    }
+
+    // Normal mode: open detail view
+    std::string region = "paldea";
+    if (parentTab) {
+        region = parentTab->getCurrentRegion();
+    }
     recycler->present(new PokemonView(pokemons[actualIndex], actualIndex, region));
 }
 
@@ -160,6 +188,10 @@ RecyclingListTab::RecyclingListTab(const std::string& region)
     // Register X button action for bulk actions
     this->registerAction("pkdex/listing/bulk_actions"_i18n, brls::BUTTON_X,
         std::bind(&RecyclingListTab::openBulkActionsDialog, this, std::placeholders::_1), false, true);
+
+    // Register ZL button action for toggling multi-select mode
+    this->registerAction("pkdex/listing/multi_select"_i18n, brls::BUTTON_LT,
+        std::bind(&RecyclingListTab::toggleMultiSelectMode, this, std::placeholders::_1), false, true);
 }
 
 void RecyclingListTab::loadPokemonData(const std::string& region)
@@ -305,42 +337,158 @@ brls::View* RecyclingListTab::createHyperspaceLumiose()
     return new RecyclingListTab("hyperspace_lumiose");
 }
 
-bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
+brls::IndexPath RecyclingListTab::getFocusedIndexPath()
 {
-    // Get the currently focused view
     brls::View* focusedView = brls::Application::getCurrentFocus();
     brls::RecyclerCell* focusedCell = dynamic_cast<brls::RecyclerCell*>(focusedView);
-    brls::IndexPath currentSelection;
     if (focusedCell)
-        currentSelection = focusedCell->getIndexPath();
-    else
-        currentSelection = this->dataSource->getCurrentSelection();
+        return focusedCell->getIndexPath();
+    return this->dataSource->getCurrentSelection();
+}
 
+void RecyclingListTab::refreshRecycler(const brls::IndexPath& sel)
+{
+    float contentOffset = recycler->getContentOffsetY();
+    recycler->reloadData();
+    recycler->invalidate();
+    recycler->setDefaultCellFocus(sel);
+    this->dataSource->setCurrentSelection(sel);
+    recycler->setContentOffsetY(contentOffset, false);
+    recycler->selectRowAt(sel, false);
+    brls::Application::giveFocus(recycler);
+}
+
+bool RecyclingListTab::toggleMultiSelectMode(brls::View* view)
+{
+    multiSelectMode = !multiSelectMode;
+
+    if (!multiSelectMode) {
+        exitMultiSelectMode();
+    }
+    return true;
+}
+
+void RecyclingListTab::toggleIndexSelection(int index)
+{
+    if (selectedIndices.count(index) > 0)
+        selectedIndices.erase(index);
+    else
+        selectedIndices.insert(index);
+}
+
+void RecyclingListTab::exitMultiSelectMode()
+{
+    brls::IndexPath sel = getFocusedIndexPath();
+    multiSelectMode = false;
+    selectedIndices.clear();
+    refreshRecycler(sel);
+}
+
+bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
+{
+    brls::IndexPath currentSelection = getFocusedIndexPath();
+
+    // Multi-select mode: apply to all selected Pokémon
+    if (multiSelectMode && !selectedIndices.empty()) {
+        std::vector<std::string> selectedDexNumbers;
+        for (int idx : selectedIndices) {
+            selectedDexNumbers.push_back(pokemons[idx].regionalDexNumber);
+        }
+
+        int selectedCount = selectedDexNumbers.size();
+        std::string region = currentRegion;
+        bool hasAlpha = (region == "sinnoh_arceus" || region == "kalos_lza" || region == "hyperspace_lumiose");
+
+        // Build a dialog similar to bulk actions but for selected Pokémon
+        auto* menuBox = new brls::Box();
+        menuBox->setAxis(brls::Axis::COLUMN);
+        menuBox->setPadding(24);
+
+        auto* titleLabel = new brls::Label();
+        std::string title = "pkdex/capture_toggle/title"_i18n;
+        title += " (" + std::to_string(selectedCount) + ")";
+        titleLabel->setText(title);
+        titleLabel->setHorizontalAlign(brls::HorizontalAlign::CENTER);
+        titleLabel->setFontSize(28);
+        titleLabel->setMaxHeight(48);
+        menuBox->addView(titleLabel);
+
+        auto* spacer = new brls::Box();
+        spacer->setAxis(brls::Axis::COLUMN);
+        spacer->setMinHeight(24);
+        spacer->setMaxHeight(24);
+        menuBox->addView(spacer);
+
+        auto* menuDialog = new brls::Dialog(menuBox);
+        menuDialog->setCancelable(true);
+
+        auto addMultiToggle = [=](const std::string& label, int stateIndex, bool value) {
+            auto* cell = new brls::DetailCell();
+            cell->setText(label);
+            cell->setDetailText(std::to_string(selectedCount) + " Pokémon");
+            cell->registerClickAction([=](brls::View*) {
+                menuDialog->close([=] {
+                    pkdex::PokemonTracker::bulkSetCaptureState(region, selectedDexNumbers, stateIndex, value);
+                    brls::IndexPath sel = getFocusedIndexPath();
+                    multiSelectMode = false;
+                    selectedIndices.clear();
+                    refreshRecycler(sel);
+                });
+                return true;
+            });
+            menuBox->addView(cell);
+        };
+
+        addMultiToggle("pkdex/bulk_actions/mark_all_caught"_i18n, 0, true);
+        addMultiToggle("pkdex/bulk_actions/mark_all_shiny"_i18n, 1, true);
+        if (hasAlpha) {
+            addMultiToggle("pkdex/bulk_actions/mark_all_alpha"_i18n, 2, true);
+            addMultiToggle("pkdex/bulk_actions/mark_all_shiny_alpha"_i18n, 3, true);
+        }
+
+        auto* separator = new brls::Box();
+        separator->setAxis(brls::Axis::COLUMN);
+        separator->setMinHeight(16);
+        separator->setMaxHeight(16);
+        menuBox->addView(separator);
+
+        addMultiToggle("pkdex/bulk_actions/clear_all_caught"_i18n, 0, false);
+        addMultiToggle("pkdex/bulk_actions/clear_all_shiny"_i18n, 1, false);
+        if (hasAlpha) {
+            addMultiToggle("pkdex/bulk_actions/clear_all_alpha"_i18n, 2, false);
+            addMultiToggle("pkdex/bulk_actions/clear_all_shiny_alpha"_i18n, 3, false);
+        }
+
+        menuDialog->registerAction("close"_i18n, brls::BUTTON_B, [=](brls::View*) {
+            menuDialog->close([=] {});
+            return true;
+        }, true);
+        menuDialog->open();
+        return true;
+    }
+
+    // Single-select mode: original behavior
     int actualIndex = currentSelection.section * 30 + currentSelection.row;
     Pokemon& pokemon = pokemons[actualIndex];
     pkdex::CaptureStates states = pkdex::PokemonTracker::getCaptureStates(currentRegion, pokemon.regionalDexNumber);
 
-    // Create a custom context menu using a Box with BooleanCells
     auto* menuBox = new brls::Box();
     menuBox->setAxis(brls::Axis::COLUMN);
     menuBox->setPadding(24);
 
-    // Add a centered title label to the menuBox
     auto* titleLabel = new brls::Label();
     titleLabel->setText("pkdex/capture_toggle/title"_i18n);
     titleLabel->setHorizontalAlign(brls::HorizontalAlign::CENTER);
     titleLabel->setFontSize(28);
     titleLabel->setMaxHeight(48);
     menuBox->addView(titleLabel);
-    
-    // Add a vertical spacer for separation
+
     auto* spacer = new brls::Box();
     spacer->setAxis(brls::Axis::COLUMN);
-    spacer->setMinHeight(24); // 24px vertical space
+    spacer->setMinHeight(24);
     spacer->setMaxHeight(24);
     menuBox->addView(spacer);
 
-    // Create the dialog
     auto* menuDialog = new brls::Dialog(menuBox);
     menuDialog->setCancelable(true);
 
@@ -348,16 +496,8 @@ bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
         auto* cell = new brls::BooleanCell();
         cell->init(label, value, [=](bool checked) {
             pkdex::PokemonTracker::toggleCaptureState(currentRegion, pokemon.regionalDexNumber, stateIndex);
-            // Close the dialog, then restore focus/selection in the close callback
             menuDialog->close([=] {
-                float contentOffset = recycler->getContentOffsetY();
-                recycler->reloadData();
-                recycler->invalidate();
-                recycler->setDefaultCellFocus(currentSelection);
-                this->dataSource->setCurrentSelection(currentSelection);
-                recycler->setContentOffsetY(contentOffset, false);
-                recycler->selectRowAt(currentSelection, false);
-                brls::Application::giveFocus(recycler);
+                refreshRecycler(currentSelection);
             });
             return true;
         });
@@ -366,14 +506,13 @@ bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
 
     addToggle("pkdex/capture_toggle/normal"_i18n, states.normal, 0);
     addToggle("pkdex/capture_toggle/shiny"_i18n, states.shiny, 1);
-    // Only show alpha and shiny alpha for sinnoh_arceus and kalos_lza
     if (currentRegion == "sinnoh_arceus" || currentRegion == "kalos_lza" || currentRegion == "hyperspace_lumiose") {
         addToggle("pkdex/capture_toggle/alpha"_i18n, states.alpha, 2);
         addToggle("pkdex/capture_toggle/shiny_alpha"_i18n, states.shinyAlpha, 3);
     }
 
     menuDialog->registerAction("close"_i18n, brls::BUTTON_B, [=](brls::View*) {
-    menuDialog->close([=] {});
+        menuDialog->close([=] {});
         return true;
     }, true);
     menuDialog->open();
@@ -392,14 +531,7 @@ bool RecyclingListTab::openBulkActionsDialog(brls::View* view)
     std::string region = currentRegion;
     bool hasAlpha = (region == "sinnoh_arceus" || region == "kalos_lza" || region == "hyperspace_lumiose");
 
-    // Save current selection and scroll position for restoration after bulk action
-    brls::View* focusedView = brls::Application::getCurrentFocus();
-    brls::RecyclerCell* focusedCell = dynamic_cast<brls::RecyclerCell*>(focusedView);
-    brls::IndexPath currentSelection;
-    if (focusedCell)
-        currentSelection = focusedCell->getIndexPath();
-    else
-        currentSelection = this->dataSource->getCurrentSelection();
+    brls::IndexPath currentSelection = getFocusedIndexPath();
 
     // Create the bulk actions menu
     auto* menuBox = new brls::Box();
@@ -442,18 +574,8 @@ bool RecyclingListTab::openBulkActionsDialog(brls::View* view)
                 confirmDialog->setCancelable(true);
                 confirmDialog->addButton("pkdex/common/cancel"_i18n, []() {});
                 confirmDialog->addButton("pkdex/common/ok"_i18n, [=]() {
-                    // Perform the bulk action
                     pkdex::PokemonTracker::bulkSetCaptureState(region, allDexNumbers, stateIndex, value);
-
-                    // Refresh the recycler
-                    float contentOffset = recycler->getContentOffsetY();
-                    recycler->reloadData();
-                    recycler->invalidate();
-                    recycler->setDefaultCellFocus(currentSelection);
-                    this->dataSource->setCurrentSelection(currentSelection);
-                    recycler->setContentOffsetY(contentOffset, false);
-                    recycler->selectRowAt(currentSelection, false);
-                    brls::Application::giveFocus(recycler);
+                    refreshRecycler(currentSelection);
                 });
                 confirmDialog->open();
             });
