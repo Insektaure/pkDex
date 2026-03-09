@@ -79,7 +79,7 @@
     "img_pack_download_complete": "Téléchargement terminé !\n\nLes images haute résolution sont maintenant disponibles pour l'extraction.\n\nUtilisez le bouton « Extraire le pack d'images HD » dans les paramètres."
   },
   "about": {
-    "title": "pkDex\nv1.6.5",
+    "title": "pkDex\n{APP_VERSION}",
     "description": "pkDex est une application simple pour consulter les données Pokémon hors ligne, pour les jeux Nintendo Switch.",
     "github": "Retrouvez-le sur github.com/Insektaure/pkDex",
     "licence": "Sous licence Apache 2.0",
@@ -153,4 +153,4 @@
       "next_pokemon": "Pokémon suivant"
     }
   }
-},
+}

@@ -24,15 +24,14 @@ include(${BOREALIS_LIBRARY}/cmake/toolchain.cmake)
 
 # project info
 project(pkDex)
-# IMPORTANT: Keep these version values in sync with app/include/version.hpp
-# When updating the version, update both here and in version.hpp (CURRENT_VERSION)
+# Single source of truth for version - passed to code via compile definitions
 set(VERSION_MAJOR "1")
 set(VERSION_MINOR "6")
-set(VERSION_ALTER "5")
+set(VERSION_ALTER "6")
 set(VERSION_BUILD "0")
 set(PACKAGE_NAME "com.switch.pkdex")
 set(PSN_TITLE_ID  "BRLS00000")
-set(PSN_VERSION  "1.6.5")
+set(PSN_VERSION  "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_ALTER}")
 set(PROJECT_AUTHOR "Insektaure")
 set(PROJECT_ICON ${CMAKE_CURRENT_SOURCE_DIR}/resources/img/icon.jpg)
 set(PROJECT_RESOURCES ${CMAKE_CURRENT_SOURCE_DIR}/resources)
@@ -87,6 +86,9 @@ program_target(${PROJECT_NAME} "${MAIN_SRC}")
 set_target_properties(${PROJECT_NAME} PROPERTIES CXX_STANDARD 17)
 
 
+# Version string used to replace {APP_VERSION} placeholder in i18n JSON files
+set(APP_VERSION_STRING "v${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_ALTER}")
+
 # building release file
 if (PLATFORM_DESKTOP)
     if (BUNDLE_MACOS_APP)
@@ -102,10 +104,12 @@ if (PLATFORM_DESKTOP)
         )
         add_custom_target(${PROJECT_NAME}.data
                 COMMAND "${CMAKE_COMMAND}" -E copy_directory ${PROJECT_RESOURCES} ${PROJECT_NAME}.app/Contents/Resources/resources
+                COMMAND find ${PROJECT_NAME}.app/Contents/Resources/resources/i18n -name "pkdex.json" -exec sed -i "s/{APP_VERSION}/${APP_VERSION_STRING}/g" {} \;
         )
     else ()
         add_custom_target(${PROJECT_NAME}.data
                 COMMAND "${CMAKE_COMMAND}" -E copy_directory ${PROJECT_RESOURCES} ${CMAKE_CURRENT_BINARY_DIR}/resources
+                COMMAND find ${CMAKE_CURRENT_BINARY_DIR}/resources/i18n -name "pkdex.json" -exec sed -i "s/{APP_VERSION}/${APP_VERSION_STRING}/g" {} \;
         )
     endif ()
     if (NOT USE_LIBROMFS)
@@ -160,6 +164,8 @@ elseif (PLATFORM_SWITCH)
     add_custom_target(${PROJECT_NAME}.nro DEPENDS ${PROJECT_NAME}
         COMMAND ${NX_NACPTOOL_EXE} --create "${PROJECT_NAME}" "${PROJECT_AUTHOR}" "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_ALTER}" ${PROJECT_NAME}.nacp --titleid=${PROJECT_TITLEID}
         COMMAND ${CMAKE_COMMAND} -E copy_directory ${PROJECT_RESOURCES} ${CMAKE_BINARY_DIR}/resources
+        # Replace {APP_VERSION} placeholder in i18n JSON files with the actual version
+        COMMAND find ${CMAKE_BINARY_DIR}/resources/i18n -name "pkdex.json" -exec sed -i "s/{APP_VERSION}/${APP_VERSION_STRING}/g" {} \\\;
         # Minify JSON files with jq in build output to reduce nro size
         COMMAND find ${CMAKE_BINARY_DIR}/resources/i18n ${CMAKE_BINARY_DIR}/resources/data -type f -name "*.json" -exec sh -c 'jq -c . "$$1" > "$$1.tmp" && mv "$$1.tmp" "$$1"' _ {} \\\;
         #COMMAND ${CMAKE_COMMAND} -E remove_directory ${CMAKE_BINARY_DIR}/resources/font
@@ -184,5 +190,10 @@ elseif (PLATFORM_TVOS)
 endif ()
 
 target_include_directories(${PROJECT_NAME} PRIVATE app ${APP_PLATFORM_INCLUDE})
+target_compile_definitions(${PROJECT_NAME} PRIVATE
+    PKDEX_VERSION_MAJOR=${VERSION_MAJOR}
+    PKDEX_VERSION_MINOR=${VERSION_MINOR}
+    PKDEX_VERSION_ALTER=${VERSION_ALTER}
+)
 target_compile_options(${PROJECT_NAME} PRIVATE -ffunction-sections -fdata-sections ${APP_PLATFORM_OPTION})
 target_link_libraries(${PROJECT_NAME} PRIVATE borealis ${APP_PLATFORM_LIB})

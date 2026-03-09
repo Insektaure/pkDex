@@ -259,25 +259,9 @@ void PokemonTracker::bulkSetCaptureState(const std::string& region, const std::v
     // Update all entries
     for (const auto& dexNumber : regionalDexNumbers) {
         std::string key = generateKey(region, dexNumber);
-        CaptureStates states;
 
         auto it = tracker.find(key);
-        if (it != tracker.end()) {
-            // Parse existing states
-            std::istringstream ss(it->second);
-            std::string token;
-            int idx = 0;
-            while (std::getline(ss, token, ',') && idx < 4) {
-                bool val = (token == "1");
-                switch (idx) {
-                    case 0: states.normal = val; break;
-                    case 1: states.shiny = val; break;
-                    case 2: states.alpha = val; break;
-                    case 3: states.shinyAlpha = val; break;
-                }
-                idx++;
-            }
-        }
+        CaptureStates states = (it != tracker.end()) ? stringToCaptureStates(it->second) : CaptureStates{};
 
         // Set the specific state
         switch (stateIndex) {
@@ -288,12 +272,7 @@ void PokemonTracker::bulkSetCaptureState(const std::string& region, const std::v
             default: break;
         }
 
-        // Convert back to string
-        std::string stateStr = std::string(states.normal ? "1" : "0") + "," +
-                               (states.shiny ? "1" : "0") + "," +
-                               (states.alpha ? "1" : "0") + "," +
-                               (states.shinyAlpha ? "1" : "0");
-        tracker[key] = stateStr;
+        tracker[key] = captureStatesToString(states);
     }
 
     // Write the tracker file once

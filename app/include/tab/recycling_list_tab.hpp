@@ -2,6 +2,7 @@
 
 #include <borealis.hpp>
 #include <borealis/views/button.hpp>
+#include "view/pokemon_view.hpp"
 #include <map>
 #include <set>
 
@@ -62,21 +63,8 @@ class RecyclingListTab : public brls::Box
     // Factory method with specific region
     static brls::View* create(const std::string& region);
 
-    // Factory methods for specific regions
-    static brls::View* createKanto();
-    static brls::View* createKantoFrlg();
-    //static brls::View* createJohto();
-    //static brls::View* createHoenn();
-    static brls::View* createSinnoh();
-    static brls::View* createSinnohArceus();
-    static brls::View* createGalar();
-    static brls::View* createIsleArmor();
-    static brls::View* createCrownTundra();
-    static brls::View* createPaldea();
-    static brls::View* createKitakami();
-    static brls::View* createBlueberry();
-    static brls::View* createKalosLza();
-    static brls::View* createHyperspaceLumiose();
+    // Access the shared Pokemon list
+    static std::vector<Pokemon>& getPokemons() { return s_pokemons; }
 
     // Load Pokemon data from a file
     void loadPokemonData(const std::string& region);
@@ -94,6 +82,9 @@ class RecyclingListTab : public brls::Box
     void refreshRecycler(const brls::IndexPath& sel);
 
   private:
+    // Shared Pokemon data (set when a region tab loads)
+    static std::vector<Pokemon> s_pokemons;
+
     // Current region
     std::string currentRegion;
 
@@ -122,6 +113,11 @@ class RecyclingListTab : public brls::Box
 
     // Update the multi-select label text and visibility
     void updateMultiSelectLabel();
+
+    // Dialog helpers
+    static std::pair<brls::Box*, brls::Dialog*> createMenuDialog(const std::string& title);
+    static void addMenuSeparator(brls::Box* menuBox);
+    static void registerDialogClose(brls::Dialog* dialog);
 
     BRLS_BIND(brls::Label, multiSelectLabel, "multiSelectLabel");
     BRLS_BIND(brls::RecyclerFrame, recycler, "recycler");

@@ -13,6 +13,7 @@
 #include "tab/settings_tab.hpp"
 #include "tab/changelog_tab.hpp"
 #include "activity/main_activity.hpp"
+#include "utils/region_registry.hpp"
 
 #if defined(__PSV__) && defined(BOREALIS_USE_OPENGL)
 // Needed for the OpenGL driver to work
@@ -70,19 +71,12 @@ int main(int argc, char* argv[])
     // Register custom views (including tabs, which are views)
     brls::Application::registerXMLView("RecyclingListTab", static_cast<brls::View*(*)(void)>(RecyclingListTab::create));
 
-    // Register region-specific factory methods
-    brls::Application::registerXMLView("KantoTab", RecyclingListTab::createKanto);
-    brls::Application::registerXMLView("KantoFrlgTab", RecyclingListTab::createKantoFrlg);
-    brls::Application::registerXMLView("SinnohTab", RecyclingListTab::createSinnoh);
-    brls::Application::registerXMLView("SinnohArceusTab", RecyclingListTab::createSinnohArceus);
-    brls::Application::registerXMLView("GalarTab", RecyclingListTab::createGalar);
-    brls::Application::registerXMLView("IsleArmorTab", RecyclingListTab::createIsleArmor);
-    brls::Application::registerXMLView("CrownTundraTab", RecyclingListTab::createCrownTundra);
-    brls::Application::registerXMLView("PaldeaTab", RecyclingListTab::createPaldea);
-    brls::Application::registerXMLView("KitakamiTab", RecyclingListTab::createKitakami);
-    brls::Application::registerXMLView("BlueberryTab", RecyclingListTab::createBlueberry);
-    brls::Application::registerXMLView("KalosLzaTab", RecyclingListTab::createKalosLza);
-    brls::Application::registerXMLView("HyperspaceLumioseTab", RecyclingListTab::createHyperspaceLumiose);
+    // Register region-specific tabs from the region registry
+    for (const auto& region : pkdex::getRegionRegistry()) {
+        brls::Application::registerXMLView(region.xmlViewName, [region]() -> brls::View* {
+            return new RecyclingListTab(region.id);
+        });
+    }
 
     brls::Application::registerXMLView("PokemonView", PokemonView::create);
     brls::Application::registerXMLView("SettingsTab", SettingsTab::create);

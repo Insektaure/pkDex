@@ -8,9 +8,6 @@
 
 using namespace brls::literals;
 
-// Reference to the global pokemons vector defined in recycling_list_tab.cpp
-extern std::vector<Pokemon> pokemons;
-
 bool dismissView(brls::View* view, PokemonView* pock)
 {
     return true;
@@ -122,6 +119,8 @@ void PokemonView::loadHighResImage(brls::Image* image, const std::string& path, 
 
 bool PokemonView::navigateToPreviousPokemon(brls::View* view)
 {
+    auto& pokemons = RecyclingListTab::getPokemons();
+
     // If we don't have a valid index or there are no Pokemon, do nothing
     if (currentIndex < 0 || pokemons.empty())
         return false;
@@ -140,6 +139,8 @@ bool PokemonView::navigateToPreviousPokemon(brls::View* view)
 
 bool PokemonView::navigateToNextPokemon(brls::View* view)
 {
+    auto& pokemons = RecyclingListTab::getPokemons();
+
     // If we don't have a valid index or there are no Pokemon, do nothing
     if (currentIndex < 0 || pokemons.empty())
         return false;

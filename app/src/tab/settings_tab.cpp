@@ -3,6 +3,7 @@
 #include "config.hpp"
 #include "version.hpp"
 #include "data/pokemon_tracker.hpp"
+#include "utils/string_utils.hpp"
 #include <string>
 #include <switch.h>
 #include <sys/stat.h>
@@ -112,13 +113,8 @@ SettingsTab::SettingsTab()
         } else {
             // Get the selected region display name
             std::string regionDisplayName = regionDisplayNames[selectedRegionIndex];
-            std::string messageTemplate = "pkdex/settings/reset_confirm_region"_i18n;
-            // Replace {region} placeholder with the actual region name
-            size_t pos = messageTemplate.find("{region}");
-            if (pos != std::string::npos) {
-                messageTemplate.replace(pos, 8, regionDisplayName);
-            }
-            message = messageTemplate;
+            message = pkdex::formatString(
+                "pkdex/settings/reset_confirm_region"_i18n, "{region}", regionDisplayName);
         }
 
         // Show a confirmation dialog
@@ -143,13 +139,8 @@ SettingsTab::SettingsTab()
                     brls::Application::notify("pkdex/settings/reset_success_all"_i18n);
                 } else {
                     std::string regionDisplayName = regionDisplayNames[selectedRegionIndex];
-                    std::string messageTemplate = "pkdex/settings/reset_success_region"_i18n;
-                    // Replace {region} placeholder with the actual region name
-                    size_t pos = messageTemplate.find("{region}");
-                    if (pos != std::string::npos) {
-                        messageTemplate.replace(pos, 8, regionDisplayName);
-                    }
-                    brls::Application::notify(messageTemplate);
+                    brls::Application::notify(pkdex::formatString(
+                        "pkdex/settings/reset_success_region"_i18n, "{region}", regionDisplayName));
                 }
             } else {
                 brls::Application::notify("pkdex/settings/reset_failure"_i18n);

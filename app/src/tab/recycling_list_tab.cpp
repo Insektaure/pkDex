@@ -2,11 +2,13 @@
 #include "view/pokemon_view.hpp"
 #include "data/pokemon_data_loader.hpp"
 #include "data/pokemon_tracker.hpp"
+#include "utils/region_registry.hpp"
+#include "utils/string_utils.hpp"
 #include "borealis/extern/nanovg/nanovg.h"
 
 using namespace brls::literals; // for _i18n
 
-std::vector<Pokemon> pokemons;
+std::vector<Pokemon> RecyclingListTab::s_pokemons;
 
 RecyclerCell::RecyclerCell()
 {
@@ -26,20 +28,20 @@ DataSource::DataSource()
 
 int DataSource::numberOfSections(brls::RecyclerFrame* recycler)
 {
-    return (pokemons.size() + 29) / 30; // Round up to account for remaining rows
+    return (RecyclingListTab::getPokemons().size() + 29) / 30; // Round up to account for remaining rows
 }
 
 int DataSource::numberOfRows(brls::RecyclerFrame* recycler, int section)
 {
     int startIndex = section * 30;
-    int remainingRows = pokemons.size() - startIndex;
+    int remainingRows = RecyclingListTab::getPokemons().size() - startIndex;
     return std::min(remainingRows, 30); // Return up to 30 rows per section
 }
 
-std::string DataSource::titleForHeader(brls::RecyclerFrame* recycler, int section) 
+std::string DataSource::titleForHeader(brls::RecyclerFrame* recycler, int section)
 {
     int startIndex = section * 30 + 1; // Start index for the section (1-based)
-    int endIndex = std::min((section + 1) * 30, (int)pokemons.size()); // End index for the section
+    int endIndex = std::min((section + 1) * 30, (int)RecyclingListTab::getPokemons().size()); // End index for the section
     return std::to_string(startIndex) + " - " + std::to_string(endIndex);
 }
 
@@ -47,6 +49,8 @@ brls::RecyclerCell* DataSource::cellForRow(brls::RecyclerFrame* recycler, brls::
 {
     // Calculate the actual index based on section and row
     int actualIndex = indexPath.section * 30 + indexPath.row;
+
+    auto& pokemons = RecyclingListTab::getPokemons();
 
     // Get the current region from the parent tab
     std::string region = "";
@@ -120,6 +124,8 @@ void DataSource::didSelectRowAt(brls::RecyclerFrame* recycler, brls::IndexPath i
     // Update the current selection
     currentSelection = indexPath;
 
+    auto& pokemons = RecyclingListTab::getPokemons();
+
     // Get the parent tab
     RecyclingListTab* parentTab = dynamic_cast<RecyclingListTab*>(recycler->getParent());
 
@@ -149,6 +155,50 @@ void DataSource::didSelectRowAt(brls::RecyclerFrame* recycler, brls::IndexPath i
         region = parentTab->getCurrentRegion();
     }
     recycler->present(new PokemonView(pokemons[actualIndex], actualIndex, region));
+}
+
+// DIALOG HELPERS
+
+std::pair<brls::Box*, brls::Dialog*> RecyclingListTab::createMenuDialog(const std::string& title)
+{
+    auto* menuBox = new brls::Box();
+    menuBox->setAxis(brls::Axis::COLUMN);
+    menuBox->setPadding(24);
+
+    auto* titleLabel = new brls::Label();
+    titleLabel->setText(title);
+    titleLabel->setHorizontalAlign(brls::HorizontalAlign::CENTER);
+    titleLabel->setFontSize(28);
+    titleLabel->setMaxHeight(48);
+    menuBox->addView(titleLabel);
+
+    auto* spacer = new brls::Box();
+    spacer->setAxis(brls::Axis::COLUMN);
+    spacer->setMinHeight(24);
+    spacer->setMaxHeight(24);
+    menuBox->addView(spacer);
+
+    auto* menuDialog = new brls::Dialog(menuBox);
+    menuDialog->setCancelable(true);
+
+    return {menuBox, menuDialog};
+}
+
+void RecyclingListTab::addMenuSeparator(brls::Box* menuBox)
+{
+    auto* separator = new brls::Box();
+    separator->setAxis(brls::Axis::COLUMN);
+    separator->setMinHeight(16);
+    separator->setMaxHeight(16);
+    menuBox->addView(separator);
+}
+
+void RecyclingListTab::registerDialogClose(brls::Dialog* dialog)
+{
+    dialog->registerAction("close"_i18n, brls::BUTTON_B, [dialog](brls::View*) {
+        dialog->close([]{});
+        return true;
+    }, true);
 }
 
 // RECYCLER VIEW
@@ -204,18 +254,15 @@ void RecyclingListTab::loadPokemonData(const std::string& region)
     // Update the current region
     this->currentRegion = region;
 
-    pokemons.clear();
+    s_pokemons.clear();
     // Load Pokemon data from the specified region
-    pokemons = PokemonDataLoader::loadPokemonFromRegion(region);
+    s_pokemons = PokemonDataLoader::loadPokemonFromRegion(region);
 }
 
 bool RecyclingListTab::jumpToPreviousPage(brls::View* view)
 {
     // Get the current selection
     brls::IndexPath currentSelection = this->dataSource->getCurrentSelection();
-
-    // Calculate the total number of rows
-    int totalRows = pokemons.size();
 
     // Calculate the current absolute index
     int currentIndex = currentSelection.section * 30 + currentSelection.row;
@@ -245,7 +292,7 @@ bool RecyclingListTab::jumpToNextPage(brls::View* view)
     brls::IndexPath currentSelection = this->dataSource->getCurrentSelection();
 
     // Calculate the total number of rows
-    int totalRows = pokemons.size();
+    int totalRows = s_pokemons.size();
 
     // Calculate the current absolute index
     int currentIndex = currentSelection.section * 30 + currentSelection.row;
@@ -281,67 +328,6 @@ brls::View* RecyclingListTab::create(const std::string& region)
     return new RecyclingListTab(region);
 }
 
-// Factory methods for specific regions
-brls::View* RecyclingListTab::createKanto()
-{
-    return new RecyclingListTab("kanto");
-}
-
-brls::View* RecyclingListTab::createKantoFrlg()
-{
-    return new RecyclingListTab("kanto_frlg");
-}
-
-brls::View* RecyclingListTab::createSinnoh()
-{
-    return new RecyclingListTab("sinnoh");
-}
-
-brls::View* RecyclingListTab::createSinnohArceus()
-{
-    return new RecyclingListTab("sinnoh_arceus");
-}
-
-brls::View* RecyclingListTab::createGalar()
-{
-    return new RecyclingListTab("galar");
-}
-
-brls::View* RecyclingListTab::createIsleArmor()
-{
-    return new RecyclingListTab("isle_armor");
-}
-
-brls::View* RecyclingListTab::createCrownTundra()
-{
-    return new RecyclingListTab("crown_tundra");
-}
-
-brls::View* RecyclingListTab::createPaldea()
-{
-    return new RecyclingListTab("paldea");
-}
-
-brls::View* RecyclingListTab::createKitakami()
-{
-    return new RecyclingListTab("kitakami");
-}
-
-brls::View* RecyclingListTab::createBlueberry()
-{
-    return new RecyclingListTab("blueberry_academy");
-}
-
-brls::View* RecyclingListTab::createKalosLza()
-{
-    return new RecyclingListTab("kalos_lza");
-}
-
-brls::View* RecyclingListTab::createHyperspaceLumiose()
-{
-    return new RecyclingListTab("hyperspace_lumiose");
-}
-
 brls::IndexPath RecyclingListTab::getFocusedIndexPath()
 {
     brls::View* focusedView = brls::Application::getCurrentFocus();
@@ -367,7 +353,7 @@ void RecyclingListTab::updateMultiSelectLabel()
 {
     if (multiSelectMode) {
         std::string text = "pkdex/listing/multi_select"_i18n;
-        text += " — " + std::to_string(selectedIndices.size()) + " / " + std::to_string(pokemons.size());
+        text += " — " + std::to_string(selectedIndices.size()) + " / " + std::to_string(s_pokemons.size());
         multiSelectLabel->setText(text);
         multiSelectLabel->setVisibility(brls::Visibility::VISIBLE);
     } else {
@@ -408,40 +394,21 @@ void RecyclingListTab::exitMultiSelectMode()
 bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
 {
     brls::IndexPath currentSelection = getFocusedIndexPath();
+    bool hasAlpha = pkdex::regionHasAlpha(currentRegion);
 
-    // Multi-select mode: apply to all selected Pokémon
+    // Multi-select mode: apply to all selected Pokemon
     if (multiSelectMode && !selectedIndices.empty()) {
         std::vector<std::string> selectedDexNumbers;
         for (int idx : selectedIndices) {
-            selectedDexNumbers.push_back(pokemons[idx].regionalDexNumber);
+            selectedDexNumbers.push_back(s_pokemons[idx].regionalDexNumber);
         }
 
         int selectedCount = selectedDexNumbers.size();
         std::string region = currentRegion;
-        bool hasAlpha = (region == "sinnoh_arceus" || region == "kalos_lza" || region == "hyperspace_lumiose");
 
-        // Build a dialog similar to bulk actions but for selected Pokémon
-        auto* menuBox = new brls::Box();
-        menuBox->setAxis(brls::Axis::COLUMN);
-        menuBox->setPadding(24);
-
-        auto* titleLabel = new brls::Label();
         std::string title = "pkdex/capture_toggle/title"_i18n;
         title += " (" + std::to_string(selectedCount) + ")";
-        titleLabel->setText(title);
-        titleLabel->setHorizontalAlign(brls::HorizontalAlign::CENTER);
-        titleLabel->setFontSize(28);
-        titleLabel->setMaxHeight(48);
-        menuBox->addView(titleLabel);
-
-        auto* spacer = new brls::Box();
-        spacer->setAxis(brls::Axis::COLUMN);
-        spacer->setMinHeight(24);
-        spacer->setMaxHeight(24);
-        menuBox->addView(spacer);
-
-        auto* menuDialog = new brls::Dialog(menuBox);
-        menuDialog->setCancelable(true);
+        auto [menuBox, menuDialog] = createMenuDialog(title);
 
         auto addMultiToggle = [=](const std::string& label, int stateIndex, bool value) {
             auto* cell = new brls::DetailCell();
@@ -464,11 +431,7 @@ bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
             addMultiToggle("pkdex/bulk_actions/mark_all_shiny_alpha"_i18n, 3, true);
         }
 
-        auto* separator = new brls::Box();
-        separator->setAxis(brls::Axis::COLUMN);
-        separator->setMinHeight(16);
-        separator->setMaxHeight(16);
-        menuBox->addView(separator);
+        addMenuSeparator(menuBox);
 
         addMultiToggle("pkdex/bulk_actions/clear_all_caught"_i18n, 0, false);
         addMultiToggle("pkdex/bulk_actions/clear_all_shiny"_i18n, 1, false);
@@ -477,38 +440,17 @@ bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
             addMultiToggle("pkdex/bulk_actions/clear_all_shiny_alpha"_i18n, 3, false);
         }
 
-        menuDialog->registerAction("close"_i18n, brls::BUTTON_B, [=](brls::View*) {
-            menuDialog->close([=] {});
-            return true;
-        }, true);
+        registerDialogClose(menuDialog);
         menuDialog->open();
         return true;
     }
 
     // Single-select mode: original behavior
     int actualIndex = currentSelection.section * 30 + currentSelection.row;
-    Pokemon& pokemon = pokemons[actualIndex];
+    Pokemon& pokemon = s_pokemons[actualIndex];
     pkdex::CaptureStates states = pkdex::PokemonTracker::getCaptureStates(currentRegion, pokemon.regionalDexNumber);
 
-    auto* menuBox = new brls::Box();
-    menuBox->setAxis(brls::Axis::COLUMN);
-    menuBox->setPadding(24);
-
-    auto* titleLabel = new brls::Label();
-    titleLabel->setText("pkdex/capture_toggle/title"_i18n);
-    titleLabel->setHorizontalAlign(brls::HorizontalAlign::CENTER);
-    titleLabel->setFontSize(28);
-    titleLabel->setMaxHeight(48);
-    menuBox->addView(titleLabel);
-
-    auto* spacer = new brls::Box();
-    spacer->setAxis(brls::Axis::COLUMN);
-    spacer->setMinHeight(24);
-    spacer->setMaxHeight(24);
-    menuBox->addView(spacer);
-
-    auto* menuDialog = new brls::Dialog(menuBox);
-    menuDialog->setCancelable(true);
+    auto [menuBox, menuDialog] = createMenuDialog("pkdex/capture_toggle/title"_i18n);
 
     auto addToggle = [&](const std::string& label, bool value, int stateIndex) {
         auto* cell = new brls::BooleanCell();
@@ -524,15 +466,12 @@ bool RecyclingListTab::toggleCaptureStatus(brls::View* view)
 
     addToggle("pkdex/capture_toggle/normal"_i18n, states.normal, 0);
     addToggle("pkdex/capture_toggle/shiny"_i18n, states.shiny, 1);
-    if (currentRegion == "sinnoh_arceus" || currentRegion == "kalos_lza" || currentRegion == "hyperspace_lumiose") {
+    if (hasAlpha) {
         addToggle("pkdex/capture_toggle/alpha"_i18n, states.alpha, 2);
         addToggle("pkdex/capture_toggle/shiny_alpha"_i18n, states.shinyAlpha, 3);
     }
 
-    menuDialog->registerAction("close"_i18n, brls::BUTTON_B, [=](brls::View*) {
-        menuDialog->close([=] {});
-        return true;
-    }, true);
+    registerDialogClose(menuDialog);
     menuDialog->open();
     return true;
 }
@@ -541,36 +480,17 @@ bool RecyclingListTab::openBulkActionsDialog(brls::View* view)
 {
     // Build a list of all regional dex numbers for the current region
     std::vector<std::string> allDexNumbers;
-    for (const auto& pokemon : pokemons) {
+    for (const auto& pokemon : s_pokemons) {
         allDexNumbers.push_back(pokemon.regionalDexNumber);
     }
 
     int totalCount = allDexNumbers.size();
     std::string region = currentRegion;
-    bool hasAlpha = (region == "sinnoh_arceus" || region == "kalos_lza" || region == "hyperspace_lumiose");
+    bool hasAlpha = pkdex::regionHasAlpha(region);
 
     brls::IndexPath currentSelection = getFocusedIndexPath();
 
-    // Create the bulk actions menu
-    auto* menuBox = new brls::Box();
-    menuBox->setAxis(brls::Axis::COLUMN);
-    menuBox->setPadding(24);
-
-    auto* titleLabel = new brls::Label();
-    titleLabel->setText("pkdex/bulk_actions/title"_i18n);
-    titleLabel->setHorizontalAlign(brls::HorizontalAlign::CENTER);
-    titleLabel->setFontSize(28);
-    titleLabel->setMaxHeight(48);
-    menuBox->addView(titleLabel);
-
-    auto* spacer = new brls::Box();
-    spacer->setAxis(brls::Axis::COLUMN);
-    spacer->setMinHeight(24);
-    spacer->setMaxHeight(24);
-    menuBox->addView(spacer);
-
-    auto* menuDialog = new brls::Dialog(menuBox);
-    menuDialog->setCancelable(true);
+    auto [menuBox, menuDialog] = createMenuDialog("pkdex/bulk_actions/title"_i18n);
 
     // Helper to add a bulk action button that shows a confirmation dialog
     auto addBulkAction = [=](const std::string& label, int stateIndex, bool value) {
@@ -580,13 +500,8 @@ bool RecyclingListTab::openBulkActionsDialog(brls::View* view)
         cell->registerClickAction([=](brls::View*) {
             // Close the bulk actions menu, then show confirmation
             menuDialog->close([=] {
-                std::string confirmMsg = "pkdex/bulk_actions/confirm"_i18n;
-                // Replace {count} with the actual count
-                std::string countStr = std::to_string(totalCount);
-                size_t pos = confirmMsg.find("{count}");
-                if (pos != std::string::npos) {
-                    confirmMsg.replace(pos, 7, countStr);
-                }
+                std::string confirmMsg = pkdex::formatString(
+                    "pkdex/bulk_actions/confirm"_i18n, "{count}", std::to_string(totalCount));
 
                 auto* confirmDialog = new brls::Dialog(confirmMsg);
                 confirmDialog->setCancelable(true);
@@ -610,12 +525,7 @@ bool RecyclingListTab::openBulkActionsDialog(brls::View* view)
         addBulkAction("pkdex/bulk_actions/mark_all_shiny_alpha"_i18n, 3, true);
     }
 
-    // Separator
-    auto* separator = new brls::Box();
-    separator->setAxis(brls::Axis::COLUMN);
-    separator->setMinHeight(16);
-    separator->setMaxHeight(16);
-    menuBox->addView(separator);
+    addMenuSeparator(menuBox);
 
     // "Clear all" actions
     addBulkAction("pkdex/bulk_actions/clear_all_caught"_i18n, 0, false);
@@ -625,10 +535,7 @@ bool RecyclingListTab::openBulkActionsDialog(brls::View* view)
         addBulkAction("pkdex/bulk_actions/clear_all_shiny_alpha"_i18n, 3, false);
     }
 
-    menuDialog->registerAction("close"_i18n, brls::BUTTON_B, [=](brls::View*) {
-        menuDialog->close([=] {});
-        return true;
-    }, true);
+    registerDialogClose(menuDialog);
     menuDialog->open();
     return true;
 }

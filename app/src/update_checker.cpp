@@ -55,7 +55,7 @@ bool createDirRecursively(const std::string& path) {
 }
 
 // Function to extract a zip file with progress reporting
-bool extractZipFile(const std::string& zipFilePath, const std::string& extractPath, 
+bool extractZipFile(const std::string& zipFilePath, const std::string& extractPath,
                    std::function<void(float)> progressCallback) {
     brls::Logger::debug("Attempting to extract zip file: {} to {}", zipFilePath, extractPath);
 
@@ -205,7 +205,7 @@ bool extractZipFile(const std::string& zipFilePath, const std::string& extractPa
                 if (bytesRead > 0) {
                     size_t result = fwrite(buffer, 1, bytesRead, outFile);
                     if (result != bytesRead) {
-                        brls::Logger::error("Error writing to output file: {}, wrote {} of {} bytes, error: {}", 
+                        brls::Logger::error("Error writing to output file: {}, wrote {} of {} bytes, error: {}",
                                            fullPath, result, bytesRead, strerror(errno));
                         fclose(outFile);
                         unzCloseCurrentFile(zipFile);
@@ -265,12 +265,12 @@ bool hasInternetConnection() {
     Result ret = nifmGetInternetConnectionStatus(&type, &wifiSignal, &status);
 
     // Check if we have a valid connection status and the connection is active
-    return R_SUCCEEDED(ret) && 
+    return R_SUCCEEDED(ret) &&
            (type == NifmInternetConnectionType_WiFi || type == NifmInternetConnectionType_Ethernet) &&
            status == NifmInternetConnectionStatus_Connected;
 #else
     // For other platforms, fall back to the platform's connectivity checks
-    return brls::Application::getPlatform()->hasWirelessConnection() || 
+    return brls::Application::getPlatform()->hasWirelessConnection() ||
            brls::Application::getPlatform()->hasEthernetConnection();
 #endif
 }
@@ -384,7 +384,7 @@ void checkForUpdatesAndNotify() {
 }
 
 // Callback function for CURL to report download progress
-static int progressCallback(void *clientp, curl_off_t dltotal, curl_off_t dlnow, curl_off_t ultotal, curl_off_t ulnow) {
+static int downloadProgressCallback(void *clientp, curl_off_t dltotal, curl_off_t dlnow, curl_off_t ultotal, curl_off_t ulnow) {
     // Only update progress every 10% to avoid flooding the UI with notifications
     static int lastPercent = 0;
 
@@ -420,6 +420,89 @@ static int progressCallback(void *clientp, curl_off_t dltotal, curl_off_t dlnow,
     return 0; // Return 0 to continue the download
 }
 
+// Common helper: download a file via curl in the current thread (call from brls::async)
+// Takes ownership of progressLabel and deletes it when done.
+static void performCurlDownload(const std::string& url, const std::string& destPath,
+                                 std::string* progressLabel,
+                                 std::function<void()> onSuccess,
+                                 std::function<void(const std::string&)> onError) {
+    CURL *curl = NULL;
+    CURLcode res;
+    FILE *fp = NULL;
+    bool needToInitSocket = false;
+
+    // Try to initialize socket if needed
+    Result rc = socketInitializeDefault();
+    if (R_SUCCEEDED(rc)) {
+        needToInitSocket = true;
+    }
+
+    fp = fopen(destPath.c_str(), "wb");
+    if (!fp) {
+        if (onError) {
+            brls::sync([destPath, onError]() {
+                onError("Failed to create download file: " + destPath);
+            });
+        }
+        if (needToInitSocket) socketExit();
+        delete progressLabel;
+        return;
+    }
+
+    curl_global_init(CURL_GLOBAL_DEFAULT);
+    curl = curl_easy_init();
+
+    if (curl) {
+        curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+        curl_easy_setopt(curl, CURLOPT_USERAGENT, "pkDex-Switch");
+        curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
+        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, NULL);
+        curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
+        curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 0L);
+        curl_easy_setopt(curl, CURLOPT_XFERINFOFUNCTION, downloadProgressCallback);
+        curl_easy_setopt(curl, CURLOPT_XFERINFODATA, progressLabel);
+        curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT, 30L);
+        curl_easy_setopt(curl, CURLOPT_TIMEOUT, 0L);
+        curl_easy_setopt(curl, CURLOPT_BUFFERSIZE, 102400L);
+
+        res = curl_easy_perform(curl);
+
+        if (res != CURLE_OK) {
+            std::string error = curl_easy_strerror(res);
+            if (onError) {
+                brls::sync([error, onError]() {
+                    onError(error);
+                });
+            }
+        } else {
+            if (onSuccess) {
+                brls::sync([onSuccess]() {
+                    onSuccess();
+                });
+            }
+        }
+
+        curl_easy_cleanup(curl);
+    }
+
+    curl_global_cleanup();
+    if (fp) fclose(fp);
+    if (needToInitSocket) socketExit();
+    delete progressLabel;
+}
+
+// Helper: start an async download with standard error notification
+static void startAsyncDownload(const std::string& url, const std::string& destPath,
+                                const std::string& label, std::function<void()> onSuccess) {
+    std::string* progressLabel = new std::string(label);
+    brls::async([url, destPath, progressLabel, onSuccess]() {
+        performCurlDownload(url, destPath, progressLabel, onSuccess,
+            [](const std::string& error) {
+                brls::Application::notify("Download failed: " + error);
+            });
+    });
+}
+
 bool downloadLatestVersion(const std::string& version) {
     // Check if there's an actual internet connection
     if (!hasInternetConnection()) {
@@ -452,11 +535,9 @@ bool downloadLatestVersion(const std::string& version) {
             // Notify user that download is starting
             brls::Application::notify("Downloading version " + version + "... (You can continue using the app)");
 
-            // Create a copy of the version string to pass to the progress callback
-            std::string* versionCopy = new std::string(version);
-
-            // Start the download in a background thread
-            startDownload(version, downloadUrl, versionCopy);
+            startAsyncDownload(downloadUrl, filename, version, []() {
+                brls::Application::notify("Download complete! Please run the pkDexUpdater to apply the update.");
+            });
         });
 
         // Add cancel button
@@ -473,112 +554,19 @@ bool downloadLatestVersion(const std::string& version) {
     // Notify user that download is starting
     brls::Application::notify("Downloading version " + version + "... (You can continue using the app)");
 
-    // Create a copy of the version string to pass to the progress callback
-    std::string* versionCopy = new std::string(version);
-
-    // Start the download in a background thread
-    startDownload(version, downloadUrl, versionCopy);
+    startAsyncDownload(downloadUrl, filename, version, []() {
+        brls::Application::notify("Download complete! Please run the pkDexUpdater to apply the update.");
+    });
     return true;
 }
 
-// Helper function to start the download in a background thread
+// startDownload is kept for API compatibility but now delegates to startAsyncDownload
 void startDownload(const std::string& version, const std::string& downloadUrl, std::string* versionCopy) {
-    brls::async([version, downloadUrl, versionCopy]() {
-        // Initialize variables
-        CURL *curl = NULL;
-        CURLcode res;
-        FILE *fp = NULL;
-        bool success = false;
-        bool needToInitSocket = false;
-
-        // Try to initialize socket if needed
-        Result rc = socketInitializeDefault();
-        if (R_SUCCEEDED(rc)) {
-            needToInitSocket = true;
-        }
-
-        // Open file for writing - save as .new to be renamed by the updater
-        std::string filename = "/switch/pkDex.nro.new";
-        fp = fopen(filename.c_str(), "wb");
-        if (!fp) {
-            brls::sync([filename]() {
-                brls::Application::notify("Failed to create download file: " + filename);
-            });
-            if (needToInitSocket) {
-                socketExit();
-            }
-            delete versionCopy; // Clean up
-            return;
-        }
-
-        curl_global_init(CURL_GLOBAL_DEFAULT);
-        curl = curl_easy_init();
-
-        if (curl) {
-            // Set the URL
-            curl_easy_setopt(curl, CURLOPT_URL, downloadUrl.c_str());
-
-            // Set the User-Agent header
-            curl_easy_setopt(curl, CURLOPT_USERAGENT, "pkDex-Switch");
-
-            // Follow redirects
-            curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
-
-            // Write data to file
-            curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, NULL);
-            curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
-
-            // Set up progress callback
-            curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 0L);
-            curl_easy_setopt(curl, CURLOPT_XFERINFOFUNCTION, progressCallback);
-            curl_easy_setopt(curl, CURLOPT_XFERINFODATA, versionCopy);
-
-            // Set a timeout to prevent hanging on slow connections
-            curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT, 30L);
-            curl_easy_setopt(curl, CURLOPT_TIMEOUT, 0L); // No timeout for the transfer itself
-
-            // Set buffer size to prevent memory issues
-            curl_easy_setopt(curl, CURLOPT_BUFFERSIZE, 102400L); // 100KB buffer
-
-            // Perform the request
-            res = curl_easy_perform(curl);
-
-            // Check for errors
-            if (res != CURLE_OK) {
-                std::string error = curl_easy_strerror(res);
-                brls::sync([error]() {
-                    brls::Application::notify("Download failed: " + error);
-                });
-            } else {
-                success = true;
-                brls::sync([]() {
-                    brls::Application::notify("Download complete! Please run the pkDexUpdater to apply the update.");
-                });
-            }
-
-            // Clean up curl
-            curl_easy_cleanup(curl);
-            curl = NULL;
-        }
-
-        curl_global_cleanup();
-
-        // Close file
-        if (fp) {
-            fclose(fp);
-            fp = NULL;
-        }
-
-        // Clean up socket if we initialized it
-        if (needToInitSocket) {
-            socketExit();
-        }
-
-        // Clean up the version copy
-        delete versionCopy;
+    // versionCopy is no longer needed; the label is passed by value internally
+    delete versionCopy;
+    startAsyncDownload(downloadUrl, "/switch/pkDex.nro.new", version, []() {
+        brls::Application::notify("Download complete! Please run the pkDexUpdater to apply the update.");
     });
-
-    // The download is happening in the background
 }
 
 bool downloadUpdater(const std::string& version) {
@@ -608,103 +596,8 @@ bool downloadUpdater(const std::string& version) {
     // Notify user that download is starting
     brls::Application::notify("Downloading updater from version " + latestVersion + "... (You can continue using the app)");
 
-    // Create a copy of the version string to pass to the progress callback
-    std::string* versionCopy = new std::string(latestVersion);
-
-    // Start the download in a background thread
-    brls::async([latestVersion, downloadUrl, versionCopy]() {
-        // Initialize variables
-        CURL *curl = NULL;
-        CURLcode res;
-        FILE *fp = NULL;
-        bool success = false;
-        bool needToInitSocket = false;
-
-        // Try to initialize socket if needed
-        Result rc = socketInitializeDefault();
-        if (R_SUCCEEDED(rc)) {
-            needToInitSocket = true;
-        }
-
-        // Open file for writing - save directly to the updater path
-        std::string filename = "/switch/pkDexUpdater.nro";
-        fp = fopen(filename.c_str(), "wb");
-        if (!fp) {
-            brls::sync([filename]() {
-                brls::Application::notify("Failed to create download file: " + filename);
-            });
-            if (needToInitSocket) {
-                socketExit();
-            }
-            delete versionCopy; // Clean up
-            return;
-        }
-
-        curl_global_init(CURL_GLOBAL_DEFAULT);
-        curl = curl_easy_init();
-
-        if (curl) {
-            // Set the URL
-            curl_easy_setopt(curl, CURLOPT_URL, downloadUrl.c_str());
-
-            // Set the User-Agent header
-            curl_easy_setopt(curl, CURLOPT_USERAGENT, "pkDex-Switch");
-
-            // Follow redirects
-            curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
-
-            // Write data to file
-            curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, NULL);
-            curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
-
-            // Set up progress callback
-            curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 0L);
-            curl_easy_setopt(curl, CURLOPT_XFERINFOFUNCTION, progressCallback);
-            curl_easy_setopt(curl, CURLOPT_XFERINFODATA, versionCopy);
-
-            // Set a timeout to prevent hanging on slow connections
-            curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT, 30L);
-            curl_easy_setopt(curl, CURLOPT_TIMEOUT, 0L); // No timeout for the transfer itself
-
-            // Set buffer size to prevent memory issues
-            curl_easy_setopt(curl, CURLOPT_BUFFERSIZE, 102400L); // 100KB buffer
-
-            // Perform the request
-            res = curl_easy_perform(curl);
-
-            // Check for errors
-            if (res != CURLE_OK) {
-                std::string error = curl_easy_strerror(res);
-                brls::sync([error]() {
-                    brls::Application::notify("Download failed: " + error);
-                });
-            } else {
-                success = true;
-                brls::sync([]() {
-                    brls::Application::notify("Updater download complete! You can now launch the updater.");
-                });
-            }
-
-            // Clean up curl
-            curl_easy_cleanup(curl);
-            curl = NULL;
-        }
-
-        curl_global_cleanup();
-
-        // Close file
-        if (fp) {
-            fclose(fp);
-            fp = NULL;
-        }
-
-        // Clean up socket if we initialized it
-        if (needToInitSocket) {
-            socketExit();
-        }
-
-        // Clean up the version copy
-        delete versionCopy;
+    startAsyncDownload(downloadUrl, "/switch/pkDexUpdater.nro", latestVersion, []() {
+        brls::Application::notify("Updater download complete! You can now launch the updater.");
     });
 
     // Return true immediately since the download is happening in the background
@@ -720,6 +613,16 @@ bool downloadHighResImagePack() {
 
     // Define the filename where the high-res image pack will be saved
     std::string filename = "/pkDex_High_Res_imgs.zip";
+    std::string downloadUrl = "https://github.com/insektaure/pkDex/releases/latest/download/pkDex_High_Res_imgs.zip";
+
+    auto doDownload = [filename, downloadUrl]() {
+        brls::Application::notify("Downloading high-res image pack... (You can continue using the app)");
+        startAsyncDownload(downloadUrl, filename, "High-Res Pack", []() {
+            auto dialog = new brls::Dialog("pkdex/settings/img_pack_download_complete"_i18n);
+            dialog->addButton("pkdex/common/ok"_i18n, []() {});
+            dialog->open();
+        });
+    };
 
     // Check if the file already exists
     struct stat buffer;
@@ -730,125 +633,13 @@ bool downloadHighResImagePack() {
         auto dialog = new brls::Dialog("pkdex/settings/img_pack_redownload"_i18n);
 
         // Add redownload button
-        dialog->addButton("pkdex/common/redownload"_i18n, [filename]() {
+        dialog->addButton("pkdex/common/redownload"_i18n, [filename, doDownload]() {
             // Delete the existing file
             if (remove(filename.c_str()) != 0) {
                 brls::Application::notify("Failed to delete existing file. Please delete it manually.");
                 return;
             }
-
-            // Notify user that download is starting
-            brls::Application::notify("Downloading high-res image pack... (You can continue using the app)");
-
-            // Create a string for the progress callback
-            std::string* progressLabel = new std::string("High-Res Pack");
-
-            // Start the download in a background thread
-            brls::async([progressLabel]() {
-                // Initialize variables
-                CURL *curl = NULL;
-                CURLcode res;
-                FILE *fp = NULL;
-                bool success = false;
-                bool needToInitSocket = false;
-
-                // Try to initialize socket if needed
-                Result rc = socketInitializeDefault();
-                if (R_SUCCEEDED(rc)) {
-                    needToInitSocket = true;
-                }
-
-                // Open file for writing
-                std::string filename = "/pkDex_High_Res_imgs.zip";
-                fp = fopen(filename.c_str(), "wb");
-                if (!fp) {
-                    brls::sync([filename]() {
-                        brls::Application::notify("Failed to create download file: " + filename);
-                    });
-                    if (needToInitSocket) {
-                        socketExit();
-                    }
-                    delete progressLabel; // Clean up
-                    return;
-                }
-
-                curl_global_init(CURL_GLOBAL_DEFAULT);
-                curl = curl_easy_init();
-
-                if (curl) {
-                    // Set the URL for the high-res image pack
-                    std::string downloadUrl = "https://github.com/insektaure/pkDex/releases/latest/download/pkDex_High_Res_imgs.zip";
-                    curl_easy_setopt(curl, CURLOPT_URL, downloadUrl.c_str());
-
-                    // Set the User-Agent header
-                    curl_easy_setopt(curl, CURLOPT_USERAGENT, "pkDex-Switch");
-
-                    // Follow redirects
-                    curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
-
-                    // Write data to file
-                    curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, NULL);
-                    curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
-
-                    // Set up progress callback with the progress label
-                    curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 0L);
-                    curl_easy_setopt(curl, CURLOPT_XFERINFOFUNCTION, progressCallback);
-                    curl_easy_setopt(curl, CURLOPT_XFERINFODATA, progressLabel);
-
-                    // Set a timeout to prevent hanging on slow connections
-                    curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT, 30L);
-                    curl_easy_setopt(curl, CURLOPT_TIMEOUT, 0L); // No timeout for the transfer itself
-
-                    // Set buffer size to prevent memory issues
-                    curl_easy_setopt(curl, CURLOPT_BUFFERSIZE, 102400L); // 100KB buffer
-
-                    // Perform the request
-                    res = curl_easy_perform(curl);
-
-                    // Check for errors
-                    if (res != CURLE_OK) {
-                        std::string error = curl_easy_strerror(res);
-                        brls::sync([error]() {
-                            brls::Application::notify("Download failed: " + error);
-                        });
-                    } else {
-                        success = true;
-
-                        brls::sync([]() {
-                            // Create a dialog to inform the user that the download is complete
-                            auto dialog = new brls::Dialog("pkdex/settings/img_pack_download_complete"_i18n);
-
-                            // Add OK button
-                            dialog->addButton("pkdex/common/ok"_i18n, []() {
-                                // Dialog will close automatically
-                            });
-
-                            // Show the dialog
-                            dialog->open();
-                        });
-                    }
-
-                    // Clean up curl
-                    curl_easy_cleanup(curl);
-                    curl = NULL;
-                }
-
-                curl_global_cleanup();
-
-                // Close file
-                if (fp) {
-                    fclose(fp);
-                    fp = NULL;
-                }
-
-                // Clean up socket if we initialized it
-                if (needToInitSocket) {
-                    socketExit();
-                }
-
-                // Clean up the progress label
-                delete progressLabel;
-            });
+            doDownload();
         });
 
         // Add cancel button
@@ -862,118 +653,7 @@ bool downloadHighResImagePack() {
         return true;
     }
 
-    // Notify user that download is starting
-    brls::Application::notify("Downloading high-res image pack... (You can continue using the app)");
-
-    // Create a string for the progress callback
-    std::string* progressLabel = new std::string("High-Res Pack");
-
-    // Start the download in a background thread
-    brls::async([progressLabel]() {
-        // Initialize variables
-        CURL *curl = NULL;
-        CURLcode res;
-        FILE *fp = NULL;
-        bool success = false;
-        bool needToInitSocket = false;
-
-        // Try to initialize socket if needed
-        Result rc = socketInitializeDefault();
-        if (R_SUCCEEDED(rc)) {
-            needToInitSocket = true;
-        }
-
-        // Open file for writing
-        std::string filename = "/pkDex_High_Res_imgs.zip";
-        fp = fopen(filename.c_str(), "wb");
-        if (!fp) {
-            brls::sync([filename]() {
-                brls::Application::notify("Failed to create download file : " + filename);
-            });
-            if (needToInitSocket) {
-                socketExit();
-            }
-            delete progressLabel; // Clean up
-            return;
-        }
-
-        curl_global_init(CURL_GLOBAL_DEFAULT);
-        curl = curl_easy_init();
-
-        if (curl) {
-            // Set the URL for the high-res image pack
-            std::string downloadUrl = "https://github.com/insektaure/pkDex/releases/latest/download/pkDex_High_Res_imgs.zip";
-            curl_easy_setopt(curl, CURLOPT_URL, downloadUrl.c_str());
-
-            // Set the User-Agent header
-            curl_easy_setopt(curl, CURLOPT_USERAGENT, "pkDex-Switch");
-
-            // Follow redirects
-            curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
-
-            // Write data to file
-            curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, NULL);
-            curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
-
-            // Set up progress callback with the progress label
-            curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 0L);
-            curl_easy_setopt(curl, CURLOPT_XFERINFOFUNCTION, progressCallback);
-            curl_easy_setopt(curl, CURLOPT_XFERINFODATA, progressLabel);
-
-            // Set a timeout to prevent hanging on slow connections
-            curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT, 30L);
-            curl_easy_setopt(curl, CURLOPT_TIMEOUT, 0L); // No timeout for the transfer itself
-
-            // Set buffer size to prevent memory issues
-            curl_easy_setopt(curl, CURLOPT_BUFFERSIZE, 102400L); // 100KB buffer
-
-            // Perform the request
-            res = curl_easy_perform(curl);
-
-            // Check for errors
-            if (res != CURLE_OK) {
-                std::string error = curl_easy_strerror(res);
-                brls::sync([error]() {
-                    brls::Application::notify("Download failed: " + error);
-                });
-            } else {
-                success = true;
-
-                brls::sync([]() {
-                    // Create a dialog to inform the user that the download is complete
-                    auto dialog = new brls::Dialog("pkdex/settings/img_pack_download_complete"_i18n);
-
-                    // Add OK button
-                    dialog->addButton("pkdex/common/ok"_i18n, []() {
-                        // Dialog will close automatically
-                    });
-
-                    // Show the dialog
-                    dialog->open();
-                });
-            }
-
-            // Clean up curl
-            curl_easy_cleanup(curl);
-            curl = NULL;
-        }
-
-        curl_global_cleanup();
-
-        // Close file
-        if (fp) {
-            fclose(fp);
-            fp = NULL;
-        }
-
-        // Clean up socket if we initialized it
-        if (needToInitSocket) {
-            socketExit();
-        }
-
-        // Clean up the progress label
-        delete progressLabel;
-    });
+    doDownload();
 
     // Return true immediately since the download is happening in the background
     return true;

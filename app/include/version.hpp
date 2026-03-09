@@ -2,12 +2,24 @@
 
 #include <string>
 
-// Centralized version definition
-// IMPORTANT: Keep this version in sync with the version in CMakeLists.txt
-// When updating the version, update both this file and CMakeLists.txt (lines 27-30)
+// Version is defined via CMake compile definitions (PKDEX_VERSION_MAJOR, etc.)
+// Fallback defaults are provided for IDE support / non-CMake builds.
+#ifndef PKDEX_VERSION_MAJOR
+#define PKDEX_VERSION_MAJOR 1
+#endif
+#ifndef PKDEX_VERSION_MINOR
+#define PKDEX_VERSION_MINOR 6
+#endif
+#ifndef PKDEX_VERSION_ALTER
+#define PKDEX_VERSION_ALTER 5
+#endif
+
+#define PKDEX_STRINGIFY_(x) #x
+#define PKDEX_STRINGIFY(x) PKDEX_STRINGIFY_(x)
+
 namespace pkdex {
-    // Current application version - must match VERSION_MAJOR, VERSION_MINOR, VERSION_ALTER in CMakeLists.txt
-    static const std::string CURRENT_VERSION = "v1.6.5";
+    // Current application version - single source of truth is CMakeLists.txt
+    static const std::string CURRENT_VERSION = "v" PKDEX_STRINGIFY(PKDEX_VERSION_MAJOR) "." PKDEX_STRINGIFY(PKDEX_VERSION_MINOR) "." PKDEX_STRINGIFY(PKDEX_VERSION_ALTER);
 
     // Function to get the current version without the 'v' prefix
     inline std::string getCurrentVersionWithoutPrefix() {
