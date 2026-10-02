@@ -60,11 +60,22 @@ void Input::release(uint32_t b) {
 
 bool Input::poll() {
     pressed_ = 0;
+    redraw_ = false;
+    targetsLost_ = false;
     SDL_Event e;
     while (SDL_PollEvent(&e)) {
         switch (e.type) {
             case SDL_QUIT:
                 return false;
+            case SDL_WINDOWEVENT:
+            case SDL_APP_DIDENTERFOREGROUND:
+                redraw_ = true;
+                break;
+            case SDL_RENDER_TARGETS_RESET:
+            case SDL_RENDER_DEVICE_RESET:
+                redraw_ = true;
+                targetsLost_ = true;
+                break;
             case SDL_CONTROLLERDEVICEADDED:
                 if (!pad_) pad_ = SDL_GameControllerOpen(e.cdevice.which);
                 break;

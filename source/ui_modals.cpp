@@ -323,6 +323,7 @@ void ProgressModal::update(App& app) {
 }
 
 void ProgressModal::draw(App& app) {
+    gfx.animate();   // the bar follows the worker
     gfx.shade(SHADE);
     const int w = 520, h = cancellable ? 220 : 180;
     const int x = (SCREEN_W - w) / 2, y = (SCREEN_H - h) / 2;
@@ -376,6 +377,7 @@ void UpdateModal::update(App& app) {
 }
 
 void UpdateModal::draw(App& app) {
+    gfx.animate();   // the steps follow the worker, then the countdown runs
     gfx.rect(0, 0, SCREEN_W, SCREEN_H, SDL_Color{0x0b, 0x0d, 0x10, 255});
     gfx.dotGrid(SDL_Rect{0, 0, SCREEN_W, SCREEN_H}, col::dotGrid);
 

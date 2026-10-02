@@ -33,6 +33,11 @@ public:
     uint32_t pressed() const { return pressed_; }   // went down this frame, or repeated
     uint32_t held() const { return buttons_ | stick_; }
 
+    // The screen must be drawn again although no button was pressed: back
+    // from the HOME menu, or the GPU lost its render targets.
+    bool redraw() const { return redraw_; }
+    bool targetsLost() const { return targetsLost_; }
+
 private:
     void press(uint32_t b);
     void release(uint32_t b);
@@ -42,6 +47,7 @@ private:
     uint32_t buttons_ = 0;   // held on the pad
     uint32_t stick_ = 0;     // directions held on the left stick
     bool zl_ = false, zr_ = false;
+    bool redraw_ = false, targetsLost_ = false;
     uint32_t repeatBit_ = 0;
     uint32_t repeatSince_ = 0, repeatLast_ = 0;
 };

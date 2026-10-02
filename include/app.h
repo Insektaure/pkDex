@@ -49,6 +49,8 @@ public:
 
     // --- for the pages and the popups --------------------------------------------
     void push(std::unique_ptr<Modal> m);
+    // The next loop draws a frame; without it nothing changed and none is.
+    void markDirty() { dirty_ = true; }
     // A notice in the top-right corner: a title, and optionally a
     // second line. One at a time; a new one replaces it.
     void toast(const std::string& text, bool error = false);
@@ -114,6 +116,7 @@ private:
     void loadData();
     void drawLoading(float progress);
     void frame();
+    void drawPage();
     void handleInput(uint32_t pressed);
     void watchUpdate();
 
@@ -143,6 +146,15 @@ private:
     Toast toast_;
     bool toastShown_ = false;
     std::vector<std::unique_ptr<Modal>> modals_;
+
+    // Redraw only when something changed (pkHouse's dirty flag), and the page
+    // behind a popup drawn once into a texture while it stays the same.
+    bool dirty_ = true;
+    uint32_t lastDraw_ = 0;
+    long lastMinute_ = -1;
+    unsigned modalGen_ = 0;          // bumped when a popup opens or closes
+    SDL_Texture* backdrop_ = nullptr;
+    std::string backdropKey_;
 
     std::vector<tracker::Counts> counts_;
     unsigned countsVersion_ = 0;

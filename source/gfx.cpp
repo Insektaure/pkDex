@@ -96,6 +96,7 @@ void Gfx::shutdown() {
 
 void Gfx::beginFrame(SDL_Color bg) {
     frame_++;
+    animating_ = false;
     SDL_RenderSetClipRect(r_, nullptr);
     SDL_SetRenderDrawColor(r_, bg.r, bg.g, bg.b, 255);
     SDL_RenderClear(r_);
@@ -330,6 +331,7 @@ void Gfx::marquee(const std::string& s, int x, int cy, int maxW, SDL_Color c, Fo
         textMid(fit(s, f, maxW), x, cy, c, f);
         return;
     }
+    animate();
     // Restarted when it was not drawn active in the frame before.
     Marquee& m = marquees_[s];
     if (m.frame + 1 < frame_) m.start = SDL_GetTicks();

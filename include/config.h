@@ -16,6 +16,9 @@ constexpr const char* RESET_REGION    = "selected_region_index";   // 0 = all, t
 
 void load();
 
+// Bumped by every change, so a drawing of the settings can tell it is stale.
+unsigned version();
+
 bool getBool(const std::string& key, bool def);
 void setBool(const std::string& key, bool value);
 int getInt(const std::string& key, int def);

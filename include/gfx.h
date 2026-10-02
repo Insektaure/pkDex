@@ -40,6 +40,11 @@ public:
     void beginFrame(SDL_Color bg);
     void present();
 
+    // Something drawn this frame moves (a scrolling title, a spinner...), so
+    // the next frame must be drawn too. Reset by beginFrame().
+    void animate() { animating_ = true; }
+    bool animating() const { return animating_; }
+
     // --- text ------------------------------------------------------------------
     Font* font(int size, bool bold = false);
     int textW(const std::string& s, Font* f);
@@ -114,6 +119,7 @@ private:
     struct Marquee { uint32_t start = 0; uint64_t frame = 0; };
     std::unordered_map<std::string, Marquee> marquees_;
     uint64_t frame_ = 0;
+    bool animating_ = false;
 };
 
 extern Gfx gfx;

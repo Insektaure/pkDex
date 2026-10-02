@@ -8,8 +8,10 @@
 namespace {
 
 std::map<std::string, std::string> g_values;
+unsigned g_version = 1;
 
 void save() {
+    g_version++;
     util::ensureDir(config::DIR);
     FILE* f = fopen(config::PATH, "wb");
     if (!f) return;
@@ -22,6 +24,8 @@ void save() {
 } // anonymous namespace
 
 namespace config {
+
+unsigned version() { return g_version; }
 
 void load() {
     g_values.clear();

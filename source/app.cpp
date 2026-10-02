@@ -85,13 +85,32 @@ int App::run(int argc, char** argv) {
 
     while (!quit) {
         if (!input_.poll()) break;
-        handleInput(input_.pressed());
+        const uint32_t pressed = input_.pressed();
+        if (pressed || input_.redraw()) dirty_ = true;
+        if (input_.targetsLost()) backdropKey_.clear();   // its contents are gone
+        handleInput(pressed);
         watchUpdate();
         for (size_t i = 0; i < modals_.size(); i++) modals_[i]->update(*this);
+        const size_t before = modals_.size();
         modals_.erase(std::remove_if(modals_.begin(), modals_.end(),
                                      [](const std::unique_ptr<Modal>& m) { return m->closed; }),
                       modals_.end());
-        frame();
+        if (modals_.size() != before) { modalGen_++; dirty_ = true; }
+
+        // The clock in the footer, and a slow heartbeat for anything that
+        // changes without saying so (a file appearing on the SD card...).
+        const long minute = static_cast<long>(time(nullptr) / 60);
+        if (minute != lastMinute_) { lastMinute_ = minute; dirty_ = true; }
+        if (SDL_GetTicks() - lastDraw_ >= 1000) dirty_ = true;
+
+        if (dirty_) {
+            dirty_ = false;
+            frame();
+            lastDraw_ = SDL_GetTicks();
+            if (gfx.animating()) dirty_ = true;   // something on screen moves
+        } else {
+            SDL_Delay(16);   // what a vsynced present would have waited
+        }
     }
 
     if (job) job->cancel = true;   // a download stops; an extraction runs out
@@ -99,6 +118,8 @@ int App::run(int argc, char** argv) {
     Update::shutdown();
     net::stop();
     modals_.clear();
+    if (backdrop_) SDL_DestroyTexture(backdrop_);
+    backdrop_ = nullptr;
     input_.shutdown();
     gfx.shutdown();
     return 0;
@@ -141,13 +162,18 @@ void App::confirmQuit() {
     push(std::move(c));
 }
 
-void App::push(std::unique_ptr<Modal> m) { modals_.push_back(std::move(m)); }
+void App::push(std::unique_ptr<Modal> m) {
+    modals_.push_back(std::move(m));
+    modalGen_++;
+    dirty_ = true;
+}
 
 void App::toast(const std::string& text, bool error) { notify(text, std::string(), error); }
 
 void App::notify(const std::string& title, const std::string& body, bool error) {
     toast_ = Toast{title, body, error, SDL_GetTicks()};
     toastShown_ = true;
+    dirty_ = true;
 }
 
 // --- the frame ---------------------------------------------------------------------
@@ -175,6 +201,21 @@ void App::handleInput(uint32_t pressed) {
     }
 }
 
+void App::drawPage() {
+    if (page == Page::Detail) {
+        drawDetail();
+        return;
+    }
+    switch (page) {
+        case Page::Dex:       drawDex(); break;
+        case Page::Settings:  drawSettings(); break;
+        case Page::About:     drawAbout(); break;
+        case Page::Changelog: drawChangelog(); break;
+        default: break;
+    }
+    drawSidebar();
+}
+
 void App::frame() {
     gfx.beginFrame(col::bg);
 
@@ -184,19 +225,29 @@ void App::frame() {
         if (modals_[i]->fullscreen()) first = i;
     const bool covered = !modals_.empty() && modals_[first]->fullscreen();
 
-    if (!covered) {
-        if (page == Page::Detail) {
-            drawDetail();
-        } else {
-            switch (page) {
-                case Page::Dex:       drawDex(); break;
-                case Page::Settings:  drawSettings(); break;
-                case Page::About:     drawAbout(); break;
-                case Page::Changelog: drawChangelog(); break;
-                default: break;
-            }
-            drawSidebar();
+    if (!covered && !modals_.empty()) {
+        // Behind a popup, the page is drawn once and reused, until what it
+        // shows changes: captures, settings, language, the update check, or
+        // the popups themselves.
+        const std::string key = std::to_string(modalGen_) + "|" + std::to_string(tracker::version()) + "|" +
+                                std::to_string(config::version()) + "|" + i18n::locale() + "|" +
+                                std::to_string(static_cast<int>(Update::state()));
+        SDL_Renderer* r = gfx.renderer();
+        if (!backdrop_) {
+            backdrop_ = SDL_CreateTexture(r, SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_TARGET, SCREEN_W, SCREEN_H);
+            backdropKey_.clear();
         }
+        if (backdrop_ && key != backdropKey_ && SDL_SetRenderTarget(r, backdrop_) == 0) {
+            SDL_SetRenderDrawColor(r, col::bg.r, col::bg.g, col::bg.b, 255);
+            SDL_RenderClear(r);
+            drawPage();
+            SDL_SetRenderTarget(r, nullptr);
+            backdropKey_ = key;
+        }
+        if (backdrop_ && key == backdropKey_) SDL_RenderCopy(r, backdrop_, nullptr, nullptr);
+        else drawPage();   // no render target: drawn straight, every time
+    } else if (!covered) {
+        drawPage();
     }
     for (size_t i = covered ? first : 0; i < modals_.size(); i++) modals_[i]->draw(*this);
     drawToasts();
@@ -207,6 +258,7 @@ void App::watchUpdate() {
     const Update::State s = Update::state();
     if (s == lastUpdateState_) return;
     lastUpdateState_ = s;
+    dirty_ = true;
     if (s == Update::State::Available) {
         if (manualCheck_) {
             offerUpdate();
@@ -229,6 +281,7 @@ void App::drawToasts() {
     constexpr uint32_t LIFE = 6000, APPEAR = 280, FADE = 600;
     const uint32_t age = SDL_GetTicks() - toast_.start;
     if (age >= LIFE) { toastShown_ = false; return; }
+    gfx.animate();   // sliding in, fading out, and gone on time
     const float appear = std::min(1.0f, static_cast<float>(age) / APPEAR);
     const float fade = std::min(1.0f, static_cast<float>(LIFE - age) / FADE);
     const float alpha = appear * fade;
@@ -548,6 +601,7 @@ void App::drawPokemonThumb(const Pokemon& p, int x, int y, int box, int radius) 
 }
 
 void App::drawSpinner(int cx, int cy, int radius, SDL_Color c) {
+    gfx.animate();
     gfx.ring(cx, cy, radius, 3, withAlpha(c, 60));
     const float a = static_cast<float>(SDL_GetTicks() % 1000) / 1000.0f * 6.2831853f;
     gfx.arc(cx, cy, radius - 1, a, a + 1.7f, 3.0f, c);
