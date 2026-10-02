@@ -257,12 +257,14 @@ namespace {
 
 // A pill-shaped button at the top: a key and a label, right edge or left edge
 // given. Returns its width.
-int topPill(App& app, int x, int y, const std::string& key, const std::string& dim, const std::string& label,
-            bool enabled, bool alignRight) {
+int topPill(App& app, int x, int y, const std::string& key, const std::string& dim, const std::string& text,
+            bool enabled, bool alignRight, int maxW = 1 << 20) {
     Font* fDim = gfx.font(14);
     Font* f = gfx.font(15);
     const int dimW = dim.empty() ? 0 : gfx.textW(dim, fDim) + 8;
-    const int w = 14 + app.keyWidth(key) + 10 + dimW + gfx.textW(label, f) + 18;
+    const int chrome = 14 + app.keyWidth(key) + 10 + dimW + 18;
+    const std::string label = gfx.fit(text, f, std::max(40, maxW - chrome));
+    const int w = chrome + gfx.textW(label, f);
     if (alignRight) x -= w;
     const int h = 44, cy = y + h / 2;
     gfx.fillRounded(x, y, w, h, h / 2, enabled ? col::card : withAlpha(col::card, 110));
@@ -369,10 +371,9 @@ void App::drawDetail() {
     const Capture cap = tracker::get(dex::regions()[r].id, p.regional);
     const SDL_Color tc = primaryColor(p);
 
-    // --- the bar at the top: back, previous, next
+    // --- the bar at the top: next and previous on the right, then back with
+    //     the full game name ("Scarlet & Violet · The Teal Mask") in what is left
     {
-        const std::string tag = dex::tag(r);
-        topPill(*this, 40, 16, "B", "", tag.empty() ? dex::name(r) : dex::name(r) + " · " + tag, true, false);
         int right = CONTENT_R;
         if (detailIndex + 1 < n) {
             const Pokemon& next = list[detailIndex + 1];
@@ -382,10 +383,11 @@ void App::drawDetail() {
         }
         if (detailIndex > 0) {
             const Pokemon& prev = list[detailIndex - 1];
-            topPill(*this, right, 16, "L", "#" + prev.regional, prev.name, true, true);
+            right -= topPill(*this, right, 16, "L", "#" + prev.regional, prev.name, true, true);
         } else {
-            topPill(*this, right, 16, "L", "", tr("detail/previous"), false, true);
+            right -= topPill(*this, right, 16, "L", "", tr("detail/previous"), false, true);
         }
+        topPill(*this, 40, 16, "B", "", dex::game(r), true, false, right - 16 - 40);
     }
 
     // --- the sprite panel
