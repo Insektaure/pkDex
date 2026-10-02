@@ -1,156 +1,298 @@
 {
-  "title": "pkDex - A Pokemon Encyclopedia for Nintendo Switch Games",
-  "tabs": {
-    "kanto": "Kanto (Let's Go! Pikachu & Eevee)",
-    "kanto_frlg": "└ Kanto (FireRed & LeafGreen)",
-    "sinnoh": "Sinnoh (Brilliant Diamond & Shining Pearl)",
-    "sinnoh_arceus": "└ Sinnoh (Legends: Arceus)",
-    "galar": "Galar (Sword & Shield)",
-    "isle_armor": "└ Isle of Armor (DLC 1)",
-    "crown_tundra": "└ Crown Tundra (DLC 2)",
-    "paldea": "Paldea (Scarlet & Violet)",
-    "kitakami": "└ Kitakami (The Teal Mask - DLC 1)",
-    "blueberry_academy": "└ Blueberry Academy (The Indigo Disk - DLC 2)",
-    "kalos_lza": "Kalos (Legends: Z-A)",
-    "hyperspace_lumiose": "└ Hyperspace Lumiose (Mega-Dimension DLC)",
+  "app": {
+    "tagline": "Pokémon encyclopedia"
+  },
+  "sidebar": {
+    "regions": "Regions"
+  },
+  "nav": {
     "settings": "Settings",
-    "about": "About pkDex",
+    "about": "About",
     "changelog": "Changelog"
   },
-  "welcome": "Welcome to the pkDex App !",
-  "settings": {
-    "regions": {
-      "all_regions": "All Regions",
-      "kanto": "Kanto (LGPE)",
-      "kanto_frlg": "Kanto (FRLG)",
-      "sinnoh": "Sinnoh (BDSP)",
-      "sinnoh_arceus": "Sinnoh (Legends Arceus)",
-      "galar": "Galar (SwSh)",
-      "isle_armor": "Isle of Armor (SwSh DLC 1)",
-      "crown_tundra": "Crown Tundra (SwSh DLC 2)",
-      "paldea": "Paldea (ScVi)",
-      "kitakami": "Kitakami (ScVi DLC 1)",
-      "blueberry_academy": "Blueberry Academy (ScVi DLC 2)",
-      "kalos_lza": "Kalos (Legends Z-A)",
-      "hyperspace_lumiose": "Hyperspace Lumiose (LZA DLC)"
-    },
-    "locales": {
-      "en-US": "English (US)",
-      "fr-FR": "Français (France)",
-      "de-DE": "Deutsch (Deutschland)",
-      "es-ES": "Español (España)",
-      "it-IT": "Italiano (Italia)",
-      "ja-JP": "日本語（日本)"
-    },
-    "i18n_title": "Language",
-    "select_locale": "Select Language",
-    "select_region_to_reset": "Select Region to Reset",
-    "reset_confirm_all": "Are you sure you want to reset all Pokemon capture statuses for all regions?\nThis action cannot be undone.",
-    "reset_confirm_region": "Are you sure you want to reset all Pokemon capture statuses for the {region} region?\nThis action cannot be undone.",
-    "reset_success_all": "All Pokemon capture statuses have been reset.",
-    "reset_success_region": "Pokemon capture statuses for {region} have been reset.",
-    "reset_failure": "Failed to reset Pokemon capture statuses.",
-    "reset_button": "Reset",
-    "cancel_button": "Cancel",
-    "settings": "Settings",
-    "error_tab_frame": "Could not find tabFrame in main.xml",
-    "check_updates": "Check Updates",
-    "launch_updater": "Launch Updater",
-    "reset_capture_status": "Reset Capture Status",
-    "hide_bottom_bar": "Hide Bottom Bar",
-    "download_high_res_images": "Download High-Res Image Pack (75MB)",
-    "extract_high_res_images": "Extract High-Res Image Pack",
-    "changelog_content": "Changelog Content",
-    "updates": "Updates",
-    "check_updates_on_launch": "Check for updates on launch",
-    "pokemon_data": "Pokemon Data",
-    "user_interface": "User Interface",
-    "resources": "Resources",
-    "locale_restart_message": "The language change will apply after restarting the app.",
-    "restart_now": "Restart Now",
-    "restart_later": "Later",
-    "updater_app_missing": "The updater application is missing. Would you like to download it now?",
-    "updater_app_launch": "This will close pkDex and launch the updater. Make sure you have downloaded an update first.",
-    "update_file_redownload": "An update file already exists. Do you want to redownload it ?",
-    "img_pack_extraction_confirm": "Extract high-resolution image pack ?\n\nThis may take a while.",
-    "img_pack_extraction_failure": "Extraction failed. Please try again or extract the zip file manually.",
-    "img_pack_keep_zipfile": "Extraction complete !\nHigh-resolution images are now available.\n\nDo you want to keep the downloaded zip file ?",
-    "img_pack_redownload": "High-resolution image pack already exists.\n\nDo you want to redownload it ?",
-    "img_pack_download_complete": "Download complete !\n\nHigh-resolution images are now available for extraction.\n\nUse the 'Extract High-Res Image Pack' button in Settings."
-  },
-  "about": {
-    "title": "pkDex\nv1.6.5",
-    "description": "pkDex is a simple app to view Pokemon data offline, for the Nintendo Switch games.",
-    "github": "Find it on github.com/Insektaure/pkDex",
-    "licence": "Licensed under Apache 2.0",
-    "logo_credit": "Logo generated with InvokeAI"
+  "hints": {
+    "quit": "Quit",
+    "open": "Open",
+    "page": "Page",
+    "apply": "Apply",
+    "done": "Done",
+    "exit": "Exit",
+    "select": "Select",
+    "status": "Status",
+    "bulk": "Bulk",
+    "multi": "Multi-select",
+    "back": "Back",
+    "previous": "Previous",
+    "next": "Next",
+    "regular_view": "Regular view",
+    "shiny_view": "Shiny view",
+    "toggle": "Toggle",
+    "choose": "Choose"
   },
   "common": {
-    "ok": "OK",
+    "loading": "Loading the Pokédex…",
+    "busy": "Another task is still running",
     "cancel": "Cancel",
-    "back": "Back",
-    "exit": "Exit",
-    "exit_hint": "Quit pkDex ?",
-    "open": "Open",
+    "later": "Later",
+    "ok": "OK",
     "on": "On",
     "off": "Off",
-    "delete": "Delete",
-    "save": "Save",
-    "input": "Please input...",
-    "submit": "Submit",
     "close": "Close",
-    "redownload": "Redownload",
-    "extract": "Extract",
-    "keep": "Keep",
-    "download": "Download",
-    "launch": "Launch"
+    "count_pokemon": "{count} Pokémon"
   },
-  "listing": {
-    "previous_page": "< Page",
-    "next_page": "Page >",
-    "toggle_capture_status": "Status",
-    "bulk_actions": "Bulk",
-    "multi_select": "Select"
+  "regions": {
+    "kanto": {
+      "name": "Kanto",
+      "game": "Let's Go! Pikachu & Let's Go! Eevee",
+      "sidebar": "Let's Go! Pikachu & Eevee",
+      "tag": "LGPE"
+    },
+    "kanto_frlg": {
+      "name": "Kanto",
+      "game": "FireRed & LeafGreen",
+      "sidebar": "FireRed & LeafGreen",
+      "tag": "FRLG"
+    },
+    "sinnoh": {
+      "name": "Sinnoh",
+      "game": "Brilliant Diamond & Shining Pearl",
+      "sidebar": "Brilliant Diamond & Shining Pearl",
+      "tag": "BDSP"
+    },
+    "sinnoh_arceus": {
+      "name": "Sinnoh",
+      "game": "Legends: Arceus",
+      "sidebar": "Legends: Arceus",
+      "tag": "Legends: Arceus"
+    },
+    "galar": {
+      "name": "Galar",
+      "game": "Sword & Shield",
+      "sidebar": "Sword & Shield",
+      "tag": "SwSh"
+    },
+    "isle_armor": {
+      "name": "Isle of Armor",
+      "game": "Sword & Shield · The Isle of Armor",
+      "sidebar": "Isle of Armor",
+      "tag": "SwSh DLC 1"
+    },
+    "crown_tundra": {
+      "name": "Crown Tundra",
+      "game": "Sword & Shield · The Crown Tundra",
+      "sidebar": "Crown Tundra",
+      "tag": "SwSh DLC 2"
+    },
+    "paldea": {
+      "name": "Paldea",
+      "game": "Scarlet & Violet",
+      "sidebar": "Scarlet & Violet",
+      "tag": "ScVi"
+    },
+    "kitakami": {
+      "name": "Kitakami",
+      "game": "Scarlet & Violet · The Teal Mask",
+      "sidebar": "Kitakami · The Teal Mask",
+      "tag": "ScVi DLC 1"
+    },
+    "blueberry_academy": {
+      "name": "Blueberry Academy",
+      "game": "Scarlet & Violet · The Indigo Disk",
+      "sidebar": "Blueberry Academy · The Indigo Disk",
+      "tag": "ScVi DLC 2"
+    },
+    "kalos_lza": {
+      "name": "Kalos",
+      "game": "Legends: Z-A",
+      "sidebar": "Legends: Z-A",
+      "tag": "Legends: Z-A"
+    },
+    "hyperspace_lumiose": {
+      "name": "Hyperspace Lumiose",
+      "game": "Legends: Z-A · Mega Dimension",
+      "sidebar": "Hyperspace Lumiose",
+      "tag": "LZA DLC"
+    }
   },
-  "bulk_actions": {
-    "title": "Bulk Actions",
-    "confirm": "Are you sure? This will affect {count} Pokémon.\nThis action cannot be undone.",
-    "mark_all_caught": "Mark all as Caught",
-    "mark_all_shiny": "Mark all as Shiny",
-    "mark_all_alpha": "Mark all as Alpha",
-    "mark_all_shiny_alpha": "Mark all as Shiny Alpha",
-    "clear_all_caught": "Clear all Caught",
-    "clear_all_shiny": "Clear all Shiny",
-    "clear_all_alpha": "Clear all Alpha",
-    "clear_all_shiny_alpha": "Clear all Shiny Alpha"
+  "dex": {
+    "eyebrow": "Regional Pokédex",
+    "caught": "caught",
+    "page": "Page {page} of {pages}",
+    "multi": "Multi-select · {count} selected",
+    "empty": "No Pokémon in this region"
   },
-  "capture_toggle": {
-    "title": "Capture Status",
-    "normal": "Regular",
+  "states": {
+    "regular": "Regular",
     "shiny": "Shiny",
     "alpha": "Alpha",
     "shiny_alpha": "Shiny Alpha"
   },
-  "view": {
-    "infos": {
-      "captured": "Captured",
-      "title": {
-        "national_number": "National N°",
-        "regional_number": "Regional N°",
-        "shiny": "Shiny",
-        "type": "Type",
-        "version": "Version Exclusive",
-        "evolution": "Evolution",
-        "locations": "Locations"
-      },
-      "content": {
-        "available": "Available",
-        "locked": "Locked"
-      }
+  "bulk": {
+    "title": "Bulk actions",
+    "subtitle": "{region} · {count} Pokémon",
+    "mark": "Mark all",
+    "clear": "Clear all",
+    "mark_regular": "Mark all as Caught",
+    "mark_shiny": "Mark all as Shiny",
+    "mark_alpha": "Mark all as Alpha",
+    "mark_shiny_alpha": "Mark all as Shiny Alpha",
+    "clear_regular": "Clear all Caught",
+    "clear_shiny": "Clear all Shiny",
+    "clear_alpha": "Clear all Alpha",
+    "clear_shiny_alpha": "Clear all Shiny Alpha",
+    "confirm_title": "Update {count} Pokémon?",
+    "confirm_mark_body": "Every Pokémon in {region} will be marked as {state}. This action cannot be undone.",
+    "confirm_clear_body": "{state} will be cleared for every Pokémon in {region}. This action cannot be undone.",
+    "apply": "Apply",
+    "done": "{count} Pokémon updated"
+  },
+  "multi": {
+    "on": "Multi-select: A selects, Y applies a status",
+    "none": "Select Pokémon with A first",
+    "title": "Selected Pokémon",
+    "subtitle": "{count} selected · {region}"
+  },
+  "capture": {
+    "title": "Capture status"
+  },
+  "detail": {
+    "previous": "Previous",
+    "next": "Next",
+    "caught": "Caught",
+    "no_sprite": "No sprite",
+    "numbers": "National #{national} · {region} #{regional}",
+    "national_no": "National N°",
+    "regional_no": "Regional N°",
+    "shiny": "Shiny",
+    "available": "Available",
+    "locked": "Locked",
+    "version": "Version exclusive",
+    "none": "None",
+    "evolution": "Evolution",
+    "current": "Current",
+    "no_evolution": "Does not evolve",
+    "locations": "Locations",
+    "unknown_location": "No known location",
+    "rows": "Rows {first}–{last} of {total}"
+  },
+  "settings": {
+    "eyebrow": "Preferences",
+    "title": "Settings",
+    "group": {
+      "updates": "Updates",
+      "pokemon_data": "Pokémon data",
+      "user_interface": "User interface",
+      "language": "Language",
+      "resources": "Resources"
     },
-    "navigation": {
-      "previous_pokemon": "Previous Pokemon",
-      "next_pokemon": "Next Pokemon"
+    "check_on_launch": "Check for updates on launch",
+    "check_now": "Check for updates",
+    "install_update": "Install update",
+    "region_to_reset": "Region to reset",
+    "reset_capture": "Reset capture status",
+    "hide_footer": "Hide bottom bar",
+    "language": "Language",
+    "download_pack": "Download high-res image pack",
+    "extract_pack": "Extract high-res image pack",
+    "value": {
+      "checking": "Checking…",
+      "up_to_date": "Up to date",
+      "check_failed": "Check failed",
+      "no_update": "None available",
+      "downloaded": "Downloaded",
+      "pack_size": "75 MB",
+      "not_downloaded": "Not downloaded"
     }
+  },
+  "reset": {
+    "all_regions": "All regions",
+    "drawer_title": "Region to reset",
+    "all_title": "Reset all capture statuses?",
+    "all_body": "Every Pokémon's capture status will be cleared for all regions. This action cannot be undone.",
+    "region_title": "Reset {region}?",
+    "region_body": "Every Pokémon's capture status will be cleared for {region}. This action cannot be undone.",
+    "all_button": "Reset everything",
+    "region_button": "Reset region",
+    "success_all": "All capture statuses have been reset",
+    "success_region": "Capture statuses for {region} have been reset",
+    "failure": "The capture statuses could not be reset"
+  },
+  "language": {
+    "title": "Language",
+    "changed": "Language changed"
+  },
+  "quit": {
+    "title": "Quit pkDex?",
+    "busy": "A download is still running and will be stopped."
+  },
+  "net": {
+    "offline": "No network connection"
+  },
+  "update": {
+    "toast_available": "pkDex {version} is available: install it from Settings",
+    "latest": "You are using the latest version ({version})",
+    "check_failed": "Could not check for updates",
+    "available_title": "pkDex {version} is available",
+    "available_body": "You are using {current}. Download and install {version} now? pkDex restarts when it is done.",
+    "install": "Install",
+    "none": "There is no update to install",
+    "screen_title": "pkDex Updater",
+    "sub_running": "Installing v{version}",
+    "sub_done": "Update applied",
+    "sub_failed": "Update failed",
+    "step_download": "Downloaded update",
+    "step_unpack": "Unpacked update",
+    "step_verify": "Verified the new version",
+    "step_backup": "Backed up current version",
+    "step_install": "Installed update",
+    "step_cleanup": "Removed backup file",
+    "success": "Update successfully applied",
+    "restarting": "Restarting in {seconds} s",
+    "failure": "The update could not be applied",
+    "intact": "your current version was kept",
+    "keep_on": "Keep the console on until the update is done"
+  },
+  "pack": {
+    "exists_title": "Image pack already downloaded",
+    "exists_body": "Do you want to download it again?",
+    "redownload": "Download again",
+    "downloading": "Downloading the high-res image pack",
+    "downloaded_title": "Download complete",
+    "downloaded_body": "The high-resolution images are ready to be extracted. Extract them now?",
+    "extract": "Extract",
+    "cancelled": "Download cancelled",
+    "download_failed": "Download failed: {error}",
+    "missing": "Download the image pack first",
+    "extract_title": "Extract the image pack?",
+    "extract_body": "This may take a while.",
+    "extracting": "Extracting the high-res image pack",
+    "extract_failed": "Extraction failed",
+    "extracted_title": "Extraction complete",
+    "extracted_body": "High-resolution images are now available. Do you want to keep the downloaded zip file?",
+    "keep": "Keep",
+    "delete": "Delete",
+    "zip_kept": "The zip file was kept",
+    "zip_deleted": "The zip file was deleted",
+    "zip_delete_failed": "The zip file could not be deleted"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "pkDex",
+    "version": "Version {version} · by {author}",
+    "description": "pkDex is a simple app to view Pokémon data offline, for the Nintendo Switch games.",
+    "source_label": "Source",
+    "source": "github.com/Insektaure/pkDex",
+    "license_label": "License",
+    "license": "GNU General Public License v2.0",
+    "data_label": "Data",
+    "data": "serebii.net · pokemondb.net · bulbapedia.bulbagarden.net",
+    "logo_label": "Logo",
+    "logo": "Generated with InvokeAI",
+    "disclaimer": "pkDex is not affiliated with, endorsed by, or related to Nintendo, Game Freak, or The Pokémon Company. Pokémon and Pokémon character names are trademarks of Nintendo. Provided as is, for educational and informational purposes only."
+  },
+  "changelog": {
+    "eyebrow": "What's new",
+    "title": "Changelog",
+    "missing": "Changelog file not found."
   }
 }

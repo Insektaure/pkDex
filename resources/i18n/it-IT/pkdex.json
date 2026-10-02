@@ -1,156 +1,298 @@
 {
-  "title": "pkDex - Un'enciclopedia Pokémon per i giochi Nintendo Switch",
-  "tabs": {
-    "kanto": "Kanto (Let's Go! Pikachu & Eevee)",
-    "kanto_frlg": "└ Kanto (Rosso Fuoco & Rosso Fuoco)",
-    "sinnoh": "Sinnoh (Diamante Lucente & Perla Splendente)",
-    "sinnoh_arceus": "└ Sinnoh (Leggende: Arceus)",
-    "galar": "Galar (Spada & Scudo)",
-    "isle_armor": "└ Isola dell'Armatura (DLC 1)",
-    "crown_tundra": "└ Landa Corona (DLC 2)",
-    "paldea": "Paldea (Scarlatto & Violetto)",
-    "kitakami": "└ Nordivia (La Maschera Turchese - DLC 1)",
-    "blueberry_academy": "└ Istituto Mirtillo (Il Disco Indaco - DLC 2)",
-    "kalos_lza": "Kalos (Leggende: Z-A)",
-    "hyperspace_lumiose": "└ Luminopoli dimensionali (Megadimensione DLC)",
-    "settings": "Impostazioni",
-    "about": "Informazioni su pkDex",
-    "changelog": "Registro modifiche"
+  "app": {
+    "tagline": "Enciclopedia Pokémon"
   },
-  "welcome": "Benvenuto nell'app pkDex!",
-  "settings": {
-    "regions": {
-      "all_regions": "Tutte le regioni",
-      "kanto": "Kanto (LGPE)",
-      "kanto_frlg": "Kanto (FRLG)",
-      "sinnoh": "Sinnoh (DLPS)",
-      "sinnoh_arceus": "Sinnoh (Leggende Arceus)",
-      "galar": "Galar (SpSc)",
-      "isle_armor": "Isola dell'Armatura (SpSc DLC 1)",
-      "crown_tundra": "Landa Corona (SpSc DLC 2)",
-      "paldea": "Paldea (ScVi)",
-      "kitakami": "Nordivia (ScVi DLC 1)",
-      "blueberry_academy": "Istituto Mirtillo (ScVi DLC 2)",
-      "kalos_lza": "Kalos (Leggende Z-A)",
-      "hyperspace_lumiose": "Luminopoli dimensionali (LZA DLC)"
-    },
-    "locales": {
-      "en-US": "English (US)",
-      "fr-FR": "Français (France)",
-      "de-DE": "Deutsch (Deutschland)",
-      "es-ES": "Español (España)",
-      "it-IT": "Italiano (Italia)",
-      "ja-JP": "日本語（日本)"
-    },
-    "i18n_title": "Lingua",
-    "select_locale": "Seleziona lingua",
-    "select_region_to_reset": "Seleziona la regione da reimpostare",
-    "reset_confirm_all": "Sei sicuro di voler reimpostare lo stato di cattura di tutti i Pokémon per tutte le regioni?\nQuesta azione non può essere annullata.",
-    "reset_confirm_region": "Sei sicuro di voler reimpostare lo stato di cattura di tutti i Pokémon per la regione {region}?\nQuesta azione non può essere annullata.",
-    "reset_success_all": "Lo stato di cattura di tutti i Pokémon è stato reimpostato.",
-    "reset_success_region": "Lo stato di cattura dei Pokémon per la regione {region} è stato reimpostato.",
-    "reset_failure": "Impossibile reimpostare lo stato di cattura dei Pokémon.",
-    "reset_button": "Reimposta",
-    "cancel_button": "Annulla",
-    "settings": "Impostazioni",
-    "error_tab_frame": "Impossibile trovare tabFrame in main.xml",
-    "check_updates": "Verifica aggiornamenti",
-    "launch_updater": "Avvia aggiornamento",
-    "reset_capture_status": "Reimposta stato di cattura",
-    "hide_bottom_bar": "Nascondi barra inferiore",
-    "download_high_res_images": "Scarica pacchetto immagini ad alta risoluzione (75MB)",
-    "extract_high_res_images": "Estrai pacchetto immagini ad alta risoluzione",
-    "changelog_content": "Contenuto registro modifiche",
-    "updates": "Aggiornamenti",
-    "check_updates_on_launch": "Verifica aggiornamenti all'avvio",
-    "pokemon_data": "Dati Pokémon",
-    "user_interface": "Interfaccia utente",
-    "resources": "Risorse",
-    "locale_restart_message": "Il cambio lingua sarà applicato dopo il riavvio dell'app.",
-    "restart_now": "Riavvia ora",
-    "restart_later": "Più tardi",
-    "updater_app_missing": "L'applicazione di aggiornamento è mancante. Vuoi scaricarla ora?",
-    "updater_app_launch": "Questo chiuderà pkDex e avvierà l'aggiornamento. Assicurati di aver scaricato prima un aggiornamento.",
-    "update_file_redownload": "Un file di aggiornamento esiste già. Vuoi riscaricarlo?",
-    "img_pack_extraction_confirm": "Estrarre il pacchetto immagini ad alta risoluzione?\n\nQuesta operazione potrebbe richiedere del tempo.",
-    "img_pack_extraction_failure": "Estrazione fallita. Riprova o estrai manualmente il file zip.",
-    "img_pack_keep_zipfile": "Estrazione completata!\nLe immagini ad alta risoluzione sono ora disponibili.\n\nVuoi mantenere il file zip scaricato?",
-    "img_pack_redownload": "Il pacchetto immagini ad alta risoluzione esiste già.\n\nVuoi riscaricarlo?",
-    "img_pack_download_complete": "Download completato!\n\nLe immagini ad alta risoluzione sono ora disponibili per l'estrazione.\n\nUsa il pulsante 'Estrai pacchetto immagini ad alta risoluzione' nelle Impostazioni."
+  "sidebar": {
+    "regions": "Regioni"
   },
-  "about": {
-    "title": "pkDex\nv1.6.5",
-    "description": "pkDex è un'app semplice per visualizzare dati Pokémon offline, per i giochi Nintendo Switch.",
-    "github": "Trovalo su github.com/Insektaure/pkDex",
-    "licence": "Concesso in licenza Apache 2.0",
-    "logo_credit": "Logo generato con InvokeAI"
+  "nav": {
+    "settings": "Impostazioni",
+    "about": "Info",
+    "changelog": "Novità"
+  },
+  "hints": {
+    "quit": "Esci",
+    "open": "Apri",
+    "page": "Pagina",
+    "apply": "Applica",
+    "done": "Fatto",
+    "exit": "Esci",
+    "select": "Scegli",
+    "status": "Stato",
+    "bulk": "Massa",
+    "multi": "Selezione multipla",
+    "back": "Indietro",
+    "previous": "Precedente",
+    "next": "Successivo",
+    "regular_view": "Vista normale",
+    "shiny_view": "Vista cromatica",
+    "toggle": "Cambia",
+    "choose": "Scegli"
   },
   "common": {
-    "ok": "OK",
+    "loading": "Caricamento del Pokédex…",
+    "busy": "Un'altra operazione è in corso",
     "cancel": "Annulla",
-    "back": "Indietro",
-    "exit": "Esci",
-    "exit_hint": "Uscire da pkDex?",
-    "open": "Apri",
-    "on": "Attivo",
-    "off": "Disattivo",
-    "delete": "Elimina",
-    "save": "Salva",
-    "input": "Inserisci...",
-    "submit": "Invia",
+    "later": "Più tardi",
+    "ok": "OK",
+    "on": "Sì",
+    "off": "No",
     "close": "Chiudi",
-    "redownload": "Riscarica",
-    "extract": "Estrai",
-    "keep": "Mantieni",
-    "download": "Scarica",
-    "launch": "Avvia"
+    "count_pokemon": "{count} Pokémon"
   },
-  "listing": {
-    "previous_page": "< Pagina",
-    "next_page": "Pagina >",
-    "toggle_capture_status": "Stato",
-    "bulk_actions": "Tutti",
-    "multi_select": "Selezione"
+  "regions": {
+    "kanto": {
+      "name": "Kanto",
+      "game": "Let's Go, Pikachu! e Let's Go, Eevee!",
+      "sidebar": "Let's Go, Pikachu! e Eevee!",
+      "tag": "LGPE"
+    },
+    "kanto_frlg": {
+      "name": "Kanto",
+      "game": "Rosso Fuoco e Verde Foglia",
+      "sidebar": "Rosso Fuoco e Verde Foglia",
+      "tag": "RFVF"
+    },
+    "sinnoh": {
+      "name": "Sinnoh",
+      "game": "Diamante Lucente e Perla Splendente",
+      "sidebar": "Diamante Lucente e Perla Splendente",
+      "tag": "DLPS"
+    },
+    "sinnoh_arceus": {
+      "name": "Sinnoh",
+      "game": "Leggende Pokémon: Arceus",
+      "sidebar": "Leggende: Arceus",
+      "tag": "Leggende Arceus"
+    },
+    "galar": {
+      "name": "Galar",
+      "game": "Spada e Scudo",
+      "sidebar": "Spada e Scudo",
+      "tag": "SpSc"
+    },
+    "isle_armor": {
+      "name": "Isola dell'Armatura",
+      "game": "Spada e Scudo · L'isola solitaria dell'armatura",
+      "sidebar": "Isola dell'Armatura",
+      "tag": "SpSc DLC 1"
+    },
+    "crown_tundra": {
+      "name": "Landa Corona",
+      "game": "Spada e Scudo · Le terre innevate della corona",
+      "sidebar": "Landa Corona",
+      "tag": "SpSc DLC 2"
+    },
+    "paldea": {
+      "name": "Paldea",
+      "game": "Scarlatto e Violetto",
+      "sidebar": "Scarlatto e Violetto",
+      "tag": "ScVi"
+    },
+    "kitakami": {
+      "name": "Nordivia",
+      "game": "Scarlatto e Violetto · La maschera turchese",
+      "sidebar": "Nordivia · La maschera turchese",
+      "tag": "ScVi DLC 1"
+    },
+    "blueberry_academy": {
+      "name": "Istituto Mirtillo",
+      "game": "Scarlatto e Violetto · Il disco indaco",
+      "sidebar": "Istituto Mirtillo · Il disco indaco",
+      "tag": "ScVi DLC 2"
+    },
+    "kalos_lza": {
+      "name": "Kalos",
+      "game": "Leggende Pokémon: Z-A",
+      "sidebar": "Leggende: Z-A",
+      "tag": "Leggende Z-A"
+    },
+    "hyperspace_lumiose": {
+      "name": "Luminopoli dimensionale",
+      "game": "Leggende: Z-A · Megadimensione",
+      "sidebar": "Luminopoli dimensionale",
+      "tag": "LZA DLC"
+    }
   },
-  "bulk_actions": {
-    "title": "Azioni di massa",
-    "confirm": "Sei sicuro? Questo interesserà {count} Pokémon.\nQuesta azione non può essere annullata.",
-    "mark_all_caught": "Segna tutti come Catturati",
-    "mark_all_shiny": "Segna tutti come Cromatici",
-    "mark_all_alpha": "Segna tutti come Alfa",
-    "mark_all_shiny_alpha": "Segna tutti come Alfa Cromatici",
-    "clear_all_caught": "Cancella tutti i Catturati",
-    "clear_all_shiny": "Cancella tutti i Cromatici",
-    "clear_all_alpha": "Cancella tutti gli Alfa",
-    "clear_all_shiny_alpha": "Cancella tutti gli Alfa Cromatici"
+  "dex": {
+    "eyebrow": "Pokédex regionale",
+    "caught": "catturati",
+    "page": "Pagina {page} di {pages}",
+    "multi": "Selezione multipla · {count} scelti",
+    "empty": "Nessun Pokémon in questa regione"
   },
-  "capture_toggle": {
-    "title": "Stato di cattura",
-    "normal": "Normale",
+  "states": {
+    "regular": "Normale",
     "shiny": "Cromatico",
     "alpha": "Alfa",
     "shiny_alpha": "Alfa Cromatico"
   },
-  "view": {
-    "infos": {
-      "captured": "Catturato",
-      "title": {
-        "national_number": "N° Nazionale",
-        "regional_number": "N° Regionale",
-        "shiny": "Cromatico",
-        "type": "Tipo",
-        "version": "Esclusiva versione",
-        "evolution": "Evoluzione",
-        "locations": "Luoghi"
-      },
-      "content": {
-        "available": "Disponibile",
-        "locked": "Bloccato"
-      }
+  "bulk": {
+    "title": "Azioni di massa",
+    "subtitle": "{region} · {count} Pokémon",
+    "mark": "Segna tutti",
+    "clear": "Cancella tutti",
+    "mark_regular": "Segna tutti come Catturati",
+    "mark_shiny": "Segna tutti come Cromatici",
+    "mark_alpha": "Segna tutti come Alfa",
+    "mark_shiny_alpha": "Segna tutti come Alfa Cromatici",
+    "clear_regular": "Cancella tutti i Catturati",
+    "clear_shiny": "Cancella tutti i Cromatici",
+    "clear_alpha": "Cancella tutti gli Alfa",
+    "clear_shiny_alpha": "Cancella tutti gli Alfa Cromatici",
+    "confirm_title": "Modificare {count} Pokémon?",
+    "confirm_mark_body": "Tutti i Pokémon di {region} saranno segnati come {state}. Questa azione non può essere annullata.",
+    "confirm_clear_body": "{state} sarà cancellato per tutti i Pokémon di {region}. Questa azione non può essere annullata.",
+    "apply": "Applica",
+    "done": "{count} Pokémon modificati"
+  },
+  "multi": {
+    "on": "Selezione multipla: A sceglie, Y applica uno stato",
+    "none": "Scegli prima dei Pokémon con A",
+    "title": "Pokémon scelti",
+    "subtitle": "{count} scelti · {region}"
+  },
+  "capture": {
+    "title": "Stato di cattura"
+  },
+  "detail": {
+    "previous": "Precedente",
+    "next": "Successivo",
+    "caught": "Catturato",
+    "no_sprite": "Nessuna immagine",
+    "numbers": "Nazionale #{national} · {region} #{regional}",
+    "national_no": "N° Nazionale",
+    "regional_no": "N° Regionale",
+    "shiny": "Cromatico",
+    "available": "Disponibile",
+    "locked": "Bloccato",
+    "version": "Esclusiva versione",
+    "none": "Nessuna",
+    "evolution": "Evoluzione",
+    "current": "Attuale",
+    "no_evolution": "Non si evolve",
+    "locations": "Luoghi",
+    "unknown_location": "Nessun luogo noto",
+    "rows": "Righe {first}–{last} di {total}"
+  },
+  "settings": {
+    "eyebrow": "Preferenze",
+    "title": "Impostazioni",
+    "group": {
+      "updates": "Aggiornamenti",
+      "pokemon_data": "Dati Pokémon",
+      "user_interface": "Interfaccia",
+      "language": "Lingua",
+      "resources": "Risorse"
     },
-    "navigation": {
-      "previous_pokemon": "Pokémon precedente",
-      "next_pokemon": "Pokémon successivo"
+    "check_on_launch": "Cerca aggiornamenti all'avvio",
+    "check_now": "Cerca aggiornamenti",
+    "install_update": "Installa aggiornamento",
+    "region_to_reset": "Regione da azzerare",
+    "reset_capture": "Azzera le catture",
+    "hide_footer": "Nascondi la barra inferiore",
+    "language": "Lingua",
+    "download_pack": "Scarica il pacchetto immagini HD",
+    "extract_pack": "Estrai il pacchetto immagini HD",
+    "value": {
+      "checking": "Ricerca…",
+      "up_to_date": "Aggiornato",
+      "check_failed": "Errore",
+      "no_update": "Nessuno",
+      "downloaded": "Scaricato",
+      "pack_size": "75 MB",
+      "not_downloaded": "Non scaricato"
     }
+  },
+  "reset": {
+    "all_regions": "Tutte le regioni",
+    "drawer_title": "Regione da azzerare",
+    "all_title": "Azzerare tutte le catture?",
+    "all_body": "Lo stato di cattura di ogni Pokémon sarà cancellato per tutte le regioni. Questa azione non può essere annullata.",
+    "region_title": "Azzerare {region}?",
+    "region_body": "Lo stato di cattura di ogni Pokémon sarà cancellato per {region}. Questa azione non può essere annullata.",
+    "all_button": "Azzera tutto",
+    "region_button": "Azzera",
+    "success_all": "Tutte le catture sono state azzerate",
+    "success_region": "Le catture di {region} sono state azzerate",
+    "failure": "Impossibile azzerare le catture"
+  },
+  "language": {
+    "title": "Lingua",
+    "changed": "Lingua cambiata"
+  },
+  "quit": {
+    "title": "Uscire da pkDex?",
+    "busy": "Un download è in corso e verrà interrotto."
+  },
+  "net": {
+    "offline": "Nessuna connessione di rete"
+  },
+  "update": {
+    "toast_available": "pkDex {version} è disponibile: installalo dalle Impostazioni",
+    "latest": "Stai usando l'ultima versione ({version})",
+    "check_failed": "Impossibile cercare aggiornamenti",
+    "available_title": "pkDex {version} è disponibile",
+    "available_body": "Stai usando la {current}. Scaricare e installare la {version} ora? pkDex si riavvia al termine.",
+    "install": "Installa",
+    "none": "Nessun aggiornamento da installare",
+    "screen_title": "Aggiornamento di pkDex",
+    "sub_running": "Installazione della v{version}",
+    "sub_done": "Aggiornamento applicato",
+    "sub_failed": "Aggiornamento non riuscito",
+    "step_download": "Aggiornamento scaricato",
+    "step_unpack": "Aggiornamento estratto",
+    "step_verify": "Nuova versione verificata",
+    "step_backup": "Versione attuale salvata",
+    "step_install": "Aggiornamento installato",
+    "step_cleanup": "Copia di backup rimossa",
+    "success": "Aggiornamento applicato con successo",
+    "restarting": "Riavvio tra {seconds} s",
+    "failure": "Impossibile applicare l'aggiornamento",
+    "intact": "la versione attuale è stata mantenuta",
+    "keep_on": "Tieni la console accesa fino al termine"
+  },
+  "pack": {
+    "exists_title": "Pacchetto immagini già scaricato",
+    "exists_body": "Vuoi scaricarlo di nuovo?",
+    "redownload": "Riscarica",
+    "downloading": "Download del pacchetto immagini HD",
+    "downloaded_title": "Download completato",
+    "downloaded_body": "Le immagini ad alta risoluzione sono pronte per l'estrazione. Estrarle ora?",
+    "extract": "Estrai",
+    "cancelled": "Download annullato",
+    "download_failed": "Download non riuscito: {error}",
+    "missing": "Scarica prima il pacchetto immagini",
+    "extract_title": "Estrarre il pacchetto immagini?",
+    "extract_body": "Potrebbe richiedere un po' di tempo.",
+    "extracting": "Estrazione del pacchetto immagini HD",
+    "extract_failed": "Estrazione non riuscita",
+    "extracted_title": "Estrazione completata",
+    "extracted_body": "Le immagini ad alta risoluzione sono ora disponibili. Vuoi conservare il file zip scaricato?",
+    "keep": "Conserva",
+    "delete": "Elimina",
+    "zip_kept": "Il file zip è stato conservato",
+    "zip_deleted": "Il file zip è stato eliminato",
+    "zip_delete_failed": "Impossibile eliminare il file zip"
+  },
+  "about": {
+    "eyebrow": "Info",
+    "title": "pkDex",
+    "version": "Versione {version} · di {author}",
+    "description": "pkDex è un'app semplice per visualizzare i dati dei Pokémon offline, per i giochi Nintendo Switch.",
+    "source_label": "Sorgente",
+    "source": "github.com/Insektaure/pkDex",
+    "license_label": "Licenza",
+    "license": "GNU General Public License v2.0",
+    "data_label": "Dati",
+    "data": "serebii.net · pokemondb.net · bulbapedia.bulbagarden.net",
+    "logo_label": "Logo",
+    "logo": "Generato con InvokeAI",
+    "disclaimer": "pkDex non è affiliato, approvato o collegato a Nintendo, Game Freak o The Pokémon Company. Pokémon e i nomi dei personaggi Pokémon sono marchi di Nintendo. Fornito così com'è, solo a scopo educativo e informativo."
+  },
+  "changelog": {
+    "eyebrow": "Novità",
+    "title": "Registro modifiche",
+    "missing": "File delle modifiche non trovato."
   }
 }

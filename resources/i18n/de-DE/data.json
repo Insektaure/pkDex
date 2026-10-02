@@ -5105,14 +5105,14 @@
     "183": {
       "name": "Mauzinger",
       "type": "Stahl",
-      "evolution": "Mauzi – Lvl 28 → Mauzinger (Entwickelt sich aus Galar Mauzi)",
+      "evolution": "Mauzi – Lvl 28 → Mauzinger",
       "locations": "Route 7, 9, Wutanfall-See",
       "exclusiveVersion": "-"
     },
     "184": {
       "name": "Snobilikat",
       "type": "Normal",
-      "evolution": "Mauzi – Lvl 28 → Snobilikat, Alola-Mauzi – hohe Zutraulichkeit → Alola-Snobilikat",
+      "evolution": "Mauzi – Lvl 28 → Snobilikat | Alola-Mauzi – hohe Zutraulichkeit → Alola-Snobilikat",
       "locations": "Entwickelt sich aus Mauzi",
       "exclusiveVersion": "-"
     },
@@ -6489,9 +6489,9 @@
       "exclusiveVersion": "-"
     },
     "381": {
-      "name": " Null:Typ:Null: Null",
+      "name": "Typ:Null",
       "type": "Normal",
-      "evolution": " Null:Typ:Null: Null – hohe Zutraulichkeit → Amigento",
+      "evolution": "Typ:Null – hohe Zutraulichkeit → Amigento",
       "locations": "Als Geschenk im Kampfturm nach dem Champ-Cup und dem Sieg über Delion",
       "exclusiveVersion": "-"
     },
@@ -7326,14 +7326,14 @@
     "100": {
       "name": "Dakuma",
       "type": "Kampf",
-      "evolution": "Dakuma – Interaktion mit Unlicht-Schriftrolle im Turm des Unlichts, Interaktion mit Wasser-Schriftrolle im Turm des Wassers",
+      "evolution": "Dakuma – Interaktion mit Unlicht-Schriftrolle im Turm des Unlichts, Interaktion mit Wasser-Schriftrolle im Turm des Wassers → Wulaosu",
       "locations": "Man erhält Dakuma von Mastrich, nachdem man die drei Prüfungen bestanden hat.",
       "exclusiveVersion": "-"
     },
     "101": {
       "name": "Wulaosu",
       "type": "Kampf / Unlicht",
-      "evolution": "Dakuma – Interaktion mit Unlicht-Schriftrolle im Turm des Unlichts, Interaktion mit Wasser-Schriftrolle im Turm des Wassers",
+      "evolution": "Dakuma – Interaktion mit Unlicht-Schriftrolle im Turm des Unlichts, Interaktion mit Wasser-Schriftrolle im Turm des Wassers → Wulaosu",
       "locations": "Entwickelt sich aus Dakuma",
       "exclusiveVersion": "-"
     },
@@ -13583,7 +13583,7 @@
     "172": {
       "name": "Schneppke",
       "type": "Eis",
-      "evolution": "Schneppke – Lvl 42 → Firnontor | Funkelstein, weibl. → Frosdedje",
+      "evolution": "Schneppke – Lvl 42 → Firnontor | – Funkelstein, weibl. → Frosdedje",
       "locations": "Oniyama, Kaltwasserkarst",
       "exclusiveVersion": "-"
     },
@@ -17983,7 +17983,7 @@
       "exclusiveVersion": "-"
     },
     "125": {
-      "name": "Unlichtrai",
+      "name": "Darkrai",
       "type": "Unlicht",
       "evolution": "-",
       "locations": "-",

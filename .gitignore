@@ -14,3 +14,4 @@ libromfs-generator
 !.github/
 library/borealis/*
 library/lib/*
+external/*

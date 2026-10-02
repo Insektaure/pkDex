@@ -1,156 +1,298 @@
 {
-  "title": "pkDex - ニンテンドースイッチ用ポケモン百科事典",
-  "tabs": {
-    "kanto": "カントー（ポケットモンスター Let's Go! ピカチュウ・Let's Go! イーブイ）",
-    "kanto_frlg": "└ カントー (ファイアレッド & リーフグリーン)",
-    "sinnoh": "シンオウ（ポケットモンスター ブリリアントダイヤモンド・シャイニングパール）",
-    "sinnoh_arceus": "└ シンオウ（Pokémon LEGENDS アルセウス）",
-    "galar": "ガラル（ポケットモンスター ソード・シールド）",
-    "isle_armor": "└ ヨロイじま（エキスパンションパス 第1弾）",
-    "crown_tundra": "└ カンムリせつげん（エキスパンションパス 第2弾）",
-    "paldea": "パルデア（ポケットモンスター スカーレット・バイオレット）",
-    "kitakami": "└ キタカミの里（碧の仮面 - 第1弾DLC）",
-    "blueberry_academy": "└ ブルーベリー学園（藍の円盤 - 第2弾DLC）",
-    "kalos_lza": "カロス（Pokémon LEGENDS Z-A）",
-    "hyperspace_lumiose": "└ 異次元ミアレ (M次元ラッシュ DLC)",
+  "app": {
+    "tagline": "ポケモン図鑑"
+  },
+  "sidebar": {
+    "regions": "地方"
+  },
+  "nav": {
     "settings": "設定",
-    "about": "pkDexについて",
+    "about": "情報",
     "changelog": "更新履歴"
   },
-  "welcome": "pkDexアプリへようこそ！",
-  "settings": {
-    "regions": {
-      "all_regions": "すべての地方",
-      "kanto": "カントー（LGPE）",
-      "kanto_frlg": "カントー (FRLG)",
-      "sinnoh": "シンオウ（BDSP）",
-      "sinnoh_arceus": "シンオウ（LEGENDS アルセウス）",
-      "galar": "ガラル（ソード・シールド）",
-      "isle_armor": "ヨロイじま（ソード・シールドDLC1）",
-      "crown_tundra": "カンムリせつげん（ソード・シールドDLC2）",
-      "paldea": "パルデア（スカーレット・バイオレット）",
-      "kitakami": "キタカミの里（スカーレット・バイオレットDLC1）",
-      "blueberry_academy": "ブルーベリー学園（スカーレット・バイオレットDLC2）",
-      "kalos_lza": "カロス（LEGENDS Z-A）",
-      "hyperspace_lumiose": "異次元ミアレ (LZA DLC)"
-    },
-    "locales": {
-      "en-US": "English (US)",
-      "fr-FR": "Français (France)",
-      "de-DE": "Deutsch (Deutschland)",
-      "es-ES": "Español (España)",
-      "it-IT": "Italiano (Italia)",
-      "ja-JP": "日本語（日本)"
-    },
-    "i18n_title": "言語",
-    "select_locale": "言語を選択",
-    "select_region_to_reset": "リセットする地方を選択",
-    "reset_confirm_all": "すべての地方のポケモン捕獲状況をリセットしますか？\nこの操作は元に戻せません。",
-    "reset_confirm_region": "{region}地方のポケモン捕獲状況をリセットしますか？\nこの操作は元に戻せません。",
-    "reset_success_all": "すべてのポケモン捕獲状況がリセットされました。",
-    "reset_success_region": "{region}地方のポケモン捕獲状況がリセットされました。",
-    "reset_failure": "ポケモン捕獲状況のリセットに失敗しました。",
-    "reset_button": "リセット",
-    "cancel_button": "キャンセル",
-    "settings": "設定",
-    "error_tab_frame": "main.xmlでtabFrameが見つかりませんでした",
-    "check_updates": "アップデートを確認",
-    "launch_updater": "アップデーターを起動",
-    "reset_capture_status": "捕獲状況をリセット",
-    "hide_bottom_bar": "下部バーを非表示",
-    "download_high_res_images": "高解像度画像パックをダウンロード（75MB）",
-    "extract_high_res_images": "高解像度画像パックを展開",
-    "changelog_content": "更新履歴内容",
-    "updates": "アップデート",
-    "check_updates_on_launch": "起動時にアップデートを確認",
-    "pokemon_data": "ポケモンデータ",
-    "user_interface": "ユーザーインターフェース",
-    "resources": "リソース",
-    "locale_restart_message": "言語変更はアプリ再起動後に適用されます。",
-    "restart_now": "今すぐ再起動",
-    "restart_later": "後で",
-    "updater_app_missing": "アップデーターアプリが見つかりません。今すぐダウンロードしますか？",
-    "updater_app_launch": "これによりpkDexが終了し、アップデーターが起動します。先にアップデートをダウンロードしてください。",
-    "update_file_redownload": "アップデートファイルが既に存在します。再ダウンロードしますか？",
-    "img_pack_extraction_confirm": "高解像度画像パックを展開しますか？\n\nしばらく時間がかかる場合があります。",
-    "img_pack_extraction_failure": "展開に失敗しました。再試行するか、手動でZIPファイルを展開してください。",
-    "img_pack_keep_zipfile": "展開が完了しました！\n高解像度画像が利用可能です。\n\nダウンロードしたZIPファイルを保持しますか？",
-    "img_pack_redownload": "高解像度画像パックは既に存在します。\n\n再ダウンロードしますか？",
-    "img_pack_download_complete": "ダウンロード完了！\n\n高解像度画像が展開可能です。\n\n設定の「高解像度画像パックを展開」ボタンを使用してください。"
-  },
-  "about": {
-    "title": "pkDex\nv1.6.5",
-    "description": "pkDexは、ニンテンドースイッチ用ポケモンゲームのデータをオフラインで閲覧できるシンプルなアプリです。",
-    "github": "github.com/Insektaure/pkDex で公開中",
-    "licence": "Apache 2.0 ライセンス",
-    "logo_credit": "ロゴはInvokeAIで生成"
+  "hints": {
+    "quit": "終了",
+    "open": "開く",
+    "page": "ページ",
+    "apply": "適用",
+    "done": "完了",
+    "exit": "やめる",
+    "select": "選ぶ",
+    "status": "状況",
+    "bulk": "一括",
+    "multi": "複数選択",
+    "back": "戻る",
+    "previous": "前へ",
+    "next": "次へ",
+    "regular_view": "通常の姿",
+    "shiny_view": "色違いの姿",
+    "toggle": "切り替え",
+    "choose": "決定"
   },
   "common": {
-    "ok": "OK",
+    "loading": "図鑑を読み込み中…",
+    "busy": "ほかの処理を実行中です",
     "cancel": "キャンセル",
-    "back": "戻る",
-    "exit": "終了",
-    "exit_hint": "pkDexを終了しますか？",
-    "open": "開く",
+    "later": "あとで",
+    "ok": "OK",
     "on": "オン",
     "off": "オフ",
-    "delete": "削除",
-    "save": "保存",
-    "input": "入力してください...",
-    "submit": "送信",
     "close": "閉じる",
-    "redownload": "再ダウンロード",
-    "extract": "展開",
-    "keep": "保持",
-    "download": "ダウンロード",
-    "launch": "起動"
+    "count_pokemon": "{count}匹"
   },
-  "listing": {
-    "previous_page": "前のページ",
-    "next_page": "次のページ",
-    "toggle_capture_status": "状況",
-    "bulk_actions": "一括",
-    "multi_select": "選択"
+  "regions": {
+    "kanto": {
+      "name": "カントー",
+      "game": "Let's Go! ピカチュウ・Let's Go! イーブイ",
+      "sidebar": "Let's Go! ピカチュウ・イーブイ",
+      "tag": "LGPE"
+    },
+    "kanto_frlg": {
+      "name": "カントー",
+      "game": "ファイアレッド・リーフグリーン",
+      "sidebar": "ファイアレッド・リーフグリーン",
+      "tag": "FRLG"
+    },
+    "sinnoh": {
+      "name": "シンオウ",
+      "game": "ブリリアントダイヤモンド・シャイニングパール",
+      "sidebar": "ブリリアントダイヤモンド・シャイニングパール",
+      "tag": "BDSP"
+    },
+    "sinnoh_arceus": {
+      "name": "シンオウ",
+      "game": "Pokémon LEGENDS アルセウス",
+      "sidebar": "LEGENDS アルセウス",
+      "tag": "LEGENDS アルセウス"
+    },
+    "galar": {
+      "name": "ガラル",
+      "game": "ソード・シールド",
+      "sidebar": "ソード・シールド",
+      "tag": "剣盾"
+    },
+    "isle_armor": {
+      "name": "ヨロイじま",
+      "game": "ソード・シールド・鎧の孤島",
+      "sidebar": "ヨロイじま",
+      "tag": "剣盾 DLC1"
+    },
+    "crown_tundra": {
+      "name": "カンムリせつげん",
+      "game": "ソード・シールド・冠の雪原",
+      "sidebar": "カンムリせつげん",
+      "tag": "剣盾 DLC2"
+    },
+    "paldea": {
+      "name": "パルデア",
+      "game": "スカーレット・バイオレット",
+      "sidebar": "スカーレット・バイオレット",
+      "tag": "SV"
+    },
+    "kitakami": {
+      "name": "キタカミの里",
+      "game": "スカーレット・バイオレット・碧の仮面",
+      "sidebar": "キタカミの里・碧の仮面",
+      "tag": "SV DLC1"
+    },
+    "blueberry_academy": {
+      "name": "ブルーベリー学園",
+      "game": "スカーレット・バイオレット・藍の円盤",
+      "sidebar": "ブルーベリー学園・藍の円盤",
+      "tag": "SV DLC2"
+    },
+    "kalos_lza": {
+      "name": "カロス",
+      "game": "Pokémon LEGENDS Z-A",
+      "sidebar": "LEGENDS Z-A",
+      "tag": "LEGENDS Z-A"
+    },
+    "hyperspace_lumiose": {
+      "name": "異次元ミアレ",
+      "game": "LEGENDS Z-A・M次元ラッシュ",
+      "sidebar": "異次元ミアレ",
+      "tag": "LZA DLC"
+    }
   },
-  "bulk_actions": {
-    "title": "一括操作",
-    "confirm": "本当によろしいですか？{count}匹のポケモンに影響します。\nこの操作は元に戻せません。",
-    "mark_all_caught": "すべてを捕獲済みにする",
-    "mark_all_shiny": "すべてを色違い捕獲済みにする",
-    "mark_all_alpha": "すべてをオヤブン捕獲済みにする",
-    "mark_all_shiny_alpha": "すべてを色違いオヤブン捕獲済みにする",
-    "clear_all_caught": "すべての捕獲済みをクリア",
-    "clear_all_shiny": "すべての色違いをクリア",
-    "clear_all_alpha": "すべてのオヤブンをクリア",
-    "clear_all_shiny_alpha": "すべての色違いオヤブンをクリア"
+  "dex": {
+    "eyebrow": "地方図鑑",
+    "caught": "捕獲済み",
+    "page": "{page} / {pages} ページ",
+    "multi": "複数選択・{count}匹選択中",
+    "empty": "この地方にはポケモンがいません"
   },
-  "capture_toggle": {
-    "title": "捕獲状況を切り替え",
-    "normal": "ノーマル",
+  "states": {
+    "regular": "ノーマル",
     "shiny": "色違い",
     "alpha": "オヤブン",
     "shiny_alpha": "色違いオヤブン"
   },
-  "view": {
-    "infos": {
-      "captured": "捕獲済み",
-      "title": {
-        "national_number": "全国図鑑No.",
-        "regional_number": "地方図鑑No.",
-        "shiny": "色違い",
-        "type": "タイプ",
-        "version": "バージョン限定",
-        "evolution": "進化",
-        "locations": "出現場所"
-      },
-      "content": {
-        "available": "入手可能",
-        "locked": "ロック中"
-      }
+  "bulk": {
+    "title": "一括操作",
+    "subtitle": "{region}・{count}匹",
+    "mark": "すべて登録",
+    "clear": "すべてクリア",
+    "mark_regular": "すべてを捕獲済みにする",
+    "mark_shiny": "すべてを色違い捕獲済みにする",
+    "mark_alpha": "すべてをオヤブン捕獲済みにする",
+    "mark_shiny_alpha": "すべてを色違いオヤブン捕獲済みにする",
+    "clear_regular": "すべての捕獲済みをクリア",
+    "clear_shiny": "すべての色違いをクリア",
+    "clear_alpha": "すべてのオヤブンをクリア",
+    "clear_shiny_alpha": "すべての色違いオヤブンをクリア",
+    "confirm_title": "{count}匹のポケモンを変更しますか？",
+    "confirm_mark_body": "{region}のすべてのポケモンが「{state}」として登録されます。この操作は元に戻せません。",
+    "confirm_clear_body": "{region}のすべてのポケモンの「{state}」がクリアされます。この操作は元に戻せません。",
+    "apply": "適用",
+    "done": "{count}匹を変更しました"
+  },
+  "multi": {
+    "on": "複数選択：Aで選択、Yで状況を適用",
+    "none": "まずAでポケモンを選んでください",
+    "title": "選択したポケモン",
+    "subtitle": "{count}匹選択中・{region}"
+  },
+  "capture": {
+    "title": "捕獲状況"
+  },
+  "detail": {
+    "previous": "前へ",
+    "next": "次へ",
+    "caught": "捕獲済み",
+    "no_sprite": "画像なし",
+    "numbers": "全国 #{national}・{region} #{regional}",
+    "national_no": "全国図鑑No.",
+    "regional_no": "地方図鑑No.",
+    "shiny": "色違い",
+    "available": "入手可能",
+    "locked": "入手不可",
+    "version": "バージョン限定",
+    "none": "なし",
+    "evolution": "進化",
+    "current": "現在",
+    "no_evolution": "進化しない",
+    "locations": "出現場所",
+    "unknown_location": "出現場所は不明",
+    "rows": "{first}–{last}行目 / 全{total}行"
+  },
+  "settings": {
+    "eyebrow": "設定",
+    "title": "設定",
+    "group": {
+      "updates": "アップデート",
+      "pokemon_data": "ポケモンデータ",
+      "user_interface": "表示",
+      "language": "言語",
+      "resources": "リソース"
     },
-    "navigation": {
-      "previous_pokemon": "前のポケモン",
-      "next_pokemon": "次のポケモン"
+    "check_on_launch": "起動時にアップデートを確認",
+    "check_now": "アップデートを確認",
+    "install_update": "アップデートをインストール",
+    "region_to_reset": "リセットする地方",
+    "reset_capture": "捕獲状況をリセット",
+    "hide_footer": "下部バーを隠す",
+    "language": "言語",
+    "download_pack": "高解像度画像パックをダウンロード",
+    "extract_pack": "高解像度画像パックを展開",
+    "value": {
+      "checking": "確認中…",
+      "up_to_date": "最新",
+      "check_failed": "失敗",
+      "no_update": "なし",
+      "downloaded": "ダウンロード済み",
+      "pack_size": "75 MB",
+      "not_downloaded": "未ダウンロード"
     }
+  },
+  "reset": {
+    "all_regions": "すべての地方",
+    "drawer_title": "リセットする地方",
+    "all_title": "すべての捕獲状況をリセットしますか？",
+    "all_body": "すべての地方で、すべてのポケモンの捕獲状況が消去されます。この操作は元に戻せません。",
+    "region_title": "{region}をリセットしますか？",
+    "region_body": "{region}のすべてのポケモンの捕獲状況が消去されます。この操作は元に戻せません。",
+    "all_button": "すべてリセット",
+    "region_button": "リセット",
+    "success_all": "すべての捕獲状況をリセットしました",
+    "success_region": "{region}の捕獲状況をリセットしました",
+    "failure": "捕獲状況をリセットできませんでした"
+  },
+  "language": {
+    "title": "言語",
+    "changed": "言語を変更しました"
+  },
+  "quit": {
+    "title": "pkDexを終了しますか？",
+    "busy": "ダウンロード中です。終了すると中断されます。"
+  },
+  "net": {
+    "offline": "ネットワークに接続されていません"
+  },
+  "update": {
+    "toast_available": "pkDex {version} が利用できます。設定からインストールできます",
+    "latest": "最新バージョン（{version}）を使用しています",
+    "check_failed": "アップデートを確認できませんでした",
+    "available_title": "pkDex {version} が利用できます",
+    "available_body": "現在のバージョンは {current} です。{version} をダウンロードしてインストールしますか？完了後に pkDex が再起動します。",
+    "install": "インストール",
+    "none": "インストールできるアップデートはありません",
+    "screen_title": "pkDex アップデーター",
+    "sub_running": "v{version} をインストール中",
+    "sub_done": "アップデート完了",
+    "sub_failed": "アップデート失敗",
+    "step_download": "アップデートをダウンロード",
+    "step_unpack": "アップデートを展開",
+    "step_verify": "新しいバージョンを確認",
+    "step_backup": "現在のバージョンをバックアップ",
+    "step_install": "アップデートをインストール",
+    "step_cleanup": "バックアップを削除",
+    "success": "アップデートが完了しました",
+    "restarting": "{seconds} 秒後に再起動",
+    "failure": "アップデートを適用できませんでした",
+    "intact": "現在のバージョンはそのままです",
+    "keep_on": "完了するまで本体の電源を切らないでください"
+  },
+  "pack": {
+    "exists_title": "画像パックはダウンロード済みです",
+    "exists_body": "もう一度ダウンロードしますか？",
+    "redownload": "再ダウンロード",
+    "downloading": "高解像度画像パックをダウンロード中",
+    "downloaded_title": "ダウンロード完了",
+    "downloaded_body": "高解像度画像を展開できます。今すぐ展開しますか？",
+    "extract": "展開",
+    "cancelled": "ダウンロードをキャンセルしました",
+    "download_failed": "ダウンロード失敗：{error}",
+    "missing": "先に画像パックをダウンロードしてください",
+    "extract_title": "画像パックを展開しますか？",
+    "extract_body": "しばらく時間がかかる場合があります。",
+    "extracting": "高解像度画像パックを展開中",
+    "extract_failed": "展開に失敗しました",
+    "extracted_title": "展開完了",
+    "extracted_body": "高解像度画像が使えるようになりました。ダウンロードしたzipファイルを残しますか？",
+    "keep": "残す",
+    "delete": "削除",
+    "zip_kept": "zipファイルを残しました",
+    "zip_deleted": "zipファイルを削除しました",
+    "zip_delete_failed": "zipファイルを削除できませんでした"
+  },
+  "about": {
+    "eyebrow": "情報",
+    "title": "pkDex",
+    "version": "バージョン {version}・{author}",
+    "description": "pkDexは、ニンテンドースイッチ用ポケモンゲームのデータをオフラインで閲覧できるシンプルなアプリです。",
+    "source_label": "ソース",
+    "source": "github.com/Insektaure/pkDex",
+    "license_label": "ライセンス",
+    "license": "GNU General Public License v2.0",
+    "data_label": "データ",
+    "data": "serebii.net・pokemondb.net・bulbapedia.bulbagarden.net",
+    "logo_label": "ロゴ",
+    "logo": "InvokeAIで生成",
+    "disclaimer": "pkDexは任天堂、ゲームフリーク、株式会社ポケモンとは一切関係がなく、承認も受けていません。ポケモンおよびポケモンのキャラクター名は任天堂の商標です。教育・情報提供のみを目的として、現状のまま提供されます。"
+  },
+  "changelog": {
+    "eyebrow": "新着情報",
+    "title": "更新履歴",
+    "missing": "更新履歴ファイルが見つかりません。"
   }
 }

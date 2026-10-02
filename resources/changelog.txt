@@ -1,3 +1,23 @@
+## Version 2.0.0
+- Complete redesign of the application, rebuilt on SDL2 (Borealis is no longer used)
+    - New sidebar with every region and its capture progress
+    - New Pokédex grid with types, capture status icons and page indicator
+    - New Pokémon page: large sprite with Regular / Shiny view, evolution chain, locations
+    - New capture status, bulk actions and multi-select popups
+    - New Settings, About and Changelog pages
+- Evolution lines are always drawn as a chain, branched ones (Eevee, Wurmple, Applin...) with one row per branch
+- Data fixes:
+    - Wrong sprite (national N°) for Annihilape (Hyperspace Lumiose), Indeedee (Kitakami) and Furfrou (Kalos)
+    - Type: Null's name and evolution in French, German and Japanese
+    - German: Darkrai's name (Hyperspace Lumiose), Kubfu's and Meowth's evolutions, Snorunt's Froslass branch
+- Text is drawn with the console's system fonts, including Korean and Chinese glyphs
+- Language changes now apply immediately, without restarting
+- The language now defaults to the console's language
+- Built-in updater: pkDex downloads, verifies and installs updates by itself, then restarts
+    - The separate pkDexUpdater application is no longer needed (and is removed if found)
+    - Releases now come as pkDex.zip; the app lives in /switch/pkDex/pkDex.nro
+    - An older /switch/pkDex.nro is moved there by the update, and the old copy removed
+
 ## Version 1.6.5 (2026-03-09)
 - Add tracker bulk option to set all Pokemon inside a region as Caught / Shiny / Alpha / Shiny Alpha
 - Add tracker multi-select option to apply captured status to multiple Pokemon at once (enter mode with ZL, select with A, then apply status with Y)
