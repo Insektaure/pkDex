@@ -284,7 +284,13 @@ void statCard(int x, int y, int w, const std::string& label) {
 // --- evolution drawing ---------------------------------------------------------------
 
 struct EvoContext { int region; std::string current; SDL_Color tc; };
-struct ChainStyle { int radius; Font* name; Font* cond; bool currentLabel; };
+struct ChainStyle {
+    int radius;
+    Font* name;
+    Font* cond;
+    bool currentLabel;   // "Current" under the name of the Pokémon on the page
+    int pitch;           // from one line of a wrapped row to the next
+};
 
 // One Pokémon of an evolution: a disc with its icon, ringed when it is the one
 // on the page.
@@ -302,61 +308,78 @@ void drawEvoNode(const EvoContext& ctx, const std::string& name, int cx, int cy,
 }
 
 // A row of an evolution: nodes joined by the condition that leads to each,
-// with a connector before the first when `lead`. Conditions, then names, are
-// shortened until the row fits in maxW, so every line draws the same way.
-void drawChain(const EvoContext& ctx, const std::vector<EvoStep>& items, bool lead, int x, int cy, int maxW,
-               const ChainStyle& st) {
-    const int n = static_cast<int>(items.size());
-    std::vector<int> nameW(n), condW(n);
-    for (int i = 0; i < n; i++) {
-        nameW[i] = gfx.textW(items[i].name, st.name);
-        condW[i] = items[i].condition.empty() ? 0 : gfx.textW(items[i].condition, st.cond) + 16;
-    }
-    auto connector = [&](int i, int condCap) {
-        if (i == 0 && !lead) return 0;
-        return condW[i] ? 6 + 10 + std::min(condW[i], condCap) + 10 + 6 : 6 + 16 + 6;
-    };
-    auto width = [&](int nameCap, int condCap) {
-        int w = 0;
-        for (int i = 0; i < n; i++) w += connector(i, condCap) + st.radius * 2 + 8 + std::min(nameW[i], nameCap);
-        return w;
-    };
-    int nameCap = 220, condCap = 240;
-    while (width(nameCap, condCap) > maxW) {
-        if (condCap > 48) condCap -= 16;
-        else if (nameCap > 48) nameCap -= 12;
-        else break;
-    }
+// in a pill on the line between them. Nothing is ever shrunk: a row too wide
+// for maxW breaks after a node and carries on on the next line, starting with
+// the pill that leads on. Only a condition wider than the whole row on its own
+// is shortened.
+struct ChainPlace { int line; int x; int link; int pill; };   // link: the connector's width
 
-    for (int i = 0; i < n; i++) {
+// Tight on purpose: three Pokémon and two conditions fit the card at full
+// size (Charmander -> Charmeleon -> Charizard) without wrapping.
+constexpr int LINK_GAP = 3, LINK_LINE = 6, LINK_BARE = 14, PILL_PAD = 12, NAME_GAP = 6, CARD_PAD = 14;
+
+int nodeWidth(const EvoStep& it, const ChainStyle& st) { return st.radius * 2 + NAME_GAP + gfx.textW(it.name, st.name); }
+
+int layoutChain(const std::vector<EvoStep>& items, bool lead, int maxW, const ChainStyle& st,
+                std::vector<ChainPlace>& out) {
+    out.assign(items.size(), ChainPlace{0, 0, 0, 0});
+    int line = 0, cur = 0;
+    for (size_t i = 0; i < items.size(); i++) {
+        const int node = nodeWidth(items[i], st);
+        int link = 0, pill = 0;
         if (i > 0 || lead) {
-            x += 6;
-            if (condW[i]) {
-                const int pw = std::min(condW[i], condCap);
-                gfx.rect(x, cy, 10, 2, col::textFaint);
-                x += 10;
-                gfx.fillRounded(x, cy - 11, pw, 22, 7, col::chip);
-                gfx.textCenter(gfx.fit(items[i].condition, st.cond, pw - 12), x + pw / 2, cy, col::textDim, st.cond);
-                x += pw;
-                gfx.rect(x, cy, 10, 2, col::textFaint);
-                x += 10;
+            if (items[i].condition.empty()) {
+                link = LINK_GAP + LINK_BARE + LINK_GAP;
             } else {
-                gfx.rect(x, cy, 16, 2, col::textFaint);
-                x += 16;
+                const int room = maxW - node - 2 * (LINK_GAP + LINK_LINE);
+                pill = std::max(40, std::min(gfx.textW(items[i].condition, st.cond) + PILL_PAD, room));
+                link = LINK_GAP + LINK_LINE + pill + LINK_LINE + LINK_GAP;
             }
-            x += 6;
         }
-        drawEvoNode(ctx, items[i].name, x + st.radius, cy, st.radius);
-        const int nx = x + st.radius * 2 + 8;
-        const std::string label = gfx.fit(items[i].name, st.name, nameCap);
-        if (st.currentLabel && items[i].name == ctx.current) {
-            gfx.textMid(label, nx, cy - 8, col::text, st.name);
-            gfx.textMid(tr("detail/current"), nx, cy + 11, col::textDim, gfx.font(11));
-        } else {
-            gfx.textMid(label, nx, cy, col::text, st.name);
-        }
-        x = nx + std::min(nameW[i], nameCap);
+        if (cur > 0 && cur + link + node > maxW) { line++; cur = 0; }
+        out[i] = ChainPlace{line, cur, link, pill};
+        cur += link + node;
     }
+    return line + 1;
+}
+
+// Draws it from (x, cy), the centre of its first line; returns the lines used.
+int drawChain(const EvoContext& ctx, const std::vector<EvoStep>& items, bool lead, int x, int cy, int maxW,
+              const ChainStyle& st) {
+    std::vector<ChainPlace> places;
+    const int lines = layoutChain(items, lead, maxW, st, places);
+    for (size_t i = 0; i < items.size(); i++) {
+        const ChainPlace& pl = places[i];
+        const int ly = cy + pl.line * st.pitch;
+        int px = x + pl.x;
+        if (pl.link) {
+            px += LINK_GAP;
+            if (pl.pill) {
+                gfx.rect(px, ly, LINK_LINE, 2, col::textFaint);
+                px += LINK_LINE;
+                gfx.fillRounded(px, ly - 11, pl.pill, 22, 7, col::chip);
+                gfx.textCenter(gfx.fit(items[i].condition, st.cond, pl.pill - 8), px + pl.pill / 2, ly, col::textDim,
+                               st.cond);
+                px += pl.pill;
+                gfx.rect(px, ly, LINK_LINE, 2, col::textFaint);
+                px += LINK_LINE;
+            } else {
+                gfx.rect(px, ly, LINK_BARE, 2, col::textFaint);
+                px += LINK_BARE;
+            }
+            px += LINK_GAP;
+        }
+        drawEvoNode(ctx, items[i].name, px + st.radius, ly, st.radius);
+        const int nx = px + st.radius * 2 + NAME_GAP;
+        const std::string name = gfx.fit(items[i].name, st.name, x + maxW - nx);
+        if (st.currentLabel && items[i].name == ctx.current) {
+            gfx.textMid(name, nx, ly - 8, col::text, st.name);
+            gfx.textMid(tr("detail/current"), nx, ly + 11, col::textDim, gfx.font(11));
+        } else {
+            gfx.textMid(name, nx, ly, col::text, st.name);
+        }
+    }
+    return lines;
 }
 
 } // anonymous namespace
@@ -502,10 +525,43 @@ void App::drawDetail() {
         const bool drawn = parseEvolution(p.evolution, tree);
         const EvoContext ctx{r, p.name, tc};
         const int nb = drawn ? static_cast<int>(tree.branches.size()) : 0;
-        const int cols = nb > 4 ? 2 : 1;
-        const int rows = nb > 1 ? (nb + cols - 1) / cols : 1;
-        constexpr int PITCH = 40;
-        if (nb > 1) eh = std::max(86, rows * PITCH + 20);
+        const ChainStyle big{26, gfx.font(15, true), gfx.font(12, true), true, 64};
+        const ChainStyle small{16, gfx.font(14, true), gfx.font(11, true), false, 40};
+
+        // Measured before the card is drawn: a row that wraps makes it taller.
+        std::vector<EvoStep> single;
+        int singleLines = 1;
+        Font* fRoot = gfx.font(12, true);
+        int rootW = 0, spine0 = 0, colW = 0, cols = 1, perCol = 1;
+        std::vector<std::vector<EvoStep>> rowsItems;
+        std::vector<int> rowLines;
+        std::vector<int> colH;
+        if (nb == 1) {
+            single = {{tree.root, std::string()}};
+            single.insert(single.end(), tree.branches[0].steps.begin(), tree.branches[0].steps.end());
+            std::vector<ChainPlace> places;
+            singleLines = layoutChain(single, false, w0 - 2 * CARD_PAD, big, places);
+            eh = 86 + (singleLines - 1) * big.pitch;
+        } else if (nb > 1) {
+            // The root on the left; each branch a row, in two columns past four.
+            cols = nb > 4 ? 2 : 1;
+            perCol = (nb + cols - 1) / cols;
+            rootW = std::max(48, std::min(96, gfx.textW(tree.root, fRoot)));
+            spine0 = x0 + 20 + rootW + 14;
+            colW = (x0 + w0 - 20 - spine0 - (cols - 1) * 16) / cols;
+            colH.assign(cols, 0);
+            for (int b = 0; b < nb; b++) {
+                const EvoBranch& br = tree.branches[b];
+                std::vector<EvoStep> items;
+                if (br.from != tree.root) items.push_back({br.from, std::string()});
+                items.insert(items.end(), br.steps.begin(), br.steps.end());
+                std::vector<ChainPlace> places;
+                rowLines.push_back(layoutChain(items, true, colW - 2, small, places));
+                colH[b / perCol] += rowLines.back() * small.pitch;
+                rowsItems.push_back(std::move(items));
+            }
+            eh = std::max(86, *std::max_element(colH.begin(), colH.end()) + 20);
+        }
         const int ecy = ey + eh / 2;
         gfx.fillRounded(x0, ey, w0, eh, 14, col::card);
         gfx.strokeRounded(x0, ey, w0, eh, 14, 1, col::cardBorder);
@@ -521,39 +577,27 @@ void App::drawDetail() {
                 ly += 22;
             }
         } else if (nb == 1) {
-            std::vector<EvoStep> items = {{tree.root, std::string()}};
-            items.insert(items.end(), tree.branches[0].steps.begin(), tree.branches[0].steps.end());
-            const ChainStyle big{26, gfx.font(15, true), gfx.font(12, true), true};
-            drawChain(ctx, items, false, x0 + 20, ecy, w0 - 40, big);
+            drawChain(ctx, single, false, x0 + CARD_PAD, ey + 43, w0 - 2 * CARD_PAD, big);
         } else {
-            // The root on the left, its name under it; a spine per column.
-            Font* fRoot = gfx.font(12, true);
-            const int rootW = std::max(48, std::min(96, gfx.textW(tree.root, fRoot)));
             const int rootCx = x0 + 20 + rootW / 2;
             drawEvoNode(ctx, tree.root, rootCx, ecy - 8, 22);
             gfx.textCenter(gfx.fit(tree.root, fRoot, 96), rootCx, ecy + 26, col::text, fRoot);
-
-            const int spine0 = x0 + 20 + rootW + 14;
-            const int colW = (x0 + w0 - 20 - spine0 - (cols - 1) * 16) / cols;
-            const int top = ey + (eh - rows * PITCH) / 2 + PITCH / 2;
             gfx.rect(rootCx + 22, ecy - 9, spine0 - rootCx - 22, 2, col::textFaint);
-            const ChainStyle small{16, gfx.font(14, true), gfx.font(11, true), false};
             for (int c = 0; c < cols; c++) {
+                const int first = c * perCol, last = std::min(nb, first + perCol) - 1;
+                if (first > last) continue;
                 const int sx = spine0 + c * (colW + 16);
-                const int inCol = std::min(rows, nb - c * rows);
-                if (inCol <= 0) continue;
-                const int firstCy = top, lastCy = top + (inCol - 1) * PITCH;
-                const int fromY = c == 0 ? std::min(firstCy, ecy - 9) : firstCy;
-                const int toY = c == 0 ? std::max(lastCy, ecy - 9) : lastCy;
+                const int top = ey + (eh - colH[c]) / 2 + small.pitch / 2;
+                // Each branch's first line, for the spine to reach.
+                std::vector<int> rowCy;
+                int y = top;
+                for (int b = first; b <= last; b++) { rowCy.push_back(y); y += rowLines[b] * small.pitch; }
+                const int fromY = c == 0 ? std::min(rowCy.front(), ecy - 9) : rowCy.front();
+                const int toY = c == 0 ? std::max(rowCy.back(), ecy - 9) : rowCy.back();
                 gfx.rect(sx, fromY, 2, toY - fromY + 2, col::textFaint);
-                if (c > 0) gfx.rect(spine0, firstCy, sx - spine0, 2, col::textFaint);
-                for (int i = 0; i < inCol; i++) {
-                    const EvoBranch& br = tree.branches[c * rows + i];
-                    std::vector<EvoStep> items;
-                    if (br.from != tree.root) items.push_back({br.from, std::string()});
-                    items.insert(items.end(), br.steps.begin(), br.steps.end());
-                    drawChain(ctx, items, true, sx + 2, top + i * PITCH, colW - 2, small);
-                }
+                if (c > 0) gfx.rect(spine0, rowCy.front(), sx - spine0, 2, col::textFaint);
+                for (int b = first; b <= last; b++)
+                    drawChain(ctx, rowsItems[b], true, sx + 2, rowCy[b - first], colW - 2, small);
             }
         }
     }
