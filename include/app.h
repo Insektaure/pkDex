@@ -202,11 +202,17 @@ struct ConfirmModal : Modal {
 
 // A list of choices sliding in from the right ("Select region to reset"), one of them marked as current.
 struct DrawerModal : Modal {
-    struct Item { std::string label, tag; bool child = false; };
+    struct Item {
+        std::string label, tag;
+        bool child = false;     // indented under the heading above
+        bool heading = false;   // a group title, not a choice
+        bool dlc = false;       // tagged "DLC"
+        int value = -1;         // what onChoose gets; the item's index when -1
+    };
     std::string eyebrow, title;
     std::vector<Item> items;
-    int selected = 0, cursor = 0, scroll = 0;
-    std::function<void(App&, int)> onChoose;
+    int selected = 0, cursor = 0, scroll = 0;   // item indices
+    std::function<void(App&, int value)> onChoose;
     void draw(App& app) override;
     void input(App& app, uint32_t pressed) override;
 };

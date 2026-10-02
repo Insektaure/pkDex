@@ -3,7 +3,8 @@
     "tagline": "Pokémon encyclopedia"
   },
   "sidebar": {
-    "regions": "Regions"
+    "regions": "Regions",
+    "dlc": "DLC"
   },
   "nav": {
     "settings": "Settings",
@@ -74,13 +75,13 @@
     "isle_armor": {
       "name": "Isle of Armor",
       "game": "Sword & Shield · The Isle of Armor",
-      "sidebar": "Isle of Armor",
+      "sidebar": "The Isle of Armor",
       "tag": "SwSh DLC 1"
     },
     "crown_tundra": {
       "name": "Crown Tundra",
       "game": "Sword & Shield · The Crown Tundra",
-      "sidebar": "Crown Tundra",
+      "sidebar": "The Crown Tundra",
       "tag": "SwSh DLC 2"
     },
     "paldea": {
@@ -92,13 +93,13 @@
     "kitakami": {
       "name": "Kitakami",
       "game": "Scarlet & Violet · The Teal Mask",
-      "sidebar": "Kitakami · The Teal Mask",
+      "sidebar": "The Teal Mask",
       "tag": "ScVi DLC 1"
     },
     "blueberry_academy": {
       "name": "Blueberry Academy",
       "game": "Scarlet & Violet · The Indigo Disk",
-      "sidebar": "Blueberry Academy · The Indigo Disk",
+      "sidebar": "The Indigo Disk",
       "tag": "ScVi DLC 2"
     },
     "kalos_lza": {
@@ -110,7 +111,7 @@
     "hyperspace_lumiose": {
       "name": "Hyperspace Lumiose",
       "game": "Legends: Z-A · Mega Dimension",
-      "sidebar": "Hyperspace Lumiose",
+      "sidebar": "Mega Dimension",
       "tag": "LZA DLC"
     }
   },

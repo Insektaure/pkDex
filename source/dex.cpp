@@ -9,18 +9,19 @@
 namespace {
 
 const std::vector<Region> REGIONS = {
-    {"kanto",              false, false},
-    {"kanto_frlg",         true,  false},
-    {"sinnoh",             false, false},
-    {"sinnoh_arceus",      true,  true },
-    {"galar",              false, false},
-    {"isle_armor",         true,  false},
-    {"crown_tundra",       true,  false},
-    {"paldea",             false, false},
-    {"kitakami",           true,  false},
-    {"blueberry_academy",  true,  false},
-    {"kalos_lza",          false, true },
-    {"hyperspace_lumiose", true,  true },
+    //  id                    child  alpha  dlc
+    {"kanto",              false, false, false},
+    {"kanto_frlg",         true,  false, false},
+    {"sinnoh",             false, false, false},
+    {"sinnoh_arceus",      true,  true,  false},
+    {"galar",              false, false, false},
+    {"isle_armor",         true,  false, true },
+    {"crown_tundra",       true,  false, true },
+    {"paldea",             false, false, false},
+    {"kitakami",           true,  false, true },
+    {"blueberry_academy",  true,  false, true },
+    {"kalos_lza",          false, true,  false},
+    {"hyperspace_lumiose", true,  true,  true },
 };
 
 std::vector<std::vector<Pokemon>> g_lists(REGIONS.size());

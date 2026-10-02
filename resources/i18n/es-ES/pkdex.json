@@ -3,7 +3,8 @@
     "tagline": "Enciclopedia Pokémon"
   },
   "sidebar": {
-    "regions": "Regiones"
+    "regions": "Regiones",
+    "dlc": "DLC"
   },
   "nav": {
     "settings": "Ajustes",
@@ -74,13 +75,13 @@
     "isle_armor": {
       "name": "Isla de la Armadura",
       "game": "Espada y Escudo · La isla de la armadura",
-      "sidebar": "Isla de la Armadura",
+      "sidebar": "La isla de la armadura",
       "tag": "EyE DLC 1"
     },
     "crown_tundra": {
       "name": "Nieves de la Corona",
       "game": "Espada y Escudo · Las nieves de la corona",
-      "sidebar": "Nieves de la Corona",
+      "sidebar": "Las nieves de la corona",
       "tag": "EyE DLC 2"
     },
     "paldea": {
@@ -92,13 +93,13 @@
     "kitakami": {
       "name": "Noroteo",
       "game": "Escarlata y Púrpura · La máscara turquesa",
-      "sidebar": "Noroteo · La máscara turquesa",
+      "sidebar": "La máscara turquesa",
       "tag": "EyP DLC 1"
     },
     "blueberry_academy": {
       "name": "Academia Arándano",
       "game": "Escarlata y Púrpura · El disco índigo",
-      "sidebar": "Academia Arándano · El disco índigo",
+      "sidebar": "El disco índigo",
       "tag": "EyP DLC 2"
     },
     "kalos_lza": {
@@ -110,7 +111,7 @@
     "hyperspace_lumiose": {
       "name": "Luminalia Dimensional",
       "game": "Leyendas: Z-A · Megadimensión",
-      "sidebar": "Luminalia Dimensional",
+      "sidebar": "Megadimensión",
       "tag": "LZA DLC"
     }
   },

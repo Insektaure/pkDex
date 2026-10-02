@@ -15,12 +15,14 @@ struct Pokemon {
     bool shinyLocked = false;
 };
 
-// A region, in sidebar order. A child is the DLC or the other game that sits
-// under the region before it.
+// One game's (or DLC's) Pokédex, in sidebar order. The sidebar groups them by
+// region: a dex that is not a child starts a region and names it, its
+// children are the region's other games and DLCs.
 struct Region {
     const char* id;    // file name in romfs:/data, tracker file suffix, i18n key
-    bool child;
+    bool child;        // in the same region as the dex before it
     bool alpha;        // has Alpha and Shiny Alpha capture states
+    bool dlc;          // a DLC of the region's game, tagged as such
 };
 
 namespace dex {
@@ -31,7 +33,7 @@ int count();
 // Display strings, from pkdex/regions/<id>/...
 std::string name(int region);      // "Kanto"
 std::string game(int region);      // "Let's Go! Pikachu & Let's Go! Eevee"
-std::string sidebar(int region);   // the child entry's label, "FireRed & LeafGreen"
+std::string sidebar(int region);   // the game's label in the sidebar, "FireRed & LeafGreen"
 std::string tag(int region);       // "LGPE"
 
 // Reads every region's data file (and its translation). `progress` is called

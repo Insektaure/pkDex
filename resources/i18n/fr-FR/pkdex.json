@@ -3,7 +3,8 @@
     "tagline": "Encyclopédie Pokémon"
   },
   "sidebar": {
-    "regions": "Régions"
+    "regions": "Régions",
+    "dlc": "DLC"
   },
   "nav": {
     "settings": "Paramètres",
@@ -74,13 +75,13 @@
     "isle_armor": {
       "name": "Isolarmure",
       "game": "Épée & Bouclier · L'Île Solitaire de l'Armure",
-      "sidebar": "Isolarmure",
+      "sidebar": "L'Île Solitaire de l'Armure",
       "tag": "EB DLC 1"
     },
     "crown_tundra": {
       "name": "Couronneige",
       "game": "Épée & Bouclier · Les Terres Enneigées de la Couronne",
-      "sidebar": "Couronneige",
+      "sidebar": "Les Terres Enneigées de la Couronne",
       "tag": "EB DLC 2"
     },
     "paldea": {
@@ -92,13 +93,13 @@
     "kitakami": {
       "name": "Septentria",
       "game": "Écarlate & Violet · Le Masque Turquoise",
-      "sidebar": "Septentria · Le Masque Turquoise",
+      "sidebar": "Le Masque Turquoise",
       "tag": "EV DLC 1"
     },
     "blueberry_academy": {
       "name": "Institut Myrtille",
       "game": "Écarlate & Violet · Le Disque Indigo",
-      "sidebar": "Institut Myrtille · Le Disque Indigo",
+      "sidebar": "Le Disque Indigo",
       "tag": "EV DLC 2"
     },
     "kalos_lza": {
@@ -110,7 +111,7 @@
     "hyperspace_lumiose": {
       "name": "Extra Illumis",
       "game": "Légendes : Z-A · Méga-Dimension",
-      "sidebar": "Extra Illumis",
+      "sidebar": "Méga-Dimension",
       "tag": "LZA DLC"
     }
   },

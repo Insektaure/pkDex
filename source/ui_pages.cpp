@@ -52,8 +52,7 @@ bool inLeft(int row) { return groupOf(row).x == LEFT_X; }
 std::string resetLabel() {
     const int index = std::clamp(config::getInt(config::RESET_REGION, 0), 0, dex::count());
     if (index == 0) return tr("reset/all_regions");
-    const std::string tag = dex::tag(index - 1);
-    return tag.empty() ? dex::name(index - 1) : dex::name(index - 1) + " · " + tag;
+    return dex::sidebar(index - 1);
 }
 
 // Asked of the SD card once a second at most, not every frame.
@@ -167,8 +166,11 @@ void App::drawSettings() {
         }
         int valueW = 0;
         if (!value.empty()) {
-            const std::string v = gfx.fit(value, fValue, COL_W / 2 - 20);
-            valueW = gfx.textRight(v, valueRight, cy, valueColor, fValue) + 12;
+            // Right-aligned; a value too long for its half of the row scrolls.
+            const int room = COL_W / 2 - 20;
+            const int vw = std::min(gfx.textW(value, fValue), room);
+            gfx.marquee(value, valueRight - vw, cy, vw, valueColor, fValue, focused);
+            valueW = vw + 12;
         }
         gfx.textMid(gfx.fit(label, fLabel, valueRight - valueW - (x + 19)), x + 19, cy, labelColor, fLabel);
     }

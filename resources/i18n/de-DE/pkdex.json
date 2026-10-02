@@ -3,7 +3,8 @@
     "tagline": "Pokémon-Enzyklopädie"
   },
   "sidebar": {
-    "regions": "Regionen"
+    "regions": "Regionen",
+    "dlc": "DLC"
   },
   "nav": {
     "settings": "Einstellungen",
@@ -74,13 +75,13 @@
     "isle_armor": {
       "name": "Rüstungsinsel",
       "game": "Schwert & Schild · Die Insel der Abgeschiedenheit",
-      "sidebar": "Rüstungsinsel",
+      "sidebar": "Die Insel der Abgeschiedenheit",
       "tag": "SwSh DLC 1"
     },
     "crown_tundra": {
       "name": "Kronen-Schneelande",
       "game": "Schwert & Schild · Die Schneelande der Krone",
-      "sidebar": "Kronen-Schneelande",
+      "sidebar": "Die Schneelande der Krone",
       "tag": "SwSh DLC 2"
     },
     "paldea": {
@@ -92,13 +93,13 @@
     "kitakami": {
       "name": "Kitakami",
       "game": "Karmesin & Purpur · Die Türkisgrüne Maske",
-      "sidebar": "Kitakami · Die Türkisgrüne Maske",
+      "sidebar": "Die Türkisgrüne Maske",
       "tag": "KaPu DLC 1"
     },
     "blueberry_academy": {
       "name": "Blaubeer-Akademie",
       "game": "Karmesin & Purpur · Die Indigoblaue Scheibe",
-      "sidebar": "Blaubeer-Akademie · Die Indigoblaue Scheibe",
+      "sidebar": "Die Indigoblaue Scheibe",
       "tag": "KaPu DLC 2"
     },
     "kalos_lza": {
@@ -110,7 +111,7 @@
     "hyperspace_lumiose": {
       "name": "Dimensions-Illumina",
       "game": "Legenden: Z-A · Mega-Dimension",
-      "sidebar": "Dimensions-Illumina",
+      "sidebar": "Mega-Dimension",
       "tag": "LZA DLC"
     }
   },

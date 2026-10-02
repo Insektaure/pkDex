@@ -7,6 +7,7 @@
 
 #include <algorithm>
 #include <cmath>
+#include <iterator>
 
 Gfx gfx;
 
@@ -312,6 +313,48 @@ std::string Gfx::fit(const std::string& s, Font* f, int maxW) {
         if (textW(cut, f) <= maxW) return cut;
     }
     return "...";
+}
+
+void Gfx::marquee(const std::string& s, int x, int cy, int maxW, SDL_Color c, Font* f, bool active) {
+    if (!f || s.empty() || maxW <= 0) return;
+    const int w = textW(s, f);
+    if (w <= maxW) {
+        textMid(s, x, cy, c, f);
+        return;
+    }
+    if (!active) {
+        textMid(fit(s, f, maxW), x, cy, c, f);
+        return;
+    }
+    // Restarted when it was not drawn active in the frame before.
+    Marquee& m = marquees_[s];
+    if (m.frame + 1 < frame_) m.start = SDL_GetTicks();
+    m.frame = frame_;
+    if (marquees_.size() > 64)
+        for (auto it = marquees_.begin(); it != marquees_.end();)
+            it = it->second.frame + 1 < frame_ ? marquees_.erase(it) : std::next(it);
+
+    // Pause, travel to the end, pause, travel back: 40 px a second, so a
+    // label can be read as it goes.
+    constexpr uint32_t PAUSE = 1500;
+    const int over = w - maxW;
+    const uint32_t travel = static_cast<uint32_t>(over) * 1000 / 40 + 1;
+    const uint32_t t = (SDL_GetTicks() - m.start) % (2 * (PAUSE + travel));
+    int offset = 0;
+    if (t < PAUSE)                      offset = 0;
+    else if (t < PAUSE + travel)        offset = static_cast<int>((t - PAUSE) * over / travel);
+    else if (t < 2 * PAUSE + travel)    offset = over;
+    else                                offset = over - static_cast<int>((t - 2 * PAUSE - travel) * over / travel);
+
+    // Inside the caller's clip, if there is one.
+    SDL_Rect prev{};
+    const bool hadClip = SDL_RenderIsClipEnabled(r_) == SDL_TRUE;
+    if (hadClip) SDL_RenderGetClipRect(r_, &prev);
+    SDL_Rect box{x, cy - f->height / 2 - 2, maxW, f->height + 4};
+    if (hadClip) SDL_IntersectRect(&box, &prev, &box);
+    SDL_RenderSetClipRect(r_, &box);
+    textMid(s, x - offset, cy, c, f);
+    SDL_RenderSetClipRect(r_, hadClip ? &prev : nullptr);
 }
 
 std::vector<std::string> Gfx::wrap(const std::string& s, Font* f, int maxW, int maxLines) {

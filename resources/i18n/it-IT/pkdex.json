@@ -3,7 +3,8 @@
     "tagline": "Enciclopedia Pokémon"
   },
   "sidebar": {
-    "regions": "Regioni"
+    "regions": "Regioni",
+    "dlc": "DLC"
   },
   "nav": {
     "settings": "Impostazioni",
@@ -74,13 +75,13 @@
     "isle_armor": {
       "name": "Isola dell'Armatura",
       "game": "Spada e Scudo · L'isola solitaria dell'armatura",
-      "sidebar": "Isola dell'Armatura",
+      "sidebar": "L'isola solitaria dell'armatura",
       "tag": "SpSc DLC 1"
     },
     "crown_tundra": {
       "name": "Landa Corona",
       "game": "Spada e Scudo · Le terre innevate della corona",
-      "sidebar": "Landa Corona",
+      "sidebar": "Le terre innevate della corona",
       "tag": "SpSc DLC 2"
     },
     "paldea": {
@@ -92,13 +93,13 @@
     "kitakami": {
       "name": "Nordivia",
       "game": "Scarlatto e Violetto · La maschera turchese",
-      "sidebar": "Nordivia · La maschera turchese",
+      "sidebar": "La maschera turchese",
       "tag": "ScVi DLC 1"
     },
     "blueberry_academy": {
       "name": "Istituto Mirtillo",
       "game": "Scarlatto e Violetto · Il disco indaco",
-      "sidebar": "Istituto Mirtillo · Il disco indaco",
+      "sidebar": "Il disco indaco",
       "tag": "ScVi DLC 2"
     },
     "kalos_lza": {
@@ -110,7 +111,7 @@
     "hyperspace_lumiose": {
       "name": "Luminopoli dimensionale",
       "game": "Leggende: Z-A · Megadimensione",
-      "sidebar": "Luminopoli dimensionale",
+      "sidebar": "Megadimensione",
       "tag": "LZA DLC"
     }
   },

@@ -3,7 +3,8 @@
     "tagline": "ポケモン図鑑"
   },
   "sidebar": {
-    "regions": "地方"
+    "regions": "地方",
+    "dlc": "DLC"
   },
   "nav": {
     "settings": "設定",
@@ -74,13 +75,13 @@
     "isle_armor": {
       "name": "ヨロイじま",
       "game": "ソード・シールド・鎧の孤島",
-      "sidebar": "ヨロイじま",
+      "sidebar": "鎧の孤島",
       "tag": "剣盾 DLC1"
     },
     "crown_tundra": {
       "name": "カンムリせつげん",
       "game": "ソード・シールド・冠の雪原",
-      "sidebar": "カンムリせつげん",
+      "sidebar": "冠の雪原",
       "tag": "剣盾 DLC2"
     },
     "paldea": {
@@ -92,13 +93,13 @@
     "kitakami": {
       "name": "キタカミの里",
       "game": "スカーレット・バイオレット・碧の仮面",
-      "sidebar": "キタカミの里・碧の仮面",
+      "sidebar": "碧の仮面",
       "tag": "SV DLC1"
     },
     "blueberry_academy": {
       "name": "ブルーベリー学園",
       "game": "スカーレット・バイオレット・藍の円盤",
-      "sidebar": "ブルーベリー学園・藍の円盤",
+      "sidebar": "藍の円盤",
       "tag": "SV DLC2"
     },
     "kalos_lza": {
@@ -110,7 +111,7 @@
     "hyperspace_lumiose": {
       "name": "異次元ミアレ",
       "game": "LEGENDS Z-A・M次元ラッシュ",
-      "sidebar": "異次元ミアレ",
+      "sidebar": "M次元ラッシュ",
       "tag": "LZA DLC"
     }
   },

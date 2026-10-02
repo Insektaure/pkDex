@@ -160,7 +160,7 @@ The output is `pkDex.nro` at the root of the repository. The RomFS is staged fro
 For static images, see the `screenshots` folder.
 
 <div align="center">
-    <img src="./screenshots/output.gif" alt="Screenshot sildeshow" />
+    <img src="screenshots/1.x/output.gif" alt="Screenshot sildeshow" />
 </div>
 
 ## Credits

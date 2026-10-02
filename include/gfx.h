@@ -53,6 +53,10 @@ public:
     int tracked(const std::string& s, int x, int y, SDL_Color c, Font* f, int spacing);
     int trackedW(const std::string& s, Font* f, int spacing);
     std::string fit(const std::string& s, Font* f, int maxW);
+    // Vertically centred on cy, in at most maxW. Wider text is shortened, or
+    // when `active` (the cursor is on it) scrolls back and forth inside that
+    // width, pausing at each end - from its start each time it becomes active.
+    void marquee(const std::string& s, int x, int cy, int maxW, SDL_Color c, Font* f, bool active);
     // Word-wrapped (and character-wrapped where there are no spaces, as in
     // Japanese). maxLines 0 means no limit; the last kept line is ellipsised.
     std::vector<std::string> wrap(const std::string& s, Font* f, int maxW, int maxLines = 0);
@@ -107,6 +111,8 @@ private:
     std::unordered_map<std::string, SDL_Texture*> pinned_;
     std::unordered_map<uint32_t, SDL_Texture*> corners_;
     std::unordered_map<uint32_t, SDL_Texture*> grids_;
+    struct Marquee { uint32_t start = 0; uint64_t frame = 0; };
+    std::unordered_map<std::string, Marquee> marquees_;
     uint64_t frame_ = 0;
 };
 

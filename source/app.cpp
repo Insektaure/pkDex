@@ -48,11 +48,9 @@ const char* stateKey(int s) {
     }
 }
 
-// "Kanto (FRLG)" for the reset texts, where the two Kantos must not read alike.
-std::string regionLabel(int r) {
-    const std::string tag = dex::tag(r);
-    return tag.empty() ? dex::name(r) : dex::name(r) + " (" + tag + ")";
-}
+// A dex by its game in the reset texts ("FireRed & LeafGreen"), where the two
+// Kantos must not read alike.
+std::string regionLabel(int r) { return dex::sidebar(r); }
 
 } // anonymous namespace
 
@@ -248,9 +246,12 @@ void App::drawToasts() {
 
 namespace {
 
-int sideItemHeight(int r) { return dex::regions()[r].child ? 34 : 50; }
-
 SDL_Rect navRect(int i) { return SDL_Rect{14 + i * 89, 654, 82, 52}; }
+
+// The region list: a heading per region, then a row per game or DLC. Labels
+// that do not fit scroll (Gfx::marquee) rather than being cut short.
+constexpr int SIDE_TOP = 110, HEADING_H = 28, ROW_H = 30;
+constexpr int LABEL_X = 34, COUNT_R = 265;
 
 } // anonymous namespace
 
@@ -262,45 +263,48 @@ void App::drawSidebar() {
     gfx.text("pkDex", 70, 23, col::text, gfx.font(22, true));
     gfx.text(gfx.fit(tr("app/tagline"), gfx.font(12), 200), 70, 50, col::textDim, gfx.font(12));
 
+    int regionsCount = 0;
+    for (const Region& r : dex::regions()) regionsCount += r.child ? 0 : 1;
     drawEyebrow(tr("sidebar/regions"), 22, 89, col::textMuted);
-    gfx.textRight(std::to_string(dex::count()), 265, 95, col::textMuted, gfx.font(12));
+    gfx.textRight(std::to_string(regionsCount), COUNT_R, 95, col::textMuted, gfx.font(12));
 
-    Font* fName  = gfx.font(15, true);
-    Font* fSub   = gfx.font(11);
-    Font* fChild = gfx.font(14);
+    Font* fHeading = gfx.font(15, true);
+    Font* fLabel = gfx.font(13, true);
     Font* fCount = gfx.font(12);
+    Font* fTag = gfx.font(9, true);
     const bool onDex = page == Page::Dex || page == Page::Detail;
-    int y = 110;
+    int y = SIDE_TOP;
     for (int i = 0; i < dex::count(); i++) {
-        const Region& r = dex::regions()[i];
-        const int h = sideItemHeight(i);
+        if (!dex::regions()[i].child) {
+            gfx.textMid(gfx.fit(dex::name(i), fHeading, COUNT_R - 22), 22, y + 16, col::text, fHeading);
+            y += HEADING_H;
+        }
+
+        const int cy = y + ROW_H / 2;
         const bool active = onDex && region == i;
-        if (active) gfx.fillRounded(10, y, 267, h, 10, col::sideSel);
-        if (sidebarFocus && sideCursor == i) drawFocusRing(10, y, 267, h, 10);
+        if (active) gfx.fillRounded(10, y, 267, ROW_H, 8, col::sideSel);
+        if (sidebarFocus && sideCursor == i) drawFocusRing(10, y, 267, ROW_H, 8);
 
         const tracker::Counts& c = counts(i);
         const int total = static_cast<int>(dex::list(i).size());
         const bool complete = total > 0 && c.any >= total;
         const std::string count = std::to_string(c.any) + "/" + std::to_string(total);
         const SDL_Color cc = complete ? col::green : active ? col::accent : col::textMuted;
-        const int countCy = r.child ? y + h / 2 : y + 16;
-        int cw = gfx.textRight(count, 265, countCy, cc, fCount);
+        int right = COUNT_R - gfx.textRight(count, COUNT_R, cy, cc, fCount);
         if (complete) {
-            gfx.icon(Icon::Check, 265 - cw - 9, countCy, 12, col::green);
-            cw += 16;
+            gfx.icon(Icon::Check, right - 9, cy, 12, col::green);
+            right -= 16;
         }
-
-        if (!r.child) {
-            gfx.textMid(gfx.fit(dex::name(i), fName, 265 - 22 - cw - 10), 22, y + 16, col::text, fName);
-            gfx.textMid(gfx.fit(dex::game(i), fSub, 243), 22, y + 36, col::textDim, fSub);
-        } else {
-            // The branch from the region above.
-            gfx.rect(30, y + 6, 1, 11, col::textFaint);
-            gfx.rect(30, y + 17, 8, 1, col::textFaint);
-            gfx.textMid(gfx.fit(dex::sidebar(i), fChild, 265 - 46 - cw - 10), 46, y + h / 2,
-                        active ? col::text : col::textDim, fChild);
+        if (dex::regions()[i].dlc) {
+            const std::string tag = tr("sidebar/dlc");
+            const int tw = gfx.textW(tag, fTag) + 12;
+            right -= 8 + tw;
+            gfx.fillRounded(right, cy - 8, tw, 16, 4, col::chip);
+            gfx.textCenter(tag, right + tw / 2, cy, col::textDim, fTag);
         }
-        y += h;
+        gfx.marquee(dex::sidebar(i), LABEL_X, cy, right - 10 - LABEL_X, active ? col::text : col::textDim, fLabel,
+                    sidebarFocus && sideCursor == i);
+        y += ROW_H;
     }
 
     gfx.rect(0, 643, SIDEBAR_W - 1, 1, col::divider);
@@ -620,10 +624,28 @@ void App::openRegionReset() {
     auto d = std::make_unique<DrawerModal>();
     d->eyebrow = tr("settings/group/pokemon_data");
     d->title = tr("reset/drawer_title");
-    d->items.push_back({tr("reset/all_regions"), "", false});
-    for (int i = 0; i < dex::count(); i++)
-        d->items.push_back({dex::name(i), dex::tag(i), dex::regions()[i].child});
-    d->selected = std::clamp(config::getInt(config::RESET_REGION, 0), 0, dex::count());
+    // As in the sidebar: a heading per region, a choice per game. The value
+    // kept is 0 for all regions, else the dex's place in the list plus one.
+    const int current = std::clamp(config::getInt(config::RESET_REGION, 0), 0, dex::count());
+    DrawerModal::Item all;
+    all.label = tr("reset/all_regions");
+    all.value = 0;
+    d->items.push_back(all);
+    for (int i = 0; i < dex::count(); i++) {
+        if (!dex::regions()[i].child) {
+            DrawerModal::Item h;
+            h.label = dex::name(i);
+            h.heading = true;
+            d->items.push_back(h);
+        }
+        DrawerModal::Item it;
+        it.label = dex::sidebar(i);
+        it.child = true;
+        it.dlc = dex::regions()[i].dlc;
+        it.value = i + 1;
+        if (it.value == current) d->selected = static_cast<int>(d->items.size());
+        d->items.push_back(it);
+    }
     d->cursor = d->selected;
     d->onChoose = [](App&, int index) { config::setInt(config::RESET_REGION, index); };
     push(std::move(d));

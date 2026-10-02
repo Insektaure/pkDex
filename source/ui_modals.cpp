@@ -238,31 +238,47 @@ void DrawerModal::draw(App& app) {
     Font* fTitle = gfx.font(26, true);
     gfx.text(gfx.fit(title, fTitle, w - 58), x + 29, 44, col::text, fTitle);
 
-    constexpr int TOP = 94, ROW = 40, VISIBLE = 14;
+    constexpr int TOP = 90, ROW = 34, VISIBLE = (656 - TOP) / ROW;
     const int n = static_cast<int>(items.size());
-    if (cursor < scroll) scroll = cursor;
+    // The cursor in view, and the heading of its group with it.
+    const int want = (cursor > 0 && items[cursor - 1].heading) ? cursor - 1 : cursor;
+    if (want < scroll) scroll = want;
     if (cursor >= scroll + VISIBLE) scroll = cursor - VISIBLE + 1;
+    Font* fHeading = gfx.font(15, true);
     Font* fTop = gfx.font(16, true);
-    Font* fChild = gfx.font(16);
+    Font* fChild = gfx.font(15);
     Font* fTag = gfx.font(13);
+    Font* fDlc = gfx.font(9, true);
     for (int i = scroll; i < n && i < scroll + VISIBLE; i++) {
         const Item& it = items[i];
         const int ry = TOP + (i - scroll) * ROW, cy = ry + ROW / 2;
+        if (it.heading) {
+            gfx.textMid(gfx.fit(it.label, fHeading, w - 58), x + 29, cy + 3, col::textDim, fHeading);
+            continue;
+        }
         const int rx = x + 20, rw = w - 40;
         if (i == cursor) {
             app.drawFocusRing(rx, ry + 1, rw, ROW - 2, 10);
             gfx.fillRounded(rx, ry + 1, rw, ROW - 2, 10, col::sideSel);
         }
-        const int rcx = x + (it.child ? 66 : 44);
+        const int rcx = x + (it.child ? 58 : 44);
         if (i == selected) {
             gfx.ring(rcx, cy, 9, 2, col::accent);
             gfx.disc(rcx, cy, 4, col::accent);
         } else {
             gfx.ring(rcx, cy, 9, 2, SDL_Color{0x6a, 0x70, 0x7b, 255});
         }
-        const int tagW = it.tag.empty() ? 0 : gfx.textRight(it.tag, x + w - 34, cy, col::textDim, fTag) + 12;
-        Font* f = it.child ? fChild : fTop;
-        gfx.textMid(gfx.fit(it.label, f, x + w - 34 - tagW - (rcx + 21)), rcx + 21, cy, col::text, f);
+        int right = x + w - 34;
+        if (!it.tag.empty()) right -= gfx.textRight(it.tag, right, cy, col::textDim, fTag) + 12;
+        if (it.dlc) {
+            const std::string tag = tr("sidebar/dlc");
+            const int tw = gfx.textW(tag, fDlc) + 12;
+            right -= tw;
+            gfx.fillRounded(right, cy - 8, tw, 16, 4, col::chip);
+            gfx.textCenter(tag, right + tw / 2, cy, col::textDim, fDlc);
+            right -= 12;
+        }
+        gfx.marquee(it.label, rcx + 21, cy, right - (rcx + 21), col::text, it.child ? fChild : fTop, i == cursor);
     }
 
     gfx.rect(x + 23, 667, w - 46, 1, col::modalBorder);
@@ -271,15 +287,20 @@ void DrawerModal::draw(App& app) {
 
 void DrawerModal::input(App& app, uint32_t pressed) {
     const int n = static_cast<int>(items.size());
+    auto step = [&](int dir) {
+        for (int c = cursor + dir; c >= 0 && c < n; c += dir)
+            if (!items[c].heading) { cursor = c; return; }
+    };
     if (n == 0) { closed = true; return; }
-    if (pressed & BTN_UP) cursor = std::max(0, cursor - 1);
-    if (pressed & BTN_DOWN) cursor = std::min(n - 1, cursor + 1);
+    if (pressed & BTN_UP) step(-1);
+    if (pressed & BTN_DOWN) step(+1);
     if (pressed & BTN_B) { closed = true; return; }
-    if (pressed & BTN_A) {
+    if ((pressed & BTN_A) && !items[cursor].heading) {
         selected = cursor;
         closed = true;
+        const int value = items[cursor].value >= 0 ? items[cursor].value : cursor;
         auto f = onChoose;
-        if (f) f(app, cursor);
+        if (f) f(app, value);
     }
 }
 
