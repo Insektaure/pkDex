@@ -49,7 +49,10 @@ public:
 
     // --- for the pages and the popups --------------------------------------------
     void push(std::unique_ptr<Modal> m);
+    // A notice in the top-right corner: a title, and optionally a
+    // second line. One at a time; a new one replaces it.
     void toast(const std::string& text, bool error = false);
+    void notify(const std::string& title, const std::string& body, bool error = false);
 
     void drawFooter(int left, const std::vector<Hint>& hints);
     int hintsWidth(const std::vector<Hint>& hints);
@@ -87,7 +90,7 @@ public:
 
     // --- state ----------------------------------------------------------------------
     Page page = Page::Dex;
-    bool sidebarFocus = false;
+    bool sidebarFocus = true;   // the app opens on the list of games
     int sideCursor = 0;   // regions, then the three nav buttons
     int region = 0;
 
@@ -136,8 +139,9 @@ private:
 
     void drawToasts();
 
-    struct Toast { std::string text; bool error; uint32_t until; };
-    std::vector<Toast> toasts_;
+    struct Toast { std::string title, body; bool error = false; uint32_t start = 0; };
+    Toast toast_;
+    bool toastShown_ = false;
     std::vector<std::unique_ptr<Modal>> modals_;
 
     std::vector<tracker::Counts> counts_;

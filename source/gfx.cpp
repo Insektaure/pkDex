@@ -187,6 +187,9 @@ int Gfx::textW(const std::string& s, Font* f) {
 }
 
 const Gfx::TextEntry& Gfx::entry(const std::string& s, Font* f, SDL_Color c) {
+    // Rendered opaque and cached once per colour; text() applies the alpha,
+    // so a fading label does not fill the cache with one texture per step.
+    c.a = 255;
     std::string key = s;
     key += '\x1f';
     key += std::to_string(reinterpret_cast<uintptr_t>(f));
@@ -255,6 +258,7 @@ void Gfx::text(const std::string& s, int x, int y, SDL_Color c, Font* f) {
     const TextEntry& e = entry(s, f, c);
     if (!e.tex) return;
     SDL_Rect dst{x, y + f->ascent - e.ascent, e.w, e.h};
+    SDL_SetTextureAlphaMod(e.tex, c.a);
     SDL_RenderCopy(r_, e.tex, nullptr, &dst);
 }
 
