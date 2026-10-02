@@ -132,8 +132,9 @@ bool fromApi(std::string& tag, std::string& url, std::string& why) {
 }
 
 // The same from the web page, which the API's rate limit does not cover:
-// /releases/latest redirects to /releases/tag/<tag>, and every release
-// carries pkDex.zip under its tag. A release without one fails at download.
+// /releases/latest redirects to /releases/tag/<tag>. A release file is a
+// redirect to the file server when it exists and a 404 when not, so which one
+// the release carries - pkDex.zip, or a bare pkDex.nro - is asked the same way.
 bool fromReleasePage(std::string& tag, std::string& url, std::string& why) {
     std::string location, error;
     long status = 0;
@@ -145,8 +146,18 @@ bool fromReleasePage(std::string& tag, std::string& url, std::string& why) {
     const size_t end = tag.find_first_of("?#/");
     if (end != std::string::npos) tag.erase(end);
     if (tag.empty()) { why = "no release tag"; return false; }
-    url = std::string("https://github.com/" PKDEX_REPO "/releases/download/") + tag + "/pkDex.zip";
-    return true;
+    const std::string base = std::string("https://github.com/" PKDEX_REPO "/releases/download/") + tag + "/";
+    for (const char* file : {"pkDex.zip", "pkDex.nro"}) {
+        std::string where;
+        long code = 0;
+        if (!net::redirectTarget(base + file, where, code, error)) { why = error; return false; }
+        if ((code >= 300 && code < 400 && !where.empty()) || code == 200) {
+            url = base + file;
+            return true;
+        }
+    }
+    why = "release " + tag + " has neither pkDex.zip nor pkDex.nro";
+    return false;
 }
 
 void checkNow() {
