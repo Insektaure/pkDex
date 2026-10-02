@@ -8,12 +8,6 @@ pkDex is a comprehensive Pokémon encyclopedia (Pokédex) application that allow
 
 Built with SDL2, pkDex provides a clean, controller-driven interface for exploring Pokémon data.
 
-## Disclaimer
-
-This application is provided for educational and informational purposes only.\
-It is provided "as is" without any warranties or guarantees of any kind.\
-The developers are not responsible for any issues that may arise from using this application.
-
 ## Features
 
 - **Multi-Region Support**: Browse Pokémon from different regions:
@@ -157,11 +151,49 @@ The output is `pkDex.nro` at the root of the repository. The RomFS is staged fro
 
 ## Screenshots
 
-For static images, see the `screenshots` folder.
+### Browsing
 
-<div align="center">
-    <img src="screenshots/1.x/output.gif" alt="Screenshot sildeshow" />
-</div>
+|  |  |
+|:--:|:--:|
+| <img src="screenshots/2.0/01-dex-grid.jpg" width="420"> | <img src="screenshots/2.0/02-pokemon-detail.jpg" width="420"> |
+| A region's games and DLCs, each with its capture count, beside the Pokédex | A Pokémon's page: numbers, Shiny lock, evolution line and locations |
+
+|  |
+|:--:|
+| <img src="screenshots/2.0/03-pokemon-detail-shiny.jpg" width="866"> |
+| The shiny sprite (X) |
+
+### Tracking captures
+
+|  |  |
+|:--:|:--:|
+| <img src="screenshots/2.0/05-capture-status-grid.jpg" width="420"> | <img src="screenshots/2.0/04-capture-status-detail.jpg" width="420"> |
+| Capture status (Y), from the Pokédex | The same from a Pokémon's page |
+| <img src="screenshots/2.0/06-bulk-actions.jpg" width="420"> | <img src="screenshots/2.0/07-multi-select.jpg" width="420"> |
+| Bulk actions (X): a whole Pokédex at once | Multi-select (ZL), picking Pokémon with A |
+
+|  |
+|:--:|
+| <img src="screenshots/2.0/08-multi-select-apply.jpg" width="866"> |
+| Applying a status to the selection (Y) |
+
+### Settings
+
+|  |  |
+|:--:|:--:|
+| <img src="screenshots/2.0/09-settings.jpg" width="420"> | <img src="screenshots/2.0/10-region-to-reset.jpg" width="420"> |
+| Settings | Choosing what to reset, region by region |
+| <img src="screenshots/2.0/12-reset-confirm.jpg" width="420"> | <img src="screenshots/2.0/11-language.jpg" width="420"> |
+| Resetting, after a confirmation | Language, applied at once |
+
+### Updates and About
+
+|  |  |
+|:--:|:--:|
+| <img src="screenshots/2.0/14-update-available.jpg" width="420"> | <img src="screenshots/2.0/13-about.jpg" width="420"> |
+| A new release, offered from Settings | About |
+| <img src="screenshots/2.0/15-updater-installing.jpg" width="420"> | <img src="screenshots/2.0/16-updater-done.jpg" width="420"> |
+| The built-in updater at work | Installed, restarting into the new version |
 
 ## Credits
 
@@ -173,10 +205,13 @@ For static images, see the `screenshots` folder.
 - Switchbrew for their research and [libnx](https://github.com/switchbrew/libnx) which makes it possible to create homebrew
 - ReSwitched for their research, [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere), and [libstratosphere](https://github.com/Atmosphere-NX/libstratosphere) which is invaluable for Switch homebrew
 - @Dev9212 for helping on the German translation
+
 ## License
 
 This project is licensed under the GNU General Public License v2.0 - see the [LICENSE](LICENSE) file for details.
 
 ## Disclaimer
 
-This application is not affiliated with, endorsed by, or related to Nintendo, Game Freak, or The Pokémon Company. Pokémon and Pokémon character names are trademarks of Nintendo. This application is intended for educational and informational purposes only.
+This application is not affiliated with, endorsed by, or related to Nintendo, Game Freak, or The Pokémon Company. Pokémon and Pokémon character names are trademarks of Nintendo.
+
+It is provided "as is", for educational and informational purposes only, without any warranties or guarantees of any kind. The developers are not responsible for any issues that may arise from using this application.
