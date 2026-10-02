@@ -427,21 +427,17 @@ void App::drawDetail() {
     gfx.text(p.regional, px + 24, py + 6, mix(panel, tc, 0.14f), gfx.font(150, true));
 
     {
-        // What has been caught, as pills in the corner.
+        // What has been caught, as the state icons in the corner - the same
+        // ones as on the grid's cards - each in a tinted disc, on one line.
         static const SDL_Color colors[Capture::Count] = {col::green, col::gold, col::alpha, col::shinyAlpha};
-        Font* f = gfx.font(14, true);
-        int right = px + pw - 30;
+        constexpr int D = 34, GAP = 8;
+        int x = px + pw - 30 - D;
         const std::vector<int> states = statesOf(r);
         for (auto it = states.rbegin(); it != states.rend(); ++it) {
-            const int s = *it;
-            if (!cap.get(s)) continue;
-            const std::string label = s == Capture::Regular ? tr("detail/caught") : stateLabel(s);
-            const int w = 14 + 16 + 8 + gfx.textW(label, f) + 14;
-            const int x = right - w;
-            gfx.fillRounded(x, py + 29, w, 30, 15, mix(panel, colors[s], 0.2f));
-            drawStateIcon(s, x + 14 + 8, py + 44, 16);
-            gfx.textMid(label, x + 14 + 16 + 8, py + 44, mix(colors[s], WHITE, 0.25f), f);
-            right = x - 8;
+            if (!cap.get(*it)) continue;
+            gfx.disc(x + D / 2, py + 29 + D / 2, D / 2, mix(panel, colors[*it], 0.2f));
+            drawStateIcon(*it, x + D / 2, py + 29 + D / 2, 18);
+            x -= D + GAP;
         }
     }
 

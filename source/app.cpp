@@ -73,7 +73,8 @@ int App::run(int argc, char** argv) {
     input_.init();
     // Now, while the RomFS is surely mounted.
     gfx.pinned(LOGO_PATH);
-    for (const char* p : {"romfs:/img/states/shiny.png", "romfs:/img/states/alpha.png", "romfs:/img/states/shiny_alpha.png"})
+    for (const char* p : {"romfs:/img/states/pokeball.png", "romfs:/img/states/shiny.png", "romfs:/img/states/alpha.png",
+                          "romfs:/img/states/shiny_alpha.png"})
         gfx.pinned(p);
 
     dexStates.assign(dex::count(), DexState{});
@@ -558,21 +559,23 @@ void App::drawFocusRing(int x, int y, int w, int h, int radius) {
 }
 
 void App::drawStateIcon(int state, int cx, int cy, int size) {
-    if (state == Capture::Regular) {
-        gfx.disc(cx, cy, size / 2, col::green);
-        gfx.icon(Icon::Check, cx, cy, size * 7 / 10, col::bg);
-        return;
-    }
-    // pkHouse's icons. The sparkle is white and tinted gold, as pkHouse does.
+    // Caught is the Poké Ball of pkDex 1.x; the others are pkHouse's icons,
+    // the sparkle white and tinted gold, as pkHouse does.
     static const char* const paths[Capture::Count] = {
-        nullptr, "romfs:/img/states/shiny.png", "romfs:/img/states/alpha.png", "romfs:/img/states/shiny_alpha.png",
+        "romfs:/img/states/pokeball.png", "romfs:/img/states/shiny.png", "romfs:/img/states/alpha.png",
+        "romfs:/img/states/shiny_alpha.png",
     };
     if (state < 0 || state >= Capture::Count) return;
     SDL_Texture* t = gfx.pinned(paths[state]);
     if (!t) {
         // Only if the icons are missing from the RomFS.
-        gfx.icon(state == Capture::Shiny ? Icon::Sparkle : Icon::Alpha, cx, cy, size,
-                 state == Capture::Shiny ? col::gold : state == Capture::Alpha ? col::alpha : col::shinyAlpha);
+        if (state == Capture::Regular) {
+            gfx.disc(cx, cy, size / 2, col::green);
+            gfx.icon(Icon::Check, cx, cy, size * 7 / 10, col::bg);
+        } else {
+            gfx.icon(state == Capture::Shiny ? Icon::Sparkle : Icon::Alpha, cx, cy, size,
+                     state == Capture::Shiny ? col::gold : state == Capture::Alpha ? col::alpha : col::shinyAlpha);
+        }
         return;
     }
     if (state == Capture::Shiny) SDL_SetTextureColorMod(t, col::gold.r, col::gold.g, col::gold.b);

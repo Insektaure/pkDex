@@ -1,4 +1,4 @@
-## Version 2.0.0
+## Version 2.0.0 (2026-10-02)
 - Complete redesign of the application, rebuilt on SDL2 (Borealis is no longer used)
     - New sidebar with every region and its capture progress
     - New Pokédex grid with types, capture status icons and page indicator
@@ -15,8 +15,7 @@
 - The language now defaults to the console's language
 - Built-in updater: pkDex downloads, verifies and installs updates by itself, then restarts
     - The separate pkDexUpdater application is no longer needed (and is removed if found)
-    - Releases now come as pkDex.zip; the app lives in /switch/pkDex/pkDex.nro
-    - An older /switch/pkDex.nro is moved there by the update, and the old copy removed
+    - An older /switch/pkDex.nro is moved in /switch/pkDex/pkDex.nro by the update, and the old copy removed
 
 ## Version 1.6.5 (2026-03-09)
 - Add tracker bulk option to set all Pokemon inside a region as Caught / Shiny / Alpha / Shiny Alpha

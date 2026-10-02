@@ -159,7 +159,6 @@
   "detail": {
     "previous": "Zurück",
     "next": "Weiter",
-    "caught": "Gefangen",
     "no_sprite": "Kein Bild",
     "numbers": "National #{national} · {region} #{regional}",
     "national_no": "National-Nr.",

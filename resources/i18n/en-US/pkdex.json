@@ -159,7 +159,6 @@
   "detail": {
     "previous": "Previous",
     "next": "Next",
-    "caught": "Caught",
     "no_sprite": "No sprite",
     "numbers": "National #{national} · {region} #{regional}",
     "national_no": "National N°",

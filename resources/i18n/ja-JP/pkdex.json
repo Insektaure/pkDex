@@ -159,7 +159,6 @@
   "detail": {
     "previous": "前へ",
     "next": "次へ",
-    "caught": "捕獲済み",
     "no_sprite": "画像なし",
     "numbers": "全国 #{national}・{region} #{regional}",
     "national_no": "全国図鑑No.",

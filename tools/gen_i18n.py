@@ -71,7 +71,7 @@ EN = {
     },
     "capture": {"title": "Capture status"},
     "detail": {
-        "previous": "Previous", "next": "Next", "caught": "Caught", "no_sprite": "No sprite",
+        "previous": "Previous", "next": "Next", "no_sprite": "No sprite",
         "numbers": "National #{national} · {region} #{regional}", "national_no": "National N°",
         "regional_no": "Regional N°", "shiny": "Shiny", "available": "Available", "locked": "Locked",
         "version": "Version exclusive", "none": "None", "evolution": "Evolution", "current": "Current",
@@ -203,7 +203,7 @@ FR = {
     },
     "capture": {"title": "Statut de capture"},
     "detail": {
-        "previous": "Précédent", "next": "Suivant", "caught": "Capturé", "no_sprite": "Pas d'image",
+        "previous": "Précédent", "next": "Suivant", "no_sprite": "Pas d'image",
         "numbers": "National #{national} · {region} #{regional}", "national_no": "N° National",
         "regional_no": "N° Régional", "shiny": "Chromatique", "available": "Disponible", "locked": "Verrouillé",
         "version": "Exclusivité", "none": "Aucune", "evolution": "Évolution", "current": "Actuel",
@@ -345,7 +345,7 @@ DE = {
     },
     "capture": {"title": "Fangstatus"},
     "detail": {
-        "previous": "Zurück", "next": "Weiter", "caught": "Gefangen", "no_sprite": "Kein Bild",
+        "previous": "Zurück", "next": "Weiter", "no_sprite": "Kein Bild",
         "numbers": "National #{national} · {region} #{regional}", "national_no": "National-Nr.",
         "regional_no": "Regional-Nr.", "shiny": "Schillernd", "available": "Verfügbar", "locked": "Gesperrt",
         "version": "Versions-Exklusiv", "none": "Keine", "evolution": "Entwicklung", "current": "Aktuell",
@@ -483,7 +483,7 @@ ES = {
     },
     "capture": {"title": "Estado de captura"},
     "detail": {
-        "previous": "Anterior", "next": "Siguiente", "caught": "Capturado", "no_sprite": "Sin imagen",
+        "previous": "Anterior", "next": "Siguiente", "no_sprite": "Sin imagen",
         "numbers": "Nacional #{national} · {region} #{regional}", "national_no": "N.º Nacional",
         "regional_no": "N.º Regional", "shiny": "Variocolor", "available": "Disponible", "locked": "Bloqueado",
         "version": "Exclusivo de versión", "none": "Ninguno", "evolution": "Evolución", "current": "Actual",
@@ -620,7 +620,7 @@ IT = {
     },
     "capture": {"title": "Stato di cattura"},
     "detail": {
-        "previous": "Precedente", "next": "Successivo", "caught": "Catturato", "no_sprite": "Nessuna immagine",
+        "previous": "Precedente", "next": "Successivo", "no_sprite": "Nessuna immagine",
         "numbers": "Nazionale #{national} · {region} #{regional}", "national_no": "N° Nazionale",
         "regional_no": "N° Regionale", "shiny": "Cromatico", "available": "Disponibile", "locked": "Bloccato",
         "version": "Esclusiva versione", "none": "Nessuna", "evolution": "Evoluzione", "current": "Attuale",
@@ -750,7 +750,7 @@ JA = {
     },
     "capture": {"title": "捕獲状況"},
     "detail": {
-        "previous": "前へ", "next": "次へ", "caught": "捕獲済み", "no_sprite": "画像なし",
+        "previous": "前へ", "next": "次へ", "no_sprite": "画像なし",
         "numbers": "全国 #{national}・{region} #{regional}", "national_no": "全国図鑑No.",
         "regional_no": "地方図鑑No.", "shiny": "色違い", "available": "入手可能", "locked": "入手不可",
         "version": "バージョン限定", "none": "なし", "evolution": "進化", "current": "現在",
