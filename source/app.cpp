@@ -143,9 +143,11 @@ void App::confirmQuit() {
 
 void App::push(std::unique_ptr<Modal> m) { modals_.push_back(std::move(m)); }
 
-void App::toast(const std::string& text, bool error) {
-    toasts_.push_back({text, error, SDL_GetTicks() + 3200});
-    if (toasts_.size() > 3) toasts_.erase(toasts_.begin());
+void App::toast(const std::string& text, bool error) { notify(text, std::string(), error); }
+
+void App::notify(const std::string& title, const std::string& body, bool error) {
+    toast_ = Toast{title, body, error, SDL_GetTicks()};
+    toastShown_ = true;
 }
 
 // --- the frame ---------------------------------------------------------------------
@@ -215,30 +217,52 @@ void App::watchUpdate() {
     } else if (manualCheck_ && s == Update::State::UpToDate) {
         toast(trf("update/latest", {{"version", APP_VERSION}}));
     } else if (manualCheck_ && s == Update::State::Failed) {
-        const std::string why = Update::lastError();
-        toast(why.empty() ? tr("update/check_failed") : tr("update/check_failed") + ": " + why, true);
+        notify(tr("update/check_failed"), Update::lastError(), true);
     }
     if (s != Update::State::Checking) manualCheck_ = false;
 }
 
 void App::drawToasts() {
-    const uint32_t now = SDL_GetTicks();
-    toasts_.erase(std::remove_if(toasts_.begin(), toasts_.end(), [now](const Toast& t) { return now >= t.until; }),
-                  toasts_.end());
-    const bool withSidebar = page != Page::Detail;
-    const int cx = withSidebar ? SIDEBAR_W + (SCREEN_W - SIDEBAR_W) / 2 : SCREEN_W / 2;
-    Font* f = gfx.font(15);
-    int y = FOOTER_Y - 56;
-    for (auto it = toasts_.rbegin(); it != toasts_.rend(); ++it) {
-        const std::string text = gfx.fit(it->text, f, 820);
-        const int w = gfx.textW(text, f) + 56, h = 44;
-        const int x = cx - w / 2;
-        gfx.fillRounded(x - 2, y - 2, w + 4, h + 4, 24, withAlpha(col::bg, 160));
-        gfx.fillRounded(x, y, w, h, 22, col::chip);
-        gfx.strokeRounded(x, y, w, h, 22, 1, col::modalBorder);
-        gfx.disc(x + 22, y + h / 2, 4, it->error ? col::accent : col::green);
-        gfx.textMid(text, x + 36, y + h / 2, col::text, f);
-        y -= h + 10;
+    if (!toastShown_) return;
+    // nx-plaza's notice, at this screen's scale: top right, 480 wide, slides
+    // down into place over 0.28 s, stays, and fades out over its last 0.6 s.
+    constexpr uint32_t LIFE = 6000, APPEAR = 280, FADE = 600;
+    const uint32_t age = SDL_GetTicks() - toast_.start;
+    if (age >= LIFE) { toastShown_ = false; return; }
+    const float appear = std::min(1.0f, static_cast<float>(age) / APPEAR);
+    const float fade = std::min(1.0f, static_cast<float>(LIFE - age) / FADE);
+    const float alpha = appear * fade;
+    auto a = [alpha](SDL_Color c, float k = 1.0f) {
+        return withAlpha(c, static_cast<Uint8>(c.a * k * alpha + 0.5f));
+    };
+
+    constexpr int W = 480, PAD = 16, EDGE = 43, TOP = 32;
+    Font* fEyebrow = gfx.font(11, true);
+    Font* fTitle = gfx.font(20, true);
+    Font* fBody = gfx.font(14);
+    const int textW = W - 2 * PAD;
+    const auto titleLines = gfx.wrap(toast_.title, fTitle, textW, 2);
+    const auto bodyLines = toast_.body.empty() ? std::vector<std::string>() : gfx.wrap(toast_.body, fBody, textW, 2);
+    const int eyebrowH = 16;
+    const int h = PAD + eyebrowH + 6 + static_cast<int>(titleLines.size()) * 26 +
+                  (bodyLines.empty() ? 0 : 6 + static_cast<int>(bodyLines.size()) * 20) + PAD;
+    const int x = SCREEN_W - EDGE - W;
+    const int y = TOP - static_cast<int>((1.0f - appear) * 16.0f);
+
+    gfx.fillRounded(x - 4, y - 2, W + 8, h + 10, 16, SDL_Color{0, 0, 0, static_cast<Uint8>(90 * alpha)});
+    gfx.fillRounded(x, y, W, h, 12, a(col::modal, 0.92f));
+    gfx.strokeRounded(x, y, W, h, 12, 1, a(col::modalBorder));
+
+    // The eyebrow: a dot (red for a failure) and the app's name.
+    const int ey = y + PAD + eyebrowH / 2;
+    gfx.disc(x + PAD + 7, ey, 7, a(toast_.error ? col::accent : col::green));
+    gfx.tracked("PKDEX", x + PAD + 14 + 8, ey - fEyebrow->height / 2, a(col::accent), fEyebrow, 2);
+
+    int ty = y + PAD + eyebrowH + 6;
+    for (const auto& l : titleLines) { gfx.text(l, x + PAD, ty, a(col::text), fTitle); ty += 26; }
+    if (!bodyLines.empty()) {
+        ty += 6;
+        for (const auto& l : bodyLines) { gfx.text(l, x + PAD, ty, a(col::textDim), fBody); ty += 20; }
     }
 }
 
@@ -251,7 +275,7 @@ SDL_Rect navRect(int i) { return SDL_Rect{14 + i * 89, 654, 82, 52}; }
 // The region list: a heading per region, then a row per game or DLC. Labels
 // that do not fit scroll (Gfx::marquee) rather than being cut short.
 constexpr int SIDE_TOP = 110, HEADING_H = 28, ROW_H = 30;
-constexpr int LABEL_X = 34, COUNT_R = 265;
+constexpr int LABEL_X = 34, DLC_X = 50, COUNT_R = 265;
 
 } // anonymous namespace
 
@@ -302,7 +326,16 @@ void App::drawSidebar() {
             gfx.fillRounded(right, cy - 8, tw, 16, 4, col::chip);
             gfx.textCenter(tag, right + tw / 2, cy, col::textDim, fTag);
         }
-        gfx.marquee(dex::sidebar(i), LABEL_X, cy, right - 10 - LABEL_X, active ? col::text : col::textDim, fLabel,
+        // A DLC hangs off its game, as the 1.x sidebar drew it: └ from the row
+        // above, and ├ down to the next when another DLC follows.
+        int labelX = LABEL_X;
+        if (dex::regions()[i].dlc) {
+            const bool more = i + 1 < dex::count() && dex::regions()[i + 1].dlc;
+            gfx.rect(LABEL_X + 4, y - 4, 1, (more ? ROW_H : ROW_H / 2) + 4, col::textFaint);
+            gfx.rect(LABEL_X + 4, cy, 8, 1, col::textFaint);
+            labelX = DLC_X;
+        }
+        gfx.marquee(dex::sidebar(i), labelX, cy, right - 10 - labelX, active ? col::text : col::textDim, fLabel,
                     sidebarFocus && sideCursor == i);
         y += ROW_H;
     }

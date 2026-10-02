@@ -158,15 +158,15 @@ void ConfirmModal::draw(App& app) {
     const int w = 480, pad = 28;
     Font* fTitle = gfx.font(24, true);
     Font* fBody = gfx.font(15);
-    // With a text, the mockup's layout: icon, then title, then text. A bare
-    // question ("Quit pkDex?") keeps its title beside the icon instead.
-    const bool beside = body.empty();
-    const int titleX = beside ? pad + 52 + 18 : pad;
+    // Every dialog alike: the title beside the icon, centred on it, and the
+    // text under both, across the whole width.
+    const int titleX = pad + 52 + 18;
     const auto titleLines = gfx.wrap(title, fTitle, w - titleX - pad, 3);
     const auto bodyLines = body.empty() ? std::vector<std::string>() : gfx.wrap(body, fBody, w - 2 * pad, 8);
     const int titleH = static_cast<int>(titleLines.size()) * 32;
-    const int head = beside ? std::max(52, titleH) : 52 + 18 + titleH + 6 + static_cast<int>(bodyLines.size()) * 24;
-    const int h = pad + head + 24 + 52 + pad;
+    const int headH = std::max(52, titleH);
+    const int bodyH = bodyLines.empty() ? 0 : 16 + static_cast<int>(bodyLines.size()) * 24;
+    const int h = pad + headH + bodyH + 24 + 52 + pad;
     const int x = (SCREEN_W - w) / 2, y = (SCREEN_H - h) / 2;
     card(x, y, w, h);
 
@@ -178,12 +178,13 @@ void ConfirmModal::draw(App& app) {
         case Success: tint = col::green; icon = Icon::Check; break;
         case Error:   tint = col::accent; icon = Icon::Cross; break;
     }
-    gfx.fillRounded(x + pad, y + pad, 52, 52, 13, mix(col::modal, tint, 0.18f));
-    gfx.icon(icon, x + pad + 26, y + pad + 26, 26, tint);
+    const int iy = y + pad + (headH - 52) / 2;
+    gfx.fillRounded(x + pad, iy, 52, 52, 13, mix(col::modal, tint, 0.18f));
+    gfx.icon(icon, x + pad + 26, iy + 26, 26, tint);
 
-    int ty = beside ? y + pad + (52 - titleH) / 2 : y + pad + 52 + 18;
+    int ty = y + pad + (headH - titleH) / 2;
     for (const auto& l : titleLines) { gfx.text(l, x + titleX, ty, col::text, fTitle); ty += 32; }
-    ty += 6;
+    ty = y + pad + headH + 16;
     for (const auto& l : bodyLines) { gfx.text(l, x + pad, ty, col::textDim, fBody); ty += 24; }
 
     const int by = y + h - pad - 52;
@@ -261,7 +262,15 @@ void DrawerModal::draw(App& app) {
             app.drawFocusRing(rx, ry + 1, rw, ROW - 2, 10);
             gfx.fillRounded(rx, ry + 1, rw, ROW - 2, 10, col::sideSel);
         }
-        const int rcx = x + (it.child ? 58 : 44);
+        // A DLC hangs off the game above it: └, or ├ when another follows.
+        int rcx = x + (it.child ? 58 : 44);
+        if (it.dlc) {
+            const bool more = i + 1 < n && items[i + 1].dlc;
+            const int bx = rcx - 4;
+            gfx.rect(bx, ry - 6, 1, (more ? ROW : ROW / 2) + 6, col::textFaint);
+            gfx.rect(bx, cy, 10, 1, col::textFaint);
+            rcx += 22;
+        }
         if (i == selected) {
             gfx.ring(rcx, cy, 9, 2, col::accent);
             gfx.disc(rcx, cy, 4, col::accent);
